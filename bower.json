@@ -12,7 +12,6 @@
   "devDependencies": {
     "bootstrap-sass-twbs": "*"
   },
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
