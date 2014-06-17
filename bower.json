@@ -1,0 +1,23 @@
+{
+  "name": "mnd-bootstrap",
+  "version": "0.0.1",
+  "authors": [
+    "Zoee Silcock <zoee.silcock@mynewsdesk.com>"
+  ],
+  "description": "MND theme for Bootstrap.",
+  "main": ["src/mnd-bootstrap.scss", "src/mnd-bootstrap/*.scss"],
+  "keywords": [
+    "bootstrap"
+  ],
+  "devDependencies": {
+    "bootstrap-sass-twbs": "*"
+  },
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
