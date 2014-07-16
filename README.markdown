@@ -19,8 +19,6 @@ Usage
 -----
 ```
 @import("mnd-bootstrap");
-// Optionally import your own bootstrap variables.
-@import("bootstrap");
 ```
 
 Development
