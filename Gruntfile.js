@@ -7,15 +7,27 @@ module.exports = function(grunt) {
         }
       }
     },
+
+    copy: {
+      styleguide: {
+        src: 'dist/mnd-boostrap.css',
+        dest: 'docs/assets/css'
+      }
+    },
+
     watch: {
       css: {
         files: '**/*.scss',
-        tasks: ['sass']
+        tasks: ['sass', 'copy']
       }
     }
   });
 
+  // Register tasks
+  grunt.registerTask('default', ['copy', 'watch']);
+
+  // Load tasks
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.registerTask('default', ['watch']);
+  grunt.loadNpmTasks('grunt-contrib-copy')
 }
