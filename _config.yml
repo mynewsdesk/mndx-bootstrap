@@ -11,18 +11,18 @@ destination:      _gh_pages
 host:             0.0.0.0
 port:             9001
 baseurl:          /
-url:              http://getbootstrap.com
+url:              http://mnd-bootstrap.herokuapp.com
 encoding:         UTF-8
 
 # Custom vars
 current_version:  3.1.1
-repo:             https://github.com/twbs/bootstrap
-sass_repo:        https://github.com/twbs/bootstrap-sass
+repo:             https://github.com/mynewsdesk/mnd-bootstrap
+sass_repo:        https://github.com/mynewsdesk/mnd-bootstrap
 
 download:
-  source:         https://github.com/twbs/bootstrap/archive/v3.1.1.zip
-  dist:           https://github.com/twbs/bootstrap/releases/download/v3.1.1/bootstrap-3.1.1-dist.zip
-  sass:           https://github.com/twbs/bootstrap-sass/archive/v3.1.1.tar.gz
+  source:         https://github.com/mynewsdesk/mnd-bootstrap
+  dist:           https://github.com/mynewsdesk/mnd-bootstrap
+  sass:           https://github.com/mynewsdesk/mnd-bootstrap
 
 blog:             http://blog.getbootstrap.com
 expo:             http://expo.getbootstrap.com
