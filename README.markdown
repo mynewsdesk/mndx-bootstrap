@@ -37,10 +37,21 @@ Then you use grunt to compile the sass when you change the files:
 grunt watch
 ```
 
-Finally you setup the docs project to find the mndBootstrapPath variable if
-the projects aren't in the same folder. Use jekyll to serve the docs project
-and another grunt watch to copy over the compiled sass:
+
+We have a stylguide using the mnd-bootstrap project (fork from the bootstrap stylguide).
+To set it up for development, you have to clone it :
+
 ```
+cd <path/to/mnd-bootstrap>/..
+git clone git@github.com:mynewsdesk/boostrap.git
+```
+
+If you want to install it somewhere else, update the ```mndBootstrapPath``` variable in the Gruntfile.js file of the bootstrap project.
+Now you can run the stylguide, go to the bootstrap directory and run :
+
+```
+# Create the styleguide and run a webserver
 jekyll serve
+# Watch mnd-bootstrap modification and copy the sass file when modified
 grunt watch
 ```
