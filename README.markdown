@@ -7,7 +7,7 @@ Installation
 ------------
 Add this line you your Gemfile:
 ```
-gem 'rails-assets-mnd-navigation'
+gem 'rails-assets-mnd-bootstrap'
 ```
 
 And then execute:
