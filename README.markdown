@@ -55,3 +55,10 @@ jekyll serve
 # Watch mnd-bootstrap modification and copy the sass file when modified
 grunt watch
 ```
+
+Release new version
+-----------
+
+To release a new version you have to upgrade the version in bower.json and package.json. After that you need to create a new release at github and tag it with the same version as in the bower.json and package.json settings.
+
+If you using this bower component with rails-assets you can force refresh the version on https://rails-assets.org/components/new with just adding "mnd-bootstrap" and click "Convert".
