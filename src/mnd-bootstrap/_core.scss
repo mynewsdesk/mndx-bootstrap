@@ -8,12 +8,9 @@ body {
   background-color: transparent;
   &.btn-success {
     color: $btn-success-border;
-  &:hover {
-    color: $btn-success-color;
+    &:hover {
+      color: $btn-success-color;
     }
-  }
-  &.btn-primary {
-    //rest is default
   }
   &.btn-info {
     color: $btn-info-border;
@@ -33,4 +30,5 @@ body {
       color: $btn-danger-color;
     }
   }
+  // .btn-primary only needs the transparent background.
 }
