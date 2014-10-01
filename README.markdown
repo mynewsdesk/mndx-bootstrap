@@ -41,27 +41,19 @@ bower install
 
 Then you use grunt to compile the sass when you change the files:
 ```
-grunt watch
+grunt
 ```
 
+Leave the grunt task running, it will generate the styleguide everytime a file changes.
 
-We have a stylguide using the mnd-bootstrap project (fork from the bootstrap stylguide).
-To set it up for development, you have to clone it :
-
+To check the styleguide:
 ```
-cd <path/to/mnd-bootstrap>/..
-git clone git@github.com:mynewsdesk/boostrap.git
+cd public
+python -m SimpleHTTPServer
 ```
 
-If you want to install it somewhere else, update the ```mndBootstrapPath``` variable in the Gruntfile.js file of the bootstrap project.
-Now you can run the stylguide, go to the bootstrap directory and run :
+Then go to [http://localhost:8000](http://localhost:8000)
 
-```
-# Create the styleguide and run a webserver
-jekyll serve
-# Watch mnd-bootstrap modification and copy the sass file when modified
-grunt watch
-```
 
 Release new version
 -----------
