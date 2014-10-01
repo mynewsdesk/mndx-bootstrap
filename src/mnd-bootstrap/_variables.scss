@@ -10,7 +10,58 @@
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
+//
+//
+/*doc
+ ---
+ title: Colors
+ name: colors
+ category: base
+ ---
 
+ Those are the colors that you can use
+
+<span class="color-box gray-darker">
+  $gray-darker
+</span>
+
+<span class="color-box gray-darker">
+  $gray-dark
+</span>
+
+<span class="color-box gray-darker">
+  $gray
+</span>
+
+<span class="color-box gray-darker">
+  $gray-liht
+</span>
+
+<span class="color-box gray-darker">
+  $gray-lighter
+</span>
+
+<span class="color-box gray-darker">
+  $brand-primary
+</span>
+
+<span class="color-box gray-darker">
+  $brand-success
+</span>
+
+<span class="color-box gray-darker">
+  $brand-info
+</span>
+
+<span class="color-box gray-darker">
+  $brand-warning: #caca17
+</span>
+
+<span class="color-box gray-darker">
+  $brand-danger:#e53221
+</span>
+
+ */
 $gray-darker:            lighten(#000, 13.5%); // #222
 $gray-dark:              lighten(#000, 20%);   // #333
 $gray:                   #666; // #555
