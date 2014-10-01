@@ -3,7 +3,7 @@ mnd-bootstrap
 
 MND theme for Bootstrap.
 
-![https://david-dm.org/mynewsdesk/mnd-bootstrap.png](https://david-dm.org/mynewsdesk/mnd-bootstrap.png)
+[![devDependency Status](https://david-dm.org/mynewsdesk/mnd-bootstrap/dev-status.svg)](https://david-dm.org/mynewsdesk/mnd-bootstrap#info=devDependencies)
 
 Installation
 ------------
