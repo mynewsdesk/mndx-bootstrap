@@ -3,6 +3,8 @@ mnd-bootstrap
 
 MND theme for Bootstrap.
 
+![https://david-dm.org/mynewsdesk/mnd-bootstrap.png](https://david-dm.org/mynewsdesk/mnd-bootstrap.png)
+
 Installation
 ------------
 Add this line you your Gemfile:
