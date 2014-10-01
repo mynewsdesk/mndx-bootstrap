@@ -9,9 +9,11 @@
     "url" : "https://github.com/mynewsdesk/mnd-bootstrap.git"
   },
   "devDependencies": {
+    "express": "^4.9.5",
     "grunt": "~0.4.2",
     "grunt-contrib-sass": "~0.8.1",
     "grunt-contrib-watch": "~0.5.3",
+    "grunt-express-server": "^0.4.19",
     "grunt-hologram": "0.0.4"
   }
 }

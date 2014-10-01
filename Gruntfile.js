@@ -22,11 +22,22 @@ module.exports = function(grunt) {
           config: 'hologram_config.yml'
         }
       }
+    },
+    express: {
+      options: {
+        spawn: false
+      },
+      dev: {
+        options: {
+          script: 'dev_server.js'
+        }
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-hologram');
-  grunt.registerTask('default', ['sass', 'hologram', 'watch']);
+  grunt.loadNpmTasks('grunt-express-server');
+  grunt.registerTask('default', ['sass', 'hologram', 'express', 'watch']);
 };
