@@ -35,20 +35,14 @@ npm install
 bower install
 ```
 
-Then you use grunt to compile the sass when you change the files:
+Then you use grunt to start compile the sass when you change the files:
 ```
 grunt
 ```
 
-Leave the grunt task running, it will generate the styleguide everytime a file changes.
+Leave the grunt task running, it starts a webserver and it will generate the styleguide everytime a file changes.
 
-To check the styleguide:
-```
-cd public
-python -m SimpleHTTPServer
-```
-
-Then go to [http://localhost:8000](http://localhost:8000)
+To check the styleguide, go to [http://localhost:3000](http://localhost:3000)
 
 
 Release new version
