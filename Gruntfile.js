@@ -14,11 +14,17 @@ module.exports = function(grunt) {
     watch: {
       css: {
         files: '{src,bower_components,doc_assets}/**/*.scss',
-        tasks: ['sass', 'hologram']
+        tasks: ['sass', 'hologram'],
+        options: {
+          livereload: true
+        }
       },
       doc: {
         files: 'doc_assets/**/*',
-        tasks: ['hologram']
+        tasks: ['hologram'],
+        options: {
+          livereload: true
+        }
       }
     },
     hologram: {
