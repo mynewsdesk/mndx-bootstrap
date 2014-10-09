@@ -13,8 +13,12 @@ module.exports = function(grunt) {
     },
     watch: {
       css: {
-        files: '**/*.scss',
+        files: '{src,bower_components,doc_assets}/**/*.scss',
         tasks: ['sass', 'hologram']
+      },
+      doc: {
+        files: 'doc_assets/**/*',
+        tasks: ['hologram']
       }
     },
     hologram: {
