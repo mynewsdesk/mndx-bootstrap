@@ -3,7 +3,8 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          'dist/mnd-bootstrap-dev.css': 'src/mnd-bootstrap-dev.scss'
+          'dist/mnd-bootstrap-dev.css': 'src/mnd-bootstrap-dev.scss',
+          'public/styleguide.css': 'doc_assets/styleguide.scss'
         },
         options: {
           loadPath: './bower_components'
