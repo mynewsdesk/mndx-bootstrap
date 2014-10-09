@@ -1,0 +1,44 @@
+@import "../src/mnd-bootstrap/variables";
+
+.color-box {
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  display: block;
+  float: left;
+}
+
+.gray-darker {
+  background: $gray-darker;
+  color: white;
+}
+.gray-dark {
+ background: $gray-dark;
+  color: white;
+}
+.gray {
+  background: $gray;
+  color: white;
+}
+.gray-light {
+  background: $gray-light;
+}
+.gray-lighter {
+  background: $gray-lighter;
+}
+.brand-primary {
+  background: $brand-primary;
+}
+.brand-success {
+  background: $brand-success;
+}
+.brand-info {
+  background: $brand-info;
+}
+.brand-warning {
+  background: $brand-warning;
+}
+.brand-danger  {
+  background: $brand-danger;
+  color: white;
+}
