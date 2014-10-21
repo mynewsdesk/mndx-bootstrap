@@ -25,6 +25,26 @@
     </div>
   </div>
 </div>
+
+```html_example
+<div class="jumbotron">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>Sign up for this magic tool</h1>
+      <p>Bacon ipsum dolor sit amet leberkas corned beef beef hamburger chicken rump ham.</p>
+      <form accept-charset="UTF-8" action="/" method="post" role="form">
+        <div class="form-group col-sm-8 col-md text-left">
+          <label class="sr-only" for="user_email">Enter email</label>
+          <input class="form-control" id="user_email" name="user[email]" placeholder="Enter email" type="email">
+        </div>
+        <div class="form-group col-sm-4">
+          <input class="btn btn-success col-xs-12" name="commit" type="submit" value="Sign up">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+```
 */
 
 .jumbotron {
