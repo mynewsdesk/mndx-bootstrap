@@ -20,47 +20,47 @@
  ---
 
  Those are the colors that you can use
+<div class="row">
+  <div class="color-box gray-darker">
+    <span>$gray-darker</span>
+  </div>
 
-<span class="color-box gray-darker">
-  <span>$gray-darker</span>
-</span>
+  <div class="color-box gray-dark">
+    <span>$gray-dark</span>
+  </div>
 
-<span class="color-box gray-dark">
-  <span>$gray-dark</span>
-</span>
+  <div class="color-box gray">
+    <span>$gray</span>
+  </div>
 
-<span class="color-box gray">
-  <span>$gray</span>
-</span>
+  <div class="color-box gray-light">
+    <span>$gray-light</span>
+  </div>
 
-<span class="color-box gray-light">
-  <span>$gray-light</span>
-</span>
+  <div class="color-box gray-lighter">
+    <span>$gray-lighter</span>
+  </div>
 
-<span class="color-box gray-lighter">
-  <span>$gray-lighter</span>
-</span>
+  <div class="color-box brand-primary">
+    <span>$brand-primary</span>
+  </div>
 
-<span class="color-box brand-primary">
-  <span>$brand-primary</span>
-</span>
+  <div class="color-box brand-success">
+    <span>$brand-success</span>
+  </div>
 
-<span class="color-box brand-success">
-  <span>$brand-success</span>
-</span>
+  <div class="color-box brand-info">
+    <span>$brand-info</span>
+  </div>
 
-<span class="color-box brand-info">
-  <span>$brand-info</span>
-</span>
+  <div class="color-box brand-warning">
+    <span>$brand-warning</span>
+  </div>
 
-<span class="color-box brand-warning">
-  <span>$brand-warning</span>
-</span>
-
-<span class="color-box brand-danger">
-  <span>$brand-danger</span>
-</span>
-
+  <div class="color-box brand-danger">
+    <span>$brand-danger</span>
+  </div>
+</div>
  */
 $gray-darker:            lighten(#000, 13.5%); // #222
 $gray-dark:              lighten(#000, 20%);   // #333
