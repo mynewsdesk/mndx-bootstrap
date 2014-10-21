@@ -1,6 +1,14 @@
 @import "../src/mnd-bootstrap/variables";
 $sg-default-space: 15px;
 
+/* style nav specific - Temporary until we have the navigation implemented in our bootstrap theme */
+nav.navbar {
+  .navbar-header {
+    margin: $sg-default-space;
+  }
+}
+/* end temporary styling of our navigation*/
+
 .color-box {
   width: 150px;
   height: 150px;
