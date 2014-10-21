@@ -34,15 +34,7 @@
  This is the Helper Classes section....
 
 */
-/*doc
- ---
- title: Typography
- name: typography
- category: Base
- ---
- This is the Typography section....
 
-*/
 // Import any other files and define general styles here.
 body {
   -webkit-font-smoothing: initial;
@@ -77,3 +69,23 @@ body {
   }
   // .btn-primary only needs the transparent background.
 }
+
+/*doc
+ ---
+ title: Typography
+ name: typography
+ category: Base
+ ---
+ This is the Typography section....
+
+  <div class="styleguide-example">
+    <h1>h1. Bootstrap heading <small>with small text</small></h1>
+    <h2>h2. Bootstrap heading <small>with small text</small></h2>
+    <h3>h3. Bootstrap heading <small>with small text</small></h3>
+    <h4>h4. Bootstrap heading <small>with small text</small></h4>
+    <h5>h5. Bootstrap heading <small>with small text</small></h5>
+    <h6>h6. Bootstrap heading <small>with small text</small></h6>
+  </div>
+
+*/
+
