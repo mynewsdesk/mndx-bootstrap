@@ -1,24 +1,29 @@
 @import "../src/mnd-bootstrap/variables";
+$sg-default-space: 15px;
 
 .color-box {
   width: 150px;
   height: 150px;
-  margin: 20px;
+  margin: 0 $sg-default-space $sg-default-space 0;
+  padding: $sg-default-space;
   display: block;
   float: left;
+
+  span {
+    padding: $sg-default-space;
+    display: inline-block;
+    background: #fff;
+  }
 }
 
 .gray-darker {
   background: $gray-darker;
-  color: white;
 }
 .gray-dark {
  background: $gray-dark;
-  color: white;
 }
 .gray {
   background: $gray;
-  color: white;
 }
 .gray-light {
   background: $gray-light;
@@ -40,5 +45,4 @@
 }
 .brand-danger  {
   background: $brand-danger;
-  color: white;
 }
