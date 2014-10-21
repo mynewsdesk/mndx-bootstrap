@@ -1,6 +1,10 @@
 @import "../src/mnd-bootstrap/variables";
 $sg-default-space: 15px;
 
+body{
+  padding-bottom: ceil($sg-default-space * 4);
+}
+
 /* style nav specific - Temporary until we have the navigation implemented in our bootstrap theme */
 nav.navbar {
   .navbar-header {
