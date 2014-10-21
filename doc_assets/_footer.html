@@ -1,11 +1,17 @@
-          </div>
-        </section>
-      </div>
-      <div class="container">
-        <footer>
-          <p>This documentation generated using <a href="http://github.com/trulia/hologram">Hologram</a></p>
-        </footer>
-      </div>
+        </div>
+        <div class="col-md-4">
+          <ul class="nav nav-pills nav-stacked">
+          <% @blocks.each do |b| %>
+            <li><a href="#<%= b[:name] %>"><%= b[:title] %></a></li>
+          <% end %>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <footer>
+        <p>This documentation generated using <a href="http://github.com/trulia/hologram">Hologram</a></p>
+      </footer>
     </div>
   </body>
 </html>
