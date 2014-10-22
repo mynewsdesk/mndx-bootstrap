@@ -22,4 +22,12 @@
     <div class="container">
       <section class="content">
         <div class="row">
+          <div class="col-md-4">
+            <h3><%= title %></h3>
+            <ul class="nav nav-pills nav-stacked">
+            <% @blocks.each do |b| %>
+              <li><a href="#<%= b[:name] %>"><%= b[:title] %></a></li>
+            <% end %>
+            </ul>
+          </div>
           <div class="col-md-8">
