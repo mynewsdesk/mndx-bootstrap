@@ -1,6 +1,14 @@
 // Import any other files and define general styles here.
 body {
   -webkit-font-smoothing: initial;
+
+  // Offset anchors so they work with our fixed header.
+  #sb-site a[name] {
+    content: "";
+    display: block;
+    height: 76px;
+    margin-top: -76px;
+  }
 }
 
 .btn-ghost {
