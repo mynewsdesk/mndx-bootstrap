@@ -1,6 +1,9 @@
 @import "mnd-bootstrap/variables";
+@import "mnd-bootstrap/_variables_oldnav";
 @import "bootstrap-sass-twbs/assets/stylesheets/bootstrap";
 @import "mnd-bootstrap/_variables_extended";
 @import "mnd-bootstrap/core";
 @import "mnd-bootstrap/helpers";
 @import "mnd-bootstrap/components/jumbotron";
+@import "mnd-bootstrap/components/old_topnav";
+@import "mnd-bootstrap/components/old_navbar";
