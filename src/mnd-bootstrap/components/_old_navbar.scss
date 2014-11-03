@@ -1,0 +1,135 @@
+/*doc
+ ---
+ title: Old navbar
+ name: old_navbar
+ category: Base
+ ---
+ The old navbar.
+
+<div class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a href="#" class="brand">Mynewsdesk</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav pull-right">
+                <li class="divider-vertical"></li>
+                <li><a class="active" href="#">Link 1</a></li>
+                <li class="divider-vertical"></li>
+                <li><a href="#">Link 2</a></li>
+                <li class="divider-vertical"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+*/
+@mixin box-shadow2($shadow: 0 1px 3px rgba(0,0,0,.25),$shadow2: 0 1px 3px rgba(0,0,0,.25)) {
+  -webkit-box-shadow: $shadow, $shadow2;
+     -moz-box-shadow: $shadow, $shadow2;
+          box-shadow: $shadow, $shadow2;
+}
+.navbar-default {
+  border: none;
+  @include box-shadow(0 1px 1px rgba(0,0,0,0.07));
+  border-bottom: 1px solid #bbb;
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+  border-radius: 0;
+  height: 43px;
+
+  .container {
+    .navbar-header {
+      .brand {
+        float: left;
+        display: block;
+        height: 33px;
+        // background: url('logo-top.png') no-repeat 0 10px;
+        width: 152px;
+        overflow: hidden;
+        text-indent: 1000px;
+        margin-left: 0;
+      }
+    }
+
+    .navbar-nav {
+      a {
+        font-size: 15px;
+        line-height: 18px;
+        padding: 13px 10px 10px 10px;
+        @include box-shadow(inset 1px 0 0 #fff);
+
+        i {
+          position: relative;
+          display: inline;
+          top: -1px;
+          margin-right: 3px;
+          font-size: 12px;
+        }
+      }
+      & > li > a:hover,
+      & > li.dropdown.open > .dropdown-toggle {
+        background-color: $navbar-default-link-hover-bg; // "transparent" is default to differentiate :hover from .active
+        color: $navbar-default-link-hover-color;
+        text-decoration: none;
+        @include box-shadow(inset 0 1px 3px #ccc);
+        .caret {
+          border-top-color: $navbar-default-link-hover-color;
+          border-bottom-color: $navbar-default-link-hover-color;
+        }
+      }
+      & > li.dropdown > a:hover .caret,
+      & > li.dropdown > a:focus .caret {
+        border-top-color: $navbar-default-link-hover-color;
+        border-bottom-color: $navbar-default-link-hover-color;
+      }
+
+      & > .active > a,
+      & > .active.open > a,
+      & > .active.open.dropdown > a {
+        &,
+        &:hover,
+        &:focus {
+          font-weight:normal;
+          color: $navbar-default-link-active-color;
+          text-decoration: none;
+          background-color: $navbar-default-link-active-bg;
+          font-weight:normal;
+
+          margin-left:-2px;
+          padding-left:10px;
+
+          text-shadow:0 1px 0 rgba(0,0,0,0.4);
+          border-left:solid 1px rgba(0,0,0,0.4) !important;
+          border-right:solid 1px rgba(0,0,0,0.4);
+          border-bottom:solid 1px rgba(0,0,0,0.4);
+          border-top:solid 1px rgba(0,0,0,0.4);
+
+          @include box-shadow2(inset 0 0 10px rgba(0,0,0,0.2), inset 0 1px 1px rgba(0,0,0,0.1));
+        }
+      }
+    }
+
+    .divider-vertical {
+      height: 43px;
+      width: 1px;
+      margin: 0 0;
+      overflow: hidden;
+      @include gradient-vertical(darken($navbar-default-bg, 10%), darken($navbar-default-link-active-color, 10%));
+      border:none;
+    }
+  }
+}
+
+.nav > li > a {
+    @include transition(color .3s ease);
+    -webkit-transition-property: color, background-position, box-shadow, background-color;
+     -moz-transition-property: color, background-position, box-shadow, background-color;
+      -ms-transition-property: color, background-position, box-shadow, background-color;
+       -o-transition-property: color, background-position, box-shadow, background-color;
+          transition-property: color, background-position, box-shadow, background-color;
+}
