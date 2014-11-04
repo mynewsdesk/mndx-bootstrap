@@ -607,19 +607,19 @@ $alert-padding:               15px;
 $alert-border-radius:         $border-radius-base;
 $alert-link-font-weight:      bold;
 
-$alert-success-bg:            $state-success-text;
+$alert-success-bg:            $brand-success;
 $alert-success-text:          #fff;
 $alert-success-border:        $state-success-border;
 
-$alert-info-bg:               $state-info-text;
+$alert-info-bg:               $brand-info;
 $alert-info-text:             #fff;
 $alert-info-border:           $state-info-border;
 
-$alert-warning-bg:            $state-warning-text;
+$alert-warning-bg:            $brand-warning;
 $alert-warning-text:          #fff;
 $alert-warning-border:        $state-warning-border;
 
-$alert-danger-bg:             $state-danger-text;
+$alert-danger-bg:             $brand-danger;
 $alert-danger-text:           #fff;
 $alert-danger-border:         $state-danger-border;
 
