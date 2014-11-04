@@ -1,9 +1,13 @@
 {
   "name": "mnd-bootstrap",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "",
   "main": "Gruntfile.js",
   "author": "Zoee Silcock",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/mynewsdesk/mnd-bootstrap.git"
+  },
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-sass": "~0.3.0",
