@@ -46,12 +46,16 @@ module.exports = function(grunt) {
     },
 
     'gh-pages': {
-      dist: {
+      styleguide: {
         options: {
           base: 'public'
         },
         src: ['**']
       }
+    },
+
+    bumpup: {
+      files: ['package.json', 'bower.json']
     }
   });
 
@@ -60,6 +64,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-hologram');
   grunt.loadNpmTasks('grunt-express-server');
   grunt.loadNpmTasks('grunt-gh-pages');
+  grunt.loadNpmTasks('grunt-bumpup');
+
   grunt.registerTask('default', ['sass', 'hologram', 'express', 'watch']);
-  grunt.registerTask('deploy', ['sass', 'hologram', 'gh-pages']);
+  grunt.registerTask('deploy', ['sass', 'hologram', 'bumpup', 'gh-pages']);
 };
