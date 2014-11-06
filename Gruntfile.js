@@ -1,5 +1,6 @@
 module.exports = function(grunt) {
   grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
     sass: {
       dist: {
         files: {
@@ -51,6 +52,13 @@ module.exports = function(grunt) {
           base: 'public'
         },
         src: ['**']
+      },
+      master: {
+        options: {
+          tag: "<%= pkg.version %>",
+          branch: 'style-guide'
+        },
+        src: "**"
       }
     },
 
