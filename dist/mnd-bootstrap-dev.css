@@ -4085,40 +4085,40 @@ a.thumbnail.active {
     color: inherit; }
 
 .alert-success {
-  background-color: #f5f8eb;
+  background-color: #9bb83c;
   border-color: #f5f8eb;
-  color: #9bb83c; }
+  color: #fff; }
   .alert-success hr {
     border-top-color: #ecf1d8; }
   .alert-success .alert-link {
-    color: #7b922f; }
+    color: #e6e6e6; }
 
 .alert-info {
-  background-color: #ebf5f9;
+  background-color: #389bca;
   border-color: #ebf5f9;
-  color: #389bca; }
+  color: #fff; }
   .alert-info hr {
     border-top-color: #d7ebf3; }
   .alert-info .alert-link {
-    color: #2c7da3; }
+    color: #e6e6e6; }
 
 .alert-warning {
-  background-color: #fdfde9;
+  background-color: #caca17;
   border-color: #fdfde9;
-  color: #caca17; }
+  color: #fff; }
   .alert-warning hr {
     border-top-color: #fbfbd2; }
   .alert-warning .alert-link {
-    color: #9c9c12; }
+    color: #e6e6e6; }
 
 .alert-danger {
-  background-color: #fceae8;
+  background-color: #e53221;
   border-color: #fceae8;
-  color: #e53221; }
+  color: #fff; }
   .alert-danger hr {
     border-top-color: #f9d5d1; }
   .alert-danger .alert-link {
-    color: #bd2516; }
+    color: #e6e6e6; }
 
 @-webkit-keyframes progress-bar-stripes {
   from {
@@ -5416,6 +5416,11 @@ button.close {
 */
 body {
   -webkit-font-smoothing: initial; }
+  body #sb-site a[name] {
+    content: "";
+    display: block;
+    height: 76px;
+    margin-top: -76px; }
 
 .btn-ghost {
   background-color: transparent; }
