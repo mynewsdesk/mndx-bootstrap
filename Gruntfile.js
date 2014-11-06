@@ -43,6 +43,15 @@ module.exports = function(grunt) {
           script: 'dev_server.js'
         }
       }
+    },
+
+    'gh-pages': {
+      dist: {
+        options: {
+          base: 'public'
+        },
+        src: ['**']
+      }
     }
   });
 
@@ -50,5 +59,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-hologram');
   grunt.loadNpmTasks('grunt-express-server');
+  grunt.loadNpmTasks('grunt-gh-pages');
   grunt.registerTask('default', ['sass', 'hologram', 'express', 'watch']);
+  grunt.registerTask('deploy', ['sass', 'hologram', 'gh-pages']);
 };
