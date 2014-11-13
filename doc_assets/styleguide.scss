@@ -75,3 +75,8 @@ nav.navbar {
 .brand-danger  {
   background: $brand-danger;
 }
+
+.button-demo-column {
+  display: table-cell;
+  padding-right: 15px;
+}
