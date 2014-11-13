@@ -1,0 +1,12 @@
+{
+  "name": "mnd-bootstrap",
+  "version": "0.0.6",
+  "description": "",
+  "main": "Gruntfile.js",
+  "author": "Zoee Silcock",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-sass": "~0.3.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}
