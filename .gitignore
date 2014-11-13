@@ -1,5 +1,6 @@
-bower_components
-node_modules
-.sass-cache
+.sass-cache/
+_site/
+node_modules/
+bower_components/
 public
 dist
