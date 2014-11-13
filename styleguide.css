@@ -39,6 +39,20 @@
   </div>
 </div>
  */
+/*doc
+ ---
+ title: Colors extended
+ name: colors extended
+ category: Base
+ ---
+
+ Those are the colors that you can use
+<div class="clearfix">
+  <div class="color-box gray-lightest">
+    <span>$gray-lightest</span>
+  </div>
+</div>
+ */
 body {
   padding-bottom: 60px; }
 
@@ -82,6 +96,9 @@ nav.navbar .navbar-header {
 .gray-lighter {
   background: #eeeeee; }
 
+.gray-lightest {
+  background: #f9f9f9; }
+
 .brand-primary {
   background: #f1f1f1; }
 
@@ -96,5 +113,9 @@ nav.navbar .navbar-header {
 
 .brand-danger {
   background: #e53221; }
+
+.button-demo-column {
+  display: table-cell;
+  padding-right: 15px; }
 
 /*# sourceMappingURL=styleguide.css.map */

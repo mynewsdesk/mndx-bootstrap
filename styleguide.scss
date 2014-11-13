@@ -1,4 +1,5 @@
 @import "../src/mnd-bootstrap/variables";
+@import "../src/mnd-bootstrap/variables_extended";
 $sg-default-space: 15px;
 
 body{
@@ -56,6 +57,9 @@ nav.navbar {
 .gray-lighter {
   background: $gray-lighter;
 }
+.gray-lightest {
+  background: $gray-lightest;
+}
 .brand-primary {
   background: $brand-primary;
 }
@@ -70,4 +74,9 @@ nav.navbar {
 }
 .brand-danger  {
   background: $brand-danger;
+}
+
+.button-demo-column {
+  display: table-cell;
+  padding-right: 15px;
 }
