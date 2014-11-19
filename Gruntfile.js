@@ -52,13 +52,6 @@ module.exports = function(grunt) {
           base: 'public'
         },
         src: ['**']
-      },
-      master: {
-        options: {
-          tag: "<%= pkg.version %>",
-          branch: 'style-guide'
-        },
-        src: "**"
       }
     },
 
