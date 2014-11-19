@@ -51,6 +51,9 @@
   <div class="color-box gray-lightest">
     <span>$gray-lightest</span>
   </div>
+  <div class="color-box white">
+    <span>$white</span>
+  </div>
 </div>
  */
 body {
@@ -88,7 +91,7 @@ nav.navbar .navbar-header {
   background: #333333; }
 
 .gray {
-  background: #666; }
+  background: #666666; }
 
 .gray-light {
   background: #999999; }
@@ -98,6 +101,11 @@ nav.navbar .navbar-header {
 
 .gray-lightest {
   background: #f9f9f9; }
+
+.white {
+  background: white;
+  border: 1px solid black;
+  color: black; }
 
 .brand-primary {
   background: #f1f1f1; }
@@ -117,5 +125,3 @@ nav.navbar .navbar-header {
 .button-demo-column {
   display: table-cell;
   padding-right: 15px; }
-
-/*# sourceMappingURL=styleguide.css.map */

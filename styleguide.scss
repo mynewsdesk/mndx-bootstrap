@@ -60,6 +60,11 @@ nav.navbar {
 .gray-lightest {
   background: $gray-lightest;
 }
+.white {
+  background: $white;
+  border: 1px solid black;
+  color: black;
+}
 .brand-primary {
   background: $brand-primary;
 }
