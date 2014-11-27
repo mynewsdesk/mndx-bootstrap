@@ -6,13 +6,14 @@
   ],
   "description": "MND theme for Bootstrap.",
   "main": [
+    "src/bootstrap.scss",
     "src/mnd-bootstrap.scss",
     "src/mnd-bootstrap/*.scss"
   ],
   "keywords": [
     "bootstrap"
   ],
-  "devDependencies": {
+  "dependencies": {
     "bootstrap-sass-twbs": "*"
   },
   "ignore": [
