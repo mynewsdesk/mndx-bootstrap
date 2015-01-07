@@ -6,7 +6,12 @@ var notify = require('gulp-notify');
 
 // Dev task: build, serve and watch
 gulp.task('default', function() {
-  gulp.start('hologram', 'webserver');
+  gulp.start('hologram', 'webserver', 'watch');
+});
+
+// Recompile the styleguide on scss file change
+gulp.task('watch', function() {
+  gulp.watch('src/**/*.scss', ['hologram']);
 });
 
 // Compile sass files
