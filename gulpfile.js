@@ -1,11 +1,12 @@
 var gulp = require('gulp');
 var sass = require('gulp-ruby-sass');
 var hologram = require('gulp-hologram');
+var webserver = require('gulp-webserver');
 var notify = require('gulp-notify');
 
 // Dev task: build, serve and watch
 gulp.task('default', function() {
-  gulp.start('hologram');
+  gulp.start('hologram', 'webserver');
 });
 
 // Compile sass files
@@ -22,4 +23,12 @@ gulp.task('hologram', ['sass'], function() {
   return gulp.src('hologram_config.yml')
     .pipe(hologram())
     .pipe(notify({message: 'Hologram task complete'}));
+});
+
+// Serve the style-guide
+gulp.task('webserver', function() {
+  gulp.src('public')
+    .pipe(webserver({
+      livereload: true
+    }));
 });
