@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-ruby-sass');
 var bump = require('gulp-bump');
+var deploy = require('gulp-gh-pages');
 var git = require('gulp-git');
 var hologram = require('gulp-hologram');
 var webserver = require('gulp-webserver');
@@ -81,4 +82,10 @@ gulp.task('rails-assets', function(done) {
 
       done();
     });
+});
+
+// Push ./public to gh-pages after hologram build
+gulp.task('gh-pages', ['hologram'], function() {
+  return gulp.src('./public/**/*')
+    .pipe(deploy());
 });
