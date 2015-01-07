@@ -9,5 +9,6 @@
     "url": "https://github.com/mynewsdesk/mnd-bootstrap.git"
   },
   "devDependencies": {
+    "gulp": "^3.8.10"
   }
 }
