@@ -10,6 +10,8 @@
   },
   "devDependencies": {
     "gulp": "^3.8.10",
+    "gulp-bump": "^0.1.11",
+    "gulp-git": "^0.5.5",
     "gulp-hologram": "^1.2.0",
     "gulp-notify": "^2.1.0",
     "gulp-ruby-sass": "^0.7.1",
