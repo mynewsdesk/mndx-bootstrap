@@ -1,13 +1,13 @@
 var gulp = require('gulp');
-var sass = require('gulp-ruby-sass');
 var bump = require('gulp-bump');
 var deploy = require('gulp-gh-pages');
 var git = require('gulp-git');
 var hologram = require('gulp-hologram');
-var webserver = require('gulp-webserver');
 var notify = require('gulp-notify');
 var runSequence = require('run-sequence');
 var request = require('superagent');
+var sass = require('gulp-ruby-sass');
+var webserver = require('gulp-webserver');
 
 var argv = require('yargs')
   .default('level', 'minor')
