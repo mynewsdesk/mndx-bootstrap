@@ -52,3 +52,19 @@ gulp.task('bump', function() {
     .pipe(gulp.dest('./'))
     .pipe(git.commit('bump version number'));
 });
+
+// Tag and git push
+gulp.task('tag', ['bump'], function(cb) {
+  var packageJson = require('./package.json');
+  var v = packageJson.version;
+  var message = 'release v'+v;
+
+  git.tag(v, message, function(e) {
+    if (e) throw e;
+    git.push('origin', 'gulp', {args: '--tags'}, function(e) {
+      if (e) throw e;
+
+      cb();
+    });
+  });
+});
