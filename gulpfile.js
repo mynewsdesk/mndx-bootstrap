@@ -6,6 +6,7 @@ var git = require('gulp-git');
 var hologram = require('gulp-hologram');
 var webserver = require('gulp-webserver');
 var notify = require('gulp-notify');
+var runSequence = require('run-sequence');
 var request = require('superagent');
 
 var argv = require('yargs')
@@ -15,6 +16,11 @@ var argv = require('yargs')
 // Dev task: build, serve and watch
 gulp.task('default', function() {
   gulp.start('hologram', 'webserver', 'watch');
+});
+
+// Release a new version and update the doc (style-guide)
+gulp.task('release', function(done) {
+  runSequence('tag', 'rails-assets', 'gh-pages', done);
 });
 
 // Recompile the styleguide on scss file change
