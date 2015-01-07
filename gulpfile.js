@@ -1,8 +1,14 @@
 var gulp = require('gulp');
 var sass = require('gulp-ruby-sass');
+var bump = require('gulp-bump');
+var git = require('gulp-git');
 var hologram = require('gulp-hologram');
 var webserver = require('gulp-webserver');
 var notify = require('gulp-notify');
+
+var argv = require('yargs')
+  .default('level', 'minor')
+  .argv;
 
 // Dev task: build, serve and watch
 gulp.task('default', function() {
@@ -36,4 +42,13 @@ gulp.task('webserver', function() {
     .pipe(webserver({
       livereload: true
     }));
+});
+
+// Increment version number
+gulp.task('bump', function() {
+  var importance = argv.level || 'minor';
+  return gulp.src(['./package.json', './bower.json'])
+    .pipe(bump({type: importance}))
+    .pipe(gulp.dest('./'))
+    .pipe(git.commit('bump version number'));
 });
