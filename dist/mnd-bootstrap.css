@@ -1,0 +1,540 @@
+/*doc
+ ---
+ title: Colors
+ name: colors
+ category: Base
+ ---
+
+ Those are the colors that you can use
+<div class="clearfix">
+  <div class="color-box gray-darker">
+    <span>$gray-darker</span>
+  </div>
+  <div class="color-box gray-dark">
+    <span>$gray-dark</span>
+  </div>
+  <div class="color-box gray">
+    <span>$gray</span>
+  </div>
+  <div class="color-box gray-light">
+    <span>$gray-light</span>
+  </div>
+  <div class="color-box gray-lighter">
+    <span>$gray-lighter</span>
+  </div>
+  <div class="color-box brand-primary">
+    <span>$brand-primary</span>
+  </div>
+  <div class="color-box brand-success">
+    <span>$brand-success</span>
+  </div>
+  <div class="color-box brand-info">
+    <span>$brand-info</span>
+  </div>
+  <div class="color-box brand-warning">
+    <span>$brand-warning</span>
+  </div>
+  <div class="color-box brand-danger">
+    <span>$brand-danger</span>
+  </div>
+</div>
+ */
+/*doc
+ ---
+ title: Colors extended
+ name: colors extended
+ category: Base
+ ---
+
+ Those are the colors that you can use
+<div class="clearfix">
+  <div class="color-box gray-lightest">
+    <span>$gray-lightest</span>
+  </div>
+  <div class="color-box white">
+    <span>$white</span>
+  </div>
+</div>
+ */
+ /*doc
+ ---
+ title: Navigation
+ name: navigation
+ category: Base
+ ---
+ This is the navigation section....
+
+*/
+ /*doc
+ ---
+ title: Buttons
+ name: buttons
+ category: Base
+ ---
+ This is the buttons section....
+
+*/
+ /*doc
+ ---
+ title: Alerts
+ name: alerts
+ category: Base
+ ---
+ Alerts should always starts with a word that tell the user more about the feedback in short.
+
+```html_example
+<div class="alert alert-success" role="alert"><strong>Wohooo!</strong> Thanks for signing up!</div>
+<div class="alert alert-info" role="alert"><strong>Morning!</strong> Looks like you are happy today!</div>
+<div class="alert alert-warning" role="alert"><strong>Ooops!</strong> Your account will expire in two days!</div>
+<div class="alert alert-danger" role="alert"><strong>Grrr!</strong> Don't drop coffee on my keyboard again!</div>
+```
+
+*/
+ /*doc
+ ---
+ title: Helper Classes
+ name: helperclasses
+ category: Base
+ ---
+ This is the Helper Classes section....
+
+*/
+body {
+  -webkit-font-smoothing: initial;
+}
+body #sb-site a[name] {
+  content: "";
+  display: block;
+  height: 76px;
+  margin-top: -76px;
+}
+
+.btn-ghost {
+  background-color: transparent;
+}
+.btn-ghost.btn-success {
+  color: #8ba536;
+}
+.btn-ghost.btn-success:hover {
+  color: white;
+}
+.btn-ghost.btn-info {
+  color: #318cb8;
+}
+.btn-ghost.btn-info:hover {
+  color: white;
+}
+.btn-ghost.btn-warning {
+  color: #b3b314;
+}
+.btn-ghost.btn-warning:hover {
+  color: white;
+}
+.btn-ghost.btn-danger {
+  color: #d42919;
+}
+.btn-ghost.btn-danger:hover {
+  color: white;
+}
+
+/*doc
+ ---
+ title: Typography
+ name: typography
+ category: Base
+ ---
+ This is the Typography section....
+
+  <div class="styleguide-example">
+    <h1>h1. Bootstrap heading <small>with small text</small></h1>
+    <h2>h2. Bootstrap heading <small>with small text</small></h2>
+    <h3>h3. Bootstrap heading <small>with small text</small></h3>
+    <h4>h4. Bootstrap heading <small>with small text</small></h4>
+    <h5>h5. Bootstrap heading <small>with small text</small></h5>
+    <h6>h6. Bootstrap heading <small>with small text</small></h6>
+  </div>
+
+*/
+.table tbody > tr > td.vert-align {
+  vertical-align: middle;
+}
+
+/*doc
+ ---
+ title: Jumbotron
+ name: jumbotron
+ category: Base
+ ---
+ This is the jumbotron section....
+
+<div class="styleguide-example">
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Sign up for this magic tool</h1>
+        <p>Bacon ipsum dolor sit amet leberkas corned beef beef hamburger chicken rump ham. Short ribs bresaola shank, chicken pancetta ground round cow prosciutto.</p>
+        <form accept-charset="UTF-8" action="/" method="post" role="form">
+          <div class="form-group col-sm-8 col-md text-left">
+            <label class="sr-only" for="user_email">Enter email</label>
+            <input class="form-control" id="user_email" name="user[email]" placeholder="Enter email" type="email">
+          </div>
+          <div class="form-group col-sm-4">
+            <input class="btn btn-success col-xs-12" name="commit" type="submit" value="Sign up">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+```html_example
+<div class="jumbotron">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>Sign up for this magic tool</h1>
+      <p>Bacon ipsum dolor sit amet leberkas corned beef beef hamburger chicken rump ham.</p>
+      <form accept-charset="UTF-8" action="/" method="post" role="form">
+        <div class="form-group col-sm-8 col-md text-left">
+          <label class="sr-only" for="user_email">Enter email</label>
+          <input class="form-control" id="user_email" name="user[email]" placeholder="Enter email" type="email">
+        </div>
+        <div class="form-group col-sm-4">
+          <input class="btn btn-success col-xs-12" name="commit" type="submit" value="Sign up">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+```
+*/
+.jumbotron {
+  background-color: white;
+  border-radius: 4px;
+  text-align: center;
+  padding: 28px 42px 42px 42px;
+}
+.jumbotron form {
+  display: inline-block;
+  width: 100%;
+  margin-top: 14px;
+}
+.jumbotron h1 {
+  font-size: 28px;
+  margin-bottom: 14px;
+  color: #222222;
+  font-weight: bold;
+}
+.jumbotron p {
+  font-size: 14px;
+  font-weight: normal;
+  color: #666666;
+}
+
+@media screen and (min-width: 768px) {
+  .jumbotron form input {
+    float: right;
+  }
+  .jumbotron form button {
+    float: left;
+  }
+}
+/*doc
+ ---
+ title: Buttons
+ name: Buttons
+ category: Base
+ ---
+
+<div class="button-demo-column">
+  <p class="button-demo">
+    <button class="btn btn-default btn-lg">Default</button>
+  </p>
+  <p class="button-demo">
+    <button class="btn btn-default">Default</button>
+  </p>
+  <p class="button-demo">
+    <button class="btn btn-default btn-sm">Default</button>
+  </p>
+  <p class="button-demo">
+    <button class="btn btn-default btn-xs">Default</button>
+  </p>
+</div>
+<div class="button-demo-column">
+  <p class="button-demo">
+    <button class="btn btn-info btn-lg">Info</button>
+  </p>
+  <p class="button-demo">
+    <button class="btn btn-info">Info</button>
+  </p>
+  <p class="button-demo">
+    <button class="btn btn-info btn-sm">Info</button>
+  </p>
+  <p class="button-demo">
+    <button class="btn btn-info btn-xs">Info</button>
+  </p>
+</div>
+<div class="button-demo-column">
+  <p class="button-demo">
+    <button class="btn btn-primary btn-lg">Primary</button>
+  </p>
+  <p class="button-demo">
+    <button class="btn btn-primary">Primary</button>
+  </p>
+  <p class="button-demo">
+    <button class="btn btn-primary btn-sm">Primary</button>
+  </p>
+  <p class="button-demo">
+    <button class="btn btn-primary btn-xs">Primary</button>
+  </p>
+</div>
+<div class="button-demo-column">
+  <p class="button-demo">
+    <button class="btn btn-success btn-lg">Success</button>
+  </p>
+  <p class="button-demo">
+    <button class="btn btn-success">Success</button>
+  </p>
+  <p class="button-demo">
+    <button class="btn btn-success btn-sm">Success</button>
+  </p>
+  <p class="button-demo">
+    <button class="btn btn-success btn-xs">Success</button>
+  </p>
+</div>
+<div class="button-demo-column">
+  <p class="button-demo">
+    <button class="btn btn-warning btn-lg">Warning</button>
+  </p>
+  <p class="button-demo">
+    <button class="btn btn-warning">Warning</button>
+  </p>
+  <p class="button-demo">
+    <button class="btn btn-warning btn-sm">Warning</button>
+  </p>
+  <p class="button-demo">
+    <button class="btn btn-warning btn-xs">Warning</button>
+  </p>
+</div>
+<div class="button-demo-column">
+  <p class="button-demo">
+    <button class="btn btn-danger btn-lg">Danger</button>
+  </p>
+  <p class="button-demo">
+    <button class="btn btn-danger">Danger</button>
+  </p>
+  <p class="button-demo">
+    <button class="btn btn-danger btn-sm">Danger</button>
+  </p>
+  <p class="button-demo">
+    <button class="btn btn-danger btn-xs">Danger</button>
+  </p>
+</div>
+
+```
+  <button class="btn btn-default btn-lg">Default</button>
+  <button class="btn btn-default">Default</button>
+  <button class="btn btn-default btn-sm">Default</button>
+  <button class="btn btn-default btn-xs">Default</button>
+
+  <button class="btn btn-info btn-lg">Info</button>
+  <button class="btn btn-info">Info</button>
+  <button class="btn btn-info btn-sm">Info</button>
+  <button class="btn btn-info btn-xs">Info</button>
+
+  <button class="btn btn-primary btn-lg">Primary</button>
+  <button class="btn btn-primary">Primary</button>
+  <button class="btn btn-primary btn-sm">Primary</button>
+  <button class="btn btn-primary btn-xs">Primary</button>
+
+  <button class="btn btn-success btn-lg">Success</button>
+  <button class="btn btn-success">Success</button>
+  <button class="btn btn-success btn-sm">Success</button>
+  <button class="btn btn-success btn-xs">Success</button>
+
+  <button class="btn btn-warning btn-lg">Warning</button>
+  <button class="btn btn-warning">Warning</button>
+  <button class="btn btn-warning btn-sm">Warning</button>
+  <button class="btn btn-warning btn-xs">Warning</button>
+
+  <button class="btn btn-danger btn-lg">Danger</button>
+  <button class="btn btn-danger">Danger</button>
+  <button class="btn btn-danger btn-sm">Danger</button>
+  <button class="btn btn-danger btn-xs">Danger</button>
+```
+*/
+.btn, .btn-ghost {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.btn:focus, .btn-ghost:focus, .btn:active:focus, .btn-ghost:active:focus, .btn.active:focus, .active.btn-ghost:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn:hover, .btn-ghost:hover, .btn:focus, .btn-ghost:focus {
+  color: #333333;
+  text-decoration: none;
+}
+.btn:active, .btn-ghost:active, .btn.active, .active.btn-ghost {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn.disabled, .disabled.btn-ghost, .btn[disabled], [disabled].btn-ghost, fieldset[disabled] .btn, fieldset[disabled] .btn-ghost {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn-default {
+  color: #333333;
+  background-color: white;
+  border-color: #cccccc;
+}
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+  color: #333333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+  background-image: none;
+}
+.btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled.focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled].focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {
+  background-color: white;
+  border-color: #cccccc;
+}
+.btn-default .badge {
+  color: white;
+  background-color: #333333;
+}
+
+.btn-primary {
+  color: #666666;
+  background-color: #f1f1f1;
+  border-color: #d7d7d7;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+  color: #666666;
+  background-color: #d7d7d7;
+  border-color: #b9b9b9;
+}
+.btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+  background-image: none;
+}
+.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
+  background-color: #f1f1f1;
+  border-color: #d7d7d7;
+}
+.btn-primary .badge {
+  color: #f1f1f1;
+  background-color: #666666;
+}
+
+.btn-success {
+  color: white;
+  background-color: #9bb83c;
+  border-color: #8ba536;
+}
+.btn-success:hover, .btn-success:focus, .btn-success.focus, .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
+  color: white;
+  background-color: #7b922f;
+  border-color: #647727;
+}
+.btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
+  background-image: none;
+}
+.btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled.focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled].focus, .btn-success[disabled]:active, .btn-success[disabled].active, fieldset[disabled] .btn-success, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success.focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success.active {
+  background-color: #9bb83c;
+  border-color: #8ba536;
+}
+.btn-success .badge {
+  color: #9bb83c;
+  background-color: white;
+}
+
+.btn-danger {
+  color: white;
+  background: #e53221;
+}
+.btn-danger:hover {
+  background: #f0867c;
+}
+
+.btn-link {
+  color: #2e88be;
+  font-weight: normal;
+  cursor: pointer;
+  border-radius: 0;
+}
+.btn-link, .btn-link:active, .btn-link[disabled], fieldset[disabled] .btn-link {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
+  border-color: transparent;
+}
+.btn-link:hover, .btn-link:focus {
+  color: #1f5c80;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.btn-link[disabled]:hover, .btn-link[disabled]:focus, fieldset[disabled] .btn-link:hover, fieldset[disabled] .btn-link:focus {
+  color: #999999;
+  text-decoration: none;
+}
+
+.btn-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+
+.btn-xs {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+
+input[type="submit"].btn-block,
+input[type="reset"].btn-block,
+input[type="button"].btn-block {
+  width: 100%;
+}

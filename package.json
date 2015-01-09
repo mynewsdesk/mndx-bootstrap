@@ -9,13 +9,16 @@
     "url": "https://github.com/mynewsdesk/mnd-bootstrap.git"
   },
   "devDependencies": {
-    "express": "^4.9.5",
-    "grunt": "~0.4.2",
-    "grunt-bumpup": "^0.6.2",
-    "grunt-contrib-sass": "~0.8.1",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-express-server": "^0.4.19",
-    "grunt-gh-pages": "^0.9.1",
-    "grunt-hologram": "0.0.4"
+    "gulp": "^3.8.10",
+    "gulp-bump": "^0.1.11",
+    "gulp-gh-pages": "^0.4.0",
+    "gulp-git": "^0.5.5",
+    "gulp-hologram": "^1.2.0",
+    "gulp-notify": "^2.1.0",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-webserver": "^0.9.0",
+    "run-sequence": "^1.0.2",
+    "superagent": "^0.21.0",
+    "yargs": "^1.3.3"
   }
 }
