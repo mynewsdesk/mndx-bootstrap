@@ -2,25 +2,16 @@
  ---
  title: Navigation
  name: navigation
- category: Base
+ category: CSS
  ---
  This is the navigation section....
 
 */
  /*doc
  ---
- title: Buttons
- name: buttons
- category: Base
- ---
- This is the buttons section....
-
-*/
- /*doc
- ---
  title: Alerts
  name: alerts
- category: Base
+ category: CSS
  ---
  Alerts should always starts with a word that tell the user more about the feedback in short.
 
@@ -30,15 +21,6 @@
 <div class="alert alert-warning" role="alert"><strong>Ooops!</strong> Your account will expire in two days!</div>
 <div class="alert alert-danger" role="alert"><strong>Grrr!</strong> Don't drop coffee on my keyboard again!</div>
 ```
-
-*/
- /*doc
- ---
- title: Helper Classes
- name: helperclasses
- category: Base
- ---
- This is the Helper Classes section....
 
 */
 
@@ -89,7 +71,7 @@ body {
  ---
  title: Typography
  name: typography
- category: Base
+ category: CSS
  ---
  This is the Typography section....
 
