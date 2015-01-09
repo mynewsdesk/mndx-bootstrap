@@ -8,27 +8,6 @@ body{
   padding-bottom: ceil($sg-default-space * 4);
 }
 
-/* style nav specific - Temporary until we have the navigation implemented in our bootstrap theme */
-nav.navbar {
-  .navbar-header {
-    margin: $sg-default-space;
-  }
-}
-/* end temporary styling of our navigation*/
-
-
-.styleguide-example {
-  padding: $sg-default-space;
-  background-color: #f1f1f1;
-
-  &.light {
-    background-color: #fff;
-  }
-  &.dark {
-    background-color: #333;
-  }
-}
-
 .color-box {
   width: 150px;
   height: 150px;
