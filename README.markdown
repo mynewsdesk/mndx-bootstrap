@@ -10,6 +10,8 @@ http://mynewsdesk.github.io/mnd-bootstrap/
 
 ## Installation
 
+If you are in a rails app and you are not using bower to manage your frontent depdencies:
+
 Add this line you your Gemfile:
 ```
 gem 'rails-assets-mnd-bootstrap'
@@ -18,6 +20,11 @@ gem 'rails-assets-mnd-bootstrap'
 And then execute:
 ```
 bundle
+```
+
+If you are using bower:
+```
+bower install --save mnd-bootstrap
 ```
 
 ## Usage
@@ -33,6 +40,7 @@ bundle
 To setup the development environment you need to install the node and bower
 components:
 ```
+gem install hologram
 npm install -g gulp
 npm install
 bower install
