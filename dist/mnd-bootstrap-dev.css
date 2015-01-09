@@ -2,7 +2,7 @@
  ---
  title: Colors
  name: colors
- category: Base
+ category: CSS
  ---
 
  Those are the colors that you can use
@@ -39,7 +39,7 @@
   </div>
 </div>
  */
-/* normalize.css v3.0.2 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -232,7 +232,7 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -260,13 +260,13 @@ th {
   padding: 0;
 }
 
-/* Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
   *,
   *:before,
   *:after {
     background: transparent !important;
-    color: black !important;
+    color: #000 !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
@@ -291,7 +291,7 @@ th {
 
   pre,
   blockquote {
-    border: 1px solid #999999;
+    border: 1px solid #999;
     page-break-inside: avoid;
   }
 
@@ -321,7 +321,7 @@ th {
   }
 
   select {
-    background: white !important;
+    background: #fff !important;
   }
 
   .navbar {
@@ -331,11 +331,11 @@ th {
   .btn > .caret, .btn-ghost > .caret,
   .dropup > .btn > .caret,
   .dropup > .btn-ghost > .caret {
-    border-top-color: black !important;
+    border-top-color: #000 !important;
   }
 
   .label {
-    border: 1px solid black;
+    border: 1px solid #000;
   }
 
   .table {
@@ -343,12 +343,12 @@ th {
   }
   .table td,
   .table th {
-    background-color: white !important;
+    background-color: #fff !important;
   }
 
   .table-bordered th,
   .table-bordered td {
-    border: 1px solid #dddddd !important;
+    border: 1px solid #ddd !important;
   }
 }
 @font-face {
@@ -5001,7 +5001,7 @@ tbody.collapse.in {
 
 .label {
   display: inline;
-  padding: 0.2em 0.6em 0.3em;
+  padding: .2em .6em .3em;
   font-size: 75%;
   font-weight: bold;
   line-height: 1;
@@ -6399,7 +6399,7 @@ button.close {
 }
 @media all and (transform-3d), (-webkit-transform-3d) {
   .carousel-inner > .item {
-    transition: transform 0.6s ease-in-out;
+    transition: transform .6s ease-in-out;
     backface-visibility: hidden;
     perspective: 1000;
   }
@@ -6536,7 +6536,7 @@ button.close {
   border: 1px solid white;
   border-radius: 10px;
   cursor: pointer;
-  background-color: black \9;
+  background-color: #000 \9;
   background-color: rgba(0, 0, 0, 0);
 }
 .carousel-indicators .active {
@@ -6887,7 +6887,7 @@ button.close {
  ---
  title: Colors extended
  name: colors extended
- category: Base
+ category: CSS
  ---
 
  Those are the colors that you can use
@@ -6904,43 +6904,33 @@ button.close {
  ---
  title: Navigation
  name: navigation
- category: Base
+ category: CSS
  ---
  This is the navigation section....
 
 */
  /*doc
  ---
- title: Buttons
- name: buttons
- category: Base
- ---
- This is the buttons section....
-
-*/
- /*doc
- ---
  title: Alerts
  name: alerts
- category: Base
+ category: CSS
  ---
  Alerts should always starts with a word that tell the user more about the feedback in short.
 
 ```html_example
-<div class="alert alert-success" role="alert"><strong>Wohooo!</strong> Thanks for signing up!</div>
-<div class="alert alert-info" role="alert"><strong>Morning!</strong> Looks like you are happy today!</div>
-<div class="alert alert-warning" role="alert"><strong>Ooops!</strong> Your account will expire in two days!</div>
-<div class="alert alert-danger" role="alert"><strong>Grrr!</strong> Don't drop coffee on my keyboard again!</div>
+<div class="alert alert-success" role="alert">
+  <strong>Wohooo!</strong> Thanks for signing up!
+</div>
+<div class="alert alert-info" role="alert">
+  <strong>Morning!</strong> Looks like you are happy today!
+</div>
+<div class="alert alert-warning" role="alert">
+  <strong>Ooops!</strong> Your account will expire in two days!
+</div>
+<div class="alert alert-danger" role="alert">
+  <strong>Grrr!</strong> Don't drop coffee on my keyboard again!
+</div>
 ```
-
-*/
- /*doc
- ---
- title: Helper Classes
- name: helperclasses
- category: Base
- ---
- This is the Helper Classes section....
 
 */
 body {
@@ -6985,19 +6975,18 @@ body #sb-site a[name] {
  ---
  title: Typography
  name: typography
- category: Base
+ category: CSS
  ---
  This is the Typography section....
 
-  <div class="styleguide-example">
-    <h1>h1. Bootstrap heading <small>with small text</small></h1>
-    <h2>h2. Bootstrap heading <small>with small text</small></h2>
-    <h3>h3. Bootstrap heading <small>with small text</small></h3>
-    <h4>h4. Bootstrap heading <small>with small text</small></h4>
-    <h5>h5. Bootstrap heading <small>with small text</small></h5>
-    <h6>h6. Bootstrap heading <small>with small text</small></h6>
-  </div>
-
+ ```html_example
+  <h1>h1. Bootstrap heading <small>with small text</small></h1>
+  <h2>h2. Bootstrap heading <small>with small text</small></h2>
+  <h3>h3. Bootstrap heading <small>with small text</small></h3>
+  <h4>h4. Bootstrap heading <small>with small text</small></h4>
+  <h5>h5. Bootstrap heading <small>with small text</small></h5>
+  <h6>h6. Bootstrap heading <small>with small text</small></h6>
+  ```
 */
 .table tbody > tr > td.vert-align {
   vertical-align: middle;
@@ -7007,29 +6996,9 @@ body #sb-site a[name] {
  ---
  title: Jumbotron
  name: jumbotron
- category: Base
+ category: Components
  ---
  This is the jumbotron section....
-
-<div class="styleguide-example">
-  <div class="jumbotron">
-    <div class="row">
-      <div class="col-sm-12">
-        <h1>Sign up for this magic tool</h1>
-        <p>Bacon ipsum dolor sit amet leberkas corned beef beef hamburger chicken rump ham. Short ribs bresaola shank, chicken pancetta ground round cow prosciutto.</p>
-        <form accept-charset="UTF-8" action="/" method="post" role="form">
-          <div class="form-group col-sm-8 col-md text-left">
-            <label class="sr-only" for="user_email">Enter email</label>
-            <input class="form-control" id="user_email" name="user[email]" placeholder="Enter email" type="email">
-          </div>
-          <div class="form-group col-sm-4">
-            <input class="btn btn-success col-xs-12" name="commit" type="submit" value="Sign up">
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
 
 ```html_example
 <div class="jumbotron">
@@ -7086,124 +7055,52 @@ body #sb-site a[name] {
  ---
  title: Buttons
  name: Buttons
- category: Base
+ category: CSS
  ---
 
-<div class="button-demo-column">
-  <p class="button-demo">
-    <button class="btn btn-default btn-lg">Default</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-default">Default</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-default btn-sm">Default</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-default btn-xs">Default</button>
-  </p>
-</div>
-<div class="button-demo-column">
-  <p class="button-demo">
-    <button class="btn btn-info btn-lg">Info</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-info">Info</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-info btn-sm">Info</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-info btn-xs">Info</button>
-  </p>
-</div>
-<div class="button-demo-column">
-  <p class="button-demo">
-    <button class="btn btn-primary btn-lg">Primary</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-primary">Primary</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-primary btn-sm">Primary</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-primary btn-xs">Primary</button>
-  </p>
-</div>
-<div class="button-demo-column">
-  <p class="button-demo">
-    <button class="btn btn-success btn-lg">Success</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-success">Success</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-success btn-sm">Success</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-success btn-xs">Success</button>
-  </p>
-</div>
-<div class="button-demo-column">
-  <p class="button-demo">
-    <button class="btn btn-warning btn-lg">Warning</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-warning">Warning</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-warning btn-sm">Warning</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-warning btn-xs">Warning</button>
-  </p>
-</div>
-<div class="button-demo-column">
-  <p class="button-demo">
-    <button class="btn btn-danger btn-lg">Danger</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-danger">Danger</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-danger btn-sm">Danger</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-danger btn-xs">Danger</button>
-  </p>
-</div>
+ ```html_example_table
 
-```
-  <button class="btn btn-default btn-lg">Default</button>
-  <button class="btn btn-default">Default</button>
-  <button class="btn btn-default btn-sm">Default</button>
-  <button class="btn btn-default btn-xs">Default</button>
+ <p>
+   <button class="btn btn-default btn-lg">Default</button>
+   <button class="btn btn-default">Default</button>
+   <button class="btn btn-default btn-sm">Default</button>
+   <button class="btn btn-default btn-xs">Default</button>
+ </p>
 
-  <button class="btn btn-info btn-lg">Info</button>
-  <button class="btn btn-info">Info</button>
-  <button class="btn btn-info btn-sm">Info</button>
-  <button class="btn btn-info btn-xs">Info</button>
+ <p>
+   <button class="btn btn-info btn-lg">Info</button>
+   <button class="btn btn-info">Info</button>
+   <button class="btn btn-info btn-sm">Info</button>
+   <button class="btn btn-info btn-xs">Info</button>
+ </p>
 
-  <button class="btn btn-primary btn-lg">Primary</button>
-  <button class="btn btn-primary">Primary</button>
-  <button class="btn btn-primary btn-sm">Primary</button>
-  <button class="btn btn-primary btn-xs">Primary</button>
+ <p>
+   <button class="btn btn-primary btn-lg">Primary</button>
+   <button class="btn btn-primary">Primary</button>
+   <button class="btn btn-primary btn-sm">Primary</button>
+   <button class="btn btn-primary btn-xs">Primary</button>
+ </p>
 
-  <button class="btn btn-success btn-lg">Success</button>
-  <button class="btn btn-success">Success</button>
-  <button class="btn btn-success btn-sm">Success</button>
-  <button class="btn btn-success btn-xs">Success</button>
+ <p>
+   <button class="btn btn-success btn-lg">Success</button>
+   <button class="btn btn-success">Success</button>
+   <button class="btn btn-success btn-sm">Success</button>
+   <button class="btn btn-success btn-xs">Success</button>
+ </p>
 
-  <button class="btn btn-warning btn-lg">Warning</button>
-  <button class="btn btn-warning">Warning</button>
-  <button class="btn btn-warning btn-sm">Warning</button>
-  <button class="btn btn-warning btn-xs">Warning</button>
+ <p>
+   <button class="btn btn-warning btn-lg">Warning</button>
+   <button class="btn btn-warning">Warning</button>
+   <button class="btn btn-warning btn-sm">Warning</button>
+   <button class="btn btn-warning btn-xs">Warning</button>
+ </p>
 
-  <button class="btn btn-danger btn-lg">Danger</button>
-  <button class="btn btn-danger">Danger</button>
-  <button class="btn btn-danger btn-sm">Danger</button>
-  <button class="btn btn-danger btn-xs">Danger</button>
+ <p>
+   <button class="btn btn-danger btn-lg">Danger</button>
+   <button class="btn btn-danger">Danger</button>
+   <button class="btn btn-danger btn-sm">Danger</button>
+   <button class="btn btn-danger btn-xs">Danger</button>
+ </p>
 ```
 */
 .btn, .btn-ghost {

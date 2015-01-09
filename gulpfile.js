@@ -25,17 +25,24 @@ gulp.task('release', function(done) {
 
 // Recompile the styleguide on scss file change
 gulp.task('watch', function() {
-  gulp.watch('src/**/*.scss', ['hologram']);
+  gulp.watch(['src/**/*.scss', 'doc_assets/**/*.scss' ,'doc_assets/**/*.html'], ['hologram']);
 });
 
 // Compile sass files
-gulp.task('sass', function() {
+gulp.task('sass', ['styleguide-style'], function() {
   return gulp.src('src/mnd-bootstrap*.scss')
     .pipe(sass({ style: 'expanded', loadPath: ['./bower_components/'] }))
     .on('error', function (err) { console.log(err.message); })
     .pipe(gulp.dest('dist/'))
-    .pipe(notify({message: 'Sass task complete'}));
+    .pipe(notify({message: 'Sass task complete'}))
 });
+
+gulp.task('styleguide-style', function() {
+  return gulp.src('doc_assets/styleguide.scss')
+    .pipe(sass({ style: 'expanded', loadPath: ['./bower_components/'] }))
+    .pipe(gulp.dest('public/'));
+});
+
 
 // Compile style-guide
 gulp.task('hologram', ['sass'], function() {

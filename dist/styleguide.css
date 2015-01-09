@@ -197,6 +197,23 @@ body {
   padding-bottom: 60px;
 }
 
+/* style nav specific - Temporary until we have the navigation implemented in our bootstrap theme */
+nav.navbar .navbar-header {
+  margin: 15px;
+}
+
+/* end temporary styling of our navigation*/
+.styleguide-example {
+  padding: 15px;
+  background-color: #f1f1f1;
+}
+.styleguide-example.light {
+  background-color: #fff;
+}
+.styleguide-example.dark {
+  background-color: #333;
+}
+
 .color-box {
   width: 150px;
   height: 150px;
