@@ -1,0 +1,16 @@
+/*doc
+---
+title: Alerts
+name: alerts
+category: components
+---
+ Alerts should always starts with a word that tell the user more about the feedback in short.
+
+```html_example
+<div class="alert alert-success" role="alert"><strong>Wohooo!</strong> Thanks for signing up!</div>
+<div class="alert alert-info" role="alert"><strong>Morning!</strong> Looks like you are happy today!</div>
+<div class="alert alert-warning" role="alert"><strong>Ooops!</strong> Your account will expire in two days!</div>
+<div class="alert alert-danger" role="alert"><strong>Grrr!</strong> Don't drop coffee on my keyboard again!</div>
+```
+
+*/
