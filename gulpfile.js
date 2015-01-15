@@ -37,8 +37,16 @@ gulp.task('sass', function() {
     .pipe(notify({message: 'Sass task complete'}));
 });
 
+gulp.task('styleguide-sass', function() {
+  return gulp.src('doc_assets/styleguide.scss')
+    .pipe(sass({ style: 'expanded', loadPath: ['src/', './bower_components/'] }))
+    .on('error', function (err) { console.log(err.message); })
+    .pipe(gulp.dest('public/'))
+    .pipe(notify({message: 'Sass task complete'}));
+});
+
 // Compile style-guide
-gulp.task('hologram', ['sass'], function() {
+gulp.task('hologram', ['sass',  'styleguide-sass'], function() {
   return gulp.src('hologram_config.yml')
     .pipe(hologram())
     .pipe(notify({message: 'Hologram task complete'}));
