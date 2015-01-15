@@ -77,7 +77,7 @@ gulp.task('tag', ['bump'], function(cb) {
 
   git.tag(v, message, function(e) {
     if (e) throw e;
-    git.push('origin', 'gulp', {args: '--tags'}, function(e) {
+    git.push('origin', 'style-guide', {args: '--tags'}, function(e) {
       if (e) throw e;
 
       cb();
