@@ -1,47 +1,3 @@
- /*doc
- ---
- title: Navigation
- name: navigation
- category: Base
- ---
- This is the navigation section....
-
-*/
- /*doc
- ---
- title: Buttons
- name: buttons
- category: Base
- ---
- This is the buttons section....
-
-*/
- /*doc
- ---
- title: Alerts
- name: alerts
- category: Base
- ---
- Alerts should always starts with a word that tell the user more about the feedback in short.
-
-```html_example
-<div class="alert alert-success" role="alert"><strong>Wohooo!</strong> Thanks for signing up!</div>
-<div class="alert alert-info" role="alert"><strong>Morning!</strong> Looks like you are happy today!</div>
-<div class="alert alert-warning" role="alert"><strong>Ooops!</strong> Your account will expire in two days!</div>
-<div class="alert alert-danger" role="alert"><strong>Grrr!</strong> Don't drop coffee on my keyboard again!</div>
-```
-
-*/
- /*doc
- ---
- title: Helper Classes
- name: helperclasses
- category: Base
- ---
- This is the Helper Classes section....
-
-*/
-
 // Import any other files and define general styles here.
 body {
   -webkit-font-smoothing: initial;
@@ -84,23 +40,4 @@ body {
   }
   // .btn-primary only needs the transparent background.
 }
-
-/*doc
- ---
- title: Typography
- name: typography
- category: Base
- ---
- This is the Typography section....
-
-  <div class="styleguide-example">
-    <h1>h1. Bootstrap heading <small>with small text</small></h1>
-    <h2>h2. Bootstrap heading <small>with small text</small></h2>
-    <h3>h3. Bootstrap heading <small>with small text</small></h3>
-    <h4>h4. Bootstrap heading <small>with small text</small></h4>
-    <h5>h5. Bootstrap heading <small>with small text</small></h5>
-    <h6>h6. Bootstrap heading <small>with small text</small></h6>
-  </div>
-
-*/
 

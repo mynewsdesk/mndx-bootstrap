@@ -2,124 +2,46 @@
  ---
  title: Buttons
  name: Buttons
- category: Base
+ category: CSS
  ---
 
-<div class="button-demo-column">
-  <p class="button-demo">
-    <button class="btn btn-default btn-lg">Default</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-default">Default</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-default btn-sm">Default</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-default btn-xs">Default</button>
-  </p>
-</div>
-<div class="button-demo-column">
-  <p class="button-demo">
-    <button class="btn btn-info btn-lg">Info</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-info">Info</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-info btn-sm">Info</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-info btn-xs">Info</button>
-  </p>
-</div>
-<div class="button-demo-column">
-  <p class="button-demo">
-    <button class="btn btn-primary btn-lg">Primary</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-primary">Primary</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-primary btn-sm">Primary</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-primary btn-xs">Primary</button>
-  </p>
-</div>
-<div class="button-demo-column">
-  <p class="button-demo">
-    <button class="btn btn-success btn-lg">Success</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-success">Success</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-success btn-sm">Success</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-success btn-xs">Success</button>
-  </p>
-</div>
-<div class="button-demo-column">
-  <p class="button-demo">
-    <button class="btn btn-warning btn-lg">Warning</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-warning">Warning</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-warning btn-sm">Warning</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-warning btn-xs">Warning</button>
-  </p>
-</div>
-<div class="button-demo-column">
-  <p class="button-demo">
-    <button class="btn btn-danger btn-lg">Danger</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-danger">Danger</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-danger btn-sm">Danger</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-danger btn-xs">Danger</button>
-  </p>
-</div>
-
-```
+```html_example
+<p>
   <button class="btn btn-default btn-lg">Default</button>
   <button class="btn btn-default">Default</button>
   <button class="btn btn-default btn-sm">Default</button>
   <button class="btn btn-default btn-xs">Default</button>
-
+</p>
+<p>
   <button class="btn btn-info btn-lg">Info</button>
   <button class="btn btn-info">Info</button>
   <button class="btn btn-info btn-sm">Info</button>
   <button class="btn btn-info btn-xs">Info</button>
-
+</p>
+<p>
   <button class="btn btn-primary btn-lg">Primary</button>
   <button class="btn btn-primary">Primary</button>
   <button class="btn btn-primary btn-sm">Primary</button>
   <button class="btn btn-primary btn-xs">Primary</button>
-
+</p>
+<p>
   <button class="btn btn-success btn-lg">Success</button>
   <button class="btn btn-success">Success</button>
   <button class="btn btn-success btn-sm">Success</button>
   <button class="btn btn-success btn-xs">Success</button>
-
+</p>
+<p>
   <button class="btn btn-warning btn-lg">Warning</button>
   <button class="btn btn-warning">Warning</button>
   <button class="btn btn-warning btn-sm">Warning</button>
   <button class="btn btn-warning btn-xs">Warning</button>
-
+</p>
+<p>
   <button class="btn btn-danger btn-lg">Danger</button>
   <button class="btn btn-danger">Danger</button>
   <button class="btn btn-danger btn-sm">Danger</button>
   <button class="btn btn-danger btn-xs">Danger</button>
+</p>
 ```
 */
 
