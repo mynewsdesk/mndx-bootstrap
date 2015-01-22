@@ -6,6 +6,10 @@ MND theme for Bootstrap.
 [![dependency Status](https://david-dm.org/mynewsdesk/mnd-bootstrap.svg)](https://david-dm.org/mynewsdesk/mnd-bootstrap)
 [![devDependency Status](https://david-dm.org/mynewsdesk/mnd-bootstrap/dev-status.svg)](https://david-dm.org/mynewsdesk/mnd-bootstrap#info=devDependencies)
 
+Browse the styleguide
+---------------------
+http://mynewsdesk.github.io/mnd-bootstrap/
+
 Installation
 ------------
 Add this line you your Gemfile:
