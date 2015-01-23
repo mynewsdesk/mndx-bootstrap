@@ -25,7 +25,7 @@ body{
 
 .styleguide-example {
   padding: $sg-default-space;
-  background-color: #f1f1f1;
+  background-color: $gray-lighter;
 
   &.light {
     background-color: #fff;
