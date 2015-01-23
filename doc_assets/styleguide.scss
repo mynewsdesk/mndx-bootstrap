@@ -7,9 +7,13 @@ body{
 }
 
 /* style nav specific - Temporary until we have the navigation implemented in our bootstrap theme */
-nav.navbar {
+#top-nav {
   .navbar-header {
     margin: $sg-default-space;
+  }
+  li > a {
+    line-height: 25px;
+    color: $link-color;
   }
 }
 /* end temporary styling of our navigation*/
