@@ -18,6 +18,10 @@ body{
 }
 /* end temporary styling of our navigation*/
 
+.nav-sidebar {
+  padding: $base-unit;
+  border-right: 1px solid $gray-lighter;
+}
 
 .styleguide-example {
   padding: $sg-default-space;
