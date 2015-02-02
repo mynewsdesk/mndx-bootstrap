@@ -1,0 +1,23 @@
+$base-unit:         $font-size-base;
+$base-unit-x2:      ceil($base-unit * 2);
+$base-unit-x3:      ceil($base-unit * 3);
+
+/*doc
+ ---
+ title: Colors extended
+ name: colors extended
+ category: Base
+ ---
+
+ Those are the colors that you can use
+<div class="clearfix">
+  <div class="color-box gray-lightest">
+    <span>$gray-lightest</span>
+  </div>
+  <div class="color-box white">
+    <span>$white</span>
+  </div>
+</div>
+ */
+$gray-lightest:    #f9f9f9;
+$white: #fff;

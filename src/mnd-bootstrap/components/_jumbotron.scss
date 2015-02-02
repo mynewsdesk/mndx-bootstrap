@@ -1,0 +1,86 @@
+/*doc
+ ---
+ title: Jumbotron
+ name: jumbotron
+ category: Components
+ ---
+ This is the jumbotron section....
+
+<div class="styleguide-example">
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Sign up for this magic tool</h1>
+        <p>Bacon ipsum dolor sit amet leberkas corned beef beef hamburger chicken rump ham. Short ribs bresaola shank, chicken pancetta ground round cow prosciutto.</p>
+        <form accept-charset="UTF-8" action="/" method="post" role="form">
+          <div class="form-group col-sm-8 col-md text-left">
+            <label class="sr-only" for="user_email">Enter email</label>
+            <input class="form-control" id="user_email" name="user[email]" placeholder="Enter email" type="email">
+          </div>
+          <div class="form-group col-sm-4">
+            <input class="btn btn-success col-xs-12" name="commit" type="submit" value="Sign up">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+```html_example
+<div class="jumbotron">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>Sign up for this magic tool</h1>
+      <p>Bacon ipsum dolor sit amet leberkas corned beef beef hamburger chicken rump ham.</p>
+      <form accept-charset="UTF-8" action="/" method="post" role="form">
+        <div class="form-group col-sm-8 col-md text-left">
+          <label class="sr-only" for="user_email">Enter email</label>
+          <input class="form-control" id="user_email" name="user[email]" placeholder="Enter email" type="email">
+        </div>
+        <div class="form-group col-sm-4">
+          <input class="btn btn-success col-xs-12" name="commit" type="submit" value="Sign up">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+```
+*/
+
+.jumbotron {
+  background-color: $body-bg;
+  border-radius: $border-radius-base;
+  text-align: center;
+  padding: $base-unit-x2 $base-unit-x3 $base-unit-x3 $base-unit-x3;
+
+  form{
+    display: inline-block;
+    width: 100%;
+    margin-top: $base-unit;
+  }
+
+  h1 {
+    font-size: $base-unit-x2;
+    margin-bottom: $base-unit;
+    color: $gray-darker;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: $font-size-base;
+    font-weight: normal;
+    color: $gray;
+  }
+}
+
+@media screen and (min-width: $screen-sm-min) {
+  .jumbotron form {
+    input {
+      float: right;
+    }
+
+    button {
+      float: left;
+    }
+  }
+}

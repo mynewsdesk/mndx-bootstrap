@@ -1,0 +1,94 @@
+@import "../src/mnd-bootstrap/variables";
+@import "../src/mnd-bootstrap/variables_extended";
+$sg-default-space: 15px;
+
+body{
+  padding-bottom: ceil($sg-default-space * 4);
+}
+
+/* style nav specific - Temporary until we have the navigation implemented in our bootstrap theme */
+#top-nav {
+  .navbar-header {
+    margin: $sg-default-space;
+  }
+  li > a {
+    line-height: 25px;
+    color: $link-color;
+  }
+}
+/* end temporary styling of our navigation*/
+
+.nav-sidebar {
+  padding: $base-unit;
+  border-right: 1px solid $gray-lighter;
+}
+
+.styleguide-example {
+  padding: $sg-default-space;
+  background-color: $gray-lighter;
+
+  &.light {
+    background-color: #fff;
+  }
+  &.dark {
+    background-color: #333;
+  }
+}
+
+.color-box {
+  width: 150px;
+  height: 150px;
+  margin: 0 $sg-default-space $sg-default-space 0;
+  padding: $sg-default-space;
+  display: block;
+  float: left;
+
+  span {
+    padding: $sg-default-space;
+    display: inline-block;
+    background: #fff;
+  }
+}
+
+.gray-darker {
+  background: $gray-darker;
+}
+.gray-dark {
+ background: $gray-dark;
+}
+.gray {
+  background: $gray;
+}
+.gray-light {
+  background: $gray-light;
+}
+.gray-lighter {
+  background: $gray-lighter;
+}
+.gray-lightest {
+  background: $gray-lightest;
+}
+.white {
+  background: $white;
+  border: 1px solid black;
+}
+.brand-primary {
+  background: $brand-primary;
+}
+.brand-success {
+  background: $brand-success;
+}
+.brand-info {
+  background: $brand-info;
+}
+.brand-warning {
+  background: $brand-warning;
+}
+.brand-danger  {
+  background: $brand-danger;
+}
+
+.button-demo-column {
+  display: table-cell;
+  padding-right: 15px;
+}
