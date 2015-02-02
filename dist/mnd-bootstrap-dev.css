@@ -6895,49 +6895,6 @@ button.close {
   </div>
 </div>
  */
- /*doc
- ---
- title: Navigation
- name: navigation
- category: Base
- ---
- This is the navigation section....
-
-*/
- /*doc
- ---
- title: Buttons
- name: buttons
- category: Base
- ---
- This is the buttons section....
-
-*/
- /*doc
- ---
- title: Alerts
- name: alerts
- category: Base
- ---
- Alerts should always starts with a word that tell the user more about the feedback in short.
-
-```html_example
-<div class="alert alert-success" role="alert"><strong>Wohooo!</strong> Thanks for signing up!</div>
-<div class="alert alert-info" role="alert"><strong>Morning!</strong> Looks like you are happy today!</div>
-<div class="alert alert-warning" role="alert"><strong>Ooops!</strong> Your account will expire in two days!</div>
-<div class="alert alert-danger" role="alert"><strong>Grrr!</strong> Don't drop coffee on my keyboard again!</div>
-```
-
-*/
- /*doc
- ---
- title: Helper Classes
- name: helperclasses
- category: Base
- ---
- This is the Helper Classes section....
-
-*/
 body {
   -webkit-font-smoothing: initial;
 }
@@ -6976,229 +6933,54 @@ body #sb-site a[name] {
   color: #fff;
 }
 
-/*doc
- ---
- title: Typography
- name: typography
- category: Base
- ---
- This is the Typography section....
-
-  <div class="styleguide-example">
-    <h1>h1. Bootstrap heading <small>with small text</small></h1>
-    <h2>h2. Bootstrap heading <small>with small text</small></h2>
-    <h3>h3. Bootstrap heading <small>with small text</small></h3>
-    <h4>h4. Bootstrap heading <small>with small text</small></h4>
-    <h5>h5. Bootstrap heading <small>with small text</small></h5>
-    <h6>h6. Bootstrap heading <small>with small text</small></h6>
-  </div>
-
-*/
 .table tbody > tr > td.vert-align {
   vertical-align: middle;
 }
 
 /*doc
  ---
- title: Jumbotron
- name: jumbotron
- category: Base
- ---
- This is the jumbotron section....
-
-<div class="styleguide-example">
-  <div class="jumbotron">
-    <div class="row">
-      <div class="col-sm-12">
-        <h1>Sign up for this magic tool</h1>
-        <p>Bacon ipsum dolor sit amet leberkas corned beef beef hamburger chicken rump ham. Short ribs bresaola shank, chicken pancetta ground round cow prosciutto.</p>
-        <form accept-charset="UTF-8" action="/" method="post" role="form">
-          <div class="form-group col-sm-8 col-md text-left">
-            <label class="sr-only" for="user_email">Enter email</label>
-            <input class="form-control" id="user_email" name="user[email]" placeholder="Enter email" type="email">
-          </div>
-          <div class="form-group col-sm-4">
-            <input class="btn btn-success col-xs-12" name="commit" type="submit" value="Sign up">
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-```html_example
-<div class="jumbotron">
-  <div class="row">
-    <div class="col-sm-12">
-      <h1>Sign up for this magic tool</h1>
-      <p>Bacon ipsum dolor sit amet leberkas corned beef beef hamburger chicken rump ham.</p>
-      <form accept-charset="UTF-8" action="/" method="post" role="form">
-        <div class="form-group col-sm-8 col-md text-left">
-          <label class="sr-only" for="user_email">Enter email</label>
-          <input class="form-control" id="user_email" name="user[email]" placeholder="Enter email" type="email">
-        </div>
-        <div class="form-group col-sm-4">
-          <input class="btn btn-success col-xs-12" name="commit" type="submit" value="Sign up">
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-```
-*/
-.jumbotron {
-  background-color: #fff;
-  border-radius: 4px;
-  text-align: center;
-  padding: 28px 42px 42px 42px;
-}
-.jumbotron form {
-  display: inline-block;
-  width: 100%;
-  margin-top: 14px;
-}
-.jumbotron h1 {
-  font-size: 28px;
-  margin-bottom: 14px;
-  color: #222222;
-  font-weight: bold;
-}
-.jumbotron p {
-  font-size: 14px;
-  font-weight: normal;
-  color: #666;
-}
-
-@media screen and (min-width: 768px) {
-  .jumbotron form input {
-    float: right;
-  }
-  .jumbotron form button {
-    float: left;
-  }
-}
-/*doc
- ---
  title: Buttons
  name: Buttons
- category: Base
+ category: CSS
  ---
 
-<div class="button-demo-column">
-  <p class="button-demo">
-    <button class="btn btn-default btn-lg">Default</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-default">Default</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-default btn-sm">Default</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-default btn-xs">Default</button>
-  </p>
-</div>
-<div class="button-demo-column">
-  <p class="button-demo">
-    <button class="btn btn-info btn-lg">Info</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-info">Info</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-info btn-sm">Info</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-info btn-xs">Info</button>
-  </p>
-</div>
-<div class="button-demo-column">
-  <p class="button-demo">
-    <button class="btn btn-primary btn-lg">Primary</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-primary">Primary</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-primary btn-sm">Primary</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-primary btn-xs">Primary</button>
-  </p>
-</div>
-<div class="button-demo-column">
-  <p class="button-demo">
-    <button class="btn btn-success btn-lg">Success</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-success">Success</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-success btn-sm">Success</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-success btn-xs">Success</button>
-  </p>
-</div>
-<div class="button-demo-column">
-  <p class="button-demo">
-    <button class="btn btn-warning btn-lg">Warning</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-warning">Warning</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-warning btn-sm">Warning</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-warning btn-xs">Warning</button>
-  </p>
-</div>
-<div class="button-demo-column">
-  <p class="button-demo">
-    <button class="btn btn-danger btn-lg">Danger</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-danger">Danger</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-danger btn-sm">Danger</button>
-  </p>
-  <p class="button-demo">
-    <button class="btn btn-danger btn-xs">Danger</button>
-  </p>
-</div>
-
-```
+```html_example
+<p>
   <button class="btn btn-default btn-lg">Default</button>
   <button class="btn btn-default">Default</button>
   <button class="btn btn-default btn-sm">Default</button>
   <button class="btn btn-default btn-xs">Default</button>
-
+</p>
+<p>
   <button class="btn btn-info btn-lg">Info</button>
   <button class="btn btn-info">Info</button>
   <button class="btn btn-info btn-sm">Info</button>
   <button class="btn btn-info btn-xs">Info</button>
-
+</p>
+<p>
   <button class="btn btn-primary btn-lg">Primary</button>
   <button class="btn btn-primary">Primary</button>
   <button class="btn btn-primary btn-sm">Primary</button>
   <button class="btn btn-primary btn-xs">Primary</button>
-
+</p>
+<p>
   <button class="btn btn-success btn-lg">Success</button>
   <button class="btn btn-success">Success</button>
   <button class="btn btn-success btn-sm">Success</button>
   <button class="btn btn-success btn-xs">Success</button>
-
+</p>
+<p>
   <button class="btn btn-warning btn-lg">Warning</button>
   <button class="btn btn-warning">Warning</button>
   <button class="btn btn-warning btn-sm">Warning</button>
   <button class="btn btn-warning btn-xs">Warning</button>
-
+</p>
+<p>
   <button class="btn btn-danger btn-lg">Danger</button>
   <button class="btn btn-danger">Danger</button>
   <button class="btn btn-danger btn-sm">Danger</button>
   <button class="btn btn-danger btn-xs">Danger</button>
+</p>
 ```
 */
 .btn, .btn-ghost {
@@ -7377,5 +7159,379 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
 }
+
+/*doc
+---
+title: Code
+name: code
+category: CSS
+---
+*/
+/*doc
+---
+title: Forms
+name: forms
+category: CSS
+---
+*/
+/*doc
+---
+title: Grid
+name: grid
+category: CSS
+---
+*/
+/*doc
+---
+title: Helpers
+name: helpers
+category: CSS
+---
+
+*/
+/*doc
+---
+title: Images
+name: images
+category: CSS
+---
+*/
+/*doc
+---
+title: Responsives
+name: responsives
+category: CSS
+---
+*/
+/*doc
+---
+title: Tables
+name: tables
+category: CSS
+---
+*/
+/*doc
+---
+title: Typo
+name: typo
+category: CSS
+---
+```html_example
+  <h1>h1. Bootstrap heading <small>with small text</small></h1>
+  <h2>h2. Bootstrap heading <small>with small text</small></h2>
+  <h3>h3. Bootstrap heading <small>with small text</small></h3>
+  <h4>h4. Bootstrap heading <small>with small text</small></h4>
+  <h5>h5. Bootstrap heading <small>with small text</small></h5>
+  <h6>h6. Bootstrap heading <small>with small text</small></h6>
+```
+
+*/
+/*doc
+ ---
+ title: Jumbotron
+ name: jumbotron
+ category: components
+ ---
+ This is the jumbotron section....
+
+<div class="styleguide-example">
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Sign up for this magic tool</h1>
+        <p>Bacon ipsum dolor sit amet leberkas corned beef beef hamburger chicken rump ham. Short ribs bresaola shank, chicken pancetta ground round cow prosciutto.</p>
+        <form accept-charset="UTF-8" action="/" method="post" role="form">
+          <div class="form-group col-sm-8 col-md text-left">
+            <label class="sr-only" for="user_email">Enter email</label>
+            <input class="form-control" id="user_email" name="user[email]" placeholder="Enter email" type="email">
+          </div>
+          <div class="form-group col-sm-4">
+            <input class="btn btn-success col-xs-12" name="commit" type="submit" value="Sign up">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+```html_example
+<div class="jumbotron">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>Sign up for this magic tool</h1>
+      <p>Bacon ipsum dolor sit amet leberkas corned beef beef hamburger chicken rump ham.</p>
+      <form accept-charset="UTF-8" action="/" method="post" role="form">
+        <div class="form-group col-sm-8 col-md text-left">
+          <label class="sr-only" for="user_email">Enter email</label>
+          <input class="form-control" id="user_email" name="user[email]" placeholder="Enter email" type="email">
+        </div>
+        <div class="form-group col-sm-4">
+          <input class="btn btn-success col-xs-12" name="commit" type="submit" value="Sign up">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+```
+*/
+.jumbotron {
+  background-color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  padding: 28px 42px 42px 42px;
+}
+.jumbotron form {
+  display: inline-block;
+  width: 100%;
+  margin-top: 14px;
+}
+.jumbotron h1 {
+  font-size: 28px;
+  margin-bottom: 14px;
+  color: #222222;
+  font-weight: bold;
+}
+.jumbotron p {
+  font-size: 14px;
+  font-weight: normal;
+  color: #666;
+}
+
+@media screen and (min-width: 768px) {
+  .jumbotron form input {
+    float: right;
+  }
+  .jumbotron form button {
+    float: left;
+  }
+}
+/*doc
+---
+title: Alerts
+name: alerts
+category: components
+---
+ Alerts should always starts with a word that tell the user more about the feedback in short.
+
+```html_example
+<div class="alert alert-success" role="alert"><strong>Wohooo!</strong> Thanks for signing up!</div>
+<div class="alert alert-info" role="alert"><strong>Morning!</strong> Looks like you are happy today!</div>
+<div class="alert alert-warning" role="alert"><strong>Ooops!</strong> Your account will expire in two days!</div>
+<div class="alert alert-danger" role="alert"><strong>Grrr!</strong> Don't drop coffee on my keyboard again!</div>
+```
+
+*/
+/*doc
+---
+title: Badges
+name: badges
+category: components
+---
+*/
+/*doc
+---
+title: Breadcrumbs
+name: breadcrumbs
+category: components
+---
+*/
+/*doc
+---
+title: Button dropdowns
+name: button_dropdowns
+category: components
+---
+*/
+/*doc
+---
+title: Button groups
+name: button_groups
+category: components
+---
+*/
+/*doc
+---
+title: Dropdowns
+name: dropdowns
+category: components
+---
+*/
+/*doc
+---
+title: Icons
+name: icons
+category: components
+---
+*/
+/*doc
+---
+title: Input groups
+name: input_groups
+category: components
+---
+*/
+/*doc
+ ---
+ title: Jumbotron
+ name: jumbotron
+ category: components
+ ---
+ This is the jumbotron section....
+
+<div class="styleguide-example">
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Sign up for this magic tool</h1>
+        <p>Bacon ipsum dolor sit amet leberkas corned beef beef hamburger chicken rump ham. Short ribs bresaola shank, chicken pancetta ground round cow prosciutto.</p>
+        <form accept-charset="UTF-8" action="/" method="post" role="form">
+          <div class="form-group col-sm-8 col-md text-left">
+            <label class="sr-only" for="user_email">Enter email</label>
+            <input class="form-control" id="user_email" name="user[email]" placeholder="Enter email" type="email">
+          </div>
+          <div class="form-group col-sm-4">
+            <input class="btn btn-success col-xs-12" name="commit" type="submit" value="Sign up">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+```html_example
+<div class="jumbotron">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>Sign up for this magic tool</h1>
+      <p>Bacon ipsum dolor sit amet leberkas corned beef beef hamburger chicken rump ham.</p>
+      <form accept-charset="UTF-8" action="/" method="post" role="form">
+        <div class="form-group col-sm-8 col-md text-left">
+          <label class="sr-only" for="user_email">Enter email</label>
+          <input class="form-control" id="user_email" name="user[email]" placeholder="Enter email" type="email">
+        </div>
+        <div class="form-group col-sm-4">
+          <input class="btn btn-success col-xs-12" name="commit" type="submit" value="Sign up">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+```
+*/
+.jumbotron {
+  background-color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  padding: 28px 42px 42px 42px;
+}
+.jumbotron form {
+  display: inline-block;
+  width: 100%;
+  margin-top: 14px;
+}
+.jumbotron h1 {
+  font-size: 28px;
+  margin-bottom: 14px;
+  color: #222222;
+  font-weight: bold;
+}
+.jumbotron p {
+  font-size: 14px;
+  font-weight: normal;
+  color: #666;
+}
+
+@media screen and (min-width: 768px) {
+  .jumbotron form input {
+    float: right;
+  }
+  .jumbotron form button {
+    float: left;
+  }
+}
+/*doc
+---
+title: Labels
+name: labels
+category: components
+---
+*/
+/*doc
+---
+title: List group
+name: list_group
+category: components
+---
+*/
+/*doc
+---
+title: Media object
+name: media_object
+category: components
+---
+*/
+/*doc
+---
+title: Navbar
+name: navbar
+category: components
+---
+*/
+/*doc
+---
+title: Navs
+name: navs
+category: components
+---
+*/
+/*doc
+---
+title: Page header
+name: page_header
+category: components
+---
+*/
+/*doc
+---
+title: Pagination
+name: pagination
+category: components
+---
+*/
+/*doc
+---
+title: Panels
+name: panels
+category: components
+---
+*/
+/*doc
+---
+title: Progress bars
+name: progress_bars
+category: components
+---
+*/
+/*doc
+---
+title: Responsive embed
+name: responsive_embed
+category: components
+---
+*/
+/*doc
+---
+title: Thumbnails
+name: thumbnails
+category: components
+---
+*/
+/*doc
+---
+title: Wells
+name: wells
+category: components
+---
+*/
 
 /*# sourceMappingURL=mnd-bootstrap-dev.css.map */

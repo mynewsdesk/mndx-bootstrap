@@ -7,17 +7,25 @@ body{
 }
 
 /* style nav specific - Temporary until we have the navigation implemented in our bootstrap theme */
-nav.navbar {
+#top-nav {
   .navbar-header {
     margin: $sg-default-space;
+  }
+  li > a {
+    line-height: 25px;
+    color: $link-color;
   }
 }
 /* end temporary styling of our navigation*/
 
+.nav-sidebar {
+  padding: $base-unit;
+  border-right: 1px solid $gray-lighter;
+}
 
 .styleguide-example {
   padding: $sg-default-space;
-  background-color: #f1f1f1;
+  background-color: $gray-lighter;
 
   &.light {
     background-color: #fff;
