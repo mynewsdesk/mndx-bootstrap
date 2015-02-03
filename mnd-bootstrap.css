@@ -682,6 +682,96 @@ category: Components
 */
 /*doc
 ---
+title: Sections
+name: sections
+category: Components
+---
+Modular section setup which allows using a combination of header, body and footer.
+
+```html_example
+<section>
+  <div class="container">
+    <header>
+      <h1>Title</h1>
+    </header>
+    <div class="body">
+      <p>This is a body text.</p>
+    </div>
+    <footer>
+      <p>Footer text</p>
+    </footer>
+  </div>
+</section>
+```
+
+```html_example
+<section class="solid">
+  <div class="container">
+    <header>
+      <h1>Title</h1>
+    </header>
+    <div class="body">
+      <p>This is a body text.</p>
+    </div>
+  </div>
+</section>
+```
+
+*/
+section.solid {
+  background-color: #F2F2F2;
+}
+section > .container header, section > .container .body, section > .container footer {
+  text-align: center;
+}
+section > .container header {
+  margin: 100px 0 50px;
+}
+section > .container header h2 {
+  font-size: 36px;
+  margin: 0;
+}
+section > .container header p {
+  margin: 10px 0 0;
+  font-weight: 200;
+}
+section > .container .body {
+  margin: 50px 0;
+}
+section > .container footer {
+  margin: 50px 0 100px;
+}
+section > .container h2 {
+  font-size: 24px;
+  font-weight: 200;
+  margin-top: 0;
+}
+@media (min-width: 992px) {
+  section > .container h2 {
+    font-weight: 200;
+    font-size: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  section > .container h2 {
+    font-size: 48px;
+  }
+}
+section > .container p {
+  font-size: 18px;
+  font-weight: 200;
+}
+@media (min-width: 992px) {
+  section > .container p {
+    font-size: 20px;
+  }
+}
+section > .container a {
+  font-weight: normal;
+}
+
+/*doc
+---
 title: Thumbnails
 name: thumbnails
 category: Components

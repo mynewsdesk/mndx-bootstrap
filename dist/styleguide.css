@@ -61,14 +61,23 @@ body {
 }
 
 /* style nav specific - Temporary until we have the navigation implemented in our bootstrap theme */
-nav.navbar .navbar-header {
+#top-nav .navbar-header {
   margin: 15px;
+}
+#top-nav li > a {
+  line-height: 25px;
+  color: #2e88be;
 }
 
 /* end temporary styling of our navigation*/
+.nav-sidebar {
+  padding: 14px;
+  border-right: 1px solid #eeeeee;
+}
+
 .styleguide-example {
   padding: 15px;
-  background-color: #f1f1f1;
+  background-color: #eeeeee;
 }
 .styleguide-example.light {
   background-color: #fff;

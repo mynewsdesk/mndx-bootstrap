@@ -391,7 +391,7 @@ category: CSS
  ---
  title: Jumbotron
  name: jumbotron
- category: components
+ category: Components
  ---
  This is the jumbotron section....
 
@@ -470,7 +470,7 @@ category: CSS
 ---
 title: Alerts
 name: alerts
-category: components
+category: Components
 ---
  Alerts should always starts with a word that tell the user more about the feedback in short.
 
@@ -486,56 +486,56 @@ category: components
 ---
 title: Badges
 name: badges
-category: components
+category: Components
 ---
 */
 /*doc
 ---
 title: Breadcrumbs
 name: breadcrumbs
-category: components
+category: Components
 ---
 */
 /*doc
 ---
 title: Button dropdowns
 name: button_dropdowns
-category: components
+category: Components
 ---
 */
 /*doc
 ---
 title: Button groups
 name: button_groups
-category: components
+category: Components
 ---
 */
 /*doc
 ---
 title: Dropdowns
 name: dropdowns
-category: components
+category: Components
 ---
 */
 /*doc
 ---
 title: Icons
 name: icons
-category: components
+category: Components
 ---
 */
 /*doc
 ---
 title: Input groups
 name: input_groups
-category: components
+category: Components
 ---
 */
 /*doc
  ---
  title: Jumbotron
  name: jumbotron
- category: components
+ category: Components
  ---
  This is the jumbotron section....
 
@@ -614,84 +614,174 @@ category: components
 ---
 title: Labels
 name: labels
-category: components
+category: Components
 ---
 */
 /*doc
 ---
 title: List group
 name: list_group
-category: components
+category: Components
 ---
 */
 /*doc
 ---
 title: Media object
 name: media_object
-category: components
+category: Components
 ---
 */
 /*doc
 ---
 title: Navbar
 name: navbar
-category: components
+category: Components
 ---
 */
 /*doc
 ---
 title: Navs
 name: navs
-category: components
+category: Components
 ---
 */
 /*doc
 ---
 title: Page header
 name: page_header
-category: components
+category: Components
 ---
 */
 /*doc
 ---
 title: Pagination
 name: pagination
-category: components
+category: Components
 ---
 */
 /*doc
 ---
 title: Panels
 name: panels
-category: components
+category: Components
 ---
 */
 /*doc
 ---
 title: Progress bars
 name: progress_bars
-category: components
+category: Components
 ---
 */
 /*doc
 ---
 title: Responsive embed
 name: responsive_embed
-category: components
+category: Components
 ---
 */
 /*doc
 ---
+title: Sections
+name: sections
+category: Components
+---
+Modular section setup which allows using a combination of header, body and footer.
+
+```html_example
+<section>
+  <div class="container">
+    <header>
+      <h1>Title</h1>
+    </header>
+    <div class="body">
+      <p>This is a body text.</p>
+    </div>
+    <footer>
+      <p>Footer text</p>
+    </footer>
+  </div>
+</section>
+```
+
+```html_example
+<section class="solid">
+  <div class="container">
+    <header>
+      <h1>Title</h1>
+    </header>
+    <div class="body">
+      <p>This is a body text.</p>
+    </div>
+  </div>
+</section>
+```
+
+*/
+section.solid {
+  background-color: #F2F2F2;
+}
+section > .container header, section > .container .body, section > .container footer {
+  text-align: center;
+}
+section > .container header {
+  margin: 100px 0 50px;
+}
+section > .container header h2 {
+  font-size: 36px;
+  margin: 0;
+}
+section > .container header p {
+  margin: 10px 0 0;
+  font-weight: 200;
+}
+section > .container .body {
+  margin: 50px 0;
+}
+section > .container footer {
+  margin: 50px 0 100px;
+}
+section > .container h2 {
+  font-size: 24px;
+  font-weight: 200;
+  margin-top: 0;
+}
+@media (min-width: 992px) {
+  section > .container h2 {
+    font-weight: 200;
+    font-size: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  section > .container h2 {
+    font-size: 48px;
+  }
+}
+section > .container p {
+  font-size: 18px;
+  font-weight: 200;
+}
+@media (min-width: 992px) {
+  section > .container p {
+    font-size: 20px;
+  }
+}
+section > .container a {
+  font-weight: normal;
+}
+
+/*doc
+---
 title: Thumbnails
 name: thumbnails
-category: components
+category: Components
 ---
 */
 /*doc
 ---
 title: Wells
 name: wells
-category: components
+category: Components
 ---
 */
 
