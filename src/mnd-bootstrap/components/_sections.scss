@@ -1,0 +1,92 @@
+/*doc
+---
+title: Sections
+name: sections
+category: Components
+---
+Modular section setup which allows using a combination of header, body and footer.
+
+```html_example
+<section>
+  <div class="container">
+    <header>
+      <h1>Title</h1>
+    </header>
+    <div class="body">
+      <p>This is a body text.</p>
+    </div>
+    <footer>
+      <p>Footer text</p>
+    </footer>
+  </div>
+</section>
+```
+
+```html_example
+<section class="solid">
+  <div class="container">
+    <header>
+      <h1>Title</h1>
+    </header>
+    <div class="body">
+      <p>This is a body text.</p>
+    </div>
+  </div>
+</section>
+```
+
+*/
+section {
+  &.solid {
+    background-color: #F2F2F2;
+  }
+
+  > .container {
+    header, .body, footer {
+      text-align: center;
+    }
+    header {
+      margin: 100px 0 50px;
+      h2 {
+        font-size: 36px;
+        margin: 0;
+      }
+      p {
+        margin: 10px 0 0;
+        font-weight: 200;
+      }
+    }
+    .body {
+      margin: 50px 0;
+    }
+    footer {
+      margin: 50px 0 100px;
+    }
+    h2 {
+      font-size: 24px;
+      font-weight: 200;
+      margin-top: 0;
+
+      @media (min-width: $screen-md-min) {
+        font-weight: 200;
+        font-size: 32px;
+      }
+      @media (min-width: $screen-lg-min) {
+        font-size: 48px;
+      }
+    }
+    p {
+      font-size: 18px;
+      font-weight: 200;
+
+      @media (min-width: $screen-md-min) {
+        font-size: 20px;
+      }
+      @media (min-width: $screen-lg-min) {
+      }
+    }
+    a {
+      font-weight: normal;
+    }
+  }
+}
