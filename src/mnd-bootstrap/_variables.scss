@@ -644,25 +644,29 @@ $modal-sm:                    300px;
 //
 //## Define alert colors, border radius, and padding.
 
+$alert-background-lighten: 40%;
+$alert-border-lighten: 20%;
+$alert-text-darken: 15%;
+
 $alert-padding:               15px;
 $alert-border-radius:         $border-radius-base;
 $alert-link-font-weight:      bold;
 
-$alert-success-bg:            $brand-success;
-$alert-success-text:          #fff;
-$alert-success-border:        $state-success-border;
+$alert-success-bg:            lighten($brand-success, $alert-background-lighten);
+$alert-success-text:          darken($brand-success, $alert-text-darken);
+$alert-success-border:        lighten($brand-success, $alert-border-lighten);
 
-$alert-info-bg:               $brand-info;
-$alert-info-text:             #fff;
-$alert-info-border:           $state-info-border;
+$alert-info-bg:               lighten($brand-info, $alert-background-lighten);
+$alert-info-text:             darken($brand-info, $alert-text-darken);
+$alert-info-border:           lighten($brand-info, $alert-border-lighten);
 
-$alert-warning-bg:            $brand-warning;
-$alert-warning-text:          #fff;
-$alert-warning-border:        $state-warning-border;
+$alert-warning-bg:            lighten($brand-warning, $alert-background-lighten);
+$alert-warning-text:          darken($brand-warning, $alert-text-darken);
+$alert-warning-border:        lighten($brand-warning, $alert-border-lighten);
 
-$alert-danger-bg:             $brand-danger;
-$alert-danger-text:           #fff;
-$alert-danger-border:         $state-danger-border;
+$alert-danger-bg:             lighten($brand-danger, $alert-background-lighten);
+$alert-danger-text:           darken($brand-danger, $alert-text-darken);
+$alert-danger-border:         lighten($brand-danger, $alert-border-lighten);
 
 
 //== Progress bars
