@@ -14,7 +14,8 @@
     "bootstrap"
   ],
   "dependencies": {
-    "bootstrap-sass-twbs": "*"
+    "bootstrap-sass-twbs": "*",
+    "bourbon": "~4.1.1"
   },
   "ignore": [
     "**/.*",
