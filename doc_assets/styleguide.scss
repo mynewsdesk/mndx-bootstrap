@@ -34,6 +34,11 @@ body{
   }
 }
 
+.variable-box {
+  @extend .gray-lightest;
+  padding: $sg-default-space;
+}
+
 .color-box {
   width: 150px;
   height: 150px;
