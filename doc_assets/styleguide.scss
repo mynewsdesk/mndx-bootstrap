@@ -18,6 +18,16 @@ body{
 }
 /* end temporary styling of our navigation*/
 
+.code {
+  &-header {
+    border-bottom: 1px solid $gray-lighter;
+  }
+  &-example {
+    background: #fff;
+    padding: $base-unit-x2;
+  }
+}
+
 .nav-sidebar {
   padding: $base-unit $base-unit $base-unit 0;
 }
