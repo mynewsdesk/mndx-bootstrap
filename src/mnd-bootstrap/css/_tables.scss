@@ -45,6 +45,14 @@ category: CSS
 */
 
 .table {
+  >tbody {
+    >tr {
+      >td {
+        border-top: 0;
+        border-bottom: 1px solid $table-border-color;
+      }
+    }
+  }
   &-actions {
     text-align: right;
   }
