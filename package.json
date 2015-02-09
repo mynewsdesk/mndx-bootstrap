@@ -15,6 +15,7 @@
     "gulp-git": "^0.5.5",
     "gulp-hologram": "^1.2.0",
     "gulp-notify": "^2.1.0",
+    "gulp-rimraf": "^0.1.1",
     "gulp-ruby-sass": "^0.7.1",
     "gulp-webserver": "^0.9.0",
     "run-sequence": "^1.0.2",

@@ -8,6 +8,7 @@ var runSequence = require('run-sequence');
 var request = require('superagent');
 var sass = require('gulp-ruby-sass');
 var webserver = require('gulp-webserver');
+var clean = require('gulp-rimraf');
 
 var argv = require('yargs')
   .default('level', 'minor')
@@ -37,6 +38,10 @@ gulp.task('sass', function() {
     .pipe(notify({message: 'Sass task complete'}));
 });
 
+gulp.task('clean', function() {
+  return gulp.src('public/dist/').pipe(clean());
+});
+
 gulp.task('styleguide-sass', function() {
   return gulp.src('doc_assets/styleguide.scss')
     .pipe(sass({ style: 'expanded', loadPath: ['src/', './bower_components/'] }))
@@ -46,7 +51,7 @@ gulp.task('styleguide-sass', function() {
 });
 
 // Compile style-guide
-gulp.task('hologram', ['sass',  'styleguide-sass'], function() {
+gulp.task('hologram', ['clean', 'sass',  'styleguide-sass'], function() {
   return gulp.src('hologram_config.yml')
     .pipe(hologram())
     .pipe(notify({message: 'Hologram task complete'}));
