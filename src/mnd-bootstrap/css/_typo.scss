@@ -1,16 +1,49 @@
 /*doc
 ---
-title: Typo
+title: Typography
 name: typo
 category: CSS
 ---
-```html_example
-  <h1>h1. Bootstrap heading <small>with small text</small></h1>
-  <h2>h2. Bootstrap heading <small>with small text</small></h2>
-  <h3>h3. Bootstrap heading <small>with small text</small></h3>
-  <h4>h4. Bootstrap heading <small>with small text</small></h4>
-  <h5>h5. Bootstrap heading <small>with small text</small></h5>
-  <h6>h6. Bootstrap heading <small>with small text</small></h6>
-```
+Read more about typography in the separate sections
 
+*/
+
+/*doc
+---
+title: Headings
+name: headings
+parent: typo
+---
+```html_example
+<h1>h1. Bootstrap heading <small>with small text</small></h1>
+<h2>h2. Bootstrap heading <small>with small text</small></h2>
+<h3>h3. Bootstrap heading <small>with small text</small></h3>
+<h4>h4. Bootstrap heading <small>with small text</small></h4>
+<h5>h5. Bootstrap heading <small>with small text</small></h5>
+<h6>h6. Bootstrap heading <small>with small text</small></h6>
+```
+*/
+
+/*doc
+---
+title: Body copy
+name: body_copy
+parent: typo
+---
+```html_example
+<p class="lead">
+  <strong>.lead</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
+  Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger.
+  Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter.
+  Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round.
+  Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin.
+</p>
+<p>
+  Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
+  Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger.
+  Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter.
+  Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round.
+  Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin.
+</p>
+```
 */

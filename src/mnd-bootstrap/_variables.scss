@@ -1,3 +1,5 @@
+@import "bourbon/app/assets/stylesheets/bourbon";
+
 // a flag to toggle asset pipeline / compass integration
 // defaults to true if twbs-font-path function is present (no function => twbs-font-path('') parsed as string == right side)
 // in Sass 3.3 this can be improved with: function-exists(twbs-font-path)
@@ -16,7 +18,7 @@
  ---
  title: Colors
  name: colors
- category: Base
+ category: Variables
  ---
 
  Those are the colors that you can use
@@ -61,8 +63,8 @@ $gray-lighter:           lighten(#000, 93.5%); // #eee
 
 $brand-primary:         #f1f1f1;
 $brand-success:         #9bb83c;
-$brand-info:            #389bca;
-$brand-warning:         #caca17;
+$brand-info:            #389Bc9;
+$brand-warning:         #e5d321;
 $brand-danger:          #e53221;
 
 //== Scaffolding
@@ -164,14 +166,14 @@ $caret-width-large:         5px;
 //## Customizes the `.table` component with basic values, each used across all table variations.
 
 //** Padding for `<th>`s and `<td>`s.
-$table-cell-padding:            8px;
+$table-cell-padding:            20px;
 //** Padding for cells in `.table-condensed`.
 $table-condensed-cell-padding:  5px;
 
 //** Default background color used for all tables.
 $table-bg:                      transparent;
 //** Background color used for `.table-striped`.
-$table-bg-accent:               #f5fafb;
+$table-bg-accent:               lighten($brand-info, 46%);
 //** Background color used for `.table-hover`.
 $table-bg-hover:                #f5f5f5;
 $table-bg-active:               $table-bg-hover;
@@ -644,25 +646,29 @@ $modal-sm:                    300px;
 //
 //## Define alert colors, border radius, and padding.
 
+$alert-background-lighten: 80%;
+$alert-border-lighten: 50%;
+$alert-text-darken: 50%;
+
 $alert-padding:               15px;
 $alert-border-radius:         $border-radius-base;
 $alert-link-font-weight:      bold;
 
-$alert-success-bg:            $brand-success;
-$alert-success-text:          #fff;
-$alert-success-border:        $state-success-border;
+$alert-success-bg:            tint($brand-success, $alert-background-lighten);
+$alert-success-text:          shade($brand-success, $alert-text-darken);
+$alert-success-border:        tint($brand-success, $alert-border-lighten);
 
-$alert-info-bg:               $brand-info;
-$alert-info-text:             #fff;
-$alert-info-border:           $state-info-border;
+$alert-info-bg:               tint($brand-info, $alert-background-lighten);
+$alert-info-text:             shade($brand-info, $alert-text-darken);
+$alert-info-border:           tint($brand-info, $alert-border-lighten);
 
-$alert-warning-bg:            $brand-warning;
-$alert-warning-text:          #fff;
-$alert-warning-border:        $state-warning-border;
+$alert-warning-bg:            tint($brand-warning, $alert-background-lighten);
+$alert-warning-text:          shade($brand-warning, $alert-text-darken);
+$alert-warning-border:        tint($brand-warning, $alert-border-lighten);
 
-$alert-danger-bg:             $brand-danger;
-$alert-danger-text:           #fff;
-$alert-danger-border:         $state-danger-border;
+$alert-danger-bg:             tint($brand-danger, $alert-background-lighten);
+$alert-danger-text:           shade($brand-danger, $alert-text-darken);
+$alert-danger-border:         tint($brand-danger, $alert-border-lighten);
 
 
 //== Progress bars
