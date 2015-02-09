@@ -2,7 +2,7 @@
  ---
  title: Colors
  name: colors
- category: Base
+ category: Variables
  ---
 
  Those are the colors that you can use
@@ -41,9 +41,29 @@
  */
 /*doc
  ---
+ title: Units extended
+ name: units_extended
+ category: Variables
+ ---
+
+ Those are the units that you can use
+<div class="clearfix">
+  <div class="variable-box">
+    <span>$base-unit=$base-unit</span>
+  </div>
+  <div class="variable-box">
+    <span>$base-unit-x2=$base-unit-x2</span>
+  </div>
+  <div class="variable-box">
+    <span>$base-unit-x3=$base-unit-x3</span>
+  </div>
+</div>
+ */
+/*doc
+ ---
  title: Colors extended
- name: colors extended
- category: Base
+ name: colors_extended
+ category: Variables
  ---
 
  Those are the colors that you can use
@@ -70,9 +90,16 @@ body {
 }
 
 /* end temporary styling of our navigation*/
+.code-header {
+  border-bottom: 1px solid #eeeeee;
+}
+.code-example {
+  background: #fff;
+  padding: 28px;
+}
+
 .nav-sidebar {
-  padding: 14px;
-  border-right: 1px solid #eeeeee;
+  padding: 14px 14px 14px 0;
 }
 
 .styleguide-example {
@@ -84,6 +111,10 @@ body {
 }
 .styleguide-example.dark {
   background-color: #333;
+}
+
+.variable-box {
+  padding: 15px;
 }
 
 .color-box {
@@ -120,7 +151,7 @@ body {
   background: #eeeeee;
 }
 
-.gray-lightest {
+.gray-lightest, .variable-box {
   background: #f9f9f9;
 }
 
@@ -138,11 +169,11 @@ body {
 }
 
 .brand-info {
-  background: #389bca;
+  background: #389Bc9;
 }
 
 .brand-warning {
-  background: #caca17;
+  background: #e5d321;
 }
 
 .brand-danger {

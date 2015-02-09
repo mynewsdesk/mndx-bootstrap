@@ -2,7 +2,7 @@
  ---
  title: Colors
  name: colors
- category: Base
+ category: Variables
  ---
 
  Those are the colors that you can use
@@ -41,9 +41,29 @@
  */
 /*doc
  ---
+ title: Units extended
+ name: units_extended
+ category: Variables
+ ---
+
+ Those are the units that you can use
+<div class="clearfix">
+  <div class="variable-box">
+    <span>$base-unit=$base-unit</span>
+  </div>
+  <div class="variable-box">
+    <span>$base-unit-x2=$base-unit-x2</span>
+  </div>
+  <div class="variable-box">
+    <span>$base-unit-x3=$base-unit-x3</span>
+  </div>
+</div>
+ */
+/*doc
+ ---
  title: Colors extended
- name: colors extended
- category: Base
+ name: colors_extended
+ category: Variables
  ---
 
  Those are the colors that you can use
@@ -76,13 +96,13 @@ body #sb-site a[name] {
   color: #fff;
 }
 .btn-ghost.btn-info {
-  color: #318cb8;
+  color: #318cb6;
 }
 .btn-ghost.btn-info:hover {
   color: #fff;
 }
 .btn-ghost.btn-warning {
-  color: #b3b314;
+  color: #d4c319;
 }
 .btn-ghost.btn-warning:hover {
   color: #fff;
@@ -105,43 +125,36 @@ body #sb-site a[name] {
  category: CSS
  ---
 
-```html_example
-<p>
-  <button class="btn btn-default btn-lg">Default</button>
-  <button class="btn btn-default">Default</button>
-  <button class="btn btn-default btn-sm">Default</button>
-  <button class="btn btn-default btn-xs">Default</button>
-</p>
-<p>
-  <button class="btn btn-info btn-lg">Info</button>
-  <button class="btn btn-info">Info</button>
-  <button class="btn btn-info btn-sm">Info</button>
-  <button class="btn btn-info btn-xs">Info</button>
-</p>
-<p>
-  <button class="btn btn-primary btn-lg">Primary</button>
-  <button class="btn btn-primary">Primary</button>
-  <button class="btn btn-primary btn-sm">Primary</button>
-  <button class="btn btn-primary btn-xs">Primary</button>
-</p>
-<p>
-  <button class="btn btn-success btn-lg">Success</button>
-  <button class="btn btn-success">Success</button>
-  <button class="btn btn-success btn-sm">Success</button>
-  <button class="btn btn-success btn-xs">Success</button>
-</p>
-<p>
-  <button class="btn btn-warning btn-lg">Warning</button>
-  <button class="btn btn-warning">Warning</button>
-  <button class="btn btn-warning btn-sm">Warning</button>
-  <button class="btn btn-warning btn-xs">Warning</button>
-</p>
-<p>
-  <button class="btn btn-danger btn-lg">Danger</button>
-  <button class="btn btn-danger">Danger</button>
-  <button class="btn btn-danger btn-sm">Danger</button>
-  <button class="btn btn-danger btn-xs">Danger</button>
-</p>
+```html_example_table
+<button class="btn btn-default btn-lg">Default</button>
+<button class="btn btn-default">Default</button>
+<button class="btn btn-default btn-sm">Default</button>
+<button class="btn btn-default btn-xs">Default</button>
+
+<button class="btn btn-info btn-lg">Info</button>
+<button class="btn btn-info">Info</button>
+<button class="btn btn-info btn-sm">Info</button>
+<button class="btn btn-info btn-xs">Info</button>
+
+<button class="btn btn-primary btn-lg">Primary</button>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-primary btn-sm">Primary</button>
+<button class="btn btn-primary btn-xs">Primary</button>
+
+<button class="btn btn-success btn-lg">Success</button>
+<button class="btn btn-success">Success</button>
+<button class="btn btn-success btn-sm">Success</button>
+<button class="btn btn-success btn-xs">Success</button>
+
+<button class="btn btn-warning btn-lg">Warning</button>
+<button class="btn btn-warning">Warning</button>
+<button class="btn btn-warning btn-sm">Warning</button>
+<button class="btn btn-warning btn-xs">Warning</button>
+
+<button class="btn btn-danger btn-lg">Danger</button>
+<button class="btn btn-danger">Danger</button>
+<button class="btn btn-danger btn-sm">Danger</button>
+<button class="btn btn-danger btn-xs">Danger</button>
 ```
 */
 .btn, .btn-ghost {
@@ -334,7 +347,50 @@ title: Forms
 name: forms
 category: CSS
 ---
+
+```html_example
+<form>
+  <div class="form-group">
+    <label for="to">To</label>
+    <input type="email" class="form-control" id="to" placeholder="Enter email">
+  </div>
+  <div class="form-group has-success">
+    <label for="to">To (.has-success)</label>
+    <input type="email" class="form-control" id="to" placeholder="Enter email">
+  </div>
+  <div class="form-group has-warning">
+    <label for="to">To (.has-warning)</label>
+    <input type="email" class="form-control" id="to" placeholder="Enter email">
+  </div>
+  <div class="form-group has-error">
+    <label for="to">To (.has-error)</label>
+    <input type="email" class="form-control" id="to" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="subject">Subject</label>
+    <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea class="form-control" id="subject" placeholder="Enter message"></textarea>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <div class="form-group text-center">
+    <button type="reset" class="btn btn-default">Cancel</button>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </div>
+</form>
+```
 */
+.form-control {
+  -webkit-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+}
+
 /*doc
 ---
 title: Grid
@@ -369,23 +425,100 @@ category: CSS
 title: Tables
 name: tables
 category: CSS
+
 ---
+```html_example
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Story</th>
+      <th colspan="2">Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>The magic story that never ends</td>
+      <td>31 jan, 2015</td>
+      <td class="table-actions"><a href="#" title="Action Titile">Action 1</a> <a href="#" title="Action Title">Action 2</a></td>
+    </tr>
+    <tr>
+      <td>Story title goes here</td>
+      <td>12 jan, 2015</td>
+      <td class="table-actions"><a href="#" title="Action Titile">Action 1</a> <a href="#" title="Action Title">Action 2</a></td>
+    </tr>
+    <tr>
+      <td>Another story that have a long text of around SEO max length</td>
+      <td>31 dec, 2014</td>
+      <td class="table-actions"><a href="#" title="Action Titile">Action 1</a></td>
+    </tr>
+    <tr>
+      <td>My story</td>
+      <td>25 aug, 2012</td>
+      <td class="table-actions"><a href="#" title="Action Titile">Action 1</a></td>
+    </tr>
+    <tr>
+      <td>Old story title</td>
+      <td>10 jun, 1977</td>
+      <td class="table-actions"><a href="#" title="Action Titile">Action 1</a></td>
+    </tr>
+  </tbody>
+</table>
+```
 */
+.table > tbody > tr > td {
+  border-top: 0;
+  border-bottom: 1px solid #ddd;
+}
+.table-actions {
+  text-align: right;
+}
+
 /*doc
 ---
-title: Typo
+title: Typography
 name: typo
 category: CSS
 ---
-```html_example
-  <h1>h1. Bootstrap heading <small>with small text</small></h1>
-  <h2>h2. Bootstrap heading <small>with small text</small></h2>
-  <h3>h3. Bootstrap heading <small>with small text</small></h3>
-  <h4>h4. Bootstrap heading <small>with small text</small></h4>
-  <h5>h5. Bootstrap heading <small>with small text</small></h5>
-  <h6>h6. Bootstrap heading <small>with small text</small></h6>
-```
+Read more about typography in the separate sections
 
+*/
+/*doc
+---
+title: Headings
+name: headings
+parent: typo
+---
+```html_example
+<h1>h1. Bootstrap heading <small>with small text</small></h1>
+<h2>h2. Bootstrap heading <small>with small text</small></h2>
+<h3>h3. Bootstrap heading <small>with small text</small></h3>
+<h4>h4. Bootstrap heading <small>with small text</small></h4>
+<h5>h5. Bootstrap heading <small>with small text</small></h5>
+<h6>h6. Bootstrap heading <small>with small text</small></h6>
+```
+*/
+/*doc
+---
+title: Body copy
+name: body_copy
+parent: typo
+---
+```html_example
+<p class="lead">
+  <strong>.lead</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
+  Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger.
+  Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter.
+  Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round.
+  Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin.
+</p>
+<p>
+  Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
+  Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger.
+  Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter.
+  Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round.
+  Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin.
+</p>
+```
 */
 /*doc
  ---
