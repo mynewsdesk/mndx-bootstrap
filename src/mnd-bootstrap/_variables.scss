@@ -63,7 +63,7 @@ $gray-lighter:           lighten(#000, 93.5%); // #eee
 
 $brand-primary:         #f1f1f1;
 $brand-success:         #9bb83c;
-$brand-info:            #389bca;
+$brand-info:            #389Bc9;
 $brand-warning:         #e5d321;
 $brand-danger:          #e53221;
 
@@ -646,29 +646,29 @@ $modal-sm:                    300px;
 //
 //## Define alert colors, border radius, and padding.
 
-$alert-background-lighten: 40%;
-$alert-border-lighten: 20%;
-$alert-text-darken: 15%;
+$alert-background-lighten: 80%;
+$alert-border-lighten: 50%;
+$alert-text-darken: 50%;
 
 $alert-padding:               15px;
 $alert-border-radius:         $border-radius-base;
 $alert-link-font-weight:      bold;
 
-$alert-success-bg:            lighten($brand-success, $alert-background-lighten);
-$alert-success-text:          darken($brand-success, $alert-text-darken);
-$alert-success-border:        lighten($brand-success, $alert-border-lighten);
+$alert-success-bg:            tint($brand-success, $alert-background-lighten);
+$alert-success-text:          shade($brand-success, $alert-text-darken);
+$alert-success-border:        tint($brand-success, $alert-border-lighten);
 
-$alert-info-bg:               lighten($brand-info, $alert-background-lighten);
-$alert-info-text:             darken($brand-info, $alert-text-darken);
-$alert-info-border:           lighten($brand-info, $alert-border-lighten);
+$alert-info-bg:               tint($brand-info, $alert-background-lighten);
+$alert-info-text:             shade($brand-info, $alert-text-darken);
+$alert-info-border:           tint($brand-info, $alert-border-lighten);
 
-$alert-warning-bg:            lighten($brand-warning, $alert-background-lighten);
-$alert-warning-text:          darken($brand-warning, $alert-text-darken);
-$alert-warning-border:        lighten($brand-warning, $alert-border-lighten);
+$alert-warning-bg:            tint($brand-warning, $alert-background-lighten);
+$alert-warning-text:          shade($brand-warning, $alert-text-darken);
+$alert-warning-border:        tint($brand-warning, $alert-border-lighten);
 
-$alert-danger-bg:             lighten($brand-danger, $alert-background-lighten);
-$alert-danger-text:           darken($brand-danger, $alert-text-darken);
-$alert-danger-border:         lighten($brand-danger, $alert-border-lighten);
+$alert-danger-bg:             tint($brand-danger, $alert-background-lighten);
+$alert-danger-text:           shade($brand-danger, $alert-text-darken);
+$alert-danger-border:         tint($brand-danger, $alert-border-lighten);
 
 
 //== Progress bars
