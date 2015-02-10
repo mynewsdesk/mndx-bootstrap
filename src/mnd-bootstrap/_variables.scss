@@ -188,16 +188,16 @@ $table-border-color:            #ddd;
 
 $btn-font-weight:                normal;
 
-$btn-default-color:              #333;
-$btn-default-bg:                 #fff;
-$btn-default-border:             #ccc;
+$btn-default-color:              #666;
+$btn-default-bg:                 #f4f5f7;
+$btn-default-border:             darken($btn-default-bg, 20%);
 
-$btn-primary-color:              #666;
-$btn-primary-bg:                 $brand-primary;
-$btn-primary-border:             darken($btn-primary-bg, 10%);
+$btn-primary-color:              #fff;
+$btn-primary-bg:                 $brand-success;
+$btn-primary-border:             darken($btn-primary-bg, 5%);
 
-$btn-success-color:              #fff;
-$btn-success-bg:                 $brand-success;
+$btn-success-color:              green;
+$btn-success-bg:                 green;
 $btn-success-border:             darken($btn-success-bg, 5%);
 
 $btn-info-color:                 #fff;
