@@ -19,7 +19,7 @@
 </div>
  */
 
-$base-unit:         $font-size-base;
+$base-unit:         14px;
 $base-unit-x2:      ceil($base-unit * 2);
 $base-unit-x3:      ceil($base-unit * 3);
 
@@ -42,3 +42,4 @@ $base-unit-x3:      ceil($base-unit * 3);
  */
 $gray-lightest:    #f9f9f9;
 $white: #fff;
+$brand-primary-custom: #e53221;

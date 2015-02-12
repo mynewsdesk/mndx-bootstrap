@@ -1,7 +1,8 @@
 @import "../src/mnd-bootstrap/variables";
-@import "../src/mnd-bootstrap/variables_extended";
 @import "./styleguide-base";
 @import "./github.css";
+@import "../src/mnd-bootstrap/variables_custom";
+
 $sg-default-space: 15px;
 
 body{
@@ -22,6 +23,7 @@ body{
 
 .code {
   &-header {
+    line-height: $line-height-base;
     border-bottom: 1px solid $gray-lighter;
   }
   &-example {
