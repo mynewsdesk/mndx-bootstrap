@@ -16,7 +16,7 @@ var argv = require('yargs')
 
 // Dev task: build, serve and watch
 gulp.task('default', function() {
-  gulp.start('hologram', 'webserver', 'watch');
+  gulp.start('webserver', 'watch');
 });
 
 // Release a new version and update the doc (style-guide)
@@ -51,14 +51,14 @@ gulp.task('styleguide-sass', function() {
 });
 
 // Compile style-guide
-gulp.task('hologram', ['clean', 'sass',  'styleguide-sass'], function() {
+gulp.task('hologram', ['clean', 'sass', 'styleguide-sass'], function() {
   return gulp.src('hologram_config.yml')
     .pipe(hologram())
     .pipe(notify({message: 'Hologram task complete'}));
 });
 
 // Serve the style-guide
-gulp.task('webserver', function() {
+gulp.task('webserver', ['hologram'], function() {
   gulp.src('public')
     .pipe(webserver({
       livereload: true
