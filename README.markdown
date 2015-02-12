@@ -10,19 +10,7 @@ http://mynewsdesk.github.io/mnd-bootstrap/
 
 ## Installation
 
-If you are in a rails app and you are not using bower to manage your frontent depdencies:
-
-Add this line you your Gemfile:
-```
-gem 'rails-assets-mnd-bootstrap'
-```
-
-And then execute:
-```
-bundle
-```
-
-If you are using bower:
+Installation is done with bower.
 ```
 bower install --save mnd-bootstrap
 ```
@@ -30,32 +18,33 @@ bower install --save mnd-bootstrap
 ## Usage
 
 ```
-@import("mnd-bootstrap");
+@import "mnd-bootstrap/src/mnd-bootstrap";
 // Optionally import your own bootstrap variables.
-@import("bootstrap");
+@import "mnd-bootstrap/src/bootstrap";
 ```
 
-## Development
+## Development setup
 
-To setup the development environment you need to install the node and bower
-components:
-```
-gem install sass
-gem install hologram
-npm install -g gulp
-npm install
-bower install
-```
+To setup the development environment you need to install all the dependencies.
 
-Then you use gulp to start compile the sass when you change the files:
+Run `bin/setup`.
+
+Then you use gulp to compile the sass when you change the files:
 ```
 gulp
 ```
 
-Let gulp running, it starts a webserver and it will generate the styleguide everytime a file changes.
+Leave gulp running, it starts a webserver and it will generate the styleguide everytime a file changes.
 
 To check the styleguide, go to [http://localhost:8000](http://localhost:8000)
 
+## Keeping dependencies up to date
+
+These are the dependency trees that need to be kept up to date:
+
+* `bundle install` - gem dependencies specified in Gemfile.lock
+* `npm update` - npm dependencies specified in package.json
+* `bower update` - bower dependencies specified in bower.json
 
 ## Release new version
 
