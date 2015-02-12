@@ -35,22 +35,25 @@ bower install --save mnd-bootstrap
 @import("bootstrap");
 ```
 
-## Development
+## Development setup
 
 To setup the development environment you need to install the node and bower
 components:
-```
-gem install sass
-gem install hologram
-npm install -g gulp
-npm install
-bower install
-```
+
+Run `bin/setup`.
 
 Then you use gulp to start compile the sass when you change the files:
 ```
 gulp
 ```
+
+## Keeping dependencies up to date
+
+These are the dependency trees that need to be kept up to date:
+
+* `bundle install` - gem dependencies specified in Gemfile.lock
+* `npm update` - npm dependencies specified in package.json
+* `bower update` - bower dependencies specified in bower.json
 
 Let gulp running, it starts a webserver and it will generate the styleguide everytime a file changes.
 

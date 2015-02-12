@@ -1,0 +1,29 @@
+#!/bin/bash
+
+function header {
+  printf "\n== $1 ==\n"
+}
+
+header "Installing brew dependencies"
+brew update
+npm -v || brew install node
+rbenv -v || brew install rbenv
+ruby-build --version || brew install ruby-build
+
+header "Installing Ruby"
+brew upgrade ruby-build # make sure we're on the latest version
+rbenv install --skip-existing
+
+header "Installing gem dependencies"
+gem install bundler --conservative
+bundle install
+
+header "Installing npm dependencies"
+npm install
+
+header "Installing bower dependencies"
+bower -v || npm install -g bower
+bower install
+
+header "Installing gulp"
+npm install -g gulp
