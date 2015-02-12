@@ -40,6 +40,7 @@ bower install --save mnd-bootstrap
 To setup the development environment you need to install the node and bower
 components:
 ```
+gem install sass
 gem install hologram
 npm install -g gulp
 npm install
