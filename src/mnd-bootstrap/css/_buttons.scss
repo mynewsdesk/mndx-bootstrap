@@ -6,195 +6,58 @@
  ---
 
 ```html_example_table
-<button class="btn btn-default btn-lg">Default</button>
-<button class="btn btn-default">Default</button>
-<button class="btn btn-default btn-sm">Default</button>
-<button class="btn btn-default btn-xs">Default</button>
+<p><button class="btn btn-default btn-lg">Large</button> test</p>
+<p><button class="btn btn-default">Normal</button> test</p>
+<p><button class="btn btn-default btn-sm">Small</button> test</p>
+<p><button class="btn btn-default btn-xs">Extra Small</button> test</p>
 
-<button class="btn btn-primary btn-lg">Primary</button>
-<button class="btn btn-primary">Primary</button>
-<button class="btn btn-primary btn-sm">Primary</button>
-<button class="btn btn-primary btn-xs">Primary</button>
+<p><button class="btn btn-default">Default</button></p>
+<p><button class="btn btn-primary">Primary</button></p>
+<p><button class="btn btn-primary-alt">Primary Alt</button></p>
+<p><button class="btn btn-danger">Danger</button></p>
 
-<button class="btn btn-primary-alt btn-lg">Primary alt</button>
-<button class="btn btn-primary-alt">Primary alt</button>
-<button class="btn btn-primary-alt btn-sm">Primary alt</button>
-<button class="btn btn-primary-alt btn-xs">Primary alt</button>
-
-<button class="btn btn-danger btn-lg">Danger</button>
-<button class="btn btn-danger">Danger</button>
-<button class="btn btn-danger btn-sm">Danger</button>
-<button class="btn btn-danger btn-xs">Danger</button>
+<p><button class="btn-ghost btn-default">Default Ghost</button></p>
+<p><button class="btn-ghost btn-primary">Primary Ghost</button></p>
+<p><button class="btn-ghost btn-primary-alt">Primary Alt Ghost</button></p>
+<p><button class="btn-ghost btn-danger">Danger Ghost</button></p>
 ```
 */
 
-// Buttons
-// --------------------------------------------------
-
-.btn-primary-alt {
-  @extend .btn-danger;
-}
-
-// Base styles
-// --------------------------------------------------
-
 .btn {
-  display: inline-block;
-  margin-bottom: 0; // For input.btn
-  font-weight: $btn-font-weight;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid transparent;
-  white-space: nowrap;
-  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $border-radius-base);
-  @include user-select(none);
-
-  &,
-  &:active,
-  &.active {
-    &:focus {
-      @include tab-focus();
-    }
+  &-primary-alt {
+    @extend .btn-danger;
   }
-
-  &:hover,
-  &:focus {
-    color: $btn-default-color;
-    text-decoration: none;
-  }
-
-  &:active,
-  &.active {
-    outline: 0;
-    background-image: none;
-    @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
-  }
-
-  &.disabled,
-  &[disabled],
-  fieldset[disabled] & {
-    cursor: not-allowed;
-    pointer-events: none; // Future-proof disabling of clicks
-    @include opacity(.65);
-    @include box-shadow(none);
-  }
-}
-
-
-// Alternate buttons
-// --------------------------------------------------
-
-@mixin btn-color($text-color, $bg-color) {
-  color: $text-color;
-  background: $bg-color;
-
-  &:hover {
-    background: lighten($bg-color, 20%);
-  }
-
-}
-
-.btn-default {
-  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
-}
-.btn-primary {
-  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
-}
-// Success appears as green
-.btn-success {
-  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
-}
-// Info appears as blue-green
-.btn-info {
-//  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
-}
-// Warning appears as orange
-.btn-warning {
-//  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
-}
-// Danger and error appear as red
-.btn-danger {
-  @include btn-color($btn-danger-color, $btn-danger-bg)
-//  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
-}
-
-
-// Link buttons
-// -------------------------
-
-// Make a button look and behave like a link
-.btn-link {
-  color: $link-color;
-  font-weight: normal;
-  cursor: pointer;
-  border-radius: 0;
-
-  &,
-  &:active,
-  &[disabled],
-  fieldset[disabled] & {
+  &-ghost {
+    @extend .btn;
     background-color: transparent;
-    @include box-shadow(none);
-  }
-  &,
-  &:hover,
-  &:focus,
-  &:active {
-    border-color: transparent;
-  }
-  &:hover,
-  &:focus {
-    color: $link-hover-color;
-    text-decoration: underline;
-    background-color: transparent;
-  }
-  &[disabled],
-  fieldset[disabled] & {
-    &:hover,
-    &:focus {
-      color: $btn-link-disabled-color;
-      text-decoration: none;
+
+    &.btn-default {
+      color: $btn-default-bg;
+      border-color: $btn-default-bg;
+      &:hover {
+        color: $btn-default-color;
+      }
     }
-  }
-}
-
-
-// Button Sizes
-// --------------------------------------------------
-
-.btn-lg {
-  // line-height: ensure even-numbered height of button next to large input
-  @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $border-radius-large);
-}
-.btn-sm {
-  // line-height: ensure proper height of button next to small input
-  @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $border-radius-small);
-}
-.btn-xs {
-  @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $border-radius-small);
-}
-
-
-// Block button
-// --------------------------------------------------
-
-.btn-block {
-  display: block;
-  width: 100%;
-}
-
-// Vertically space out multiple block buttons
-.btn-block + .btn-block {
-  margin-top: 5px;
-}
-
-// Specificity overrides
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  &.btn-block {
-    width: 100%;
+    &.btn-primary {
+      color: $btn-primary-bg;
+      border-color: $btn-primary-bg;
+      &:hover {
+        color: $btn-primary-color;
+      }
+    }
+    &.btn-primary-alt {
+      color: $btn-danger-bg;
+      border-color: $btn-danger-bg;
+      &:hover {
+        color: $btn-danger-color;
+      }
+    }
+    &.btn-danger {
+      color: $btn-danger-bg;
+      border-color: $btn-danger-bg;
+      &:hover {
+        color: $btn-danger-color;
+      }
+    }
   }
 }
