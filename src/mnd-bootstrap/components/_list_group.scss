@@ -47,7 +47,7 @@ parent: list_group
   }
 
   &-striped {
-    li:nth-child(odd) {
+    .list-group-item:nth-child(odd) {
       background: $list-group-bg-accent;
     }
   }
