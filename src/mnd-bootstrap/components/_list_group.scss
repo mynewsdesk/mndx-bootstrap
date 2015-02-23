@@ -1,8 +1,54 @@
+$list-group-bg-accent: $table-bg-accent;
+
 /*doc
 ---
 title: List group
 name: list_group
 category: Components
 ---
+```html_example
+<ul class="list-group">
+  <li class="list-group-item">This is my Story</li>
+  <li class="list-group-item">Item 2</li>
+  <li class="list-group-item">Item 3</li>
+</ul>
+```
 */
 
+/*doc
+---
+title: Striped List Group
+name: list_group_striped
+parent: list_group
+---
+
+```html_example
+<ul class="list-group list-group-striped">
+  <li class="list-group-item">This is my Story - February 06, 2015 15:53</li>
+  <li class="list-group-item">Item 2</li>
+  <li class="list-group-item">Item 3</li>
+</ul>
+```
+*/
+
+.list-group {
+  border: none;
+
+  &-item {
+    border-width: 1px 0;
+
+    &:first-child{
+      @include border-top-radius(0);
+    }
+
+    &:last-child{
+      @include border-bottom-radius(0);
+    }
+  }
+
+  &-striped {
+    .list-group-item:nth-child(odd) {
+      background: $list-group-bg-accent;
+    }
+  }
+}
