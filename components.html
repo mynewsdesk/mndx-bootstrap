@@ -10,15 +10,17 @@
     <div class="inner">
       <nav id="top-nav" class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="navbar-header">
-          <a href="/"><img alt="Logotype" class="logo" src="logotype.png"></a>
+          <img alt="Logotype" class="logo" src="logotype.png">
         </div>
         <ul class="nav navbar-nav">
           
-            <li><a href="/components.html">Components</a></li>
+            <li><a href="components.html">Components</a></li>
           
-            <li><a href="/css.html">CSS</a></li>
+            <li><a href="css.html">CSS</a></li>
           
-            <li><a href="/variables.html">Variables</a></li>
+            <li><a href="variables.html">Variables</a></li>
+          
+            <li><a href="javascript.html">JavaScript</a></li>
           
         </ul>
       </nav>
@@ -52,6 +54,8 @@
                 <li class="list-group-item"><a href="#labels">Labels</a></li>
               
                 <li class="list-group-item"><a href="#list_group">List group</a></li>
+              
+                <li class="list-group-item"><a href="#list_group_striped">Striped List Group</a></li>
               
                 <li class="list-group-item"><a href="#media_object">Media object</a></li>
               
@@ -127,7 +131,7 @@
             <input class="form-control" id="user_email" name="user[email]" placeholder="Enter email" type="email">
           </div>
           <div class="form-group col-sm-4">
-            <input class="btn btn-success col-xs-12" name="commit" type="submit" value="Sign up">
+            <input class="btn btn-primary col-xs-12" name="commit" type="submit" value="Sign up">
           </div>
         </form>
       </div>
@@ -148,7 +152,7 @@
           <input class="form-control" id="user_email" name="user[email]" placeholder="Enter email" type="email">
         </div>
         <div class="form-group col-sm-4">
-          <input class="btn btn-success col-xs-12" name="commit" type="submit" value="Sign up">
+          <input class="btn btn-primary col-xs-12" name="commit" type="submit" value="Sign up">
         </div>
       </form>
     </div>
@@ -169,7 +173,7 @@
           <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"user_email"</span> <span class="na">name=</span><span class="s">"user[email]"</span> <span class="na">placeholder=</span><span class="s">"Enter email"</span> <span class="na">type=</span><span class="s">"email"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-sm-4"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"btn btn-success col-xs-12"</span> <span class="na">name=</span><span class="s">"commit"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Sign up"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"btn btn-primary col-xs-12"</span> <span class="na">name=</span><span class="s">"commit"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Sign up"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/form&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
@@ -182,6 +186,48 @@
 <h1 id="labels" class="styleguide">Labels</h1>
 
 <h1 id="list_group" class="styleguide">List group</h1>
+<h3 class="code-header">Example</h3>
+<div class="codeExample">
+  <div class="exampleOutput">
+    <ul class="list-group">
+  <li class="list-group-item">This is my Story</li>
+  <li class="list-group-item">Item 2</li>
+  <li class="list-group-item">Item 3</li>
+</ul>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre class="code-example"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>This is my Story<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Item 2<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Item 3<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h2 id="list_group_striped" class="styleguide">Striped List Group</h2>
+<h3 class="code-header">Example</h3>
+<div class="codeExample">
+  <div class="exampleOutput">
+    <ul class="list-group list-group-striped">
+  <li class="list-group-item">This is my Story - February 06, 2015 15:53</li>
+  <li class="list-group-item">Item 2</li>
+  <li class="list-group-item">Item 3</li>
+</ul>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre class="code-example"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group list-group-striped"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>This is my Story - February 06, 2015 15:53<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Item 2<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Item 3<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></pre>
+    </div>
+  </div>
+</div>
 
 <h1 id="media_object" class="styleguide">Media object</h1>
 

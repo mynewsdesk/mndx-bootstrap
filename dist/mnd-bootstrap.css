@@ -77,7 +77,8 @@
 </div>
  */
 body {
-  -webkit-font-smoothing: initial;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 body #sb-site a[name] {
   content: "";
@@ -90,10 +91,10 @@ body #sb-site a[name] {
   background-color: transparent;
 }
 .btn-ghost.btn-success {
-  color: #8ba536;
+  color: #006700;
 }
 .btn-ghost.btn-success:hover {
-  color: #fff;
+  color: green;
 }
 .btn-ghost.btn-info {
   color: #318cb6;
@@ -107,10 +108,10 @@ body #sb-site a[name] {
 .btn-ghost.btn-warning:hover {
   color: #fff;
 }
-.btn-ghost.btn-danger {
+.btn-ghost.btn-danger, .btn-ghost.btn-primary-alt {
   color: #d42919;
 }
-.btn-ghost.btn-danger:hover {
+.btn-ghost.btn-danger:hover, .btn-ghost.btn-primary-alt:hover {
   color: #fff;
 }
 
@@ -131,25 +132,15 @@ body #sb-site a[name] {
 <button class="btn btn-default btn-sm">Default</button>
 <button class="btn btn-default btn-xs">Default</button>
 
-<button class="btn btn-info btn-lg">Info</button>
-<button class="btn btn-info">Info</button>
-<button class="btn btn-info btn-sm">Info</button>
-<button class="btn btn-info btn-xs">Info</button>
-
 <button class="btn btn-primary btn-lg">Primary</button>
 <button class="btn btn-primary">Primary</button>
 <button class="btn btn-primary btn-sm">Primary</button>
 <button class="btn btn-primary btn-xs">Primary</button>
 
-<button class="btn btn-success btn-lg">Success</button>
-<button class="btn btn-success">Success</button>
-<button class="btn btn-success btn-sm">Success</button>
-<button class="btn btn-success btn-xs">Success</button>
-
-<button class="btn btn-warning btn-lg">Warning</button>
-<button class="btn btn-warning">Warning</button>
-<button class="btn btn-warning btn-sm">Warning</button>
-<button class="btn btn-warning btn-xs">Warning</button>
+<button class="btn btn-primary-alt btn-lg">Primary alt</button>
+<button class="btn btn-primary-alt">Primary alt</button>
+<button class="btn btn-primary-alt btn-sm">Primary alt</button>
+<button class="btn btn-primary-alt btn-xs">Primary alt</button>
 
 <button class="btn btn-danger btn-lg">Danger</button>
 <button class="btn btn-danger">Danger</button>
@@ -160,7 +151,7 @@ body #sb-site a[name] {
 .btn, .btn-ghost {
   display: inline-block;
   margin-bottom: 0;
-  font-weight: normal;
+  font-weight: 500;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -182,7 +173,7 @@ body #sb-site a[name] {
   outline-offset: -2px;
 }
 .btn:hover, .btn-ghost:hover, .btn:focus, .btn-ghost:focus {
-  color: #333;
+  color: #666;
   text-decoration: none;
 }
 .btn:active, .btn-ghost:active, .btn.active, .active.btn-ghost {
@@ -201,76 +192,76 @@ body #sb-site a[name] {
 }
 
 .btn-default {
-  color: #333;
-  background-color: #fff;
-  border-color: #ccc;
+  color: #666;
+  background-color: #f4f5f7;
+  border-color: #b9bfcc;
 }
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
+  color: #666;
+  background-color: #d6dae2;
+  border-color: #969fb2;
 }
 .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
   background-image: none;
 }
 .btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled.focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled].focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {
-  background-color: #fff;
-  border-color: #ccc;
+  background-color: #f4f5f7;
+  border-color: #b9bfcc;
 }
 .btn-default .badge {
-  color: #fff;
-  background-color: #333;
+  color: #f4f5f7;
+  background-color: #666;
 }
 
 .btn-primary {
-  color: #666;
-  background-color: #f1f1f1;
-  border-color: #d7d7d7;
+  color: #fff;
+  background-color: #9bb83c;
+  border-color: #8ba536;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
-  color: #666;
-  background-color: #d7d7d7;
-  border-color: #b9b9b9;
+  color: #fff;
+  background-color: #7b922f;
+  border-color: #647727;
 }
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
   background-image: none;
 }
 .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
-  background-color: #f1f1f1;
-  border-color: #d7d7d7;
-}
-.btn-primary .badge {
-  color: #f1f1f1;
-  background-color: #666;
-}
-
-.btn-success {
-  color: #fff;
   background-color: #9bb83c;
   border-color: #8ba536;
 }
+.btn-primary .badge {
+  color: #9bb83c;
+  background-color: #fff;
+}
+
+.btn-success {
+  color: green;
+  background-color: green;
+  border-color: #006700;
+}
 .btn-success:hover, .btn-success:focus, .btn-success.focus, .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
-  color: #fff;
-  background-color: #7b922f;
-  border-color: #647727;
+  color: green;
+  background-color: #004d00;
+  border-color: #002900;
 }
 .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
   background-image: none;
 }
 .btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled.focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled].focus, .btn-success[disabled]:active, .btn-success[disabled].active, fieldset[disabled] .btn-success, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success.focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success.active {
-  background-color: #9bb83c;
-  border-color: #8ba536;
+  background-color: green;
+  border-color: #006700;
 }
 .btn-success .badge {
-  color: #9bb83c;
-  background-color: #fff;
+  color: green;
+  background-color: green;
 }
 
-.btn-danger {
+.btn-danger, .btn-primary-alt {
   color: #fff;
   background: #e53221;
 }
-.btn-danger:hover {
+.btn-danger:hover, .btn-primary-alt:hover {
   background: #f0867c;
 }
 
@@ -540,7 +531,7 @@ parent: typo
             <input class="form-control" id="user_email" name="user[email]" placeholder="Enter email" type="email">
           </div>
           <div class="form-group col-sm-4">
-            <input class="btn btn-success col-xs-12" name="commit" type="submit" value="Sign up">
+            <input class="btn btn-primary col-xs-12" name="commit" type="submit" value="Sign up">
           </div>
         </form>
       </div>
@@ -560,7 +551,7 @@ parent: typo
           <input class="form-control" id="user_email" name="user[email]" placeholder="Enter email" type="email">
         </div>
         <div class="form-group col-sm-4">
-          <input class="btn btn-success col-xs-12" name="commit" type="submit" value="Sign up">
+          <input class="btn btn-primary col-xs-12" name="commit" type="submit" value="Sign up">
         </div>
       </form>
     </div>
@@ -684,7 +675,7 @@ category: Components
             <input class="form-control" id="user_email" name="user[email]" placeholder="Enter email" type="email">
           </div>
           <div class="form-group col-sm-4">
-            <input class="btn btn-success col-xs-12" name="commit" type="submit" value="Sign up">
+            <input class="btn btn-primary col-xs-12" name="commit" type="submit" value="Sign up">
           </div>
         </form>
       </div>
@@ -704,7 +695,7 @@ category: Components
           <input class="form-control" id="user_email" name="user[email]" placeholder="Enter email" type="email">
         </div>
         <div class="form-group col-sm-4">
-          <input class="btn btn-success col-xs-12" name="commit" type="submit" value="Sign up">
+          <input class="btn btn-primary col-xs-12" name="commit" type="submit" value="Sign up">
         </div>
       </form>
     </div>
@@ -756,7 +747,47 @@ title: List group
 name: list_group
 category: Components
 ---
+```html_example
+<ul class="list-group">
+  <li class="list-group-item">This is my Story</li>
+  <li class="list-group-item">Item 2</li>
+  <li class="list-group-item">Item 3</li>
+</ul>
+```
 */
+/*doc
+---
+title: Striped List Group
+name: list_group_striped
+parent: list_group
+---
+
+```html_example
+<ul class="list-group list-group-striped">
+  <li class="list-group-item">This is my Story - February 06, 2015 15:53</li>
+  <li class="list-group-item">Item 2</li>
+  <li class="list-group-item">Item 3</li>
+</ul>
+```
+*/
+.list-group {
+  border: none;
+}
+.list-group-item {
+  border-width: 1px 0;
+}
+.list-group-item:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.list-group-item:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.list-group-striped .list-group-item:nth-child(odd) {
+  background: #f1f8fb;
+}
+
 /*doc
 ---
 title: Media object
