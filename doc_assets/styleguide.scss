@@ -21,8 +21,8 @@ body{
 
 .code {
   &-header {
-    line-height: $line-height-base;
     border-bottom: 1px solid $gray-lighter;
+    line-height: $line-height-base;
   }
   &-example {
     background: #fff;
