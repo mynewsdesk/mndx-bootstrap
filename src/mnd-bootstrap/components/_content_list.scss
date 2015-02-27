@@ -1,0 +1,122 @@
+/*doc
+---
+title: Content List
+name: content_list
+category: Components
+---
+
+Custom list for editable content
+
+```html_example
+<ul class="content-list">
+  <li class="content-list-row content-list-header">
+    <div class="content-list-column">Draft</div>
+    <div class="content-list-column">Last edited</div>
+    <div class="content-list-column">Action</div>
+  </li>
+  <li class="content-list-row">
+    <div class="content-list-column"><a href="#">Press Release Name #1</a></div>
+    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
+    <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
+  </li>
+  <li class="content-list-row">
+    <div class="content-list-column"><a href="#">Press Release Name #2</a></div>
+    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
+    <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
+  </li>
+  <li class="content-list-row">
+    <div class="content-list-column"><a href="#">Press Release Name #3</a></div>
+    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
+    <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
+  </li>
+</ul>
+
+<ul class="content-list content-list-striped">
+  <li class="content-list-row content-list-header">
+    <div class="content-list-column">Draft</div>
+    <div class="content-list-column">Last edited</div>
+    <div class="content-list-column">Action</div>
+  </li>
+  <li class="content-list-row">
+    <div class="content-list-column"><a href="#">Press Release Name #1</a></div>
+    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
+    <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
+  </li>
+  <li class="content-list-row">
+    <div class="content-list-column"><a href="#">Press Release Name #2</a></div>
+    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
+    <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
+  </li>
+  <li class="content-list-row">
+    <div class="content-list-column"><a href="#">Press Release Name #3</a></div>
+    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
+    <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
+  </li>
+</ul>
+```
+*/
+
+.content-list {
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 20px;
+  max-width: 100%;
+  width: 100%;
+
+  @media (min-width: $screen-sm-min) {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: table;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &-striped {
+    .content-list-row {
+      &:nth-child(even) {
+        background: tint(#379AC9, 95%);
+      }
+    }
+  }
+
+  .content-list-row {
+    border-bottom: 1px solid #EEEEEE;
+
+    @media (min-width: $screen-sm-min) {
+      display: table-row;
+    }
+    .content-list-column {
+      padding: 10px 15px;
+
+      @media (min-width: $screen-sm-min) {
+        display: table-cell;
+        padding: 25px;
+        text-align: right;
+      }
+
+      &:first-child {
+        text-align: left;
+      }
+
+      .content-list-action {
+        padding-right: 25px;
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  .content-list-header {
+    display: none;
+    font-weight: bold;
+    border-bottom: 0;
+
+    @media (min-width: $screen-sm-min) {
+      display: table-row;
+    }
+  }
+}
