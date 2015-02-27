@@ -57,10 +57,10 @@ Custom list for editable content
 */
 
 .content-list {
-  padding: 0;
   list-style-type: none;
   margin-bottom: 20px;
   max-width: 100%;
+  padding: 0;
   width: 100%;
 
   @media (min-width: $screen-sm-min) {
@@ -73,50 +73,53 @@ Custom list for editable content
     margin-bottom: 0;
   }
 
-  &-striped {
-    .content-list-row {
-      &:nth-child(even) {
-        background: tint(#379AC9, 95%);
-      }
-    }
-  }
-
   .content-list-row {
-    border-bottom: 1px solid #EEEEEE;
+    border-bottom: 1px solid #eeeeee;
 
     @media (min-width: $screen-sm-min) {
       display: table-row;
     }
-    .content-list-column {
-      padding: 10px 15px;
+  }
 
-      @media (min-width: $screen-sm-min) {
-        display: table-cell;
-        padding: 25px;
-        text-align: right;
-      }
+  .content-list-column {
+    padding: 10px 15px;
 
-      &:first-child {
-        text-align: left;
-      }
+    &:first-child {
+      text-align: left;
+    }
 
-      .content-list-action {
-        padding-right: 25px;
+    @media (min-width: $screen-sm-min) {
+      display: table-cell;
+      padding: 25px;
+      text-align: right;
+    }
+  }
 
-        &:last-child {
-          padding-right: 0;
-        }
-      }
+  .content-list-action {
+    padding-right: 25px;
+
+    &:last-child {
+      padding-right: 0;
     }
   }
 
   .content-list-header {
+    border-bottom: 0;
     display: none;
     font-weight: bold;
-    border-bottom: 0;
 
     @media (min-width: $screen-sm-min) {
       display: table-row;
+    }
+  }
+}
+
+.content-list-striped {
+
+  .content-list-row {
+
+    &:nth-child(even) {
+      background: tint(#379ac9, 95%);
     }
   }
 }
