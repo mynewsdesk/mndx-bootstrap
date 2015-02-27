@@ -1,24 +1,14 @@
-<h3 class="code-header">Example</h3>
-<div class="codeTable">
-  <table class="table">
-    <tbody>
-      <% examples.each do |example| %>
-        <tr>
-          <td>
-            <div class="exampleOutput">
-              <%= example.rendered_example %>
-            </div>
-          </td>
-          <td>
-            <div class="codeBlock">
-              <div class="highlight">
-                <pre class="code-example"><%= example.code_example %></pre>
-              </div>
-            </div>
-          </td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
+<div class="codeExample">
+  <% examples.each do |example| %>
+    <div class="tableExample">
+      <div class="exampleOutput">
+        <%= example.rendered_example %>
+      </div>
+      <div class="codeBlock">
+        <div class="highlight">
+          <pre class="code-example"><%= example.code_example %></pre>
+        </div>
+      </div>
+    </div>
+  <% end %>
 </div>
-
