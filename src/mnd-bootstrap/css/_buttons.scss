@@ -6,10 +6,10 @@
  ---
 
 ```html_example_table
-<p><button class="btn btn-default btn-lg">Large</button> test</p>
-<p><button class="btn btn-default">Normal</button> test</p>
-<p><button class="btn btn-default btn-sm">Small</button> test</p>
-<p><button class="btn btn-default btn-xs">Extra Small</button> test</p>
+<p><button class="btn btn-default btn-lg">Large</button></p>
+<p><button class="btn btn-default">Normal</button></p>
+<p><button class="btn btn-default btn-sm">Small</button></p>
+<p><button class="btn btn-default btn-xs">Extra Small</button></p>
 
 <p><button class="btn btn-default">Default</button></p>
 <p><button class="btn btn-primary">Primary</button></p>
@@ -27,34 +27,39 @@
   &-primary-alt {
     @extend .btn-danger;
   }
+
   &-ghost {
     @extend .btn;
     background-color: transparent;
 
     &.btn-default {
-      color: $btn-default-bg;
       border-color: $btn-default-bg;
+      color: $btn-default-bg;
+
       &:hover {
         color: $btn-default-color;
       }
     }
     &.btn-primary {
-      color: $btn-primary-bg;
       border-color: $btn-primary-bg;
+      color: $btn-primary-bg;
+
       &:hover {
         color: $btn-primary-color;
       }
     }
     &.btn-primary-alt {
-      color: $btn-danger-bg;
       border-color: $btn-danger-bg;
+      color: $btn-danger-bg;
+
       &:hover {
         color: $btn-danger-color;
       }
     }
     &.btn-danger {
-      color: $btn-danger-bg;
       border-color: $btn-danger-bg;
+      color: $btn-danger-bg;
+
       &:hover {
         color: $btn-danger-color;
       }

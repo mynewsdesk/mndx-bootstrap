@@ -1,7 +1,7 @@
 @import "mnd-bootstrap/variables";
 @import "bootstrap.scss";
 
-@import "mnd-bootstrap/_variables_custom";
+@import "mnd-bootstrap/variables_custom";
 @import "mnd-bootstrap/core";
 @import "mnd-bootstrap/helpers";
 
@@ -29,6 +29,7 @@
 @import "mnd-bootstrap/components/jumbotron";
 @import "mnd-bootstrap/components/labels";
 @import "mnd-bootstrap/components/list_group";
+@import "mnd-bootstrap/components/content_list";
 @import "mnd-bootstrap/components/media_object";
 @import "mnd-bootstrap/components/navbar";
 @import "mnd-bootstrap/components/navs";
