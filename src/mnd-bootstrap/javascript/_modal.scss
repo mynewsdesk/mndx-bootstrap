@@ -6,7 +6,7 @@ category: JavaScript
 
 ---
 ```html
-<div class="modal show">
+<div class="modal show" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -14,18 +14,43 @@ category: JavaScript
         <h4 class="modal-title">Modal title</h4>
       </div>
       <div class="modal-body">
-        <p>One fine body&hellip;</p>
+        <p>
+          Ut massa lacus, posuere in facilisis a, blandit ac tortor. Praesent euismod posuere
+          sodales. Nunc maximus eros vitae massa vehicula pharetra. Praesent id nunc ac odio
+          tristique faucibus*.
+        </p>
+        <p class="footnote">
+          * Mauris imperdiet gravida nisl a venenatis. Nulla vel orci congue, efficitur enim eu, cursus
+          justo. Maecenas hendrerit eu elit et hendrerit. Mauris eget eros mi.
+        </p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+    </div>
+  </div>
+</div>
 ```
 */
+
 .modal-backdrop {
   position: fixed;
   bottom: 0;
+}
+
+.modal-content {
+  @include box-shadow(0 2px 4px rgba(187, 187, 187, 0.4));
+  overflow: hidden; // Prevents background color in modal header from bleeding through
+}
+
+.modal-header {
+  background-color: $gray-lightest;
+}
+
+.modal-dialog {
+  .footnote {
+    color: $gray-light;
+    font-size: 12px;
+  }
 }
