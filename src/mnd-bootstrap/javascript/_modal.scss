@@ -5,7 +5,7 @@ name: modal
 category: JavaScript
 
 ---
-```html
+```html_example
 <div class="modal show" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -51,6 +51,6 @@ category: JavaScript
 .modal-dialog {
   .footnote {
     color: $gray-light;
-    font-size: 12px;
+    font-size: $font-size-small;
   }
 }
