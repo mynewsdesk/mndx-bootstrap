@@ -32,10 +32,11 @@
 
   &-secondary {
     @extend .btn-link;
-    color: $text-color;
+    color: $btn-secondary-color;
+
     &:hover {
+      color: darken($btn-secondary-color, 20%);
       text-decoration: none;
-      color: #333;
     }
   }
 
