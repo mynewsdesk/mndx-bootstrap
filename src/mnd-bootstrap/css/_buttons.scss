@@ -15,6 +15,7 @@
 <p><button class="btn btn-primary">Primary</button></p>
 <p><button class="btn btn-primary-alt">Primary Alt</button></p>
 <p><button class="btn btn-danger">Danger</button></p>
+<p><button class="btn btn-secondary">Secondary</button></p>
 
 <p><button class="btn-ghost btn-default">Default Ghost</button></p>
 <p><button class="btn-ghost btn-primary">Primary Ghost</button></p>
@@ -27,6 +28,16 @@
 
   &-primary-alt {
     @extend .btn-danger;
+  }
+
+  &-secondary {
+    @extend .btn-link;
+    color: $btn-secondary-color;
+
+    &:hover {
+      color: darken($btn-secondary-color, 20%);
+      text-decoration: none;
+    }
   }
 
   &-ghost {
