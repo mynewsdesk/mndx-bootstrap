@@ -1,0 +1,169 @@
+.container {
+  max-width: 1128px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.content {
+  margin-top: 5px;
+}
+
+.main > h1 {
+  margin-top: 30px;
+}
+
+.main > h1:first-child {
+  margin-top: 0;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.componentMenu {
+  max-height: 535px;
+  width: 175px;
+  overflow-y: auto;
+}
+
+blockquote:before {
+  content: "Design Note:";
+  font-weight: bold;
+}
+
+blockquote {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  font-family: "Comic Sans MS";
+  font-size:16px;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+code {
+  padding: 2px 4px;
+  color: #d14;
+  white-space: nowrap;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+div.codeExample, div.jsExample {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 10px 0 50px 0;
+}
+
+div.jsExample {
+  border-top: 0px;
+}
+
+div.codeExample:before, div.jsExample:before {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  position: relative;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+div.codeExample:before {
+  content: "Example";
+  background-color: #f9f9f9;
+  top: -1px;
+  left: -1px;
+}
+
+div.jsExample:before {
+  content: "JS Example";
+  background-color: #fff;
+  top: -11px;
+  left: -11px;
+}
+
+div.codeBlock, div.exampleOutput {
+  padding: 30px;
+}
+
+div.codeBlock {
+  background-color: #f9f9f9;
+  border-top: 1px solid #ccc;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+div.tableExample {
+  display: table;
+  width: 100%;
+  margin-top: -32px;
+}
+
+div.tableExample div.exampleOutput,
+div.tableExample div.codeBlock {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+}
+
+div.tableExample div.codeBlock {
+  border-top: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-left: 1px solid #ccc;
+}
+
+div.tableExample:first-child div.exampleOutput,
+div.tableExample:first-child div.codeBlock {
+  padding-top: 60px;
+}
+
+div.tableExample:first-child div.codeBlock {
+  border-top: 1px solid #ccc;
+  border-top-right-radius: 4px;
+}
+
+div.tableExample:last-child div.codeBlock {
+  border-bottom-right-radius: 4px;
+}
+
+.docSwatch {
+  min-height: 218.21px;
+  border: 1px solid #ccc;
+  padding: 10px 0 0 10px;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.codeExample .line > div:after {
+  content: attr(class);
+  display: block;
+  min-height: 40px;
+  line-height: 40px;
+  background-color: #EEE;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+table, table tr, table td, table th {
+  padding: 7px;
+  border: 1px solid #ccc;
+}
+
+table th {
+  font-weight: bold;
+}
+
+.highlight pre {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  white-space: pre-wrap;
+}

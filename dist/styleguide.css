@@ -1,5 +1,42 @@
 /*doc
  ---
+ title: Units extended
+ name: units_extended
+ category: Variables
+ ---
+
+ Those are the units that you can use
+<div class="clearfix">
+  <div class="variable-box">
+    <span>$base-unit=$base-unit</span>
+  </div>
+  <div class="variable-box">
+    <span>$base-unit-x2=$base-unit-x2</span>
+  </div>
+  <div class="variable-box">
+    <span>$base-unit-x3=$base-unit-x3</span>
+  </div>
+</div>
+ */
+/*doc
+ ---
+ title: Colors extended
+ name: colors_extended
+ category: Variables
+ ---
+
+ Those are the colors that you can use
+<div class="clearfix">
+  <div class="color-box gray-lightest">
+    <span>$gray-lightest</span>
+  </div>
+  <div class="color-box white">
+    <span>$white</span>
+  </div>
+</div>
+ */
+/*doc
+ ---
  title: Colors
  name: colors
  category: Variables
@@ -92,6 +129,7 @@ body {
 /* end temporary styling of our navigation*/
 .code-header {
   border-bottom: 1px solid #eeeeee;
+  line-height: 1.42857;
 }
 .code-example {
   background: #fff;
