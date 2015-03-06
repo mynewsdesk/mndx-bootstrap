@@ -1,9 +1,9 @@
 /*doc
- ---
- title: Buttons
- name: Buttons
- category: CSS
- ---
+---
+title: Buttons
+name: Buttons
+category: CSS
+---
 
 ```html_example_table
 <p><button class="btn btn-default btn-lg">Large</button></p>
@@ -22,7 +22,7 @@
 <p><button class="btn-ghost btn-primary-alt">Primary Alt Ghost</button></p>
 <p><button class="btn-ghost btn-danger">Danger Ghost</button></p>
 ```
-*/
+ */
 
 .btn {
 
@@ -79,5 +79,6 @@
         color: $btn-danger-color;
       }
     }
+
   }
 }

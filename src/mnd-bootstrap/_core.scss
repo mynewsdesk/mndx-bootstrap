@@ -11,34 +11,3 @@ body {
     margin-top: -76px;
   }
 }
-
-.btn-ghost {
-  @extend .btn;
-  background-color: transparent;
-  &.btn-success {
-    color: $btn-success-border;
-    &:hover {
-      color: $btn-success-color;
-    }
-  }
-  &.btn-info {
-    color: $btn-info-border;
-    &:hover {
-      color: $btn-info-color;
-    }
-  }
-  &.btn-warning {
-    color: $btn-warning-border;
-    &:hover {
-      color: $btn-warning-color;
-    }
-  }
-  &.btn-danger {
-    color: $btn-danger-border;
-    &:hover {
-      color: $btn-danger-color;
-    }
-  }
-  // .btn-primary only needs the transparent background.
-}
-
