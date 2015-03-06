@@ -6077,7 +6077,7 @@ button.close {
   position: relative;
   background-color: #fff;
   border: 1px solid #999;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid #bbb;
   border-radius: 6px;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
@@ -6103,7 +6103,7 @@ button.close {
 
 .modal-header {
   padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #ddd;
   min-height: 16.42857px;
 }
 
@@ -6124,7 +6124,7 @@ button.close {
 .modal-footer {
   padding: 15px;
   text-align: right;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #ddd;
 }
 .modal-footer:before, .modal-footer:after {
   content: " ";
@@ -6963,44 +6963,16 @@ body #sb-site a[name] {
   margin-top: -76px;
 }
 
-.btn-ghost {
-  background-color: transparent;
-}
-.btn-ghost.btn-success {
-  color: #5a6b23;
-}
-.btn-ghost.btn-success:hover {
-  color: #fff;
-}
-.btn-ghost.btn-info {
-  color: #215e7a;
-}
-.btn-ghost.btn-info:hover {
-  color: #fff;
-}
-.btn-ghost.btn-warning {
-  color: #8f8411;
-}
-.btn-ghost.btn-warning:hover {
-  color: #fff;
-}
-.btn-ghost.btn-danger, .btn-ghost.btn-primary-alt {
-  color: #8f1c11;
-}
-.btn-ghost.btn-danger:hover, .btn-ghost.btn-primary-alt:hover {
-  color: #fff;
-}
-
 .table tbody > tr > td.vert-align {
   vertical-align: middle;
 }
 
 /*doc
- ---
- title: Buttons
- name: Buttons
- category: CSS
- ---
+---
+title: Buttons
+name: Buttons
+category: CSS
+---
 
 ```html_example_table
 <p><button class="btn btn-default btn-lg">Large</button></p>
@@ -7019,7 +6991,7 @@ body #sb-site a[name] {
 <p><button class="btn-ghost btn-primary-alt">Primary Alt Ghost</button></p>
 <p><button class="btn-ghost btn-danger">Danger Ghost</button></p>
 ```
-*/
+ */
 .btn-secondary {
   color: #666;
 }
@@ -7810,7 +7782,7 @@ category: JavaScript
 
 ---
 ```html
-<div class="modal show">
+<div class="modal show" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -7818,20 +7790,43 @@ category: JavaScript
         <h4 class="modal-title">Modal title</h4>
       </div>
       <div class="modal-body">
-        <p>One fine body&hellip;</p>
+        <p>
+          Ut massa lacus, posuere in facilisis a, blandit ac tortor. Praesent euismod posuere
+          sodales. Nunc maximus eros vitae massa vehicula pharetra. Praesent id nunc ac odio
+          tristique faucibus*.
+        </p>
+        <p class="footnote">
+          * Mauris imperdiet gravida nisl a venenatis. Nulla vel orci congue, efficitur enim eu, cursus
+          justo. Maecenas hendrerit eu elit et hendrerit. Mauris eget eros mi.
+        </p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+    </div>
+  </div>
+</div>
 ```
 */
 .modal-backdrop {
   position: fixed;
   bottom: 0;
+}
+
+.modal-content {
+  -webkit-box-shadow: 0 2px 4px rgba(187, 187, 187, 0.4);
+  box-shadow: 0 2px 4px rgba(187, 187, 187, 0.4);
+  overflow: hidden;
+}
+
+.modal-header {
+  background-color: #f9f9f9;
+}
+
+.modal-dialog .footnote {
+  color: #999999;
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=mnd-bootstrap-dev.css.map */
