@@ -50,8 +50,19 @@ gulp.task('styleguide-sass', function() {
     .pipe(notify({message: 'Sass task complete'}));
 });
 
+gulp.task('styleguide-assets', function() {
+  var files = {
+    'bower_components/bootstrap-sass-twbs/assets/javascripts/bootstrap.min.js': 'public/javascripts',
+    'bower_components/jquery/dist/jquery.min.js': 'public/javascripts'
+  };
+  for (var file in files) {
+    gulp.src(file)
+      .pipe(gulp.dest(files[file]));
+  }
+});
+
 // Compile style-guide
-gulp.task('hologram', ['clean', 'sass', 'styleguide-sass'], function() {
+gulp.task('hologram', ['clean', 'sass', 'styleguide-sass', 'styleguide-assets'], function() {
   return gulp.src('hologram_config.yml')
     .pipe(hologram())
     .pipe(notify({message: 'Hologram task complete'}));
