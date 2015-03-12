@@ -42,7 +42,7 @@ category: CSS
 
   &-ghost {
     @extend .btn;
-    background-color: transparent;
+    background-color: #000;
 
     &.btn-default {
       border-color: $btn-default-bg;
