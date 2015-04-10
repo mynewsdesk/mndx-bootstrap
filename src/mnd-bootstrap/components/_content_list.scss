@@ -82,7 +82,7 @@ Custom list for editable content
   }
 
   .content-list-column {
-    padding: 10px 15px;
+    padding: 20px 15px;
 
     &:first-child {
       text-align: left;
@@ -90,7 +90,7 @@ Custom list for editable content
 
     @media (min-width: $screen-sm-min) {
       display: table-cell;
-      padding: 25px;
+      padding: 15px 25px;
       text-align: right;
     }
   }
