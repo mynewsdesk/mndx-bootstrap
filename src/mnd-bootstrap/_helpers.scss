@@ -1,3 +1,27 @@
+@import "variables";
+
 .table tbody > tr > td.vert-align {
   vertical-align: middle;
+}
+
+
+/*
+  Responsive text alignment
+*/
+@media screen and (min-width: $screen-sm-min)  {
+  .text-left-sm {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: $screen-md-min)  {
+  .text-left-md {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: $screen-lg-min)  {
+  .text-left-lg {
+    text-align: left;
+  }
 }
