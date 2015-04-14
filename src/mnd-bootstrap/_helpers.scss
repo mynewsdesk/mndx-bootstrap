@@ -4,10 +4,9 @@
   vertical-align: middle;
 }
 
-
-/*
-  Responsive text alignment
-*/
+//
+// Responsive text alignment
+//
 @media screen and (min-width: $screen-sm-min)  {
   .text-left-sm {
     text-align: left;
