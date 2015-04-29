@@ -47,6 +47,50 @@ category: CSS
 ```
 */
 
-.form-control {
-  @include box-shadow(inset 0 1px 3px 0 rgba(0,0,0,.15));
+.form-group label {
+  text-transform: uppercase;
+  font-size: 10px;
+  margin: 0;
+  color: $gray-light;
+}
+
+.form-group.has-error label {
+  color: $brand-danger;
+}
+
+input.form-control {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid $gray-light;
+  padding-left: 0;
+  font-size: 16px;
+  line-height: 20px;
+
+  &:placeholder-shown {
+   color: $gray-light;
+  }
+
+  &::-webkit-input-placeholder {
+   color: $gray-light;
+  }
+
+  &::-moz-placeholder {
+   color: $gray-light;
+  }
+
+  &:-ms-input-placeholder {
+   color: $gray-light;
+  }
+}
+
+input.form-control,
+.has-error input.form-control,
+.has-warning input.form-control,
+.has-success input.form-control {
+  box-shadow: none;
+
+  &:focus {
+    box-shadow: none;
+    border-bottom-width: 2px;
+  }
 }
