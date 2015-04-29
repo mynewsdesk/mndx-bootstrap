@@ -14,14 +14,17 @@ category: CSS
   <div class="form-group has-success">
     <label for="to">To (.has-success)</label>
     <input type="email" class="form-control" id="to" placeholder="Enter email">
+    <p class="help-block">Example block-level help text here.</p>
   </div>
   <div class="form-group has-warning">
     <label for="to">To (.has-warning)</label>
     <input type="email" class="form-control" id="to" placeholder="Enter email">
+    <p class="help-block">Example block-level help text here.</p>
   </div>
   <div class="form-group has-error">
     <label for="to">To (.has-error)</label>
     <input type="email" class="form-control" id="to" placeholder="Enter email">
+    <p class="help-block">Example block-level help text here.</p>
   </div>
   <div class="form-group">
     <label for="subject">Subject</label>
