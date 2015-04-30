@@ -98,3 +98,7 @@ input.form-control:focus {
 .form-group.has-error label {
   color: $brand-danger;
 }
+
+textarea {
+  resize: vertical;
+}
