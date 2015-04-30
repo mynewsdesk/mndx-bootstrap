@@ -36,23 +36,27 @@ category: CSS
     <label for="message">Message</label>
     <textarea class="form-control" id="subject" placeholder="Enter message"></textarea>
   </div>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox" name="samecheck"> Check me out
-    </label>
-    <br>
-    <label>
-      <input type="checkbox" name="samecheck"> Check me out again
-    </label>
+  <div class="form-group">
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" name="samecheck"> Check me out
+      </label>
+      <br>
+      <label>
+        <input type="checkbox" name="samecheck"> Check me out again
+      </label>
+    </div>
   </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="sameradio"> Check me out
-    </label>
-    <br>
-    <label>
-      <input type="radio" name="sameradio"> Check me out again
-    </label>
+  <div class="form-group">
+    <div class="radio">
+      <label>
+        <input type="radio" name="sameradio"> Check me out
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="sameradio"> Check me out again
+      </label>
+    </div>
   </div>
   <div class="form-group text-right">
     <button type="reset" class="btn btn-secondary">Cancel</button>
@@ -86,11 +90,18 @@ category: CSS
   }
 }
 
-.form-group label {
+label {
   color: $gray-light;
   font-size: $font-size-small;
   margin: 0;
   text-transform: uppercase;
+}
+
+.checkbox label,
+.radio label {
+  color: $text-color;
+  font-size: $font-size-base;
+  text-transform: none;
 }
 
 .form-group.has-error label {
