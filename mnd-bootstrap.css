@@ -7512,23 +7512,27 @@ category: CSS
     <label for="message">Message</label>
     <textarea class="form-control" id="subject" placeholder="Enter message"></textarea>
   </div>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox" name="samecheck"> Check me out
-    </label>
-    <br>
-    <label>
-      <input type="checkbox" name="samecheck"> Check me out again
-    </label>
+  <div class="form-group">
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" name="samecheck"> Check me out
+      </label>
+      <br>
+      <label>
+        <input type="checkbox" name="samecheck"> Check me out again
+      </label>
+    </div>
   </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="sameradio"> Check me out
-    </label>
-    <br>
-    <label>
-      <input type="radio" name="sameradio"> Check me out again
-    </label>
+  <div class="form-group">
+    <div class="radio">
+      <label>
+        <input type="radio" name="sameradio"> Check me out
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="sameradio"> Check me out again
+      </label>
+    </div>
   </div>
   <div class="form-group text-right">
     <button type="reset" class="btn btn-secondary">Cancel</button>
@@ -7571,11 +7575,18 @@ category: CSS
   box-shadow: none;
 }
 
-.form-group label {
+label {
   color: #999999;
   font-size: 12px;
   margin: 0;
   text-transform: uppercase;
+}
+
+.checkbox label,
+.radio label {
+  color: #666;
+  font-size: 14px;
+  text-transform: none;
 }
 
 .form-group.has-error label {
