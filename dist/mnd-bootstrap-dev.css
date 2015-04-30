@@ -1307,11 +1307,27 @@ th {
   content: "\e227";
 }
 
+.glyphicon-btc:before {
+  content: "\e227";
+}
+
+.glyphicon-xbt:before {
+  content: "\e227";
+}
+
 .glyphicon-yen:before {
   content: "\00a5";
 }
 
+.glyphicon-jpy:before {
+  content: "\00a5";
+}
+
 .glyphicon-ruble:before {
+  content: "\20bd";
+}
+
+.glyphicon-rub:before {
   content: "\20bd";
 }
 
@@ -1551,6 +1567,10 @@ hr {
   clip: auto;
 }
 
+[role="button"] {
+  cursor: pointer;
+}
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
@@ -1688,7 +1708,7 @@ mark,
   text-transform: lowercase;
 }
 
-.text-uppercase {
+.text-uppercase, .initialism {
   text-transform: uppercase;
 }
 
@@ -1866,7 +1886,6 @@ abbr[data-original-title] {
 
 .initialism {
   font-size: 90%;
-  text-transform: uppercase;
 }
 
 blockquote {
@@ -3219,9 +3238,11 @@ output {
   color: #999999;
 }
 .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
-  cursor: not-allowed;
   background-color: #eeeeee;
   opacity: 1;
+}
+.form-control[disabled], fieldset[disabled] .form-control {
+  cursor: not-allowed;
 }
 
 textarea.form-control {
@@ -3324,6 +3345,7 @@ input[type="search"] {
 
 .radio-inline,
 .checkbox-inline {
+  position: relative;
   display: inline-block;
   padding-left: 20px;
   margin-bottom: 0;
@@ -3361,6 +3383,7 @@ input[type="checkbox"] {
   padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 0;
+  min-height: 34px;
 }
 .form-control-static.input-lg, .input-group-lg > .form-control-static.form-control,
 .input-group-lg > .form-control-static.input-group-addon,
@@ -3424,6 +3447,7 @@ select[multiple].input-sm,
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
+  min-height: 32px;
 }
 
 .input-lg, .input-group-lg > .form-control,
@@ -3477,6 +3501,7 @@ select[multiple].input-lg,
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
+  min-height: 38px;
 }
 
 .has-feedback {
@@ -3954,11 +3979,9 @@ input[type="button"].btn-block {
 
 .collapse {
   display: none;
-  visibility: hidden;
 }
 .collapse.in {
   display: block;
-  visibility: visible;
 }
 
 tr.collapse.in {
@@ -3987,7 +4010,7 @@ tbody.collapse.in {
   height: 0;
   margin-left: 2px;
   vertical-align: middle;
-  border-top: 4px solid;
+  border-top: 4px dashed;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
 }
@@ -4622,11 +4645,9 @@ tbody.collapse.in {
 
 .tab-content > .tab-pane {
   display: none;
-  visibility: hidden;
 }
 .tab-content > .active {
   display: block;
-  visibility: visible;
 }
 
 .nav-tabs .dropdown-menu {
@@ -4693,7 +4714,6 @@ tbody.collapse.in {
   }
   .navbar-collapse.collapse {
     display: block !important;
-    visibility: visible !important;
     height: auto !important;
     padding-bottom: 0;
     overflow: visible !important;
@@ -5407,7 +5427,7 @@ a.label:hover, a.label:focus {
   position: relative;
   top: -1px;
 }
-.btn-xs .badge, .btn-group-xs > .btn .badge, .btn-group-xs > .btn-ghost .badge {
+.btn-xs .badge, .btn-group-xs > .btn .badge, .btn-group-xs > .btn-ghost .badge, .btn-group-xs > .btn .badge, .btn-group-xs > .btn-ghost .badge {
   top: 0;
   padding: 1px 5px;
 }
@@ -6271,10 +6291,12 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   width: 100%;
   border: 0;
 }
-.embed-responsive.embed-responsive-16by9 {
+
+.embed-responsive-16by9 {
   padding-bottom: 56.25%;
 }
-.embed-responsive.embed-responsive-4by3 {
+
+.embed-responsive-4by3 {
   padding-bottom: 75%;
 }
 
@@ -6386,10 +6408,12 @@ button.close {
 }
 
 .modal-backdrop {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
+  bottom: 0;
   left: 0;
+  z-index: 1040;
   background-color: #000;
 }
 .modal-backdrop.fade {
@@ -6476,7 +6500,6 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  visibility: visible;
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
@@ -6979,7 +7002,6 @@ button.close {
 
 .hidden {
   display: none !important;
-  visibility: hidden !important;
 }
 
 .affix {
@@ -7286,10 +7308,103 @@ body #sb-site a[name] {
   margin-top: -76px;
 }
 
+/*doc
+ ---
+ title: Units extended
+ name: units_extended
+ category: Variables
+ ---
+
+ Those are the units that you can use
+<div class="clearfix">
+  <div class="variable-box">
+    <span>$base-unit=$base-unit</span>
+  </div>
+  <div class="variable-box">
+    <span>$base-unit-x2=$base-unit-x2</span>
+  </div>
+  <div class="variable-box">
+    <span>$base-unit-x3=$base-unit-x3</span>
+  </div>
+</div>
+ */
+/*doc
+ ---
+ title: Colors extended
+ name: colors_extended
+ category: Variables
+ ---
+
+ Those are the colors that you can use
+<div class="clearfix">
+  <div class="color-box gray-lightest">
+    <span>$gray-lightest</span>
+  </div>
+  <div class="color-box white">
+    <span>$white</span>
+  </div>
+</div>
+ */
+/*doc
+ ---
+ title: Colors
+ name: colors
+ category: Variables
+ ---
+
+ Those are the colors that you can use
+<div class="clearfix">
+  <div class="color-box gray-darker">
+    <span>$gray-darker</span>
+  </div>
+  <div class="color-box gray-dark">
+    <span>$gray-dark</span>
+  </div>
+  <div class="color-box gray">
+    <span>$gray</span>
+  </div>
+  <div class="color-box gray-light">
+    <span>$gray-light</span>
+  </div>
+  <div class="color-box gray-lighter">
+    <span>$gray-lighter</span>
+  </div>
+  <div class="color-box brand-primary">
+    <span>$brand-primary</span>
+  </div>
+  <div class="color-box brand-success">
+    <span>$brand-success</span>
+  </div>
+  <div class="color-box brand-info">
+    <span>$brand-info</span>
+  </div>
+  <div class="color-box brand-warning">
+    <span>$brand-warning</span>
+  </div>
+  <div class="color-box brand-danger">
+    <span>$brand-danger</span>
+  </div>
+</div>
+ */
 .table tbody > tr > td.vert-align {
   vertical-align: middle;
 }
 
+@media screen and (min-width: 768px) {
+  .text-left-sm {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-left-md {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .text-left-lg {
+    text-align: left;
+  }
+}
 /*doc
 ---
 title: Buttons
@@ -7377,14 +7492,17 @@ category: CSS
   <div class="form-group has-success">
     <label for="to">To (.has-success)</label>
     <input type="email" class="form-control" id="to" placeholder="Enter email">
+    <p class="help-block">Example block-level help text here.</p>
   </div>
   <div class="form-group has-warning">
     <label for="to">To (.has-warning)</label>
     <input type="email" class="form-control" id="to" placeholder="Enter email">
+    <p class="help-block">Example block-level help text here.</p>
   </div>
   <div class="form-group has-error">
     <label for="to">To (.has-error)</label>
     <input type="email" class="form-control" id="to" placeholder="Enter email">
+    <p class="help-block">Example block-level help text here.</p>
   </div>
   <div class="form-group">
     <label for="subject">Subject</label>
@@ -7396,19 +7514,76 @@ category: CSS
   </div>
   <div class="checkbox">
     <label>
-      <input type="checkbox"> Check me out
+      <input type="checkbox" name="samecheck"> Check me out
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" name="samecheck"> Check me out again
     </label>
   </div>
-  <div class="form-group text-center">
-    <button type="reset" class="btn btn-default">Cancel</button>
+  <div class="radio">
+    <label>
+      <input type="radio" name="sameradio"> Check me out
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="sameradio"> Check me out again
+    </label>
+  </div>
+  <div class="form-group text-right">
+    <button type="reset" class="btn btn-secondary">Cancel</button>
     <button type="submit" class="btn btn-default">Submit</button>
   </div>
 </form>
 ```
 */
 .form-control {
-  -webkit-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #999999;
+  font-size: 18px;
+  padding-left: 0;
+}
+.form-control::-webkit-input-placeholder {
+  color: #999999;
+}
+.form-control::-moz-placeholder {
+  color: #999999;
+}
+.form-control:-moz-placeholder {
+  color: #999999;
+}
+.form-control:-ms-input-placeholder {
+  color: #999999;
+}
+
+.form-control,
+.has-error .form-control,
+.has-warning .form-control,
+.has-success .form-control {
+  box-shadow: none;
+}
+.form-control:focus,
+.has-error .form-control:focus,
+.has-warning .form-control:focus,
+.has-success .form-control:focus {
+  box-shadow: none;
+}
+
+.form-group label {
+  color: #999999;
+  font-size: 12px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.form-group.has-error label {
+  color: #e53221;
+}
+
+textarea {
+  resize: vertical;
 }
 
 /*doc
@@ -7810,12 +7985,12 @@ parent: list_group
   border-width: 1px 0;
 }
 .list-group-item:first-child {
-  border-top-right-radius: 0;
   border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 .list-group-item:last-child {
-  border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .list-group-striped .list-group-item:nth-child(odd) {
   background: #f1f8fb;
@@ -7904,7 +8079,7 @@ Custom list for editable content
   }
 }
 .content-list .content-list-column {
-  padding: 10px 15px;
+  padding: 20px 15px;
 }
 .content-list .content-list-column:first-child {
   text-align: left;
@@ -7912,7 +8087,7 @@ Custom list for editable content
 @media (min-width: 768px) {
   .content-list .content-list-column {
     display: table-cell;
-    padding: 25px;
+    padding: 15px 25px;
     text-align: right;
   }
 }
