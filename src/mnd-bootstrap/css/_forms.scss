@@ -64,8 +64,7 @@ category: CSS
   border-radius: 0;
   border: none;
   border-bottom: 1px solid $gray-light;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: $font-size-large;
   padding-left: 0;
 
   @include placeholder {
@@ -90,7 +89,7 @@ input.form-control:focus {
 
 .form-group label {
   color: $gray-light;
-  font-size: 10px;
+  font-size: $font-size-small;
   margin: 0;
   text-transform: uppercase;
 }
