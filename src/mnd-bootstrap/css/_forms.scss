@@ -60,7 +60,7 @@ category: CSS
 ```
 */
 
-input.form-control {
+.form-control {
   border-radius: 0;
   border: none;
   border-bottom: 1px solid $gray-light;
@@ -73,16 +73,19 @@ input.form-control {
   }
 }
 
-input.form-control,
-.has-error input.form-control,
-.has-warning input.form-control,
-.has-success input.form-control {
+.form-control,
+.has-error .form-control,
+.has-warning .form-control,
+.has-success .form-control {
   box-shadow: none;
 
   &:focus {
-    border-bottom-width: 2px;
     box-shadow: none;
   }
+}
+
+input.form-control:focus {
+  border-bottom-width: 2px;
 }
 
 .form-group label {
