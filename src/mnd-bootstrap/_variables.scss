@@ -192,9 +192,10 @@ $table-border-color:            #ddd;
 
 $btn-font-weight:                400;
 
-$btn-default-color:              $white;
-$btn-default-bg:                 $gray-light;
-$btn-default-border:             darken($btn-default-bg, 20%);
+$btn-default-color:              #555;
+$btn-default-bg:                 #f4f5f6;
+$btn-default-bg-hover:           #f9fafb;
+$btn-default-border:             #b1b6bf;
 
 $btn-primary-color:              $white;
 $btn-primary-bg:                 $brand-success;

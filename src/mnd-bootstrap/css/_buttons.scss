@@ -26,14 +26,9 @@ category: CSS
 
 .btn {
   &-default {
-    color: #555;
-    background-color: #f4f5f6;
-    border-color: #b1b6bf;
-
     &:hover {
-      color: #999;
-      background-color: #f9fafb;
-      border-color: #b1b6bf;
+      color: $gray-light;
+      background-color: $btn-default-bg-hover;
     }
   }
 
