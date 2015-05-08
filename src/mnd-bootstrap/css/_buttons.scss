@@ -49,11 +49,12 @@ category: CSS
     background-color: transparent;
 
     &.btn-default {
-      border-color: $btn-default-bg;
-      color: $btn-default-bg;
+      border-color: $btn-ghost-default-bg;
+      color: $btn-ghost-default-bg;
 
       &:hover {
-        color: $btn-default-color;
+        color: $btn-ghost-default-color;
+        background-color: $btn-ghost-default-bg;
       }
     }
 

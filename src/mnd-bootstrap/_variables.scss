@@ -197,6 +197,10 @@ $btn-default-bg:                 #f4f5f6;
 $btn-default-bg-hover:           #f9fafb;
 $btn-default-border:             #b1b6bf;
 
+$btn-ghost-default-color:        $white;
+$btn-ghost-default-bg:           $gray-light;
+$btn-ghost-default-border:       darken($btn-default-bg, 20%);
+
 $btn-primary-color:              $white;
 $btn-primary-bg:                 $brand-success;
 $btn-primary-border:             darken($btn-primary-bg, 20%);
