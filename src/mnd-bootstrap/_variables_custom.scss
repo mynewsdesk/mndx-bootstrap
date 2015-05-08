@@ -32,6 +32,9 @@ $base-unit-x3:      ceil($base-unit * 3);
 
  Those are the colors that you can use
 <div class="clearfix">
+  <div class="color-box gray-lighten">
+    <span>$gray-lighten</span>
+  </div>
   <div class="color-box gray-lightest">
     <span>$gray-lightest</span>
   </div>
@@ -40,6 +43,7 @@ $base-unit-x3:      ceil($base-unit * 3);
   </div>
 </div>
  */
-$gray-lightest:    #f9f9f9;
+$gray-lighten: #bbb;
+$gray-lightest: #f9f9f9;
 $white: #fff;
 $brand-primary-custom: #e53221;

@@ -1,0 +1,99 @@
+@import "font-awesome";
+
+/*doc
+---
+title: Calendar
+name: calendar
+category: Components
+---
+
+A calendar, designed for the datepicker
+
+```html_example
+<Caldendar />
+```
+*/
+
+.rw-sr {
+  display: block;
+  float: left;
+  text-indent: -90000px;
+}
+
+.date-picker-calendar {
+  .rw-header {
+    border-bottom: 1px solid $gray-lighter;
+    margin: 10px 0;
+    overflow: hidden;
+    padding: 0 10px 10px;
+  }
+
+  .rw-calendar {
+    outline: none;
+  }
+
+  .rw-calendar-grid {
+    margin: 10px auto;
+
+    th {
+      font-size: 0.9em;
+      font-weight: normal;
+      padding-bottom: 10px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    td {
+      height: 28px;
+      width: 28px;
+    }
+
+    .rw-btn {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .rw-btn-view {
+    border: none;
+    color: $gray-dark;
+    float: left;
+    font-size: $base-unit;
+    text-transform: uppercase;
+    width: 60%;
+  }
+
+  .rw-btn-left,
+  .rw-btn-right {
+    @extend .fa;
+    float: left;
+    line-height: 20px;
+    width: 20%;
+  }
+
+  .rw-btn-left {
+    @extend .fa-angle-left;
+  }
+
+  .rw-btn-right {
+    @extend .fa-angle-right;
+  }
+
+  .rw-btn {
+    background: transparent;
+    border: none;
+    color: $gray-dark;
+    display: inline-block;
+
+    .rw-off-range {
+      color: $gray-light;
+    }
+  }
+
+  .rw-state-selected {
+    background: $brand-success;
+    border-radius: 3px;
+    color: $white;
+  }
+}
+

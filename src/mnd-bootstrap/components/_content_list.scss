@@ -67,6 +67,7 @@ Custom list for editable content
     border-collapse: collapse;
     border-spacing: 0;
     display: table;
+    table-layout: fixed;
   }
 
   &:last-child {
@@ -74,7 +75,7 @@ Custom list for editable content
   }
 
   .content-list-row {
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid $gray-lighter;
 
     @media (min-width: $screen-sm-min) {
       display: table-row;
@@ -104,7 +105,7 @@ Custom list for editable content
   }
 
   .content-list-header {
-    border-bottom: 0;
+    border-bottom: 1px solid $gray-lighter;
     display: none;
     font-weight: bold;
 
@@ -119,7 +120,7 @@ Custom list for editable content
   .content-list-row {
 
     &:nth-child(even) {
-      background: tint(#379ac9, 95%);
+      background-color: $brand-primary;
     }
   }
 }

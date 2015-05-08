@@ -6,3 +6,7 @@ category: CSS
 ---
 */
 
+.container-fluid {
+  padding-left: $container-fluid-padding;
+  padding-right: $container-fluid-padding;
+}

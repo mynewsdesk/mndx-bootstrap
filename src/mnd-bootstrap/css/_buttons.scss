@@ -25,6 +25,10 @@ category: CSS
  */
 
 .btn {
+  &-default:hover {
+    background-color: $btn-default-bg-hover;
+    color: $gray-light;
+  }
 
   &-primary-alt {
     @extend .btn-danger;
