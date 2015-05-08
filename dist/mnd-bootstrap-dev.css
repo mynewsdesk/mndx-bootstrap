@@ -7454,11 +7454,12 @@ category: CSS
   background-color: transparent;
 }
 .btn-ghost.btn-default {
-  border-color: #f4f5f6;
-  color: #f4f5f6;
+  border-color: #999999;
+  color: #999999;
 }
 .btn-ghost.btn-default:hover {
-  color: #555;
+  color: #fff;
+  background-color: #999999;
 }
 .btn-ghost.btn-primary {
   border-color: #9bb83c;
