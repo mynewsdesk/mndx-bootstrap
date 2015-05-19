@@ -41,7 +41,8 @@ section {
     background-color: #F2F2F2;
   }
 
-  > .container {
+  > .container,
+  > .container-fluid {
     header, .body, footer {
       text-align: center;
     }
