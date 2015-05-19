@@ -1,4 +1,4 @@
-import DatePicker from './src/react-components/datepicker'
+import DatePicker from 'components/datepicker'
 import React from 'react'
 
 window.React = React
