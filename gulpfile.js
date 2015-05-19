@@ -27,6 +27,7 @@ gulp.task('release', function(done) {
 // Recompile the styleguide on scss file change
 gulp.task('watch', function() {
   gulp.watch(['src/**/*.scss', 'doc_assets/**/*.scss' ,'doc_assets/**/*.html'], ['hologram']);
+  gulp.watch(['src/**/*.js'], ['hologram']);
 });
 
 // Compile sass files
