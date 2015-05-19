@@ -1,5 +1,3 @@
-@import "font-awesome";
-
 /*doc
 ---
 title: Calendar
@@ -13,12 +11,16 @@ A calendar, designed for the datepicker
 <Caldendar />
 ```
 */
-
 .rw-sr {
-  display: block;
-  float: left;
-  text-indent: -90000px;
+  @extend .sr-only;
 }
+
+.date-picker {
+  display: inline-block;
+  position: relative;
+  margin: inherit 0;
+}
+
 
 .date-picker-calendar {
   .rw-header {
@@ -28,12 +30,19 @@ A calendar, designed for the datepicker
     padding: 0 10px 10px;
   }
 
+  .popover {
+    display: block;
+  }
+
   .rw-calendar {
     outline: none;
   }
+}
 
+.date-picker-calendar {
   .rw-calendar-grid {
-    margin: 10px auto;
+    margin: 10px;
+    border: none;
 
     th {
       font-size: 0.9em;
@@ -41,16 +50,24 @@ A calendar, designed for the datepicker
       padding-bottom: 10px;
       text-align: center;
       text-transform: uppercase;
+      border: none;
     }
 
     td {
       height: 28px;
       width: 28px;
+      padding: 0;
+      border: none;
+    }
+
+    tr {
+      border: none;
     }
 
     .rw-btn {
       height: 100%;
       width: 100%;
+      border-radius: 0;
     }
   }
 
@@ -65,18 +82,18 @@ A calendar, designed for the datepicker
 
   .rw-btn-left,
   .rw-btn-right {
-    @extend .fa;
+    @extend .fa !optional;
     float: left;
     line-height: 20px;
     width: 20%;
   }
 
   .rw-btn-left {
-    @extend .fa-angle-left;
+    @extend .fa-angle-left !optional;
   }
 
   .rw-btn-right {
-    @extend .fa-angle-right;
+    @extend .fa-angle-right !optional;
   }
 
   .rw-btn {
@@ -97,3 +114,22 @@ A calendar, designed for the datepicker
   }
 }
 
+.date-picker-calendar .popover {
+  box-shadow: none;
+  display: block;
+  left: 0;
+  min-width: 200px;
+  right: auto;
+  top: 40px;
+  z-index: 1;
+
+  .arrow {
+    border-bottom-color: rgba(0, 0, 0, 0.25);
+    left: 10%;
+    right: auto;
+  }
+
+  .popover-content {
+    padding: 0;
+  }
+}
