@@ -78,13 +78,17 @@ module.exports = function(grunt) {
     release: {
       options: {
         additionalFiles: ['bower.json'],
-        npm: false
+        npm: false,
+        afterRelease: ['gh-pages']
+      }
+    },
+    'gh-pages': {
+      options: {
+        base: '<%= PUBLIC %>'
       }
     }
   });
 
   grunt.registerTask('build', ['sass', 'webpack', 'hologram'])
   grunt.registerTask('default', ['build', 'connect', 'watch'])
-  grunt.registerTask('release', [])
-
 }
