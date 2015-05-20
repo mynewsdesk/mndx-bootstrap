@@ -19,6 +19,20 @@ module.exports = function(grunt) {
         }
       }
     },
+    copy: {
+      jquery: {
+        expand: true,
+        cwd: 'bower_components/jquery/dist/',
+        src: 'jquery.min.js',
+        dest: 'hologram/doc_assets/'
+      },
+      bootstrap: {
+        expand: true,
+        cwd: 'bower_components/bootstrap-sass-twbs/assets/javascripts/',
+        src: 'bootstrap.js',
+        dest: 'hologram/doc_assets/'
+      }
+    },
     webpack: {
       dist: {
         entry: './hologram/mnd.js',
@@ -94,6 +108,6 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('build', ['sass', 'webpack', 'hologram'])
+  grunt.registerTask('build', ['copy', 'sass', 'webpack', 'hologram'])
   grunt.registerTask('default', ['build', 'connect', 'watch'])
 }
