@@ -2,13 +2,16 @@
 <html>
   <head>
     <title>Mynewsdesk Style Guide: Variables</title>
-    <link rel="stylesheet" href="dist/mnd-bootstrap-dev.css">
+    <link rel="stylesheet" href="mnd-bootstrap-dev.css">
     <link rel="stylesheet" href="docs.css">
     <link rel="stylesheet" href="github.css">
     <link rel="stylesheet" href="styleguide.css">
     <script src="javascripts/jquery.min.js"></script>
     <script src="javascripts/bootstrap.min.js"></script>
     <script src="//localhost:35729/livereload.js"></script>
+    <script src="https://fb.me/react-0.13.3.js"></script>
+    <script src="mnd.js"></script>
+    <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
   </head>
   <body>
     <div class="inner">
@@ -23,6 +26,8 @@
             <li><a href="css.html">CSS</a></li>
           
             <li><a href="variables.html">Variables</a></li>
+          
+            <li><a href="react_components.html">React Components</a></li>
           
             <li><a href="javascript.html">JavaScript</a></li>
           
@@ -47,9 +52,8 @@
             </div>
           </div>
           <div class="col-xs-12 col-md-10">
-<h1 id="colors">Colors</h1>
-
-<p>Those are the colors that you can use
+<h1 id="colors" class="styleguide">Colors</h1>
+<p class="styleguide"> Those are the colors that you can use
 <div class="clearfix">
   <div class="color-box gray-darker">
     <span>$gray-darker</span>
@@ -82,10 +86,8 @@
     <span>$brand-danger</span>
   </div>
 </div></p>
-
-<h1 id="colors_extended">Colors extended</h1>
-
-<p>Those are the colors that you can use
+<h1 id="colors_extended" class="styleguide">Colors extended</h1>
+<p class="styleguide"> Those are the colors that you can use
 <div class="clearfix">
   <div class="color-box gray-lighten">
     <span>$gray-lighten</span>
@@ -97,10 +99,8 @@
     <span>$white</span>
   </div>
 </div></p>
-
-<h1 id="units_extended">Units extended</h1>
-
-<p>Those are the units that you can use
+<h1 id="units_extended" class="styleguide">Units extended</h1>
+<p class="styleguide"> Those are the units that you can use
 <div class="clearfix">
   <div class="variable-box">
     <span>$base-unit=$base-unit</span>
@@ -111,8 +111,7 @@
   <div class="variable-box">
     <span>$base-unit-x3=$base-unit-x3</span>
   </div>
-</div></p>
-        </div>
+</div></p>        </div>
       </section>
     </div>
   </body>

@@ -2,13 +2,16 @@
 <html>
   <head>
     <title>Mynewsdesk Style Guide: JavaScript</title>
-    <link rel="stylesheet" href="dist/mnd-bootstrap-dev.css">
+    <link rel="stylesheet" href="mnd-bootstrap-dev.css">
     <link rel="stylesheet" href="docs.css">
     <link rel="stylesheet" href="github.css">
     <link rel="stylesheet" href="styleguide.css">
     <script src="javascripts/jquery.min.js"></script>
     <script src="javascripts/bootstrap.min.js"></script>
     <script src="//localhost:35729/livereload.js"></script>
+    <script src="https://fb.me/react-0.13.3.js"></script>
+    <script src="mnd.js"></script>
+    <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
   </head>
   <body>
     <div class="inner">
@@ -23,6 +26,8 @@
             <li><a href="css.html">CSS</a></li>
           
             <li><a href="variables.html">Variables</a></li>
+          
+            <li><a href="react_components.html">React Components</a></li>
           
             <li><a href="javascript.html">JavaScript</a></li>
           
@@ -43,8 +48,10 @@
             </div>
           </div>
           <div class="col-xs-12 col-md-10">
-<h1 id="modal">Modal</h1>
-<div class="codeExample"><div class="exampleOutput"><div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<h1 id="modal" class="styleguide">Modal</h1>
+<div class="codeExample">
+  <div class="exampleOutput">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -73,7 +80,11 @@
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
   Launch demo modal
 </button>
-</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"myModal"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"myModalLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre class="code-example"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"myModal"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"myModalLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
@@ -101,8 +112,11 @@
 
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#myModal"</span><span class="nt">&gt;</span>
   Launch demo modal
-<span class="nt">&lt;/button&gt;</span>
-</pre></div></div></div>        </div>
+<span class="nt">&lt;/button&gt;</span></pre>
+    </div>
+  </div>
+</div>
+        </div>
       </section>
     </div>
   </body>
