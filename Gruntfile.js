@@ -59,14 +59,19 @@ module.exports = function(grunt) {
         files: '<%= PUBLIC %>/**/*',
         options: {
           livereload: 35729
-        }
+        },
+        tasks: ['notify:hologram']
       },
       config: {
-        files: ['Gruntfile.js']
+        files: ['Gruntfile.js'],
+        tasks: ['build']
       }
     },
     connect: {
-      base: '<%= PUBLIC %>'
+      options: {
+        base: '<%= PUBLIC %>'
+      },
+      dist: {}
     },
     notify: {
       hologram: {
