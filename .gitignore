@@ -4,3 +4,5 @@ node_modules/
 bower_components/
 .grunt/
 .public/
+hologram/doc_assets/jquery.min.js
+hologram/doc_assets/bootstrap.js
