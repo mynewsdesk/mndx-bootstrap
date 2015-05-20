@@ -1,5 +1,3 @@
-import DatePicker from 'components/datepicker'
-import React from 'react'
-
-window.React = React
-window.DatePicker = DatePicker
+window.React = require('react')
+window.DatePicker = require('components/datepicker')
+window.Dropdown = require('components/dropdown')
