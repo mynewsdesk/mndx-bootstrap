@@ -104,6 +104,9 @@ module.exports = function(grunt) {
     'gh-pages': {
       options: {
         base: '<%= PUBLIC %>'
+      },
+      dist: {
+        src: ['**']
       }
     }
   });
