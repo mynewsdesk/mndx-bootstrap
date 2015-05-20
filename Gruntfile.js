@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-  require('grunt-task-loader')(grunt)
+  require('grunt-task-loader')(grunt);
 
   grunt.initConfig({
     SRC: 'src',
@@ -42,8 +42,16 @@ module.exports = function(grunt) {
         },
         module: {
           loaders: [
-            {test: /\.coffee$/, exclude: /node_modules/, loaders: ['jsx-loader', 'coffee-loader']},
-            {test: /\.js$/, exclude: /node_modules|hologram/, loader: 'babel-loader'}
+            {
+              test: /\.coffee$/,
+              exclude: /node_modules/,
+              loaders: ['jsx-loader', 'coffee-loader']
+            },
+            {
+              test: /\.js$/,
+              exclude: /node_modules|hologram/,
+              loader: 'babel-loader'
+            }
           ]
         },
         resolve: {
@@ -64,7 +72,11 @@ module.exports = function(grunt) {
     },
     watch: {
       js: {
-        files: ['<%= SRC %>/**/*.js', '<%= SRC %>/**/*.coffee', 'hologram/mnd.js'],
+        files: [
+          '<%= SRC %>/**/*.js',
+          '<%= SRC %>/**/*.coffee',
+          'hologram/mnd.js'
+        ],
         tasks: ['webpack', 'hologram']
       },
       scss: {
@@ -113,7 +125,7 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('build', ['copy', 'sass', 'webpack', 'hologram'])
-  grunt.registerTask('default', ['build', 'connect', 'watch'])
-  grunt.registerTask('deploy', ['build', 'gh-pages']
-}
+  grunt.registerTask('build', ['copy', 'sass', 'webpack', 'hologram']);
+  grunt.registerTask('default', ['build', 'connect', 'watch']);
+  grunt.registerTask('deploy', ['build', 'gh-pages']);
+};
