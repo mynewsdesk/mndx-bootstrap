@@ -2,7 +2,7 @@
   "name": "mnd-bootstrap",
   "version": "1.8.0",
   "description": "",
-  "main": "Gruntfile.js",
+  "main": "mnd.js",
   "author": "Zoee Silcock",
   "repository": {
     "type": "git",
