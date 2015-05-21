@@ -1,3 +1,8 @@
+var babel = require('babel-core');
+var coffee = require('coffee-script');
+var path = require('path');
+var changeCase = require('change-case');
+
 module.exports = function(grunt) {
 
   require('grunt-task-loader')(grunt);
@@ -5,6 +10,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     SRC: 'src',
     PUBLIC: '.public',
+    DIST: 'dist',
     sass: {
       dist: {
         options: {
@@ -122,10 +128,43 @@ module.exports = function(grunt) {
       dist: {
         src: ['**']
       }
+    },
+    pack: {
+      npm: {
+        src: '<%= SRC %>/react-components/**/*.{js,coffee}',
+        dest: '<%= DIST %>/lib/'
+      }
     }
   });
 
   grunt.registerTask('build', ['copy', 'sass', 'webpack', 'hologram']);
   grunt.registerTask('default', ['build', 'connect', 'watch']);
   grunt.registerTask('deploy', ['build', 'gh-pages']);
+
+  grunt.registerMultiTask('pack', 'package file for npm', function() {
+    var entryPoint = 'module.exports = {\n';
+    var entries = [];
+    var exports = {}
+    var files = grunt.file.expand(this.data.src);
+    files.forEach( function(file, index) {
+      extension = path.extname(file);
+      filename = path.basename(file, extension);
+      var className = changeCase.pascalCase(filename);
+      entries.push('  "' + className + '": require("./lib/' + filename + '")');
+      dest = path.join(this.data.dest, filename + '.js');
+      if (extension === 'js') {
+        code = babel.transformFileSync(file, {optional: ['runtime']}).code;
+        grunt.file.write(dest, code);
+      } else if (extension === 'coffee') {
+        coffeeCode = grunt.file.read(file);
+        jsCode = coffee.compile(coffeeCode);
+        grunt.file.write(dest, jsCode);
+      }
+      grunt.log.writeln('Compile ' + file + ' to ' + dest)
+    }, this);
+
+    entryPoint += entries.join(',\n');
+    entryPoint += '\n};'
+    grunt.file.write('dist/mnd.js', entryPoint);
+  });
 };

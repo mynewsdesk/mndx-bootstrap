@@ -1,8 +1,8 @@
 {
-  "name": "mnd-bootstrap",
+  "name": "mnd",
   "version": "1.8.0",
   "description": "",
-  "main": "mnd.js",
+  "main": "dist/mnd.js",
   "author": "Zoee Silcock",
   "repository": {
     "type": "git",
@@ -12,6 +12,8 @@
     "react": "^0.13.0"
   },
   "devDependencies": {
+    "babel-core": "^5.4.5",
+    "change-case": "^2.3.0",
     "classnames": "^2.1.1",
     "coffee-loader": "^0.7.2",
     "coffee-script": "^1.9.2",
@@ -31,5 +33,8 @@
     "react-widgets": "^2.6.0",
     "webpack": "^1.9.7",
     "webpack-dev-server": "^1.8.2"
+  },
+  "dependencies": {
+    "babel-runtime": "^5.4.5"
   }
 }
