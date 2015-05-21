@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="docs.css">
     <link rel="stylesheet" href="github.css">
     <link rel="stylesheet" href="styleguide.css">
-    <script src="javascripts/jquery.min.js"></script>
-    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.js"></script>
     <script src="//localhost:35729/livereload.js"></script>
     <script src="https://fb.me/react-0.13.3.js"></script>
     <script src="mnd.js"></script>
@@ -25,7 +25,7 @@
           
             <li><a href="css.html">CSS</a></li>
           
-            <li><a href="variables.html">Variables</a></li>
+            <li><a href="index.html">Variables</a></li>
           
             <li><a href="react_components.html">React Components</a></li>
           
@@ -44,6 +44,8 @@
               
                 <li class="list-group-item"><a href="#datepicker">Date Picker</a></li>
               
+                <li class="list-group-item"><a href="#dropdown">Dropdown</a></li>
+              
               </ul>
             </div>
           </div>
@@ -53,9 +55,9 @@
 <div id="datepicker-example"></div>
 <h2>JSX Example</h2>
 
-    <div id='691274f2-c818-4e89-9149-e42672300163'></div>
+    <div id='60a4f85a-f028-4d42-b3db-52d89b928d11'></div>
     <script type='text/jsx'>
-      var node = document.getElementById('691274f2-c818-4e89-9149-e42672300163');
+      var node = document.getElementById('60a4f85a-f028-4d42-b3db-52d89b928d11');
       var props = {
   value: new Date(),
   minDate: new Date(2014, 1, 1),
@@ -81,6 +83,38 @@
 }
 ---
 <span class="nt">&lt;DatePicker</span> <span class="err">{...</span><span class="na">props</span><span class="err">}</span> <span class="nt">/&gt;</span></pre>
+  </div>
+</div>
+
+<h1 id="dropdown" class="styleguide">Dropdown</h1>
+
+<div id="datepicker-example"></div>
+<h2>JSX Example</h2>
+
+    <div id='072b385f-1a8c-4beb-baa5-48e0f0ab183e'></div>
+    <script type='text/jsx'>
+      var node = document.getElementById('072b385f-1a8c-4beb-baa5-48e0f0ab183e');
+      var props = {
+  label: "magic dropdown"
+}
+
+      React.render(
+        
+<Dropdown {...props}>
+  <a>Hello</a>
+</Dropdown>
+
+        , node);
+    </script>
+<div class="codeBlock jsExample">
+  <div class="highlight">
+    <pre class="code-example">var props = {
+  label: "magic dropdown"
+}
+---
+<span class="nt">&lt;Dropdown</span> <span class="err">{...</span><span class="na">props</span><span class="err">}</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a&gt;</span>Hello<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/Dropdown&gt;</span></pre>
   </div>
 </div>
         </div>
