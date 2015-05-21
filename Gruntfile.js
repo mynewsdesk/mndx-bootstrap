@@ -118,7 +118,8 @@ module.exports = function(grunt) {
       options: {
         additionalFiles: ['bower.json'],
         npm: false,
-        afterRelease: ['deploy']
+        beforeRelease: ['build', 'pack'],
+        afterRelease: ['gh-pages']
       }
     },
     'gh-pages': {
@@ -139,7 +140,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('build', ['copy', 'sass', 'webpack', 'hologram']);
   grunt.registerTask('default', ['build', 'connect', 'watch']);
-  grunt.registerTask('deploy', ['build', 'gh-pages']);
 
   grunt.registerMultiTask('pack', 'package file for npm', function() {
     var entryPoint = 'module.exports = {\n';
