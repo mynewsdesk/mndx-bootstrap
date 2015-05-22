@@ -12,7 +12,7 @@ A calendar, designed for the datepicker
 ```
 */
 .rw-sr {
-  @extend .sr-only;
+  @extend .sr-only !optional;
 }
 
 .date-picker {
