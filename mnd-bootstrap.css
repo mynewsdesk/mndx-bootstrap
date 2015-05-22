@@ -1302,7 +1302,7 @@ hr {
   border-top: 1px solid #eeeeee;
 }
 
-.sr-only, .rw-sr {
+.sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -3324,7 +3324,7 @@ select[multiple].input-lg,
 .has-feedback label ~ .form-control-feedback {
   top: 25px;
 }
-.has-feedback label.sr-only ~ .form-control-feedback, .has-feedback label.rw-sr ~ .form-control-feedback {
+.has-feedback label.sr-only ~ .form-control-feedback {
   top: 0;
 }
 
@@ -7405,293 +7405,6 @@ parent: typo
 ```
 */
 /*doc
----
-title: Alerts
-name: alerts
-category: Components
----
- Alerts should always starts with a word that tell the user more about the feedback in short.
-
-```html_example
-<div class="alert alert-success" role="alert"><strong>Wohooo!</strong> Thanks for signing up!</div>
-<div class="alert alert-info" role="alert"><strong>Morning!</strong> Looks like you are happy today!</div>
-<div class="alert alert-warning" role="alert"><strong>Ooops!</strong> Your account will expire in two days!</div>
-<div class="alert alert-danger" role="alert"><strong>Grrr!</strong> Don't drop coffee on my keyboard again!</div>
-```
-
-*/
-/*doc
-//---
-//title: Badges
-//name: badges
-//category: Components
-//---
-*/
-/*doc
-//---
-//title: Breadcrumbs
-//name: breadcrumbs
-//category: Components
-//---
-*/
-/*doc
-//---
-//title: Button dropdowns
-//name: button_dropdowns
-//category: Components
-//---
-*/
-/*doc
----
-title: Button groups
-name: button_groups
-category: Components
----
-*/
-/*doc
----
-title: Calendar
-name: calendar
-category: Components
----
-
-A calendar, designed for the datepicker
-
-```html_example
-<Caldendar />
-```
-*/
-.date-picker {
-  display: inline-block;
-  position: relative;
-  margin: inherit 0;
-}
-
-.date-picker-calendar .rw-header {
-  border-bottom: 1px solid #eeeeee;
-  margin: 10px 0;
-  overflow: hidden;
-  padding: 0 10px 10px;
-}
-.date-picker-calendar .popover {
-  display: block;
-}
-.date-picker-calendar .rw-calendar {
-  outline: none;
-}
-
-.date-picker-calendar .rw-calendar-grid {
-  margin: 10px;
-  border: none;
-}
-.date-picker-calendar .rw-calendar-grid th {
-  font-size: 0.9em;
-  font-weight: normal;
-  padding-bottom: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  border: none;
-}
-.date-picker-calendar .rw-calendar-grid td {
-  height: 28px;
-  width: 28px;
-  padding: 0;
-  border: none;
-}
-.date-picker-calendar .rw-calendar-grid tr {
-  border: none;
-}
-.date-picker-calendar .rw-calendar-grid .rw-btn {
-  height: 100%;
-  width: 100%;
-  border-radius: 0;
-}
-.date-picker-calendar .rw-btn-view {
-  border: none;
-  color: #333333;
-  float: left;
-  font-size: 14px;
-  text-transform: uppercase;
-  width: 60%;
-}
-.date-picker-calendar .rw-btn-left,
-.date-picker-calendar .rw-btn-right {
-  float: left;
-  line-height: 20px;
-  width: 20%;
-}
-.date-picker-calendar .rw-btn {
-  background: transparent;
-  border: none;
-  color: #333333;
-  display: inline-block;
-}
-.date-picker-calendar .rw-btn .rw-off-range {
-  color: #999999;
-}
-.date-picker-calendar .rw-state-selected {
-  background: #9bb83c;
-  border-radius: 3px;
-  color: #fff;
-}
-
-.date-picker-calendar .popover {
-  box-shadow: none;
-  display: block;
-  left: 0;
-  min-width: 200px;
-  right: auto;
-  top: 40px;
-  z-index: 1;
-}
-.date-picker-calendar .popover .arrow {
-  border-bottom-color: rgba(0, 0, 0, 0.25);
-  left: 10%;
-  right: auto;
-}
-.date-picker-calendar .popover .popover-content {
-  padding: 0;
-}
-
-/*doc
----
-title: Content List
-name: content_list
-category: Components
----
-
-Custom list for editable content
-
-```html_example
-<ul class="content-list">
-  <li class="content-list-row content-list-header">
-    <div class="content-list-column">Draft</div>
-    <div class="content-list-column">Last edited</div>
-    <div class="content-list-column">Action</div>
-  </li>
-  <li class="content-list-row">
-    <div class="content-list-column"><a href="#">Press Release Name #1</a></div>
-    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
-    <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
-  </li>
-  <li class="content-list-row">
-    <div class="content-list-column"><a href="#">Press Release Name #2</a></div>
-    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
-    <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
-  </li>
-  <li class="content-list-row">
-    <div class="content-list-column"><a href="#">Press Release Name #3</a></div>
-    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
-    <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
-  </li>
-</ul>
-
-<ul class="content-list content-list-striped">
-  <li class="content-list-row content-list-header">
-    <div class="content-list-column">Draft</div>
-    <div class="content-list-column">Last edited</div>
-    <div class="content-list-column">Action</div>
-  </li>
-  <li class="content-list-row">
-    <div class="content-list-column"><a href="#">Press Release Name #1</a></div>
-    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
-    <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
-  </li>
-  <li class="content-list-row">
-    <div class="content-list-column"><a href="#">Press Release Name #2</a></div>
-    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
-    <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
-  </li>
-  <li class="content-list-row">
-    <div class="content-list-column"><a href="#">Press Release Name #3</a></div>
-    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
-    <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
-  </li>
-</ul>
-```
-*/
-.content-list {
-  list-style-type: none;
-  margin-bottom: 20px;
-  max-width: 100%;
-  padding: 0;
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .content-list {
-    border-collapse: collapse;
-    border-spacing: 0;
-    display: table;
-    table-layout: fixed;
-  }
-}
-.content-list:last-child {
-  margin-bottom: 0;
-}
-.content-list .content-list-row {
-  border-bottom: 1px solid #eeeeee;
-}
-@media (min-width: 768px) {
-  .content-list .content-list-row {
-    display: table-row;
-  }
-}
-.content-list .content-list-column {
-  padding: 20px 15px;
-}
-.content-list .content-list-column:first-child {
-  text-align: left;
-}
-@media (min-width: 768px) {
-  .content-list .content-list-column {
-    display: table-cell;
-    padding: 15px 25px;
-    text-align: right;
-  }
-}
-.content-list .content-list-action {
-  padding-right: 25px;
-}
-.content-list .content-list-action:last-child {
-  padding-right: 0;
-}
-.content-list .content-list-header {
-  border-bottom: 1px solid #eeeeee;
-  display: none;
-  font-weight: bold;
-}
-@media (min-width: 768px) {
-  .content-list .content-list-header {
-    display: table-row;
-  }
-}
-
-.content-list-striped .content-list-row:nth-child(even) {
-  background-color: #f1f1f1;
-}
-
-/*doc
-//---
-//title: Dropdowns
-//name: dropdowns
-//category: Components
-//---
-*/
-/*doc
-//---
-//title: Icons
-//name: icons
-//category: Components
-//---
-*/
-/*doc
----
-//title: Input groups
-//name: input_groups
-//category: Components
-//---
-*/
-/*doc
  ---
  title: Jumbotron
  name: jumbotron
@@ -7770,6 +7483,71 @@ Custom list for editable content
     float: left;
   }
 }
+/*doc
+---
+title: Alerts
+name: alerts
+category: Components
+---
+ Alerts should always starts with a word that tell the user more about the feedback in short.
+
+```html_example
+<div class="alert alert-success" role="alert"><strong>Wohooo!</strong> Thanks for signing up!</div>
+<div class="alert alert-info" role="alert"><strong>Morning!</strong> Looks like you are happy today!</div>
+<div class="alert alert-warning" role="alert"><strong>Ooops!</strong> Your account will expire in two days!</div>
+<div class="alert alert-danger" role="alert"><strong>Grrr!</strong> Don't drop coffee on my keyboard again!</div>
+```
+
+*/
+/*doc
+//---
+//title: Badges
+//name: badges
+//category: Components
+//---
+*/
+/*doc
+//---
+//title: Breadcrumbs
+//name: breadcrumbs
+//category: Components
+//---
+*/
+/*doc
+//---
+//title: Button dropdowns
+//name: button_dropdowns
+//category: Components
+//---
+*/
+/*doc
+---
+title: Button groups
+name: button_groups
+category: Components
+---
+*/
+/*doc
+//---
+//title: Dropdowns
+//name: dropdowns
+//category: Components
+//---
+*/
+/*doc
+//---
+//title: Icons
+//name: icons
+//category: Components
+//---
+*/
+/*doc
+---
+//title: Input groups
+//name: input_groups
+//category: Components
+//---
+*/
 /*doc
  ---
  title: Jumbotron
@@ -7901,6 +7679,123 @@ parent: list_group
 }
 .list-group-striped .list-group-item:nth-child(odd) {
   background: #f1f8fb;
+}
+
+/*doc
+---
+title: Content List
+name: content_list
+category: Components
+---
+
+Custom list for editable content
+
+```html_example
+<ul class="content-list">
+  <li class="content-list-row content-list-header">
+    <div class="content-list-column">Draft</div>
+    <div class="content-list-column">Last edited</div>
+    <div class="content-list-column">Action</div>
+  </li>
+  <li class="content-list-row">
+    <div class="content-list-column"><a href="#">Press Release Name #1</a></div>
+    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
+    <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
+  </li>
+  <li class="content-list-row">
+    <div class="content-list-column"><a href="#">Press Release Name #2</a></div>
+    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
+    <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
+  </li>
+  <li class="content-list-row">
+    <div class="content-list-column"><a href="#">Press Release Name #3</a></div>
+    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
+    <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
+  </li>
+</ul>
+
+<ul class="content-list content-list-striped">
+  <li class="content-list-row content-list-header">
+    <div class="content-list-column">Draft</div>
+    <div class="content-list-column">Last edited</div>
+    <div class="content-list-column">Action</div>
+  </li>
+  <li class="content-list-row">
+    <div class="content-list-column"><a href="#">Press Release Name #1</a></div>
+    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
+    <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
+  </li>
+  <li class="content-list-row">
+    <div class="content-list-column"><a href="#">Press Release Name #2</a></div>
+    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
+    <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
+  </li>
+  <li class="content-list-row">
+    <div class="content-list-column"><a href="#">Press Release Name #3</a></div>
+    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
+    <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
+  </li>
+</ul>
+```
+*/
+.content-list {
+  list-style-type: none;
+  margin-bottom: 20px;
+  max-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .content-list {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: table;
+    table-layout: fixed;
+  }
+}
+.content-list:last-child {
+  margin-bottom: 0;
+}
+.content-list .content-list-row {
+  border-bottom: 1px solid #eeeeee;
+}
+@media (min-width: 768px) {
+  .content-list .content-list-row {
+    display: table-row;
+  }
+}
+.content-list .content-list-column {
+  padding: 20px 15px;
+}
+.content-list .content-list-column:first-child {
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .content-list .content-list-column {
+    display: table-cell;
+    padding: 15px 25px;
+    text-align: right;
+  }
+}
+.content-list .content-list-action {
+  padding-right: 25px;
+}
+.content-list .content-list-action:last-child {
+  padding-right: 0;
+}
+.content-list .content-list-header {
+  border-bottom: 1px solid #eeeeee;
+  display: none;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .content-list .content-list-header {
+    display: table-row;
+  }
+}
+
+.content-list-striped .content-list-row:nth-child(even) {
+  background-color: #f1f1f1;
 }
 
 /*doc
@@ -8122,4 +8017,4 @@ category: JavaScript
   font-size: 12px;
 }
 
-/*# sourceMappingURL=mnd-bootstrap-dev.css.map */
+/*# sourceMappingURL=mnd-bootstrap.css.map */
