@@ -8,7 +8,7 @@ Modular section setup which allows using a combination of header, body and foote
 
 ```html_example
 <section>
-  <div class="container">
+  <div class="content">
     <header>
       <h1>Title</h1>
     </header>
@@ -24,7 +24,7 @@ Modular section setup which allows using a combination of header, body and foote
 
 ```html_example
 <section class="solid">
-  <div class="container">
+  <div class="content">
     <header>
       <h1>Title</h1>
     </header>
@@ -41,7 +41,7 @@ section {
     background-color: #F2F2F2;
   }
 
-  > .container {
+  > .content {
     header, .body, footer {
       text-align: center;
     }
