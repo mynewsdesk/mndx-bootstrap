@@ -8,6 +8,7 @@ module.exports = function(grunt) {
   require('grunt-task-loader')(grunt);
 
   grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
     SRC: 'src',
     PUBLIC: '.public',
     DIST: 'dist',
@@ -133,7 +134,8 @@ module.exports = function(grunt) {
     pack: {
       npm: {
         src: '<%= SRC %>/react-components/**/*.{js,coffee}',
-        dest: '<%= DIST %>/lib/'
+        dest: '<%= DIST %>/lib/',
+        manifest: '<%= pkg.main %>'
       }
     }
   });
@@ -142,29 +144,34 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['build', 'connect', 'watch']);
 
   grunt.registerMultiTask('pack', 'package file for npm', function() {
-    var entryPoint = 'module.exports = {\n';
-    var entries = [];
-    var exports = {}
+    var filename = extension = componentName = null;
+    var components = [];
     var files = grunt.file.expand(this.data.src);
-    files.forEach( function(file, index) {
+    files.forEach(function(file) {
       extension = path.extname(file);
       filename = path.basename(file, extension);
-      var className = changeCase.pascalCase(filename);
-      entries.push('  "' + className + '": require("./lib/' + filename + '")');
+      componentName = changeCase.pascalCase(filename);
+      components.push({
+        name: componentName,
+        fileName: './lib/' + filename
+      });
       dest = path.join(this.data.dest, filename + '.js');
-      if (extension === 'js') {
+      var code = null
+      if (extension === '.js') {
         code = babel.transformFileSync(file, {optional: ['runtime']}).code;
-        grunt.file.write(dest, code);
-      } else if (extension === 'coffee') {
-        coffeeCode = grunt.file.read(file);
-        jsCode = coffee.compile(coffeeCode);
-        grunt.file.write(dest, jsCode);
+      } else if (extension === '.coffee') {
+        var coffeeCode = grunt.file.read(file);
+        code = coffee.compile(coffeeCode);
       }
-      grunt.log.writeln('Compile ' + file + ' to ' + dest)
+      grunt.file.write(dest, code);
+      grunt.log.writeln('Compile ' + file + ' to ' + dest);
     }, this);
 
-    entryPoint += entries.join(',\n');
-    entryPoint += '\n};'
-    grunt.file.write('dist/mnd.js', entryPoint);
+    var entryPoint = 'module.exports = {\n';
+    entryPoint += components.map( function(component) {
+      return '  "' + component.name + '": require("' + component.fileName + '")';
+    }).join(',\n');
+    entryPoint += '\n};';
+    grunt.file.write(this.data.manifest, entryPoint);
   });
 };
