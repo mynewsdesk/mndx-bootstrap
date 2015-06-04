@@ -1,6 +1,7 @@
 @import "../src/mnd-bootstrap/variables";
 @import "../src/mnd-bootstrap/variables_custom";
 
+$black: #000 !default;
 $sg-default-space: 15px;
 
 body{
@@ -9,21 +10,25 @@ body{
 
 /* style nav specific - Temporary until we have the navigation implemented in our bootstrap theme */
 #top-nav {
+
   .navbar-header {
     margin: $sg-default-space;
   }
+
   li > a {
-    line-height: 25px;
     color: $link-color;
+    line-height: 25px;
   }
 }
 /* end temporary styling of our navigation*/
 
 .code {
+
   &-header {
     border-bottom: 1px solid $gray-lighter;
     line-height: $line-height-base;
   }
+
   &-example {
     background: #fff;
     padding: $base-unit-x2;
@@ -35,8 +40,8 @@ body{
 }
 
 .styleguide-example {
-  padding: $sg-default-space;
   background-color: $gray-lighter;
+  padding: $sg-default-space;
 
   &.light {
     background-color: #fff;
@@ -52,65 +57,77 @@ body{
 }
 
 .color-box {
-  width: 150px;
+  border: 1px solid $black;
+  display: block;
+  float: left;
   height: 150px;
   margin: 0 $sg-default-space $sg-default-space 0;
   padding: $sg-default-space;
-  display: block;
-  float: left;
+  width: 150px;
 
   span {
-    padding: $sg-default-space;
-    display: inline-block;
     background: #fff;
+    display: inline-block;
+    padding: $sg-default-space;
   }
 }
 
 .gray-darker {
   background: $gray-darker;
 }
+
 .gray-dark {
- background: $gray-dark;
+  background: $gray-dark;
 }
+
 .gray {
   background: $gray;
 }
+
 .gray-light {
   background: $gray-light;
 }
+
 .gray-lighter {
   background: $gray-lighter;
 }
+
 .gray-lighten {
   background: $gray-lighten;
 }
+
 .gray-lightest {
   background: $gray-lightest;
 }
+
 .white {
   background: $white;
-  border: 1px solid black;
 }
+
 .brand-primary-custom {
   background: $brand-primary-custom;
-  border: 1px solid black;
 }
+
 .blue-light {
   background: $blue-light;
-  border: 1px solid black;
 }
+
 .brand-primary {
   background: $brand-primary;
 }
+
 .brand-success {
   background: $brand-success;
 }
+
 .brand-info {
   background: $brand-info;
 }
+
 .brand-warning {
   background: $brand-warning;
 }
+
 .brand-danger  {
   background: $brand-danger;
 }
