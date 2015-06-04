@@ -8,20 +8,42 @@
  Those are the units that you can use
 <div class="clearfix">
   <div class="variable-box">
-    <span>$base-unit=$base-unit</span>
+    <span>$base-unit = $base-unit // 14px</span>
   </div>
   <div class="variable-box">
-    <span>$base-unit-x2=$base-unit-x2</span>
+    <span>$base-unit-x2 = $base-unit-x2</span>
   </div>
   <div class="variable-box">
-    <span>$base-unit-x3=$base-unit-x3</span>
+    <span>$base-unit-x3 = $base-unit-x3</span>
+  </div>
+  <div class="variable-box">
+    <span>$space = 10px</span>
+  </div>
+  <div class="variable-box">
+    <span>$space-small = $space / 2</span>
+  </div>
+  <div class="variable-box">
+    <span>$space-large = $space * 2</span>
+  </div>
+  <div class="variable-box">
+    <span>$space-larger = $space * 4</span>
+  </div>
+  <div class="variable-box">
+    <span>$font-size-larger = 38px</span>
   </div>
 </div>
  */
 
+$space: 10px;
+$space-small: $space / 2;
+$space-large: $space * 2;
+$space-larger: $space * 4;
+
 $base-unit:         14px;
 $base-unit-x2:      ceil($base-unit * 2);
 $base-unit-x3:      ceil($base-unit * 3);
+
+$font-size-larger: 38px;
 
 /*doc
  ---
@@ -40,6 +62,9 @@ $base-unit-x3:      ceil($base-unit * 3);
   </div>
   <div class="color-box white">
     <span>$white</span>
+  </div>
+  <div class="color-box brand-primary-custom">
+    <span>$brand-primary-custom</span>
   </div>
 </div>
  */
