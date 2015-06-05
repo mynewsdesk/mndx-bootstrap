@@ -111,6 +111,6 @@ module.exports = function(grunt) {
   grunt.registerTask('build', ['copy', 'sass', 'webpack', 'hologram']);
   grunt.registerTask('default', ['build', 'connect', 'watch']);
 
-  var pack = require('./grunt/pack.js');
+  var pack = require('./grunt/pack.js')(grunt);
   grunt.registerMultiTask('pack', 'package file for npm', pack);
 };
