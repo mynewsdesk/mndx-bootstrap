@@ -8,13 +8,28 @@
  Those are the units that you can use
 <div class="clearfix">
   <div class="variable-box">
-    <span>$base-unit=$base-unit</span>
+    <span>$base-unit = $base-unit // 14px</span>
   </div>
   <div class="variable-box">
-    <span>$base-unit-x2=$base-unit-x2</span>
+    <span>$base-unit-x2 = $base-unit-x2</span>
   </div>
   <div class="variable-box">
-    <span>$base-unit-x3=$base-unit-x3</span>
+    <span>$base-unit-x3 = $base-unit-x3</span>
+  </div>
+  <div class="variable-box">
+    <span>$space = 10px</span>
+  </div>
+  <div class="variable-box">
+    <span>$space-small = $space / 2</span>
+  </div>
+  <div class="variable-box">
+    <span>$space-large = $space * 2</span>
+  </div>
+  <div class="variable-box">
+    <span>$space-larger = $space * 4</span>
+  </div>
+  <div class="variable-box">
+    <span>$font-size-larger = 38px</span>
   </div>
 </div>
  */
@@ -35,6 +50,12 @@
   </div>
   <div class="color-box white">
     <span>$white</span>
+  </div>
+  <div class="color-box brand-primary-custom">
+    <span>$brand-primary-custom</span>
+  </div>
+  <div class="color-box blue-light">
+    <span>$blue-light</span>
   </div>
 </div>
  */
@@ -79,6 +100,7 @@
   </div>
 </div>
  */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic);
 /*doc
  ---
  title: Units extended
@@ -89,13 +111,28 @@
  Those are the units that you can use
 <div class="clearfix">
   <div class="variable-box">
-    <span>$base-unit=$base-unit</span>
+    <span>$base-unit = $base-unit // 14px</span>
   </div>
   <div class="variable-box">
-    <span>$base-unit-x2=$base-unit-x2</span>
+    <span>$base-unit-x2 = $base-unit-x2</span>
   </div>
   <div class="variable-box">
-    <span>$base-unit-x3=$base-unit-x3</span>
+    <span>$base-unit-x3 = $base-unit-x3</span>
+  </div>
+  <div class="variable-box">
+    <span>$space = 10px</span>
+  </div>
+  <div class="variable-box">
+    <span>$space-small = $space / 2</span>
+  </div>
+  <div class="variable-box">
+    <span>$space-large = $space * 2</span>
+  </div>
+  <div class="variable-box">
+    <span>$space-larger = $space * 4</span>
+  </div>
+  <div class="variable-box">
+    <span>$font-size-larger = 38px</span>
   </div>
 </div>
  */
@@ -117,6 +154,12 @@
   <div class="color-box white">
     <span>$white</span>
   </div>
+  <div class="color-box brand-primary-custom">
+    <span>$brand-primary-custom</span>
+  </div>
+  <div class="color-box blue-light">
+    <span>$blue-light</span>
+  </div>
 </div>
  */
 body {
@@ -128,8 +171,8 @@ body {
   margin: 15px;
 }
 #top-nav li > a {
-  line-height: 25px;
   color: #2e88be;
+  line-height: 25px;
 }
 
 /* end temporary styling of our navigation*/
@@ -147,14 +190,14 @@ body {
 }
 
 .styleguide-example {
-  padding: 15px;
   background-color: #eeeeee;
+  padding: 15px;
 }
 .styleguide-example.light {
   background-color: #fff;
 }
 .styleguide-example.dark {
-  background-color: #333;
+  background-color: #333333;
 }
 
 .variable-box {
@@ -162,17 +205,18 @@ body {
 }
 
 .color-box {
-  width: 150px;
+  border: 1px solid #000;
+  display: block;
+  float: left;
   height: 150px;
   margin: 0 15px 15px 0;
   padding: 15px;
-  display: block;
-  float: left;
+  width: 150px;
 }
 .color-box span {
-  padding: 15px;
-  display: inline-block;
   background: #fff;
+  display: inline-block;
+  padding: 15px;
 }
 
 .gray-darker {
@@ -200,12 +244,19 @@ body {
 }
 
 .gray-lightest, .variable-box {
-  background: #f9f9f9;
+  background: #fcfcfc;
 }
 
 .white {
   background: #fff;
-  border: 1px solid black;
+}
+
+.brand-primary-custom {
+  background: #e53221;
+}
+
+.blue-light {
+  background: #f8fafd;
 }
 
 .brand-primary {
@@ -213,7 +264,7 @@ body {
 }
 
 .brand-success {
-  background: #9bb83c;
+  background: #9bb83a;
 }
 
 .brand-info {
