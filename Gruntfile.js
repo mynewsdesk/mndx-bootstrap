@@ -36,34 +36,7 @@ module.exports = function(grunt) {
       }
     },
     webpack: {
-      dist: {
-        entry: './hologram/mnd.js',
-        output: {
-          path: '<%= PUBLIC %>',
-          filename: 'mnd.js'
-        },
-        module: {
-          loaders: [
-            {
-              test: /\.coffee$/,
-              exclude: /node_modules/,
-              loaders: ['jsx-loader', 'coffee-loader']
-            },
-            {
-              test: /\.js$/,
-              exclude: /node_modules|hologram/,
-              loader: 'babel-loader'
-            }
-          ]
-        },
-        resolve: {
-          extensions: ['', '.js', '.coffee'],
-          alias: {
-            components: __dirname + '/<%= SRC %>/react-components',
-            utils: '/src/js/utils'
-          }
-        },
-      }
+      dist: require('./grunt/webpack.config.js')
     },
     hologram: {
       dist: {
