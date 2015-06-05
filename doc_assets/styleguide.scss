@@ -30,7 +30,7 @@ body{
   }
 
   &-example {
-    background: #fff;
+    background: $white;
     padding: $base-unit-x2;
   }
 }
@@ -44,10 +44,10 @@ body{
   padding: $sg-default-space;
 
   &.light {
-    background-color: #fff;
+    background-color: $white;
   }
   &.dark {
-    background-color: #333;
+    background-color: $gray-dark;
   }
 }
 
@@ -66,7 +66,7 @@ body{
   width: 150px;
 
   span {
-    background: #fff;
+    background: $white;
     display: inline-block;
     padding: $sg-default-space;
   }
