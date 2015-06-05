@@ -63,7 +63,7 @@ $gray-light:             lighten(#000, 60%);   // #999
 $gray-lighter:           lighten(#000, 93.5%); // #eee
 
 $brand-primary:         #f1f1f1;
-$brand-success:         #9bb83c;
+$brand-success:         #9bb83a;
 $brand-info:            #389Bc9;
 $brand-warning:         #e5d321;
 $brand-danger:          $brand-primary-custom;
@@ -87,7 +87,8 @@ $link-hover-color:      darken($link-color, 15%);
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Helvetica Neue", Arial, sans-serif;
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic);
+$font-family-sans-serif:  "Source Sans Pro", Arial, sans-serif;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -203,7 +204,8 @@ $btn-ghost-default-border:       darken($btn-default-bg, 20%);
 
 $btn-primary-color:              $white;
 $btn-primary-bg:                 $brand-success;
-$btn-primary-border:             darken($btn-primary-bg, 20%);
+$btn-primary-border:             darken($btn-primary-bg, 13.3%);
+$btn-primary-hover-bg:           #89a334;
 
 $btn-success-color:              $white;
 $btn-success-bg:                 $brand-success;

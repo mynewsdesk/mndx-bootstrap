@@ -58,28 +58,57 @@ category: CSS
       </label>
     </div>
   </div>
-  <div class="form-group text-right">
+  <div class="form-group">
+    <select class="form-control">
+      <option>option 1</option>
+      <option>option 2</option>
+      <option>option 3</option>
+      <option>option 4</option>
+    </select>
+  </div>
+  <div class="form-group text-right form-actions">
     <button type="reset" class="btn btn-secondary">Cancel</button>
     <button type="submit" class="btn btn-default">Submit</button>
   </div>
 </form>
+
+
+<form class="form-inline">
+  <div class="form-group">
+    <label for="exampleInputName2">Name</label>
+    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail2">Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+  </div>
+  <button type="submit" class="btn btn-default">Send invitation</button>
+</form>
 ```
 */
 
+.form-group {
+  margin-bottom: $space-large;
+}
+
+.form-actions {
+  padding-top: $space-large;
+}
+
 .form-control {
   background: transparent;
-  border-radius: 0;
-  border: none;
-  border-bottom: 1px solid $gray-light;
-  font-size: $font-size-large;
-  padding-left: 0;
+  border: 1px solid $gray-lighten;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 
   @include placeholder {
     color: $gray-light;
   }
+
+  &:focus {
+    box-shadow: none;
+  }
 }
 
-.form-control,
 .has-error .form-control,
 .has-warning .form-control,
 .has-success .form-control {
@@ -91,16 +120,15 @@ category: CSS
 }
 
 label {
-  color: $gray-light;
-  font-size: $font-size-small;
-  margin: 0;
-  text-transform: uppercase;
+  color: $gray;
+  margin-bottom: $space;
 }
 
 .checkbox label,
 .radio label {
   color: $text-color;
   font-size: $font-size-base;
+  margin-bottom: 0;
   text-transform: none;
 }
 

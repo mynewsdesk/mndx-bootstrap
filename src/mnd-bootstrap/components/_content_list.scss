@@ -116,11 +116,15 @@ Custom list for editable content
 }
 
 .content-list-striped {
+  .content-list-header {
+    border-bottom: 0;
+  }
 
   .content-list-row {
+    border-bottom: 0;
 
     &:nth-child(even) {
-      background-color: $brand-primary;
+      background-color: $blue-light;
     }
   }
 }

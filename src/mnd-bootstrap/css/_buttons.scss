@@ -34,6 +34,12 @@ category: CSS
     @extend .btn-danger;
   }
 
+  &-primary {
+    &:hover {
+      background: $btn-primary-hover-bg;
+    }
+  }
+
   &-secondary {
     @extend .btn-link;
     color: $btn-secondary-color;
