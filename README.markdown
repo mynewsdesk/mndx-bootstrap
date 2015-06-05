@@ -29,12 +29,12 @@ To setup the development environment you need to install all the dependencies.
 
 Run `bin/setup`.
 
-Then you use gulp to compile the sass when you change the files:
+Then you use grunt to compile the sass when you change the files:
 ```
-gulp
+grunt
 ```
 
-Leave gulp running, it starts a webserver and it will generate the styleguide everytime a file changes.
+Leave grunt running, it starts a webserver and it will generate the styleguide everytime a file changes.
 
 To check the styleguide, go to [http://localhost:8000](http://localhost:8000)
 
@@ -48,22 +48,22 @@ These are the dependency trees that need to be kept up to date:
 
 ## Release new version
 
-To create a new version, there are multiple steps:
+A release does the following:
 
-* First, we want to increase the version number in the `package.json` and `bower.json` files and commit this.
-* Then we want to tag the commit, because `bower` use the git tag as version number instead of reading a manifest file.
-* To release the new version, we will just push those changes to master
-* We then want to make this new version available as a ruby gem, to do this, we will got to [https://rails-assets.org/components/new](rails-assets.org) and update our component.
-* And last but not least, now want to update the doc (style-guide) too, use the `gulp gh-pages` task for this.
+* Increment version number in `package.json` and `bower.json`
+* Add a git tag with the new version number
+* commit the changes and push it to master
+* push the tag
+* push the generated styleguide to the gh-pages branch
 
-I've created a gulp task for all those steps:
+One simple command to do all this:
 
-`gulp release [--level patch|minor|major]`
+`grunt release`
 
-The level change the version increment according to the semver documentation.
+You can control the version increment with an argument:
 
 ```
-patch # makes v0.1.0 → v0.1.1
-minor # makes v0.1.1 → v0.2.0
-major # makes v0.2.1 → v1.0.0
+grunt release:patch
+grunt release:minor
+grunt release:major
 ```

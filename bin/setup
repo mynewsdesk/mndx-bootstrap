@@ -25,5 +25,5 @@ header "Installing bower dependencies"
 bower -v || npm install -g bower
 bower install
 
-header "Installing gulp"
-npm install -g gulp
+header "Installing grunt"
+npm install -g grunt-cli
