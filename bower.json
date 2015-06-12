@@ -6,7 +6,7 @@
   ],
   "description": "MND theme for Bootstrap.",
   "main": [
-    "dist/mnd-bootstrap.min.css","
+    "dist/mnd-bootstrap.min.css",
     "src/mnd-bootstrap/_variables.scss"
   ],
   "keywords": [
