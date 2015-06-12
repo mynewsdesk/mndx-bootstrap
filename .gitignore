@@ -3,5 +3,6 @@ _site/
 node_modules/
 bower_components/
 public
-dist
+dist/styleguide.css
+dist/*.map
 .grunt/
