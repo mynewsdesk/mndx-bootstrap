@@ -32,8 +32,8 @@ gulp.task('watch', function() {
 
 // Compile sass files
 gulp.task('sass', function() {
-  return gulp.src('src/mnd-bootstrap*.scss')
-    .pipe(sass({ style: 'expanded', loadPath: ['./bower_components/'] }))
+  return gulp.src('src/mnd-bootstrap.scss')
+    .pipe(sass({ style: 'compressed', loadPath: ['./bower_components/'] }))
     .on('error', function (err) { console.log(err.message); })
     .pipe(gulp.dest('dist/'))
     .pipe(notify({message: 'Sass task complete'}));
