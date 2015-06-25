@@ -25,7 +25,7 @@
           
             <li><a href="css.html">CSS</a></li>
           
-            <li><a href="index.html">Variables</a></li>
+            <li><a href="variables.html">Variables</a></li>
           
             <li><a href="react_components.html">React Components</a></li>
           
@@ -125,62 +125,67 @@
     <div class="tableExample">
       <div class="exampleOutput">
         <form>
-  <div class="form-group">
-    <label for="to">To</label>
-    <input type="email" class="form-control" id="to" placeholder="Enter email">
-  </div>
-  <div class="form-group has-success">
-    <label for="to">To (.has-success)</label>
-    <input type="email" class="form-control" id="to" placeholder="Enter email">
-    <p class="help-block">Example block-level help text here.</p>
-  </div>
-  <div class="form-group has-warning">
-    <label for="to">To (.has-warning)</label>
-    <input type="email" class="form-control" id="to" placeholder="Enter email">
-    <p class="help-block">Example block-level help text here.</p>
-  </div>
-  <div class="form-group has-error">
-    <label for="to">To (.has-error)</label>
-    <input type="email" class="form-control" id="to" placeholder="Enter email">
-    <p class="help-block">Example block-level help text here.</p>
-  </div>
-  <div class="form-group">
-    <label for="subject">Subject</label>
-    <input type="text" class="form-control" id="subject" placeholder="Enter subject">
-  </div>
-  <div class="form-group">
-    <label for="message">Message</label>
-    <textarea class="form-control" id="subject" placeholder="Enter message"></textarea>
-  </div>
-  <div class="form-group">
-    <div class="checkbox">
-      <label>
-        <input type="checkbox" name="samecheck"> Check me out
-      </label>
-      <br>
-      <label>
-        <input type="checkbox" name="samecheck"> Check me out again
-      </label>
+  <div class="panel panel-default">
+    <div class="panel-heading">Form heading</div>
+    <div class="panel-body">
+      <div class="form-group">
+        <label for="to">To</label>
+        <input type="email" class="form-control" id="to" placeholder="Enter email">
+      </div>
+      <div class="form-group has-success">
+        <label for="to">To (.has-success)</label>
+        <input type="email" class="form-control" id="to" placeholder="Enter email">
+        <p class="help-block">Example block-level help text here.</p>
+      </div>
+      <div class="form-group has-warning">
+        <label for="to">To (.has-warning)</label>
+        <input type="email" class="form-control" id="to" placeholder="Enter email">
+        <p class="help-block">Example block-level help text here.</p>
+      </div>
+      <div class="form-group has-error">
+        <label for="to">To (.has-error)</label>
+        <input type="email" class="form-control" id="to" placeholder="Enter email">
+        <p class="help-block">Example block-level help text here.</p>
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="subject" placeholder="Enter message"></textarea>
+      </div>
+      <div class="form-group">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="samecheck"> Check me out
+          </label>
+          <br>
+          <label>
+            <input type="checkbox" name="samecheck"> Check me out again
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="radio">
+          <label>
+            <input type="radio" name="sameradio"> Check me out
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="sameradio"> Check me out again
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <select class="form-control">
+          <option>option 1</option>
+          <option>option 2</option>
+          <option>option 3</option>
+          <option>option 4</option>
+        </select>
+      </div>
     </div>
-  </div>
-  <div class="form-group">
-    <div class="radio">
-      <label>
-        <input type="radio" name="sameradio"> Check me out
-      </label>
-      <br>
-      <label>
-        <input type="radio" name="sameradio"> Check me out again
-      </label>
-    </div>
-  </div>
-  <div class="form-group">
-    <select class="form-control">
-      <option>option 1</option>
-      <option>option 2</option>
-      <option>option 3</option>
-      <option>option 4</option>
-    </select>
   </div>
   <div class="form-group text-right form-actions">
     <button type="reset" class="btn btn-secondary">Cancel</button>
@@ -191,62 +196,67 @@
       <div class="codeBlock">
         <div class="highlight">
           <pre class="code-example"><span class="nt">&lt;form&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"to"</span><span class="nt">&gt;</span>To<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"to"</span> <span class="na">placeholder=</span><span class="s">"Enter email"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-success"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"to"</span><span class="nt">&gt;</span>To (.has-success)<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"to"</span> <span class="na">placeholder=</span><span class="s">"Enter email"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"help-block"</span><span class="nt">&gt;</span>Example block-level help text here.<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-warning"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"to"</span><span class="nt">&gt;</span>To (.has-warning)<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"to"</span> <span class="na">placeholder=</span><span class="s">"Enter email"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"help-block"</span><span class="nt">&gt;</span>Example block-level help text here.<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-error"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"to"</span><span class="nt">&gt;</span>To (.has-error)<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"to"</span> <span class="na">placeholder=</span><span class="s">"Enter email"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"help-block"</span><span class="nt">&gt;</span>Example block-level help text here.<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"subject"</span><span class="nt">&gt;</span>Subject<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"subject"</span> <span class="na">placeholder=</span><span class="s">"Enter subject"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"message"</span><span class="nt">&gt;</span>Message<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"subject"</span> <span class="na">placeholder=</span><span class="s">"Enter message"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"samecheck"</span><span class="nt">&gt;</span> Check me out
-      <span class="nt">&lt;/label&gt;</span>
-      <span class="nt">&lt;br&gt;</span>
-      <span class="nt">&lt;label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"samecheck"</span><span class="nt">&gt;</span> Check me out again
-      <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>Form heading<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"to"</span><span class="nt">&gt;</span>To<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"to"</span> <span class="na">placeholder=</span><span class="s">"Enter email"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-success"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"to"</span><span class="nt">&gt;</span>To (.has-success)<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"to"</span> <span class="na">placeholder=</span><span class="s">"Enter email"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"help-block"</span><span class="nt">&gt;</span>Example block-level help text here.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-warning"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"to"</span><span class="nt">&gt;</span>To (.has-warning)<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"to"</span> <span class="na">placeholder=</span><span class="s">"Enter email"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"help-block"</span><span class="nt">&gt;</span>Example block-level help text here.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-error"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"to"</span><span class="nt">&gt;</span>To (.has-error)<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"to"</span> <span class="na">placeholder=</span><span class="s">"Enter email"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"help-block"</span><span class="nt">&gt;</span>Example block-level help text here.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"subject"</span><span class="nt">&gt;</span>Subject<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"subject"</span> <span class="na">placeholder=</span><span class="s">"Enter subject"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"message"</span><span class="nt">&gt;</span>Message<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"subject"</span> <span class="na">placeholder=</span><span class="s">"Enter message"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;label&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"samecheck"</span><span class="nt">&gt;</span> Check me out
+          <span class="nt">&lt;/label&gt;</span>
+          <span class="nt">&lt;br&gt;</span>
+          <span class="nt">&lt;label&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"samecheck"</span><span class="nt">&gt;</span> Check me out again
+          <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;label&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"sameradio"</span><span class="nt">&gt;</span> Check me out
+          <span class="nt">&lt;/label&gt;</span>
+          <span class="nt">&lt;br&gt;</span>
+          <span class="nt">&lt;label&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"sameradio"</span><span class="nt">&gt;</span> Check me out again
+          <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;option&gt;</span>option 1<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;option&gt;</span>option 2<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;option&gt;</span>option 3<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;option&gt;</span>option 4<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;/select&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"sameradio"</span><span class="nt">&gt;</span> Check me out
-      <span class="nt">&lt;/label&gt;</span>
-      <span class="nt">&lt;br&gt;</span>
-      <span class="nt">&lt;label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"sameradio"</span><span class="nt">&gt;</span> Check me out again
-      <span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;option&gt;</span>option 1<span class="nt">&lt;/option&gt;</span>
-      <span class="nt">&lt;option&gt;</span>option 2<span class="nt">&lt;/option&gt;</span>
-      <span class="nt">&lt;option&gt;</span>option 3<span class="nt">&lt;/option&gt;</span>
-      <span class="nt">&lt;option&gt;</span>option 4<span class="nt">&lt;/option&gt;</span>
-    <span class="nt">&lt;/select&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group text-right form-actions"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"reset"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
