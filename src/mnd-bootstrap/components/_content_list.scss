@@ -12,7 +12,7 @@ Custom list for editable content
   <li class="content-list-row content-list-header">
     <div class="content-list-column">Draft</div>
     <div class="content-list-column">Last edited</div>
-    <div class="content-list-column">Action</div>
+    <div class="content-list-column">Actions</div>
   </li>
   <li class="content-list-row">
     <div class="content-list-column"><a href="#">Press Release Name #1</a></div>
@@ -35,7 +35,7 @@ Custom list for editable content
   <li class="content-list-row content-list-header">
     <div class="content-list-column">Draft</div>
     <div class="content-list-column">Last edited</div>
-    <div class="content-list-column">Action</div>
+    <div class="content-list-column">Actions</div>
   </li>
   <li class="content-list-row">
     <div class="content-list-column"><a href="#">Press Release Name #1</a></div>
@@ -57,18 +57,14 @@ Custom list for editable content
 */
 
 .content-list {
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: table;
   list-style-type: none;
   margin-bottom: 20px;
   max-width: 100%;
-  padding: 0;
+  table-layout: fixed;
   width: 100%;
-
-  @media (min-width: $screen-sm-min) {
-    border-collapse: collapse;
-    border-spacing: 0;
-    display: table;
-    table-layout: fixed;
-  }
 
   &:last-child {
     margin-bottom: 0;
@@ -76,49 +72,47 @@ Custom list for editable content
 
   .content-list-row {
     border-bottom: 1px solid $gray-lighter;
-
-    @media (min-width: $screen-sm-min) {
-      display: table-row;
-    }
+    display: table-row;
   }
 
   .content-list-column {
-    padding: 20px 15px;
+    display: table-cell;
+    padding: 15px;
+    text-align: right;
 
     &:first-child {
       text-align: left;
+      display: table-cell;
     }
 
-    @media (min-width: $screen-sm-min) {
+    &:nth-child(n+2) {
+      display: none;
+
+      @media screen and (min-width: $screen-sm-min) {
+        display: table-cell;
+      }
+    }
+
+    &:last-child {
       display: table-cell;
-      padding: 15px 25px;
-      text-align: right;
     }
   }
 
   .content-list-action {
-    padding-right: 25px;
+    display: inline-block;
+    margin-left: 25px;
 
-    &:last-child {
-      padding-right: 0;
+    &:first-child {
+      margin-left: 0;
     }
   }
 
   .content-list-header {
-    border-bottom: 1px solid $gray-lighter;
-    display: none;
     font-weight: bold;
-
-    @media (min-width: $screen-sm-min) {
-      display: table-row;
-    }
   }
 }
 
 .content-list-striped {
-  .content-list-header {
-    border-bottom: 0;
-  }
 
   .content-list-row {
     border-bottom: 0;
