@@ -1,0 +1,96 @@
+/*doc
+---
+title: Hero Unit
+name: hero
+category: Components
+---
+
+Hero unit for specific forms and popups
+
+```html_example
+<div class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">Register a new account</h1>
+    <div class="hero-description">
+      You have to register to publish your stories for the world to see. Please take a moment to enter these details.
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group email optional mndx_user_email">
+          <label class="email optional control-label" for="mndx_user_email">Email</label>
+          <input class="string email optional form-control" type="email" name="mndx_user[email]" id="mndx_user_email" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group password optional mndx_user_password">
+          <label class="password optional control-label" for="mndx_user_password">New password</label>
+          <input class="password optional form-control" type="password" name="mndx_user[password]" id="mndx_user_password" />
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group password optional mndx_user_password_confirmation">
+          <label class="password optional control-label" for="mndx_user_password_confirmation">Confirm new password</label>
+          <input class="password optional form-control" type="password" name="mndx_user[password_confirmation]" id="mndx_user_password_confirmation" />
+        </div>
+      </div>
+    </div>
+    <div class="form-group form-actions">
+      <input type="submit" name="commit" value="Register" class="btn btn btn-primary btn-block" />
+    </div>
+    <div class="hero-footer">
+      <a class="hero-link" href="#">Sign in</a>
+    </div>
+  </div>
+</div>
+```
+*/
+
+$space-x5: $space * 5;
+
+.hero-content {
+  border: 1px solid $gray-lighten;
+  border-radius: 4px;
+  margin: 15px auto 0;
+  max-width: 480px;
+  padding: 15px;
+
+  @media screen and (min-width: $screen-sm-min) {
+    margin: $space-larger auto 0;
+    padding: $space-x5;
+  }
+}
+
+.hero-title {
+  color: $gray-dark;
+  font-size: $font-size-larger;
+  font-weight: 200;
+  margin-bottom: $space-large;
+  margin-top: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.hero-description {
+  margin-bottom: $space-large;
+  padding: 0;
+  text-align: center;
+
+  @media screen and (min-width: $screen-sm-min) {
+    margin-bottom: $space-larger;
+  }
+}
+
+.hero-footer {
+  margin-top: $space-large;
+  text-align: center;
+}
+
+.hero-link {
+  margin-right: $space-large;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
