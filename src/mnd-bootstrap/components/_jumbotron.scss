@@ -4,83 +4,102 @@
  name: jumbotron
  category: Components
  ---
- This is the jumbotron section....
-
-<div class="styleguide-example">
-  <div class="jumbotron">
-    <div class="row">
-      <div class="col-sm-12">
-        <h1>Sign up for this magic tool</h1>
-        <p>Bacon ipsum dolor sit amet leberkas corned beef beef hamburger chicken rump ham. Short ribs bresaola shank, chicken pancetta ground round cow prosciutto.</p>
-        <form accept-charset="UTF-8" action="/" method="post" role="form">
-          <div class="form-group col-sm-8 col-md text-left">
-            <label class="sr-only" for="user_email">Enter email</label>
-            <input class="form-control" id="user_email" name="user[email]" placeholder="Enter email" type="email">
-          </div>
-          <div class="form-group col-sm-4">
-            <input class="btn btn-primary col-xs-12" name="commit" type="submit" value="Sign up">
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
+ The jumbotron is used for specific forms and popups
 
 ```html_example
 <div class="jumbotron">
-  <div class="row">
-    <div class="col-sm-12">
-      <h1>Sign up for this magic tool</h1>
-      <p>Bacon ipsum dolor sit amet leberkas corned beef beef hamburger chicken rump ham.</p>
-      <form accept-charset="UTF-8" action="/" method="post" role="form">
-        <div class="form-group col-sm-8 col-md text-left">
-          <label class="sr-only" for="user_email">Enter email</label>
-          <input class="form-control" id="user_email" name="user[email]" placeholder="Enter email" type="email">
-        </div>
-        <div class="form-group col-sm-4">
-          <input class="btn btn-primary col-xs-12" name="commit" type="submit" value="Sign up">
-        </div>
-      </form>
-    </div>
+  <div class="jumbotron-description">
+    <h1>Register a new account</h1>
+    <p>You have to register to publish your stories for the world to see. Please take a moment to enter these details.</p>
   </div>
+  <form accept-charset="UTF-8" action="/" method="post" role="form">
+    <div class="row">
+      <div class="col-sm-12 ">
+        <div class="form-group email optional mndx_user_email">
+          <label class="email optional control-label" for="mndx_user_email">Email</label>
+          <input class="string email optional form-control" type="email" name="mndx_user[email]" id="mndx_user_email" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group password optional">
+          <label class="password optional control-label" for="mndx_user_password">New password</label>
+          <input class="password optional form-control" type="password" name="mndx_user[password]" id="mndx_user_password" />
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group password optional">
+          <label class="password optional control-label" for="mndx_user_password_confirmation">Confirm new password</label>
+          <input class="password optional form-control" type="password" name="mndx_user[password_confirmation]" id="mndx_user_password_confirmation" />
+        </div>
+      </div>
+    </div>
+    <div class="form-group form-actions">
+      <input type="submit" name="commit" value="Register" class="btn btn-primary btn-block" />
+    </div>
+  </form>
+  <a class="jumbotron-link" href="#">Sign in</a>
 </div>
 ```
 */
 
+$space-x5: $space * 5;
+$space-small-x3: $space-small * 3;
+
 .jumbotron {
-  background-color: $body-bg;
-  border-radius: $border-radius-base;
+  background-color: $white;
+  border: 1px solid $gray-lighten;
+  border-radius: 4px;
+  margin: $space-small-x3 auto 0;
+  max-width: 480px;
+  padding: $space-small-x3;
   text-align: center;
-  padding: $base-unit-x2 $base-unit-x3 $base-unit-x3 $base-unit-x3;
 
-  form{
-    display: inline-block;
-    width: 100%;
-    margin-top: $base-unit;
+  @media screen and (min-width: $screen-sm-min) {
+    margin: $space-larger auto 0;
+    padding: $space-x5;
   }
 
-  h1 {
-    font-size: $base-unit-x2;
-    margin-bottom: $base-unit;
-    color: $gray-darker;
-    font-weight: bold;
-  }
+  .jumbotron-description {
+    margin-bottom: $space-large;
 
-  p {
-    font-size: $font-size-base;
-    font-weight: normal;
-    color: $gray;
-  }
-}
-
-@media screen and (min-width: $screen-sm-min) {
-  .jumbotron form {
-    input {
-      float: right;
+    @media screen and (min-width: $screen-sm-min) {
+      margin-bottom: $space-larger;
     }
 
-    button {
-      float: left;
+    h1 {
+      color: $gray-dark;
+      font-size: $font-size-larger;
+      font-weight: 200;
+      margin-bottom: $space-small-x3;
+      margin-top: 0;
+
+      @media screen and (min-width: $screen-sm-min) {
+        margin-bottom: $space-large;
+      }
+    }
+
+    p {
+      color: $gray;
+      font-size: $font-size-base;
+      font-weight: normal;
+    }
+  }
+
+  .jumbotron-link {
+    margin-right: $space-large;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  form {
+    margin-top: 0;
+
+    .form-group {
+      text-align: left;
     }
   }
 }
