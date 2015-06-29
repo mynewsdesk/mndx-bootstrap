@@ -202,65 +202,79 @@
 </div>
 
 <h1 id="jumbotron" class="styleguide">Jumbotron</h1>
-<p class="styleguide"> This is the jumbotron section....</p>
-<div class="styleguide-example">
-  <div class="jumbotron">
-    <div class="row">
-      <div class="col-sm-12">
-        <h1>Sign up for this magic tool</h1>
-        <p>Bacon ipsum dolor sit amet leberkas corned beef beef hamburger chicken rump ham. Short ribs bresaola shank, chicken pancetta ground round cow prosciutto.</p>
-        <form accept-charset="UTF-8" action="/" method="post" role="form">
-          <div class="form-group col-sm-8 col-md text-left">
-            <label class="sr-only" for="user_email">Enter email</label>
-            <input class="form-control" id="user_email" name="user[email]" placeholder="Enter email" type="email">
-          </div>
-          <div class="form-group col-sm-4">
-            <input class="btn btn-primary col-xs-12" name="commit" type="submit" value="Sign up">
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="codeExample">
+<p class="styleguide"> The jumbotron is used for specific forms and popups</p><div class="codeExample">
   <div class="exampleOutput">
     <div class="jumbotron">
-  <div class="row">
-    <div class="col-sm-12">
-      <h1>Sign up for this magic tool</h1>
-      <p>Bacon ipsum dolor sit amet leberkas corned beef beef hamburger chicken rump ham.</p>
-      <form accept-charset="UTF-8" action="/" method="post" role="form">
-        <div class="form-group col-sm-8 col-md text-left">
-          <label class="sr-only" for="user_email">Enter email</label>
-          <input class="form-control" id="user_email" name="user[email]" placeholder="Enter email" type="email">
-        </div>
-        <div class="form-group col-sm-4">
-          <input class="btn btn-primary col-xs-12" name="commit" type="submit" value="Sign up">
-        </div>
-      </form>
-    </div>
+  <div class="jumbotron-description">
+    <h1>Register a new account</h1>
+    <p>You have to register to publish your stories for the world to see. Please take a moment to enter these details.</p>
   </div>
+  <form accept-charset="UTF-8" action="/" method="post" role="form">
+    <div class="row">
+      <div class="col-sm-12 ">
+        <div class="form-group email optional mndx_user_email">
+          <label class="email optional control-label" for="mndx_user_email">Email</label>
+          <input class="string email optional form-control" type="email" name="mndx_user[email]" id="mndx_user_email" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group password optional">
+          <label class="password optional control-label" for="mndx_user_password">New password</label>
+          <input class="password optional form-control" type="password" name="mndx_user[password]" id="mndx_user_password" />
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group password optional">
+          <label class="password optional control-label" for="mndx_user_password_confirmation">Confirm new password</label>
+          <input class="password optional form-control" type="password" name="mndx_user[password_confirmation]" id="mndx_user_password_confirmation" />
+        </div>
+      </div>
+    </div>
+    <div class="form-group form-actions">
+      <input type="submit" name="commit" value="Register" class="btn btn-primary btn-block" />
+    </div>
+  </form>
+  <a class="jumbotron-link" href="#">Sign in</a>
 </div>
 
   </div>
   <div class="codeBlock">
     <div class="highlight">
       <pre class="code-example"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jumbotron"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-12"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;h1&gt;</span>Sign up for this magic tool<span class="nt">&lt;/h1&gt;</span>
-      <span class="nt">&lt;p&gt;</span>Bacon ipsum dolor sit amet leberkas corned beef beef hamburger chicken rump ham.<span class="nt">&lt;/p&gt;</span>
-      <span class="nt">&lt;form</span> <span class="na">accept-charset=</span><span class="s">"UTF-8"</span> <span class="na">action=</span><span class="s">"/"</span> <span class="na">method=</span><span class="s">"post"</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-sm-8 col-md text-left"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"sr-only"</span> <span class="na">for=</span><span class="s">"user_email"</span><span class="nt">&gt;</span>Enter email<span class="nt">&lt;/label&gt;</span>
-          <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"user_email"</span> <span class="na">name=</span><span class="s">"user[email]"</span> <span class="na">placeholder=</span><span class="s">"Enter email"</span> <span class="na">type=</span><span class="s">"email"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-sm-4"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"btn btn-primary col-xs-12"</span> <span class="na">name=</span><span class="s">"commit"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Sign up"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;/form&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jumbotron-description"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Register a new account<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p&gt;</span>You have to register to publish your stories for the world to see. Please take a moment to enter these details.<span class="nt">&lt;/p&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;form</span> <span class="na">accept-charset=</span><span class="s">"UTF-8"</span> <span class="na">action=</span><span class="s">"/"</span> <span class="na">method=</span><span class="s">"post"</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-12 "</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group email optional mndx_user_email"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"email optional control-label"</span> <span class="na">for=</span><span class="s">"mndx_user_email"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
+          <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"string email optional form-control"</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">name=</span><span class="s">"mndx_user[email]"</span> <span class="na">id=</span><span class="s">"mndx_user_email"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-6"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group password optional"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"password optional control-label"</span> <span class="na">for=</span><span class="s">"mndx_user_password"</span><span class="nt">&gt;</span>New password<span class="nt">&lt;/label&gt;</span>
+          <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"password optional form-control"</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">name=</span><span class="s">"mndx_user[password]"</span> <span class="na">id=</span><span class="s">"mndx_user_password"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-6"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group password optional"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"password optional control-label"</span> <span class="na">for=</span><span class="s">"mndx_user_password_confirmation"</span><span class="nt">&gt;</span>Confirm new password<span class="nt">&lt;/label&gt;</span>
+          <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"password optional form-control"</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">name=</span><span class="s">"mndx_user[password_confirmation]"</span> <span class="na">id=</span><span class="s">"mndx_user_password_confirmation"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-actions"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">name=</span><span class="s">"commit"</span> <span class="na">value=</span><span class="s">"Register"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-block"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/form&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"jumbotron-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sign in<span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;/div&gt;</span></pre>
     </div>
   </div>

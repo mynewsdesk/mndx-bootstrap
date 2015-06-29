@@ -1,0 +1,20 @@
+<!-- ./doc_assets/tables.html.erb -->
+
+<div class="codeTable">
+  <table>
+    <tbody>
+      <% examples.each do |example| %>
+        <tr>
+          <td>
+            <script><%= example.rendered_example %></script>
+            <div class="codeBlock coffeeExample">
+              <div class="highlight">
+                <pre><%= example.code_example %></pre>
+              </div>
+            </div>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
