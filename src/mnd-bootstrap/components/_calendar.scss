@@ -86,6 +86,10 @@ A calendar, designed for the datepicker
     float: left;
     line-height: 20px;
     width: 20%;
+
+    &[disabled] {
+      color: $gray-light;
+    }
   }
 
   .rw-btn-left {
@@ -102,7 +106,7 @@ A calendar, designed for the datepicker
     color: $gray-dark;
     display: inline-block;
 
-    .rw-off-range {
+    &.rw-off-range {
       color: $gray-light;
     }
   }
