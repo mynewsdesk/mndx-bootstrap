@@ -8103,15 +8103,15 @@ parent: typo
   background-color: #fff;
   border: 1px solid #bbb;
   border-radius: 4px;
-  margin: 15px auto 0;
+  margin: 30px auto 0;
   max-width: 480px;
-  padding: 15px;
+  padding: 30px;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .jumbotron {
     margin: 40px auto 0;
-    padding: 50px;
+    padding: 60px;
   }
 }
 .jumbotron .jumbotron-description {
@@ -8119,14 +8119,14 @@ parent: typo
 }
 @media screen and (min-width: 768px) {
   .jumbotron .jumbotron-description {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 }
 .jumbotron .jumbotron-description h1 {
   color: #333333;
   font-size: 38px;
-  font-weight: 200;
-  margin-bottom: 15px;
+  font-weight: 600;
+  margin-bottom: 30px;
   margin-top: 0;
 }
 @media screen and (min-width: 768px) {
@@ -8266,15 +8266,15 @@ category: Components
   background-color: #fff;
   border: 1px solid #bbb;
   border-radius: 4px;
-  margin: 15px auto 0;
+  margin: 30px auto 0;
   max-width: 480px;
-  padding: 15px;
+  padding: 30px;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .jumbotron {
     margin: 40px auto 0;
-    padding: 50px;
+    padding: 60px;
   }
 }
 .jumbotron .jumbotron-description {
@@ -8282,14 +8282,14 @@ category: Components
 }
 @media screen and (min-width: 768px) {
   .jumbotron .jumbotron-description {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 }
 .jumbotron .jumbotron-description h1 {
   color: #333333;
   font-size: 38px;
-  font-weight: 200;
-  margin-bottom: 15px;
+  font-weight: 600;
+  margin-bottom: 30px;
   margin-top: 0;
 }
 @media screen and (min-width: 768px) {

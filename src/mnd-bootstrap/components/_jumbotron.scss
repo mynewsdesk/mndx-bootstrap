@@ -44,35 +44,34 @@
 ```
 */
 
-$space-x5: $space * 5;
-$space-small-x3: $space-small * 3;
+$jumbotron-padding-x2: $jumbotron-padding * 2;
 
 .jumbotron {
   background-color: $white;
   border: 1px solid $gray-lighten;
   border-radius: 4px;
-  margin: $space-small-x3 auto 0;
+  margin: $jumbotron-padding auto 0;
   max-width: 480px;
-  padding: $space-small-x3;
+  padding: $jumbotron-padding;
   text-align: center;
 
   @media screen and (min-width: $screen-sm-min) {
     margin: $space-larger auto 0;
-    padding: $space-x5;
+    padding: $jumbotron-padding-x2;
   }
 
   .jumbotron-description {
     margin-bottom: $space-large;
 
     @media screen and (min-width: $screen-sm-min) {
-      margin-bottom: $space-larger;
+      margin-bottom: $jumbotron-padding;
     }
 
     h1 {
       color: $gray-dark;
       font-size: $font-size-larger;
-      font-weight: 200;
-      margin-bottom: $space-small-x3;
+      font-weight: 600;
+      margin-bottom: $jumbotron-padding;
       margin-top: 0;
 
       @media screen and (min-width: $screen-sm-min) {
