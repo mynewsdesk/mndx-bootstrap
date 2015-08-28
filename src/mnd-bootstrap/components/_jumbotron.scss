@@ -102,3 +102,31 @@ $jumbotron-padding-x2: $jumbotron-padding * 2;
     }
   }
 }
+
+.jumbotron-transparent {
+  background: transparent;
+  border: 0;
+
+  .jumbotron-description {
+
+    h1,
+    p {
+      color: $white;
+    }
+  }
+
+  .control-label {
+    color: $white;
+  }
+
+  .form-control {
+    background: $white;
+  }
+
+  .form-links {
+
+    a {
+      color: $white;
+    }
+  }
+}
