@@ -91,4 +91,8 @@ category: Components
   .caret:after {
     color: $btn-primary-bg;
   }
+
+  &:disabled {
+    @extend .btn-default;
+  }
 }
