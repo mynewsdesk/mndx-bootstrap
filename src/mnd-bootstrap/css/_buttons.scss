@@ -24,20 +24,33 @@ category: CSS
 ```
  */
 
+$btn-default-bg-active: darken($btn-default-bg, 20%);
+$btn-primary-bg-active: darken($btn-primary-bg, 20%);
+
 .btn {
-  &-default:hover {
-    background-color: $btn-default-bg-hover;
-    color: $gray-light;
+  font-weight: 600;
+
+  &-default {
+
+    &:hover {
+      color: $gray-light;
+    }
+
+    &:active {
+      background-color: $btn-default-bg-active;
+      color: $gray-light;
+    }
+  }
+
+  &-primary {
+
+    &:active {
+      background: $btn-primary-bg-active;
+    }
   }
 
   &-primary-alt {
     @extend .btn-danger;
-  }
-
-  &-primary {
-    &:hover {
-      background: $btn-primary-hover-bg;
-    }
   }
 
   &-secondary {

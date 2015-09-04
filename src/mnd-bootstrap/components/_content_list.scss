@@ -53,8 +53,34 @@ Custom list for editable content
     <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
   </li>
 </ul>
+
+<ul class="content-list content-list-striped">
+  <li class="content-list-row content-list-header">
+    <div class="content-list-column">Name</div>
+    <div class="content-list-column">Last edited</div>
+    <div class="content-list-column">Actions</div>
+  </li>
+  <li class="content-list-row">
+    <div class="content-list-column"><span class="content-list-checkbox"><input type="checkbox" /></span><span class="content-list-avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Mike Rooseboom</div>
+    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
+    <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
+  </li>
+  <li class="content-list-row">
+    <div class="content-list-column"><span class="content-list-checkbox"><input type="checkbox" /></span><span class="content-list-avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Rashmi Yadav</div>
+    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 27 2015</div>
+    <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
+  </li>
+  <li class="content-list-row">
+    <div class="content-list-column"><span class="content-list-checkbox"><input type="checkbox" /></span><span class="content-list-avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Zoee Silcock</div>
+    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 26 2015</div>
+    <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
+  </li>
+</ul>
 ```
 */
+
+$content-list-vertical-padding: 20px;
+$content-list-horizontal-padding: 25px;
 
 .content-list {
   border-collapse: collapse;
@@ -77,7 +103,8 @@ Custom list for editable content
 
   .content-list-column {
     display: table-cell;
-    padding: 15px;
+    /* padding: 15px; */
+    padding: $content-list-vertical-padding $content-list-horizontal-padding;
     text-align: right;
 
     &:first-child {
@@ -98,6 +125,12 @@ Custom list for editable content
     }
   }
 
+  .content-list-header {
+    color: $black;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
   .content-list-action {
     display: inline-block;
     margin-left: 25px;
@@ -107,8 +140,29 @@ Custom list for editable content
     }
   }
 
-  .content-list-header {
-    font-weight: bold;
+  .content-list-checkbox {
+    display: inline-block;
+
+    input[type='checkbox'] {
+      box-shadow: 0px 1px 1px 0px #efefef inset;
+      font-size: 16px;
+      margin-right: 20px;
+    }
+  }
+
+  .content-list-avatar {
+    display: inline-block;
+    margin-right: 25px;
+    position: relative;
+    width: 35px;
+
+    img {
+      border-radius: 50%;
+      height: 35px;
+      margin-top: -23px;
+      position: absolute;
+      width: 35px;
+    }
   }
 }
 
@@ -118,7 +172,7 @@ Custom list for editable content
     border-bottom: 0;
 
     &:nth-child(even) {
-      background-color: $blue-light;
+      background-color: $gray-lightest;
     }
   }
 }

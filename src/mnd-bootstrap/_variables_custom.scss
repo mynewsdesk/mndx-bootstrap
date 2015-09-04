@@ -39,7 +39,7 @@ $space-small: $space / 2;
 $space-large: $space * 2;
 $space-larger: $space * 4;
 
-$base-unit:         14px;
+$base-unit:         15px;
 $base-unit-x2:      ceil($base-unit * 2);
 $base-unit-x3:      ceil($base-unit * 3);
 
@@ -72,7 +72,10 @@ $font-size-larger: 38px;
 </div>
  */
 $gray-lighten: #bbb;
-$gray-lightest: #fcfcfc;
+/* $gray-lightest: #fcfcfc; */
+$gray-lightest: #fafafa;
 $white: #fff;
-$brand-primary-custom: #e53221;
+$black: #000;
+/* $brand-primary-custom: #e53221; */
+$brand-primary-custom: #ec2928;
 $blue-light: #f8fafd;

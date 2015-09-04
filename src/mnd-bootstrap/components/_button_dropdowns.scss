@@ -1,8 +1,69 @@
 /*doc
-//---
-//title: Button dropdowns
-//name: button_dropdowns
-//category: Components
-//---
+---
+title: Button dropdowns
+name: button_dropdowns
+category: Components
+---
+
+```html_example_table
+<div class="btn-group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+```
 */
 
+.caret {
+  border-top: 6px dashed;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  position: relative;
+
+  &:after {
+    border-top: 4px dashed;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    content: '';
+    display: inline-block;
+    height: 0;
+    margin-left: -4px;
+    position: absolute;
+    top: -7px;
+    vertical-align: middle;
+    width: 0;
+  }
+}
+
+.btn-default {
+
+  .caret:after {
+    color: $btn-default-bg;
+  }
+}
+
+.btn-primary {
+
+  .caret:after {
+    color: $btn-primary-bg;
+  }
+}

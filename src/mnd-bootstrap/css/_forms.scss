@@ -165,8 +165,8 @@ textarea {
   text-align: left;
 
   a {
-    padding: 7px 13px;
-  
+    padding: ($padding-base-vertical + 1) ($padding-base-horizontal + 1);
+
     &.pull-left:first-child {
       padding-left: 0;
     }
