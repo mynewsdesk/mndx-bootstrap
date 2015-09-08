@@ -7,7 +7,6 @@ var hologram = require('gulp-hologram');
 var notify = require('gulp-notify');
 var runSequence = require('run-sequence');
 var request = require('superagent');
-var sass = require('gulp-ruby-sass');
 var gulpSass = require('gulp-sass');
 var clean = require('gulp-rimraf');
 
@@ -75,7 +74,7 @@ gulp.task('mnd-bootstrap-sass', function() {
 
 gulp.task('styleguide-sass', function() {
   return gulp.src('doc_assets/styleguide.scss')
-    .pipe(sass({ style: 'expanded', loadPath: ['src/', './bower_components/'] }))
+    .pipe(gulpSass({ outputStyle: 'compact', includePaths: [config.bowerDir]}))
     .on('error', function (err) { console.log(err.message); })
     .pipe(gulp.dest('public/'))
     .pipe(notify({message: 'Styleguide-sass task complete'}));
