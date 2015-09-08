@@ -79,9 +79,6 @@ Custom list for editable content
 ```
 */
 
-$content-list-vertical-padding: 20px;
-$content-list-horizontal-padding: 25px;
-
 .content-list {
   border-collapse: collapse;
   border-spacing: 0;
@@ -104,7 +101,7 @@ $content-list-horizontal-padding: 25px;
   .content-list-column {
     display: table-cell;
     /* padding: 15px; */
-    padding: $content-list-vertical-padding $content-list-horizontal-padding;
+    padding: 20px 25px;
     text-align: right;
 
     &:first-child {
