@@ -114,7 +114,8 @@ gulp.task('styleguide', [
   ], function() {
   return gulp.src('hologram_config.yml')
     .pipe(hologram())
-    .pipe(notify({message: 'Hologram task complete'}));
+    .pipe(notify({message: 'Hologram task complete'}))
+    .pipe(reload({ stream:true }));
 });
 
 // Increment version number
