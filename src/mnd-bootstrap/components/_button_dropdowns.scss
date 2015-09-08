@@ -77,11 +77,14 @@ category: Components
 }
 
 .dropdown-menu {
-  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid $btn-default-border;
+  box-shadow: none;
+  left: auto;
+  margin-top: 15px;
   padding-bottom: 25px;
   padding-top: 20px;
-  right: 0;
-  left: auto;
+  right: -5px;
 
   >li {
 
@@ -91,93 +94,40 @@ category: Components
   }
 
   &:before {
-    content: '';
-
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0;
     border-color: transparent;
+    border-bottom-color: $btn-default-border;
     border-style: solid;
-
-    top: -22px;
-    /* left: 50%; */
-    margin-left: -11px;
     border-top-width: 0;
-    border-bottom-color: rgba(0,0,0,0.25);
     border-width: 11px;
-
-    right: 12;
-  }
-  &:after {
     content: '';
-    position: absolute;
     display: block;
-    width: 0;
     height: 0;
+    margin-left: -11px;
+    position: absolute;
+    right: 18px;
+    top: -22px;
+    width: 0;
+  }
+
+  &:after {
     border-color: transparent;
+    border-bottom-color: #fff;
     border-style: solid;
     border-width: 10px;
-
-    top: -10px;
-    /* margin-left: -10px; */
-    content: " ";
     border-top-width: 0;
-    border-bottom-color: #fff;
-
-    right: 13;
+    content: '';
+    display: block;
+    height: 0;
+    position: absolute;
+    right: 19px;
+    top: -10px;
+    width: 0;
   }
 }
 
 .btn-primary {
-  .caret:after {
-    color: $btn-primary-bg;
-  }
 
   &:disabled {
     @extend .btn-default;
   }
 }
-
-/* .caret {
-  border-top: 6px dashed;
-  border-right: 6px solid transparent;
-  border-left: 6px solid transparent;
-  position: relative;
-
-  &:after {
-    border-top: 4px dashed;
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
-    content: '';
-    display: inline-block;
-    height: 0;
-    margin-left: -4px;
-    position: absolute;
-    top: -7px;
-    vertical-align: middle;
-    width: 0;
-  }
-}
-
-.btn-default {
-
-  .caret:after {
-    color: $btn-default-bg;
-  }
-
-  &:hover {
-
-    .caret:after {
-      color: $btn-default-bg-hover;
-    }
-  }
-
-  &:active {
-
-    .caret:after {
-      color: $btn-default-bg-active;
-    }
-  }
-}
-*/
