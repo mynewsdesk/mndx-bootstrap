@@ -32,7 +32,7 @@ gulp.task('serve', function() {
 });
 
 // Dev task: build, serve and watch
-gulp.task('default', function() {
+gulp.task('default',['styleguide'], function() {
   gulp.start('serve', 'watch-styleguide', 'watch-bootstrap');
 });
 
