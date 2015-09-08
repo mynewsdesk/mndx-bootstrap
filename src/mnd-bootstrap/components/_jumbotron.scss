@@ -47,7 +47,7 @@
 $jumbotron-padding-x2: $jumbotron-padding * 2;
 
 .jumbotron {
-  background-color: $white;
+  background-color: #fff;
   border: 1px solid $gray-lighten;
   border-radius: 4px;
   margin: $jumbotron-padding auto 0;
@@ -111,22 +111,22 @@ $jumbotron-padding-x2: $jumbotron-padding * 2;
 
     h1,
     p {
-      color: $white;
+      color: #fff;
     }
   }
 
   .control-label {
-    color: $white;
+    color: #fff;
   }
 
   .form-control {
-    background: $white;
+    background: #fff;
   }
 
   .form-links {
 
     a {
-      color: $white;
+      color: #fff;
     }
   }
 }

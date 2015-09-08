@@ -29,7 +29,7 @@ body{
   }
 
   &-example {
-    background: $white;
+    background: #fff;
     padding: $base-unit-x2;
   }
 }
@@ -43,7 +43,7 @@ body{
   padding: $sg-default-space;
 
   &.light {
-    background-color: $white;
+    background-color: #fff;
   }
   &.dark {
     background-color: $gray-dark;
@@ -56,7 +56,7 @@ body{
 }
 
 .color-box {
-  border: 1px solid $black;
+  border: 1px solid #000;
   display: block;
   float: left;
   height: 150px;
@@ -65,7 +65,7 @@ body{
   width: 150px;
 
   span {
-    background: $white;
+    background: #fff;
     display: inline-block;
     padding: $sg-default-space;
   }
@@ -100,7 +100,7 @@ body{
 }
 
 .white {
-  background: $white;
+  background: #fff;
 }
 
 .brand-primary-custom {
