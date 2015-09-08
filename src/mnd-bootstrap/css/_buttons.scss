@@ -24,28 +24,40 @@ category: CSS
 ```
  */
 
-$btn-default-bg-active: darken($btn-default-bg, 20%);
-$btn-primary-bg-active: darken($btn-primary-bg, 20%);
-
 .btn {
   font-weight: 600;
 
   &-default {
 
     &:hover {
-      color: $gray-light;
+      background: $btn-default-bg;
+      border-color: $btn-default-border-hover;
+      color: $btn-default-color-hover;
     }
 
-    &:active {
-      background-color: $btn-default-bg-active;
-      color: $gray-light;
+    &:active,
+    &:focus,
+    &:active:focus {
+      background: $btn-default-bg;
+      border-color: $btn-default-border-active;
+      box-shadow: none;
+      color: $btn-default-color-active;
     }
   }
 
   &-primary {
 
-    &:active {
+    &:hover {
+      background: $btn-primary-bg-hover;
+      border-color: $btn-primary-bg-hover;
+    }
+
+    &:active,
+    &:focus,
+    &:active:focus {
       background: $btn-primary-bg-active;
+      border-color: $btn-primary-bg-active;
+      box-shadow: none;
     }
   }
 

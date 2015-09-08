@@ -1,4 +1,4 @@
-/*doc
+  /*doc
  ---
  title: Units extended
  name: units_extended
@@ -74,8 +74,22 @@ $font-size-larger: 38px;
 $gray-lighten: #bbb;
 /* $gray-lightest: #fcfcfc; */
 $gray-lightest: #fafafa;
-$white: #fff;
-$black: #000;
+//$white: #fff;
+//$black: #000;
 /* $brand-primary-custom: #e53221; */
 $brand-primary-custom: #ec2928;
 $blue-light: #f8fafd;
+/* $btn-primary-bg-hover:           #89a334; */
+$btn-primary-bg-hover: darken($btn-primary-bg, 10%);
+$btn-primary-bg-active: darken($btn-primary-bg, 20%);
+/* $btn-default-bg-hover:           #f9fafb; */
+$btn-default-bg-hover: darken($btn-default-bg, 10%);
+$btn-default-bg-active: darken($btn-default-bg, 20%);
+$btn-default-border-hover: #8b8b8b;
+$btn-default-border-active: #666;
+$btn-default-color-hover: #666;
+$btn-default-color-active: #333;
+
+$btn-ghost-default-color: #fff;
+$btn-ghost-default-bg: $gray-light;
+$btn-ghost-default-border: darken($btn-default-bg, 20%);
