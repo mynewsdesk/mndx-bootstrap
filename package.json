@@ -12,6 +12,7 @@
     "react": "^0.13.0"
   },
   "devDependencies": {
+    "browser-sync": "^2.9.1",
     "classnames": "^2.1.1",
     "gulp": "^3.8.10",
     "gulp-bump": "^0.1.11",
@@ -21,6 +22,7 @@
     "gulp-notify": "^2.1.0",
     "gulp-rimraf": "^0.1.1",
     "gulp-ruby-sass": "^0.7.1",
+    "gulp-sass": "^2.0.4",
     "gulp-webserver": "^0.9.0",
     "moment": "^2.10.3",
     "react-widgets": "^2.6.0",
