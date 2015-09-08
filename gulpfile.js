@@ -22,6 +22,7 @@ var config = {
     publicDir: './public'
 };
 
+// Just do the CSS stuff, build bootstrap, browserSync
 gulp.task('serve', function() {
   browserSync({
     server: {
