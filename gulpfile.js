@@ -35,11 +35,11 @@ gulp.task('serve', function() {
 
 // Dev task: build, serve and watch
 gulp.task('default', function() {
-  gulp.start('serve', 'watch-styleguide', 'mnd-bootstrap-sass');
+  gulp.start('serve', 'watch-styleguide', 'watch-scss');
 });
 
 gulp.task('documentation', function() {
-  gulp.start('styleguide', 'serve', 'watch-styleguide', 'sass')
+  gulp.start('styleguide', 'serve', 'watch-styleguide');
 });
 
 // Serve the style-guide
@@ -65,7 +65,14 @@ gulp.task('watch-scss', function (){
 
 // Recompile the styleguide on scss file change
 gulp.task('watch-styleguide', function() {
-  gulp.watch(['src/**/*.scss', 'doc_assets/**/*.scss' ,'doc_assets/**/*.html'], ['styleguide-sass','styleguide']);
+  gulp.watch([
+    'src/**/*.scss',
+    'doc_assets/**/*.scss',
+    'doc_assets/**/*.html'
+  ],[
+    'styleguide-sass',
+    'styleguide'
+  ]);
   gulp.watch(['src/**/*.js'], ['styleguide']);
 });
 
@@ -101,7 +108,12 @@ gulp.task('styleguide-assets', function() {
 });
 
 // Compile style-guide
-gulp.task('styleguide', ['clean', 'mnd-bootstrap-sass', 'styleguide-sass', 'styleguide-assets'], function() {
+gulp.task('styleguide', [
+    'clean',
+    'mnd-bootstrap-sass',
+    'styleguide-sass',
+    'styleguide-assets'
+  ], function() {
   return gulp.src('hologram_config.yml')
     .pipe(hologram())
     .pipe(notify({message: 'Hologram task complete'}));
