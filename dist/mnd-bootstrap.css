@@ -1,25 +1,6 @@
-/*doc --- title: Units extended name: units_extended category: Variables --- Those are the units that you can use <div class="clearfix"> <div class="variable-box"> <span>$base-unit = $base-unit // 14px</span> </div> <div class="variable-box"> <span>$base-unit-x2 = $base-unit-x2</span> </div> <div class="variable-box"> <span>$base-unit-x3 = $base-unit-x3</span> </div> <div class="variable-box"> <span>$space = 10px</span> </div> <div class="variable-box"> <span>$space-small = $space / 2</span> </div> <div class="variable-box"> <span>$space-large = $space * 2</span> </div> <div class="variable-box"> <span>$space-larger = $space * 4</span> </div> <div class="variable-box"> <span>$font-size-larger = 38px</span> </div> </div> */
-/*doc --- title: Colors extended name: colors_extended category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-lighten"> <span>$gray-lighten</span> </div> <div class="color-box gray-lightest"> <span>$gray-lightest</span> </div> <div class="color-box white"> <span>$white</span> </div> <div class="color-box brand-primary-custom"> <span>$brand-primary-custom</span> </div> <div class="color-box blue-light"> <span>$blue-light</span> </div> </div> */
-/* $gray-lightest: #fcfcfc; */
-/* $brand-primary-custom: #e53221; */
 /*doc --- title: Colors name: colors category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-darker"> <span>$gray-darker</span> </div> <div class="color-box gray-dark"> <span>$gray-dark</span> </div> <div class="color-box gray"> <span>$gray</span> </div> <div class="color-box gray-light"> <span>$gray-light</span> </div> <div class="color-box gray-lighter"> <span>$gray-lighter</span> </div> <div class="color-box brand-primary"> <span>$brand-primary</span> </div> <div class="color-box brand-success"> <span>$brand-success</span> </div> <div class="color-box brand-info"> <span>$brand-info</span> </div> <div class="color-box brand-warning"> <span>$brand-warning</span> </div> <div class="color-box brand-danger"> <span>$brand-danger</span> </div> </div> */
-/* $brand-success:         #9bb83a; */
-/* $brand-info:            #389Bc9; */
 @import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic");
-/* $padding-base-vertical:     6px;
-$padding-base-horizontal:   12px; */
-/* $btn-default-color:              #555; */
-/* $btn-default-bg:                 #f4f5f6; */
-/* $btn-default-bg-hover:           #f9fafb; */
-/* $btn-default-border:             #b1b6bf; */
-/* $btn-primary-border:             darken($btn-primary-bg, 13.3%); */
-/* $btn-primary-hover-bg:           #89a334; */
-/* $btn-success-border:             darken($btn-success-bg, 20%); */
-/* $btn-info-border:                darken($btn-info-bg, 20%); */
-/* $btn-warning-border:             darken($btn-warning-bg, 20%); */
-/* $btn-danger-border:              darken($btn-danger-bg, 20%); */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic");
 html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
 body { margin: 0; }
@@ -678,7 +659,7 @@ img { vertical-align: middle; }
 
 hr { margin-top: 21px; margin-bottom: 21px; border: 0; border-top: 1px solid #eeeeee; }
 
-.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+.sr-only, .rw-sr { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
 
 .sr-only-focusable:active, .sr-only-focusable:focus { position: static; width: auto; height: auto; margin: 0; overflow: visible; clip: auto; }
 
@@ -740,9 +721,9 @@ mark, .mark { background-color: #fdfde9; padding: .2em; }
 
 a.text-primary:hover { color: #d7d7d7; }
 
-.text-success { color: #4ec529; }
+.text-success { color: #00ccb8; }
 
-a.text-success:hover { color: #3d9b20; }
+a.text-success:hover { color: #00998a; }
 
 .text-info { color: #2173d2; }
 
@@ -1296,15 +1277,15 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
 
 .input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, .input-group-sm > .input-group-addon + .form-control-feedback, .input-group-sm > .input-group-btn > .btn + .form-control-feedback, .input-group-sm > .input-group-btn > .btn-ghost + .form-control-feedback { width: 31px; height: 31px; line-height: 31px; }
 
-.has-success .help-block, .has-success .control-label, .has-success .radio, .has-success .checkbox, .has-success .radio-inline, .has-success .checkbox-inline, .has-success.radio label, .has-success.checkbox label, .has-success.radio-inline label, .has-success.checkbox-inline label { color: #4ec529; }
+.has-success .help-block, .has-success .control-label, .has-success .radio, .has-success .checkbox, .has-success .radio-inline, .has-success .checkbox-inline, .has-success.radio label, .has-success.checkbox label, .has-success.radio-inline label, .has-success.checkbox-inline label { color: #00ccb8; }
 
-.has-success .form-control { border-color: #4ec529; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+.has-success .form-control { border-color: #00ccb8; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
 
-.has-success .form-control:focus { border-color: #3d9b20; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #8de272; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #8de272; }
+.has-success .form-control:focus { border-color: #00998a; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #33ffeb; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #33ffeb; }
 
-.has-success .input-group-addon { color: #4ec529; border-color: #4ec529; background-color: #f5f8eb; }
+.has-success .input-group-addon { color: #00ccb8; border-color: #00ccb8; background-color: #f5f8eb; }
 
-.has-success .form-control-feedback { color: #4ec529; }
+.has-success .form-control-feedback { color: #00ccb8; }
 
 .has-warning .help-block, .has-warning .control-label, .has-warning .radio, .has-warning .checkbox, .has-warning .radio-inline, .has-warning .checkbox-inline, .has-warning.radio label, .has-warning.checkbox label, .has-warning.radio-inline label, .has-warning.checkbox-inline label { color: #e5d321; }
 
@@ -1328,7 +1309,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
 
 .has-feedback label ~ .form-control-feedback { top: 26px; }
 
-.has-feedback label.sr-only ~ .form-control-feedback { top: 0; }
+.has-feedback label.sr-only ~ .form-control-feedback, .has-feedback label.rw-sr ~ .form-control-feedback { top: 0; }
 
 .help-block { display: block; margin-top: 5px; margin-bottom: 10px; color: #a6a6a6; }
 
@@ -1372,35 +1353,35 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
 
 .btn.disabled, .disabled.btn-ghost, .btn[disabled], [disabled].btn-ghost, fieldset[disabled] .btn, fieldset[disabled] .btn-ghost { cursor: not-allowed; pointer-events: none; opacity: 0.65; filter: alpha(opacity=65); -webkit-box-shadow: none; box-shadow: none; }
 
-.btn-default { color: #888; background-color: #fff; border-color: #ddd; }
+.btn-default, .btn-primary:disabled { color: #888; background-color: #fff; border-color: #ddd; }
 
-.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle { color: #888; background-color: #e6e6e6; border-color: #bebebe; }
+.btn-default:hover, .btn-primary:hover:disabled, .btn-default:focus, .btn-primary:focus:disabled, .btn-default.focus, .focus.btn-primary:disabled, .btn-default:active, .btn-primary:active:disabled, .btn-default.active, .active.btn-primary:disabled, .open > .btn-default.dropdown-toggle, .open > .dropdown-toggle.btn-primary:disabled { color: #888; background-color: #e6e6e6; border-color: #bebebe; }
 
-.btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle { background-image: none; }
+.btn-default:active, .btn-primary:active:disabled, .btn-default.active, .active.btn-primary:disabled, .open > .btn-default.dropdown-toggle, .open > .dropdown-toggle.btn-primary:disabled { background-image: none; }
 
-.btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled.focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled].focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active { background-color: #fff; border-color: #ddd; }
+.btn-default.disabled, .disabled.btn-primary:disabled, .btn-default.disabled:hover, .disabled.btn-primary:hover:disabled, .btn-default.disabled:focus, .disabled.btn-primary:focus:disabled, .btn-default.disabled.focus, .disabled.focus.btn-primary:disabled, .btn-default.disabled:active, .disabled.btn-primary:active:disabled, .btn-default.disabled.active, .disabled.active.btn-primary:disabled, .btn-default[disabled], [disabled].btn-primary:disabled, .btn-default[disabled]:hover, [disabled].btn-primary:hover:disabled, .btn-default[disabled]:focus, [disabled].btn-primary:focus:disabled, .btn-default[disabled].focus, [disabled].focus.btn-primary:disabled, .btn-default[disabled]:active, [disabled].btn-primary:active:disabled, .btn-default[disabled].active, [disabled].active.btn-primary:disabled, fieldset[disabled] .btn-default, fieldset[disabled] .btn-primary:disabled, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-primary:hover:disabled, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-primary:focus:disabled, fieldset[disabled] .btn-default.focus, fieldset[disabled] .focus.btn-primary:disabled, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-primary:active:disabled, fieldset[disabled] .btn-default.active, fieldset[disabled] .active.btn-primary:disabled { background-color: #fff; border-color: #ddd; }
 
-.btn-default .badge { color: #fff; background-color: #888; }
+.btn-default .badge, .btn-primary:disabled .badge { color: #fff; background-color: #888; }
 
-.btn-primary { color: #fff; background-color: #4ec529; border-color: #4ec529; }
+.btn-primary { color: #fff; background-color: #00ccb8; border-color: #00ccb8; }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle { color: #fff; background-color: #3d9b20; border-color: #3a921e; }
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle { color: #fff; background-color: #00998a; border-color: #008f81; }
 
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle { background-image: none; }
 
-.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active { background-color: #4ec529; border-color: #4ec529; }
+.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active { background-color: #00ccb8; border-color: #00ccb8; }
 
-.btn-primary .badge { color: #4ec529; background-color: #fff; }
+.btn-primary .badge { color: #00ccb8; background-color: #fff; }
 
-.btn-success { color: #fff; background-color: #4ec529; border-color: #4ec529; }
+.btn-success { color: #fff; background-color: #00ccb8; border-color: #00ccb8; }
 
-.btn-success:hover, .btn-success:focus, .btn-success.focus, .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle { color: #fff; background-color: #3d9b20; border-color: #3a921e; }
+.btn-success:hover, .btn-success:focus, .btn-success.focus, .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle { color: #fff; background-color: #00998a; border-color: #008f81; }
 
 .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle { background-image: none; }
 
-.btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled.focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled].focus, .btn-success[disabled]:active, .btn-success[disabled].active, fieldset[disabled] .btn-success, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success.focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success.active { background-color: #4ec529; border-color: #4ec529; }
+.btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled.focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled].focus, .btn-success[disabled]:active, .btn-success[disabled].active, fieldset[disabled] .btn-success, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success.focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success.active { background-color: #00ccb8; border-color: #00ccb8; }
 
-.btn-success .badge { color: #4ec529; background-color: #fff; }
+.btn-success .badge { color: #00ccb8; background-color: #fff; }
 
 .btn-info { color: #fff; background-color: #2173d2; border-color: #2173d2; }
 
@@ -1972,9 +1953,9 @@ a.label:hover, a.label:focus { color: #fff; text-decoration: none; cursor: point
 
 .label-primary[href]:hover, .label-primary[href]:focus { background-color: #d7d7d7; }
 
-.label-success { background-color: #4ec529; }
+.label-success { background-color: #00ccb8; }
 
-.label-success[href]:hover, .label-success[href]:focus { background-color: #3d9b20; }
+.label-success[href]:hover, .label-success[href]:focus { background-color: #00998a; }
 
 .label-info { background-color: #2173d2; }
 
@@ -2044,11 +2025,11 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active { border-color: #2e88be
 
 .alert-dismissable .close, .alert-dismissible .close { position: relative; top: -2px; right: -21px; color: inherit; }
 
-.alert-success { background-color: #dcf3d4; border-color: #a7e294; color: #276315; }
+.alert-success { background-color: #ccf5f1; border-color: #80e6dc; color: #00665c; }
 
-.alert-success hr { border-top-color: #97dd80; }
+.alert-success hr { border-top-color: #6be2d6; }
 
-.alert-success .alert-link { color: #16390c; }
+.alert-success .alert-link { color: #00332e; }
 
 .alert-info { background-color: #d3e3f6; border-color: #90b9e9; color: #113a69; }
 
@@ -2082,7 +2063,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active { border-color: #2e88be
 
 .progress.active .progress-bar, .progress-bar.active { -webkit-animation: progress-bar-stripes 2s linear infinite; -o-animation: progress-bar-stripes 2s linear infinite; animation: progress-bar-stripes 2s linear infinite; }
 
-.progress-bar-success { background-color: #4ec529; }
+.progress-bar-success { background-color: #00ccb8; }
 
 .progress-striped .progress-bar-success { background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
 
@@ -2148,15 +2129,15 @@ a.list-group-item:hover, a.list-group-item:focus { text-decoration: none; color:
 
 .list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text { color: white; }
 
-.list-group-item-success { color: #4ec529; background-color: #f5f8eb; }
+.list-group-item-success { color: #00ccb8; background-color: #f5f8eb; }
 
-a.list-group-item-success { color: #4ec529; }
+a.list-group-item-success { color: #00ccb8; }
 
 a.list-group-item-success .list-group-item-heading { color: inherit; }
 
-a.list-group-item-success:hover, a.list-group-item-success:focus { color: #4ec529; background-color: #ecf1d8; }
+a.list-group-item-success:hover, a.list-group-item-success:focus { color: #00ccb8; background-color: #ecf1d8; }
 
-a.list-group-item-success.active, a.list-group-item-success.active:hover, a.list-group-item-success.active:focus { color: #fff; background-color: #4ec529; border-color: #4ec529; }
+a.list-group-item-success.active, a.list-group-item-success.active:hover, a.list-group-item-success.active:focus { color: #fff; background-color: #00ccb8; border-color: #00ccb8; }
 
 .list-group-item-info { color: #2173d2; background-color: #ebf5f9; }
 
@@ -2294,11 +2275,11 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 .panel-success { border-color: #f5f8eb; }
 
-.panel-success > .panel-heading { color: #4ec529; background-color: #f5f8eb; border-color: #f5f8eb; }
+.panel-success > .panel-heading { color: #00ccb8; background-color: #f5f8eb; border-color: #f5f8eb; }
 
 .panel-success > .panel-heading + .panel-collapse > .panel-body { border-top-color: #f5f8eb; }
 
-.panel-success > .panel-heading .badge { color: #f5f8eb; background-color: #4ec529; }
+.panel-success > .panel-heading .badge { color: #f5f8eb; background-color: #00ccb8; }
 
 .panel-success > .panel-footer + .panel-collapse > .panel-body { border-bottom-color: #f5f8eb; }
 
@@ -2644,31 +2625,10 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 /*doc --- title: Units extended name: units_extended category: Variables --- Those are the units that you can use <div class="clearfix"> <div class="variable-box"> <span>$base-unit = $base-unit // 14px</span> </div> <div class="variable-box"> <span>$base-unit-x2 = $base-unit-x2</span> </div> <div class="variable-box"> <span>$base-unit-x3 = $base-unit-x3</span> </div> <div class="variable-box"> <span>$space = 10px</span> </div> <div class="variable-box"> <span>$space-small = $space / 2</span> </div> <div class="variable-box"> <span>$space-large = $space * 2</span> </div> <div class="variable-box"> <span>$space-larger = $space * 4</span> </div> <div class="variable-box"> <span>$font-size-larger = 38px</span> </div> </div> */
 /*doc --- title: Colors extended name: colors_extended category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-lighten"> <span>$gray-lighten</span> </div> <div class="color-box gray-lightest"> <span>$gray-lightest</span> </div> <div class="color-box white"> <span>$white</span> </div> <div class="color-box brand-primary-custom"> <span>$brand-primary-custom</span> </div> <div class="color-box blue-light"> <span>$blue-light</span> </div> </div> */
-/* $gray-lightest: #fcfcfc; */
-/* $brand-primary-custom: #e53221; */
 body { -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
 
 body #sb-site a[name] { content: ""; display: block; height: 76px; margin-top: -76px; }
 
-/*doc --- title: Units extended name: units_extended category: Variables --- Those are the units that you can use <div class="clearfix"> <div class="variable-box"> <span>$base-unit = $base-unit // 14px</span> </div> <div class="variable-box"> <span>$base-unit-x2 = $base-unit-x2</span> </div> <div class="variable-box"> <span>$base-unit-x3 = $base-unit-x3</span> </div> <div class="variable-box"> <span>$space = 10px</span> </div> <div class="variable-box"> <span>$space-small = $space / 2</span> </div> <div class="variable-box"> <span>$space-large = $space * 2</span> </div> <div class="variable-box"> <span>$space-larger = $space * 4</span> </div> <div class="variable-box"> <span>$font-size-larger = 38px</span> </div> </div> */
-/*doc --- title: Colors extended name: colors_extended category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-lighten"> <span>$gray-lighten</span> </div> <div class="color-box gray-lightest"> <span>$gray-lightest</span> </div> <div class="color-box white"> <span>$white</span> </div> <div class="color-box brand-primary-custom"> <span>$brand-primary-custom</span> </div> <div class="color-box blue-light"> <span>$blue-light</span> </div> </div> */
-/* $gray-lightest: #fcfcfc; */
-/* $brand-primary-custom: #e53221; */
-/*doc --- title: Colors name: colors category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-darker"> <span>$gray-darker</span> </div> <div class="color-box gray-dark"> <span>$gray-dark</span> </div> <div class="color-box gray"> <span>$gray</span> </div> <div class="color-box gray-light"> <span>$gray-light</span> </div> <div class="color-box gray-lighter"> <span>$gray-lighter</span> </div> <div class="color-box brand-primary"> <span>$brand-primary</span> </div> <div class="color-box brand-success"> <span>$brand-success</span> </div> <div class="color-box brand-info"> <span>$brand-info</span> </div> <div class="color-box brand-warning"> <span>$brand-warning</span> </div> <div class="color-box brand-danger"> <span>$brand-danger</span> </div> </div> */
-/* $brand-success:         #9bb83a; */
-/* $brand-info:            #389Bc9; */
-/* $padding-base-vertical:     6px;
-$padding-base-horizontal:   12px; */
-/* $btn-default-color:              #555; */
-/* $btn-default-bg:                 #f4f5f6; */
-/* $btn-default-bg-hover:           #f9fafb; */
-/* $btn-default-border:             #b1b6bf; */
-/* $btn-primary-border:             darken($btn-primary-bg, 13.3%); */
-/* $btn-primary-hover-bg:           #89a334; */
-/* $btn-success-border:             darken($btn-success-bg, 20%); */
-/* $btn-info-border:                darken($btn-info-bg, 20%); */
-/* $btn-warning-border:             darken($btn-warning-bg, 20%); */
-/* $btn-danger-border:              darken($btn-danger-bg, 20%); */
 .table tbody > tr > td.vert-align { vertical-align: middle; }
 
 @media screen and (min-width: 768px) { .text-left-sm { text-align: left; } }
@@ -2680,11 +2640,13 @@ $padding-base-horizontal:   12px; */
 /*doc --- title: Buttons name: Buttons category: CSS --- ```html_example_table <p><button class="btn btn-default btn-lg">Large</button></p> <p><button class="btn btn-default">Normal</button></p> <p><button class="btn btn-default btn-sm">Small</button></p> <p><button class="btn btn-default btn-xs">Extra Small</button></p> <p><button class="btn btn-default">Default</button></p> <p><button class="btn btn-primary">Primary</button></p> <p><button class="btn btn-primary-alt">Primary Alt</button></p> <p><button class="btn btn-danger">Danger</button></p> <p><button class="btn btn-secondary">Secondary</button></p> <p><button class="btn-ghost btn-default">Default Ghost</button></p> <p><button class="btn-ghost btn-primary">Primary Ghost</button></p> <p><button class="btn-ghost btn-primary-alt">Primary Alt Ghost</button></p> <p><button class="btn-ghost btn-danger">Danger Ghost</button></p> ``` */
 .btn, .btn-ghost { font-weight: 600; }
 
-.btn-default:hover { color: #999999; }
+.btn-default:hover, .btn-primary:hover:disabled { background: #fff; border-color: #8b8b8b; color: #666; }
 
-.btn-default:active { background-color: #cccccc; color: #999999; }
+.btn-default:active, .btn-primary:active:disabled, .btn-default:focus, .btn-primary:focus:disabled, .btn-default:active:focus, .btn-primary:active:focus:disabled { background: #fff; border-color: #666; box-shadow: none; color: #333; }
 
-.btn-primary:active { background: #2d7117; }
+.btn-primary:hover { background: #00998a; border-color: #00998a; }
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:active:focus { background: #00665c; border-color: #00665c; box-shadow: none; }
 
 .btn-secondary { color: #666; }
 
@@ -2692,11 +2654,11 @@ $padding-base-horizontal:   12px; */
 
 .btn-ghost { background-color: transparent; }
 
-.btn-ghost.btn-default { border-color: #999999; color: #999999; }
+.btn-ghost.btn-default, .btn-ghost.btn-primary:disabled { border-color: #999999; color: #999999; }
 
-.btn-ghost.btn-default:hover { color: #fff; background-color: #999999; }
+.btn-ghost.btn-default:hover, .btn-ghost.btn-primary:hover:disabled { color: #fff; background-color: #999999; }
 
-.btn-ghost.btn-primary { border-color: #4ec529; color: #4ec529; }
+.btn-ghost.btn-primary { border-color: #00ccb8; color: #00ccb8; }
 
 .btn-ghost.btn-primary:hover { color: #fff; }
 
@@ -2815,39 +2777,6 @@ parent: typo
 ```
 */
 /*doc --- title: Body copy name: body_copy parent: typo --- ```html_example <p class="lead"> <strong>.lead</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs. Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger. Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter. Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round. Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin. </p> <p> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs. Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger. Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter. Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round. Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin. </p> ``` */
-/*doc --- title: Jumbotron name: jumbotron category: Components --- The jumbotron is used for specific forms and popups ```html_example <div class="jumbotron"> <div class="jumbotron-description"> <h1>Register a new account</h1> <p>You have to register to publish your stories for the world to see. Please take a moment to enter these details.</p> </div> <form accept-charset="UTF-8" action="/" method="post" role="form"> <div class="row"> <div class="col-sm-12 "> <div class="form-group email optional mndx_user_email"> <label class="email optional control-label" for="mndx_user_email">Email</label> <input class="string email optional form-control" type="email" name="mndx_user[email]" id="mndx_user_email" /> </div> </div> </div> <div class="row"> <div class="col-sm-6"> <div class="form-group password optional"> <label class="password optional control-label" for="mndx_user_password">New password</label> <input class="password optional form-control" type="password" name="mndx_user[password]" id="mndx_user_password" /> </div> </div> <div class="col-sm-6"> <div class="form-group password optional"> <label class="password optional control-label" for="mndx_user_password_confirmation">Confirm new password</label> <input class="password optional form-control" type="password" name="mndx_user[password_confirmation]" id="mndx_user_password_confirmation" /> </div> </div> </div> <div class="form-group form-actions"> <input type="submit" name="commit" value="Register" class="btn btn-primary btn-block" /> </div> </form> <a class="jumbotron-link" href="#">Sign in</a> </div> ``` */
-.jumbotron { background-color: #fff; border: 1px solid #bbb; border-radius: 4px; margin: 30px auto 0; max-width: 480px; padding: 30px; text-align: center; }
-
-@media screen and (min-width: 768px) { .jumbotron { margin: 40px auto 0; padding: 60px; } }
-
-.jumbotron .jumbotron-description { margin-bottom: 20px; }
-
-@media screen and (min-width: 768px) { .jumbotron .jumbotron-description { margin-bottom: 30px; } }
-
-.jumbotron .jumbotron-description h1 { color: #333333; font-size: 38px; font-weight: 600; margin-bottom: 30px; margin-top: 0; }
-
-@media screen and (min-width: 768px) { .jumbotron .jumbotron-description h1 { margin-bottom: 20px; } }
-
-.jumbotron .jumbotron-description p { color: #666; font-size: 15px; font-weight: normal; }
-
-.jumbotron .jumbotron-link { margin-right: 20px; }
-
-.jumbotron .jumbotron-link:last-child { margin-right: 0; }
-
-.jumbotron form { margin-top: 0; }
-
-.jumbotron form .form-group { text-align: left; }
-
-.jumbotron-transparent { background: transparent; border: 0; }
-
-.jumbotron-transparent .jumbotron-description h1, .jumbotron-transparent .jumbotron-description p { color: #fff; }
-
-.jumbotron-transparent .control-label { color: #fff; }
-
-.jumbotron-transparent .form-control { background: #fff; }
-
-.jumbotron-transparent .form-links a { color: #fff; }
-
 /*doc
 ---
 title: Alerts
@@ -2878,16 +2807,106 @@ category: Components
 //category: Components
 //---
 */
-/*doc --- title: Button dropdowns name: button_dropdowns category: Components --- ```html_example_table <div class="btn-group"> <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Action <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Action <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> ``` */
-.caret { border-top: 6px dashed; border-right: 6px solid transparent; border-left: 6px solid transparent; position: relative; }
+/*doc --- title: Button dropdowns name: button_dropdowns category: Components --- ```html_example_table <div class="btn-group"> <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Action <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" disabled class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Action <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Action <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" disabled class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Action <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> ``` */
+.btn-group.open .dropdown-toggle { box-shadow: none; }
 
-.caret:after { border-top: 4px dashed; border-right: 4px solid transparent; border-left: 4px solid transparent; content: ''; display: inline-block; height: 0; margin-left: -4px; position: absolute; top: -7px; vertical-align: middle; width: 0; }
+.btn-group.open > .btn-default.dropdown-toggle, .btn-group.open > .dropdown-toggle.btn-primary:disabled { background: #fff; border-color: #666; color: #333; }
 
-.btn-default .caret:after { color: #fff; }
+.btn-group.open > .btn-primary.dropdown-toggle { background: #00665c; border-color: #00665c; }
 
-.btn-primary .caret:after { color: #4ec529; }
+.dropdown-menu { border-radius: 6px; border: 1px solid #ddd; box-shadow: none; left: auto; margin-top: 15px; padding-bottom: 25px; padding-top: 20px; right: -5px; }
+
+.dropdown-menu > li > a { padding: 5px 25px; }
+
+.dropdown-menu:before { border-color: transparent; border-bottom-color: #ddd; border-style: solid; border-top-width: 0; border-width: 11px; content: ''; display: block; height: 0; margin-left: -11px; position: absolute; right: 18px; top: -22px; width: 0; }
+
+.dropdown-menu:after { border-color: transparent; border-bottom-color: #fff; border-style: solid; border-width: 10px; border-top-width: 0; content: ''; display: block; height: 0; position: absolute; right: 19px; top: -10px; width: 0; }
 
 /*doc --- title: Button groups name: button_groups category: Components --- ```html_example_table <div class="btn-group" role="group" aria-label="..."> <button type="button" class="btn btn-default">Left</button> <button type="button" class="btn btn-default">Middle</button> <button type="button" class="btn btn-default">Right</button> </div> ``` */
+/*doc
+---
+title: Calendar
+name: calendar
+category: Components
+---
+
+A calendar, designed for the datepicker
+
+```html_example
+<Caldendar />
+```
+*/
+.date-picker { display: inline-block; position: relative; margin: inherit 0; }
+
+.date-picker-calendar .rw-header { border-bottom: 1px solid #eeeeee; margin: 10px 0; overflow: hidden; padding: 0 10px 10px; }
+
+.date-picker-calendar .popover { display: block; }
+
+.date-picker-calendar .rw-calendar { outline: none; }
+
+.date-picker-calendar .rw-calendar-grid { margin: 10px; border: none; }
+
+.date-picker-calendar .rw-calendar-grid th { font-size: 0.9em; font-weight: normal; padding-bottom: 10px; text-align: center; text-transform: uppercase; border: none; }
+
+.date-picker-calendar .rw-calendar-grid td { height: 28px; width: 28px; padding: 0; border: none; }
+
+.date-picker-calendar .rw-calendar-grid tr { border: none; }
+
+.date-picker-calendar .rw-calendar-grid .rw-btn { height: 100%; width: 100%; border-radius: 0; }
+
+.date-picker-calendar .rw-btn-view { border: none; color: #333333; float: left; font-size: 15px; text-transform: uppercase; width: 60%; }
+
+.date-picker-calendar .rw-btn-left, .date-picker-calendar .rw-btn-right { float: left; line-height: 20px; width: 20%; }
+
+.date-picker-calendar .rw-btn-left[disabled], .date-picker-calendar .rw-btn-right[disabled] { color: #999999; }
+
+.date-picker-calendar .rw-btn { background: transparent; border: none; color: #333333; display: inline-block; }
+
+.date-picker-calendar .rw-btn.rw-off-range { color: #999999; }
+
+.date-picker-calendar .rw-state-selected { background: #00ccb8; border-radius: 3px; color: #fff; }
+
+.date-picker-calendar .popover { box-shadow: none; display: block; left: 0; min-width: 200px; right: auto; top: 40px; z-index: 1; }
+
+.date-picker-calendar .popover .arrow { border-bottom-color: rgba(0, 0, 0, 0.25); left: 10%; right: auto; }
+
+.date-picker-calendar .popover .popover-content { padding: 0; }
+
+/*doc --- title: Content List name: content_list category: Components --- Custom list for editable content ```html_example <ul class="content-list"> <li class="content-list-row content-list-header"> <div class="content-list-column">Draft</div> <div class="content-list-column">Last edited</div> <div class="content-list-column">Actions</div> </li> <li class="content-list-row"> <div class="content-list-column"><a href="#">Press Release Name #1</a></div> <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div> <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div> </li> <li class="content-list-row"> <div class="content-list-column"><a href="#">Press Release Name #2</a></div> <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div> <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div> </li> <li class="content-list-row"> <div class="content-list-column"><a href="#">Press Release Name #3</a></div> <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div> <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div> </li> </ul> <ul class="content-list content-list-striped"> <li class="content-list-row content-list-header"> <div class="content-list-column">Draft</div> <div class="content-list-column">Last edited</div> <div class="content-list-column">Actions</div> </li> <li class="content-list-row"> <div class="content-list-column"><a href="#">Press Release Name #1</a></div> <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div> <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div> </li> <li class="content-list-row"> <div class="content-list-column"><a href="#">Press Release Name #2</a></div> <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div> <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div> </li> <li class="content-list-row"> <div class="content-list-column"><a href="#">Press Release Name #3</a></div> <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div> <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div> </li> </ul> <ul class="content-list content-list-striped"> <li class="content-list-row content-list-header"> <div class="content-list-column">Name</div> <div class="content-list-column">Last edited</div> <div class="content-list-column">Actions</div> </li> <li class="content-list-row"> <div class="content-list-column"><span class="content-list-checkbox"><input type="checkbox" /></span><span class="content-list-avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Mike Rooseboom</div> <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div> <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div> </li> <li class="content-list-row"> <div class="content-list-column"><span class="content-list-checkbox"><input type="checkbox" /></span><span class="content-list-avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Rashmi Yadav</div> <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 27 2015</div> <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div> </li> <li class="content-list-row"> <div class="content-list-column"><span class="content-list-checkbox"><input type="checkbox" /></span><span class="content-list-avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Zoee Silcock</div> <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 26 2015</div> <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div> </li> </ul> ``` */
+.content-list { border-collapse: collapse; border-spacing: 0; display: table; list-style-type: none; margin-bottom: 20px; max-width: 100%; table-layout: fixed; width: 100%; }
+
+.content-list:last-child { margin-bottom: 0; }
+
+.content-list .content-list-row { border-bottom: 1px solid #eeeeee; display: table-row; }
+
+.content-list .content-list-column { display: table-cell; padding: 20px 25px; text-align: right; }
+
+.content-list .content-list-column:first-child { display: table-cell; text-align: left; }
+
+.content-list .content-list-column:nth-child(n+2) { display: none; }
+
+@media screen and (min-width: 768px) { .content-list .content-list-column:nth-child(n+2) { display: table-cell; } }
+
+.content-list .content-list-column:last-child { display: table-cell; }
+
+.content-list .content-list-header { color: #000; font-weight: 600; font-size: 16px; }
+
+.content-list .content-list-action { display: inline-block; margin-left: 25px; }
+
+.content-list .content-list-action:first-child { margin-left: 0; }
+
+.content-list .content-list-checkbox { display: inline-block; }
+
+.content-list .content-list-checkbox input[type='checkbox'] { box-shadow: 0px 1px 1px 0px #efefef inset; font-size: 16px; margin-right: 20px; }
+
+.content-list .content-list-avatar { display: inline-block; margin-right: 25px; position: relative; width: 35px; }
+
+.content-list .content-list-avatar img { border-radius: 50%; height: 35px; margin-top: -23px; position: absolute; width: 35px; }
+
+.content-list-striped .content-list-row { border-bottom: 0; }
+
+.content-list-striped .content-list-row:nth-child(even) { background-color: #fafafa; }
+
 /*doc
 //---
 //title: Dropdowns
@@ -2960,41 +2979,6 @@ category: Components
 .list-group-item:last-child { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
 
 .list-group-striped .list-group-item:nth-child(odd) { background: #e3eefb; }
-
-/*doc --- title: Content List name: content_list category: Components --- Custom list for editable content ```html_example <ul class="content-list"> <li class="content-list-row content-list-header"> <div class="content-list-column">Draft</div> <div class="content-list-column">Last edited</div> <div class="content-list-column">Actions</div> </li> <li class="content-list-row"> <div class="content-list-column"><a href="#">Press Release Name #1</a></div> <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div> <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div> </li> <li class="content-list-row"> <div class="content-list-column"><a href="#">Press Release Name #2</a></div> <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div> <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div> </li> <li class="content-list-row"> <div class="content-list-column"><a href="#">Press Release Name #3</a></div> <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div> <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div> </li> </ul> <ul class="content-list content-list-striped"> <li class="content-list-row content-list-header"> <div class="content-list-column">Draft</div> <div class="content-list-column">Last edited</div> <div class="content-list-column">Actions</div> </li> <li class="content-list-row"> <div class="content-list-column"><a href="#">Press Release Name #1</a></div> <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div> <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div> </li> <li class="content-list-row"> <div class="content-list-column"><a href="#">Press Release Name #2</a></div> <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div> <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div> </li> <li class="content-list-row"> <div class="content-list-column"><a href="#">Press Release Name #3</a></div> <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div> <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div> </li> </ul> <ul class="content-list content-list-striped"> <li class="content-list-row content-list-header"> <div class="content-list-column">Name</div> <div class="content-list-column">Last edited</div> <div class="content-list-column">Actions</div> </li> <li class="content-list-row"> <div class="content-list-column"><span class="content-list-checkbox"><input type="checkbox" /></span><span class="content-list-avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Mike Rooseboom</div> <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div> <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div> </li> <li class="content-list-row"> <div class="content-list-column"><span class="content-list-checkbox"><input type="checkbox" /></span><span class="content-list-avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Rashmi Yadav</div> <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 27 2015</div> <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div> </li> <li class="content-list-row"> <div class="content-list-column"><span class="content-list-checkbox"><input type="checkbox" /></span><span class="content-list-avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Zoee Silcock</div> <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 26 2015</div> <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div> </li> </ul> ``` */
-.content-list { border-collapse: collapse; border-spacing: 0; display: table; list-style-type: none; margin-bottom: 20px; max-width: 100%; table-layout: fixed; width: 100%; }
-
-.content-list:last-child { margin-bottom: 0; }
-
-.content-list .content-list-row { border-bottom: 1px solid #eeeeee; display: table-row; }
-
-.content-list .content-list-column { display: table-cell; /* padding: 15px; */ padding: 20px 25px; text-align: right; }
-
-.content-list .content-list-column:first-child { text-align: left; display: table-cell; }
-
-.content-list .content-list-column:nth-child(n+2) { display: none; }
-
-@media screen and (min-width: 768px) { .content-list .content-list-column:nth-child(n+2) { display: table-cell; } }
-
-.content-list .content-list-column:last-child { display: table-cell; }
-
-.content-list .content-list-header { color: #000; font-weight: 600; font-size: 16px; }
-
-.content-list .content-list-action { display: inline-block; margin-left: 25px; }
-
-.content-list .content-list-action:first-child { margin-left: 0; }
-
-.content-list .content-list-checkbox { display: inline-block; }
-
-.content-list .content-list-checkbox input[type='checkbox'] { box-shadow: 0px 1px 1px 0px #efefef inset; font-size: 16px; margin-right: 20px; }
-
-.content-list .content-list-avatar { display: inline-block; margin-right: 25px; position: relative; width: 35px; }
-
-.content-list .content-list-avatar img { border-radius: 50%; height: 35px; margin-top: -23px; position: absolute; width: 35px; }
-
-.content-list-striped .content-list-row { border-bottom: 0; }
-
-.content-list-striped .content-list-row:nth-child(even) { background-color: #fafafa; }
 
 /*doc
 //---
