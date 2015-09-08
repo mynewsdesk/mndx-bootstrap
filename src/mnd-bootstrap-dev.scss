@@ -1,6 +1,9 @@
-@import "mnd-bootstrap/variables";
+// External
+@import "bourbon/app/assets/stylesheets/bourbon";
+@import "mnd-bootstrap/variables_bootstrap";
 @import "bootstrap.scss";
 
+// MND
 @import "mnd-bootstrap/variables_custom";
 @import "mnd-bootstrap/core";
 @import "mnd-bootstrap/helpers";
@@ -37,7 +40,7 @@
 @import "mnd-bootstrap/components/pagination";
 @import "mnd-bootstrap/components/panels";
 @import "mnd-bootstrap/components/progress_bars";
-@import "mnd-bootstrap/components/responsive-embed";
+@import "mnd-bootstrap/components/responsive_embed";
 @import "mnd-bootstrap/components/sections";
 @import "mnd-bootstrap/components/thumbnails";
 @import "mnd-bootstrap/components/wells";

@@ -1,10 +1,12 @@
-@import "mnd-bootstrap/variables";
+// External
+@import "bourbon/app/assets/stylesheets/bourbon";
+@import "mnd-bootstrap/variables_bootstrap";
 @import "bootstrap.scss";
 
+// MND
 @import "mnd-bootstrap/variables_custom";
 @import "mnd-bootstrap/core";
 @import "mnd-bootstrap/helpers";
-@import "bootstrap-sass-twbs/assets/stylesheets/bootstrap/_mixins.scss";
 
 // Base CSS class
 @import "mnd-bootstrap/css/buttons";
@@ -18,19 +20,19 @@
 @import "mnd-bootstrap/css/typo";
 
 // Components
-@import "mnd-bootstrap/components/jumbotron";
 @import "mnd-bootstrap/components/alerts";
 @import "mnd-bootstrap/components/badges";
 @import "mnd-bootstrap/components/breadcrumbs";
 @import "mnd-bootstrap/components/button_dropdowns";
 @import "mnd-bootstrap/components/button_groups";
+@import "mnd-bootstrap/components/calendar";
+@import "mnd-bootstrap/components/content_list";
 @import "mnd-bootstrap/components/dropdowns";
 @import "mnd-bootstrap/components/icons";
 @import "mnd-bootstrap/components/input_groups";
 @import "mnd-bootstrap/components/jumbotron";
 @import "mnd-bootstrap/components/labels";
 @import "mnd-bootstrap/components/list_group";
-@import "mnd-bootstrap/components/content_list";
 @import "mnd-bootstrap/components/media_object";
 @import "mnd-bootstrap/components/navbar";
 @import "mnd-bootstrap/components/navs";
@@ -38,7 +40,7 @@
 @import "mnd-bootstrap/components/pagination";
 @import "mnd-bootstrap/components/panels";
 @import "mnd-bootstrap/components/progress_bars";
-@import "mnd-bootstrap/components/responsive-embed";
+@import "mnd-bootstrap/components/responsive_embed";
 @import "mnd-bootstrap/components/sections";
 @import "mnd-bootstrap/components/thumbnails";
 @import "mnd-bootstrap/components/wells";
