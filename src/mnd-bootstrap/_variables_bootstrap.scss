@@ -60,9 +60,7 @@ $gray-light:             lighten(#000, 60%);   // #999
 $gray-lighter:           lighten(#000, 93.5%); // #eee
 
 $brand-primary:         #f1f1f1;
-/* $brand-success:         #9bb83a; */
-$brand-success:         #00CCB8;
-/* $brand-info:            #389Bc9; */
+$brand-success:         #00ccb8;
 $brand-info:            #2173d2;
 $brand-warning:         #e5d321;
 $brand-danger:          #ec2928;
@@ -135,8 +133,6 @@ $icon-font-svg-id:        "glyphicons_halflingsregular";
 
 $container-fluid-padding: 20px;
 
-/* $padding-base-vertical:     6px;
-$padding-base-horizontal:   12px; */
 $padding-base-vertical:     11px;
 $padding-base-horizontal:   20px;
 
@@ -194,36 +190,28 @@ $table-border-color:            #ddd;
 
 $btn-font-weight:                400;
 
-/* $btn-default-color:              #555; */
 $btn-default-color:              #888;
-/* $btn-default-bg:                 #f4f5f6; */
 $btn-default-bg:                 #fff;
-/* $btn-default-border:             #b1b6bf; */
 $btn-default-border:             #ddd;
 
 $btn-primary-color:              #fff;
 $btn-primary-bg:                 $brand-success;
-/* $btn-primary-border:             darken($btn-primary-bg, 13.3%); */
 $btn-primary-border:            $btn-primary-bg;
 
 $btn-success-color:              #fff;
 $btn-success-bg:                 $brand-success;
-/* $btn-success-border:             darken($btn-success-bg, 20%); */
 $btn-success-border:             $btn-success-bg;
 
 $btn-info-color:                 #fff;
 $btn-info-bg:                    $brand-info;
-/* $btn-info-border:                darken($btn-info-bg, 20%); */
 $btn-info-border:                $btn-info-bg;
 
 $btn-warning-color:              #fff;
 $btn-warning-bg:                 $brand-warning;
-/* $btn-warning-border:             darken($btn-warning-bg, 20%); */
 $btn-warning-border:             $btn-warning-bg;
 
 $btn-danger-color:               #fff;
 $btn-danger-bg:                  $brand-danger;
-/* $btn-danger-border:              darken($btn-danger-bg, 20%); */
 $btn-danger-border:              $btn-danger-bg;
 
 $btn-link-disabled-color:        $gray-light;

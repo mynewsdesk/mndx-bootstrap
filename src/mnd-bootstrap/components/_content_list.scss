@@ -100,13 +100,12 @@ Custom list for editable content
 
   .content-list-column {
     display: table-cell;
-    /* padding: 15px; */
     padding: 20px 25px;
     text-align: right;
 
     &:first-child {
-      text-align: left;
       display: table-cell;
+      text-align: left;
     }
 
     &:nth-child(n+2) {
