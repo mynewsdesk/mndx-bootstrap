@@ -9,7 +9,6 @@ var runSequence = require('run-sequence');
 var request = require('superagent');
 var sass = require('gulp-ruby-sass');
 var gulpSass = require('gulp-sass');
-var webserver = require('gulp-webserver');
 var clean = require('gulp-rimraf');
 
 var argv = require('yargs')
@@ -36,18 +35,6 @@ gulp.task('serve', function() {
 // Dev task: build, serve and watch
 gulp.task('default', function() {
   gulp.start('serve', 'watch-styleguide', 'watch-bootstrap');
-});
-
-gulp.task('documentation', function() {
-  gulp.start('styleguide', 'serve', 'watch-styleguide');
-});
-
-// Serve the style-guide
-gulp.task('webserver', function() {
-  gulp.src('public')
-    .pipe(webserver({
-      livereload: true
-    }));
 });
 
 // Release a new version and update the doc (style-guide)
