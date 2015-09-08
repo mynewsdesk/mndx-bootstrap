@@ -30,12 +30,12 @@ gulp.task('serve', function() {
       baseDir: config.publicDir
     }
   });
-  gulp.start('watch-scss');
+  gulp.start('watch-bootstrap');
 });
 
 // Dev task: build, serve and watch
 gulp.task('default', function() {
-  gulp.start('serve', 'watch-styleguide', 'watch-scss');
+  gulp.start('serve', 'watch-styleguide', 'watch-bootstrap');
 });
 
 gulp.task('documentation', function() {
@@ -59,7 +59,7 @@ gulp.task('clean', function() {
   return gulp.src('public/dist/').pipe(clean());
 });
 
-gulp.task('watch-scss', function (){
+gulp.task('watch-bootstrap', function (){
   gulp.watch(['src/**/*.scss'], ['mnd-bootstrap-sass']);
 });
 
@@ -85,8 +85,6 @@ gulp.task('mnd-bootstrap-sass', function() {
     .pipe(notify({message: 'mnd-bootstrap-sass task complete'}))
     .pipe(reload({ stream:true }));
 });
-
-
 
 gulp.task('styleguide-sass', function() {
   return gulp.src('doc_assets/styleguide.scss')
@@ -118,7 +116,6 @@ gulp.task('styleguide', [
     .pipe(hologram())
     .pipe(notify({message: 'Hologram task complete'}));
 });
-
 
 // Increment version number
 gulp.task('bump', function() {
