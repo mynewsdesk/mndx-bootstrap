@@ -7,7 +7,7 @@ var hologram = require('gulp-hologram');
 var notify = require('gulp-notify');
 var runSequence = require('run-sequence');
 var request = require('superagent');
-var gulpSass = require('gulp-sass');
+var sass = require('gulp-sass');
 var clean = require('gulp-rimraf');
 
 var argv = require('yargs')
@@ -64,7 +64,7 @@ gulp.task('watch-styleguide', function() {
 
 gulp.task('mnd-bootstrap-sass', function() {
   return gulp.src('src/mnd-bootstrap.scss')
-    .pipe(gulpSass({ outputStyle: 'compact', includePaths: [config.bowerDir]}))
+    .pipe(sass({ outputStyle: 'compact', includePaths: [config.bowerDir]}))
     .on('error', function (err) { console.log(err.message); })
     .pipe(gulp.dest('dist/'))
     .pipe(gulp.dest('public/dist'))
@@ -74,7 +74,7 @@ gulp.task('mnd-bootstrap-sass', function() {
 
 gulp.task('styleguide-sass', function() {
   return gulp.src('doc_assets/styleguide.scss')
-    .pipe(gulpSass({ outputStyle: 'compact', includePaths: [config.bowerDir]}))
+    .pipe(sass({ outputStyle: 'compact', includePaths: [config.bowerDir]}))
     .on('error', function (err) { console.log(err.message); })
     .pipe(gulp.dest('public/'))
     .pipe(notify({message: 'Styleguide-sass task complete'}));
