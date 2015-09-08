@@ -78,7 +78,7 @@ gulp.task('watch-styleguide', function() {
 
 gulp.task('mnd-bootstrap-sass', function() {
   return gulp.src('src/mnd-bootstrap.scss')
-    .pipe(gulpSass({includePaths: [config.bowerDir]}))
+    .pipe(gulpSass({ outputStyle: 'compact', includePaths: [config.bowerDir]}))
     .on('error', function (err) { console.log(err.message); })
     .pipe(gulp.dest('dist/'))
     .pipe(gulp.dest('public/dist'))
