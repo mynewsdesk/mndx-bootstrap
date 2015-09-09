@@ -13,3 +13,9 @@ category: Components
 <div class="alert alert-danger" role="alert"><span class="label label-danger">Label</span> <strong>Grrr!</strong> Don't drop coffee on my keyboard again!</div>
 ```
 */
+.alert {
+
+  .label {
+    margin-right: $gutter-horizontal;
+  }
+}
