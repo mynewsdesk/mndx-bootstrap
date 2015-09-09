@@ -47,7 +47,7 @@ Custom list for editable content
     <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 27 2015</div>
     <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
   </li>
-  <li class="content-list-row">
+  <li class="content-list-row active">
     <div class="content-list-column"><span class="content-list-checkbox"><input type="checkbox" /></span><span class="content-list-avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Zoee Silcock</div>
     <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 26 2015</div>
     <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
@@ -73,6 +73,10 @@ Custom list for editable content
   .content-list-row {
     border-bottom: 1px solid $gray-lighter;
     display: table-row;
+
+    &.active {
+      background: tint($color-4, 95%);
+    }
   }
 
   .content-list-column {
