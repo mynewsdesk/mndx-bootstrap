@@ -35,8 +35,8 @@
  */
 
 $gutter-horizontal: 10px;
-$gutter-horizontal-x2: $gutter-horizontal x 2;
-$gutter-horizontal-x3: $gutter-horizontal x 3;
+$gutter-horizontal-x2: $gutter-horizontal * 2;
+$gutter-horizontal-x3: $gutter-horizontal * 3;
 $gutter-vertical: 30px;
 $gutter-vertical-x2: $gutter-vertical * 2;
 $gutter-vertical-x3: $gutter-vertical * 3;
