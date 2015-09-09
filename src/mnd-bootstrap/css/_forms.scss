@@ -73,22 +73,9 @@ category: CSS
     </div>
   </div>
   <div class="form-group text-right form-actions">
-    <button type="reset" class="btn btn-secondary">Cancel</button>
-    <button type="submit" class="btn btn-default">Submit</button>
+    <button type="reset" class="btn btn-default">Cancel</button>
+    <button type="submit" class="btn btn-primary">Submit</button>
   </div>
-</form>
-
-<h2>Inline form</h2>
-<form class="form-inline">
-  <div class="form-group">
-    <label for="exampleInputName2">Name</label>
-    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputEmail2">Email</label>
-    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-  </div>
-  <button type="submit" class="btn btn-default">Send invitation</button>
 </form>
 
 <h2>Form links</h2>
@@ -97,7 +84,7 @@ category: CSS
     <label for="favorite">Favorite PO</label>
     <input type="text" class="form-control" id="favorite" placeholder="Mike">
   </div>
-  <button type="submit" class="btn btn-default pull-right">Send spam</button>
+  <button type="submit" class="btn btn-primary pull-right">Send spam</button>
   <div class="form-group form-links">
     <a href="#" class="pull-left">Link one</a>
     <a href="#" class="pull-left">Link two</a>
@@ -123,6 +110,7 @@ category: CSS
 
   @include placeholder {
     color: $gray-light;
+    font-style: italic;
   }
 
   &:focus {
