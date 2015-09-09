@@ -59,11 +59,11 @@ $gray:                   #666;
 $gray-light:             lighten(#000, 60%);   // #999
 $gray-lighter:           lighten(#000, 93.5%); // #eee
 
-$brand-primary:         #f1f1f1;
-$brand-success:         #00ccb8;
-$brand-info:            #2173d2;
-$brand-warning:         #e5d321;
-$brand-danger:          #ec2928;
+$brand-primary:         #00ccb8;
+$brand-success:         $brand-primary;
+$brand-info:            #0092cc;
+$brand-warning:         #ff9c00;
+$brand-danger:          #ff727c;
 
 //== Scaffolding
 //
@@ -659,24 +659,24 @@ $alert-border-lighten: 50%;
 $alert-text-darken: 50%;
 
 $alert-padding:               15px;
-$alert-border-radius:         $border-radius-base;
+$alert-border-radius:         $border-radius-large;
 $alert-link-font-weight:      bold;
 
 $alert-success-bg:            tint($brand-success, $alert-background-lighten);
 $alert-success-text:          shade($brand-success, $alert-text-darken);
-$alert-success-border:        tint($brand-success, $alert-border-lighten);
+$alert-success-border:        $alert-success-bg;
 
 $alert-info-bg:               tint($brand-info, $alert-background-lighten);
 $alert-info-text:             shade($brand-info, $alert-text-darken);
-$alert-info-border:           tint($brand-info, $alert-border-lighten);
+$alert-info-border:           $alert-info-bg;
 
 $alert-warning-bg:            tint($brand-warning, $alert-background-lighten);
 $alert-warning-text:          shade($brand-warning, $alert-text-darken);
-$alert-warning-border:        tint($brand-warning, $alert-border-lighten);
+$alert-warning-border:        $alert-warning-bg;
 
 $alert-danger-bg:             tint($brand-danger, $alert-background-lighten);
 $alert-danger-text:           shade($brand-danger, $alert-text-darken);
-$alert-danger-border:         tint($brand-danger, $alert-border-lighten);
+$alert-danger-border:         $alert-danger-bg;
 
 
 //== Progress bars
