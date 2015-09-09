@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var browserSync = require('browser-sync');
 var bump = require('gulp-bump');
 var deploy = require('gulp-gh-pages');
 var git = require('gulp-git');
@@ -6,17 +7,34 @@ var hologram = require('gulp-hologram');
 var notify = require('gulp-notify');
 var runSequence = require('run-sequence');
 var request = require('superagent');
-var sass = require('gulp-ruby-sass');
-var webserver = require('gulp-webserver');
+var sass = require('gulp-sass');
 var clean = require('gulp-rimraf');
 
 var argv = require('yargs')
   .default('level', 'minor')
   .argv;
 
+var reload = browserSync.reload;
+
+var config = {
+    bowerDir: './bower_components',
+    bootstrapDir: './bower_components/bootstrap-sass',
+    publicDir: './public'
+};
+
+// Just do the CSS stuff, build bootstrap, browserSync
+gulp.task('serve', function() {
+  browserSync({
+    server: {
+      baseDir: config.publicDir
+    }
+  });
+  gulp.start('watch-bootstrap');
+});
+
 // Dev task: build, serve and watch
-gulp.task('default', function() {
-  gulp.start('webserver', 'watch');
+gulp.task('default',['styleguide'], function() {
+  gulp.start('serve', 'watch-styleguide', 'watch-bootstrap');
 });
 
 // Release a new version and update the doc (style-guide)
@@ -24,31 +42,43 @@ gulp.task('release', function(done) {
   runSequence('tag', 'rails-assets', 'gh-pages', done);
 });
 
-// Recompile the styleguide on scss file change
-gulp.task('watch', function() {
-  gulp.watch(['src/**/*.scss', 'doc_assets/**/*.scss' ,'doc_assets/**/*.html'], ['hologram']);
-  gulp.watch(['src/**/*.js'], ['hologram']);
-});
-
-// Compile sass files
-gulp.task('sass', function() {
-  return gulp.src('src/mnd-bootstrap.scss')
-    .pipe(sass({ style: 'compressed', loadPath: ['./bower_components/'] }))
-    .on('error', function (err) { console.log(err.message); })
-    .pipe(gulp.dest('dist/'))
-    .pipe(notify({message: 'Sass task complete'}));
-});
-
 gulp.task('clean', function() {
   return gulp.src('public/dist/').pipe(clean());
 });
 
+gulp.task('watch-bootstrap', function (){
+  gulp.watch(['src/**/*.scss'], ['mnd-bootstrap-sass']);
+});
+
+// Recompile the styleguide on scss file change
+gulp.task('watch-styleguide', function() {
+  gulp.watch([
+    'src/**/*.scss',
+    'doc_assets/**/*.scss',
+    'doc_assets/**/*.html'
+  ],[
+    'styleguide-sass',
+    'styleguide'
+  ]);
+  gulp.watch(['src/**/*.js'], ['styleguide']);
+});
+
+gulp.task('mnd-bootstrap-sass', function() {
+  return gulp.src('src/mnd-bootstrap.scss')
+    .pipe(sass({ outputStyle: 'compact', includePaths: [config.bowerDir]}))
+    .on('error', function (err) { console.log(err.message); })
+    .pipe(gulp.dest('dist/'))
+    .pipe(gulp.dest('public/dist'))
+    .pipe(notify({message: 'mnd-bootstrap-sass task complete'}))
+    .pipe(reload({ stream:true }));
+});
+
 gulp.task('styleguide-sass', function() {
   return gulp.src('doc_assets/styleguide.scss')
-    .pipe(sass({ style: 'expanded', loadPath: ['src/', './bower_components/'] }))
+    .pipe(sass({ outputStyle: 'compact', includePaths: [config.bowerDir]}))
     .on('error', function (err) { console.log(err.message); })
     .pipe(gulp.dest('public/'))
-    .pipe(notify({message: 'Sass task complete'}));
+    .pipe(notify({message: 'Styleguide-sass task complete'}));
 });
 
 gulp.task('styleguide-assets', function() {
@@ -63,18 +93,16 @@ gulp.task('styleguide-assets', function() {
 });
 
 // Compile style-guide
-gulp.task('hologram', ['clean', 'sass', 'styleguide-sass', 'styleguide-assets'], function() {
+gulp.task('styleguide', [
+    'clean',
+    'mnd-bootstrap-sass',
+    'styleguide-sass',
+    'styleguide-assets'
+  ], function() {
   return gulp.src('hologram_config.yml')
     .pipe(hologram())
-    .pipe(notify({message: 'Hologram task complete'}));
-});
-
-// Serve the style-guide
-gulp.task('webserver', ['hologram'], function() {
-  gulp.src('public')
-    .pipe(webserver({
-      livereload: true
-    }));
+    .pipe(notify({message: 'Hologram task complete'}))
+    .pipe(reload({ stream:true }));
 });
 
 // Increment version number
@@ -116,7 +144,7 @@ gulp.task('rails-assets', function(done) {
 });
 
 // Push ./public to gh-pages after hologram build
-gulp.task('gh-pages', ['hologram'], function() {
+gulp.task('gh-pages', ['styleguide'], function() {
   return gulp.src('./public/**/*')
     .pipe(deploy());
 });
