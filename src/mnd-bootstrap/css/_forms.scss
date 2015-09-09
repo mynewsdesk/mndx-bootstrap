@@ -33,6 +33,11 @@ category: CSS
         <p class="help-block">Example block-level help text here.</p>
       </div>
       <div class="form-group">
+        <label for="to">To (disabled input)</label>
+        <input type="email" class="form-control" id="to" placeholder=":disabled" disabled>
+        <p class="help-block">Example block-level help text here.</p>
+      </div>
+      <div class="form-group">
         <label for="subject">Subject</label>
         <input type="text" class="form-control" id="subject" placeholder="Enter subject">
       </div>
@@ -97,6 +102,10 @@ category: CSS
 
 .form-group {
   margin-bottom: $space-large;
+
+  .has-error label {
+    color: $brand-danger;
+  }
 }
 
 .form-actions {
@@ -106,7 +115,7 @@ category: CSS
 .form-control {
   background: transparent;
   border: 1px solid $gray-lighten;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
 
   @include placeholder {
     color: $gray-light;
@@ -115,6 +124,11 @@ category: CSS
 
   &:focus {
     box-shadow: none;
+  }
+
+  &[disabled] {
+    background-color: $gray-lightest;
+    border-color: $input-border-disabled;
   }
 }
 
@@ -139,10 +153,6 @@ label {
   font-size: $font-size-base;
   margin-bottom: 0;
   text-transform: none;
-}
-
-.form-group.has-error label {
-  color: $brand-danger;
 }
 
 textarea {
