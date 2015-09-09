@@ -148,9 +148,9 @@ $padding-xs-horizontal:     5px;
 $line-height-large:         1.33;
 $line-height-small:         1.5;
 
-$border-radius-base:        4px;
-$border-radius-large:       6px;
-$border-radius-small:       3px;
+$border-radius-base:        6px;
+$border-radius-large:       $border-radius-base;
+$border-radius-small:       $border-radius-base;
 
 //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color:    $gray;
@@ -659,7 +659,7 @@ $alert-border-lighten: 50%;
 $alert-text-darken: 50%;
 
 $alert-padding:               15px;
-$alert-border-radius:         $border-radius-large;
+$alert-border-radius:         $border-radius-base;
 $alert-link-font-weight:      bold;
 
 $alert-success-bg:            tint($brand-success, $alert-background-lighten);
