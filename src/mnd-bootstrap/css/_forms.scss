@@ -68,12 +68,14 @@ category: CSS
         </div>
       </div>
       <div class="form-group">
-        <select class="form-control">
-          <option>option 1</option>
-          <option>option 2</option>
-          <option>option 3</option>
-          <option>option 4</option>
-        </select>
+        <div class="select-wrapper">
+          <select class="form-control">
+            <option>option 1</option>
+            <option>option 2</option>
+            <option>option 3</option>
+            <option>option 4</option>
+          </select>
+        </div>
       </div>
     </div>
   </div>
@@ -103,7 +105,7 @@ category: CSS
 .form-group {
   margin-bottom: $space-large;
 
-  .has-error label {
+  &.has-error label {
     color: $brand-danger;
   }
 }
@@ -122,8 +124,13 @@ category: CSS
     font-style: italic;
   }
 
+  &:hover {
+    border-color: #aaa;
+  }
+
   &:focus {
-    box-shadow: none;
+    border-color: $color-4;
+    box-shadow: 0px 0px 3px 0px rgba(33,115,210,0.3);
   }
 
   &[disabled] {
@@ -138,7 +145,8 @@ category: CSS
   box-shadow: none;
 
   &:focus {
-    box-shadow: none;
+    border-color: $color-4;
+    box-shadow: 0px 0px 3px 0px rgba(33,115,210,0.3);
   }
 }
 
@@ -157,6 +165,40 @@ label {
 
 textarea {
   resize: vertical;
+}
+
+select {
+  @include appearance(none);
+}
+
+.select-wrapper {
+  position: relative;
+
+  &:before {
+    border-bottom: 4px dashed;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    content: '';
+    display: inline-block;
+    height: 0;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    width: 0;
+  }
+
+  &:after {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px dashed;
+    bottom: 16px;
+    content: '';
+    display: inline-block;
+    height: 0;
+    position: absolute;
+    right: 20px;
+    width: 0;
+  }
 }
 
 .form-links {
