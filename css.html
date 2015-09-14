@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="styleguide.css">
     <script src="javascripts/jquery.min.js"></script>
     <script src="javascripts/bootstrap.min.js"></script>
-    <script src="//localhost:35729/livereload.js"></script>
-    <script src="https://fb.me/react-0.13.3.js"></script>
-    <script src="mnd.js"></script>
-    <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
   </head>
   <body>
     <div class="inner">
@@ -26,8 +22,6 @@
             <li><a href="css.html">CSS</a></li>
           
             <li><a href="index.html">Variables</a></li>
-          
-            <li><a href="react_components.html">React Components</a></li>
           
             <li><a href="javascript.html">JavaScript</a></li>
           
@@ -124,7 +118,8 @@
   
     <div class="tableExample">
       <div class="exampleOutput">
-        <form>
+        <h2>Panel form</h2>
+<form>
   <div class="panel panel-default">
     <div class="panel-heading">Form heading</div>
     <div class="panel-body">
@@ -195,7 +190,8 @@
       </div>
       <div class="codeBlock">
         <div class="highlight">
-          <pre class="code-example"><span class="nt">&lt;form&gt;</span>
+          <pre class="code-example"><span class="nt">&lt;h2&gt;</span>Panel form<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;form&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>Form heading<span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
@@ -269,7 +265,7 @@
   
     <div class="tableExample">
       <div class="exampleOutput">
-        
+        <h2>Inline form</h2>
 <form class="form-inline">
   <div class="form-group">
     <label for="exampleInputName2">Name</label>
@@ -281,11 +277,11 @@
   </div>
   <button type="submit" class="btn btn-default">Send invitation</button>
 </form>
-
       </div>
       <div class="codeBlock">
         <div class="highlight">
-          <pre class="code-example"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
+          <pre class="code-example"><span class="nt">&lt;h2&gt;</span>Inline form<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputName2"</span><span class="nt">&gt;</span>Name<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputName2"</span> <span class="na">placeholder=</span><span class="s">"Jane Doe"</span><span class="nt">&gt;</span>
@@ -295,6 +291,42 @@
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputEmail2"</span> <span class="na">placeholder=</span><span class="s">"jane.doe@example.com"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Send invitation<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span></pre>
+        </div>
+      </div>
+    </div>
+  
+    <div class="tableExample">
+      <div class="exampleOutput">
+        <h2>Form links</h2>
+<form>
+  <div class="form-group">
+    <label for="favorite">Favorite PO</label>
+    <input type="text" class="form-control" id="favorite" placeholder="Mike">
+  </div>
+  <button type="submit" class="btn btn-default pull-right">Send spam</button>
+  <div class="form-group form-links">
+    <a href="#" class="pull-left">Link one</a>
+    <a href="#" class="pull-left">Link two</a>
+    <a href="#" class="pull-right">Link three</a>
+  </div>
+</form>
+
+      </div>
+      <div class="codeBlock">
+        <div class="highlight">
+          <pre class="code-example"><span class="nt">&lt;h2&gt;</span>Form links<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"favorite"</span><span class="nt">&gt;</span>Favorite PO<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"favorite"</span> <span class="na">placeholder=</span><span class="s">"Mike"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default pull-right"</span><span class="nt">&gt;</span>Send spam<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-links"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"pull-left"</span><span class="nt">&gt;</span>Link one<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"pull-left"</span><span class="nt">&gt;</span>Link two<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"pull-right"</span><span class="nt">&gt;</span>Link three<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/form&gt;</span></pre>
         </div>
       </div>
