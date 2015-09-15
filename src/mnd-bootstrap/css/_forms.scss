@@ -68,14 +68,12 @@ category: CSS
         </div>
       </div>
       <div class="form-group">
-        <div class="select-wrapper">
-          <select class="form-control">
-            <option>option 1</option>
-            <option>option 2</option>
-            <option>option 3</option>
-            <option>option 4</option>
-          </select>
-        </div>
+        <select class="form-control">
+          <option>option 1</option>
+          <option>option 2</option>
+          <option>option 3</option>
+          <option>option 4</option>
+        </select>
       </div>
     </div>
   </div>
@@ -165,40 +163,6 @@ label {
 
 textarea {
   resize: vertical;
-}
-
-select {
-  @include appearance(none);
-}
-
-.select-wrapper {
-  position: relative;
-
-  &:before {
-    border-bottom: 4px dashed;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    content: '';
-    display: inline-block;
-    height: 0;
-    position: absolute;
-    right: 20px;
-    top: 16px;
-    width: 0;
-  }
-
-  &:after {
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-top: 4px dashed;
-    bottom: 16px;
-    content: '';
-    display: inline-block;
-    height: 0;
-    position: absolute;
-    right: 20px;
-    width: 0;
-  }
 }
 
 .form-links {
