@@ -1,7 +1,10 @@
 /*doc --- title: Colors name: colors category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-darker"> <span>$gray-darker</span> </div> <div class="color-box gray-dark"> <span>$gray-dark</span> </div> <div class="color-box gray"> <span>$gray</span> </div> <div class="color-box gray-light"> <span>$gray-light</span> </div> <div class="color-box gray-lighter"> <span>$gray-lighter</span> </div> <div class="color-box brand-primary"> <span>$brand-primary</span> </div> <div class="color-box brand-success"> <span>$brand-success</span> </div> <div class="color-box brand-info"> <span>$brand-info</span> </div> <div class="color-box brand-warning"> <span>$brand-warning</span> </div> <div class="color-box brand-danger"> <span>$brand-danger</span> </div> </div> */
 @import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic");
+/*doc --- title: Units extended name: units_extended category: Variables --- Those are the units that you can use <div class="clearfix"> <div class="variable-box"> <span>$base-unit = $base-unit // 14px</span> </div> <div class="variable-box"> <span>$base-unit-x2 = $base-unit-x2</span> </div> <div class="variable-box"> <span>$base-unit-x3 = $base-unit-x3</span> </div> <div class="variable-box"> <span>$space = 10px</span> </div> <div class="variable-box"> <span>$space-small = $space / 2</span> </div> <div class="variable-box"> <span>$space-large = $space * 2</span> </div> <div class="variable-box"> <span>$space-larger = $space * 4</span> </div> <div class="variable-box"> <span>$font-size-larger = 38px</span> </div> </div> */
+/*doc --- title: Colors extended name: colors_extended category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-lighten"> <span>$gray-lighten</span> </div> <div class="color-box gray-lightest"> <span>$gray-lightest</span> </div> <div class="color-box white"> <span>$white</span> </div> <div class="color-box brand-primary-custom"> <span>$brand-primary-custom</span> </div> <div class="color-box blue-light"> <span>$blue-light</span> </div> </div> */
 /*! Bootstrap v3.3.5 (http://getbootstrap.com) Copyright 2011-2015 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic");
 html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
 body { margin: 0; }
@@ -2673,6 +2676,9 @@ body { -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; 
 
 body #sb-site a[name] { content: ""; display: block; height: 76px; margin-top: -76px; }
 
+/*doc --- title: Colors name: colors category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-darker"> <span>$gray-darker</span> </div> <div class="color-box gray-dark"> <span>$gray-dark</span> </div> <div class="color-box gray"> <span>$gray</span> </div> <div class="color-box gray-light"> <span>$gray-light</span> </div> <div class="color-box gray-lighter"> <span>$gray-lighter</span> </div> <div class="color-box brand-primary"> <span>$brand-primary</span> </div> <div class="color-box brand-success"> <span>$brand-success</span> </div> <div class="color-box brand-info"> <span>$brand-info</span> </div> <div class="color-box brand-warning"> <span>$brand-warning</span> </div> <div class="color-box brand-danger"> <span>$brand-danger</span> </div> </div> */
+/*doc --- title: Units extended name: units_extended category: Variables --- Those are the units that you can use <div class="clearfix"> <div class="variable-box"> <span>$base-unit = $base-unit // 14px</span> </div> <div class="variable-box"> <span>$base-unit-x2 = $base-unit-x2</span> </div> <div class="variable-box"> <span>$base-unit-x3 = $base-unit-x3</span> </div> <div class="variable-box"> <span>$space = 10px</span> </div> <div class="variable-box"> <span>$space-small = $space / 2</span> </div> <div class="variable-box"> <span>$space-large = $space * 2</span> </div> <div class="variable-box"> <span>$space-larger = $space * 4</span> </div> <div class="variable-box"> <span>$font-size-larger = 38px</span> </div> </div> */
+/*doc --- title: Colors extended name: colors_extended category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-lighten"> <span>$gray-lighten</span> </div> <div class="color-box gray-lightest"> <span>$gray-lightest</span> </div> <div class="color-box white"> <span>$white</span> </div> <div class="color-box brand-primary-custom"> <span>$brand-primary-custom</span> </div> <div class="color-box blue-light"> <span>$blue-light</span> </div> </div> */
 .table tbody > tr > td.vert-align { vertical-align: middle; }
 
 @media screen and (min-width: 768px) { .text-left-sm { text-align: left; } }
@@ -2699,10 +2705,12 @@ body #sb-site a[name] { content: ""; display: block; height: 76px; margin-top: -
 //category: CSS
 //---
 */
-/*doc --- title: Forms name: forms category: CSS --- ```html_example_table <h2>Panel form</h2> <form> <div class="panel panel-default"> <div class="panel-heading">Form heading</div> <div class="panel-body"> <div class="form-group"> <label for="to">To</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> </div> <div class="form-group has-success"> <label for="to">To (.has-success)</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-warning"> <label for="to">To (.has-warning)</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-error"> <label for="to">To (.has-error)</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group"> <label for="to">To (disabled input)</label> <input type="email" class="form-control" id="to" placeholder=":disabled" disabled> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group"> <label for="subject">Subject</label> <input type="text" class="form-control" id="subject" placeholder="Enter subject"> </div> <div class="form-group"> <label for="message">Message</label> <textarea class="form-control" id="subject" placeholder="Enter message"></textarea> </div> <div class="form-group"> <div class="checkbox"> <label> <input type="checkbox" name="samecheck"> Check me out </label> <br> <label> <input type="checkbox" name="samecheck"> Check me out again </label> </div> </div> <div class="form-group"> <div class="radio"> <label> <input type="radio" name="sameradio"> Check me out </label> <br> <label> <input type="radio" name="sameradio"> Check me out again </label> </div> </div> <div class="form-group"> <div class="select-wrapper"> <select class="form-control"> <option>option 1</option> <option>option 2</option> <option>option 3</option> <option>option 4</option> </select> </div> </div> </div> </div> <div class="form-group text-right form-actions"> <button type="reset" class="btn btn-default">Cancel</button> <button type="submit" class="btn btn-primary">Submit</button> </div> </form> <h2>Form links</h2> <form> <div class="form-group"> <label for="favorite">Favorite PO</label> <input type="text" class="form-control" id="favorite" placeholder="Mike"> </div> <button type="submit" class="btn btn-primary pull-right">Send spam</button> <div class="form-group form-links"> <a href="#" class="pull-left">Link one</a> <a href="#" class="pull-left">Link two</a> <a href="#" class="pull-right">Link three</a> </div> </form> ``` */
+/*doc --- title: Forms name: forms category: CSS --- ```html_example_table <h2>Panel form</h2> <form> <div class="panel panel-default"> <div class="panel-heading">Form heading</div> <div class="panel-body"> <div class="form-group"> <label for="to">To</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> </div> <div class="form-group has-success"> <label for="to">To (.has-success)</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-warning"> <label for="to">To (.has-warning)</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-error"> <label for="to">To (.has-error)</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group"> <label for="to">To (disabled input)</label> <input type="email" class="form-control" id="to" placeholder=":disabled" disabled> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group"> <label for="subject">Subject</label> <input type="text" class="form-control" id="subject" placeholder="Enter subject"> </div> <div class="form-group"> <label for="message">Message</label> <textarea class="form-control" id="subject" placeholder="Enter message"></textarea> </div> <div class="form-group"> <div class="checkbox"> <label> <input type="checkbox" name="samecheck"> Check me out </label> <br> <label> <input type="checkbox" name="samecheck"> Check me out again </label> </div> </div> <div class="form-group"> <div class="radio"> <label> <input type="radio" name="sameradio"> Check me out </label> <br> <label> <input type="radio" name="sameradio"> Check me out again </label> </div> </div> <div class="form-group"> <select class="form-control"> <option>option 1</option> <option>option 2</option> <option>option 3</option> <option>option 4</option> </select> </div> </div> </div> <div class="form-group text-right form-actions"> <button type="reset" class="btn btn-default">Cancel</button> <button type="submit" class="btn btn-primary">Submit</button> </div> </form> <h2>Form links</h2> <form> <div class="form-group"> <label for="favorite">Favorite PO</label> <input type="text" class="form-control" id="favorite" placeholder="Mike"> </div> <button type="submit" class="btn btn-primary pull-right">Send spam</button> <div class="form-group form-links"> <a href="#" class="pull-left">Link one</a> <a href="#" class="pull-left">Link two</a> <a href="#" class="pull-right">Link three</a> </div> </form> ``` */
 .form-group { margin-bottom: 20px; }
 
 .form-group.has-error label { color: #ff727c; }
+
+.form-group .help-block { font-size: 13px; }
 
 .form-actions { padding-top: 20px; }
 
@@ -2731,14 +2739,6 @@ label { color: #666; margin-bottom: 10px; }
 .checkbox label, .radio label { color: #666; font-size: 15px; margin-bottom: 0; text-transform: none; }
 
 textarea { resize: vertical; }
-
-select { -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; -o-appearance: none; appearance: none; }
-
-.select-wrapper { position: relative; }
-
-.select-wrapper:before { border-bottom: 4px dashed; border-left: 4px solid transparent; border-right: 4px solid transparent; content: ''; display: inline-block; height: 0; position: absolute; right: 20px; top: 16px; width: 0; }
-
-.select-wrapper:after { border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 4px dashed; bottom: 16px; content: ''; display: inline-block; height: 0; position: absolute; right: 20px; width: 0; }
 
 .form-links { text-align: left; }
 
@@ -2820,13 +2820,17 @@ category: Components
  Alerts should always starts with a word that tell the user more about the feedback in short.
 
 ```html_example
-<div class="alert alert-success" role="alert"><span class="label label-success">Label</span> <strong>Wohooo!</strong> Thanks for signing up!</div>
-<div class="alert alert-info" role="alert"><span class="label label-info">Label</span> <strong>Morning!</strong> Looks like you are happy today!</div>
-<div class="alert alert-warning" role="alert"><span class="label label-warning">Label</span> <strong>Ooops!</strong> Your account will expire in two days!</div>
-<div class="alert alert-danger" role="alert"><span class="label label-danger">Label</span> <strong>Grrr!</strong> Don't drop coffee on my keyboard again!</div>
+<div class="alert alert-success" role="alert"><span class="label label-success">New</span> <strong>Wohooo!</strong> Thanks for signing up!</div>
+<div class="alert alert-info" role="alert"><span class="label label-info">Info</span> <strong>Morning!</strong> Looks like you are happy today!</div>
+<div class="alert alert-warning" role="alert"><span class="label label-warning">Schedule</span> <strong>Hey!</strong> You have two scheduled posts!<a class="pull-right" href="#">View scheduled posts</a></div>
+<div class="alert alert-danger" role="alert"><span class="label label-danger">Warning</span> <strong>Grrr!</strong> Don't drop coffee on my keyboard again!</div>
 ```
 */
-.alert .label { margin-right: 10px; }
+.alert { padding: 14px 20px 15px; }
+
+.alert .label { font-size: 80%; margin-right: 20px; padding: 2px 7px 3px; text-transform: uppercase; }
+
+.alert a { text-decoration: underline; }
 
 /*doc
 //---
@@ -2966,7 +2970,7 @@ A calendar, designed for the datepicker
 //---
 */
 /*doc --- title: Jumbotron name: jumbotron category: Components --- The jumbotron is used for specific forms and popups. Add .jumbotron-fixed for fixed width (640px). ```html_example <div class="jumbotron"> <div class="jumbotron-description"> <h1>Register a new account</h1> <p>You have to register to publish your stories for the world to see. Please take a moment to enter these details.</p> </div> <form accept-charset="UTF-8" action="/" method="post" role="form"> <div class="row"> <div class="col-sm-12 "> <div class="form-group email optional mndx_user_email"> <label class="email optional control-label" for="mndx_user_email">Email</label> <input class="string email optional form-control" type="email" name="mndx_user[email]" id="mndx_user_email" /> </div> </div> </div> <div class="row"> <div class="col-sm-6"> <div class="form-group password optional"> <label class="password optional control-label" for="mndx_user_password">New password</label> <input class="password optional form-control" type="password" name="mndx_user[password]" id="mndx_user_password" /> </div> </div> <div class="col-sm-6"> <div class="form-group password optional"> <label class="password optional control-label" for="mndx_user_password_confirmation">Confirm new password</label> <input class="password optional form-control" type="password" name="mndx_user[password_confirmation]" id="mndx_user_password_confirmation" /> </div> </div> </div> <input type="submit" name="commit" value="Register" class="btn btn-primary pull-right" /> <div class="form-group form-links"> <a class="pull-right" href="#">Sign in</a> </div> </form> </div> ``` */
-.jumbotron { background-color: #fff; border: 1px solid #ddd; border-radius: 4px; margin: 30px auto 0; max-width: 640px; padding: 30px; text-align: center; }
+.jumbotron { background-color: #fff; border: 1px solid #ddd; border-radius: 4px; margin: 30px auto 0; max-width: 640px; padding: 30px; text-align: center; box-shadow: #999999 0px 2px 4px; }
 
 .jumbotron.jumbotron-fixed { width: 640px; }
 
@@ -2980,7 +2984,7 @@ A calendar, designed for the datepicker
 
 @media screen and (min-width: 768px) { .jumbotron .jumbotron-description h1 { margin-bottom: 20px; } }
 
-.jumbotron .jumbotron-description p { color: #666; font-size: 15px; font-weight: normal; }
+.jumbotron .jumbotron-description p { color: #666; font-size: 19px; font-weight: normal; }
 
 .jumbotron .jumbotron-link { margin-right: 20px; }
 
@@ -2990,7 +2994,7 @@ A calendar, designed for the datepicker
 
 .jumbotron form .form-group { text-align: left; }
 
-.jumbotron-transparent { background: transparent; border: 0; }
+.jumbotron-transparent { background: transparent; border: 0; box-shadow: none; }
 
 .jumbotron-transparent .jumbotron-description h1, .jumbotron-transparent .jumbotron-description p { color: #fff; }
 

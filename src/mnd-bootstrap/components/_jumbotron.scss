@@ -53,6 +53,7 @@ $jumbotron-padding-x2: $jumbotron-padding * 2;
   max-width: 640px;
   padding: $jumbotron-padding;
   text-align: center;
+  box-shadow: $gray-light 0px 2px 4px;
 
   &.jumbotron-fixed {
     width: 640px;
@@ -84,7 +85,7 @@ $jumbotron-padding-x2: $jumbotron-padding * 2;
 
     p {
       color: $gray;
-      font-size: $font-size-base;
+      font-size: $font-size-large;
       font-weight: normal;
     }
   }
@@ -109,6 +110,7 @@ $jumbotron-padding-x2: $jumbotron-padding * 2;
 .jumbotron-transparent {
   background: transparent;
   border: 0;
+  box-shadow: none;
 
   .jumbotron-description {
 

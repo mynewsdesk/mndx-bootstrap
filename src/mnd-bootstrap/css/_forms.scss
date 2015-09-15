@@ -106,6 +106,10 @@ category: CSS
   &.has-error label {
     color: $brand-danger;
   }
+
+  .help-block {
+    font-size: $font-size-small;
+  }
 }
 
 .form-actions {
