@@ -4,7 +4,7 @@
  name: jumbotron
  category: Components
  ---
- The jumbotron is used for specific forms and popups
+ The jumbotron is used for specific forms and popups. Add .jumbotron-fixed for fixed width (640px).
 
 ```html_example
 <div class="jumbotron">
@@ -35,25 +35,28 @@
         </div>
       </div>
     </div>
-    <div class="form-group form-actions">
-      <input type="submit" name="commit" value="Register" class="btn btn-primary btn-block" />
+    <input type="submit" name="commit" value="Register" class="btn btn-primary pull-right" />
+    <div class="form-group form-links">
+      <a class="pull-right" href="#">Sign in</a>
     </div>
   </form>
-  <a class="jumbotron-link" href="#">Sign in</a>
 </div>
 ```
 */
 
 $jumbotron-padding-x2: $jumbotron-padding * 2;
-
 .jumbotron {
   background-color: #fff;
   border: 1px solid $gray-lighten;
   border-radius: 4px;
   margin: $jumbotron-padding auto 0;
-  max-width: 480px;
+  max-width: 640px;
   padding: $jumbotron-padding;
   text-align: center;
+
+  &.jumbotron-fixed {
+    width: 640px;
+  }
 
   @media screen and (min-width: $screen-sm-min) {
     margin: $space-larger auto 0;
