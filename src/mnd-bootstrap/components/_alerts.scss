@@ -7,15 +7,23 @@ category: Components
  Alerts should always starts with a word that tell the user more about the feedback in short.
 
 ```html_example
-<div class="alert alert-success" role="alert"><span class="label label-success">Label</span> <strong>Wohooo!</strong> Thanks for signing up!</div>
-<div class="alert alert-info" role="alert"><span class="label label-info">Label</span> <strong>Morning!</strong> Looks like you are happy today!</div>
-<div class="alert alert-warning" role="alert"><span class="label label-warning">Label</span> <strong>Ooops!</strong> Your account will expire in two days!</div>
-<div class="alert alert-danger" role="alert"><span class="label label-danger">Label</span> <strong>Grrr!</strong> Don't drop coffee on my keyboard again!</div>
+<div class="alert alert-success" role="alert"><span class="label label-success">New</span> <strong>Wohooo!</strong> Thanks for signing up!</div>
+<div class="alert alert-info" role="alert"><span class="label label-info">Info</span> <strong>Morning!</strong> Looks like you are happy today!</div>
+<div class="alert alert-warning" role="alert"><span class="label label-warning">Schedule</span> <strong>Hey!</strong> You have two scheduled posts!<a class="pull-right" href="#">View scheduled posts</a></div>
+<div class="alert alert-danger" role="alert"><span class="label label-danger">Warning</span> <strong>Grrr!</strong> Don't drop coffee on my keyboard again!</div>
 ```
 */
 .alert {
+  padding: 14px 20px 15px;
 
   .label {
-    margin-right: $gutter-horizontal;
+    font-size: 80%;
+    margin-right: $gutter-horizontal-x2;
+    padding: 2px 7px 3px;
+    text-transform: uppercase;
+  }
+
+  a {
+    text-decoration: underline;
   }
 }
