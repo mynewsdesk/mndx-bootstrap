@@ -6,90 +6,55 @@ category: CSS
 ---
 
 ```html_example_table
-<p><button class="btn btn-default btn-lg">Large</button></p>
-<p><button class="btn btn-default">Normal</button></p>
-<p><button class="btn btn-default btn-sm">Small</button></p>
-<p><button class="btn btn-default btn-xs">Extra Small</button></p>
+<p><button class="btn btn-default">Normal</button>
+<button class="btn btn-default btn-sm">Small</button></p>
 
-<p><button class="btn btn-default">Default</button></p>
-<p><button class="btn btn-primary">Primary</button></p>
-<p><button class="btn btn-primary-alt">Primary Alt</button></p>
-<p><button class="btn btn-danger">Danger</button></p>
-<p><button class="btn btn-secondary">Secondary</button></p>
-
-<p><button class="btn-ghost btn-default">Default Ghost</button></p>
-<p><button class="btn-ghost btn-primary">Primary Ghost</button></p>
-<p><button class="btn-ghost btn-primary-alt">Primary Alt Ghost</button></p>
-<p><button class="btn-ghost btn-danger">Danger Ghost</button></p>
+<p><button class="btn btn-default">Default</button>
+<button class="btn btn-default" disabled>Default disabled</button></p>
+<p><button class="btn btn-primary">Primary</button>
+<button class="btn btn-primary" disabled>Primary disabled</button></p>
 ```
  */
 
 .btn {
-  &-default:hover {
-    background-color: $btn-default-bg-hover;
-    color: $gray-light;
-  }
+  font-weight: 600;
+  margin-left: $gutter-horizontal-x2;
 
-  &-primary-alt {
-    @extend .btn-danger;
+  &-default {
+
+    &:hover {
+      background: $btn-default-bg;
+      border-color: $btn-default-border-hover;
+      color: $btn-default-color-hover;
+    }
+
+    &:active,
+    &:focus,
+    &:active:focus {
+      background: $btn-default-bg;
+      border-color: $btn-default-border-active;
+      box-shadow: none;
+      color: $btn-default-color-active;
+    }
   }
 
   &-primary {
-    &:hover {
-      background: $btn-primary-hover-bg;
-    }
-  }
-
-  &-secondary {
-    @extend .btn-link;
-    color: $btn-secondary-color;
 
     &:hover {
-      color: darken($btn-secondary-color, 20%);
-      text-decoration: none;
-    }
-  }
-
-  &-ghost {
-    @extend .btn;
-    background-color: transparent;
-
-    &.btn-default {
-      border-color: $btn-ghost-default-bg;
-      color: $btn-ghost-default-bg;
-
-      &:hover {
-        color: $btn-ghost-default-color;
-        background-color: $btn-ghost-default-bg;
-      }
+      background: $btn-primary-bg-hover;
+      border-color: $btn-primary-bg-hover;
     }
 
-    &.btn-primary {
-      border-color: $btn-primary-bg;
-      color: $btn-primary-bg;
-
-      &:hover {
-        color: $btn-primary-color;
-      }
+    &:active,
+    &:focus,
+    &:active:focus {
+      background: $btn-primary-bg-active;
+      border-color: $btn-primary-bg-active;
+      box-shadow: none;
     }
 
-    &.btn-primary-alt {
-      border-color: $btn-danger-bg;
-      color: $btn-danger-bg;
-
-      &:hover {
-        color: $btn-danger-color;
-      }
+    &:disabled {
+      @extend .btn-default;
     }
-
-    &.btn-danger {
-      border-color: $btn-danger-bg;
-      color: $btn-danger-bg;
-
-      &:hover {
-        color: $btn-danger-color;
-      }
-    }
-
   }
 }

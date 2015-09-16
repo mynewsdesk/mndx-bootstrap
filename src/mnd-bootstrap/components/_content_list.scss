@@ -31,25 +31,25 @@ Custom list for editable content
   </li>
 </ul>
 
-<ul class="content-list content-list-striped">
+<ul class="content-list">
   <li class="content-list-row content-list-header">
-    <div class="content-list-column">Draft</div>
+    <div class="content-list-column">Name</div>
     <div class="content-list-column">Last edited</div>
     <div class="content-list-column">Actions</div>
   </li>
   <li class="content-list-row">
-    <div class="content-list-column"><a href="#">Press Release Name #1</a></div>
+    <div class="content-list-column"><span class="content-list-checkbox"><input type="checkbox" /></span><span class="content-list-avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Mike Rooseboom</div>
     <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
     <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
   </li>
   <li class="content-list-row">
-    <div class="content-list-column"><a href="#">Press Release Name #2</a></div>
-    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
+    <div class="content-list-column"><span class="content-list-checkbox"><input type="checkbox" /></span><span class="content-list-avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Rashmi Yadav</div>
+    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 27 2015</div>
     <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
   </li>
-  <li class="content-list-row">
-    <div class="content-list-column"><a href="#">Press Release Name #3</a></div>
-    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
+  <li class="content-list-row active">
+    <div class="content-list-column"><span class="content-list-checkbox"><input type="checkbox" /></span><span class="content-list-avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Zoee Silcock</div>
+    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 26 2015</div>
     <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
   </li>
 </ul>
@@ -73,16 +73,20 @@ Custom list for editable content
   .content-list-row {
     border-bottom: 1px solid $gray-lighter;
     display: table-row;
+
+    &.active {
+      background: tint($color-4, 95%);
+    }
   }
 
   .content-list-column {
     display: table-cell;
-    padding: 15px;
+    padding: 20px 25px;
     text-align: right;
 
     &:first-child {
-      text-align: left;
       display: table-cell;
+      text-align: left;
     }
 
     &:nth-child(n+2) {
@@ -98,6 +102,12 @@ Custom list for editable content
     }
   }
 
+  .content-list-header {
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
   .content-list-action {
     display: inline-block;
     margin-left: 25px;
@@ -107,8 +117,29 @@ Custom list for editable content
     }
   }
 
-  .content-list-header {
-    font-weight: bold;
+  .content-list-checkbox {
+    display: inline-block;
+
+    input[type='checkbox'] {
+      box-shadow: 0px 1px 1px 0px #efefef inset;
+      font-size: 16px;
+      margin-right: 20px;
+    }
+  }
+
+  .content-list-avatar {
+    display: inline-block;
+    margin-right: 25px;
+    position: relative;
+    width: 35px;
+
+    img {
+      border-radius: 50%;
+      height: 35px;
+      margin-top: -23px;
+      position: absolute;
+      width: 35px;
+    }
   }
 }
 
@@ -118,7 +149,7 @@ Custom list for editable content
     border-bottom: 0;
 
     &:nth-child(even) {
-      background-color: $blue-light;
+      background-color: $gray-lightest;
     }
   }
 }

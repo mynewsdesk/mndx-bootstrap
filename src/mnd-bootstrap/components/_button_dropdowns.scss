@@ -1,8 +1,133 @@
 /*doc
-//---
-//title: Button dropdowns
-//name: button_dropdowns
-//category: Components
-//---
+---
+title: Button dropdowns
+name: button_dropdowns
+category: Components
+---
+
+```html_example_table
+<div class="btn-group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" disabled class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" disabled class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+```
 */
 
+.btn-group.open {
+
+  .dropdown-toggle {
+    box-shadow: none;
+  }
+
+  >.btn-default.dropdown-toggle {
+    background: $btn-default-bg;
+    border-color: $btn-default-border-active;
+    color: $btn-default-color-active;
+  }
+
+  >.btn-primary.dropdown-toggle {
+    background: $btn-primary-bg-active;
+    border-color: $btn-primary-bg-active;
+  }
+}
+
+.dropdown-menu {
+  border-radius: 6px;
+  border: 1px solid $btn-default-border;
+  box-shadow: none;
+  left: auto;
+  margin-top: 15px;
+  padding-bottom: 25px;
+  padding-top: 20px;
+  right: -5px;
+
+  >li {
+
+    >a {
+      padding: 5px 25px;
+    }
+  }
+
+  &:before {
+    border-color: transparent;
+    border-bottom-color: $btn-default-border;
+    border-style: solid;
+    border-top-width: 0;
+    border-width: 11px;
+    content: '';
+    display: block;
+    height: 0;
+    margin-left: -11px;
+    position: absolute;
+    right: 18px;
+    top: -22px;
+    width: 0;
+  }
+
+  &:after {
+    border-color: transparent;
+    border-bottom-color: #fff;
+    border-style: solid;
+    border-width: 10px;
+    border-top-width: 0;
+    content: '';
+    display: block;
+    height: 0;
+    position: absolute;
+    right: 19px;
+    top: -10px;
+    width: 0;
+  }
+}
+
+.btn-primary {
+
+  &:disabled {
+    @extend .btn-default;
+  }
+}

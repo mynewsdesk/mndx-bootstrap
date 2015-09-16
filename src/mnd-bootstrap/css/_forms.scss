@@ -33,6 +33,11 @@ category: CSS
         <p class="help-block">Example block-level help text here.</p>
       </div>
       <div class="form-group">
+        <label for="to">To (disabled input)</label>
+        <input type="email" class="form-control" id="to" placeholder=":disabled" disabled>
+        <p class="help-block">Example block-level help text here.</p>
+      </div>
+      <div class="form-group">
         <label for="subject">Subject</label>
         <input type="text" class="form-control" id="subject" placeholder="Enter subject">
       </div>
@@ -73,22 +78,9 @@ category: CSS
     </div>
   </div>
   <div class="form-group text-right form-actions">
-    <button type="reset" class="btn btn-secondary">Cancel</button>
-    <button type="submit" class="btn btn-default">Submit</button>
+    <button type="reset" class="btn btn-default">Cancel</button>
+    <button type="submit" class="btn btn-primary">Submit</button>
   </div>
-</form>
-
-<h2>Inline form</h2>
-<form class="form-inline">
-  <div class="form-group">
-    <label for="exampleInputName2">Name</label>
-    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputEmail2">Email</label>
-    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-  </div>
-  <button type="submit" class="btn btn-default">Send invitation</button>
 </form>
 
 <h2>Form links</h2>
@@ -97,7 +89,7 @@ category: CSS
     <label for="favorite">Favorite PO</label>
     <input type="text" class="form-control" id="favorite" placeholder="Mike">
   </div>
-  <button type="submit" class="btn btn-default pull-right">Send spam</button>
+  <button type="submit" class="btn btn-primary pull-right">Send spam</button>
   <div class="form-group form-links">
     <a href="#" class="pull-left">Link one</a>
     <a href="#" class="pull-left">Link two</a>
@@ -110,6 +102,14 @@ category: CSS
 
 .form-group {
   margin-bottom: $space-large;
+
+  &.has-error label {
+    color: $brand-danger;
+  }
+
+  .help-block {
+    font-size: $font-size-small;
+  }
 }
 
 .form-actions {
@@ -119,14 +119,25 @@ category: CSS
 .form-control {
   background: transparent;
   border: 1px solid $gray-lighten;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
 
   @include placeholder {
     color: $gray-light;
+    font-style: italic;
+  }
+
+  &:hover {
+    border-color: #aaa;
   }
 
   &:focus {
-    box-shadow: none;
+    border-color: $color-4;
+    box-shadow: 0px 0px 3px 0px rgba(33,115,210,0.3);
+  }
+
+  &[disabled] {
+    background-color: $gray-lightest;
+    border-color: $input-border-disabled;
   }
 }
 
@@ -136,7 +147,8 @@ category: CSS
   box-shadow: none;
 
   &:focus {
-    box-shadow: none;
+    border-color: $color-4;
+    box-shadow: 0px 0px 3px 0px rgba(33,115,210,0.3);
   }
 }
 
@@ -153,10 +165,6 @@ label {
   text-transform: none;
 }
 
-.form-group.has-error label {
-  color: $brand-danger;
-}
-
 textarea {
   resize: vertical;
 }
@@ -165,8 +173,8 @@ textarea {
   text-align: left;
 
   a {
-    padding: 7px 13px;
-  
+    padding: ($padding-base-vertical + 1) ($padding-base-horizontal + 1);
+
     &.pull-left:first-child {
       padding-left: 0;
     }

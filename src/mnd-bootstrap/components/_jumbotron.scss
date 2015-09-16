@@ -4,7 +4,7 @@
  name: jumbotron
  category: Components
  ---
- The jumbotron is used for specific forms and popups
+ The jumbotron is used for specific forms and popups. Add .jumbotron-fixed for fixed width (640px).
 
 ```html_example
 <div class="jumbotron">
@@ -35,25 +35,29 @@
         </div>
       </div>
     </div>
-    <div class="form-group form-actions">
-      <input type="submit" name="commit" value="Register" class="btn btn-primary btn-block" />
+    <input type="submit" name="commit" value="Register" class="btn btn-primary pull-right" />
+    <div class="form-group form-links">
+      <a class="pull-right" href="#">Sign in</a>
     </div>
   </form>
-  <a class="jumbotron-link" href="#">Sign in</a>
 </div>
 ```
 */
 
 $jumbotron-padding-x2: $jumbotron-padding * 2;
-
 .jumbotron {
-  background-color: $white;
+  background-color: #fff;
   border: 1px solid $gray-lighten;
   border-radius: 4px;
   margin: $jumbotron-padding auto 0;
-  max-width: 480px;
+  max-width: 640px;
   padding: $jumbotron-padding;
   text-align: center;
+  box-shadow: $gray-light 0px 2px 4px;
+
+  &.jumbotron-fixed {
+    width: 640px;
+  }
 
   @media screen and (min-width: $screen-sm-min) {
     margin: $space-larger auto 0;
@@ -81,7 +85,7 @@ $jumbotron-padding-x2: $jumbotron-padding * 2;
 
     p {
       color: $gray;
-      font-size: $font-size-base;
+      font-size: $font-size-large;
       font-weight: normal;
     }
   }
@@ -106,27 +110,28 @@ $jumbotron-padding-x2: $jumbotron-padding * 2;
 .jumbotron-transparent {
   background: transparent;
   border: 0;
+  box-shadow: none;
 
   .jumbotron-description {
 
     h1,
     p {
-      color: $white;
+      color: #fff;
     }
   }
 
   .control-label {
-    color: $white;
+    color: #fff;
   }
 
   .form-control {
-    background: $white;
+    background: #fff;
   }
 
   .form-links {
 
     a {
-      color: $white;
+      color: #fff;
     }
   }
 }
