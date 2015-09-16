@@ -1,7 +1,7 @@
-/*doc --- title: Units extended name: units_extended category: Variables --- Those are the units that you can use <div class="clearfix"> <div class="variable-box"> <span>$base-unit = $base-unit // 14px</span> </div> <div class="variable-box"> <span>$base-unit-x2 = $base-unit-x2</span> </div> <div class="variable-box"> <span>$base-unit-x3 = $base-unit-x3</span> </div> <div class="variable-box"> <span>$space = 10px</span> </div> <div class="variable-box"> <span>$space-small = $space / 2</span> </div> <div class="variable-box"> <span>$space-large = $space * 2</span> </div> <div class="variable-box"> <span>$space-larger = $space * 4</span> </div> <div class="variable-box"> <span>$font-size-larger = 38px</span> </div> </div> */
-/*doc --- title: Colors extended name: colors_extended category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-lighten"> <span>$gray-lighten</span> </div> <div class="color-box gray-lightest"> <span>$gray-lightest</span> </div> <div class="color-box white"> <span>$white</span> </div> <div class="color-box brand-primary-custom"> <span>$brand-primary-custom</span> </div> <div class="color-box blue-light"> <span>$blue-light</span> </div> </div> */
 /*doc --- title: Colors name: colors category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-darker"> <span>$gray-darker</span> </div> <div class="color-box gray-dark"> <span>$gray-dark</span> </div> <div class="color-box gray"> <span>$gray</span> </div> <div class="color-box gray-light"> <span>$gray-light</span> </div> <div class="color-box gray-lighter"> <span>$gray-lighter</span> </div> <div class="color-box brand-primary"> <span>$brand-primary</span> </div> <div class="color-box brand-success"> <span>$brand-success</span> </div> <div class="color-box brand-info"> <span>$brand-info</span> </div> <div class="color-box brand-warning"> <span>$brand-warning</span> </div> <div class="color-box brand-danger"> <span>$brand-danger</span> </div> </div> */
 @import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic");
+/*doc --- title: Units extended name: units_extended category: Variables --- Those are the units that you can use <div class="clearfix"> <div class="variable-box"> <span>$base-unit = $base-unit // 14px</span> </div> <div class="variable-box"> <span>$base-unit-x2 = $base-unit-x2</span> </div> <div class="variable-box"> <span>$base-unit-x3 = $base-unit-x3</span> </div> <div class="variable-box"> <span>$space = 10px</span> </div> <div class="variable-box"> <span>$space-small = $space / 2</span> </div> <div class="variable-box"> <span>$space-large = $space * 2</span> </div> <div class="variable-box"> <span>$space-larger = $space * 4</span> </div> <div class="variable-box"> <span>$font-size-larger = 38px</span> </div> </div> */
+/*doc --- title: Colors extended name: colors_extended category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-lighten"> <span>$gray-lighten</span> </div> <div class="color-box gray-lightest"> <span>$gray-lightest</span> </div> <div class="color-box white"> <span>$white</span> </div> <div class="color-box brand-primary-custom"> <span>$brand-primary-custom</span> </div> <div class="color-box blue-light"> <span>$blue-light</span> </div> </div> */
 /*doc --- title: Units extended name: units_extended category: Variables --- Those are the units that you can use <div class="clearfix"> <div class="variable-box"> <span>$base-unit = $base-unit // 14px</span> </div> <div class="variable-box"> <span>$base-unit-x2 = $base-unit-x2</span> </div> <div class="variable-box"> <span>$base-unit-x3 = $base-unit-x3</span> </div> <div class="variable-box"> <span>$space = 10px</span> </div> <div class="variable-box"> <span>$space-small = $space / 2</span> </div> <div class="variable-box"> <span>$space-large = $space * 2</span> </div> <div class="variable-box"> <span>$space-larger = $space * 4</span> </div> <div class="variable-box"> <span>$font-size-larger = 38px</span> </div> </div> */
 /*doc --- title: Colors extended name: colors_extended category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-lighten"> <span>$gray-lighten</span> </div> <div class="color-box gray-lightest"> <span>$gray-lightest</span> </div> <div class="color-box white"> <span>$white</span> </div> <div class="color-box brand-primary-custom"> <span>$brand-primary-custom</span> </div> <div class="color-box blue-light"> <span>$blue-light</span> </div> </div> */
 body { padding-bottom: 60px; }
@@ -9,14 +9,14 @@ body { padding-bottom: 60px; }
 /* style nav specific - Temporary until we have the navigation implemented in our bootstrap theme */
 #top-nav .navbar-header { margin: 15px; }
 
-#top-nav li > a { color: #2e88be; line-height: 25px; }
+#top-nav li > a { color: #0092cc; line-height: 25px; }
 
 /* end temporary styling of our navigation*/
 .code-header { border-bottom: 1px solid #eeeeee; line-height: 1.42857; }
 
-.code-example { background: #fff; padding: 28px; }
+.code-example { background: #fff; padding: 30px; }
 
-.nav-sidebar { padding: 14px 14px 14px 0; }
+.nav-sidebar { padding: 15px 15px 15px 0; }
 
 .styleguide-example { background-color: #eeeeee; padding: 15px; }
 
@@ -40,24 +40,24 @@ body { padding-bottom: 60px; }
 
 .gray-lighter { background: #eeeeee; }
 
-.gray-lighten { background: #bbb; }
+.gray-lighten { background: #ddd; }
 
-.gray-lightest, .variable-box { background: #fcfcfc; }
+.gray-lightest, .variable-box { background: #fafafa; }
 
 .white { background: #fff; }
 
-.brand-primary-custom { background: #e53221; }
+.brand-primary-custom { background: #ec2928; }
 
 .blue-light { background: #f8fafd; }
 
-.brand-primary { background: #f1f1f1; }
+.brand-primary { background: #00ccb8; }
 
-.brand-success { background: #9bb83a; }
+.brand-success { background: #00ccb8; }
 
-.brand-info { background: #389Bc9; }
+.brand-info { background: #0092cc; }
 
-.brand-warning { background: #e5d321; }
+.brand-warning { background: #ff9c00; }
 
-.brand-danger { background: #e53221; }
+.brand-danger { background: #ff727c; }
 
 .button-demo-column { display: table-cell; padding-right: 15px; }

@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Mynewsdesk Style Guide: Components</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="dist/mnd-bootstrap.css">
     <link rel="stylesheet" href="docs.css">
     <link rel="stylesheet" href="github.css">
@@ -21,7 +22,7 @@
           
             <li><a href="css.html">CSS</a></li>
           
-            <li><a href="index.html">Variables</a></li>
+            <li><a href="variables.html">Variables</a></li>
           
             <li><a href="javascript.html">JavaScript</a></li>
           
@@ -37,6 +38,8 @@
               <ul class="list-group">
               
                 <li class="list-group-item"><a href="#alerts">Alerts</a></li>
+              
+                <li class="list-group-item"><a href="#button_dropdowns">Button dropdowns</a></li>
               
                 <li class="list-group-item"><a href="#button_groups">Button groups</a></li>
               
@@ -63,23 +66,166 @@
 <h1 id="alerts" class="styleguide">Alerts</h1>
 <p class="styleguide"> Alerts should always starts with a word that tell the user more about the feedback in short.</p><div class="codeExample">
   <div class="exampleOutput">
-    <div class="alert alert-success" role="alert"><strong>Wohooo!</strong> Thanks for signing up!</div>
-<div class="alert alert-info" role="alert"><strong>Morning!</strong> Looks like you are happy today!</div>
-<div class="alert alert-warning" role="alert"><strong>Ooops!</strong> Your account will expire in two days!</div>
-<div class="alert alert-danger" role="alert"><strong>Grrr!</strong> Don't drop coffee on my keyboard again!</div>
+    <div class="alert alert-success" role="alert"><span class="label label-success">New</span> <strong>Wohooo!</strong> Thanks for signing up!</div>
+<div class="alert alert-info" role="alert"><span class="label label-info">Info</span> <strong>Morning!</strong> Looks like you are happy today!</div>
+<div class="alert alert-warning" role="alert"><span class="label label-warning">Schedule</span> <strong>Hey!</strong> You have two scheduled posts!<a class="pull-right" href="#">View scheduled posts</a></div>
+<div class="alert alert-danger" role="alert"><span class="label label-danger">Warning</span> <strong>Grrr!</strong> Don't drop coffee on my keyboard again!</div>
 
   </div>
   <div class="codeBlock">
     <div class="highlight">
-      <pre class="code-example"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;&lt;strong&gt;</span>Wohooo!<span class="nt">&lt;/strong&gt;</span> Thanks for signing up!<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;&lt;strong&gt;</span>Morning!<span class="nt">&lt;/strong&gt;</span> Looks like you are happy today!<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;&lt;strong&gt;</span>Ooops!<span class="nt">&lt;/strong&gt;</span> Your account will expire in two days!<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;&lt;strong&gt;</span>Grrr!<span class="nt">&lt;/strong&gt;</span> Don't drop coffee on my keyboard again!<span class="nt">&lt;/div&gt;</span></pre>
+      <pre class="code-example"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"label label-success"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;strong&gt;</span>Wohooo!<span class="nt">&lt;/strong&gt;</span> Thanks for signing up!<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"label label-info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;strong&gt;</span>Morning!<span class="nt">&lt;/strong&gt;</span> Looks like you are happy today!<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"label label-warning"</span><span class="nt">&gt;</span>Schedule<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;strong&gt;</span>Hey!<span class="nt">&lt;/strong&gt;</span> You have two scheduled posts!<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"pull-right"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>View scheduled posts<span class="nt">&lt;/a&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"label label-danger"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;strong&gt;</span>Grrr!<span class="nt">&lt;/strong&gt;</span> Don't drop coffee on my keyboard again!<span class="nt">&lt;/div&gt;</span></pre>
     </div>
   </div>
 </div>
 
+<h1 id="button_dropdowns" class="styleguide">Button dropdowns</h1>
+<div class="codeExample">
+  
+    <div class="tableExample">
+      <div class="exampleOutput">
+        <div class="btn-group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" disabled class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+      </div>
+      <div class="codeBlock">
+        <div class="highlight">
+          <pre class="code-example"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    Action <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"separator"</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Separated link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">disabled</span> <span class="na">class=</span><span class="s">"btn btn-primary dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    Action <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"separator"</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Separated link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></pre>
+        </div>
+      </div>
+    </div>
+  
+    <div class="tableExample">
+      <div class="exampleOutput">
+        <div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" disabled class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="codeBlock">
+        <div class="highlight">
+          <pre class="code-example"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    Action <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"separator"</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Separated link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">disabled</span> <span class="na">class=</span><span class="s">"btn btn-default dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    Action <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"separator"</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Separated link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></pre>
+        </div>
+      </div>
+    </div>
+  
+</div>
+
 <h1 id="button_groups" class="styleguide">Button groups</h1>
+<div class="codeExample">
+  
+    <div class="tableExample">
+      <div class="exampleOutput">
+        <div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default">Left</button>
+  <button type="button" class="btn btn-default">Middle</button>
+  <button type="button" class="btn btn-default">Right</button>
+</div>
+
+      </div>
+      <div class="codeBlock">
+        <div class="highlight">
+          <pre class="code-example"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Left<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Middle<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Right<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span></pre>
+        </div>
+      </div>
+    </div>
+  
+</div>
 
 <h1 id="calendar" class="styleguide">Calendar</h1>
 <p class="styleguide">A calendar, designed for the datepicker</p><div class="codeExample">
@@ -120,25 +266,25 @@
   </li>
 </ul>
 
-<ul class="content-list content-list-striped">
+<ul class="content-list">
   <li class="content-list-row content-list-header">
-    <div class="content-list-column">Draft</div>
+    <div class="content-list-column">Name</div>
     <div class="content-list-column">Last edited</div>
     <div class="content-list-column">Actions</div>
   </li>
   <li class="content-list-row">
-    <div class="content-list-column"><a href="#">Press Release Name #1</a></div>
+    <div class="content-list-column"><span class="content-list-checkbox"><input type="checkbox" /></span><span class="content-list-avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Mike Rooseboom</div>
     <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
     <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
   </li>
   <li class="content-list-row">
-    <div class="content-list-column"><a href="#">Press Release Name #2</a></div>
-    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
+    <div class="content-list-column"><span class="content-list-checkbox"><input type="checkbox" /></span><span class="content-list-avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Rashmi Yadav</div>
+    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 27 2015</div>
     <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
   </li>
-  <li class="content-list-row">
-    <div class="content-list-column"><a href="#">Press Release Name #3</a></div>
-    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div>
+  <li class="content-list-row active">
+    <div class="content-list-column"><span class="content-list-checkbox"><input type="checkbox" /></span><span class="content-list-avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Zoee Silcock</div>
+    <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 26 2015</div>
     <div class="content-list-column"><a class="content-list-action" href="#">Edit</a><a class="content-list-action" href="#">Publish</a></div>
   </li>
 </ul>
@@ -169,25 +315,25 @@
   <span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span>
 
-<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"content-list content-list-striped"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"content-list"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"content-list-row content-list-header"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-list-column"</span><span class="nt">&gt;</span>Draft<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-list-column"</span><span class="nt">&gt;</span>Name<span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-list-column"</span><span class="nt">&gt;</span>Last edited<span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-list-column"</span><span class="nt">&gt;</span>Actions<span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"content-list-row"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-list-column"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Press Release Name #1<span class="nt">&lt;/a&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-list-column"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"content-list-checkbox"</span><span class="nt">&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="nt">/&gt;&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"content-list-avatar"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg"</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;&lt;/span&gt;</span> Mike Rooseboom<span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-list-column"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"hidden-sm"</span><span class="nt">&gt;</span>Published at <span class="nt">&lt;/span&gt;</span>Feb, 28 2015<span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-list-column"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"content-list-action"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Edit<span class="nt">&lt;/a&gt;&lt;a</span> <span class="na">class=</span><span class="s">"content-list-action"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Publish<span class="nt">&lt;/a&gt;&lt;/div&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"content-list-row"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-list-column"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Press Release Name #2<span class="nt">&lt;/a&gt;&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-list-column"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"hidden-sm"</span><span class="nt">&gt;</span>Published at <span class="nt">&lt;/span&gt;</span>Feb, 28 2015<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-list-column"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"content-list-checkbox"</span><span class="nt">&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="nt">/&gt;&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"content-list-avatar"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg"</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;&lt;/span&gt;</span> Rashmi Yadav<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-list-column"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"hidden-sm"</span><span class="nt">&gt;</span>Published at <span class="nt">&lt;/span&gt;</span>Feb, 27 2015<span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-list-column"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"content-list-action"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Edit<span class="nt">&lt;/a&gt;&lt;a</span> <span class="na">class=</span><span class="s">"content-list-action"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Publish<span class="nt">&lt;/a&gt;&lt;/div&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"content-list-row"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-list-column"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Press Release Name #3<span class="nt">&lt;/a&gt;&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-list-column"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"hidden-sm"</span><span class="nt">&gt;</span>Published at <span class="nt">&lt;/span&gt;</span>Feb, 28 2015<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"content-list-row active"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-list-column"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"content-list-checkbox"</span><span class="nt">&gt;&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="nt">/&gt;&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"content-list-avatar"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg"</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;&lt;/span&gt;</span> Zoee Silcock<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-list-column"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"hidden-sm"</span><span class="nt">&gt;</span>Published at <span class="nt">&lt;/span&gt;</span>Feb, 26 2015<span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-list-column"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"content-list-action"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Edit<span class="nt">&lt;/a&gt;&lt;a</span> <span class="na">class=</span><span class="s">"content-list-action"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Publish<span class="nt">&lt;/a&gt;&lt;/div&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span></pre>
@@ -196,7 +342,7 @@
 </div>
 
 <h1 id="jumbotron" class="styleguide">Jumbotron</h1>
-<p class="styleguide"> The jumbotron is used for specific forms and popups</p><div class="codeExample">
+<p class="styleguide"> The jumbotron is used for specific forms and popups. Add .jumbotron-fixed for fixed width (640px).</p><div class="codeExample">
   <div class="exampleOutput">
     <div class="jumbotron">
   <div class="jumbotron-description">
@@ -226,11 +372,11 @@
         </div>
       </div>
     </div>
-    <div class="form-group form-actions">
-      <input type="submit" name="commit" value="Register" class="btn btn-primary btn-block" />
+    <input type="submit" name="commit" value="Register" class="btn btn-primary pull-right" />
+    <div class="form-group form-links">
+      <a class="pull-right" href="#">Sign in</a>
     </div>
   </form>
-  <a class="jumbotron-link" href="#">Sign in</a>
 </div>
 
   </div>
@@ -264,11 +410,11 @@
         <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-actions"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">name=</span><span class="s">"commit"</span> <span class="na">value=</span><span class="s">"Register"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-block"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">name=</span><span class="s">"commit"</span> <span class="na">value=</span><span class="s">"Register"</span> <span class="na">class=</span><span class="s">"btn btn-primary pull-right"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-links"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"pull-right"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sign in<span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/form&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"jumbotron-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sign in<span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;/div&gt;</span></pre>
     </div>
   </div>
