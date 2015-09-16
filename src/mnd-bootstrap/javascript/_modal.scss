@@ -9,9 +9,11 @@ category: JavaScript
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header text-center">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Modal title</h4>
+        <img style="width: 130px; height: 130px; border-radius: 50%;" src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" />
+        <h1>Success!</h1>
+        <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p>
       </div>
       <div class="modal-body">
         <p>
@@ -23,10 +25,6 @@ category: JavaScript
           * Mauris imperdiet gravida nisl a venenatis. Nulla vel orci congue, efficitur enim eu, cursus
           justo. Maecenas hendrerit eu elit et hendrerit. Mauris eget eros mi.
         </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -44,12 +42,31 @@ category: JavaScript
 }
 
 .modal-content {
-  @include box-shadow(0 2px 4px rgba(187, 187, 187, 0.4));
+  @include box-shadow(0 2px 4px 0 rgba(0, 0, 0, 0.5));
+  border-radius: 8px;
   overflow: hidden; // Prevents background color in modal header from bleeding through
+  position: relative;
+
+  .close {
+    position: absolute;
+    right: $gutter-vertical-half;
+    top: $gutter-vertical-half;
+  }
 }
 
 .modal-header {
-  background-color: $gray-lightest;
+  padding: $gutter-vertical-x2 $gutter-vertical-x3 $gutter-vertical;
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.modal-body {
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .modal-dialog {
