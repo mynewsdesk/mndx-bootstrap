@@ -1,35 +1,32 @@
   /*doc
  ---
- title: Units extended
- name: units_extended
+ title: Gutter
+ name: gutter
  category: Variables
  ---
 
- Those are the units that you can use
+ Those are the gutter variables that you can use. In the vertical flow we use <strong>steps of 30px</strong>, horizontal the rule is <strong>steps of 10px</strong>.
 <div class="clearfix">
   <div class="variable-box">
-    <span>$base-unit = $base-unit // 14px</span>
+    <span>$gutter-horizontal = 10px</span>
   </div>
   <div class="variable-box">
-    <span>$base-unit-x2 = $base-unit-x2</span>
+    <span>$gutter-horizontal-x2 = 20px</span>
   </div>
   <div class="variable-box">
-    <span>$base-unit-x3 = $base-unit-x3</span>
+    <span>$gutter-horizontal-x3 = 30px</span>
   </div>
   <div class="variable-box">
-    <span>$space = 10px</span>
+    <span>$gutter-vertical = 30px</span>
   </div>
   <div class="variable-box">
-    <span>$space-small = $space / 2</span>
+    <span>$gutter-vertical-x2 = 60px</span>
   </div>
   <div class="variable-box">
-    <span>$space-large = $space * 2</span>
+    <span>$gutter-vertical-x3 = 90px</span>
   </div>
   <div class="variable-box">
-    <span>$space-larger = $space * 4</span>
-  </div>
-  <div class="variable-box">
-    <span>$font-size-larger = 38px</span>
+    <span>$gutter-vertical-half = 15px</span>
   </div>
 </div>
  */
@@ -42,7 +39,7 @@ $gutter-vertical-x2: $gutter-vertical * 2;
 $gutter-vertical-x3: $gutter-vertical * 3;
 $gutter-vertical-half: $gutter-vertical / 2;
 
-$space: 10px;
+$space: $gutter-horizontal;
 $space-small: $space / 2;
 $space-large: $space * 2;
 $space-larger: $space * 4;
