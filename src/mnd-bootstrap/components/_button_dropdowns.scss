@@ -6,6 +6,7 @@ category: Components
 ---
 
 ```html_example_table
+<p>Single button dropdown - Primary & disabled</p>
 <div class="btn-group">
   <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Action <span class="caret"></span>
@@ -31,6 +32,7 @@ category: Components
   </ul>
 </div>
 
+<p>Single button dropdown - Default & disabled</p>
 <div class="btn-group">
   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Action <span class="caret"></span>
@@ -55,8 +57,64 @@ category: Components
     <li><a href="#">Separated link</a></li>
   </ul>
 </div>
+
+<p>Split button dropdown - Primary & Default</p>
+<div class="btn-group">
+  <button type="button" class="btn btn-split btn-default">Action</button>
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-split btn-primary">Action</button>
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
 ```
 */
+
+.btn-group {
+
+  >.btn {
+
+    +.dropdown-toggle {
+      padding-left: 16px;
+      padding-right: $gutter-horizontal-x2;
+    }
+  }
+
+  .btn-split {
+    padding-right: $gutter-horizontal;
+  }
+
+  >.btn-primary {
+
+    &.btn-split {
+      border-right-color: $white;
+    }
+
+    +.dropdown-toggle {
+     border-left-color: $white;
+    }
+  }
+}
 
 .btn-group.open {
 
@@ -73,6 +131,10 @@ category: Components
   >.btn-primary.dropdown-toggle {
     background: $btn-primary-bg-active;
     border-color: $btn-primary-bg-active;
+  }
+
+  .btn-split.btn-primary + .dropdown-toggle {
+    border-left-color: $white;
   }
 }
 
