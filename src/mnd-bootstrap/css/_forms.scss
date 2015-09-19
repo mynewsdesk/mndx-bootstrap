@@ -1,5 +1,3 @@
-@import "bourbon/app/assets/stylesheets/bourbon";
-
 /*doc
 ---
 title: Forms
@@ -8,74 +6,64 @@ category: CSS
 ---
 
 ```html_example_table
-<h2>Panel form</h2>
 <form>
-  <div class="panel panel-default">
-    <div class="panel-heading">Form heading</div>
-    <div class="panel-body">
-      <div class="form-group">
-        <label for="to">To</label>
-        <input type="email" class="form-control" id="to" placeholder="Enter email">
-      </div>
-      <div class="form-group has-success">
-        <label for="to">To (.has-success)</label>
-        <input type="email" class="form-control" id="to" placeholder="Enter email">
-        <p class="help-block">Example block-level help text here.</p>
-      </div>
-      <div class="form-group has-warning">
-        <label for="to">To (.has-warning)</label>
-        <input type="email" class="form-control" id="to" placeholder="Enter email">
-        <p class="help-block">Example block-level help text here.</p>
-      </div>
-      <div class="form-group has-error">
-        <label for="to">To (.has-error)</label>
-        <input type="email" class="form-control" id="to" placeholder="Enter email">
-        <p class="help-block">Example block-level help text here.</p>
-      </div>
-      <div class="form-group">
-        <label for="to">To (disabled input)</label>
-        <input type="email" class="form-control" id="to" placeholder=":disabled" disabled>
-        <p class="help-block">Example block-level help text here.</p>
-      </div>
-      <div class="form-group">
-        <label for="subject">Subject</label>
-        <input type="text" class="form-control" id="subject" placeholder="Enter subject">
-      </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea class="form-control" id="subject" placeholder="Enter message"></textarea>
-      </div>
-      <div class="form-group">
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" name="samecheck"> Check me out
-          </label>
-          <br>
-          <label>
-            <input type="checkbox" name="samecheck"> Check me out again
-          </label>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="radio">
-          <label>
-            <input type="radio" name="sameradio"> Check me out
-          </label>
-          <br>
-          <label>
-            <input type="radio" name="sameradio"> Check me out again
-          </label>
-        </div>
-      </div>
-      <div class="form-group">
-        <select class="form-control">
-          <option>option 1</option>
-          <option>option 2</option>
-          <option>option 3</option>
-          <option>option 4</option>
-        </select>
-      </div>
+  <div class="form-group">
+    <label for="to">Default</label>
+    <input type="email" class="form-control" id="to" placeholder="Enter email">
+  </div>
+  <div class="form-group has-success">
+    <label for="to">Success</label>
+    <input type="email" class="form-control" id="to" placeholder="Enter email">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="form-group has-warning">
+    <label for="to">Warning</label>
+    <input type="email" class="form-control" id="to" placeholder="Enter email">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="form-group has-error">
+    <label for="to">Error</label>
+    <input type="email" class="form-control" id="to" placeholder="Enter email">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="form-group">
+    <label for="to">Disabled input</label>
+    <input type="email" class="form-control" id="to" placeholder=":disabled" disabled>
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="form-group">
+    <label for="message">Textarea</label>
+    <textarea class="form-control" id="subject" placeholder="Enter message"></textarea>
+  </div>
+  <div class="form-group">
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" name="samecheck"> Check me out
+      </label>
+      <br>
+      <label>
+        <input type="checkbox" name="samecheck"> Check me out again
+      </label>
     </div>
+  </div>
+  <div class="form-group">
+    <div class="radio">
+      <label>
+        <input type="radio" name="sameradio"> Check me out
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="sameradio"> Check me out again
+      </label>
+    </div>
+  </div>
+  <div class="form-group">
+    <select class="form-control">
+      <option>option 1</option>
+      <option>option 2</option>
+      <option>option 3</option>
+      <option>option 4</option>
+    </select>
   </div>
   <div class="form-group text-right form-actions">
     <button type="reset" class="btn btn-default">Cancel</button>
@@ -83,13 +71,13 @@ category: CSS
   </div>
 </form>
 
-<h2>Form links</h2>
+
 <form>
   <div class="form-group">
-    <label for="favorite">Favorite PO</label>
-    <input type="text" class="form-control" id="favorite" placeholder="Mike">
+    <label for="form-links">Form links example</label>
+    <input type="text" class="form-control" id="form-links" placeholder="Organization name">
   </div>
-  <button type="submit" class="btn btn-primary pull-right">Send spam</button>
+  <button type="submit" class="btn btn-primary pull-right">Submit</button>
   <div class="form-group form-links">
     <a href="#" class="pull-left">Link one</a>
     <a href="#" class="pull-left">Link two</a>
@@ -98,7 +86,6 @@ category: CSS
 </form>
 ```
 */
-
 
 .form-group {
   margin-bottom: $space-large;
