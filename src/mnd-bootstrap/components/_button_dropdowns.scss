@@ -93,9 +93,9 @@ category: Components
 
 .btn-group {
 
-  >.btn {
+  > .btn {
 
-    +.dropdown-toggle {
+    + .dropdown-toggle {
       padding-left: 16px;
       padding-right: $gutter-horizontal-x2;
     }
@@ -105,13 +105,13 @@ category: Components
     padding-right: $gutter-horizontal;
   }
 
-  >.btn-primary {
+  > .btn-primary {
 
     &.btn-split {
       border-right-color: $white;
     }
 
-    +.dropdown-toggle {
+    + .dropdown-toggle {
       border-left-color: $white;
     }
   }
@@ -123,13 +123,13 @@ category: Components
     box-shadow: none;
   }
 
-  >.btn-default.dropdown-toggle {
+  > .btn-default.dropdown-toggle {
     background: $btn-default-bg;
     border-color: $btn-default-border-active;
     color: $btn-default-color-active;
   }
 
-  >.btn-primary.dropdown-toggle {
+  > .btn-primary.dropdown-toggle {
     background: $btn-primary-bg-active;
     border-color: $btn-primary-bg-active;
   }
@@ -152,9 +152,9 @@ category: Components
   padding-top: 20px;
   right: -5px;
 
-  >li {
+  > li {
 
-    >a {
+    > a {
       padding: 5px 25px;
     }
   }
