@@ -32,10 +32,10 @@ Component to display numbers
   @include display(flex);
   @include flex-direction(column);
   @include align-items(center);
-  border-radius: $border-radius-base;
   background-color: $gray-lightest;
-  padding-top: $padding-inside-very-large;
+  border-radius: $border-radius-base;
   padding-bottom: $padding-inside-very-large;
+  padding-top: $padding-inside-very-large;
 }
 
 @media (min-width: $screen-sm-min) {
@@ -50,7 +50,7 @@ Component to display numbers
 }
 
 .scoreboard-box-number {
-  font-size: $font-size-very-large;
   color: $black;
+  font-size: $font-size-very-large;
   line-height: 1.1em;
 }
