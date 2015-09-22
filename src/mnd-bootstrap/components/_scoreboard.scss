@@ -1,0 +1,49 @@
+/*doc
+---
+title: Scoreboard
+name: scoreboard
+category: Components
+---
+Component to display numbers
+
+```html_example
+<div class="scoreboard">
+  <div class="scoreboard-box">
+    <div class="scoreboard-box-number">124</div>
+    <div class="scoreboard-box-label">Sent</div>
+  </div>
+  <div class="scoreboard-box">
+    <div class="scoreboard-box-number">109</div>
+    <div class="scoreboard-box-label">Delived</div>
+  </div>
+  <div class="scoreboard-box">
+    <div class="scoreboard-box-number">49</div>
+    <div class="scoreboard-box-label">Reached</div>
+  </div>
+  <div class="scoreboard-box">
+    <div class="scoreboard-box-number">24</div>
+    <div class="scoreboard-box-label">Engaged</div>
+  </div>
+</div>
+```
+*/
+
+.scoreboard {
+  @include display(flex);
+  @include align-items(center);
+  border-radius: $border-radius-base;
+  background-color: $gray-lightest;
+  padding-top: $padding-inside-very-large;
+  padding-bottom: $padding-inside-very-large;
+}
+
+.scoreboard-box {
+  @include flex(1);
+  text-align: center;
+}
+
+.scoreboard-box-number {
+  font-size: $font-size-very-large;
+  color: $black;
+  line-height: 1.1em;
+}
