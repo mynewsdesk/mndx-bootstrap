@@ -2715,7 +2715,7 @@ body #sb-site a[name] { content: ""; display: block; height: 76px; margin-top: -
 
 .form-actions { padding-top: 20px; }
 
-.form-control { background: transparent; border: 1px solid #ddd; box-shadow: none; }
+.form-control { background: #fff; border: 1px solid #ddd; box-shadow: none; }
 
 .form-control::-webkit-input-placeholder { color: #999999; font-style: italic; }
 
