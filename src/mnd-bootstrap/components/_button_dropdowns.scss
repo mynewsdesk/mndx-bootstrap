@@ -7,20 +7,7 @@ category: Components
 
 ```html_example_table
 <div class="btn-group">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Action <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
-</div>
-<div class="btn-group">
-  <button type="button" disabled class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Action <span class="caret"></span>
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary <span class="caret"></span>
   </button>
   <ul class="dropdown-menu">
     <li><a href="#">Action</a></li>
@@ -32,8 +19,7 @@ category: Components
 </div>
 
 <div class="btn-group">
-  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Action <span class="caret"></span>
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Default <span class="caret"></span>
   </button>
   <ul class="dropdown-menu">
     <li><a href="#">Action</a></li>
@@ -43,9 +29,55 @@ category: Components
     <li><a href="#">Separated link</a></li>
   </ul>
 </div>
+
 <div class="btn-group">
-  <button type="button" disabled class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Action <span class="caret"></span>
+  <button type="button" disabled class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Disabled <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+
+<div class="btn-group">
+  <button type="button" class="btn btn-split btn-primary">Primary</button>
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+<div class="btn-group">
+  <button type="button" class="btn btn-split btn-primary">Action</button>
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+<div class="btn-group">
+  <button type="button" class="btn btn-split btn-default">Action</button>
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
   </button>
   <ul class="dropdown-menu">
     <li><a href="#">Action</a></li>
@@ -58,21 +90,55 @@ category: Components
 ```
 */
 
+
+.btn-group {
+
+  > .btn {
+
+    + .dropdown-toggle {
+      padding-left: 16px;
+      padding-right: $gutter-horizontal-x2;
+    }
+  }
+
+  .btn-split {
+    padding-right: $gutter-horizontal;
+  }
+
+  > .btn-primary {
+
+    &.btn-split {
+      border-right-color: $white;
+    }
+
+    + .dropdown-toggle {
+      border-left-color: $white;
+    }
+  }
+}
+
 .btn-group.open {
 
   .dropdown-toggle {
     box-shadow: none;
   }
 
-  >.btn-default.dropdown-toggle {
+  > .btn-default.dropdown-toggle {
     background: $btn-default-bg;
     border-color: $btn-default-border-active;
     color: $btn-default-color-active;
   }
 
-  >.btn-primary.dropdown-toggle {
+  > .btn-primary.dropdown-toggle {
     background: $btn-primary-bg-active;
     border-color: $btn-primary-bg-active;
+  }
+
+  >.btn-primary.btn-split {
+
+    +.dropdown-toggle {
+      border-left-color: $white;
+    }
   }
 }
 
@@ -86,9 +152,9 @@ category: Components
   padding-top: 20px;
   right: -5px;
 
-  >li {
+  > li {
 
-    >a {
+    > a {
       padding: 5px 25px;
     }
   }
