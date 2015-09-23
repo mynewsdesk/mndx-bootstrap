@@ -29,6 +29,8 @@ category: JavaScript
       <div class="modal-footer">
         <button type="button" class="btn btn-default"
           data-dismiss="modal">Secondary Action</button>
+        <button type="button" class="btn btn-default"
+          data-dismiss="modal">Secondary Action</button>
         <button type="button" class="btn btn-primary">Primary Action</button>
       </div>
     </div>
@@ -85,6 +87,12 @@ category: JavaScript
   .btn:first-child {
     margin-left: 0;
   }
+
+  // Override bootstrap, we want some space between 2 buttons
+  .btn + .btn {
+    margin-left: $padding-inside * 2;
+  }
+
 }
 
 .modal-dialog {
