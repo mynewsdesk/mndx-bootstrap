@@ -45,22 +45,23 @@
 */
 
 $jumbotron-padding-x2: $jumbotron-padding * 2;
+
 .jumbotron {
-  background-color: #fff;
+  background-color: $white;
   border: 1px solid $gray-lighten;
   border-radius: 4px;
-  margin: $jumbotron-padding auto 0;
+  box-shadow: $gray-light 0 2px 4px;
+  margin: 0 auto;
   max-width: 640px;
   padding: $jumbotron-padding;
   text-align: center;
-  box-shadow: $gray-light 0px 2px 4px;
 
   &.jumbotron-fixed {
     width: 640px;
   }
 
   @media screen and (min-width: $screen-sm-min) {
-    margin: $space-larger auto 0;
+    margin: 0 auto;
     padding: $jumbotron-padding-x2;
   }
 
@@ -116,22 +117,22 @@ $jumbotron-padding-x2: $jumbotron-padding * 2;
 
     h1,
     p {
-      color: #fff;
+      color: $white;
     }
   }
 
   .control-label {
-    color: #fff;
+    color: $white;
   }
 
   .form-control {
-    background: #fff;
+    background: $white;
   }
 
   .form-links {
 
     a {
-      color: #fff;
+      color: $white;
     }
   }
 }
