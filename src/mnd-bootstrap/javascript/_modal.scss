@@ -26,6 +26,11 @@ category: JavaScript
           justo. Maecenas hendrerit eu elit et hendrerit. Mauris eget eros mi.
         </p>
       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default"
+          data-dismiss="modal">Secondary Action</button>
+        <button type="button" class="btn btn-primary">Primary Action</button>
+      </div>
     </div>
   </div>
 </div>
@@ -70,6 +75,15 @@ category: JavaScript
 
   p:last-child {
     margin-bottom: 0;
+  }
+}
+
+.modal-footer {
+  padding-bottom: $padding-inside * 6;
+  text-align: center;
+
+  .btn:first-child {
+    margin-left: 0;
   }
 }
 
