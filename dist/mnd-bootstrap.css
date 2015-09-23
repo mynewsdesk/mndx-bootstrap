@@ -2812,26 +2812,16 @@ parent: typo
 ```
 */
 /*doc --- title: Body copy name: body_copy parent: typo --- ```html_example <p class="lead"> <strong>.lead</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs. Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger. Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter. Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round. Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin. </p> <p> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs. Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger. Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter. Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round. Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin. </p> ``` */
-/*doc
----
-title: Alerts
-name: alerts
-category: Components
----
- Alerts should always starts with a word that tell the user more about the feedback in short.
-
-```html_example
-<div class="alert alert-success" role="alert"><span class="label label-success">New</span> <strong>Wohooo!</strong> Thanks for signing up!</div>
-<div class="alert alert-info" role="alert"><span class="label label-info">Info</span> <strong>Morning!</strong> Looks like you are happy today!</div>
-<div class="alert alert-warning" role="alert"><span class="label label-warning">Schedule</span> <strong>Hey!</strong> You have two scheduled posts!<a class="pull-right" href="#">View scheduled posts</a></div>
-<div class="alert alert-danger" role="alert"><span class="label label-danger">Warning</span> <strong>Grrr!</strong> Don't drop coffee on my keyboard again!</div>
-```
-*/
-.alert { padding: 14px 20px 15px; }
+/*doc --- title: Alerts name: alerts category: Components --- Alerts should always starts with a word that tell the user more about the feedback in short. ```html_example <div class="alert alert-success alert-dismissable" role="alert"> <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> <span class="label label-success">New</span> <strong>Wohooo!</strong> Thanks for signing up! </div> <div class="alert alert-info alert-dismissable" role="alert"> <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> <span class="label label-info">Info</span> <strong>Morning!</strong> Looks like you are happy today! <a class="pull-right" href="#">Yes I am!</a> </div> <div class="alert alert-warning" role="alert"><span class="label label-warning">Schedule</span> <strong>Hey!</strong> You have two scheduled posts!<a class="pull-right" href="#">View scheduled posts</a></div> <div class="alert alert-danger" role="alert"><span class="label label-danger">Warning</span> <strong>Grrr!</strong> Don't drop coffee on my keyboard again!</div> ``` */
+.alert { padding: 15px 20px; }
 
 .alert .label { border-radius: 2px; font-size: 80%; margin-right: 20px; padding: 2px 7px 3px; text-transform: uppercase; }
 
 .alert a { text-decoration: underline; }
+
+.alert-dismissable { padding-right: 30px; }
+
+.alert-dismissable .close { right: -12px; top: 0; }
 
 /*doc
 //---
