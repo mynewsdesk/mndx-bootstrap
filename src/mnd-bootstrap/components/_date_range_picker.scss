@@ -1,0 +1,30 @@
+/*doc
+---
+title: Date range picker
+name: date_range_picker
+category: Components
+---
+
+```html_example_table
+<div class="btn-group">
+  <button class="btn btn-default btn-sm" aria-role="group" aria-label="datepicker" tabindex="1">
+    2015-07-06
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+    <!-- Insert calendar here -->
+  </button>
+  <button class="btn btn-default btn-sm" aria-role="group" aria-label="datepicker" tabindex="1">
+    2015-09-23
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+    <!-- Insert calendar here -->
+  </button>
+</div>
+```
+*/
+
+.btn-group .btn .date-picker-field {
+  border: none;
+  background-color: transparent;
+}
+
