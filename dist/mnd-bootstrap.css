@@ -3017,18 +3017,13 @@ A calendar, designed for the datepicker
 //category: Components
 //---
 */
-/*doc --- title: List group name: list_group category: Components --- ```html_example <ul class="list-group"> <li class="list-group-item">This is my Story</li> <li class="list-group-item">Item 2</li> <li class="list-group-item">Item 3</li> </ul> ``` */
-/*doc --- title: Striped List Group name: list_group_striped parent: list_group --- ```html_example <ul class="list-group list-group-striped"> <li class="list-group-item">This is my Story - February 06, 2015 15:53</li> <li class="list-group-item">Item 2</li> <li class="list-group-item">Item 3</li> </ul> ``` */
-.list-group { border: none; }
-
-.list-group-item { border-width: 1px 0; }
-
-.list-group-item:first-child { border-top-left-radius: 0; border-top-right-radius: 0; }
-
-.list-group-item:last-child { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
-
-.list-group-striped .list-group-item:nth-child(odd) { background: #b8ebff; }
-
+/*doc
+//---
+//title: List group
+//name: list_group
+//category: Components
+//---
+*/
 /*doc
 //---
 //title: Media object
@@ -3037,11 +3032,11 @@ A calendar, designed for the datepicker
 //---
 */
 /*doc
----
-title: Navbar
-name: navbar
-category: Components
----
+//---
+//title: Navbar
+//name: navbar
+//category: Components
+//---
 */
 /*doc
 //---
@@ -3080,11 +3075,11 @@ category: Components
 //---
 */
 /*doc
----
-title: Sections
-name: sections
-category: Components
----
+//---
+//title: Sections
+//name: sections
+//category: Components
+//---
 Modular section setup which allows using a combination of header, body and footer.
 
 ```html_example
@@ -3153,11 +3148,11 @@ section > .content a { font-weight: normal; }
 .scoreboard-box-number { color: #000; font-size: 48px; line-height: 1.1em; }
 
 /*doc
----
-title: Thumbnails
-name: thumbnails
-category: Components
----
+//---
+//title: Thumbnails
+//name: thumbnails
+//category: Components
+//---
 */
 /*doc
 //---
