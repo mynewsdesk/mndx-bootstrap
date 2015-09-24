@@ -2695,11 +2695,17 @@ body #sb-site a[name] { content: ""; display: block; height: 76px; margin-top: -
 
 .btn-default:active, .btn-primary:active:disabled, .btn-default:focus, .btn-primary:focus:disabled, .btn-default:active:focus, .btn-primary:active:focus:disabled { background: #fff; border-color: #666; box-shadow: none; color: #333; }
 
+.btn-default:disabled:hover, .btn-primary:disabled:hover { color: #888; }
+
 .btn-primary:hover { background: #00998a; border-color: #00998a; }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:active:focus { background: #00665c; border-color: #00665c; box-shadow: none; }
 
 .btn-sm, .btn-group-sm > .btn { font-size: 15px; padding-top: 8px; padding-bottom: 8px; }
+
+[disabled].btn-primary:disabled { opacity: 0.4; filter: alpha(opacity=40); background: #00ccb8; color: #fff; }
+
+[disabled].btn-primary:disabled:hover { background: #00ccb8; }
 
 /*doc
 //---
