@@ -2971,11 +2971,11 @@ A calendar, designed for the datepicker
 //---
 */
 /*doc --- title: Jumbotron name: jumbotron category: Components --- The jumbotron is used for specific forms and popups. Add .jumbotron-fixed for fixed width (640px). ```html_example <div class="jumbotron"> <div class="jumbotron-description"> <h1>Register a new account</h1> <p>You have to register to publish your stories for the world to see. Please take a moment to enter these details.</p> </div> <form accept-charset="UTF-8" action="/" method="post" role="form"> <div class="row"> <div class="col-sm-12 "> <div class="form-group email optional mndx_user_email"> <label class="email optional control-label" for="mndx_user_email">Email</label> <input class="string email optional form-control" type="email" name="mndx_user[email]" id="mndx_user_email" /> </div> </div> </div> <div class="row"> <div class="col-sm-6"> <div class="form-group password optional"> <label class="password optional control-label" for="mndx_user_password">New password</label> <input class="password optional form-control" type="password" name="mndx_user[password]" id="mndx_user_password" /> </div> </div> <div class="col-sm-6"> <div class="form-group password optional"> <label class="password optional control-label" for="mndx_user_password_confirmation">Confirm new password</label> <input class="password optional form-control" type="password" name="mndx_user[password_confirmation]" id="mndx_user_password_confirmation" /> </div> </div> </div> <input type="submit" name="commit" value="Register" class="btn btn-primary pull-right" /> <div class="form-group form-links"> <a class="pull-right" href="#">Sign in</a> </div> </form> </div> ``` */
-.jumbotron { background-color: #fff; border: 1px solid #ddd; border-radius: 4px; margin: 30px auto 0; max-width: 640px; padding: 30px; text-align: center; box-shadow: #999999 0px 2px 4px; }
+.jumbotron { background-color: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: #999999 0 2px 4px; margin: 0 auto; max-width: 640px; padding: 30px; text-align: center; }
 
 .jumbotron.jumbotron-fixed { width: 640px; }
 
-@media screen and (min-width: 768px) { .jumbotron { margin: 40px auto 0; padding: 60px; } }
+@media screen and (min-width: 768px) { .jumbotron { margin: 0 auto; padding: 60px; } }
 
 .jumbotron .jumbotron-description { margin-bottom: 20px; }
 
