@@ -50,9 +50,13 @@ $base-unit-x3:      ceil($base-unit * 3);
 
 $font-size-larger: 38px;
 
+
 // Standard box padding
 $padding-inside: 10px;
 $padding-inside-very-large: 50px;
+
+// Specific component padding
+$btn-sm-vertical-padding: 8px;
 
 /*doc
  ---

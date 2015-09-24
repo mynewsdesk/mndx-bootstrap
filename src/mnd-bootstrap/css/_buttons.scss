@@ -57,4 +57,10 @@ category: CSS
       @extend .btn-default;
     }
   }
+
+  &-sm {
+    font-size: $font-size-base;
+    padding-top: $btn-sm-vertical-padding;
+    padding-bottom: $btn-sm-vertical-padding;
+  }
 }

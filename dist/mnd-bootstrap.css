@@ -2699,6 +2699,8 @@ body #sb-site a[name] { content: ""; display: block; height: 76px; margin-top: -
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:active:focus { background: #00665c; border-color: #00665c; box-shadow: none; }
 
+.btn-sm, .btn-group-sm > .btn { font-size: 15px; padding-top: 8px; padding-bottom: 8px; }
+
 /*doc
 //---
 //title: Code
