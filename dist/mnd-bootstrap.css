@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*doc --- title: Colors name: colors category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-darker"> <span>$gray-darker</span> </div> <div class="color-box gray-dark"> <span>$gray-dark</span> </div> <div class="color-box gray"> <span>$gray</span> </div> <div class="color-box gray-light"> <span>$gray-light</span> </div> <div class="color-box gray-lighter"> <span>$gray-lighter</span> </div> <div class="color-box brand-primary"> <span>$brand-primary</span> </div> <div class="color-box brand-success"> <span>$brand-success</span> </div> <div class="color-box brand-info"> <span>$brand-info</span> </div> <div class="color-box brand-warning"> <span>$brand-warning</span> </div> <div class="color-box brand-danger"> <span>$brand-danger</span> </div> </div> */
 @import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic");
-/*doc --- title: Units extended name: units_extended category: Variables --- Those are the units that you can use <div class="clearfix"> <div class="variable-box"> <span>$base-unit = $base-unit // 14px</span> </div> <div class="variable-box"> <span>$base-unit-x2 = $base-unit-x2</span> </div> <div class="variable-box"> <span>$base-unit-x3 = $base-unit-x3</span> </div> <div class="variable-box"> <span>$space = 10px</span> </div> <div class="variable-box"> <span>$space-small = $space / 2</span> </div> <div class="variable-box"> <span>$space-large = $space * 2</span> </div> <div class="variable-box"> <span>$space-larger = $space * 4</span> </div> <div class="variable-box"> <span>$font-size-larger = 38px</span> </div> </div> */
+/*doc --- title: Gutter name: gutter category: Variables --- Those are the gutter variables that you can use. In the vertical flow we use <strong>steps of 30px</strong>, horizontal the rule is <strong>steps of 10px</strong>. <div class="clearfix"> <div class="variable-box"> <span>$gutter-horizontal = 10px</span> </div> <div class="variable-box"> <span>$gutter-horizontal-x2 = 20px</span> </div> <div class="variable-box"> <span>$gutter-horizontal-x3 = 30px</span> </div> <div class="variable-box"> <span>$gutter-vertical = 30px</span> </div> <div class="variable-box"> <span>$gutter-vertical-x2 = 60px</span> </div> <div class="variable-box"> <span>$gutter-vertical-x3 = 90px</span> </div> <div class="variable-box"> <span>$gutter-vertical-half = 15px</span> </div> </div> */
 /*doc --- title: Colors extended name: colors_extended category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-lighten"> <span>$gray-lighten</span> </div> <div class="color-box gray-lightest"> <span>$gray-lightest</span> </div> <div class="color-box white"> <span>$white</span> </div> <div class="color-box brand-primary-custom"> <span>$brand-primary-custom</span> </div> <div class="color-box blue-light"> <span>$blue-light</span> </div> </div> */
 /*! Bootstrap v3.3.5 (http://getbootstrap.com) Copyright 2011-2015 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -669,19 +669,19 @@ hr { margin-top: 21px; margin-bottom: 21px; border: 0; border-top: 1px solid #ee
 
 [role="button"] { cursor: pointer; }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: inherit; font-weight: 600; line-height: 1.1; color: #333333; }
+h1, h2, h3, h4, h5, h6, .h1, .modal-header .modal-title, .h2, .h3, .h4, .h5, .h6 { font-family: inherit; font-weight: 600; line-height: 1.1; color: #333333; }
 
-h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .small, h5 small, h5 .small, h6 small, h6 .small, .h1 small, .h1 .small, .h2 small, .h2 .small, .h3 small, .h3 .small, .h4 small, .h4 .small, .h5 small, .h5 .small, .h6 small, .h6 .small { font-weight: normal; line-height: 1; color: #999999; }
+h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .small, h5 small, h5 .small, h6 small, h6 .small, .h1 small, .modal-header .modal-title small, .h1 .small, .modal-header .modal-title .small, .h2 small, .h2 .small, .h3 small, .h3 .small, .h4 small, .h4 .small, .h5 small, .h5 .small, .h6 small, .h6 .small { font-weight: normal; line-height: 1; color: #999999; }
 
-h1, .h1, h2, .h2, h3, .h3 { margin-top: 21px; margin-bottom: 10.5px; }
+h1, .h1, .modal-header .modal-title, h2, .h2, h3, .h3 { margin-top: 21px; margin-bottom: 10.5px; }
 
-h1 small, h1 .small, .h1 small, .h1 .small, h2 small, h2 .small, .h2 small, .h2 .small, h3 small, h3 .small, .h3 small, .h3 .small { font-size: 65%; }
+h1 small, h1 .small, .h1 small, .modal-header .modal-title small, .h1 .small, .modal-header .modal-title .small, h2 small, h2 .small, .h2 small, .h2 .small, h3 small, h3 .small, .h3 small, .h3 .small { font-size: 65%; }
 
 h4, .h4, h5, .h5, h6, .h6 { margin-top: 10.5px; margin-bottom: 10.5px; }
 
 h4 small, h4 .small, .h4 small, .h4 .small, h5 small, h5 .small, .h5 small, .h5 .small, h6 small, h6 .small, .h6 small, .h6 .small { font-size: 75%; }
 
-h1, .h1 { font-size: 36px; }
+h1, .h1, .modal-header .modal-title { font-size: 36px; }
 
 h2, .h2 { font-size: 30px; }
 
@@ -2031,7 +2031,7 @@ a.badge:hover, a.badge:focus { color: #fff; text-decoration: none; cursor: point
 
 .jumbotron { padding-top: 30px; padding-bottom: 30px; margin-bottom: 30px; color: inherit; background-color: #eeeeee; }
 
-.jumbotron h1, .jumbotron .h1 { color: inherit; }
+.jumbotron h1, .jumbotron .h1, .jumbotron .modal-header .modal-title, .modal-header .jumbotron .modal-title { color: inherit; }
 
 .jumbotron p { margin-bottom: 15px; font-size: 23px; font-weight: 200; }
 
@@ -2043,7 +2043,7 @@ a.badge:hover, a.badge:focus { color: #fff; text-decoration: none; cursor: point
 
 @media screen and (min-width: 768px) { .jumbotron { padding-top: 48px; padding-bottom: 48px; }
   .container .jumbotron, .container-fluid .jumbotron { padding-left: 60px; padding-right: 60px; }
-  .jumbotron h1, .jumbotron .h1 { font-size: 68px; } }
+  .jumbotron h1, .jumbotron .h1, .jumbotron .modal-header .modal-title, .modal-header .jumbotron .modal-title { font-size: 68px; } }
 
 .thumbnail { display: block; padding: 4px; margin-bottom: 21px; line-height: 1.42857; background-color: #fff; border: 1px solid #ddd; border-radius: 6px; -webkit-transition: border 0.2s ease-in-out; -o-transition: border 0.2s ease-in-out; transition: border 0.2s ease-in-out; }
 
@@ -2671,14 +2671,14 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 @media print { .hidden-print { display: none !important; } }
 
-/*doc --- title: Units extended name: units_extended category: Variables --- Those are the units that you can use <div class="clearfix"> <div class="variable-box"> <span>$base-unit = $base-unit // 14px</span> </div> <div class="variable-box"> <span>$base-unit-x2 = $base-unit-x2</span> </div> <div class="variable-box"> <span>$base-unit-x3 = $base-unit-x3</span> </div> <div class="variable-box"> <span>$space = 10px</span> </div> <div class="variable-box"> <span>$space-small = $space / 2</span> </div> <div class="variable-box"> <span>$space-large = $space * 2</span> </div> <div class="variable-box"> <span>$space-larger = $space * 4</span> </div> <div class="variable-box"> <span>$font-size-larger = 38px</span> </div> </div> */
+/*doc --- title: Gutter name: gutter category: Variables --- Those are the gutter variables that you can use. In the vertical flow we use <strong>steps of 30px</strong>, horizontal the rule is <strong>steps of 10px</strong>. <div class="clearfix"> <div class="variable-box"> <span>$gutter-horizontal = 10px</span> </div> <div class="variable-box"> <span>$gutter-horizontal-x2 = 20px</span> </div> <div class="variable-box"> <span>$gutter-horizontal-x3 = 30px</span> </div> <div class="variable-box"> <span>$gutter-vertical = 30px</span> </div> <div class="variable-box"> <span>$gutter-vertical-x2 = 60px</span> </div> <div class="variable-box"> <span>$gutter-vertical-x3 = 90px</span> </div> <div class="variable-box"> <span>$gutter-vertical-half = 15px</span> </div> </div> */
 /*doc --- title: Colors extended name: colors_extended category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-lighten"> <span>$gray-lighten</span> </div> <div class="color-box gray-lightest"> <span>$gray-lightest</span> </div> <div class="color-box white"> <span>$white</span> </div> <div class="color-box brand-primary-custom"> <span>$brand-primary-custom</span> </div> <div class="color-box blue-light"> <span>$blue-light</span> </div> </div> */
 body { -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
 
 body #sb-site a[name] { content: ""; display: block; height: 76px; margin-top: -76px; }
 
 /*doc --- title: Colors name: colors category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-darker"> <span>$gray-darker</span> </div> <div class="color-box gray-dark"> <span>$gray-dark</span> </div> <div class="color-box gray"> <span>$gray</span> </div> <div class="color-box gray-light"> <span>$gray-light</span> </div> <div class="color-box gray-lighter"> <span>$gray-lighter</span> </div> <div class="color-box brand-primary"> <span>$brand-primary</span> </div> <div class="color-box brand-success"> <span>$brand-success</span> </div> <div class="color-box brand-info"> <span>$brand-info</span> </div> <div class="color-box brand-warning"> <span>$brand-warning</span> </div> <div class="color-box brand-danger"> <span>$brand-danger</span> </div> </div> */
-/*doc --- title: Units extended name: units_extended category: Variables --- Those are the units that you can use <div class="clearfix"> <div class="variable-box"> <span>$base-unit = $base-unit // 14px</span> </div> <div class="variable-box"> <span>$base-unit-x2 = $base-unit-x2</span> </div> <div class="variable-box"> <span>$base-unit-x3 = $base-unit-x3</span> </div> <div class="variable-box"> <span>$space = 10px</span> </div> <div class="variable-box"> <span>$space-small = $space / 2</span> </div> <div class="variable-box"> <span>$space-large = $space * 2</span> </div> <div class="variable-box"> <span>$space-larger = $space * 4</span> </div> <div class="variable-box"> <span>$font-size-larger = 38px</span> </div> </div> */
+/*doc --- title: Gutter name: gutter category: Variables --- Those are the gutter variables that you can use. In the vertical flow we use <strong>steps of 30px</strong>, horizontal the rule is <strong>steps of 10px</strong>. <div class="clearfix"> <div class="variable-box"> <span>$gutter-horizontal = 10px</span> </div> <div class="variable-box"> <span>$gutter-horizontal-x2 = 20px</span> </div> <div class="variable-box"> <span>$gutter-horizontal-x3 = 30px</span> </div> <div class="variable-box"> <span>$gutter-vertical = 30px</span> </div> <div class="variable-box"> <span>$gutter-vertical-x2 = 60px</span> </div> <div class="variable-box"> <span>$gutter-vertical-x3 = 90px</span> </div> <div class="variable-box"> <span>$gutter-vertical-half = 15px</span> </div> </div> */
 /*doc --- title: Colors extended name: colors_extended category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-lighten"> <span>$gray-lighten</span> </div> <div class="color-box gray-lightest"> <span>$gray-lightest</span> </div> <div class="color-box white"> <span>$white</span> </div> <div class="color-box brand-primary-custom"> <span>$brand-primary-custom</span> </div> <div class="color-box blue-light"> <span>$blue-light</span> </div> </div> */
 .table tbody > tr > td.vert-align { vertical-align: middle; }
 
@@ -2706,7 +2706,7 @@ body #sb-site a[name] { content: ""; display: block; height: 76px; margin-top: -
 //category: CSS
 //---
 */
-/*doc --- title: Forms name: forms category: CSS --- ```html_example_table <h2>Panel form</h2> <form> <div class="panel panel-default"> <div class="panel-heading">Form heading</div> <div class="panel-body"> <div class="form-group"> <label for="to">To</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> </div> <div class="form-group has-success"> <label for="to">To (.has-success)</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-warning"> <label for="to">To (.has-warning)</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-error"> <label for="to">To (.has-error)</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group"> <label for="to">To (disabled input)</label> <input type="email" class="form-control" id="to" placeholder=":disabled" disabled> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group"> <label for="subject">Subject</label> <input type="text" class="form-control" id="subject" placeholder="Enter subject"> </div> <div class="form-group"> <label for="message">Message</label> <textarea class="form-control" id="subject" placeholder="Enter message"></textarea> </div> <div class="form-group"> <div class="checkbox"> <label> <input type="checkbox" name="samecheck"> Check me out </label> <br> <label> <input type="checkbox" name="samecheck"> Check me out again </label> </div> </div> <div class="form-group"> <div class="radio"> <label> <input type="radio" name="sameradio"> Check me out </label> <br> <label> <input type="radio" name="sameradio"> Check me out again </label> </div> </div> <div class="form-group"> <select class="form-control"> <option>option 1</option> <option>option 2</option> <option>option 3</option> <option>option 4</option> </select> </div> </div> </div> <div class="form-group text-right form-actions"> <button type="reset" class="btn btn-default">Cancel</button> <button type="submit" class="btn btn-primary">Submit</button> </div> </form> <h2>Form links</h2> <form> <div class="form-group"> <label for="favorite">Favorite PO</label> <input type="text" class="form-control" id="favorite" placeholder="Mike"> </div> <button type="submit" class="btn btn-primary pull-right">Send spam</button> <div class="form-group form-links"> <a href="#" class="pull-left">Link one</a> <a href="#" class="pull-left">Link two</a> <a href="#" class="pull-right">Link three</a> </div> </form> ``` */
+/*doc --- title: Forms name: forms category: CSS --- ```html_example_table <form> <div class="form-group"> <label for="to">Default</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> </div> <div class="form-group has-success"> <label for="to">Success</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-warning"> <label for="to">Warning</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-error"> <label for="to">Error</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group"> <label for="to">Disabled input</label> <input type="email" class="form-control" id="to" placeholder=":disabled" disabled> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group"> <label for="message">Textarea</label> <textarea class="form-control" id="subject" placeholder="Enter message"></textarea> </div> <div class="form-group"> <div class="checkbox"> <label> <input type="checkbox" name="samecheck"> Check me out </label> <br> <label> <input type="checkbox" name="samecheck"> Check me out again </label> </div> </div> <div class="form-group"> <div class="radio"> <label> <input type="radio" name="sameradio"> Check me out </label> <br> <label> <input type="radio" name="sameradio"> Check me out again </label> </div> </div> <div class="form-group"> <select class="form-control"> <option>option 1</option> <option>option 2</option> <option>option 3</option> <option>option 4</option> </select> </div> <div class="form-group text-right form-actions"> <button type="reset" class="btn btn-default">Cancel</button> <button type="submit" class="btn btn-primary">Submit</button> </div> </form> <form> <div class="form-group"> <label for="form-links">Form links example</label> <input type="text" class="form-control" id="form-links" placeholder="Organization name"> </div> <button type="submit" class="btn btn-primary pull-right">Submit</button> <div class="form-group form-links"> <a href="#" class="pull-left">Link one</a> <a href="#" class="pull-left">Link two</a> <a href="#" class="pull-right">Link three</a> </div> </form> ``` */
 .form-group { margin-bottom: 20px; }
 
 .form-group.has-error label { color: #ff727c; }
@@ -2715,7 +2715,7 @@ body #sb-site a[name] { content: ""; display: block; height: 76px; margin-top: -
 
 .form-actions { padding-top: 20px; }
 
-.form-control { background: transparent; border: 1px solid #ddd; box-shadow: none; }
+.form-control { background: #fff; border: 1px solid #ddd; box-shadow: none; }
 
 .form-control::-webkit-input-placeholder { color: #999999; font-style: italic; }
 
@@ -2812,26 +2812,16 @@ parent: typo
 ```
 */
 /*doc --- title: Body copy name: body_copy parent: typo --- ```html_example <p class="lead"> <strong>.lead</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs. Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger. Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter. Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round. Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin. </p> <p> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs. Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger. Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter. Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round. Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin. </p> ``` */
-/*doc
----
-title: Alerts
-name: alerts
-category: Components
----
- Alerts should always starts with a word that tell the user more about the feedback in short.
-
-```html_example
-<div class="alert alert-success" role="alert"><span class="label label-success">New</span> <strong>Wohooo!</strong> Thanks for signing up!</div>
-<div class="alert alert-info" role="alert"><span class="label label-info">Info</span> <strong>Morning!</strong> Looks like you are happy today!</div>
-<div class="alert alert-warning" role="alert"><span class="label label-warning">Schedule</span> <strong>Hey!</strong> You have two scheduled posts!<a class="pull-right" href="#">View scheduled posts</a></div>
-<div class="alert alert-danger" role="alert"><span class="label label-danger">Warning</span> <strong>Grrr!</strong> Don't drop coffee on my keyboard again!</div>
-```
-*/
-.alert { padding: 14px 20px 15px; }
+/*doc --- title: Alerts name: alerts category: Components --- Alerts should always starts with a word that tell the user more about the feedback in short. ```html_example <div class="alert alert-success alert-dismissable" role="alert"> <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> <span class="label label-success">New</span> <strong>Wohooo!</strong> Thanks for signing up! </div> <div class="alert alert-info alert-dismissable" role="alert"> <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> <span class="label label-info">Info</span> <strong>Morning!</strong> Looks like you are happy today! <a class="pull-right" href="#">Yes I am!</a> </div> <div class="alert alert-warning" role="alert"><span class="label label-warning">Schedule</span> <strong>Hey!</strong> You have two scheduled posts!<a class="pull-right" href="#">View scheduled posts</a></div> <div class="alert alert-danger" role="alert"><span class="label label-danger">Warning</span> <strong>Grrr!</strong> Don't drop coffee on my keyboard again!</div> ``` */
+.alert { padding: 15px 20px; }
 
 .alert .label { border-radius: 2px; font-size: 80%; margin-right: 20px; padding: 2px 7px 3px; text-transform: uppercase; }
 
 .alert a { text-decoration: underline; }
+
+.alert-dismissable, .alert-dismissible { padding-right: 30px; }
+
+.alert-dismissable .close, .alert-dismissible .close { right: -12px; top: 0; }
 
 /*doc
 //---
@@ -2847,12 +2837,22 @@ category: Components
 //category: Components
 //---
 */
-/*doc --- title: Button dropdowns name: button_dropdowns category: Components --- ```html_example_table <div class="btn-group"> <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Action <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" disabled class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Action <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Action <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" disabled class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Action <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> ``` */
+/*doc --- title: Button dropdowns name: button_dropdowns category: Components --- ```html_example_table <div class="btn-group"> <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Default <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" disabled class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Disabled <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" class="btn btn-split btn-primary">Primary</button> <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" class="btn btn-split btn-primary">Action</button> <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" class="btn btn-split btn-default">Action</button> <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> ``` */
+.btn-group > .btn + .dropdown-toggle { padding-left: 16px; padding-right: 20px; }
+
+.btn-group .btn-split { padding-right: 10px; }
+
+.btn-group > .btn-primary.btn-split { border-right-color: #fff; }
+
+.btn-group > .btn-primary + .dropdown-toggle { border-left-color: #fff; }
+
 .btn-group.open .dropdown-toggle { box-shadow: none; }
 
 .btn-group.open > .btn-default.dropdown-toggle, .btn-group.open > .dropdown-toggle.btn-primary:disabled { background: #fff; border-color: #666; color: #333; }
 
 .btn-group.open > .btn-primary.dropdown-toggle { background: #00665c; border-color: #00665c; }
+
+.btn-group.open > .btn-primary.btn-split + .dropdown-toggle { border-left-color: #fff; }
 
 .dropdown-menu { border-radius: 6px; border: 1px solid #ddd; box-shadow: none; left: auto; margin-top: 15px; padding-bottom: 25px; padding-top: 20px; right: -5px; }
 
@@ -2971,11 +2971,11 @@ A calendar, designed for the datepicker
 //---
 */
 /*doc --- title: Jumbotron name: jumbotron category: Components --- The jumbotron is used for specific forms and popups. Add .jumbotron-fixed for fixed width (640px). ```html_example <div class="jumbotron"> <div class="jumbotron-description"> <h1>Register a new account</h1> <p>You have to register to publish your stories for the world to see. Please take a moment to enter these details.</p> </div> <form accept-charset="UTF-8" action="/" method="post" role="form"> <div class="row"> <div class="col-sm-12 "> <div class="form-group email optional mndx_user_email"> <label class="email optional control-label" for="mndx_user_email">Email</label> <input class="string email optional form-control" type="email" name="mndx_user[email]" id="mndx_user_email" /> </div> </div> </div> <div class="row"> <div class="col-sm-6"> <div class="form-group password optional"> <label class="password optional control-label" for="mndx_user_password">New password</label> <input class="password optional form-control" type="password" name="mndx_user[password]" id="mndx_user_password" /> </div> </div> <div class="col-sm-6"> <div class="form-group password optional"> <label class="password optional control-label" for="mndx_user_password_confirmation">Confirm new password</label> <input class="password optional form-control" type="password" name="mndx_user[password_confirmation]" id="mndx_user_password_confirmation" /> </div> </div> </div> <input type="submit" name="commit" value="Register" class="btn btn-primary pull-right" /> <div class="form-group form-links"> <a class="pull-right" href="#">Sign in</a> </div> </form> </div> ``` */
-.jumbotron { background-color: #fff; border: 1px solid #ddd; border-radius: 4px; margin: 30px auto 0; max-width: 640px; padding: 30px; text-align: center; box-shadow: #999999 0px 2px 4px; }
+.jumbotron { background-color: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: #999999 0 2px 4px; margin: 0 auto; max-width: 640px; padding: 30px; text-align: center; }
 
 .jumbotron.jumbotron-fixed { width: 640px; }
 
-@media screen and (min-width: 768px) { .jumbotron { margin: 40px auto 0; padding: 60px; } }
+@media screen and (min-width: 768px) { .jumbotron { margin: 0 auto; padding: 60px; } }
 
 .jumbotron .jumbotron-description { margin-bottom: 20px; }
 
@@ -3066,13 +3066,7 @@ category: Components
 //category: Components
 //---
 */
-/*doc
-//---
-//title: Progress bars
-//name: progress_bars
-//category: Components
-//---
-*/
+/*doc --- title: Progress bars name: progress_bar category: Components --- The progress bar is used for specific progress indicators. ```html_example <div class="progress"> <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> <span class="sr-only">40% Complete (success)</span> </div> </div> <div class="progress"> <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"> <span class="sr-only">20% Complete</span> </div> </div> <div class="progress"> <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> <span class="sr-only">60% Complete (warning)</span> </div> </div> <div class="progress"> <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> <span class="sr-only">80% Complete (danger)</span> </div> </div> ``` */
 /*doc
 //---
 //title: Responsive embed
@@ -3144,6 +3138,15 @@ section > .content p { font-size: 18px; font-weight: 200; }
 
 section > .content a { font-weight: normal; }
 
+/*doc --- title: Scoreboard name: scoreboard category: Components --- Component to display numbers ```html_example <div class="scoreboard"> <div class="scoreboard-box"> <div class="scoreboard-box-number">124</div> <div class="scoreboard-box-label">Sent</div> </div> <div class="scoreboard-box"> <div class="scoreboard-box-number">109</div> <div class="scoreboard-box-label">Delivered</div> </div> <div class="scoreboard-box"> <div class="scoreboard-box-number">49</div> <div class="scoreboard-box-label">Reached</div> </div> <div class="scoreboard-box"> <div class="scoreboard-box-number">24</div> <div class="scoreboard-box-label">Engaged</div> </div> </div> ``` */
+.scoreboard { display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -moz-box-orient: vertical; box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; flex-direction: column; -ms-flex-direction: column; -webkit-box-align: center; -moz-box-align: center; box-align: center; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -ms-flex-align: center; background-color: #fafafa; border-radius: 6px; padding-bottom: 50px; padding-top: 50px; }
+
+@media (min-width: 768px) { .scoreboard { -webkit-box-orient: horizontal; -moz-box-orient: horizontal; box-orient: horizontal; -webkit-flex-direction: row; -moz-flex-direction: row; flex-direction: row; -ms-flex-direction: row; } }
+
+.scoreboard-box { -webkit-box-flex: 1; -moz-box-flex: 1; box-flex: 1; -webkit-flex: 1; -moz-flex: 1; -ms-flex: 1; flex: 1; text-align: center; }
+
+.scoreboard-box-number { color: #000; font-size: 48px; line-height: 1.1em; }
+
 /*doc
 ---
 title: Thumbnails
@@ -3158,7 +3161,7 @@ category: Components
 //category: Components
 //---
 */
-/*doc --- title: Modal name: modal category: JavaScript --- ```html_example <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> <div class="modal-dialog"> <div class="modal-content"> <div class="modal-header text-center"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> <img style="width: 130px; height: 130px; border-radius: 50%;" src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /> <h1>Success!</h1> <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p> </div> <div class="modal-body"> <p> Ut massa lacus, posuere in facilisis a, blandit ac tortor. Praesent euismod posuere sodales. Nunc maximus eros vitae massa vehicula pharetra. Praesent id nunc ac odio tristique faucibus*. </p> <p class="footnote"> Mauris imperdiet gravida nisl a venenatis. Nulla vel orci congue, efficitur enim eu, cursus justo. Maecenas hendrerit eu elit et hendrerit. Mauris eget eros mi. </p> </div> </div> </div> </div> <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> Launch demo modal </button> ``` */
+/*doc --- title: Modal name: modal category: JavaScript --- ```html_example <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> <div class="modal-dialog"> <div class="modal-content"> <div class="modal-header text-center"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> <img style="width: 130px; height: 130px; border-radius: 50%;" src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /> <h4 class="modal-title">Success!</h4> <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p> </div> <div class="modal-body"> <p> Ut massa lacus, posuere in facilisis a, blandit ac tortor. Praesent euismod posuere sodales. Nunc maximus eros vitae massa vehicula pharetra. Praesent id nunc ac odio tristique faucibus*. </p> <p class="footnote"> Mauris imperdiet gravida nisl a venenatis. Nulla vel orci congue, efficitur enim eu, cursus justo. Maecenas hendrerit eu elit et hendrerit. Mauris eget eros mi. </p> </div> <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Secondary Action</button> <button type="button" class="btn btn-default" data-dismiss="modal">Secondary Action</button> <button type="button" class="btn btn-primary">Primary Action</button> </div> </div> </div> </div> <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> Launch demo modal </button> ``` */
 .modal-backdrop { position: fixed; bottom: 0; }
 
 .modal-content { -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); border-radius: 8px; overflow: hidden; position: relative; }
@@ -3170,5 +3173,11 @@ category: Components
 .modal-header a { text-decoration: underline; }
 
 .modal-body p:last-child { margin-bottom: 0; }
+
+.modal-footer { padding-bottom: 60px; text-align: center; }
+
+.modal-footer .btn:first-child { margin-left: 0; }
+
+.modal-footer .btn + .btn { margin-left: 20px; }
 
 .modal-dialog .footnote { color: #999999; font-size: 13px; }
