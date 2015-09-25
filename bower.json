@@ -14,7 +14,8 @@
   ],
   "dependencies": {
     "bootstrap-sass-twbs": "*",
-    "bourbon": "~4.1.1"
+    "bourbon": "~4.1.1",
+    "font-awesome": "fontawesome#~4.4.0"
   },
   "ignore": [
     "**/.*",
