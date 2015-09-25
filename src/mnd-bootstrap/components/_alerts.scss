@@ -20,15 +20,12 @@ category: Components
 <div class="alert alert-danger" role="alert"><span class="label label-danger">Warning</span> <strong>Grrr!</strong> Don't drop coffee on my keyboard again!</div>
 ```
 */
+
 .alert {
   padding: $gutter-vertical-half $gutter-horizontal-x2;
 
   .label {
-    border-radius: 2px;
-    font-size: 80%;
     margin-right: $gutter-horizontal-x2;
-    padding: 2px 7px 3px;
-    text-transform: uppercase;
   }
 
   a {

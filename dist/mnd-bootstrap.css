@@ -814,7 +814,7 @@ code, kbd, pre, samp { font-family: Menlo, Monaco, Consolas, "Courier New", mono
 
 code { padding: 2px 4px; font-size: 90%; color: #c7254e; background-color: #f9f2f4; border-radius: 6px; }
 
-kbd { padding: 2px 4px; font-size: 90%; color: #fff; background-color: #333; border-radius: 6px; box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25); }
+kbd { padding: 2px 4px; font-size: 90%; color: #fff; background-color: #333; border-radius: 2px; box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25); }
 
 kbd kbd { padding: 0; font-size: 100%; font-weight: bold; box-shadow: none; }
 
@@ -1243,13 +1243,13 @@ input[type="radio"][disabled], input[type="radio"].disabled, fieldset[disabled] 
 
 .form-control-static.input-lg, .input-group-lg > .form-control-static.form-control, .input-group-lg > .form-control-static.input-group-addon, .input-group-lg > .input-group-btn > .form-control-static.btn, .form-control-static.input-sm, .input-group-sm > .form-control-static.form-control, .input-group-sm > .form-control-static.input-group-addon, .input-group-sm > .input-group-btn > .form-control-static.btn { padding-left: 0; padding-right: 0; }
 
-.input-sm, .input-group-sm > .form-control, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .btn { height: 41px; padding: 10px 20px; font-size: 13px; line-height: 1.5; border-radius: 6px; }
+.input-sm, .input-group-sm > .form-control, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .btn { height: 41px; padding: 10px 20px; font-size: 13px; line-height: 1.5; border-radius: 2px; }
 
 select.input-sm, .input-group-sm > select.form-control, .input-group-sm > select.input-group-addon, .input-group-sm > .input-group-btn > select.btn { height: 41px; line-height: 41px; }
 
 textarea.input-sm, .input-group-sm > textarea.form-control, .input-group-sm > textarea.input-group-addon, .input-group-sm > .input-group-btn > textarea.btn, select[multiple].input-sm, .input-group-sm > select[multiple].form-control, .input-group-sm > select[multiple].input-group-addon, .input-group-sm > .input-group-btn > select[multiple].btn { height: auto; }
 
-.form-group-sm .form-control { height: 41px; padding: 10px 20px; font-size: 13px; line-height: 1.5; border-radius: 6px; }
+.form-group-sm .form-control { height: 41px; padding: 10px 20px; font-size: 13px; line-height: 1.5; border-radius: 2px; }
 
 .form-group-sm select.form-control { height: 41px; line-height: 41px; }
 
@@ -1630,7 +1630,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .input-group-addon { padding: 12px 20px; font-size: 15px; font-weight: normal; line-height: 1; color: #666; text-align: center; background-color: #eeeeee; border: 1px solid #ccc; border-radius: 6px; }
 
-.input-group-addon.input-sm, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .input-group-addon.btn { padding: 10px 20px; font-size: 13px; border-radius: 6px; }
+.input-group-addon.input-sm, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .input-group-addon.btn { padding: 10px 20px; font-size: 13px; border-radius: 2px; }
 
 .input-group-addon.input-lg, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .input-group-addon.btn { padding: 10px 16px; font-size: 19px; border-radius: 6px; }
 
@@ -1957,9 +1957,9 @@ tbody.collapse.in { display: table-row-group; }
 
 .pagination-sm > li > a, .pagination-sm > li > span { padding: 10px 20px; font-size: 13px; line-height: 1.5; }
 
-.pagination-sm > li:first-child > a, .pagination-sm > li:first-child > span { border-bottom-left-radius: 6px; border-top-left-radius: 6px; }
+.pagination-sm > li:first-child > a, .pagination-sm > li:first-child > span { border-bottom-left-radius: 2px; border-top-left-radius: 2px; }
 
-.pagination-sm > li:last-child > a, .pagination-sm > li:last-child > span { border-bottom-right-radius: 6px; border-top-right-radius: 6px; }
+.pagination-sm > li:last-child > a, .pagination-sm > li:last-child > span { border-bottom-right-radius: 2px; border-top-right-radius: 2px; }
 
 .pager { padding-left: 0; margin: 21px 0; list-style: none; text-align: center; }
 
@@ -2375,7 +2375,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 .well-lg { padding: 24px; border-radius: 6px; }
 
-.well-sm { padding: 9px; border-radius: 6px; }
+.well-sm { padding: 9px; border-radius: 2px; }
 
 .close { float: right; font-size: 22.5px; font-weight: bold; line-height: 1; color: #000; text-shadow: 0 1px 0 #fff; opacity: 0.2; filter: alpha(opacity=20); }
 
@@ -2823,7 +2823,7 @@ parent: typo
 /*doc --- title: Alerts name: alerts category: Components --- Alerts should always starts with a word that tell the user more about the feedback in short. ```html_example <div class="alert alert-success alert-dismissable" role="alert"> <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> <span class="label label-success">New</span> <strong>Wohooo!</strong> Thanks for signing up! </div> <div class="alert alert-info alert-dismissable" role="alert"> <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> <span class="label label-info">Info</span> <strong>Morning!</strong> Looks like you are happy today! <a class="pull-right" href="#">Yes I am!</a> </div> <div class="alert alert-warning" role="alert"><span class="label label-warning">Schedule</span> <strong>Hey!</strong> You have two scheduled posts!<a class="pull-right" href="#">View scheduled posts</a></div> <div class="alert alert-danger" role="alert"><span class="label label-danger">Warning</span> <strong>Grrr!</strong> Don't drop coffee on my keyboard again!</div> ``` */
 .alert { padding: 15px 20px; }
 
-.alert .label { border-radius: 2px; font-size: 80%; margin-right: 20px; padding: 2px 7px 3px; text-transform: uppercase; }
+.alert .label { margin-right: 20px; }
 
 .alert a { text-decoration: underline; }
 
@@ -3017,12 +3017,23 @@ A calendar, designed for the datepicker
 .jumbotron-transparent .form-links a { color: #fff; }
 
 /*doc
-//---
-//title: Labels
-//name: labels
-//category: Components
-//---
+---
+title: Labels
+name: labels
+category: Components
+---
+
+```html_example_table
+<span class="label label-default">Default</span>
+<span class="label label-primary">Primary</span>
+<span class="label label-success">Success</span>
+<span class="label label-info">Info</span>
+<span class="label label-warning">Warning</span>
+<span class="label label-danger">Danger</span>
+```
 */
+.label { border-radius: 2px; font-size: 80%; padding: 2px 7px 3px; text-transform: uppercase; }
+
 /*doc
 //---
 //title: List group
