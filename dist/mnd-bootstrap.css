@@ -3086,64 +3086,7 @@ A calendar, designed for the datepicker
 //name: sections
 //category: Components
 //---
-Modular section setup which allows using a combination of header, body and footer.
-
-```html_example
-<section>
-  <div class="content">
-    <header>
-      <h1>Title</h1>
-    </header>
-    <div class="body">
-      <p>This is a body text.</p>
-    </div>
-    <footer>
-      <p>Footer text</p>
-    </footer>
-  </div>
-</section>
-```
-
-```html_example
-<section class="solid">
-  <div class="content">
-    <header>
-      <h1>Title</h1>
-    </header>
-    <div class="body">
-      <p>This is a body text.</p>
-    </div>
-  </div>
-</section>
-```
-
 */
-section.solid { background-color: #F2F2F2; }
-
-section > .content header, section > .content .body, section > .content footer { text-align: center; }
-
-section > .content header { margin: 100px 0 50px; }
-
-section > .content header h2 { font-size: 36px; margin: 0; }
-
-section > .content header p { margin: 10px 0 0; font-weight: 200; }
-
-section > .content .body { margin: 50px 0; }
-
-section > .content footer { margin: 50px 0 100px; }
-
-section > .content h2 { font-size: 24px; font-weight: 200; margin-top: 0; }
-
-@media (min-width: 992px) { section > .content h2 { font-weight: 200; font-size: 32px; } }
-
-@media (min-width: 1200px) { section > .content h2 { font-size: 48px; } }
-
-section > .content p { font-size: 18px; font-weight: 200; }
-
-@media (min-width: 992px) { section > .content p { font-size: 20px; } }
-
-section > .content a { font-weight: normal; }
-
 /*doc --- title: Scoreboard name: scoreboard category: Components --- Component to display numbers ```html_example <div class="scoreboard"> <div class="scoreboard-box"> <div class="scoreboard-box-number">124</div> <div class="scoreboard-box-label">Sent</div> </div> <div class="scoreboard-box"> <div class="scoreboard-box-number">109</div> <div class="scoreboard-box-label">Delivered</div> </div> <div class="scoreboard-box"> <div class="scoreboard-box-number">49</div> <div class="scoreboard-box-label">Reached</div> </div> <div class="scoreboard-box"> <div class="scoreboard-box-number">24</div> <div class="scoreboard-box-label">Engaged</div> </div> </div> ``` */
 .scoreboard { display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -moz-box-orient: vertical; box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; flex-direction: column; -ms-flex-direction: column; -webkit-box-align: center; -moz-box-align: center; box-align: center; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -ms-flex-align: center; background-color: #fafafa; border-radius: 6px; padding-bottom: 50px; padding-top: 50px; }
 
@@ -3177,6 +3120,8 @@ section > .content a { font-weight: normal; }
 .modal-header { padding: 60px 90px 30px; }
 
 .modal-header a { text-decoration: underline; }
+
+.modal-header .header-icon { color: #00ccb8; font-size: 150px; }
 
 .modal-body p:last-child { margin-bottom: 0; }
 

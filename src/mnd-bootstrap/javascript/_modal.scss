@@ -71,6 +71,11 @@ category: JavaScript
   a {
     text-decoration: underline;
   }
+
+  .header-icon {
+    color: $brand-primary;
+    font-size: $font-size-base * 10;
+  }
 }
 
 .modal-body {
