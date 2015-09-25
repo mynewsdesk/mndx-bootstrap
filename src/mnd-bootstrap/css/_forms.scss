@@ -16,6 +16,12 @@ category: CSS
     <input type="email" class="form-control" id="to" placeholder="Enter email">
     <p class="help-block">Example block-level help text here.</p>
   </div>
+  <div class="form-group has-success has-feedback">
+    <label for="to">Success</label>
+    <input type="email" class="form-control" id="to" placeholder="Enter email">
+    <span class="fa fa-icon fa-check form-control-feedback"></span>
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
   <div class="form-group has-warning">
     <label for="to">Warning</label>
     <input type="email" class="form-control" id="to" placeholder="Enter email">
@@ -24,6 +30,12 @@ category: CSS
   <div class="form-group has-error">
     <label for="to">Error</label>
     <input type="email" class="form-control" id="to" placeholder="Enter email">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="form-group has-error has-feedback">
+    <label for="to">Error</label>
+    <input type="email" class="form-control" id="to" placeholder="Enter email">
+    <span class="fa fa-icon fa-close form-control-feedback"></span>
     <p class="help-block">Example block-level help text here.</p>
   </div>
   <div class="form-group">
@@ -139,9 +151,17 @@ category: CSS
   }
 }
 
+.has-feedback .form-control-feedback {
+  line-height: $input-height-base;
+}
+.has-feedback label ~ .form-control-feedback {
+  // offset top by the full height of the label if present
+  top: $line-height-computed + $padding-inside;
+}
+
 label {
   color: $gray;
-  margin-bottom: $space;
+  margin-bottom: $padding-inside;
 }
 
 .checkbox label,
