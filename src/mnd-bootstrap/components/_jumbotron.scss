@@ -1,10 +1,10 @@
 /*doc
- ---
- title: Jumbotron
- name: jumbotron
- category: Components
- ---
- The jumbotron is used for specific forms and popups. Add .jumbotron-fixed for fixed width (640px).
+---
+title: Jumbotron
+name: jumbotron
+category: Components
+---
+The jumbotron is used for specific forms. Add .jumbotron-fixed for fixed width (640px).
 
 ```html_example
 <div class="jumbotron">
@@ -49,8 +49,7 @@ $jumbotron-padding-x2: $jumbotron-padding * 2;
 .jumbotron {
   background-color: $white;
   border: 1px solid $gray-lighten;
-  border-radius: 4px;
-  box-shadow: $gray-light 0 2px 4px;
+  border-radius: $border-radius-base;
   margin: 0 auto;
   max-width: 640px;
   padding: $jumbotron-padding;
