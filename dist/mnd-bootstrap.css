@@ -814,7 +814,7 @@ code, kbd, pre, samp { font-family: Menlo, Monaco, Consolas, "Courier New", mono
 
 code { padding: 2px 4px; font-size: 90%; color: #c7254e; background-color: #f9f2f4; border-radius: 6px; }
 
-kbd { padding: 2px 4px; font-size: 90%; color: #fff; background-color: #333; border-radius: 6px; box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25); }
+kbd { padding: 2px 4px; font-size: 90%; color: #fff; background-color: #333; border-radius: 2px; box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25); }
 
 kbd kbd { padding: 0; font-size: 100%; font-weight: bold; box-shadow: none; }
 
@@ -1243,13 +1243,13 @@ input[type="radio"][disabled], input[type="radio"].disabled, fieldset[disabled] 
 
 .form-control-static.input-lg, .input-group-lg > .form-control-static.form-control, .input-group-lg > .form-control-static.input-group-addon, .input-group-lg > .input-group-btn > .form-control-static.btn, .form-control-static.input-sm, .input-group-sm > .form-control-static.form-control, .input-group-sm > .form-control-static.input-group-addon, .input-group-sm > .input-group-btn > .form-control-static.btn { padding-left: 0; padding-right: 0; }
 
-.input-sm, .input-group-sm > .form-control, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .btn { height: 41px; padding: 10px 20px; font-size: 13px; line-height: 1.5; border-radius: 6px; }
+.input-sm, .input-group-sm > .form-control, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .btn { height: 41px; padding: 10px 20px; font-size: 13px; line-height: 1.5; border-radius: 2px; }
 
 select.input-sm, .input-group-sm > select.form-control, .input-group-sm > select.input-group-addon, .input-group-sm > .input-group-btn > select.btn { height: 41px; line-height: 41px; }
 
 textarea.input-sm, .input-group-sm > textarea.form-control, .input-group-sm > textarea.input-group-addon, .input-group-sm > .input-group-btn > textarea.btn, select[multiple].input-sm, .input-group-sm > select[multiple].form-control, .input-group-sm > select[multiple].input-group-addon, .input-group-sm > .input-group-btn > select[multiple].btn { height: auto; }
 
-.form-group-sm .form-control { height: 41px; padding: 10px 20px; font-size: 13px; line-height: 1.5; border-radius: 6px; }
+.form-group-sm .form-control { height: 41px; padding: 10px 20px; font-size: 13px; line-height: 1.5; border-radius: 2px; }
 
 .form-group-sm select.form-control { height: 41px; line-height: 41px; }
 
@@ -1630,7 +1630,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .input-group-addon { padding: 12px 20px; font-size: 15px; font-weight: normal; line-height: 1; color: #666; text-align: center; background-color: #eeeeee; border: 1px solid #ccc; border-radius: 6px; }
 
-.input-group-addon.input-sm, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .input-group-addon.btn { padding: 10px 20px; font-size: 13px; border-radius: 6px; }
+.input-group-addon.input-sm, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .input-group-addon.btn { padding: 10px 20px; font-size: 13px; border-radius: 2px; }
 
 .input-group-addon.input-lg, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .input-group-addon.btn { padding: 10px 16px; font-size: 19px; border-radius: 6px; }
 
@@ -1957,9 +1957,9 @@ tbody.collapse.in { display: table-row-group; }
 
 .pagination-sm > li > a, .pagination-sm > li > span { padding: 10px 20px; font-size: 13px; line-height: 1.5; }
 
-.pagination-sm > li:first-child > a, .pagination-sm > li:first-child > span { border-bottom-left-radius: 6px; border-top-left-radius: 6px; }
+.pagination-sm > li:first-child > a, .pagination-sm > li:first-child > span { border-bottom-left-radius: 2px; border-top-left-radius: 2px; }
 
-.pagination-sm > li:last-child > a, .pagination-sm > li:last-child > span { border-bottom-right-radius: 6px; border-top-right-radius: 6px; }
+.pagination-sm > li:last-child > a, .pagination-sm > li:last-child > span { border-bottom-right-radius: 2px; border-top-right-radius: 2px; }
 
 .pager { padding-left: 0; margin: 21px 0; list-style: none; text-align: center; }
 
@@ -2375,7 +2375,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 .well-lg { padding: 24px; border-radius: 6px; }
 
-.well-sm { padding: 9px; border-radius: 6px; }
+.well-sm { padding: 9px; border-radius: 2px; }
 
 .close { float: right; font-size: 22.5px; font-weight: bold; line-height: 1; color: #000; text-shadow: 0 1px 0 #fff; opacity: 0.2; filter: alpha(opacity=20); }
 
@@ -2695,9 +2695,17 @@ body #sb-site a[name] { content: ""; display: block; height: 76px; margin-top: -
 
 .btn-default:active, .btn-primary:active:disabled, .btn-default:focus, .btn-primary:focus:disabled, .btn-default:active:focus, .btn-primary:active:focus:disabled { background: #fff; border-color: #666; box-shadow: none; color: #333; }
 
+.btn-default:disabled:hover, .btn-primary:disabled:hover { color: #888; }
+
 .btn-primary:hover { background: #00998a; border-color: #00998a; }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:active:focus { background: #00665c; border-color: #00665c; box-shadow: none; }
+
+.btn-sm, .btn-group-sm > .btn { font-size: 15px; padding-top: 8px; padding-bottom: 8px; }
+
+[disabled].btn-primary:disabled { opacity: 0.4; filter: alpha(opacity=40); background: #00ccb8; color: #fff; }
+
+[disabled].btn-primary:disabled:hover { background: #00ccb8; }
 
 /*doc
 //---
@@ -2706,7 +2714,7 @@ body #sb-site a[name] { content: ""; display: block; height: 76px; margin-top: -
 //category: CSS
 //---
 */
-/*doc --- title: Forms name: forms category: CSS --- ```html_example_table <form> <div class="form-group"> <label for="to">Default</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> </div> <div class="form-group has-success"> <label for="to">Success</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-warning"> <label for="to">Warning</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-error"> <label for="to">Error</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group"> <label for="to">Disabled input</label> <input type="email" class="form-control" id="to" placeholder=":disabled" disabled> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group"> <label for="message">Textarea</label> <textarea class="form-control" id="subject" placeholder="Enter message"></textarea> </div> <div class="form-group"> <div class="checkbox"> <label> <input type="checkbox" name="samecheck"> Check me out </label> <br> <label> <input type="checkbox" name="samecheck"> Check me out again </label> </div> </div> <div class="form-group"> <div class="radio"> <label> <input type="radio" name="sameradio"> Check me out </label> <br> <label> <input type="radio" name="sameradio"> Check me out again </label> </div> </div> <div class="form-group"> <select class="form-control"> <option>option 1</option> <option>option 2</option> <option>option 3</option> <option>option 4</option> </select> </div> <div class="form-group text-right form-actions"> <button type="reset" class="btn btn-default">Cancel</button> <button type="submit" class="btn btn-primary">Submit</button> </div> </form> <form> <div class="form-group"> <label for="form-links">Form links example</label> <input type="text" class="form-control" id="form-links" placeholder="Organization name"> </div> <button type="submit" class="btn btn-primary pull-right">Submit</button> <div class="form-group form-links"> <a href="#" class="pull-left">Link one</a> <a href="#" class="pull-left">Link two</a> <a href="#" class="pull-right">Link three</a> </div> </form> ``` */
+/*doc --- title: Forms name: forms category: CSS --- ```html_example_table <form> <div class="form-group"> <label for="to">Default</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> </div> <div class="form-group has-success"> <label for="to">Success</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-success has-feedback"> <label for="to">Success</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <span class="fa fa-icon fa-check form-control-feedback"></span> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-warning"> <label for="to">Warning</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-error"> <label for="to">Error</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-error has-feedback"> <label for="to">Error</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <span class="fa fa-icon fa-close form-control-feedback"></span> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group"> <label for="to">Disabled input</label> <input type="email" class="form-control" id="to" placeholder=":disabled" disabled> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group"> <label for="message">Textarea</label> <textarea class="form-control" id="subject" placeholder="Enter message"></textarea> </div> <div class="form-group"> <div class="checkbox"> <label> <input type="checkbox" name="samecheck"> Check me out </label> <br> <label> <input type="checkbox" name="samecheck"> Check me out again </label> </div> </div> <div class="form-group"> <div class="radio"> <label> <input type="radio" name="sameradio"> Check me out </label> <br> <label> <input type="radio" name="sameradio"> Check me out again </label> </div> </div> <div class="form-group"> <select class="form-control"> <option>option 1</option> <option>option 2</option> <option>option 3</option> <option>option 4</option> </select> </div> <div class="form-group text-right form-actions"> <button type="reset" class="btn btn-default">Cancel</button> <button type="submit" class="btn btn-primary">Submit</button> </div> </form> <form> <div class="form-group"> <label for="form-links">Form links example</label> <input type="text" class="form-control" id="form-links" placeholder="Organization name"> </div> <button type="submit" class="btn btn-primary pull-right">Submit</button> <div class="form-group form-links"> <a href="#" class="pull-left">Link one</a> <a href="#" class="pull-left">Link two</a> <a href="#" class="pull-right">Link three</a> </div> </form> ``` */
 .form-group { margin-bottom: 20px; }
 
 .form-group.has-error label { color: #ff727c; }
@@ -2734,6 +2742,10 @@ body #sb-site a[name] { content: ""; display: block; height: 76px; margin-top: -
 .has-error .form-control, .has-warning .form-control, .has-success .form-control { box-shadow: none; }
 
 .has-error .form-control:focus, .has-warning .form-control:focus, .has-success .form-control:focus { border-color: #0092cc; box-shadow: 0px 0px 3px 0px rgba(33, 115, 210, 0.3); }
+
+.has-feedback .form-control-feedback { line-height: 47px; }
+
+.has-feedback label ~ .form-control-feedback { top: 31px; }
 
 label { color: #666; margin-bottom: 10px; }
 
@@ -2815,7 +2827,7 @@ parent: typo
 /*doc --- title: Alerts name: alerts category: Components --- Alerts should always starts with a word that tell the user more about the feedback in short. ```html_example <div class="alert alert-success alert-dismissable" role="alert"> <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> <span class="label label-success">New</span> <strong>Wohooo!</strong> Thanks for signing up! </div> <div class="alert alert-info alert-dismissable" role="alert"> <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> <span class="label label-info">Info</span> <strong>Morning!</strong> Looks like you are happy today! <a class="pull-right" href="#">Yes I am!</a> </div> <div class="alert alert-warning" role="alert"><span class="label label-warning">Schedule</span> <strong>Hey!</strong> You have two scheduled posts!<a class="pull-right" href="#">View scheduled posts</a></div> <div class="alert alert-danger" role="alert"><span class="label label-danger">Warning</span> <strong>Grrr!</strong> Don't drop coffee on my keyboard again!</div> ``` */
 .alert { padding: 15px 20px; }
 
-.alert .label { border-radius: 2px; font-size: 80%; margin-right: 20px; padding: 2px 7px 3px; text-transform: uppercase; }
+.alert .label { margin-right: 20px; }
 
 .alert a { text-decoration: underline; }
 
@@ -2949,6 +2961,9 @@ A calendar, designed for the datepicker
 
 .content-list-striped .content-list-row:nth-child(even) { background-color: #fafafa; }
 
+/*doc --- title: Date range picker name: date_range_picker category: Components --- ```html_example_table <div class="btn-group"> <button class="btn btn-default btn-sm" aria-role="group" aria-label="datepicker" tabindex="1"> 2015-07-06 <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> <!-- Insert calendar here --> </button> <button class="btn btn-default btn-sm" aria-role="group" aria-label="datepicker" tabindex="1"> 2015-09-23 <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> <!-- Insert calendar here --> </button> </div> ``` */
+.btn-group .btn .date-picker-field { border: none; background-color: transparent; }
+
 /*doc
 //---
 //title: Dropdowns
@@ -2970,8 +2985,8 @@ A calendar, designed for the datepicker
 //category: Components
 //---
 */
-/*doc --- title: Jumbotron name: jumbotron category: Components --- The jumbotron is used for specific forms and popups. Add .jumbotron-fixed for fixed width (640px). ```html_example <div class="jumbotron"> <div class="jumbotron-description"> <h1>Register a new account</h1> <p>You have to register to publish your stories for the world to see. Please take a moment to enter these details.</p> </div> <form accept-charset="UTF-8" action="/" method="post" role="form"> <div class="row"> <div class="col-sm-12 "> <div class="form-group email optional mndx_user_email"> <label class="email optional control-label" for="mndx_user_email">Email</label> <input class="string email optional form-control" type="email" name="mndx_user[email]" id="mndx_user_email" /> </div> </div> </div> <div class="row"> <div class="col-sm-6"> <div class="form-group password optional"> <label class="password optional control-label" for="mndx_user_password">New password</label> <input class="password optional form-control" type="password" name="mndx_user[password]" id="mndx_user_password" /> </div> </div> <div class="col-sm-6"> <div class="form-group password optional"> <label class="password optional control-label" for="mndx_user_password_confirmation">Confirm new password</label> <input class="password optional form-control" type="password" name="mndx_user[password_confirmation]" id="mndx_user_password_confirmation" /> </div> </div> </div> <input type="submit" name="commit" value="Register" class="btn btn-primary pull-right" /> <div class="form-group form-links"> <a class="pull-right" href="#">Sign in</a> </div> </form> </div> ``` */
-.jumbotron { background-color: #fff; border: 1px solid #ddd; border-radius: 4px; box-shadow: #999999 0 2px 4px; margin: 0 auto; max-width: 640px; padding: 30px; text-align: center; }
+/*doc --- title: Jumbotron name: jumbotron category: Components --- The jumbotron is used for specific forms. Add .jumbotron-fixed for fixed width (640px). ```html_example <div class="jumbotron"> <div class="jumbotron-description"> <h1>Register a new account</h1> <p>You have to register to publish your stories for the world to see. Please take a moment to enter these details.</p> </div> <form accept-charset="UTF-8" action="/" method="post" role="form"> <div class="row"> <div class="col-sm-12 "> <div class="form-group email optional mndx_user_email"> <label class="email optional control-label" for="mndx_user_email">Email</label> <input class="string email optional form-control" type="email" name="mndx_user[email]" id="mndx_user_email" /> </div> </div> </div> <div class="row"> <div class="col-sm-6"> <div class="form-group password optional"> <label class="password optional control-label" for="mndx_user_password">New password</label> <input class="password optional form-control" type="password" name="mndx_user[password]" id="mndx_user_password" /> </div> </div> <div class="col-sm-6"> <div class="form-group password optional"> <label class="password optional control-label" for="mndx_user_password_confirmation">Confirm new password</label> <input class="password optional form-control" type="password" name="mndx_user[password_confirmation]" id="mndx_user_password_confirmation" /> </div> </div> </div> <input type="submit" name="commit" value="Register" class="btn btn-primary pull-right" /> <div class="form-group form-links"> <a class="pull-right" href="#">Sign in</a> </div> </form> </div> ``` */
+.jumbotron { background-color: #fff; border: 1px solid #ddd; border-radius: 6px; margin: 0 auto; max-width: 640px; padding: 30px; text-align: center; }
 
 .jumbotron.jumbotron-fixed { width: 640px; }
 
@@ -3006,24 +3021,30 @@ A calendar, designed for the datepicker
 .jumbotron-transparent .form-links a { color: #fff; }
 
 /*doc
+---
+title: Labels
+name: labels
+category: Components
+---
+
+```html_example_table
+<span class="label label-default">Default</span>
+<span class="label label-primary">Primary</span>
+<span class="label label-success">Success</span>
+<span class="label label-info">Info</span>
+<span class="label label-warning">Warning</span>
+<span class="label label-danger">Danger</span>
+```
+*/
+.label { border-radius: 2px; font-size: 80%; padding: 2px 7px 3px; text-transform: uppercase; }
+
+/*doc
 //---
-//title: Labels
-//name: labels
+//title: List group
+//name: list_group
 //category: Components
 //---
 */
-/*doc --- title: List group name: list_group category: Components --- ```html_example <ul class="list-group"> <li class="list-group-item">This is my Story</li> <li class="list-group-item">Item 2</li> <li class="list-group-item">Item 3</li> </ul> ``` */
-/*doc --- title: Striped List Group name: list_group_striped parent: list_group --- ```html_example <ul class="list-group list-group-striped"> <li class="list-group-item">This is my Story - February 06, 2015 15:53</li> <li class="list-group-item">Item 2</li> <li class="list-group-item">Item 3</li> </ul> ``` */
-.list-group { border: none; }
-
-.list-group-item { border-width: 1px 0; }
-
-.list-group-item:first-child { border-top-left-radius: 0; border-top-right-radius: 0; }
-
-.list-group-item:last-child { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
-
-.list-group-striped .list-group-item:nth-child(odd) { background: #b8ebff; }
-
 /*doc
 //---
 //title: Media object
@@ -3032,11 +3053,11 @@ A calendar, designed for the datepicker
 //---
 */
 /*doc
----
-title: Navbar
-name: navbar
-category: Components
----
+//---
+//title: Navbar
+//name: navbar
+//category: Components
+//---
 */
 /*doc
 //---
@@ -3075,69 +3096,12 @@ category: Components
 //---
 */
 /*doc
----
-title: Sections
-name: sections
-category: Components
----
-Modular section setup which allows using a combination of header, body and footer.
-
-```html_example
-<section>
-  <div class="content">
-    <header>
-      <h1>Title</h1>
-    </header>
-    <div class="body">
-      <p>This is a body text.</p>
-    </div>
-    <footer>
-      <p>Footer text</p>
-    </footer>
-  </div>
-</section>
-```
-
-```html_example
-<section class="solid">
-  <div class="content">
-    <header>
-      <h1>Title</h1>
-    </header>
-    <div class="body">
-      <p>This is a body text.</p>
-    </div>
-  </div>
-</section>
-```
-
+//---
+//title: Sections
+//name: sections
+//category: Components
+//---
 */
-section.solid { background-color: #F2F2F2; }
-
-section > .content header, section > .content .body, section > .content footer { text-align: center; }
-
-section > .content header { margin: 100px 0 50px; }
-
-section > .content header h2 { font-size: 36px; margin: 0; }
-
-section > .content header p { margin: 10px 0 0; font-weight: 200; }
-
-section > .content .body { margin: 50px 0; }
-
-section > .content footer { margin: 50px 0 100px; }
-
-section > .content h2 { font-size: 24px; font-weight: 200; margin-top: 0; }
-
-@media (min-width: 992px) { section > .content h2 { font-weight: 200; font-size: 32px; } }
-
-@media (min-width: 1200px) { section > .content h2 { font-size: 48px; } }
-
-section > .content p { font-size: 18px; font-weight: 200; }
-
-@media (min-width: 992px) { section > .content p { font-size: 20px; } }
-
-section > .content a { font-weight: normal; }
-
 /*doc --- title: Scoreboard name: scoreboard category: Components --- Component to display numbers ```html_example <div class="scoreboard"> <div class="scoreboard-box"> <div class="scoreboard-box-number">124</div> <div class="scoreboard-box-label">Sent</div> </div> <div class="scoreboard-box"> <div class="scoreboard-box-number">109</div> <div class="scoreboard-box-label">Delivered</div> </div> <div class="scoreboard-box"> <div class="scoreboard-box-number">49</div> <div class="scoreboard-box-label">Reached</div> </div> <div class="scoreboard-box"> <div class="scoreboard-box-number">24</div> <div class="scoreboard-box-label">Engaged</div> </div> </div> ``` */
 .scoreboard { display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -moz-box-orient: vertical; box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; flex-direction: column; -ms-flex-direction: column; -webkit-box-align: center; -moz-box-align: center; box-align: center; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -ms-flex-align: center; background-color: #fafafa; border-radius: 6px; padding-bottom: 50px; padding-top: 50px; }
 
@@ -3148,11 +3112,11 @@ section > .content a { font-weight: normal; }
 .scoreboard-box-number { color: #000; font-size: 48px; line-height: 1.1em; }
 
 /*doc
----
-title: Thumbnails
-name: thumbnails
-category: Components
----
+//---
+//title: Thumbnails
+//name: thumbnails
+//category: Components
+//---
 */
 /*doc
 //---
@@ -3161,7 +3125,7 @@ category: Components
 //category: Components
 //---
 */
-/*doc --- title: Modal name: modal category: JavaScript --- ```html_example <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> <div class="modal-dialog"> <div class="modal-content"> <div class="modal-header text-center"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> <img style="width: 130px; height: 130px; border-radius: 50%;" src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /> <h4 class="modal-title">Success!</h4> <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p> </div> <div class="modal-body"> <p> Ut massa lacus, posuere in facilisis a, blandit ac tortor. Praesent euismod posuere sodales. Nunc maximus eros vitae massa vehicula pharetra. Praesent id nunc ac odio tristique faucibus*. </p> <p class="footnote"> Mauris imperdiet gravida nisl a venenatis. Nulla vel orci congue, efficitur enim eu, cursus justo. Maecenas hendrerit eu elit et hendrerit. Mauris eget eros mi. </p> </div> <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Secondary Action</button> <button type="button" class="btn btn-default" data-dismiss="modal">Secondary Action</button> <button type="button" class="btn btn-primary">Primary Action</button> </div> </div> </div> </div> <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> Launch demo modal </button> ``` */
+/*doc --- title: Modal name: modal category: JavaScript --- ```html_example <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> <div class="modal-dialog"> <div class="modal-content"> <div class="modal-header text-center"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> <i class="header-icon fa fa-check-circle fa-icon"></i> <h4 class="modal-title">Success!</h4> <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p> </div> <div class="modal-body"> <p> Ut massa lacus, posuere in facilisis a, blandit ac tortor. Praesent euismod posuere sodales. Nunc maximus eros vitae massa vehicula pharetra. Praesent id nunc ac odio tristique faucibus*. </p> <p class="footnote"> Mauris imperdiet gravida nisl a venenatis. Nulla vel orci congue, efficitur enim eu, cursus justo. Maecenas hendrerit eu elit et hendrerit. Mauris eget eros mi. </p> </div> <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Secondary Action</button> <button type="button" class="btn btn-default" data-dismiss="modal">Secondary Action</button> <button type="button" class="btn btn-primary">Primary Action</button> </div> </div> </div> </div> <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> Launch demo modal </button> ``` */
 .modal-backdrop { position: fixed; bottom: 0; }
 
 .modal-content { -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); border-radius: 8px; overflow: hidden; position: relative; }
@@ -3171,6 +3135,8 @@ category: Components
 .modal-header { padding: 60px 90px 30px; }
 
 .modal-header a { text-decoration: underline; }
+
+.modal-header .header-icon { color: #00ccb8; font-size: 150px; }
 
 .modal-body p:last-child { margin-bottom: 0; }
 
