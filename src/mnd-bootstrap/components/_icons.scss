@@ -1,8 +1,15 @@
 /*doc
-//---
-//title: Icons
-//name: icons
-//category: Components
-//---
+---
+title: Icons
+name: icons
+category: Components
+---
+
+```html_example
+<i class="inline-icon fa fa-check"></i>This icon has some padding-right
+```
 */
 
+.inline-icon {
+  padding-right: $padding-inside;
+}
