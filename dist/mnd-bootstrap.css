@@ -2972,12 +2972,18 @@ A calendar, designed for the datepicker
 //---
 */
 /*doc
-//---
-//title: Icons
-//name: icons
-//category: Components
-//---
+---
+title: Icons
+name: icons
+category: Components
+---
+
+```html_example
+<i class="inline-icon fa fa-check"></i>This icon has some padding-right
+```
 */
+.inline-icon { padding-right: 10px; }
+
 /*doc
 ---
 //title: Input groups
