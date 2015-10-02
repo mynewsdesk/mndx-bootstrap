@@ -2947,6 +2947,8 @@ A calendar, designed for the datepicker
 
 .content-list .content-list-action { display: inline-block; margin-left: 25px; }
 
+.content-list .content-list-action.btn-link { padding: 0; }
+
 .content-list .content-list-action:first-child { margin-left: 0; }
 
 .content-list .content-list-checkbox { display: inline-block; }

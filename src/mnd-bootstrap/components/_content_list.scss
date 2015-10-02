@@ -112,6 +112,10 @@ Custom list for editable content
     display: inline-block;
     margin-left: 25px;
 
+    &.btn-link {
+      padding: 0;
+    }
+
     &:first-child {
       margin-left: 0;
     }
