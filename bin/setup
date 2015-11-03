@@ -9,6 +9,7 @@ brew update
 npm -v || brew install node
 rbenv -v || brew install rbenv
 ruby-build --version || brew install ruby-build
+brew install libsass
 
 header "Installing Ruby"
 brew upgrade ruby-build # make sure we're on the latest version
