@@ -61,11 +61,11 @@ $gray:                   #666;
 $gray-light:             lighten(#000, 60%);   // #999
 $gray-lighter:           lighten(#000, 93.5%); // #eee
 
-$brand-primary:         #00ccb8;
-$brand-success:         $brand-primary;
-$brand-info:            #0092cc;
-$brand-warning:         #ff9c00;
-$brand-danger:          #ff727c;
+$brand-primary:         #0096d1;
+$brand-success:         #3eb991;
+$brand-info:            $brand-primary;
+$brand-warning:         #f55065;
+$brand-danger:          #ffd34f;
 
 //== Scaffolding
 //
@@ -194,11 +194,11 @@ $btn-font-weight:                400;
 
 $btn-default-color:              #888;
 $btn-default-bg:                 #fff;
-$btn-default-border:             #ddd;
+$btn-default-border:             #e0e3e9;
 
 $btn-primary-color:              #fff;
-$btn-primary-bg:                 $brand-success;
-$btn-primary-border:            $btn-primary-bg;
+$btn-primary-bg:                 $brand-primary;
+$btn-primary-border:             $btn-primary-bg;
 
 $btn-success-color:              #fff;
 $btn-success-bg:                 $brand-success;
