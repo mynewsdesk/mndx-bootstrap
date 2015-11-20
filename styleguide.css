@@ -1263,7 +1263,7 @@ body { padding-bottom: 60px; }
 /* style nav specific - Temporary until we have the navigation implemented in our bootstrap theme */
 #top-nav .navbar-header { margin: 15px; }
 
-#top-nav li > a { color: #0092cc; line-height: 25px; }
+#top-nav li > a { color: #0096d1; line-height: 25px; }
 
 /* end temporary styling of our navigation*/
 .code-header { border-bottom: 1px solid #eeeeee; line-height: 1.42857; }
@@ -1304,14 +1304,14 @@ body { padding-bottom: 60px; }
 
 .blue-light { background: #f8fafd; }
 
-.brand-primary { background: #00ccb8; }
+.brand-primary { background: #0096d1; }
 
-.brand-success { background: #00ccb8; }
+.brand-success { background: #3eb991; }
 
-.brand-info { background: #0092cc; }
+.brand-info { background: #0096d1; }
 
-.brand-warning { background: #ff9c00; }
+.brand-warning { background: #f55065; }
 
-.brand-danger { background: #ff727c; }
+.brand-danger { background: #ffd34f; }
 
 .button-demo-column { display: table-cell; padding-right: 15px; }
