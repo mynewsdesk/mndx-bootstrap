@@ -1,0 +1,144 @@
+/*doc
+---
+title: Takeover
+name: takeover
+category: JavaScript
+
+---
+Based on bootstrap modal.
+
+`.takeover-body` optionally takes a `.wide` class to support takeovers with more content.
+
+**Note** that `data-backdrop` needs to be set to false and `data-toggle` and 
+`data-dismiss` on trigger elements needs to take the value modal.
+
+```html_example_table
+<div class="takeover fade" id="default-takeover" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="myTakeoverLabel" aria-hidden="true">
+  <div class="takeover-dialog">
+    <div class="takeover-content">
+      <div class="takeover-header text-center">
+        <h4 class="takeover-title">Success!</h4>
+        <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p>
+      </div>
+      <div class="takeover-body text-center">
+        <p>
+          Ut massa lacus, posuere in facilisis a, blandit ac tortor. Praesent euismod posuere
+          sodales. Nunc maximus eros vitae massa vehicula pharetra. Praesent id nunc ac odio
+          tristique faucibus*.
+        </p>
+      </div>
+      <div class="takeover-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Secondary Action</button>
+        <button type="button" class="btn btn-primary">Primary Action</button>
+      </div>
+    </div>
+  </div>
+</div>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#default-takeover">
+  Launch default takeover
+</button>
+
+<div class="takeover fade" id="wide-takeover" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="myTakeoverLabel" aria-hidden="true">
+  <div class="takeover-dialog">
+    <div class="takeover-content">
+      <div class="takeover-header text-center">
+        <h4 class="takeover-title">Success!</h4>
+        <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p>
+      </div>
+      <div class="takeover-body wide text-center">
+        <p>
+          Ut massa lacus, posuere in facilisis a, blandit ac tortor. Praesent euismod posuere
+          sodales. Nunc maximus eros vitae massa vehicula pharetra. Praesent id nunc ac odio
+          tristique faucibus*.
+        </p>
+      </div>
+      <div class="takeover-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Secondary Action</button>
+        <button type="button" class="btn btn-primary">Primary Action</button>
+      </div>
+    </div>
+  </div>
+</div>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#wide-takeover">
+  Launch wide takeover
+</button>
+```
+*/
+%centered-content {
+  margin: 0 auto;
+  max-width: 550px;
+}
+
+.takeover {
+  @extend .modal;
+}
+
+.takeover-dialog {
+  @extend .modal-dialog;
+
+  background-color: rgba(255, 255, 255, 0.96);
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+
+.takeover-content {
+  @extend .modal-content;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0 auto;
+  overflow: hidden; // Prevents background color in takeover header from bleeding through
+  position: relative;
+}
+
+.takeover-header {
+  @extend .modal-header;
+  @extend %centered-content;
+  padding: $gutter-vertical-x2 $gutter-vertical-x3 $gutter-vertical;
+
+  .takeover-title {
+    @extend .h1;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.takeover-body {
+  @extend .modal-body;
+  @extend %centered-content;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  &.wide {
+    max-width: 100%;
+  }
+}
+
+.takeover-footer {
+  @extend .modal-footer;
+  @extend %centered-content;
+  padding-bottom: $padding-inside * 6;
+  text-align: center;
+
+  .btn:first-child {
+    margin-left: 0;
+  }
+
+  // Override bootstrap, we want some space between 2 buttons
+  .btn + .btn {
+    margin-left: $padding-inside * 2;
+  }
+
+}
+
