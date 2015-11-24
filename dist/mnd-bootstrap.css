@@ -3,6 +3,29 @@
 @import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic");
 /*doc --- title: Gutter name: gutter category: Variables --- Those are the gutter variables that you can use. In the vertical flow we use <strong>steps of 30px</strong>, horizontal the rule is <strong>steps of 10px</strong>. <div class="clearfix"> <div class="variable-box"> <span>$gutter-horizontal = 10px</span> </div> <div class="variable-box"> <span>$gutter-horizontal-x2 = 20px</span> </div> <div class="variable-box"> <span>$gutter-horizontal-x3 = 30px</span> </div> <div class="variable-box"> <span>$gutter-vertical = 30px</span> </div> <div class="variable-box"> <span>$gutter-vertical-x2 = 60px</span> </div> <div class="variable-box"> <span>$gutter-vertical-x3 = 90px</span> </div> <div class="variable-box"> <span>$gutter-vertical-half = 15px</span> </div> </div> */
 /*doc --- title: Colors extended name: colors_extended category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-lighten"> <span>$gray-lighten</span> </div> <div class="color-box gray-lightest"> <span>$gray-lightest</span> </div> <div class="color-box white"> <span>$white</span> </div> <div class="color-box brand-primary-custom"> <span>$brand-primary-custom</span> </div> <div class="color-box blue-light"> <span>$blue-light</span> </div> </div> */
+/*doc
+---
+title: Custom font-size
+name: custom_font_size
+category: Variables
+---
+
+<span class="font-size-base">
+  <strong>$font-size-base</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
+  Shoulder kielbasa cupim filet mignon.
+</span>
+
+<span class="font-size-large">
+  <strong>$font-size-large</strong>Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
+  Shoulder kielbasa cupim filet mignon.
+</span>
+
+<span class="font-size-very-large">
+  <strong>$font-size-very-large</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
+  Shoulder kielbasa cupim filet mignon.
+</span>
+
+*/
 /*! Bootstrap v3.3.5 (http://getbootstrap.com) Copyright 2011-2015 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 @import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic");
@@ -2673,6 +2696,29 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 /*doc --- title: Gutter name: gutter category: Variables --- Those are the gutter variables that you can use. In the vertical flow we use <strong>steps of 30px</strong>, horizontal the rule is <strong>steps of 10px</strong>. <div class="clearfix"> <div class="variable-box"> <span>$gutter-horizontal = 10px</span> </div> <div class="variable-box"> <span>$gutter-horizontal-x2 = 20px</span> </div> <div class="variable-box"> <span>$gutter-horizontal-x3 = 30px</span> </div> <div class="variable-box"> <span>$gutter-vertical = 30px</span> </div> <div class="variable-box"> <span>$gutter-vertical-x2 = 60px</span> </div> <div class="variable-box"> <span>$gutter-vertical-x3 = 90px</span> </div> <div class="variable-box"> <span>$gutter-vertical-half = 15px</span> </div> </div> */
 /*doc --- title: Colors extended name: colors_extended category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-lighten"> <span>$gray-lighten</span> </div> <div class="color-box gray-lightest"> <span>$gray-lightest</span> </div> <div class="color-box white"> <span>$white</span> </div> <div class="color-box brand-primary-custom"> <span>$brand-primary-custom</span> </div> <div class="color-box blue-light"> <span>$blue-light</span> </div> </div> */
+/*doc
+---
+title: Custom font-size
+name: custom_font_size
+category: Variables
+---
+
+<span class="font-size-base">
+  <strong>$font-size-base</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
+  Shoulder kielbasa cupim filet mignon.
+</span>
+
+<span class="font-size-large">
+  <strong>$font-size-large</strong>Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
+  Shoulder kielbasa cupim filet mignon.
+</span>
+
+<span class="font-size-very-large">
+  <strong>$font-size-very-large</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
+  Shoulder kielbasa cupim filet mignon.
+</span>
+
+*/
 body { -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
 
 body #sb-site a[name] { content: ""; display: block; height: 76px; margin-top: -76px; }
@@ -2680,6 +2726,29 @@ body #sb-site a[name] { content: ""; display: block; height: 76px; margin-top: -
 /*doc --- title: Colors name: colors category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-darker"> <span>$gray-darker</span> </div> <div class="color-box gray-dark"> <span>$gray-dark</span> </div> <div class="color-box gray"> <span>$gray</span> </div> <div class="color-box gray-light"> <span>$gray-light</span> </div> <div class="color-box gray-lighter"> <span>$gray-lighter</span> </div> <div class="color-box brand-primary"> <span>$brand-primary</span> </div> <div class="color-box brand-success"> <span>$brand-success</span> </div> <div class="color-box brand-info"> <span>$brand-info</span> </div> <div class="color-box brand-warning"> <span>$brand-warning</span> </div> <div class="color-box brand-danger"> <span>$brand-danger</span> </div> </div> */
 /*doc --- title: Gutter name: gutter category: Variables --- Those are the gutter variables that you can use. In the vertical flow we use <strong>steps of 30px</strong>, horizontal the rule is <strong>steps of 10px</strong>. <div class="clearfix"> <div class="variable-box"> <span>$gutter-horizontal = 10px</span> </div> <div class="variable-box"> <span>$gutter-horizontal-x2 = 20px</span> </div> <div class="variable-box"> <span>$gutter-horizontal-x3 = 30px</span> </div> <div class="variable-box"> <span>$gutter-vertical = 30px</span> </div> <div class="variable-box"> <span>$gutter-vertical-x2 = 60px</span> </div> <div class="variable-box"> <span>$gutter-vertical-x3 = 90px</span> </div> <div class="variable-box"> <span>$gutter-vertical-half = 15px</span> </div> </div> */
 /*doc --- title: Colors extended name: colors_extended category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-lighten"> <span>$gray-lighten</span> </div> <div class="color-box gray-lightest"> <span>$gray-lightest</span> </div> <div class="color-box white"> <span>$white</span> </div> <div class="color-box brand-primary-custom"> <span>$brand-primary-custom</span> </div> <div class="color-box blue-light"> <span>$blue-light</span> </div> </div> */
+/*doc
+---
+title: Custom font-size
+name: custom_font_size
+category: Variables
+---
+
+<span class="font-size-base">
+  <strong>$font-size-base</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
+  Shoulder kielbasa cupim filet mignon.
+</span>
+
+<span class="font-size-large">
+  <strong>$font-size-large</strong>Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
+  Shoulder kielbasa cupim filet mignon.
+</span>
+
+<span class="font-size-very-large">
+  <strong>$font-size-very-large</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
+  Shoulder kielbasa cupim filet mignon.
+</span>
+
+*/
 .table tbody > tr > td.vert-align { vertical-align: middle; }
 
 @media screen and (min-width: 768px) { .text-left-sm { text-align: left; } }
