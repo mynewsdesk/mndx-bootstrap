@@ -114,3 +114,28 @@ $btn-ghost-default-bg: $gray-light;
 $btn-ghost-default-border: darken($btn-default-bg, 20%);
 
 $input-border-disabled: #ddd;
+
+/*doc
+---
+title: Custom font-size
+name: custom_font_size
+category: Variables
+---
+
+<span class="font-size-base">
+  <strong>$font-size-base</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
+  Shoulder kielbasa cupim filet mignon.
+</span>
+
+<span class="font-size-large">
+  <strong>$font-size-large</strong>Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
+  Shoulder kielbasa cupim filet mignon.
+</span>
+
+<span class="font-size-very-large">
+  <strong>$font-size-very-large</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
+  Shoulder kielbasa cupim filet mignon.
+</span>
+
+*/
+
