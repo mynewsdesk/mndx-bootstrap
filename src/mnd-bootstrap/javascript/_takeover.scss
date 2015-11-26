@@ -17,7 +17,7 @@ Based on bootstrap modal.
   <div class="takeover-dialog">
     <div class="takeover-content">
       <div class="takeover-header text-center">
-        <h4 class="takeover-title">Success!</h4>
+        <h1>Success!</h1>
         <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p>
       </div>
       <div class="takeover-body text-center">
@@ -42,7 +42,7 @@ Based on bootstrap modal.
   <div class="takeover-dialog">
     <div class="takeover-content">
       <div class="takeover-header text-center">
-        <h4 class="takeover-title">Success!</h4>
+        <h1>Success!</h1>
         <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p>
       </div>
       <div class="takeover-body wide text-center">
@@ -103,10 +103,6 @@ Based on bootstrap modal.
   @extend %centered-content;
   padding: $gutter-vertical-x2 $gutter-vertical-x3 $gutter-vertical;
 
-  .takeover-title {
-    @extend .h1;
-  }
-
   a {
     text-decoration: underline;
   }
@@ -140,5 +136,29 @@ Based on bootstrap modal.
     margin-left: $padding-inside * 2;
   }
 
+}
+
+// Animations added for using as react component
+.takeover-animation {
+  @include transition(opacity 0.15s ease-in-out, visibility 0s linear 0.15s);
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  z-index: $zindex-modal;
+
+  .takeover-content {
+    @include translate(0, -25%);
+    @include transition-transform(0.3s ease-out);
+  }
+
+  &.takeover-show {
+    opacity: 1;
+    transition-delay: 0s;
+    visibility: visible;
+
+    .takeover-content {
+      @include translate(0, 0);
+    }
+  }
 }
 
