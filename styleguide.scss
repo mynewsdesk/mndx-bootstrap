@@ -137,3 +137,15 @@ body{
   display: table-cell;
   padding-right: 15px;
 }
+
+.font-size-base {
+  font-size: $font-size-base;
+}
+
+.font-size-large {
+  font-size: $font-size-large;
+}
+
+.font-size-very-large {
+  font-size: $font-size-very-large;
+}
