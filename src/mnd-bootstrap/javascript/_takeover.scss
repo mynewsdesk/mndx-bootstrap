@@ -9,7 +9,7 @@ Based on bootstrap modal.
 
 `.takeover-body` optionally takes a `.wide` class to support takeovers with more content.
 
-**Note** that `data-backdrop` needs to be set to false and `data-toggle` and 
+**Note** that `data-backdrop` needs to be set to false and `data-toggle` and
 `data-dismiss` on trigger elements needs to take the value modal.
 
 ```html_example_table
@@ -41,7 +41,7 @@ Based on bootstrap modal.
 <div class="takeover fade" id="wide-takeover" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="myTakeoverLabel" aria-hidden="true">
   <div class="takeover-dialog">
     <div class="takeover-content">
-      <div class="takeover-header text-center">
+      <div class="takeover-header wide text-center">
         <h1>Success!</h1>
         <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p>
       </div>
@@ -122,6 +122,10 @@ Based on bootstrap modal.
 
   a {
     text-decoration: underline;
+  }
+  &.wide {
+    max-width: 100%;
+    padding: inherit;
   }
 }
 
