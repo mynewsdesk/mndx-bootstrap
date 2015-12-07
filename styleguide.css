@@ -1356,9 +1356,9 @@ body { padding-bottom: 60px; }
 
 .brand-info { background: #0096d1; }
 
-.brand-warning { background: #f55065; }
+.brand-warning { background: #ffd34f; }
 
-.brand-danger { background: #ffd34f; }
+.brand-danger { background: #f55065; }
 
 .button-demo-column { display: table-cell; padding-right: 15px; }
 
