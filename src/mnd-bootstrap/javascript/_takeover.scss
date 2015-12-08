@@ -123,14 +123,6 @@ Based on bootstrap modal.
   a {
     text-decoration: underline;
   }
-  &.wide {
-    max-width: 100%;
-    padding: inherit;
-
-    @media screen and (min-width: $container-md) {
-      max-width: $container-md;
-    }
-  }
 }
 
 .takeover-body {
