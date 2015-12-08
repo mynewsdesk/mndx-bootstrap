@@ -41,7 +41,7 @@ Based on bootstrap modal.
 <div class="takeover fade" id="wide-takeover" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="myTakeoverLabel" aria-hidden="true">
   <div class="takeover-dialog">
     <div class="takeover-content">
-      <div class="takeover-header wide text-center">
+      <div class="takeover-header text-center">
         <h1>Success!</h1>
         <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p>
       </div>
@@ -69,7 +69,7 @@ Based on bootstrap modal.
   <Takeover.Header title="Success!">
     <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p>
   </Takeover.Header>
-  <Takeover.Body className="text-center">
+  <Takeover.Body wide={true} className="text-center">
     <p>
       Ut massa lacus, posuere in facilisis a, blandit ac tortor. Praesent euismod posuere sodales. Nunc maximus eros vitae massa vehicula pharetra. Praesent id nunc ac odio tristique faucibus*.
     </p>
@@ -123,14 +123,6 @@ Based on bootstrap modal.
   a {
     text-decoration: underline;
   }
-  &.wide {
-    max-width: 100%;
-    padding: inherit;
-
-    @media screen and (min-width: $container-md) {
-      max-width: $container-md;
-    }
-  }
 }
 
 .takeover-body {
@@ -142,11 +134,7 @@ Based on bootstrap modal.
   }
 
   &.wide {
-    max-width: 100%;
-
-    @media screen and (min-width: $container-md) {
-      max-width: $container-md;
-    }
+    max-width: $container-md;
   }
 }
 
