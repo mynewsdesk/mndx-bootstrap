@@ -3161,6 +3161,10 @@ category: Components
 
 .takeover-header a { text-decoration: underline; }
 
+.takeover-header.wide { max-width: 100%; padding: inherit; }
+
+@media screen and (min-width: 970px) { .takeover-header.wide { max-width: 970px; } }
+
 .takeover-body p:last-child { margin-bottom: 0; }
 
 .takeover-body.wide { max-width: 970px; }
