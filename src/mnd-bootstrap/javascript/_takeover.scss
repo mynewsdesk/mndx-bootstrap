@@ -126,6 +126,10 @@ Based on bootstrap modal.
   &.wide {
     max-width: 100%;
     padding: inherit;
+
+    @media screen and (min-width: $container-md) {
+      max-width: $container-md;
+    }
   }
 }
 
@@ -139,6 +143,10 @@ Based on bootstrap modal.
 
   &.wide {
     max-width: 100%;
+
+    @media screen and (min-width: $container-md) {
+      max-width: $container-md;
+    }
   }
 }
 
