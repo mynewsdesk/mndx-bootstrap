@@ -12,19 +12,14 @@ $gutter-vertical-x2: $gutter-vertical * 2;
 $gutter-vertical-x3: $gutter-vertical * 3;
 
 
-
 $space: $gutter-horizontal;
 //$space-small: $space / 2;
 $space-large: $space * 2;
 //$space-larger: $space * 4;
 
-
-
 $base-unit: 15px;
 $base-unit-x2: ceil($base-unit * 2);
 $base-unit-x3: ceil($base-unit * 3);
-
-
 
 
 // Colors
@@ -37,31 +32,26 @@ $white: #fff;
 $black: #000;
 
 $gray: #666;
-$gray-darker: lighten(#000, 13.5%); // #222
-$gray-dark: lighten(#000, 20%); // #333
-$gray-light: lighten(#000, 60%); // #999
-$gray-lighten: #ddd;
-$gray-lighter: lighten(#000, 93.5%); // #eee
 $gray-lightest: #fafafa;
+$gray-lighter: lighten($black, 93.5%); // #eee
+$gray-lighten: #ddd;
+$gray-light: lighten($black, 60%); // #999
+$gray-dark: lighten($black, 20%); // #333
+$gray-darker: lighten($black, 13.5%); // #222
 
-$blue-light: #f8fafd;
-
-$brand-primary: #0096d1;
-$brand-success: #3eb991;
+$brand-primary: $color-4;
+$brand-success: $color-1;
 $brand-info: $brand-primary;
-$brand-warning: #ffd34f;
-$brand-danger: #f55065;
-$brand-primary-custom: #ec2928;
+$brand-warning: $color-2;
+$brand-danger: $color-3;
 
 $text-color: $gray;
-
 $link-color: $brand-info;
 
 
 
 
 
-$input-border-disabled: #ddd;
 
 // Typography
 @import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic");
@@ -143,9 +133,9 @@ $table-bg-accent: lighten($brand-info, 46%);
 // Buttons
 $btn-font-weight: 400;
 
-$btn-default-color: #888;
-$btn-default-bg: #fff;
-$btn-default-border: #e0e3e9;
+$btn-default-color: #888; // Joel
+$btn-default-bg: $white;
+$btn-default-border: #e0e3e9; // Joel
 
 $btn-primary-bg: $brand-primary;
 $btn-primary-border: $btn-primary-bg;
@@ -166,12 +156,12 @@ $btn-border-radius-base: 100px;
 $btn-border-radius-large: $btn-border-radius-base;
 $btn-border-radius-small: $btn-border-radius-base;
 
-$btn-default-color-hover: #666;
-$btn-default-border-active: #666;
-$btn-default-border-active: #666;
-$btn-default-color-active: #333;
+$btn-default-color-hover: $gray;
+$btn-default-border-active: $gray;
+$btn-default-border-active: $gray;
+$btn-default-color-active: $gray-dark;
 
-$btn-default-border-hover: #8b8b8b;
+$btn-default-border-hover: #8b8b8b; // Joel
 $btn-primary-bg-hover: darken($btn-primary-bg, 10%);
 $btn-primary-bg-active: darken($btn-primary-bg, 20%);
 
@@ -189,6 +179,8 @@ $input-height-large: (ceil($font-size-large * $line-height-large) + ($padding-la
 //** Small `.form-control` height
 $input-height-small: (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2);
 
+$input-border-disabled: $gray-lighten;
+
 
 // Navbar
 $navbar-margin-bottom: $line-height-computed;
@@ -196,26 +188,26 @@ $navbar-border-radius: $border-radius-base;
 $navbar-padding-horizontal: floor(($grid-gutter-width / 2));
 $navbar-padding-vertical: (($navbar-height - $line-height-computed) / 2);
 
-$navbar-default-color: #666;
-$navbar-default-bg: #fff;
+$navbar-default-color: $gray;
+$navbar-default-bg: $white;
 $navbar-default-border: darken($navbar-default-bg, 6.5%);
 
-$navbar-default-link-color: #666;
-$navbar-default-link-active-color: #e53221;
-$navbar-default-link-active-bg: #f9f9f9;
+$navbar-default-link-color: $gray;
+$navbar-default-link-active-color: #e53221; // Joel
+$navbar-default-link-active-bg: #f9f9f9; // Joel
 
 $navbar-default-brand-color: $navbar-default-link-color;
 $navbar-default-brand-hover-color: darken($navbar-default-brand-color, 10%);
 
-$navbar-default-toggle-hover-bg: #eee;
-$navbar-default-toggle-icon-bar-bg: #999;
+$navbar-default-toggle-hover-bg: $gray-lighter;
+$navbar-default-toggle-icon-bar-bg: $gray-light;
 
 $navbar-inverse-color: $gray-light;
 $navbar-inverse-link-color: $gray-light;
 
 
 // Navs
-$nav-open-link-hover-color: #fff;
+$nav-open-link-hover-color: $white;
 
 
 
@@ -224,19 +216,19 @@ $nav-open-link-hover-color: #fff;
 //## Define colors for form feedback states and, by default, alerts.
 
 $state-success-text: $brand-success;
-$state-success-bg: #f5f8eb;
+$state-success-bg: #f5f8eb; // Joel
 $state-success-border: $state-success-bg;
 
 $state-info-text: $brand-info;
-$state-info-bg: #ebf5f9;
+$state-info-bg: #ebf5f9; // Joel
 $state-info-border: $state-info-bg;
 
 $state-warning-text: $brand-warning;
-$state-warning-bg: #fdfde9;
+$state-warning-bg: #fdfde9; // Joel
 $state-warning-border: $state-warning-bg;
 
 $state-danger-text: $brand-danger;
-$state-danger-bg: #fceae8;
+$state-danger-bg: #fceae8; // Joel
 $state-danger-border: $state-danger-bg;
 
 
@@ -245,9 +237,9 @@ $state-danger-border: $state-danger-bg;
 //##
 
 //** Background color of the whole progress component
-$progress-bg: #f5f5f5;
+$progress-bg: #f5f5f5; // Joel
 //** Progress bar text color
-$progress-bar-color: #fff;
+$progress-bar-color: $white;
 
 //** Default progress bar color
 $progress-bar-bg: $brand-primary;
@@ -281,17 +273,17 @@ $label-warning-bg: $brand-warning;
 $label-danger-bg: $brand-danger;
 
 //** Default label text color
-$label-color: #fff;
+$label-color: $white;
 //** Default text color of a linked label
-$label-link-hover-color: #fff;
+$label-link-hover-color: $white;
 
 
 // Modals
 $modal-inner-padding: 0 40px 30px;
 $modal-title-line-height: $line-height-base;
-$modal-content-border-color: #fff;
-$modal-content-fallback-border-color: #fff;
-$modal-header-border-color: #fff;
+$modal-content-border-color: $white;
+$modal-content-fallback-border-color: $white;
+$modal-header-border-color: $white;
 $modal-footer-border-color: $modal-header-border-color;
 
 
