@@ -1,0 +1,68 @@
+// Colors
+$color-1: #00ccb8;
+$color-2: #ff9c00;
+$color-3: #ff727c;
+$color-4: #0092cc;
+
+$white: #fff;
+$black: #000;
+
+$gray: #666;
+$gray-lightest: #fafafa;
+$gray-lighter: lighten($black, 93.5%); // #eee
+$gray-lighten: #ddd;
+$gray-light: lighten($black, 60%); // #999
+$gray-dark: lighten($black, 20%); // #333
+$gray-darker: lighten($black, 13.5%); // #222
+
+$brand-primary: $color-4;
+$brand-success: $color-1;
+$brand-info: $brand-primary;
+$brand-warning: $color-2;
+$brand-danger: $color-3;
+
+$text-color: $gray;
+$link-color: $brand-info;
+
+//** Global color for active items (e.g., navs or dropdowns).
+$component-active-color: $gray;
+
+//== Form states and alerts
+//
+//## Define colors for form feedback states and, by default, alerts.
+
+$state-success-text: $brand-success;
+$state-success-bg: #f5f8eb; // Joel
+$state-success-border: $state-success-bg;
+
+$state-info-text: $brand-info;
+$state-info-bg: #ebf5f9; // Joel
+$state-info-border: $state-info-bg;
+
+$state-warning-text: $brand-warning;
+$state-warning-bg: #fdfde9; // Joel
+$state-warning-border: $state-warning-bg;
+
+$state-danger-text: $brand-danger;
+$state-danger-bg: #fceae8; // Joel
+$state-danger-border: $state-danger-bg;
+
+// Labels
+//** Default label background color
+$label-default-bg: $gray-light;
+//** Primary label background color
+$label-primary-bg: $brand-primary;
+//** Success label background color
+$label-success-bg: $brand-success;
+//** Info label background color
+$label-info-bg: $brand-info;
+//** Warning label background color
+$label-warning-bg: $brand-warning;
+//** Danger label background color
+$label-danger-bg: $brand-danger;
+
+//** Default label text color
+$label-color: $white;
+//** Default text color of a linked label
+$label-link-hover-color: $white;
+

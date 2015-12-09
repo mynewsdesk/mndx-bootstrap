@@ -1,0 +1,10 @@
+// Modals
+$modal-inner-padding: 0 40px 30px;
+$modal-title-line-height: $line-height-base;
+$modal-content-border-color: $white;
+$modal-content-fallback-border-color: $white;
+$modal-header-border-color: $white;
+$modal-footer-border-color: $modal-header-border-color;
+
+// Popovers
+$popover-arrow-outer-color: rgba($popover-border-color, 0.05);

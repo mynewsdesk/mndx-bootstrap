@@ -1,0 +1,39 @@
+// Buttons
+$btn-font-weight: 400;
+
+$btn-default-color: #888; // Joel
+$btn-default-bg: $white;
+$btn-default-border: #e0e3e9; // Joel
+
+$btn-primary-bg: $brand-primary;
+$btn-primary-border: $btn-primary-bg;
+
+$btn-success-bg: $brand-success;
+$btn-success-border: $btn-success-bg;
+
+$btn-info-bg: $brand-info;
+$btn-info-border: $btn-info-bg;
+
+$btn-warning-bg: $brand-warning;
+$btn-warning-border: $btn-warning-bg;
+
+$btn-danger-bg: $brand-danger;
+$btn-danger-border: $btn-danger-bg;
+
+$btn-border-radius-base: 100px;
+$btn-border-radius-large: $btn-border-radius-base;
+$btn-border-radius-small: $btn-border-radius-base;
+
+$btn-default-color-hover: $gray;
+$btn-default-border-active: $gray;
+$btn-default-border-active: $gray;
+$btn-default-color-active: $gray-dark;
+
+$btn-default-border-hover: #8b8b8b; // Joel
+$btn-primary-bg-hover: darken($btn-primary-bg, 10%);
+$btn-primary-bg-active: darken($btn-primary-bg, 20%);
+
+// Specific component padding
+// Small button should be 40px high,
+// so padding = (40px - $font-size-base * $line-height-base - 2px (border top and border-bottom) ) / 2
+$btn-sm-vertical-padding: 8px;
