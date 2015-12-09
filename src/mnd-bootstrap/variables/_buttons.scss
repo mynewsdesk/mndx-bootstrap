@@ -1,9 +1,9 @@
 // Buttons
 $btn-font-weight: 400;
 
-$btn-default-color: #888; // Joel
+$btn-default-color: $text-color;
 $btn-default-bg: $white;
-$btn-default-border: #e0e3e9; // Joel
+$btn-default-border: $border-alt;
 
 $btn-primary-bg: $brand-primary;
 $btn-primary-border: $btn-primary-bg;
@@ -24,12 +24,11 @@ $btn-border-radius-base: 100px;
 $btn-border-radius-large: $btn-border-radius-base;
 $btn-border-radius-small: $btn-border-radius-base;
 
-$btn-default-color-hover: $gray;
+$btn-default-color-hover: $brand-primary;
 $btn-default-border-active: $gray;
-$btn-default-border-active: $gray;
-$btn-default-color-active: $gray-dark;
+$btn-default-color-active: $gray-light;
 
-$btn-default-border-hover: #8b8b8b; // Joel
+$btn-default-border-hover: $border-alt;
 $btn-primary-bg-hover: darken($btn-primary-bg, 10%);
 $btn-primary-bg-active: darken($btn-primary-bg, 20%);
 

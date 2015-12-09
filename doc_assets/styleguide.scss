@@ -72,14 +72,7 @@ body{
   }
 }
 
-.gray-darker {
-  background: $gray-darker;
-}
-
-.gray-dark {
-  background: $gray-dark;
-}
-
+// Can we remove these gray classes?
 .gray {
   background: $gray;
 }
@@ -98,6 +91,34 @@ body{
 
 .gray-lightest {
   background: $gray-lightest;
+}
+
+.text-color {
+  background: $text-color;
+}
+
+.text-color-dark {
+  background: $text-color-dark;
+}
+
+.text-color-light {
+  background: $text-color-light;
+}
+
+.ui-color-default {
+  background: $ui-color-default;
+}
+
+.ui-color-light {
+  background: $ui-color-light;
+}
+
+.ui-color-lighter {
+  background: $ui-color-lighter;
+}
+
+.ui-color-lightest {
+  background: $ui-color-lightest;
 }
 
 .white {

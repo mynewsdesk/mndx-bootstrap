@@ -23,7 +23,7 @@ $line-height-base: 1.428571429; // 21/15
 $line-height-computed: floor(($font-size-base * $line-height-base)); // ~20px
 
 $headings-font-weight: 600;
-$headings-color: $gray-dark;
+$headings-color: $text-color-dark;
 
 $line-height-large: 1.33;
 $line-height-small: 1.5;
