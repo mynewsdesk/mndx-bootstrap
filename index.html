@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Mynewsdesk Style Guide: Variables</title>
+    <title>Mynewsdesk Style Guide: Colors</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="dist/mnd-bootstrap.css">
     <link rel="stylesheet" href="docs.css">
@@ -15,7 +15,7 @@
       <nav id="top-nav" class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="navbar-header">
           <img alt="Logotype" class="logo" src="logotype.png">
-          v3.10.4
+          v4.0.0
         </div>
         <ul class="nav navbar-nav">
           
@@ -23,9 +23,9 @@
           
             <li><a href="css.html">CSS</a></li>
           
-            <li><a href="index.html">Variables</a></li>
-          
             <li><a href="javascript.html">JavaScript</a></li>
+          
+            <li><a href="index.html">Colors</a></li>
           
         </ul>
       </nav>
@@ -35,47 +35,27 @@
         <div class="row">
           <div class="col-xs-12 col-md-2">
             <div class="nav-sidebar">
-              <h3>Variables</h3>
+              <h3>Colors</h3>
               <ul class="list-group">
               
-                <li class="list-group-item"><a href="#colors">Colors</a></li>
+                <li class="list-group-item"><a href="#primary">Primary</a></li>
               
-                <li class="list-group-item"><a href="#colors_extended">Colors extended</a></li>
+                <li class="list-group-item"><a href="#text">Text</a></li>
               
-                <li class="list-group-item"><a href="#custom_font_size">Custom font-size</a></li>
-              
-                <li class="list-group-item"><a href="#gutter">Gutter</a></li>
+                <li class="list-group-item"><a href="#ui-colors">UI Colors</a></li>
               
               </ul>
             </div>
           </div>
           <div class="col-xs-12 col-md-10">
-<h1 id="colors" class="styleguide">Colors</h1>
-<p class="styleguide"> Those are the colors that you can use
+<h1 id="primary" class="styleguide">Primary</h1>
+<p class="styleguide">Used for elements (i.e buttons, labels and ***)
 <div class="clearfix">
-  <div class="color-box gray-darker">
-    <span>$gray-darker</span>
-  </div>
-  <div class="color-box gray-dark">
-    <span>$gray-dark</span>
-  </div>
-  <div class="color-box gray">
-    <span>$gray</span>
-  </div>
-  <div class="color-box gray-light">
-    <span>$gray-light</span>
-  </div>
-  <div class="color-box gray-lighter">
-    <span>$gray-lighter</span>
-  </div>
   <div class="color-box brand-primary">
     <span>$brand-primary</span>
   </div>
   <div class="color-box brand-success">
     <span>$brand-success</span>
-  </div>
-  <div class="color-box brand-info">
-    <span>$brand-info</span>
   </div>
   <div class="color-box brand-warning">
     <span>$brand-warning</span>
@@ -84,59 +64,33 @@
     <span>$brand-danger</span>
   </div>
 </div></p>
-<h1 id="colors_extended" class="styleguide">Colors extended</h1>
-<p class="styleguide"> Those are the colors that you can use
+<h1 id="text" class="styleguide">Text</h1>
+<p class="styleguide">Used for text, borders and list elements.
 <div class="clearfix">
-  <div class="color-box gray-lighten">
-    <span>$gray-lighten</span>
+  <div class="color-box text-color">
+    <span>$text-color</span>
   </div>
-  <div class="color-box gray-lightest">
-    <span>$gray-lightest</span>
+  <div class="color-box text-color-dark">
+    <span>$text-color-dark</span>
   </div>
-  <div class="color-box white">
-    <span>$white</span>
-  </div>
-  <div class="color-box brand-primary-custom">
-    <span>$brand-primary-custom</span>
-  </div>
-  <div class="color-box blue-light">
-    <span>$blue-light</span>
+  <div class="color-box text-color-light">
+    <span>$text-color-light</span>
   </div>
 </div></p>
-<h1 id="custom_font_size" class="styleguide">Custom font-size</h1>
-<p class="styleguide"><span class="font-size-base">
-  <strong>$font-size-base</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
-  Shoulder kielbasa cupim filet mignon.
-</span></p><p class="styleguide"><span class="font-size-large">
-  <strong>$font-size-large</strong>Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
-  Shoulder kielbasa cupim filet mignon.
-</span></p><p class="styleguide"><span class="font-size-very-large">
-  <strong>$font-size-very-large</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
-  Shoulder kielbasa cupim filet mignon.
-</span></p>
-<h1 id="gutter" class="styleguide">Gutter</h1>
-<p class="styleguide"> Those are the gutter variables that you can use. In the vertical flow we use <strong>steps of 30px</strong>, horizontal the rule is <strong>steps of 10px</strong>.
+<h1 id="ui-colors" class="styleguide">UI Colors</h1>
+<p class="styleguide">Used for borders, background and dividers
 <div class="clearfix">
-  <div class="variable-box">
-    <span>$gutter-horizontal = 10px</span>
+  <div class="color-box ui-color-default">
+    <span>$ui-color-default</span>
   </div>
-  <div class="variable-box">
-    <span>$gutter-horizontal-x2 = 20px</span>
+  <div class="color-box ui-color-light">
+    <span>$ui-color-light</span>
   </div>
-  <div class="variable-box">
-    <span>$gutter-horizontal-x3 = 30px</span>
+  <div class="color-box ui-color-lighter">
+    <span>$ui-color-lighter</span>
   </div>
-  <div class="variable-box">
-    <span>$gutter-vertical = 30px</span>
-  </div>
-  <div class="variable-box">
-    <span>$gutter-vertical-x2 = 60px</span>
-  </div>
-  <div class="variable-box">
-    <span>$gutter-vertical-x3 = 90px</span>
-  </div>
-  <div class="variable-box">
-    <span>$gutter-vertical-half = 15px</span>
+  <div class="color-box ui-color-lightest">
+    <span>$ui-color-lightest</span>
   </div>
 </div></p>        </div>
       </section>

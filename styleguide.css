@@ -1,56 +1,30 @@
 @charset "UTF-8";
-/*doc --- title: Colors name: colors category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-darker"> <span>$gray-darker</span> </div> <div class="color-box gray-dark"> <span>$gray-dark</span> </div> <div class="color-box gray"> <span>$gray</span> </div> <div class="color-box gray-light"> <span>$gray-light</span> </div> <div class="color-box gray-lighter"> <span>$gray-lighter</span> </div> <div class="color-box brand-primary"> <span>$brand-primary</span> </div> <div class="color-box brand-success"> <span>$brand-success</span> </div> <div class="color-box brand-info"> <span>$brand-info</span> </div> <div class="color-box brand-warning"> <span>$brand-warning</span> </div> <div class="color-box brand-danger"> <span>$brand-danger</span> </div> </div> */
-@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic");
-/*doc --- title: Gutter name: gutter category: Variables --- Those are the gutter variables that you can use. In the vertical flow we use <strong>steps of 30px</strong>, horizontal the rule is <strong>steps of 10px</strong>. <div class="clearfix"> <div class="variable-box"> <span>$gutter-horizontal = 10px</span> </div> <div class="variable-box"> <span>$gutter-horizontal-x2 = 20px</span> </div> <div class="variable-box"> <span>$gutter-horizontal-x3 = 30px</span> </div> <div class="variable-box"> <span>$gutter-vertical = 30px</span> </div> <div class="variable-box"> <span>$gutter-vertical-x2 = 60px</span> </div> <div class="variable-box"> <span>$gutter-vertical-x3 = 90px</span> </div> <div class="variable-box"> <span>$gutter-vertical-half = 15px</span> </div> </div> */
-/*doc --- title: Colors extended name: colors_extended category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-lighten"> <span>$gray-lighten</span> </div> <div class="color-box gray-lightest"> <span>$gray-lightest</span> </div> <div class="color-box white"> <span>$white</span> </div> <div class="color-box brand-primary-custom"> <span>$brand-primary-custom</span> </div> <div class="color-box blue-light"> <span>$blue-light</span> </div> </div> */
+/*doc --- title: Primary name: primary category: Colors --- Used for elements (i.e buttons, labels and ***) <div class="clearfix"> <div class="color-box brand-primary"> <span>$brand-primary</span> </div> <div class="color-box brand-success"> <span>$brand-success</span> </div> <div class="color-box brand-warning"> <span>$brand-warning</span> </div> <div class="color-box brand-danger"> <span>$brand-danger</span> </div> </div> */
+/*doc --- title: Text name: text category: Colors --- Used for text, borders and list elements. <div class="clearfix"> <div class="color-box text-color"> <span>$text-color</span> </div> <div class="color-box text-color-dark"> <span>$text-color-dark</span> </div> <div class="color-box text-color-light"> <span>$text-color-light</span> </div> </div> */
+/*doc --- title: UI Colors name: ui-colors category: Colors --- Used for borders, background and dividers <div class="clearfix"> <div class="color-box ui-color-default"> <span>$ui-color-default</span> </div> <div class="color-box ui-color-light"> <span>$ui-color-light</span> </div> <div class="color-box ui-color-lighter"> <span>$ui-color-lighter</span> </div> <div class="color-box ui-color-lightest"> <span>$ui-color-lightest</span> </div> </div> */
 /*doc
 ---
-title: Custom font-size
-name: custom_font_size
-category: Variables
+title: Typography
+name: typo
+category: CSS
 ---
-
-<span class="font-size-base">
-  <strong>$font-size-base</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
-  Shoulder kielbasa cupim filet mignon.
-</span>
-
-<span class="font-size-large">
-  <strong>$font-size-large</strong>Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
-  Shoulder kielbasa cupim filet mignon.
-</span>
-
-<span class="font-size-very-large">
-  <strong>$font-size-very-large</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
-  Shoulder kielbasa cupim filet mignon.
-</span>
-
+In general we should not use typography classes but instead use the correct semantic elements which in almost all
+cases should have the correct styling.
 */
-/*doc --- title: Gutter name: gutter category: Variables --- Those are the gutter variables that you can use. In the vertical flow we use <strong>steps of 30px</strong>, horizontal the rule is <strong>steps of 10px</strong>. <div class="clearfix"> <div class="variable-box"> <span>$gutter-horizontal = 10px</span> </div> <div class="variable-box"> <span>$gutter-horizontal-x2 = 20px</span> </div> <div class="variable-box"> <span>$gutter-horizontal-x3 = 30px</span> </div> <div class="variable-box"> <span>$gutter-vertical = 30px</span> </div> <div class="variable-box"> <span>$gutter-vertical-x2 = 60px</span> </div> <div class="variable-box"> <span>$gutter-vertical-x3 = 90px</span> </div> <div class="variable-box"> <span>$gutter-vertical-half = 15px</span> </div> </div> */
-/*doc --- title: Colors extended name: colors_extended category: Variables --- Those are the colors that you can use <div class="clearfix"> <div class="color-box gray-lighten"> <span>$gray-lighten</span> </div> <div class="color-box gray-lightest"> <span>$gray-lightest</span> </div> <div class="color-box white"> <span>$white</span> </div> <div class="color-box brand-primary-custom"> <span>$brand-primary-custom</span> </div> <div class="color-box blue-light"> <span>$blue-light</span> </div> </div> */
 /*doc
 ---
-title: Custom font-size
-name: custom_font_size
-category: Variables
+title: Headings
+name: headings
+parent: typo
 ---
-
-<span class="font-size-base">
-  <strong>$font-size-base</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
-  Shoulder kielbasa cupim filet mignon.
-</span>
-
-<span class="font-size-large">
-  <strong>$font-size-large</strong>Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
-  Shoulder kielbasa cupim filet mignon.
-</span>
-
-<span class="font-size-very-large">
-  <strong>$font-size-very-large</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs.
-  Shoulder kielbasa cupim filet mignon.
-</span>
-
+```html_example
+<h1>H1 <small>$font-size-very-large</small></h1>
+<h2>H2 <small>$font-size-larger</small></h2>
+<h3>H3 <small>$font-size-base</small></h3>
+```
 */
+/*doc --- title: Body copy name: body_copy parent: typo --- ```html_example <p class="lead"> <strong>.lead</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs. Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger. Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter. Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round. Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin. </p> <p> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs. Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger. Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter. Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round. Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin. </p> ``` */
+@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic");
 /*! Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License) */
 /* FONT PATH -------------------------- */
 @font-face { font-family: 'FontAwesome'; src: url("/fonts/fontawesome-webfont.eot?v=4.4.0"); src: url("/fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("/fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("/fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("/fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("/fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; }
@@ -1312,13 +1286,13 @@ body { padding-bottom: 60px; }
 #top-nav li > a { color: #0096d1; line-height: 25px; }
 
 /* end temporary styling of our navigation*/
-.code-header { border-bottom: 1px solid #eeeeee; line-height: 1.42857; }
+.code-header { border-bottom: 1px solid #eee; line-height: 1.375; }
 
 .code-example { background: #fff; padding: 30px; }
 
 .nav-sidebar { padding: 15px 15px 15px 0; }
 
-.styleguide-example { background-color: #eeeeee; padding: 15px; }
+.styleguide-example { background-color: #eee; padding: 15px; }
 
 .styleguide-example.light { background-color: #fff; }
 
@@ -1330,25 +1304,31 @@ body { padding-bottom: 60px; }
 
 .color-box span { background: #fff; display: inline-block; padding: 15px; }
 
-.gray-darker { background: #222222; }
-
-.gray-dark { background: #333333; }
-
 .gray { background: #666; }
 
-.gray-light { background: #999999; }
+.gray-light { background: #999; }
 
-.gray-lighter { background: #eeeeee; }
+.gray-lighter { background: #eee; }
 
 .gray-lighten { background: #ddd; }
 
 .gray-lightest, .variable-box { background: #fafafa; }
 
+.text-color { background: #666; }
+
+.text-color-dark { background: #333; }
+
+.text-color-light { background: #999; }
+
+.ui-color-default { background: #ddd; }
+
+.ui-color-light { background: #e0e3e9; }
+
+.ui-color-lighter { background: #eee; }
+
+.ui-color-lightest { background: #fafafa; }
+
 .white { background: #fff; }
-
-.brand-primary-custom { background: #ec2928; }
-
-.blue-light { background: #f8fafd; }
 
 .brand-primary { background: #0096d1; }
 
@@ -1362,8 +1342,8 @@ body { padding-bottom: 60px; }
 
 .button-demo-column { display: table-cell; padding-right: 15px; }
 
-.font-size-base { font-size: 15px; }
+.font-size-base { font-size: 16px; }
 
 .font-size-large { font-size: 18px; }
 
-.font-size-very-large { font-size: 56px; }
+.font-size-very-large { font-size: 60px; }
