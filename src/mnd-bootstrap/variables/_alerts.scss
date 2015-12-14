@@ -1,0 +1,24 @@
+$alert-background-lighten: 80%;
+$alert-border-lighten: 50%;
+$alert-text-darken: 50%;
+
+$alert-padding: 15px;
+$alert-border-radius: $border-radius-base;
+$alert-link-font-weight: bold;
+
+$alert-success-bg: tint($brand-success, $alert-background-lighten);
+$alert-success-text: shade($brand-success, $alert-text-darken);
+$alert-success-border: $alert-success-bg;
+
+$alert-info-bg: tint($brand-info, $alert-background-lighten);
+$alert-info-text: shade($brand-info, $alert-text-darken);
+$alert-info-border: $alert-info-bg;
+
+$alert-warning-bg: tint($brand-warning, $alert-background-lighten);
+$alert-warning-text: shade($brand-warning, $alert-text-darken);
+$alert-warning-border: $alert-warning-bg;
+
+$alert-danger-bg: tint($brand-danger, $alert-background-lighten);
+$alert-danger-text: shade($brand-danger, $alert-text-darken);
+$alert-danger-border: $alert-danger-bg;
+

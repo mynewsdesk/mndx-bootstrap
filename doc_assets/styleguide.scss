@@ -1,6 +1,5 @@
 $fa-font-path: "/fonts";
 @import "../src/mnd-bootstrap/variables";
-@import "../src/mnd-bootstrap/variables_custom";
 @import "font-awesome/scss/font-awesome";
 
 $sg-default-space: 15px;
@@ -73,14 +72,7 @@ body{
   }
 }
 
-.gray-darker {
-  background: $gray-darker;
-}
-
-.gray-dark {
-  background: $gray-dark;
-}
-
+// Can we remove these gray classes?
 .gray {
   background: $gray;
 }
@@ -101,16 +93,36 @@ body{
   background: $gray-lightest;
 }
 
+.text-color {
+  background: $text-color;
+}
+
+.text-color-dark {
+  background: $text-color-dark;
+}
+
+.text-color-light {
+  background: $text-color-light;
+}
+
+.ui-color-default {
+  background: $ui-color-default;
+}
+
+.ui-color-light {
+  background: $ui-color-light;
+}
+
+.ui-color-lighter {
+  background: $ui-color-lighter;
+}
+
+.ui-color-lightest {
+  background: $ui-color-lightest;
+}
+
 .white {
-  background: #fff;
-}
-
-.brand-primary-custom {
-  background: $brand-primary-custom;
-}
-
-.blue-light {
-  background: $blue-light;
+  background: $white;
 }
 
 .brand-primary {

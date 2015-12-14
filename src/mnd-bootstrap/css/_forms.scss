@@ -117,7 +117,7 @@ category: CSS
 
 .form-control {
   background: $white;
-  border: 1px solid $gray-lighten;
+  border: 2px solid $gray-lighten;
   box-shadow: none;
 
   @include placeholder {

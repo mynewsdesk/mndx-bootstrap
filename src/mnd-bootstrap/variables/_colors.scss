@@ -1,0 +1,122 @@
+//== Colors
+/*doc
+---
+title: Primary
+name: primary
+category: Colors
+---
+
+Used for elements (i.e buttons, labels and ***)
+<div class="clearfix">
+  <div class="color-box brand-primary">
+    <span>$brand-primary</span>
+  </div>
+  <div class="color-box brand-success">
+    <span>$brand-success</span>
+  </div>
+  <div class="color-box brand-warning">
+    <span>$brand-warning</span>
+  </div>
+  <div class="color-box brand-danger">
+    <span>$brand-danger</span>
+  </div>
+</div>
+ */
+
+/*doc
+---
+title: Text
+name: text
+category: Colors
+---
+
+Used for text, borders and list elements.
+<div class="clearfix">
+  <div class="color-box text-color">
+    <span>$text-color</span>
+  </div>
+  <div class="color-box text-color-dark">
+    <span>$text-color-dark</span>
+  </div>
+  <div class="color-box text-color-light">
+    <span>$text-color-light</span>
+  </div>
+</div>
+ */
+
+/*doc
+---
+title: UI Colors
+name: ui-colors
+category: Colors
+---
+
+Used for borders, background and dividers
+<div class="clearfix">
+  <div class="color-box ui-color-default">
+    <span>$ui-color-default</span>
+  </div>
+  <div class="color-box ui-color-light">
+    <span>$ui-color-light</span>
+  </div>
+  <div class="color-box ui-color-lighter">
+    <span>$ui-color-lighter</span>
+  </div>
+  <div class="color-box ui-color-lightest">
+    <span>$ui-color-lightest</span>
+  </div>
+</div>
+ */
+
+
+// Palette
+$color-1: #3eb991;
+$color-2: #ffd34f;
+$color-3: #f55065;
+$color-4: #0096d1;
+
+$white: #fff;
+$black: #333;
+
+$gray: #666;
+$gray-light: #999;
+$gray-lighten: #ddd;
+$gray-lighter: #eee;
+$gray-lightest: #fafafa;
+$gray-blue: #e0e3e9;
+
+// Renaming
+$brand-primary: $color-4;
+$brand-success: $color-1;
+$brand-info: $color-4; // Should usages point to brand primary?
+$brand-warning: $color-2;
+$brand-danger: $color-3;
+
+$text-color-dark: $black;
+$text-color: $gray;
+$text-color-light: $gray-light;
+$link-color: $brand-info;
+
+$ui-color-default: $gray-lighten;
+$ui-color-light: $gray-blue;
+$ui-color-lighter: $gray-lighter;
+$ui-color-lightest: $gray-lightest;
+
+$border-default: $gray-lighten;
+$border-alt: $gray-blue;
+
+
+//** Global color for active items (e.g., navs or dropdowns).
+$component-active-color: $gray;
+
+// Labels
+$label-default-bg: $gray-light;
+$label-primary-bg: $brand-primary;
+$label-success-bg: $brand-success;
+$label-info-bg: $brand-info;
+$label-warning-bg: $brand-warning;
+$label-danger-bg: $brand-danger;
+
+$label-color: $white;
+$label-link-hover-color: $white;
+
