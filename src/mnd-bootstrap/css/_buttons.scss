@@ -18,6 +18,7 @@ category: CSS
 
 .btn {
   margin-left: $gutter-horizontal-x2;
+  font-weight: $semi-bold;
 
   &-default {
 
@@ -62,6 +63,7 @@ category: CSS
 
   &-sm {
     font-size: $font-size-base;
+    font-weight: $regular;
     margin-left: $gutter-horizontal;
     padding-bottom: $btn-sm-vertical-padding;
     padding-top: $btn-sm-vertical-padding;
