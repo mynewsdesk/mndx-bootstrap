@@ -55,15 +55,20 @@ $font-family-base: $font-family-sans-serif;
 $font-size-base: 16px;
 $font-size-large: ceil(($font-size-base * 1.125)); // ~18px
 $font-size-larger: 22px;
+$font-size-medium-large: ceil(($font-size-base * 2.5)); // 40px
 $font-size-very-large: ceil(($font-size-base * 3.73)); // 56px
+$font-size-extremly-large: ceil(($font-size-base * 5.625)); // 90px
 $font-size-small: ceil(($font-size-base * 0.75)); // ~12px
 
 $font-size-h1: $font-size-base * 3.5; // 56px
 $font-size-h2: $font-size-large; // 18px
 $font-size-h3: $font-size-base; // 16px
 
+$line-height-base-small: 1.1;
 $line-height-base: 1.375; // 22/16
 $line-height-computed: floor(($font-size-base * $line-height-base)); // 22px
+$line-height-very-large: floor(($font-size-very-large * $line-height-base-small)); // 77px
+$line-height-extremly-large: floor(($font-size-extremly-large * $line-height-base-small)); // 123px
 
 $headings-font-weight: 600;
 // TODO: h1 should be 700
