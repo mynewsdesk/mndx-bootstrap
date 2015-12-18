@@ -15,7 +15,7 @@
       <nav id="top-nav" class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="navbar-header">
           <img alt="Logotype" class="logo" src="logotype.png">
-          v4.1.1
+          v4.2.0
         </div>
         <ul class="nav navbar-nav">
           
@@ -698,44 +698,118 @@
 <h1 id="scoreboard" class="styleguide">Scoreboard</h1>
 <p class="styleguide">Component to display numbers</p><div class="codeExample">
   <div class="exampleOutput">
-    <div class="scoreboard">
-  <div class="scoreboard-box">
-    <div class="scoreboard-box-number">124</div>
-    <div class="scoreboard-box-label">Sent</div>
+    <div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="scoreboard-box scoreboard-box-large">
+        <div class="scoreboard-box-number">124000</div>
+        <div class="scoreboard-box-label">title</div>
+        <div class="scoreboard-box-hint">subtitle</div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="scoreboard-box scoreboard-box-large">
+        <div class="scoreboard-box-number">1090</div>
+        <div class="scoreboard-box-label">title</div>
+        <div class="scoreboard-box-hint">subtitle</div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="scoreboard-box scoreboard-box-large">
+        <div class="scoreboard-box-number">1</div>
+        <div class="scoreboard-box-label">title</div>
+        <div class="scoreboard-box-hint">subtitle</div>
+      </div>
+    </div>
   </div>
-  <div class="scoreboard-box">
-    <div class="scoreboard-box-number">109</div>
-    <div class="scoreboard-box-label">Delivered</div>
-  </div>
-  <div class="scoreboard-box">
-    <div class="scoreboard-box-number">49</div>
-    <div class="scoreboard-box-label">Reached</div>
-  </div>
-  <div class="scoreboard-box">
-    <div class="scoreboard-box-number">24</div>
-    <div class="scoreboard-box-label">Engaged</div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <div class="scoreboard-box">
+        <div class="scoreboard-box-number">12004</div>
+        <div class="scoreboard-box-label">title</div>
+        <div class="scoreboard-box-hint">subtitle</div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <div class="scoreboard-box">
+        <div class="scoreboard-box-number">1009</div>
+        <div class="scoreboard-box-label">title</div>
+        <div class="scoreboard-box-hint">subtitle</div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <div class="scoreboard-box">
+        <div class="scoreboard-box-number">230</div>
+        <div class="scoreboard-box-label">title that breaks</div>
+        <div class="scoreboard-box-hint">subtitle</div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <div class="scoreboard-box">
+        <div class="scoreboard-box-number">3</div>
+        <div class="scoreboard-box-label">title</div>
+        <div class="scoreboard-box-hint">subtitle thats sometimes goes over two rows</div>
+      </div>
+    </div>
   </div>
 </div>
 
   </div>
   <div class="codeBlock">
     <div class="highlight">
-      <pre class="code-example"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-number"</span><span class="nt">&gt;</span>124<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-label"</span><span class="nt">&gt;</span>Sent<span class="nt">&lt;/div&gt;</span>
+      <pre class="code-example"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-6 col-md-4"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box scoreboard-box-large"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-number"</span><span class="nt">&gt;</span>124000<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-label"</span><span class="nt">&gt;</span>title<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-hint"</span><span class="nt">&gt;</span>subtitle<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-6 col-md-4"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box scoreboard-box-large"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-number"</span><span class="nt">&gt;</span>1090<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-label"</span><span class="nt">&gt;</span>title<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-hint"</span><span class="nt">&gt;</span>subtitle<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-6 col-md-4"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box scoreboard-box-large"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-number"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-label"</span><span class="nt">&gt;</span>title<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-hint"</span><span class="nt">&gt;</span>subtitle<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-number"</span><span class="nt">&gt;</span>109<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-label"</span><span class="nt">&gt;</span>Delivered<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-number"</span><span class="nt">&gt;</span>49<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-label"</span><span class="nt">&gt;</span>Reached<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-number"</span><span class="nt">&gt;</span>24<span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-label"</span><span class="nt">&gt;</span>Engaged<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-6 col-md-3"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-number"</span><span class="nt">&gt;</span>12004<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-label"</span><span class="nt">&gt;</span>title<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-hint"</span><span class="nt">&gt;</span>subtitle<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-6 col-md-3"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-number"</span><span class="nt">&gt;</span>1009<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-label"</span><span class="nt">&gt;</span>title<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-hint"</span><span class="nt">&gt;</span>subtitle<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-6 col-md-3"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-number"</span><span class="nt">&gt;</span>230<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-label"</span><span class="nt">&gt;</span>title that breaks<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-hint"</span><span class="nt">&gt;</span>subtitle<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-6 col-md-3"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-number"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-label"</span><span class="nt">&gt;</span>title<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"scoreboard-box-hint"</span><span class="nt">&gt;</span>subtitle thats sometimes goes over two rows<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></pre>
     </div>
