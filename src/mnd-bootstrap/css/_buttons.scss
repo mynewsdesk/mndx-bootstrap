@@ -20,6 +20,10 @@ category: CSS
   margin-left: $gutter-horizontal-x2;
   font-weight: $semi-bold;
 
+  $btn-vertical-padding: 12px;
+  padding-top: $btn-vertical-padding - 1;
+  padding-bottom: $btn-vertical-padding + 1;
+
   &-default {
 
     &:hover {
@@ -65,8 +69,8 @@ category: CSS
     font-size: $font-size-base;
     font-weight: $regular;
     margin-left: $gutter-horizontal;
-    padding-bottom: $btn-sm-vertical-padding;
-    padding-top: $btn-sm-vertical-padding;
+    padding-bottom: $btn-sm-vertical-padding + 1;
+    padding-top: $btn-sm-vertical-padding - 1;
   }
 }
 

@@ -2737,7 +2737,7 @@ h1 { font-weight: 700; }
 @media screen and (min-width: 1200px) { .text-left-lg { text-align: left; } }
 
 /*doc --- title: Buttons name: Buttons category: CSS --- ```html_example_table <p><button class="btn btn-default">Normal</button> <button class="btn btn-default btn-sm">Small</button></p> <p><button class="btn btn-default">Default</button> <button class="btn btn-default" disabled>Default disabled</button></p> <p><button class="btn btn-primary">Primary</button> <button class="btn btn-primary" disabled>Primary disabled</button></p> ``` */
-.btn { margin-left: 20px; font-weight: 600; }
+.btn { margin-left: 20px; font-weight: 600; padding-top: 11px; padding-bottom: 13px; }
 
 .btn-default:hover, .btn-primary:hover:disabled { background: #fff; border-color: #e0e3e9; color: #0096d1; }
 
@@ -2749,7 +2749,7 @@ h1 { font-weight: 700; }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:active:focus { background: #004d6b; border-color: #004d6b; box-shadow: none; }
 
-.btn-sm, .btn-group-sm > .btn { font-size: 16px; font-weight: 400; margin-left: 10px; padding-bottom: 8px; padding-top: 8px; }
+.btn-sm, .btn-group-sm > .btn { font-size: 16px; font-weight: 400; margin-left: 10px; padding-bottom: 9px; padding-top: 7px; }
 
 [disabled].btn-primary:disabled { opacity: 0.4; filter: alpha(opacity=40); background: #0096d1; color: #fff; }
 
