@@ -2745,7 +2745,7 @@ parent: typo
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:active:focus { background: #004d6b; border-color: #004d6b; box-shadow: none; }
 
-.btn-sm, .btn-group-sm > .btn { font-size: 16px; padding-top: 8px; padding-bottom: 8px; }
+.btn-sm, .btn-group-sm > .btn { font-size: 16px; margin-left: 10px; padding-bottom: 8px; padding-top: 8px; }
 
 [disabled].btn-primary:disabled { opacity: 0.4; filter: alpha(opacity=40); background: #0096d1; color: #fff; }
 

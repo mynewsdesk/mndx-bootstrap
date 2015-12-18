@@ -62,8 +62,9 @@ category: CSS
 
   &-sm {
     font-size: $font-size-base;
-    padding-top: $btn-sm-vertical-padding;
+    margin-left: $gutter-horizontal;
     padding-bottom: $btn-sm-vertical-padding;
+    padding-top: $btn-sm-vertical-padding;
   }
 }
 
