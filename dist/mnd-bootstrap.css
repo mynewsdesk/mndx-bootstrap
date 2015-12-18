@@ -2741,7 +2741,7 @@ h1 { font-weight: 700; }
 
 .btn-default:hover, .btn-primary:hover:disabled { background: #fff; border-color: #e0e3e9; color: #0096d1; }
 
-.btn-default:active, .btn-primary:active:disabled, .btn-default:focus, .btn-primary:focus:disabled, .btn-default:active:focus, .btn-primary:active:focus:disabled { background: #fff; border-color: #666; box-shadow: none; color: #888; }
+.btn-default:active, .btn-primary:active:disabled, .btn-default:focus, .btn-primary:focus:disabled, .btn-default:active:focus, .btn-primary:active:focus:disabled { background: #fff; border-color: #95a0b4; box-shadow: none; color: #888; }
 
 .btn-default:disabled:hover, .btn-primary:disabled:hover { color: #666; }
 
@@ -2882,7 +2882,7 @@ category: CSS
 
 .btn-group.open .dropdown-toggle { box-shadow: none; }
 
-.btn-group.open > .btn-default.dropdown-toggle, .btn-group.open > .dropdown-toggle.btn-primary:disabled { background: #fff; border-color: #666; color: #888; }
+.btn-group.open > .btn-default.dropdown-toggle, .btn-group.open > .dropdown-toggle.btn-primary:disabled { background: #fff; border-color: #95a0b4; color: #888; }
 
 .btn-group.open > .btn-primary.dropdown-toggle { background: #004d6b; border-color: #004d6b; }
 
