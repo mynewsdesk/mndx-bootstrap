@@ -25,9 +25,11 @@ parent: typo
 */
 /*doc --- title: Body copy name: body_copy parent: typo --- ```html_example <p class="lead"> <strong>.lead</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs. Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger. Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter. Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round. Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin. </p> <p> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs. Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger. Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter. Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round. Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin. </p> ``` */
 @import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic");
+@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic");
+h1 { font-weight: 700; }
+
 /*! Bootstrap v3.3.5 (http://getbootstrap.com) Copyright 2011-2015 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic");
 html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
 body { margin: 0; }
@@ -2722,6 +2724,8 @@ parent: typo
 ```
 */
 /*doc --- title: Body copy name: body_copy parent: typo --- ```html_example <p class="lead"> <strong>.lead</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs. Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger. Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter. Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round. Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin. </p> <p> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs. Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger. Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter. Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round. Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin. </p> ``` */
+h1 { font-weight: 700; }
+
 .table tbody > tr > td.vert-align { vertical-align: middle; }
 
 .align-right { text-align: right; }
