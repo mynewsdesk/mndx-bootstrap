@@ -1,5 +1,6 @@
 // Buttons
 $btn-font-weight: 400;
+$btn-border-active-color: #95a0b4;
 
 $btn-default-color: $text-color;
 $btn-default-bg: $white;
@@ -25,7 +26,7 @@ $btn-border-radius-large: $btn-border-radius-base;
 $btn-border-radius-small: $btn-border-radius-base;
 
 $btn-default-color-hover: $brand-primary;
-$btn-default-border-active: $gray;
+$btn-default-border-active: $btn-border-active-color;
 $btn-default-color-active: $gray-light;
 
 $btn-default-border-hover: $border-alt;

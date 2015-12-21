@@ -6,3 +6,20 @@
 //---
 */
 
+.page-header {
+  @include align-items(center);
+  @include display(flex);
+
+  border: 0;
+  margin: $gutter-vertical 0;
+
+  &-title {
+    @include flex(1);
+  }
+
+  &-actions {
+    @include flex(1);
+
+    text-align: right;
+  }
+}

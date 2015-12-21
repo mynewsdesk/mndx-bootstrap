@@ -16,8 +16,13 @@ category: CSS
 ```
  */
 
+$btn-vertical-padding: 12px;
+
 .btn {
   margin-left: $gutter-horizontal-x2;
+  font-weight: $semi-bold;
+  padding-top: $btn-vertical-padding - 1;
+  padding-bottom: $btn-vertical-padding + 1;
 
   &-default {
 
@@ -62,8 +67,10 @@ category: CSS
 
   &-sm {
     font-size: $font-size-base;
-    padding-top: $btn-sm-vertical-padding;
-    padding-bottom: $btn-sm-vertical-padding;
+    font-weight: $regular;
+    margin-left: $gutter-horizontal;
+    padding-bottom: $btn-sm-vertical-padding + 1;
+    padding-top: $btn-sm-vertical-padding - 1;
   }
 }
 

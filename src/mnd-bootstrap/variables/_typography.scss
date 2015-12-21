@@ -46,6 +46,11 @@ parent: typo
 */
 @import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic");
 
+$light: 300;
+$regular: 400;
+$semi-bold: 600;
+$bold: 700;
+
 $font-family-sans-serif: "Source Sans Pro", Arial, sans-serif;
 $font-family-serif: Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
@@ -70,8 +75,7 @@ $line-height-computed: floor(($font-size-base * $line-height-base)); // 22px
 $line-height-very-large: floor(($font-size-very-large * $line-height-base-small)); // 77px
 $line-height-extremly-large: floor(($font-size-extremly-large * $line-height-base-small)); // 123px
 
-$headings-font-weight: 600;
-// TODO: h1 should be 700
+$headings-font-weight: $semi-bold;
 $headings-color: $text-color-dark;
 
 $line-height-large: 1.5;
@@ -80,3 +84,6 @@ $line-height-small: 1.5;
 //** Load fonts from this directory.
 $icon-font-path: "bootstrap/";
 
+h1 {
+  font-weight: $bold;
+}

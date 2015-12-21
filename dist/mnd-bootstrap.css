@@ -25,9 +25,11 @@ parent: typo
 */
 /*doc --- title: Body copy name: body_copy parent: typo --- ```html_example <p class="lead"> <strong>.lead</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs. Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger. Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter. Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round. Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin. </p> <p> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs. Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger. Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter. Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round. Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin. </p> ``` */
 @import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic");
+@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic");
+h1 { font-weight: 700; }
+
 /*! Bootstrap v3.3.5 (http://getbootstrap.com) Copyright 2011-2015 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic");
 html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
 body { margin: 0; }
@@ -1223,11 +1225,11 @@ output { display: block; padding-top: 13px; font-size: 16px; line-height: 1.375;
 
 .form-control:focus { border-color: #66afe9; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
 
-.form-control::-moz-placeholder { color: #999; opacity: 1; }
+.form-control::-moz-placeholder { color: #888; opacity: 1; }
 
-.form-control:-ms-input-placeholder { color: #999; }
+.form-control:-ms-input-placeholder { color: #888; }
 
-.form-control::-webkit-input-placeholder { color: #999; }
+.form-control::-webkit-input-placeholder { color: #888; }
 
 .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control { background-color: #eeeeee; opacity: 1; }
 
@@ -1399,13 +1401,13 @@ a.btn.disabled, fieldset[disabled] a.btn { pointer-events: none; }
 
 .btn-primary { color: #fff; background-color: #0096d1; border-color: #0096d1; }
 
-.btn-primary:focus, .btn-primary.focus { color: #fff; background-color: #00719e; border-color: #003a52; }
+.btn-primary:focus, .btn-primary.focus { color: #fff; background-color: #00719e; border-color: #003a51; }
 
 .btn-primary:hover { color: #fff; background-color: #00719e; border-color: #006a94; }
 
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle { color: #fff; background-color: #00719e; border-color: #006a94; }
 
-.btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus { color: #fff; background-color: #00587a; border-color: #003a52; }
+.btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus { color: #fff; background-color: #00587a; border-color: #003a51; }
 
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle { background-image: none; }
 
@@ -1431,13 +1433,13 @@ a.btn.disabled, fieldset[disabled] a.btn { pointer-events: none; }
 
 .btn-info { color: #fff; background-color: #0096d1; border-color: #0096d1; }
 
-.btn-info:focus, .btn-info.focus { color: #fff; background-color: #00719e; border-color: #003a52; }
+.btn-info:focus, .btn-info.focus { color: #fff; background-color: #00719e; border-color: #003a51; }
 
 .btn-info:hover { color: #fff; background-color: #00719e; border-color: #006a94; }
 
 .btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle { color: #fff; background-color: #00719e; border-color: #006a94; }
 
-.btn-info:active:hover, .btn-info:active:focus, .btn-info:active.focus, .btn-info.active:hover, .btn-info.active:focus, .btn-info.active.focus, .open > .btn-info.dropdown-toggle:hover, .open > .btn-info.dropdown-toggle:focus, .open > .btn-info.dropdown-toggle.focus { color: #fff; background-color: #00587a; border-color: #003a52; }
+.btn-info:active:hover, .btn-info:active:focus, .btn-info:active.focus, .btn-info.active:hover, .btn-info.active:focus, .btn-info.active.focus, .open > .btn-info.dropdown-toggle:hover, .open > .btn-info.dropdown-toggle:focus, .open > .btn-info.dropdown-toggle.focus { color: #fff; background-color: #00587a; border-color: #003a51; }
 
 .btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle { background-image: none; }
 
@@ -1447,13 +1449,13 @@ a.btn.disabled, fieldset[disabled] a.btn { pointer-events: none; }
 
 .btn-warning { color: #fff; background-color: #ffd34f; border-color: #ffd34f; }
 
-.btn-warning:focus, .btn-warning.focus { color: #fff; background-color: #ffc61c; border-color: #cf9b00; }
+.btn-warning:focus, .btn-warning.focus { color: #fff; background-color: #ffc61c; border-color: #ce9b00; }
 
 .btn-warning:hover { color: #fff; background-color: #ffc61c; border-color: #ffc412; }
 
 .btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle { color: #fff; background-color: #ffc61c; border-color: #ffc412; }
 
-.btn-warning:active:hover, .btn-warning:active:focus, .btn-warning:active.focus, .btn-warning.active:hover, .btn-warning.active:focus, .btn-warning.active.focus, .open > .btn-warning.dropdown-toggle:hover, .open > .btn-warning.dropdown-toggle:focus, .open > .btn-warning.dropdown-toggle.focus { color: #fff; background-color: #f7b900; border-color: #cf9b00; }
+.btn-warning:active:hover, .btn-warning:active:focus, .btn-warning:active.focus, .btn-warning.active:hover, .btn-warning.active:focus, .btn-warning.active.focus, .open > .btn-warning.dropdown-toggle:hover, .open > .btn-warning.dropdown-toggle:focus, .open > .btn-warning.dropdown-toggle.focus { color: #fff; background-color: #f7b900; border-color: #ce9b00; }
 
 .btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle { background-image: none; }
 
@@ -1883,7 +1885,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus { background-color: #eee; }
 
-.navbar-default .navbar-toggle .icon-bar { background-color: #999; }
+.navbar-default .navbar-toggle .icon-bar { background-color: #888; }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form { border-color: #eeeeee; }
 
@@ -1910,9 +1912,9 @@ tbody.collapse.in { display: table-row-group; }
 
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus { color: #fff; background-color: transparent; }
 
-.navbar-inverse .navbar-text { color: #999; }
+.navbar-inverse .navbar-text { color: #888; }
 
-.navbar-inverse .navbar-nav > li > a { color: #999; }
+.navbar-inverse .navbar-nav > li > a { color: #888; }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus { color: #fff; background-color: transparent; }
 
@@ -1932,16 +1934,16 @@ tbody.collapse.in { display: table-row-group; }
 
 @media (max-width: 767px) { .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header { border-color: #090909; }
   .navbar-inverse .navbar-nav .open .dropdown-menu .divider { background-color: #090909; }
-  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a { color: #999; }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a { color: #888; }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus { color: #fff; background-color: transparent; }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus { color: #fff; background-color: #090909; }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus { color: #444; background-color: transparent; } }
 
-.navbar-inverse .navbar-link { color: #999; }
+.navbar-inverse .navbar-link { color: #888; }
 
 .navbar-inverse .navbar-link:hover { color: #fff; }
 
-.navbar-inverse .btn-link { color: #999; }
+.navbar-inverse .btn-link { color: #888; }
 
 .navbar-inverse .btn-link:hover, .navbar-inverse .btn-link:focus { color: #fff; }
 
@@ -1951,7 +1953,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .breadcrumb > li { display: inline-block; }
 
-.breadcrumb > li + li:before { content: "/ "; padding: 0 5px; color: #ccc; }
+.breadcrumb > li + li:before { content: "/\\00a0"; padding: 0 5px; color: #ccc; }
 
 .breadcrumb > .active { color: #777777; }
 
@@ -2001,7 +2003,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .pager .disabled > a, .pager .disabled > a:hover, .pager .disabled > a:focus, .pager .disabled > span { color: #777777; background-color: #fff; cursor: not-allowed; }
 
-.label { display: inline; padding: .2em .6em .3em; font-size: 75%; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; }
+.label { display: inline; padding: 0.2em 0.6em 0.3em; font-size: 75%; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; }
 
 .label:empty { display: none; }
 
@@ -2009,9 +2011,9 @@ tbody.collapse.in { display: table-row-group; }
 
 a.label:hover, a.label:focus { color: #fff; text-decoration: none; cursor: pointer; }
 
-.label-default { background-color: #999; }
+.label-default { background-color: #888; }
 
-.label-default[href]:hover, .label-default[href]:focus { background-color: gray; }
+.label-default[href]:hover, .label-default[href]:focus { background-color: #6f6f6f; }
 
 .label-primary { background-color: #0096d1; }
 
@@ -2722,6 +2724,8 @@ parent: typo
 ```
 */
 /*doc --- title: Body copy name: body_copy parent: typo --- ```html_example <p class="lead"> <strong>.lead</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs. Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger. Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter. Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round. Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin. </p> <p> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs. Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger. Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter. Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round. Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin. </p> ``` */
+h1 { font-weight: 700; }
+
 .table tbody > tr > td.vert-align { vertical-align: middle; }
 
 .align-right { text-align: right; }
@@ -2733,11 +2737,11 @@ parent: typo
 @media screen and (min-width: 1200px) { .text-left-lg { text-align: left; } }
 
 /*doc --- title: Buttons name: Buttons category: CSS --- ```html_example_table <p><button class="btn btn-default">Normal</button> <button class="btn btn-default btn-sm">Small</button></p> <p><button class="btn btn-default">Default</button> <button class="btn btn-default" disabled>Default disabled</button></p> <p><button class="btn btn-primary">Primary</button> <button class="btn btn-primary" disabled>Primary disabled</button></p> ``` */
-.btn { margin-left: 20px; }
+.btn { margin-left: 20px; font-weight: 600; padding-top: 11px; padding-bottom: 13px; }
 
 .btn-default:hover, .btn-primary:hover:disabled { background: #fff; border-color: #e0e3e9; color: #0096d1; }
 
-.btn-default:active, .btn-primary:active:disabled, .btn-default:focus, .btn-primary:focus:disabled, .btn-default:active:focus, .btn-primary:active:focus:disabled { background: #fff; border-color: #666; box-shadow: none; color: #999; }
+.btn-default:active, .btn-primary:active:disabled, .btn-default:focus, .btn-primary:focus:disabled, .btn-default:active:focus, .btn-primary:active:focus:disabled { background: #fff; border-color: #95a0b4; box-shadow: none; color: #888; }
 
 .btn-default:disabled:hover, .btn-primary:disabled:hover { color: #666; }
 
@@ -2745,7 +2749,7 @@ parent: typo
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:active:focus { background: #004d6b; border-color: #004d6b; box-shadow: none; }
 
-.btn-sm, .btn-group-sm > .btn { font-size: 16px; padding-top: 8px; padding-bottom: 8px; }
+.btn-sm, .btn-group-sm > .btn { font-size: 16px; font-weight: 400; margin-left: 10px; padding-bottom: 9px; padding-top: 7px; }
 
 [disabled].btn-primary:disabled { opacity: 0.4; filter: alpha(opacity=40); background: #0096d1; color: #fff; }
 
@@ -2769,13 +2773,13 @@ parent: typo
 
 .form-control { background: #fff; border: 2px solid #ddd; box-shadow: none; }
 
-.form-control::-webkit-input-placeholder { color: #999; font-style: italic; }
+.form-control::-webkit-input-placeholder { color: #888; font-style: italic; }
 
-.form-control::-moz-placeholder { color: #999; font-style: italic; }
+.form-control::-moz-placeholder { color: #888; font-style: italic; }
 
-.form-control:-moz-placeholder { color: #999; font-style: italic; }
+.form-control:-moz-placeholder { color: #888; font-style: italic; }
 
-.form-control:-ms-input-placeholder { color: #999; font-style: italic; }
+.form-control:-ms-input-placeholder { color: #888; font-style: italic; }
 
 .form-control:hover { border-color: #aaa; }
 
@@ -2878,13 +2882,13 @@ category: CSS
 
 .btn-group.open .dropdown-toggle { box-shadow: none; }
 
-.btn-group.open > .btn-default.dropdown-toggle, .btn-group.open > .dropdown-toggle.btn-primary:disabled { background: #fff; border-color: #666; color: #999; }
+.btn-group.open > .btn-default.dropdown-toggle, .btn-group.open > .dropdown-toggle.btn-primary:disabled { background: #fff; border-color: #95a0b4; color: #888; }
 
 .btn-group.open > .btn-primary.dropdown-toggle { background: #004d6b; border-color: #004d6b; }
 
 .btn-group.open > .btn-primary.btn-split + .dropdown-toggle { border-left-color: #fff; }
 
-.dropdown-menu { border-radius: 6px; border: 1px solid #e0e3e9; box-shadow: none; left: auto; margin-top: 15px; padding-bottom: 25px; padding-top: 20px; right: -5px; }
+.dropdown-menu { border-radius: 6px; border: 1px solid #e0e3e9; box-shadow: none; color: #888; left: auto; margin-top: 15px; padding-bottom: 25px; padding-top: 20px; right: -5px; }
 
 .dropdown-menu > li > a { padding: 5px 25px; }
 
@@ -2928,11 +2932,11 @@ A calendar, designed for the datepicker
 
 .date-picker-calendar .rw-btn-left, .date-picker-calendar .rw-btn-right { float: left; line-height: 20px; width: 20%; }
 
-.date-picker-calendar .rw-btn-left[disabled], .date-picker-calendar .rw-btn-right[disabled] { color: #999; }
+.date-picker-calendar .rw-btn-left[disabled], .date-picker-calendar .rw-btn-right[disabled] { color: #888; }
 
 .date-picker-calendar .rw-btn { background: transparent; border: none; color: #333; display: inline-block; }
 
-.date-picker-calendar .rw-btn.rw-off-range { color: #999; }
+.date-picker-calendar .rw-btn.rw-off-range { color: #888; }
 
 .date-picker-calendar .rw-state-selected { background: #3eb991; border-radius: 3px; color: #fff; }
 
@@ -2961,7 +2965,7 @@ A calendar, designed for the datepicker
 
 .content-list .content-list-column:last-child { display: table-cell; }
 
-.content-list .content-list-header { color: #000; font-weight: 600; font-size: 16px; }
+.content-list .content-list-header { color: #333; font-weight: 600; font-size: 16px; }
 
 .content-list .content-list-action { display: inline-block; margin-left: 25px; }
 
@@ -3099,6 +3103,12 @@ category: Components
 //category: Components
 //---
 */
+.page-header { -webkit-box-align: center; -moz-box-align: center; box-align: center; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -ms-flex-align: center; display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; border: 0; margin: 30px 0; }
+
+.page-header-title { -webkit-box-flex: 1; -moz-box-flex: 1; box-flex: 1; -webkit-flex: 1; -moz-flex: 1; -ms-flex: 1; flex: 1; }
+
+.page-header-actions { -webkit-box-flex: 1; -moz-box-flex: 1; box-flex: 1; -webkit-flex: 1; -moz-flex: 1; -ms-flex: 1; flex: 1; text-align: right; }
+
 /*doc
 //---
 //title: Pagination
@@ -3178,7 +3188,7 @@ category: Components
 
 .modal-footer .btn + .btn, .takeover-footer .btn + .btn { margin-left: 20px; }
 
-.modal-dialog .footnote, .takeover-dialog .footnote { color: #999; font-size: 12px; }
+.modal-dialog .footnote, .takeover-dialog .footnote { color: #888; font-size: 12px; }
 
 /*doc --- title: Takeover name: takeover category: JavaScript --- Based on bootstrap modal. `.takeover-body` optionally takes a `.wide` class to support takeovers with more content. Note** that `data-backdrop` needs to be set to false and `data-toggle` and `data-dismiss` on trigger elements needs to take the value modal. ```html_example_table <div class="takeover fade" id="default-takeover" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="myTakeoverLabel" aria-hidden="true"> <div class="takeover-dialog"> <div class="takeover-content"> <div class="takeover-header text-center"> <h1>Success!</h1> <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p> </div> <div class="takeover-body text-center"> <p> Ut massa lacus, posuere in facilisis a, blandit ac tortor. Praesent euismod posuere sodales. Nunc maximus eros vitae massa vehicula pharetra. Praesent id nunc ac odio tristique faucibus*. </p> </div> <div class="takeover-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Secondary Action</button> <button type="button" class="btn btn-primary">Primary Action</button> </div> </div> </div> </div> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#default-takeover"> Launch default takeover </button> <div class="takeover fade" id="wide-takeover" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="myTakeoverLabel" aria-hidden="true"> <div class="takeover-dialog"> <div class="takeover-content"> <div class="takeover-header text-center"> <h1>Success!</h1> <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p> </div> <div class="takeover-body wide text-center"> <p> Ut massa lacus, posuere in facilisis a, blandit ac tortor. Praesent euismod posuere sodales. Nunc maximus eros vitae massa vehicula pharetra. Praesent id nunc ac odio tristique faucibus*. </p> </div> <div class="takeover-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Secondary Action</button> <button type="button" class="btn btn-primary">Primary Action</button> </div> </div> </div> </div> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#wide-takeover"> Launch wide takeover </button> ``` ```jsx_example <Takeover label="Label" show={@state.showTakeover}> <Takeover.Header title="Success!"> <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p> </Takeover.Header> <Takeover.Body wide={true} className="text-center"> <p> Ut massa lacus, posuere in facilisis a, blandit ac tortor. Praesent euismod posuere sodales. Nunc maximus eros vitae massa vehicula pharetra. Praesent id nunc ac odio tristique faucibus*. </p> </Takeover.Body> <Takeover.Footer> <Button onClick={@toggleTakeover}>Secondary Action</Button> <Button bsStyle="primary">Primary Action</Button> </Takeover.Footer> </Takeover> ``` */
 .takeover-header, .takeover-body, .takeover-footer { margin: 0 auto; max-width: 550px; }
