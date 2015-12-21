@@ -72,6 +72,10 @@ $btn-vertical-padding: 12px;
     padding-bottom: $btn-sm-vertical-padding + 1;
     padding-top: $btn-sm-vertical-padding - 1;
   }
+
+  &.no-margin {
+    margin: 0;
+  }
 }
 
 [disabled].btn-primary:disabled {

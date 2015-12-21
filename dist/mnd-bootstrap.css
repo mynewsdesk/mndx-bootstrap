@@ -2751,6 +2751,8 @@ h1 { font-weight: 700; }
 
 .btn-sm, .btn-group-sm > .btn { font-size: 16px; font-weight: 400; margin-left: 10px; padding-bottom: 9px; padding-top: 7px; }
 
+.btn.no-margin { margin: 0; }
+
 [disabled].btn-primary:disabled { opacity: 0.4; filter: alpha(opacity=40); background: #0096d1; color: #fff; }
 
 [disabled].btn-primary:disabled:hover { background: #0096d1; }
