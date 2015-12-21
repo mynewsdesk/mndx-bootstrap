@@ -16,11 +16,11 @@ category: CSS
 ```
  */
 
+$btn-vertical-padding: 12px;
+
 .btn {
   margin-left: $gutter-horizontal-x2;
   font-weight: $semi-bold;
-
-  $btn-vertical-padding: 12px;
   padding-top: $btn-vertical-padding - 1;
   padding-bottom: $btn-vertical-padding + 1;
 
