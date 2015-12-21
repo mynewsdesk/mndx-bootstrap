@@ -65,6 +65,10 @@ category: CSS
     padding-top: $btn-sm-vertical-padding;
     padding-bottom: $btn-sm-vertical-padding;
   }
+
+  &.no-margin {
+    margin: 0;
+  }
 }
 
 [disabled].btn-primary:disabled {
