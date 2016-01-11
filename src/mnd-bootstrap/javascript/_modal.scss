@@ -62,7 +62,11 @@ category: JavaScript
 }
 
 .modal-header {
-  padding: $gutter-vertical-x2 $gutter-vertical-x3 $gutter-vertical;
+  padding: $gutter-vertical $gutter-horizontal;
+
+  @media screen and (min-width: $screen-sm-min) {
+    padding: $gutter-vertical-x2 $gutter-horizontal-x3 $gutter-vertical;
+  }
 
   .modal-title {
     @extend .h1;
