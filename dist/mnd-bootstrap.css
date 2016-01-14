@@ -3090,18 +3090,6 @@ category: Components
 */
 .label { border-radius: 2px; font-size: 80%; padding: 2px 7px 3px; text-transform: uppercase; }
 
-/*doc --- title: List name: list category: Components --- A list built with flexbox ```html_example <div class="list"> <div class="list-row"> <div class="list-column"> <input type="checkbox" /> </div> <div class="list-column"> <div class="avatar-name"> H </div> </div> <div class="list-column list-flex"> In the sign of the Octopus <br /> <i>The Hellacopters</i> </div> </div> <div class="list-row"> <div class="list-column"> <input type="checkbox" /> </div> <div class="list-column"> <div class="avatar-image"> <img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" /> </div> </div> <div class="list-column"> The Clash <i>Backyard Babies</i> </div> </div> </div> ``` */
-/*doc --- title: Primary name: primary category: Colors --- Used for elements (i.e buttons, labels and ***) <div class="clearfix"> <div class="color-box brand-primary"> <span>$brand-primary</span> </div> <div class="color-box brand-success"> <span>$brand-success</span> </div> <div class="color-box brand-warning"> <span>$brand-warning</span> </div> <div class="color-box brand-danger"> <span>$brand-danger</span> </div> </div> */
-/*doc --- title: Text name: text category: Colors --- Used for text, borders and list elements. <div class="clearfix"> <div class="color-box text-color"> <span>$text-color</span> </div> <div class="color-box text-color-dark"> <span>$text-color-dark</span> </div> <div class="color-box text-color-light"> <span>$text-color-light</span> </div> </div> */
-/*doc --- title: UI Colors name: ui-colors category: Colors --- Used for borders, background and dividers <div class="clearfix"> <div class="color-box ui-color-default"> <span>$ui-color-default</span> </div> <div class="color-box ui-color-light"> <span>$ui-color-light</span> </div> <div class="color-box ui-color-lighter"> <span>$ui-color-lighter</span> </div> <div class="color-box ui-color-lightest"> <span>$ui-color-lightest</span> </div> </div> */
-.list { display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -moz-box-orient: vertical; box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; flex-direction: column; -ms-flex-direction: column; }
-
-.list-flex { -webkit-box-flex: 1; -moz-box-flex: 1; box-flex: 1; -webkit-flex: 1; -moz-flex: 1; -ms-flex: 1; flex: 1; }
-
-.list-column { -webkit-box-orient: vertical; -moz-box-orient: vertical; box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; flex-direction: column; -ms-flex-direction: column; display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; margin: 15px 10px; }
-
-.list-row { display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -moz-box-align: center; box-align: center; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -ms-flex-align: center; }
-
 /*doc
 //---
 //title: List group
