@@ -1401,13 +1401,13 @@ a.btn.disabled, fieldset[disabled] a.btn { pointer-events: none; }
 
 .btn-primary { color: #fff; background-color: #0096d1; border-color: #0096d1; }
 
-.btn-primary:focus, .btn-primary.focus { color: #fff; background-color: #00719e; border-color: #003a52; }
+.btn-primary:focus, .btn-primary.focus { color: #fff; background-color: #00719e; border-color: #003a51; }
 
 .btn-primary:hover { color: #fff; background-color: #00719e; border-color: #006a94; }
 
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle { color: #fff; background-color: #00719e; border-color: #006a94; }
 
-.btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus { color: #fff; background-color: #00587a; border-color: #003a52; }
+.btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus { color: #fff; background-color: #00587a; border-color: #003a51; }
 
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle { background-image: none; }
 
@@ -1433,13 +1433,13 @@ a.btn.disabled, fieldset[disabled] a.btn { pointer-events: none; }
 
 .btn-info { color: #fff; background-color: #0096d1; border-color: #0096d1; }
 
-.btn-info:focus, .btn-info.focus { color: #fff; background-color: #00719e; border-color: #003a52; }
+.btn-info:focus, .btn-info.focus { color: #fff; background-color: #00719e; border-color: #003a51; }
 
 .btn-info:hover { color: #fff; background-color: #00719e; border-color: #006a94; }
 
 .btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle { color: #fff; background-color: #00719e; border-color: #006a94; }
 
-.btn-info:active:hover, .btn-info:active:focus, .btn-info:active.focus, .btn-info.active:hover, .btn-info.active:focus, .btn-info.active.focus, .open > .btn-info.dropdown-toggle:hover, .open > .btn-info.dropdown-toggle:focus, .open > .btn-info.dropdown-toggle.focus { color: #fff; background-color: #00587a; border-color: #003a52; }
+.btn-info:active:hover, .btn-info:active:focus, .btn-info:active.focus, .btn-info.active:hover, .btn-info.active:focus, .btn-info.active.focus, .open > .btn-info.dropdown-toggle:hover, .open > .btn-info.dropdown-toggle:focus, .open > .btn-info.dropdown-toggle.focus { color: #fff; background-color: #00587a; border-color: #003a51; }
 
 .btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle { background-image: none; }
 
@@ -1449,13 +1449,13 @@ a.btn.disabled, fieldset[disabled] a.btn { pointer-events: none; }
 
 .btn-warning { color: #fff; background-color: #ffd34f; border-color: #ffd34f; }
 
-.btn-warning:focus, .btn-warning.focus { color: #fff; background-color: #ffc61c; border-color: #cf9b00; }
+.btn-warning:focus, .btn-warning.focus { color: #fff; background-color: #ffc61c; border-color: #ce9b00; }
 
 .btn-warning:hover { color: #fff; background-color: #ffc61c; border-color: #ffc412; }
 
 .btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle { color: #fff; background-color: #ffc61c; border-color: #ffc412; }
 
-.btn-warning:active:hover, .btn-warning:active:focus, .btn-warning:active.focus, .btn-warning.active:hover, .btn-warning.active:focus, .btn-warning.active.focus, .open > .btn-warning.dropdown-toggle:hover, .open > .btn-warning.dropdown-toggle:focus, .open > .btn-warning.dropdown-toggle.focus { color: #fff; background-color: #f7b900; border-color: #cf9b00; }
+.btn-warning:active:hover, .btn-warning:active:focus, .btn-warning:active.focus, .btn-warning.active:hover, .btn-warning.active:focus, .btn-warning.active.focus, .open > .btn-warning.dropdown-toggle:hover, .open > .btn-warning.dropdown-toggle:focus, .open > .btn-warning.dropdown-toggle.focus { color: #fff; background-color: #f7b900; border-color: #ce9b00; }
 
 .btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle { background-image: none; }
 
@@ -1953,7 +1953,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .breadcrumb > li { display: inline-block; }
 
-.breadcrumb > li + li:before { content: "/ "; padding: 0 5px; color: #ccc; }
+.breadcrumb > li + li:before { content: "/\\00a0"; padding: 0 5px; color: #ccc; }
 
 .breadcrumb > .active { color: #777777; }
 
@@ -2003,7 +2003,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .pager .disabled > a, .pager .disabled > a:hover, .pager .disabled > a:focus, .pager .disabled > span { color: #777777; background-color: #fff; cursor: not-allowed; }
 
-.label { display: inline; padding: .2em .6em .3em; font-size: 75%; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; }
+.label { display: inline; padding: 0.2em 0.6em 0.3em; font-size: 75%; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; }
 
 .label:empty { display: none; }
 
@@ -2736,7 +2736,7 @@ h1 { font-weight: 700; }
 
 @media screen and (min-width: 1200px) { .text-left-lg { text-align: left; } }
 
-/*doc --- title: Buttons name: Buttons category: CSS --- ```html_example_table <p><button class="btn btn-default">Normal</button> <button class="btn btn-default btn-sm">Small</button></p> <p><button class="btn btn-default">Default</button> <button class="btn btn-default" disabled>Default disabled</button></p> <p><button class="btn btn-primary">Primary</button> <button class="btn btn-primary" disabled>Primary disabled</button></p> ``` */
+/*doc --- title: Buttons name: Buttons category: CSS --- ```html_example_table <p><button class="btn btn-default">Normal</button> <button class="btn btn-default btn-sm">Small</button></p> <h3>Normal buttons</h3> <p><button class="btn btn-link">Link button</button> <button class="btn btn-link" disabled>Link button</button></p> <p><button class="btn btn-default">Default</button> <button class="btn btn-default" disabled>Default disabled</button></p> <p><button class="btn btn-primary">Primary</button> <button class="btn btn-primary" disabled>Primary disabled</button></p> <h3>Small buttons</h3> <p><button class="btn btn-sm btn-default">Small default</button> <button class="btn btn-sm btn-primary">Small primary</button> <button class="btn btn-sm btn-link">Small link button</button></p> <h3>Small buttons with icons</h3> <p><button class="btn btn-sm btn-default"><i class="fa fa-plus"></i></button> <button class="btn btn-sm btn-primary">Small primary <i class="fa fa-plus"></i></button></p> ``` */
 .btn { margin-left: 20px; font-weight: 600; padding-top: 11px; padding-bottom: 13px; }
 
 .btn-default:hover, .btn-primary:hover:disabled { background: #fff; border-color: #e0e3e9; color: #0096d1; }
@@ -2750,6 +2750,8 @@ h1 { font-weight: 700; }
 .btn-primary:active, .btn-primary:focus, .btn-primary:active:focus { background: #004d6b; border-color: #004d6b; box-shadow: none; }
 
 .btn-sm, .btn-group-sm > .btn { font-size: 16px; font-weight: 400; margin-left: 10px; padding-bottom: 9px; padding-top: 7px; }
+
+.btn-sm i, .btn-group-sm > .btn i { position: relative; top: 1px; }
 
 .btn.no-margin { margin: 0; }
 
@@ -2855,6 +2857,22 @@ category: CSS
 
 .alert-dismissable .close, .alert-dismissible .close { right: -12px; top: 0; }
 
+/*doc --- title: Avatar icon name: avatar category: Components --- Icons for displaying an image of a user ```html_example <div class="avatar"> <div class="avatar-image"> <img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" /> </div> </div> <div class="avatar"> <div class="avatar-name"> A </div> </div> ``` */
+/*doc --- title: Primary name: primary category: Colors --- Used for elements (i.e buttons, labels and ***) <div class="clearfix"> <div class="color-box brand-primary"> <span>$brand-primary</span> </div> <div class="color-box brand-success"> <span>$brand-success</span> </div> <div class="color-box brand-warning"> <span>$brand-warning</span> </div> <div class="color-box brand-danger"> <span>$brand-danger</span> </div> </div> */
+/*doc --- title: Text name: text category: Colors --- Used for text, borders and list elements. <div class="clearfix"> <div class="color-box text-color"> <span>$text-color</span> </div> <div class="color-box text-color-dark"> <span>$text-color-dark</span> </div> <div class="color-box text-color-light"> <span>$text-color-light</span> </div> </div> */
+/*doc --- title: UI Colors name: ui-colors category: Colors --- Used for borders, background and dividers <div class="clearfix"> <div class="color-box ui-color-default"> <span>$ui-color-default</span> </div> <div class="color-box ui-color-light"> <span>$ui-color-light</span> </div> <div class="color-box ui-color-lighter"> <span>$ui-color-lighter</span> </div> <div class="color-box ui-color-lightest"> <span>$ui-color-lightest</span> </div> </div> */
+.avatar-empty, .avatar-image img, .avatar-name { border-radius: 50%; height: 45px; width: 45px; }
+
+.avatar-large { height: 100px; width: 100px; }
+
+.avatar-large.avatar-name { font-size: 60px; }
+
+.avatar-large img { height: 100px; width: 100px; }
+
+.avatar { display: inline-block; text-align: center; }
+
+.avatar-name { display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -moz-box-align: center; box-align: center; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -ms-flex-align: center; -webkit-box-pack: center; -moz-box-pack: center; box-pack: center; -webkit-justify-content: center; -moz-justify-content: center; -ms-justify-content: center; -o-justify-content: center; justify-content: center; -ms-flex-pack: center; background-color: #f55065; color: #fff; font-size: 22px; text-transform: uppercase; }
+
 /*doc
 //---
 //title: Badges
@@ -2878,9 +2896,11 @@ category: CSS
 
 .btn-group > .btn-primary + .dropdown-toggle { border-left-color: #fff; }
 
-.btn-group.no-ui button { background-color: transparent; border: none; color: #666; padding: 0; }
+.btn-group.no-ui button { background-color: transparent; border: 0; color: #666; padding: 0; }
 
-.btn-group.no-ui .dropdown-menu { margin-right: -20px; margin-top: 15px; padding: 0; right: 0; }
+.btn-group.no-ui .dropdown-menu { margin-right: -20px; padding: 0; right: 0; }
+
+.btn-group.no-ui li { margin: 10px 0; }
 
 .btn-group.open .dropdown-toggle { box-shadow: none; }
 
@@ -2967,7 +2987,7 @@ A calendar, designed for the datepicker
 
 .content-list .content-list-column:last-child { display: table-cell; }
 
-.content-list .content-list-header { color: #333; font-weight: 600; font-size: 16px; }
+.content-list .content-list-header { color: #333; font-size: 16px; font-weight: 600; }
 
 .content-list .content-list-action { display: inline-block; margin-left: 25px; }
 
@@ -3133,13 +3153,6 @@ category: Components
 //category: Components
 //---
 */
-/*doc
-//---
-//title: Sections
-//name: sections
-//category: Components
-//---
-*/
 /*doc --- title: Scoreboard name: scoreboard category: Components --- Component to display numbers ```html_example <div class="container"> <div class="row"> <div class="col-xs-12 col-sm-6 col-md-4"> <div class="scoreboard-box scoreboard-box-large"> <div class="scoreboard-box-number">124000</div> <div class="scoreboard-box-label">title</div> <div class="scoreboard-box-hint">subtitle</div> </div> </div> <div class="col-xs-12 col-sm-6 col-md-4"> <div class="scoreboard-box scoreboard-box-large"> <div class="scoreboard-box-number">1090</div> <div class="scoreboard-box-label">title</div> <div class="scoreboard-box-hint">subtitle</div> </div> </div> <div class="col-xs-12 col-sm-6 col-md-4"> <div class="scoreboard-box scoreboard-box-large"> <div class="scoreboard-box-number">1</div> <div class="scoreboard-box-label">title</div> <div class="scoreboard-box-hint">subtitle</div> </div> </div> </div> <div class="row"> <div class="col-xs-12 col-sm-6 col-md-3"> <div class="scoreboard-box"> <div class="scoreboard-box-number">12004</div> <div class="scoreboard-box-label">title</div> <div class="scoreboard-box-hint">subtitle</div> </div> </div> <div class="col-xs-12 col-sm-6 col-md-3"> <div class="scoreboard-box"> <div class="scoreboard-box-number">1009</div> <div class="scoreboard-box-label">title</div> <div class="scoreboard-box-hint">subtitle</div> </div> </div> <div class="col-xs-12 col-sm-6 col-md-3"> <div class="scoreboard-box"> <div class="scoreboard-box-number">230</div> <div class="scoreboard-box-label">title that breaks</div> <div class="scoreboard-box-hint">subtitle</div> </div> </div> <div class="col-xs-12 col-sm-6 col-md-3"> <div class="scoreboard-box"> <div class="scoreboard-box-number">3</div> <div class="scoreboard-box-label">title</div> <div class="scoreboard-box-hint">subtitle thats sometimes goes over two rows</div> </div> </div> </div> </div> ``` */
 .scoreboard-box { font-family: "Source Sans Pro", Arial, sans-serif; }
 
@@ -3155,6 +3168,13 @@ category: Components
 
 .scoreboard-box-hint { font-style: italic; }
 
+/*doc
+//---
+//title: Sections
+//name: sections
+//category: Components
+//---
+*/
 /*doc
 //---
 //title: Thumbnails
@@ -3176,7 +3196,9 @@ category: Components
 
 .modal-content .close, .takeover-content .close { position: absolute; right: 15px; top: 15px; }
 
-.modal-header, .takeover-header { padding: 60px 90px 30px; }
+.modal-header, .takeover-header { padding: 30px 10px; }
+
+@media screen and (min-width: 768px) { .modal-header, .takeover-header { padding: 60px 30px 30px; } }
 
 .modal-header a, .takeover-header a { text-decoration: underline; }
 
