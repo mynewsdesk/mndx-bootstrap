@@ -56,6 +56,8 @@ Custom list for editable content
 ```
 */
 
+$content-list-padding: 20px 25px;
+
 .content-list {
   border-collapse: collapse;
   border-spacing: 0;
@@ -81,7 +83,7 @@ Custom list for editable content
 
   .content-list-column {
     display: table-cell;
-    padding: 20px 25px;
+    padding: $content-list-padding;
 
     &:first-child {
       display: table-cell;
@@ -103,8 +105,8 @@ Custom list for editable content
 
   .content-list-header {
     color: $black;
-    font-weight: 600;
     font-size: 16px;
+    font-weight: $semi-bold;
   }
 
   .content-list-action {

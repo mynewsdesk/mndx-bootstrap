@@ -1,0 +1,79 @@
+/*doc
+---
+title: Avatar icon
+name: avatar
+category: Components
+---
+
+Icons for displaying an image of a user
+
+```html_example
+<div class="avatar">
+  <div class="avatar-image">
+    <img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" />
+  </div>
+</div>
+
+<div class="avatar">
+  <div class="avatar-name">
+    A
+  </div>
+</div>
+```
+*/
+
+@import "mnd-bootstrap/variables/colors";
+@import "mnd-bootstrap/variables/measures";
+
+$avatar-size: 45px;
+$avatar-size-large: 100px;
+$avatar-name-background-color: $color-3;
+$avatar-name-text-color: $white;
+$avatar-name-text-size: $font-size-larger;
+$avatar-name-text-size-large: $font-size-very-large;
+
+%avatar {
+  border-radius: 50%;
+  height: $avatar-size;
+  width: $avatar-size;
+}
+
+.avatar-large {
+  height: $avatar-size-large;
+  width: $avatar-size-large;
+
+  &.avatar-name {
+    font-size: $avatar-name-text-size-large;
+  }
+
+  img {
+    height: $avatar-size-large;
+    width: $avatar-size-large;
+  }
+}
+
+.avatar {
+  display: inline-block;
+  text-align: center;
+
+  &-empty {
+    @extend %avatar;
+  }
+
+  &-image img {
+    @extend %avatar;
+  }
+
+  &-name {
+    @extend %avatar;
+
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+
+    background-color: $avatar-name-background-color;
+    color: $avatar-name-text-color;
+    font-size: $avatar-name-text-size;
+    text-transform: uppercase;
+  }
+}
