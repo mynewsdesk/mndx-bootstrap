@@ -135,17 +135,17 @@ category: Components
       background-color: transparent;
       border: 0;
       color: $text-color;
-      padding: 0;
+      padding: 0 4px;
     }
 
     .dropdown-menu {
       margin-right: -$gutter-horizontal-x2;
       padding: 0;
       right: 0;
-    }
 
-    li {
-      margin: 10px 0;
+      li {
+        margin: 10px 0;
+      }
     }
   }
 }
