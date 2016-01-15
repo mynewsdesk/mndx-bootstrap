@@ -2908,7 +2908,7 @@ category: CSS
 
 .btn-group.no-ui .dropdown-menu { margin-right: -20px; padding: 0; right: 0; }
 
-.btn-group.no-ui li { margin: 10px 0; }
+.btn-group.no-ui .dropdown-menu li { margin: 10px 0; }
 
 .btn-group.open .dropdown-toggle { box-shadow: none; }
 
