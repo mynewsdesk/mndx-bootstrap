@@ -94,6 +94,15 @@ $btn-vertical-padding: 12px;
   &.no-margin {
     margin: 0;
   }
+
+  &-first {
+    margin-left: 0;
+  }
+
+  &-last {
+    margin-right: 0;
+  }
+
 }
 
 [disabled].btn-primary:disabled {
