@@ -2755,6 +2755,10 @@ h1 { font-weight: 700; }
 
 .btn.no-margin { margin: 0; }
 
+.btn-first { margin-left: 0; }
+
+.btn-last { margin-right: 0; }
+
 [disabled].btn-primary:disabled { opacity: 0.4; filter: alpha(opacity=40); background: #0096d1; color: #fff; }
 
 [disabled].btn-primary:disabled:hover { background: #0096d1; }
