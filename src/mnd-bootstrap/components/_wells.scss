@@ -1,7 +1,33 @@
+
 /*doc
-//---
-//title: Wells
-//name: wells
-//category: Components
-//---
+---
+title: Wells
+name: wells
+category: Components
+---
+Use the well as a simple effect on an element to give it an inset effect.
+
+```html_example
+<div class="well">
+  <p>
+    Hello my name is Well
+  </p>
+</div>
+```
+
+```jsx_example
+<Well>
+  <p>
+    Ut massa lacus, posuere in facilisis a, blandit ac tortor. Praesent euismod posuere sodales. Nunc maximus eros vitae massa vehicula pharetra. Praesent id nunc ac odio tristique faucibus*.
+  </p>
+</Well>
+```
 */
+
+.well {
+  background: $white;
+
+  *:last-child {
+    margin: 0;
+  }
+}
