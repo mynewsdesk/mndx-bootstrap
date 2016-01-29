@@ -3186,13 +3186,11 @@ category: Components
 //category: Components
 //---
 */
-/*doc
-//---
-//title: Wells
-//name: wells
-//category: Components
-//---
-*/
+/*doc --- title: Wells name: wells category: Components --- Use the well as a simple effect on an element to give it an inset effect. ```html_example <div class="well"> <p> Hello my name is Well </p> </div> ``` ```jsx_example <Well> <p> Ut massa lacus, posuere in facilisis a, blandit ac tortor. Praesent euismod posuere sodales. Nunc maximus eros vitae massa vehicula pharetra. Praesent id nunc ac odio tristique faucibus*. </p> </Well> ``` */
+.well { background: #fff; }
+
+.well *:last-child { margin: 0; }
+
 /*doc --- title: Modal name: modal category: JavaScript --- ```html_example <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> <div class="modal-dialog"> <div class="modal-content"> <div class="modal-header text-center"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> <i class="header-icon fa fa-check-circle fa-icon"></i> <h4 class="modal-title">Success!</h4> <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p> </div> <div class="modal-body"> <p> Ut massa lacus, posuere in facilisis a, blandit ac tortor. Praesent euismod posuere sodales. Nunc maximus eros vitae massa vehicula pharetra. Praesent id nunc ac odio tristique faucibus*. </p> <p class="footnote"> Mauris imperdiet gravida nisl a venenatis. Nulla vel orci congue, efficitur enim eu, cursus justo. Maecenas hendrerit eu elit et hendrerit. Mauris eget eros mi. </p> </div> <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Secondary Action</button> <button type="button" class="btn btn-default" data-dismiss="modal">Secondary Action</button> <button type="button" class="btn btn-primary">Primary Action</button> </div> </div> </div> </div> <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> Launch demo modal </button> ``` */
 .modal-backdrop { position: fixed; bottom: 0; }
 
