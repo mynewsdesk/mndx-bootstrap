@@ -83,7 +83,7 @@ Based on bootstrap modal.
 */
 %centered-content {
   margin: 0 auto;
-  max-width: 550px;
+  max-width: $takeover-max-width;
 }
 
 .takeover {
@@ -116,9 +116,8 @@ Based on bootstrap modal.
 }
 
 .takeover-header {
-  @extend .modal-header;
   @extend %centered-content;
-  padding: $gutter-vertical-x2 $gutter-vertical-x3 $gutter-vertical;
+  padding: 0 $padding-small-vertical $padding-small-horizontal;
 
   a {
     text-decoration: underline;
