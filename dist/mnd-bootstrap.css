@@ -3231,7 +3231,7 @@ category: Components
 
 .takeover-content { background-color: transparent; border: none; border-radius: 0; box-shadow: none; margin: 0 auto; overflow: hidden; position: relative; }
 
-.takeover-header { padding: 0 10px 20px 10px; }
+.takeover-header { padding: 0 10px 20px; }
 
 .takeover-header a { text-decoration: underline; }
 
