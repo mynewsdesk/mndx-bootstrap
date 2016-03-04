@@ -745,9 +745,9 @@ mark, .mark { background-color: #fcf8e3; padding: .2em; }
 
 .text-muted { color: #777777; }
 
-.text-primary { color: #0096d1; }
+.text-primary { color: #3eb991; }
 
-a.text-primary:hover, a.text-primary:focus { color: #00719e; }
+a.text-primary:hover, a.text-primary:focus { color: #319373; }
 
 .text-success { color: #3c763d; }
 
@@ -767,9 +767,9 @@ a.text-danger:hover, a.text-danger:focus { color: #843534; }
 
 .bg-primary { color: #fff; }
 
-.bg-primary { background-color: #0096d1; }
+.bg-primary { background-color: #3eb991; }
 
-a.bg-primary:hover, a.bg-primary:focus { background-color: #00719e; }
+a.bg-primary:hover, a.bg-primary:focus { background-color: #319373; }
 
 .bg-success { background-color: #dff0d8; }
 
@@ -1225,11 +1225,11 @@ output { display: block; padding-top: 13px; font-size: 16px; line-height: 1.375;
 
 .form-control:focus { border-color: #66afe9; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
 
-.form-control::-moz-placeholder { color: #888; opacity: 1; }
+.form-control::-moz-placeholder { color: #999; opacity: 1; }
 
-.form-control:-ms-input-placeholder { color: #888; }
+.form-control:-ms-input-placeholder { color: #999; }
 
-.form-control::-webkit-input-placeholder { color: #888; }
+.form-control::-webkit-input-placeholder { color: #999; }
 
 .form-control::-ms-expand { border: 0; background-color: transparent; }
 
@@ -1401,21 +1401,21 @@ a.btn.disabled, fieldset[disabled] a.btn { pointer-events: none; }
 
 .btn-default .badge, .btn-primary:disabled .badge { color: #fff; background-color: #666; }
 
-.btn-primary { color: #fff; background-color: #0096d1; border-color: #0096d1; }
+.btn-primary { color: #fff; background-color: #3eb991; border-color: #3eb991; }
 
-.btn-primary:focus, .btn-primary.focus { color: #fff; background-color: #00719e; border-color: #003a52; }
+.btn-primary:focus, .btn-primary.focus { color: #fff; background-color: #319373; border-color: #1e5a46; }
 
-.btn-primary:hover { color: #fff; background-color: #00719e; border-color: #006a94; }
+.btn-primary:hover { color: #fff; background-color: #319373; border-color: #2f8b6d; }
 
-.btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle { color: #fff; background-color: #00719e; border-color: #006a94; }
+.btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle { color: #fff; background-color: #319373; border-color: #2f8b6d; }
 
-.btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus { color: #fff; background-color: #00587a; border-color: #003a52; }
+.btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus { color: #fff; background-color: #28785e; border-color: #1e5a46; }
 
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle { background-image: none; }
 
-.btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus { background-color: #0096d1; border-color: #0096d1; }
+.btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus { background-color: #3eb991; border-color: #3eb991; }
 
-.btn-primary .badge { color: #0096d1; background-color: #fff; }
+.btn-primary .badge { color: #3eb991; background-color: #fff; }
 
 .btn-success { color: #fff; background-color: #3eb991; border-color: #3eb991; }
 
@@ -1889,7 +1889,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus { background-color: #eee; }
 
-.navbar-default .navbar-toggle .icon-bar { background-color: #888; }
+.navbar-default .navbar-toggle .icon-bar { background-color: #999; }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form { border-color: #eeeeee; }
 
@@ -1916,9 +1916,9 @@ tbody.collapse.in { display: table-row-group; }
 
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus { color: #fff; background-color: transparent; }
 
-.navbar-inverse .navbar-text { color: #888; }
+.navbar-inverse .navbar-text { color: #999; }
 
-.navbar-inverse .navbar-nav > li > a { color: #888; }
+.navbar-inverse .navbar-nav > li > a { color: #999; }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus { color: #fff; background-color: transparent; }
 
@@ -1938,16 +1938,16 @@ tbody.collapse.in { display: table-row-group; }
 
 @media (max-width: 767px) { .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header { border-color: #090909; }
   .navbar-inverse .navbar-nav .open .dropdown-menu .divider { background-color: #090909; }
-  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a { color: #888; }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a { color: #999; }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus { color: #fff; background-color: transparent; }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus { color: #fff; background-color: #090909; }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus { color: #444; background-color: transparent; } }
 
-.navbar-inverse .navbar-link { color: #888; }
+.navbar-inverse .navbar-link { color: #999; }
 
 .navbar-inverse .navbar-link:hover { color: #fff; }
 
-.navbar-inverse .btn-link { color: #888; }
+.navbar-inverse .btn-link { color: #999; }
 
 .navbar-inverse .btn-link:hover, .navbar-inverse .btn-link:focus { color: #fff; }
 
@@ -2015,13 +2015,13 @@ tbody.collapse.in { display: table-row-group; }
 
 a.label:hover, a.label:focus { color: #fff; text-decoration: none; cursor: pointer; }
 
-.label-default { background-color: #888; }
+.label-default { background-color: #999; }
 
-.label-default[href]:hover, .label-default[href]:focus { background-color: #6f6f6f; }
+.label-default[href]:hover, .label-default[href]:focus { background-color: gray; }
 
-.label-primary { background-color: #0096d1; }
+.label-primary { background-color: #3eb991; }
 
-.label-primary[href]:hover, .label-primary[href]:focus { background-color: #00719e; }
+.label-primary[href]:hover, .label-primary[href]:focus { background-color: #319373; }
 
 .label-success { background-color: #3eb991; }
 
@@ -2127,7 +2127,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active { border-color: #0096d1
 
 .progress { overflow: hidden; height: 22px; margin-bottom: 22px; background-color: #f5f5f5; border-radius: 6px; -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); }
 
-.progress-bar { float: left; width: 0%; height: 100%; font-size: 12px; line-height: 22px; color: #fff; text-align: center; background-color: #0096d1; -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15); box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15); -webkit-transition: width 0.6s ease; -o-transition: width 0.6s ease; transition: width 0.6s ease; }
+.progress-bar { float: left; width: 0%; height: 100%; font-size: 12px; line-height: 22px; color: #fff; text-align: center; background-color: #3eb991; -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15); box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15); -webkit-transition: width 0.6s ease; -o-transition: width 0.6s ease; transition: width 0.6s ease; }
 
 .progress-striped .progress-bar, .progress-bar-striped { background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); background-size: 40px 40px; }
 
@@ -2744,18 +2744,18 @@ h1 { font-weight: 700; }
 
 @media screen and (min-width: 1200px) { .text-left-lg { text-align: left; } }
 
-/*doc --- title: Buttons name: Buttons category: CSS --- ```html_example_table <p><button class="btn btn-default">Normal</button> <button class="btn btn-default btn-sm">Small</button></p> <h3>Normal buttons</h3> <p><button class="btn btn-link">Link button</button> <button class="btn btn-link" disabled>Link button</button></p> <p><button class="btn btn-default">Default</button> <button class="btn btn-default" disabled>Default disabled</button></p> <p><button class="btn btn-primary">Primary</button> <button class="btn btn-primary" disabled>Primary disabled</button></p> <h3>Small buttons</h3> <p><button class="btn btn-sm btn-default">Small default</button> <button class="btn btn-sm btn-primary">Small primary</button> <button class="btn btn-sm btn-link">Small link button</button></p> <h3>Small buttons with icons</h3> <p><button class="btn btn-sm btn-default"><i class="fa fa-plus"></i></button> <button class="btn btn-sm btn-primary">Small primary <i class="fa fa-plus"></i></button></p> ``` */
-.btn { margin-left: 20px; font-weight: 600; padding-top: 11px; padding-bottom: 13px; }
+/*doc --- title: Buttons name: Buttons category: CSS --- ```html_example_table <p><button class="btn btn-default">Normal</button> <button class="btn btn-default btn-sm">Small</button></p> <h3>Normal buttons</h3> <p><button class="btn btn-link">Link button</button> <button class="btn btn-link" disabled>Link button</button></p> <p><button class="btn btn-default">Default</button> <button class="btn btn-default" disabled>Default disabled</button></p> <p><button class="btn btn-primary">Primary</button> <button class="btn btn-primary" disabled>Primary disabled</button></p> <p><button class="btn btn-success">Danger</button> <button class="btn btn-success" disabled>Danger disabled</button></p> <p><button class="btn btn-danger">Danger</button> <button class="btn btn-danger" disabled>Danger disabled</button></p> <h3>Small buttons</h3> <p><button class="btn btn-sm btn-default">Small default</button> <button class="btn btn-sm btn-primary">Small primary</button> <button class="btn btn-sm btn-link">Small link button</button></p> <h3>Small buttons with icons</h3> <p><button class="btn btn-sm btn-default"><i class="fa fa-plus"></i></button> <button class="btn btn-sm btn-primary">Small primary <i class="fa fa-plus"></i></button></p> ``` */
+.btn { font-weight: 600; margin-left: 20px; padding-top: 11px; padding-bottom: 13px; }
 
-.btn-default:hover, .btn-primary:hover:disabled { background: #fff; border-color: #e0e3e9; color: #0096d1; }
+.btn-default:hover, .btn-primary:hover:disabled { background: #fff; border-color: #e0e3e9; color: #3eb991; }
 
-.btn-default:active, .btn-primary:active:disabled, .btn-default:focus, .btn-primary:focus:disabled, .btn-default:active:focus, .btn-primary:active:focus:disabled { background: #fff; border-color: #95a0b4; box-shadow: none; color: #888; }
+.btn-default:active, .btn-primary:active:disabled, .btn-default:focus, .btn-primary:focus:disabled, .btn-default:active:focus, .btn-primary:active:focus:disabled { background: #fff; border-color: #95a0b4; box-shadow: none; color: #999; outline: none; }
 
 .btn-default:disabled:hover, .btn-primary:disabled:hover { color: #666; }
 
-.btn-primary:hover { background: #00719e; border-color: #00719e; }
+.btn-primary:hover { background: #319373; border-color: #319373; color: #fff; }
 
-.btn-primary:active, .btn-primary:focus, .btn-primary:active:focus { background: #004d6b; border-color: #004d6b; box-shadow: none; }
+.btn-primary:active, .btn-primary:focus, .btn-primary:active:focus { background: #246d55; border-color: #246d55; box-shadow: none; color: #fff; }
 
 .btn-sm, .btn-group-sm > .btn { font-size: 16px; font-weight: 400; margin-left: 10px; padding-bottom: 9px; padding-top: 7px; }
 
@@ -2767,9 +2767,9 @@ h1 { font-weight: 700; }
 
 .btn-last { margin-right: 0; }
 
-[disabled].btn-primary:disabled { opacity: 0.4; filter: alpha(opacity=40); background: #0096d1; color: #fff; }
+[disabled].btn-primary:disabled { opacity: 0.4; filter: alpha(opacity=40); background: #3eb991; color: #fff; }
 
-[disabled].btn-primary:disabled:hover { background: #0096d1; }
+[disabled].btn-primary:disabled:hover { background: #3eb991; }
 
 /*doc
 //---
@@ -2778,7 +2778,7 @@ h1 { font-weight: 700; }
 //category: CSS
 //---
 */
-/*doc --- title: Forms name: forms category: CSS --- ```html_example_table <form> <div class="form-group"> <label for="to">Default</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> </div> <div class="form-group has-success"> <label for="to">Success</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-success has-feedback"> <label for="to">Success</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <span class="fa fa-icon fa-check form-control-feedback"></span> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-warning"> <label for="to">Warning</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-error"> <label for="to">Error</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-error has-feedback"> <label for="to">Error</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <span class="fa fa-icon fa-close form-control-feedback"></span> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group"> <label for="to">Disabled input</label> <input type="email" class="form-control" id="to" placeholder=":disabled" disabled> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group"> <label for="message">Textarea</label> <textarea class="form-control" id="subject" placeholder="Enter message"></textarea> </div> <div class="form-group"> <div class="checkbox"> <label> <input type="checkbox" name="samecheck"> Check me out </label> <br> <label> <input type="checkbox" name="samecheck"> Check me out again </label> </div> </div> <div class="form-group"> <div class="radio"> <label> <input type="radio" name="sameradio"> Check me out </label> <br> <label> <input type="radio" name="sameradio"> Check me out again </label> </div> </div> <div class="form-group"> <select class="form-control"> <option>option 1</option> <option>option 2</option> <option>option 3</option> <option>option 4</option> </select> </div> <div class="form-group text-right form-actions"> <button type="reset" class="btn btn-default">Cancel</button> <button type="submit" class="btn btn-primary">Submit</button> </div> </form> <form> <div class="form-group"> <label for="form-links">Form links example</label> <input type="text" class="form-control" id="form-links" placeholder="Organization name"> </div> <button type="submit" class="btn btn-primary pull-right">Submit</button> <div class="form-group form-links"> <a href="#" class="pull-left">Link one</a> <a href="#" class="pull-left">Link two</a> <a href="#" class="pull-right">Link three</a> </div> </form> ``` */
+/*doc --- title: Forms name: forms category: CSS --- ```html_example_table <form> <div class="form-group"> <label for="to">Default</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> </div> <div class="form-group has-success"> <label for="to">Success</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-success has-feedback"> <label for="to">Success</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <span class="fa fa-icon fa-check form-control-feedback"></span> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-warning"> <label for="to">Warning</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-error"> <label for="to">Error</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-error has-feedback"> <label for="to">Error</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <span class="fa fa-icon fa-close form-control-feedback"></span> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group"> <label for="to">Disabled input</label> <input type="email" class="form-control" id="to" placeholder=":disabled" disabled> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group"> <label for="message">Textarea</label> <textarea class="form-control" id="subject" placeholder="Enter message"></textarea> </div> <div class="form-group"> <div class="checkbox"> <label> <input type="checkbox" name="samecheck"> Check me out </label> <br> <label> <input type="checkbox" name="samecheck"> Check me out again </label> </div> </div> <div class="form-group"> <div class="radio"> <label> <input type="radio" name="sameradio"> Check me out </label> <br> <label> <input type="radio" name="sameradio"> Check me out again </label> </div> </div> <div class="form-group"> <select class="form-control"> <option>option 1</option> <option>option 2</option> <option>option 3</option> <option>option 4</option> </select> </div> <h3>Input button</h3> <div class="input-group"> <input class="form-control" type="text"> <span class="input-group-btn"> <div class="btn-group"> <button class="btn btn-default" type="button">Show</button> </div> </span> </div> <div class="form-group text-right form-actions"> <button type="reset" class="btn btn-default">Cancel</button> <button type="submit" class="btn btn-primary">Submit</button> </div> <div class="form-group"> <label for="to">Locked field</label> <div class="fake-field-locked"> hello@poptype.co <i class="fa fa-icon fa-lock"></i> </div> </div> </form> <form> <div class="form-group"> <label for="form-links">Form links example</label> <input type="text" class="form-control" id="form-links" placeholder="Organization name"> </div> <button type="submit" class="btn btn-primary pull-right">Submit</button> <div class="form-group form-links"> <a href="#" class="pull-left">Link one</a> <a href="#" class="pull-left">Link two</a> <a href="#" class="pull-right">Link three</a> </div> </form> ``` */
 .form-group { margin-bottom: 20px; }
 
 .form-group.has-error label { color: #f55065; }
@@ -2789,13 +2789,13 @@ h1 { font-weight: 700; }
 
 .form-control { background: #fff; border: 2px solid #ddd; box-shadow: none; }
 
-.form-control::-webkit-input-placeholder { color: #888; font-style: italic; }
+.form-control::-webkit-input-placeholder { color: #999; font-style: italic; }
 
-.form-control::-moz-placeholder { color: #888; font-style: italic; }
+.form-control::-moz-placeholder { color: #999; font-style: italic; }
 
-.form-control:-moz-placeholder { color: #888; font-style: italic; }
+.form-control:-moz-placeholder { color: #999; font-style: italic; }
 
-.form-control:-ms-input-placeholder { color: #888; font-style: italic; }
+.form-control:-ms-input-placeholder { color: #999; font-style: italic; }
 
 .form-control:hover { border-color: #aaa; }
 
@@ -2822,6 +2822,12 @@ textarea { resize: vertical; }
 .form-links a { padding: 13px 21px; }
 
 .form-links a.pull-left:first-child { padding-left: 0; }
+
+.input-group-btn .btn { background: #ddd; border-radius: 6px; }
+
+.fake-field-locked { background: #eee; border-radius: 6px; color: #333; font-size: 16px; padding: 12px 20px; width: 100%; }
+
+.fake-field-locked .fa-lock { color: #999; float: right; padding-top: 3px; }
 
 /*doc
 ---
@@ -2916,13 +2922,13 @@ category: CSS
 
 .btn-group.open .dropdown-toggle { box-shadow: none; }
 
-.btn-group.open > .btn-default.dropdown-toggle, .btn-group.open > .dropdown-toggle.btn-primary:disabled { background: #fff; border-color: #95a0b4; color: #888; }
+.btn-group.open > .btn-default.dropdown-toggle, .btn-group.open > .dropdown-toggle.btn-primary:disabled { background: #fff; border-color: #95a0b4; color: #999; }
 
-.btn-group.open > .btn-primary.dropdown-toggle { background: #004d6b; border-color: #004d6b; }
+.btn-group.open > .btn-primary.dropdown-toggle { background: #246d55; border-color: #246d55; }
 
 .btn-group.open > .btn-primary.btn-split + .dropdown-toggle { border-left-color: #fff; }
 
-.dropdown-menu { border-radius: 6px; border: 1px solid #e0e3e9; box-shadow: none; color: #888; left: auto; margin-top: 15px; padding-bottom: 25px; padding-top: 20px; right: -5px; }
+.dropdown-menu { border-radius: 6px; border: 1px solid #e0e3e9; box-shadow: none; color: #999; left: auto; margin-top: 15px; padding-bottom: 25px; padding-top: 20px; right: -5px; }
 
 .dropdown-menu > li > a { padding: 5px 25px; }
 
@@ -2966,11 +2972,11 @@ A calendar, designed for the datepicker
 
 .date-picker-calendar .rw-btn-left, .date-picker-calendar .rw-btn-right { float: left; line-height: 20px; width: 20%; }
 
-.date-picker-calendar .rw-btn-left[disabled], .date-picker-calendar .rw-btn-right[disabled] { color: #888; }
+.date-picker-calendar .rw-btn-left[disabled], .date-picker-calendar .rw-btn-right[disabled] { color: #999; }
 
 .date-picker-calendar .rw-btn { background: transparent; border: none; color: #333; display: inline-block; }
 
-.date-picker-calendar .rw-btn.rw-off-range { color: #888; }
+.date-picker-calendar .rw-btn.rw-off-range { color: #999; }
 
 .date-picker-calendar .rw-state-selected { background: #3eb991; border-radius: 3px; color: #fff; }
 
@@ -3212,7 +3218,7 @@ category: Components
 
 .modal-header a { text-decoration: underline; }
 
-.modal-header .header-icon { color: #0096d1; font-size: 160px; }
+.modal-header .header-icon { color: #3eb991; font-size: 160px; }
 
 .modal-body p:last-child, .takeover-body p:last-child { margin-bottom: 0; }
 
@@ -3222,7 +3228,7 @@ category: Components
 
 .modal-footer .btn + .btn, .takeover-footer .btn + .btn { margin-left: 20px; }
 
-.modal-dialog .footnote, .takeover-dialog .footnote { color: #888; font-size: 12px; }
+.modal-dialog .footnote, .takeover-dialog .footnote { color: #999; font-size: 12px; }
 
 /*doc --- title: Takeover name: takeover category: JavaScript --- Based on bootstrap modal. `.takeover-body` optionally takes a `.wide` class to support takeovers with more content. Note** that `data-backdrop` needs to be set to false and `data-toggle` and `data-dismiss` on trigger elements needs to take the value modal. ```html_example_table <div class="takeover fade" id="default-takeover" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="myTakeoverLabel" aria-hidden="true"> <div class="takeover-dialog"> <div class="takeover-content"> <div class="takeover-header text-center"> <h1>Success!</h1> <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p> </div> <div class="takeover-body text-center"> <p> Ut massa lacus, posuere in facilisis a, blandit ac tortor. Praesent euismod posuere sodales. Nunc maximus eros vitae massa vehicula pharetra. Praesent id nunc ac odio tristique faucibus*. </p> </div> <div class="takeover-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Secondary Action</button> <button type="button" class="btn btn-primary">Primary Action</button> </div> </div> </div> </div> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#default-takeover"> Launch default takeover </button> <div class="takeover fade" id="wide-takeover" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="myTakeoverLabel" aria-hidden="true"> <div class="takeover-dialog"> <div class="takeover-content"> <div class="takeover-header text-center"> <h1>Success!</h1> <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p> </div> <div class="takeover-body wide text-center"> <p> Ut massa lacus, posuere in facilisis a, blandit ac tortor. Praesent euismod posuere sodales. Nunc maximus eros vitae massa vehicula pharetra. Praesent id nunc ac odio tristique faucibus*. </p> </div> <div class="takeover-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Secondary Action</button> <button type="button" class="btn btn-primary">Primary Action</button> </div> </div> </div> </div> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#wide-takeover"> Launch wide takeover </button> ``` ```jsx_example <Takeover label="Label" show={@state.showTakeover}> <Takeover.Header title="Success!"> <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p> </Takeover.Header> <Takeover.Body wide={true} className="text-center"> <p> Ut massa lacus, posuere in facilisis a, blandit ac tortor. Praesent euismod posuere sodales. Nunc maximus eros vitae massa vehicula pharetra. Praesent id nunc ac odio tristique faucibus*. </p> </Takeover.Body> <Takeover.Footer> <Button onClick={@toggleTakeover}>Secondary Action</Button> <Button bsStyle="primary">Primary Action</Button> </Takeover.Footer> </Takeover> ``` */
 .takeover-header, .takeover-body, .takeover-footer { margin: 0 auto; max-width: 600px; }

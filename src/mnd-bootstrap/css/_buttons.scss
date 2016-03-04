@@ -16,6 +16,10 @@ category: CSS
 <button class="btn btn-default" disabled>Default disabled</button></p>
 <p><button class="btn btn-primary">Primary</button>
 <button class="btn btn-primary" disabled>Primary disabled</button></p>
+<p><button class="btn btn-success">Danger</button>
+<button class="btn btn-success" disabled>Danger disabled</button></p>
+<p><button class="btn btn-danger">Danger</button>
+<button class="btn btn-danger" disabled>Danger disabled</button></p>
 
 <h3>Small buttons</h3>
 <p><button class="btn btn-sm btn-default">Small default</button>
@@ -32,8 +36,8 @@ category: CSS
 $btn-vertical-padding: 12px;
 
 .btn {
-  margin-left: $gutter-horizontal-x2;
   font-weight: $semi-bold;
+  margin-left: $gutter-horizontal-x2;
   padding-top: $btn-vertical-padding - 1;
   padding-bottom: $btn-vertical-padding + 1;
 
@@ -52,6 +56,7 @@ $btn-vertical-padding: 12px;
       border-color: $btn-default-border-active;
       box-shadow: none;
       color: $btn-default-color-active;
+      outline: none;
     }
 
     &:disabled {
@@ -67,6 +72,7 @@ $btn-vertical-padding: 12px;
     &:hover {
       background: $btn-primary-bg-hover;
       border-color: $btn-primary-bg-hover;
+      color: $white;
     }
 
     &:active,
@@ -75,6 +81,7 @@ $btn-vertical-padding: 12px;
       background: $btn-primary-bg-active;
       border-color: $btn-primary-bg-active;
       box-shadow: none;
+      color: $white;
     }
   }
 
