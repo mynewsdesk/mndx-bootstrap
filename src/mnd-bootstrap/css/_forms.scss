@@ -77,9 +77,27 @@ category: CSS
       <option>option 4</option>
     </select>
   </div>
+
+  <h3>Input button</h3>
+  <div class="input-group">
+    <input class="form-control" type="text">
+    <span class="input-group-btn">
+      <div class="btn-group">
+        <button class="btn btn-default" type="button">Show</button>
+      </div>
+    </span>
+  </div>
+
   <div class="form-group text-right form-actions">
     <button type="reset" class="btn btn-default">Cancel</button>
     <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+  <div class="form-group">
+    <label for="to">Locked field</label>
+    <div class="fake-field-locked">
+      hello@poptype.co
+      <i class="fa fa-icon fa-lock"></i>
+    </div>
   </div>
 </form>
 
@@ -185,5 +203,27 @@ textarea {
     &.pull-left:first-child {
       padding-left: 0;
     }
+  }
+}
+
+.input-group-btn {
+  .btn {
+    background: $gray-lighten;
+    border-radius: 6px;
+  }
+}
+
+.fake-field-locked {
+  background: $ui-color-lighter;
+  border-radius: 6px;
+  color: $text-color-dark;
+  font-size: 16px;
+  padding: 12px 20px;
+  width: 100%;
+
+  .fa-lock {
+    color: $text-color-light;
+    float: right;
+    padding-top: 3px;
   }
 }

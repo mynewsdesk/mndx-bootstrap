@@ -79,14 +79,14 @@ $white: #fff;
 $black: #333;
 
 $gray: #666;
-$gray-light: #888;
+$gray-light: #999;
 $gray-lighten: #ddd;
 $gray-lighter: #eee;
 $gray-lightest: #fafafa;
 $gray-blue: #e0e3e9;
 
 // Renaming
-$brand-primary: $color-4;
+$brand-primary: $color-1;
 $brand-success: $color-1;
 $brand-info: $color-4; // Should usages point to brand primary?
 $brand-warning: $color-2;
@@ -119,4 +119,3 @@ $label-danger-bg: $brand-danger;
 
 $label-color: $white;
 $label-link-hover-color: $white;
-
