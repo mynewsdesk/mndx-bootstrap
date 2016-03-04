@@ -1308,7 +1308,7 @@ body { padding-bottom: 60px; }
 
 .gray { background: #666; }
 
-.gray-light { background: #888; }
+.gray-light { background: #999; }
 
 .gray-lighter { background: #eee; }
 
@@ -1320,7 +1320,7 @@ body { padding-bottom: 60px; }
 
 .text-color-dark { background: #333; }
 
-.text-color-light { background: #888; }
+.text-color-light { background: #999; }
 
 .ui-color-default { background: #ddd; }
 
@@ -1332,7 +1332,7 @@ body { padding-bottom: 60px; }
 
 .white { background: #fff; }
 
-.brand-primary { background: #0096d1; }
+.brand-primary { background: #3eb991; }
 
 .brand-success { background: #3eb991; }
 
