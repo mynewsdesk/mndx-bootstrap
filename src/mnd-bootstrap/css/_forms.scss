@@ -118,7 +118,7 @@ category: CSS
 */
 
 .form-group {
-  margin-bottom: $space-large;
+  margin-bottom: $gutter-vertical;
 
   &.has-error label {
     color: $brand-danger;
@@ -126,6 +126,7 @@ category: CSS
 
   .help-block {
     font-size: $font-size-small;
+    margin-top: $gutter-vertical-half;
   }
 }
 
@@ -137,6 +138,7 @@ category: CSS
   background: $white;
   border: 2px solid $gray-lighten;
   box-shadow: none;
+  padding: $padding-base-vertical $padding-base-horizontal $input-bottom-padding;
 
   @include placeholder {
     color: $gray-light;
@@ -174,12 +176,13 @@ category: CSS
 }
 .has-feedback label ~ .form-control-feedback {
   // offset top by the full height of the label if present
-  top: $line-height-computed + $padding-inside;
+  top: $input-height-base - $padding-base-vertical;
 }
 
 label {
   color: $gray;
-  margin-bottom: $padding-inside;
+  font-weight: 600;
+  margin-bottom: $gutter-vertical-half;
 }
 
 .checkbox label,
@@ -218,7 +221,7 @@ textarea {
   border-radius: 6px;
   color: $text-color-dark;
   font-size: 16px;
-  padding: 12px 20px;
+  padding: $padding-base-vertical $padding-base-horizontal $input-bottom-padding;
   width: 100%;
 
   .fa-lock {
