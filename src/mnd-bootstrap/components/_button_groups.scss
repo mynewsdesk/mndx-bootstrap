@@ -13,3 +13,11 @@ category: Components
 </div>
 ```
 */
+
+.input-group-btn:last-child > .btn-group {
+  margin-left: 0;
+
+  .btn-default {
+    border-color: $gray-lighten;
+  }
+}
