@@ -178,17 +178,18 @@ category: Components
 .dropdown-menu {
   border-radius: 6px;
   border: 1px solid $btn-default-border;
-  box-shadow: none;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
   color: $gray-light;
   left: auto;
   margin-top: 15px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   padding-top: 20px;
   right: -5px;
 
   > li {
 
     > a {
+      color: $gray-light;
       padding: 5px 25px;
     }
   }
