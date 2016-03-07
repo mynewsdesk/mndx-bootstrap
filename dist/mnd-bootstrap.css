@@ -2747,7 +2747,7 @@ h1 { font-weight: 700; }
 /*doc --- title: Buttons name: Buttons category: CSS --- ```html_example_table <p><button class="btn btn-default">Normal</button> <button class="btn btn-default btn-sm">Small</button></p> <h3>Normal buttons</h3> <p><button class="btn btn-link">Link button</button> <button class="btn btn-link" disabled>Link button</button></p> <p><button class="btn btn-default">Default</button> <button class="btn btn-default" disabled>Default disabled</button></p> <p><button class="btn btn-primary">Primary</button> <button class="btn btn-primary" disabled>Primary disabled</button></p> <p><button class="btn btn-success">Success</button> <button class="btn btn-success" disabled>Success disabled</button></p> <p><button class="btn btn-danger">Danger</button> <button class="btn btn-danger" disabled>Danger disabled</button></p> <h3>Small buttons</h3> <p><button class="btn btn-sm btn-default">Small default</button> <button class="btn btn-sm btn-primary">Small primary</button> <button class="btn btn-sm btn-link">Small link button</button></p> <h3>Small buttons with icons</h3> <p><button class="btn btn-sm btn-default"><i class="fa fa-plus"></i></button> <button class="btn btn-sm btn-primary">Small primary <i class="fa fa-plus"></i></button></p> ``` */
 .btn { font-weight: 600; margin-left: 20px; padding-top: 11px; padding-bottom: 13px; }
 
-.btn-default:hover, .btn-primary:hover:disabled { background: #fff; border-color: #e0e3e9; color: #3eb991; }
+.btn-default:hover, .btn-primary:hover:disabled { background: #fff; border-color: #e0e3e9; color: #333; }
 
 .btn-default:active, .btn-primary:active:disabled, .btn-default:focus, .btn-primary:focus:disabled, .btn-default:active:focus, .btn-primary:active:focus:disabled { background: #fff; border-color: #95a0b4; box-shadow: none; color: #999; outline: none; }
 
@@ -2779,15 +2779,15 @@ h1 { font-weight: 700; }
 //---
 */
 /*doc --- title: Forms name: forms category: CSS --- ```html_example_table <form> <div class="form-group"> <label for="to">Default</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> </div> <div class="form-group has-success"> <label for="to">Success</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-success has-feedback"> <label for="to">Success</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <span class="fa fa-icon fa-check form-control-feedback"></span> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-warning"> <label for="to">Warning</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-error"> <label for="to">Error</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-error has-feedback"> <label for="to">Error</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <span class="fa fa-icon fa-close form-control-feedback"></span> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group"> <label for="to">Disabled input</label> <input type="email" class="form-control" id="to" placeholder=":disabled" disabled> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group"> <label for="message">Textarea</label> <textarea class="form-control" id="subject" placeholder="Enter message"></textarea> </div> <div class="form-group"> <div class="checkbox"> <label> <input type="checkbox" name="samecheck"> Check me out </label> <br> <label> <input type="checkbox" name="samecheck"> Check me out again </label> </div> </div> <div class="form-group"> <div class="radio"> <label> <input type="radio" name="sameradio"> Check me out </label> <br> <label> <input type="radio" name="sameradio"> Check me out again </label> </div> </div> <div class="form-group"> <select class="form-control"> <option>option 1</option> <option>option 2</option> <option>option 3</option> <option>option 4</option> </select> </div> <h3>Input button</h3> <div class="input-group"> <input class="form-control" type="text"> <span class="input-group-btn"> <div class="btn-group"> <button class="btn btn-default" type="button">Show</button> </div> </span> </div> <div class="form-group text-right form-actions"> <button type="reset" class="btn btn-default">Cancel</button> <button type="submit" class="btn btn-primary">Submit</button> </div> <div class="form-group"> <label for="to">Locked field</label> <div class="fake-field-locked"> hello@poptype.co <i class="fa fa-icon fa-lock"></i> </div> </div> </form> <form> <div class="form-group"> <label for="form-links">Form links example</label> <input type="text" class="form-control" id="form-links" placeholder="Organization name"> </div> <button type="submit" class="btn btn-primary pull-right">Submit</button> <div class="form-group form-links"> <a href="#" class="pull-left">Link one</a> <a href="#" class="pull-left">Link two</a> <a href="#" class="pull-right">Link three</a> </div> </form> ``` */
-.form-group { margin-bottom: 20px; }
+.form-group { margin-bottom: 30px; }
 
 .form-group.has-error label { color: #f55065; }
 
-.form-group .help-block { font-size: 12px; }
+.form-group .help-block { font-size: 12px; margin-top: 15px; }
 
 .form-actions { padding-top: 20px; }
 
-.form-control { background: #fff; border: 2px solid #ddd; box-shadow: none; }
+.form-control { background: #fff; border: 2px solid #ddd; box-shadow: none; padding: 12px 20px 14px; }
 
 .form-control::-webkit-input-placeholder { color: #999; font-style: italic; }
 
@@ -2809,9 +2809,9 @@ h1 { font-weight: 700; }
 
 .has-feedback .form-control-feedback { line-height: 48px; }
 
-.has-feedback label ~ .form-control-feedback { top: 32px; }
+.has-feedback label ~ .form-control-feedback { top: 36px; }
 
-label { color: #666; margin-bottom: 10px; }
+label { color: #666; font-weight: 600; margin-bottom: 15px; }
 
 .checkbox label, .radio label { color: #666; font-size: 16px; margin-bottom: 0; text-transform: none; }
 
@@ -2825,7 +2825,7 @@ textarea { resize: vertical; }
 
 .input-group-btn .btn { background: #ddd; border-radius: 6px; }
 
-.fake-field-locked { background: #eee; border-radius: 6px; color: #333; font-size: 16px; padding: 12px 20px; width: 100%; }
+.fake-field-locked { background: #eee; border-radius: 6px; color: #333; font-size: 16px; padding: 12px 20px 14px; width: 100%; }
 
 .fake-field-locked .fa-lock { color: #999; float: right; padding-top: 3px; }
 
@@ -2928,15 +2928,19 @@ category: CSS
 
 .btn-group.open > .btn-primary.btn-split + .dropdown-toggle { border-left-color: #fff; }
 
-.dropdown-menu { border-radius: 6px; border: 1px solid #e0e3e9; box-shadow: none; color: #999; left: auto; margin-top: 15px; padding-bottom: 25px; padding-top: 20px; right: -5px; }
+.dropdown-menu { border-radius: 6px; border: 1px solid #e0e3e9; box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05); color: #999; left: auto; margin-top: 15px; padding-bottom: 20px; padding-top: 20px; right: -5px; }
 
-.dropdown-menu > li > a { padding: 5px 25px; }
+.dropdown-menu > li > a { color: #999; padding: 5px 25px; }
 
 .dropdown-menu:before { border-color: transparent; border-bottom-color: #e0e3e9; border-style: solid; border-top-width: 0; border-width: 11px; content: ''; display: block; height: 0; margin-left: -11px; position: absolute; right: 18px; top: -22px; width: 0; }
 
 .dropdown-menu:after { border-color: transparent; border-bottom-color: #fff; border-style: solid; border-width: 10px; border-top-width: 0; content: ''; display: block; height: 0; position: absolute; right: 19px; top: -10px; width: 0; }
 
 /*doc --- title: Button groups name: button_groups category: Components --- ```html_example_table <div class="btn-group" role="group" aria-label="..."> <button type="button" class="btn btn-default">Left</button> <button type="button" class="btn btn-default">Middle</button> <button type="button" class="btn btn-default">Right</button> </div> ``` */
+.input-group-btn:last-child > .btn-group { margin-left: 0; }
+
+.input-group-btn:last-child > .btn-group .btn-default, .input-group-btn:last-child > .btn-group .btn-primary:disabled { border-color: #ddd; }
+
 /*doc
 ---
 title: Calendar
