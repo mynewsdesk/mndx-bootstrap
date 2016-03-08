@@ -2856,6 +2856,9 @@ category: CSS
 //category: CSS
 //---
 */
+/*doc --- title: Horizontal Rule name: hr category: CSS --- ```html_example <p> this is some text-color </p> <hr> <p> this is more text text </p> ``` */
+hr { margin: 60px 0; }
+
 /*doc
 //---
 //title: Responsives
