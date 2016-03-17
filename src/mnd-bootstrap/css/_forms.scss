@@ -39,6 +39,14 @@ category: CSS
     <p class="help-block">Example block-level help text here.</p>
   </div>
   <div class="form-group">
+    <label for="to">addonBefore</label>
+    <div class="input-group">
+      <div class="input-group-addon">poptype.co/</div>
+      <input type="email" class="form-control" id="to" placeholder="your-name-here">
+    </div>
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="form-group">
     <label for="to">Disabled input</label>
     <input type="email" class="form-control" id="to" placeholder=":disabled" disabled>
     <p class="help-block">Example block-level help text here.</p>
@@ -134,9 +142,13 @@ category: CSS
   padding-top: $space-large;
 }
 
+.input-group-addon {
+  border: $border-width solid $gray-lighten;
+}
+
 .form-control {
   background: $white;
-  border: 2px solid $gray-lighten;
+  border: $border-width solid $gray-lighten;
   box-shadow: none;
   padding: $padding-base-vertical $padding-base-horizontal $input-bottom-padding;
 
@@ -212,7 +224,7 @@ textarea {
 .input-group-btn {
   .btn {
     background: $gray-lighten;
-    border-radius: 6px;
+    border-radius: $border-radius-base;
   }
 }
 
