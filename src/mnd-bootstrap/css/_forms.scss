@@ -87,16 +87,16 @@ category: CSS
       </div>
     </span>
   </div>
-
   <div class="form-group text-right form-actions">
     <button type="reset" class="btn btn-default">Cancel</button>
     <button type="submit" class="btn btn-primary">Submit</button>
   </div>
-  <div class="form-group">
-    <label for="to">Locked field</label>
-    <div class="fake-field-locked">
-      hello@poptype.co
-      <i class="fa fa-icon fa-lock"></i>
+
+  <div>
+    <label>Locked field</label>
+    <div class="form-group has-feedback fake-field">
+      <input type="email" class="form-control fake-field-text" id="to" value="ellothisis+a+problem+with+long+text@poptype.co" disabled>
+      <span class="fa fa-icon fa-lock form-control-feedback"></span>
     </div>
   </div>
 </form>
@@ -216,17 +216,12 @@ textarea {
   }
 }
 
-.fake-field-locked {
-  background: $ui-color-lighter;
-  border-radius: 6px;
-  color: $text-color-dark;
-  font-size: 16px;
-  padding: $padding-base-vertical $padding-base-horizontal $input-bottom-padding;
-  width: 100%;
+.fake-field {
+  border: 0;
 
-  .fa-lock {
-    color: $text-color-light;
-    float: right;
-    padding-top: 3px;
+  &-text {
+    background: $ui-color-lighter;
+    border: 0;
+    color: $text-color-dark;
   }
 }
