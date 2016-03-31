@@ -176,9 +176,10 @@ category: Components
 }
 
 .dropdown-menu {
+  @include box-shadow($box-shadow-style);
+
   border-radius: 6px;
   border: 1px solid $btn-default-border;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
   color: $gray-light;
   left: auto;
   margin-top: 15px;
