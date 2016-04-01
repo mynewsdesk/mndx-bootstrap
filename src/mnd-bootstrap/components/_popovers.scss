@@ -1,3 +1,13 @@
 .popover {
   @include box-shadow($box-shadow-style);
+
+  border-color: $popover-arrow-outer-color;
+
+  .arrow {
+    color: $popover-arrow-outer-color;
+  }
+
+  &.bottom {
+    margin-top: $gutter-vertical-half;
+  }
 }
