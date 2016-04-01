@@ -125,8 +125,10 @@ Based on bootstrap modal.
 }
 
 .takeover-body {
-  @extend .modal-body;
   @extend %centered-content;
+  @extend %modal-body;
+
+  padding: 0;
 
   p:last-child {
     margin-bottom: 0;
