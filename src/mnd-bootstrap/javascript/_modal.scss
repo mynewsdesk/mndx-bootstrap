@@ -54,6 +54,10 @@ category: JavaScript
   overflow: hidden; // Prevents background color in modal header from bleeding through
   position: relative;
 
+  @media screen and (min-width: $screen-sm) {
+    margin: $gutter-vertical-x4 auto;
+  }
+
   .close {
     position: absolute;
     right: $gutter-vertical-half;
@@ -105,7 +109,6 @@ category: JavaScript
 }
 
 .modal-dialog {
-
   .footnote {
     color: $gray-light;
     font-size: $font-size-small;
