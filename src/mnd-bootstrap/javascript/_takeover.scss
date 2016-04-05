@@ -102,15 +102,20 @@ Based on bootstrap modal.
   right: 0;
   top: 0;
   width: auto;
+
+  .close {
+    padding: $gutter-horizontal;
+  }
 }
 
 .takeover-content {
   @extend .modal-content;
+
   background-color: transparent;
-  border: none;
   border-radius: 0;
+  border: none;
   box-shadow: none;
-  margin: 0 auto;
+  clear: both;
   overflow: hidden; // Prevents background color in takeover header from bleeding through
   position: relative;
 }

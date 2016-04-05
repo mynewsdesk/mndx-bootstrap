@@ -3229,6 +3229,8 @@ category: Components
 
 .modal-content, .takeover-content { -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); border-radius: 8px; overflow: hidden; position: relative; }
 
+@media screen and (min-width: 768px) { .modal-content, .takeover-content { margin: 120px auto; } }
+
 .modal-content .close, .takeover-content .close { position: absolute; right: 15px; top: 15px; }
 
 .modal-header { padding: 30px 10px; }
@@ -3254,7 +3256,9 @@ category: Components
 
 .takeover-dialog { background-color: rgba(255, 255, 255, 0.96); bottom: 0; left: 0; margin: 0; overflow: auto; position: fixed; right: 0; top: 0; width: auto; }
 
-.takeover-content { background-color: transparent; border: none; border-radius: 0; box-shadow: none; margin: 0 auto; overflow: hidden; position: relative; }
+.takeover-dialog .close { padding: 10px; }
+
+.takeover-content { background-color: transparent; border-radius: 0; border: none; box-shadow: none; clear: both; overflow: hidden; position: relative; }
 
 .takeover-header { padding: 0 10px 20px; }
 
