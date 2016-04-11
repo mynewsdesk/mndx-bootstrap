@@ -12,12 +12,23 @@ category: Components
 <span class="label label-info">Info</span>
 <span class="label label-warning">Warning</span>
 <span class="label label-danger">Danger</span>
+
+<span class="label label-primary label-large">Primary</span>
 ```
 */
 
 .label {
   border-radius: $border-radius-small;
   font-size: 80%;
+  font-weight: $semi-bold;
   padding: 2px 7px 3px;
   text-transform: uppercase;
+
+  &-large {
+    border-radius: $border-radius-base;
+    display: inline-block;
+    font-size: $font-size-base;
+    padding: 12px 15px 14px;
+    text-transform: none;
+  }
 }
