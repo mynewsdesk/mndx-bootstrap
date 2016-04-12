@@ -3086,9 +3086,13 @@ category: Components
 <span class="label label-info">Info</span>
 <span class="label label-warning">Warning</span>
 <span class="label label-danger">Danger</span>
+
+<span class="label label-primary label-large">Primary</span>
 ```
 */
-.label { border-radius: 2px; font-size: 80%; padding: 2px 7px 3px; text-transform: uppercase; }
+.label { border-radius: 2px; font-size: 80%; font-weight: 600; padding: 2px 7px 3px; text-transform: uppercase; }
+
+.label-large { border-radius: 6px; display: inline-block; font-size: 16px; padding: 12px 15px 14px; text-transform: none; }
 
 /*doc
 //---
