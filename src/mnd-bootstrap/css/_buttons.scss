@@ -38,8 +38,8 @@ $btn-vertical-padding: 12px;
 .btn {
   font-weight: $semi-bold;
   margin-left: $gutter-horizontal-x2;
-  padding-top: $btn-vertical-padding - 1;
   padding-bottom: $btn-vertical-padding + 1;
+  padding-top: $btn-vertical-padding - 1;
 
   &-default {
 
