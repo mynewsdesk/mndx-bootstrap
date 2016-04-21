@@ -1,0 +1,93 @@
+$color-facebook: #3b5998;
+$color-facebook-hover: darken($color-facebook, 10);
+$color-twitter: #55acee;
+$color-twitter-hover: darken($color-twitter, 10);
+$color-linkedin: #0077b5;
+$color-linkedin-hover: darken($color-linkedin, 10);
+
+@mixin social-button($color) {
+  @extend %btn-social;
+  color: $color;
+  border-color: $color;
+}
+
+@mixin social-button-active($color) {
+  @extend %btn-social-active;
+  color: $white;
+  background-color: $color;
+}
+
+%btn-social-active {
+  color: $white;
+
+  i:first-child {
+    margin-right: $gutter-horizontal;
+  }
+
+  i:last-child {
+    margin-left: $gutter-horizontal;
+  }
+
+  &:hover,
+  &:focus {
+    color: $white;
+  }
+}
+
+%btn-social {
+  background: $white;
+
+  i {
+    margin-right: $gutter-horizontal;
+  }
+}
+
+.btn {
+  &-facebook {
+    @include social-button($color-facebook);
+
+    &:hover {
+      @include social-button($color-facebook-hover);
+    }
+
+    &-active {
+      @include social-button-active($color-facebook);
+
+      &:hover {
+        @include social-button-active($color-facebook-hover);
+      }
+    }
+  }
+
+  &-twitter {
+    @include social-button($color-twitter);
+
+    &:hover {
+      @include social-button($color-twitter-hover);
+    }
+
+    &-active {
+      @include social-button-active($color-twitter);
+
+      &:hover {
+        @include social-button-active($color-twitter-hover);
+      }
+    }
+  }
+
+  &-linkedin {
+    @include social-button($color-linkedin);
+
+    &:hover {
+      @include social-button($color-linkedin-hover);
+    }
+
+    &-active {
+      @include social-button-active($color-linkedin);
+
+      &:hover {
+        @include social-button-active($color-linkedin-hover);
+      }
+    }
+  }
+}
