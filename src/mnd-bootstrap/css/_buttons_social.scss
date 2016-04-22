@@ -108,7 +108,7 @@ $color-linkedin-hover: darken($color-linkedin, 10);
       @include social-button-active($color-linkedin);
       &:active,
       &:active:focus,
-      &:focus{
+      &:focus {
         @include social-button-active($color-linkedin);
       }
 
