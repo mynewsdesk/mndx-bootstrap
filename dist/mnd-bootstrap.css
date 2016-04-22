@@ -2748,42 +2748,42 @@ h1 { font-weight: 700; }
 
 @media screen and (min-width: 1200px) { .text-left-lg { text-align: left; } }
 
-/*doc --- title: Buttons name: Buttons category: CSS --- ```html_example_table <p><button class="btn btn-default">Normal</button> <button class="btn btn-default btn-sm">Small</button></p> <h3>Normal buttons</h3> <p><button class="btn btn-link">Link button</button> <button class="btn btn-link" disabled>Link button</button></p> <p><button class="btn btn-default">Default</button> <button class="btn btn-default" disabled>Default disabled</button></p> <p><button class="btn btn-primary">Primary</button> <button class="btn btn-primary" disabled>Primary disabled</button></p> <p><button class="btn btn-success">Success</button> <button class="btn btn-success" disabled>Success disabled</button></p> <p><button class="btn btn-danger">Danger</button> <button class="btn btn-danger" disabled>Danger disabled</button></p> <h3>Small buttons</h3> <p><button class="btn btn-sm btn-default">Small default</button> <button class="btn btn-sm btn-primary">Small primary</button> <button class="btn btn-sm btn-link">Small link button</button></p> <h3>Small buttons with icons</h3> <p><button class="btn btn-sm btn-default"><i class="fa fa-plus"></i></button> <button class="btn btn-sm btn-primary">Small primary <i class="fa fa-plus"></i></button></p> <h3>Social buttons</h3> <p> <button class="btn btn-facebook"><i class="fa fa-facebook"></i> Add new Facebook account</button> <button class="btn btn-facebook-active"><i class="fa fa-facebook"></i>Facebook Connected <i class="fa fa-remove"></i></button> </p> <p> <button class="btn btn-twitter"><i class="fa fa-twitter"></i> Connect to Twitter</button> <button class="btn btn-twitter-active btn-active"><i class="fa fa-twitter"></i> Twitter Connected <i class="fa fa-remove"></i></button> </p> <p> <button class="btn btn-linkedin"><i class="fa fa-linkedin"></i> Connect to Linkedin</button> <button class="btn btn-linkedin-active"><i class="fa fa-linkedin"></i> Linkedin Connected <i class="fa fa-remove"></i></button> </p> ``` */
-.btn-facebook-active, .btn-facebook-active:hover, .btn-twitter-active, .btn-twitter-active:hover, .btn-linkedin-active, .btn-linkedin-active:hover { color: #fff; }
+/*doc --- title: Buttons name: Buttons category: CSS --- ```html_example_table <p><button class="btn btn-default">Normal</button> <button class="btn btn-default btn-sm">Small</button></p> <h3>Normal buttons</h3> <p><button class="btn btn-link">Link button</button> <button class="btn btn-link" disabled>Link button</button></p> <p><button class="btn btn-default">Default</button> <button class="btn btn-default" disabled>Default disabled</button></p> <p><button class="btn btn-primary">Primary</button> <button class="btn btn-primary" disabled>Primary disabled</button></p> <p><button class="btn btn-success">Success</button> <button class="btn btn-success" disabled>Success disabled</button></p> <p><button class="btn btn-danger">Danger</button> <button class="btn btn-danger" disabled>Danger disabled</button></p> <h3>Small buttons</h3> <p><button class="btn btn-sm btn-default">Small default</button> <button class="btn btn-sm btn-primary">Small primary</button> <button class="btn btn-sm btn-link">Small link button</button></p> <h3>Small buttons with icons</h3> <p><button class="btn btn-sm btn-default"><i class="fa fa-plus"></i></button> <button class="btn btn-sm btn-primary">Small primary <i class="fa fa-plus"></i></button></p> <h3>Social buttons</h3> <p> <button class="btn btn-default btn-facebook"><i class="fa fa-facebook"></i> Add new Facebook account</button> <button class="btn btn-default btn-facebook-active"><i class="fa fa-facebook"></i>Facebook Connected <i class="fa fa-remove"></i></button> </p> <p> <button class="btn btn-default btn-twitter"><i class="fa fa-twitter"></i> Connect to Twitter</button> <button class="btn btn-default btn-twitter-active btn-active"><i class="fa fa-twitter"></i> Twitter Connected <i class="fa fa-remove"></i></button> </p> <p> <button class="btn-linkedin btn btn-default"><i class="fa fa-linkedin"></i> Connect to Linkedin</button> <button class="btn-linkedin-active btn btn-default"><i class="fa fa-linkedin"></i> Linkedin Connected <i class="fa fa-remove"></i></button> </p> ``` */
+.btn-default.btn-facebook-active, .btn-facebook-active.btn-primary:disabled, .btn-default.btn-facebook-active:hover, .btn-default.btn-twitter-active, .btn-twitter-active.btn-primary:disabled, .btn-default.btn-twitter-active:hover, .btn-default.btn-linkedin-active, .btn-linkedin-active.btn-primary:disabled, .btn-default.btn-linkedin-active:hover { color: #fff; }
 
-.btn-facebook-active i:first-child, .btn-twitter-active i:first-child, .btn-linkedin-active i:first-child { margin-right: 10px; }
+.btn-default.btn-facebook-active i:first-child, .btn-facebook-active.btn-primary:disabled i:first-child, .btn-default.btn-twitter-active i:first-child, .btn-twitter-active.btn-primary:disabled i:first-child, .btn-default.btn-linkedin-active i:first-child, .btn-linkedin-active.btn-primary:disabled i:first-child { margin-right: 10px; }
 
-.btn-facebook-active i:last-child, .btn-twitter-active i:last-child, .btn-linkedin-active i:last-child { margin-left: 10px; }
+.btn-default.btn-facebook-active i:last-child, .btn-facebook-active.btn-primary:disabled i:last-child, .btn-default.btn-twitter-active i:last-child, .btn-twitter-active.btn-primary:disabled i:last-child, .btn-default.btn-linkedin-active i:last-child, .btn-linkedin-active.btn-primary:disabled i:last-child { margin-left: 10px; }
 
-.btn-facebook-active:hover, .btn-twitter-active:hover, .btn-linkedin-active:hover, .btn-facebook-active:focus, .btn-twitter-active:focus, .btn-linkedin-active:focus { color: #fff; }
+.btn-default.btn-facebook-active:hover, .btn-facebook-active.btn-primary:hover:disabled, .btn-default.btn-twitter-active:hover, .btn-twitter-active.btn-primary:hover:disabled, .btn-default.btn-linkedin-active:hover, .btn-linkedin-active.btn-primary:hover:disabled, .btn-default.btn-facebook-active:focus, .btn-facebook-active.btn-primary:focus:disabled, .btn-default.btn-twitter-active:focus, .btn-twitter-active.btn-primary:focus:disabled, .btn-default.btn-linkedin-active:focus, .btn-linkedin-active.btn-primary:focus:disabled { color: #fff; }
 
-.btn-facebook, .btn-facebook:hover, .btn-twitter, .btn-twitter:hover, .btn-linkedin, .btn-linkedin:hover { background: #fff; }
+.btn-default.btn-facebook, .btn-facebook.btn-primary:disabled, .btn-default.btn-facebook:hover, .btn-default.btn-twitter, .btn-twitter.btn-primary:disabled, .btn-default.btn-twitter:hover, .btn-default.btn-linkedin, .btn-linkedin.btn-primary:disabled, .btn-default.btn-linkedin:hover { background: #fff; }
 
-.btn-facebook i, .btn-facebook:hover i, .btn-twitter i, .btn-twitter:hover i, .btn-linkedin i, .btn-linkedin:hover i { margin-right: 10px; }
+.btn-default.btn-facebook i, .btn-facebook.btn-primary:disabled i, .btn-default.btn-facebook:hover i, .btn-default.btn-twitter i, .btn-twitter.btn-primary:disabled i, .btn-default.btn-twitter:hover i, .btn-default.btn-linkedin i, .btn-linkedin.btn-primary:disabled i, .btn-default.btn-linkedin:hover i { margin-right: 10px; }
 
-.btn-facebook { color: #3b5998; border-color: #3b5998; }
+.btn-default.btn-facebook, .btn-facebook.btn-primary:disabled { color: #3b5998; border-color: #3b5998; }
 
-.btn-facebook:hover { color: #2d4373; border-color: #2d4373; }
+.btn-default.btn-facebook:hover, .btn-facebook.btn-primary:hover:disabled { color: #2d4373; border-color: #2d4373; }
 
-.btn-facebook-active { color: #fff; background-color: #3b5998; }
+.btn-default.btn-facebook-active, .btn-facebook-active.btn-primary:disabled { color: #fff; background-color: #3b5998; }
 
-.btn-facebook-active:hover { color: #fff; background-color: #2d4373; }
+.btn-default.btn-facebook-active:hover, .btn-facebook-active.btn-primary:hover:disabled { color: #fff; background-color: #2d4373; }
 
-.btn-twitter { color: #55acee; border-color: #55acee; }
+.btn-default.btn-twitter, .btn-twitter.btn-primary:disabled { color: #55acee; border-color: #55acee; }
 
-.btn-twitter:hover { color: #2795e9; border-color: #2795e9; }
+.btn-default.btn-twitter:hover, .btn-twitter.btn-primary:hover:disabled { color: #2795e9; border-color: #2795e9; }
 
-.btn-twitter-active { color: #fff; background-color: #55acee; }
+.btn-default.btn-twitter-active, .btn-twitter-active.btn-primary:disabled { color: #fff; background-color: #55acee; }
 
-.btn-twitter-active:hover { color: #fff; background-color: #2795e9; }
+.btn-default.btn-twitter-active:hover, .btn-twitter-active.btn-primary:hover:disabled { color: #fff; background-color: #2795e9; }
 
-.btn-linkedin { color: #0077b5; border-color: #0077b5; }
+.btn-default.btn-linkedin, .btn-linkedin.btn-primary:disabled { color: #0077b5; border-color: #0077b5; }
 
-.btn-linkedin:hover { color: #005582; border-color: #005582; }
+.btn-default.btn-linkedin:hover, .btn-linkedin.btn-primary:hover:disabled { color: #005582; border-color: #005582; }
 
-.btn-linkedin-active { color: #fff; background-color: #0077b5; }
+.btn-default.btn-linkedin-active, .btn-linkedin-active.btn-primary:disabled { color: #fff; background-color: #0077b5; }
 
-.btn-linkedin-active:hover { color: #fff; background-color: #005582; }
+.btn-default.btn-linkedin-active:hover, .btn-linkedin-active.btn-primary:hover:disabled { color: #fff; background-color: #005582; }
 
 .btn { font-weight: 600; margin-left: 20px; padding-bottom: 13px; padding-top: 11px; }
 

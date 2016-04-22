@@ -42,8 +42,9 @@ $color-linkedin-hover: darken($color-linkedin, 10);
   }
 }
 
-.btn {
-  &-facebook {
+
+.btn-default {
+  &.btn-facebook {
     @include social-button($color-facebook);
 
     &:hover {
@@ -59,7 +60,7 @@ $color-linkedin-hover: darken($color-linkedin, 10);
     }
   }
 
-  &-twitter {
+  &.btn-twitter {
     @include social-button($color-twitter);
 
     &:hover {
@@ -75,7 +76,7 @@ $color-linkedin-hover: darken($color-linkedin, 10);
     }
   }
 
-  &-linkedin {
+  &.btn-linkedin {
     @include social-button($color-linkedin);
 
     &:hover {
