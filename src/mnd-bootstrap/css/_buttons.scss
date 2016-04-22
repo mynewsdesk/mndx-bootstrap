@@ -32,16 +32,16 @@ category: CSS
 
 <h3>Social buttons</h3>
 <p>
-<button class="btn btn-facebook"><i class="fa fa-facebook"></i> Add new Facebook account</button>
-<button class="btn btn-facebook-active"><i class="fa fa-facebook"></i>Facebook Connected <i class="fa fa-remove"></i></button>
+<button class="btn btn-default btn-facebook"><i class="fa fa-facebook"></i> Add new Facebook account</button>
+<button class="btn btn-default btn-facebook-active"><i class="fa fa-facebook"></i>Facebook Connected <i class="fa fa-remove"></i></button>
 </p>
 <p>
-<button class="btn btn-twitter"><i class="fa fa-twitter"></i> Connect to Twitter</button>
-<button class="btn btn-twitter-active btn-active"><i class="fa fa-twitter"></i> Twitter Connected <i class="fa fa-remove"></i></button>
+<button class="btn btn-default btn-twitter"><i class="fa fa-twitter"></i> Connect to Twitter</button>
+<button class="btn btn-default btn-twitter-active btn-active"><i class="fa fa-twitter"></i> Twitter Connected <i class="fa fa-remove"></i></button>
 </p>
 <p>
-<button class="btn btn-linkedin"><i class="fa fa-linkedin"></i> Connect to Linkedin</button>
-<button class="btn btn-linkedin-active"><i class="fa fa-linkedin"></i> Linkedin Connected <i class="fa fa-remove"></i></button>
+<button class="btn-linkedin btn btn-default"><i class="fa fa-linkedin"></i> Connect to Linkedin</button>
+<button class="btn-linkedin-active btn btn-default"><i class="fa fa-linkedin"></i> Linkedin Connected <i class="fa fa-remove"></i></button>
 </p>
 
 ```
