@@ -47,12 +47,21 @@ $color-linkedin-hover: darken($color-linkedin, 10);
   &.btn-facebook {
     @include social-button($color-facebook);
 
+    &:active,
+    &:active:focus,
+    &:focus,
     &:hover {
       @include social-button($color-facebook-hover);
     }
 
     &-active {
       @include social-button-active($color-facebook);
+
+      &:active,
+      &:active:focus,
+      &:focus {
+        @include social-button-active($color-facebook);
+      }
 
       &:hover {
         @include social-button-active($color-facebook-hover);
@@ -63,12 +72,21 @@ $color-linkedin-hover: darken($color-linkedin, 10);
   &.btn-twitter {
     @include social-button($color-twitter);
 
+    &:active,
+    &:active:focus,
+    &:focus,
     &:hover {
       @include social-button($color-twitter-hover);
     }
 
     &-active {
       @include social-button-active($color-twitter);
+
+      &:active,
+      &:active:focus,
+      &:focus {
+        @include social-button-active($color-twitter);
+      }
 
       &:hover {
         @include social-button-active($color-twitter-hover);
@@ -79,12 +97,20 @@ $color-linkedin-hover: darken($color-linkedin, 10);
   &.btn-linkedin {
     @include social-button($color-linkedin);
 
+    &:active,
+    &:active:focus,
+    &:focus,
     &:hover {
       @include social-button($color-linkedin-hover);
     }
 
     &-active {
       @include social-button-active($color-linkedin);
+      &:active,
+      &:active:focus,
+      &:focus{
+        @include social-button-active($color-linkedin);
+      }
 
       &:hover {
         @include social-button-active($color-linkedin-hover);
