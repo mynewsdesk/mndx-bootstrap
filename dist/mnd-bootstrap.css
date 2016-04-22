@@ -2443,7 +2443,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .modal-title { margin: 0; line-height: 1.375; }
 
-.modal-body { position: relative; padding: 0 40px 30px; }
+.modal-body, .takeover-body { position: relative; padding: 0 40px 30px; }
 
 .modal-footer, .takeover-footer { padding: 0 40px 30px; text-align: right; border-top: 1px solid #fff; }
 
@@ -3281,7 +3281,7 @@ category: Components
 
 .modal-header .header-icon { color: #3eb991; font-size: 160px; }
 
-.modal-body p:last-child { margin-bottom: 0; }
+.modal-body p:last-child, .takeover-body p:last-child { margin-bottom: 0; }
 
 .modal-footer, .takeover-footer { padding-bottom: 60px; text-align: center; }
 

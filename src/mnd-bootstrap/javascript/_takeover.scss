@@ -131,7 +131,7 @@ Based on bootstrap modal.
 
 .takeover-body {
   @extend %centered-content;
-  @extend %modal-body;
+  @extend .modal-body;
 
   padding: 0;
 
@@ -184,4 +184,3 @@ Based on bootstrap modal.
     }
   }
 }
-
