@@ -10,9 +10,9 @@ http://mynewsdesk.github.io/mnd-bootstrap/
 
 ## Installation
 
-Installation is done with bower.
+Installation is done with npm.
 ```
-bower install --save mnd-bootstrap
+npm install --save mndx-bootstrap
 ```
 
 ## Usage
