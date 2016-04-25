@@ -13,7 +13,7 @@
     "bootstrap"
   ],
   "dependencies": {
-    "bootstrap-sass-twbs": "*",
+    "bootstrap-sass": "*",
     "bourbon": "~4.1.1",
     "font-awesome": "fontawesome#~4.4.0"
   },
