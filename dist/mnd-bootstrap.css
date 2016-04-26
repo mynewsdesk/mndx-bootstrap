@@ -2793,6 +2793,10 @@ h1 { font-weight: 700; }
 
 .btn { font-weight: 600; margin-left: 20px; padding-bottom: 13px; padding-top: 11px; }
 
+.btn:first-child { margin-left: 0; }
+
+.btn[disabled], .btn.disabled { cursor: default; }
+
 .btn-default:hover, .btn-primary:hover:disabled { background: #fff; border-color: #e0e3e9; color: #333; }
 
 .btn-default:active, .btn-primary:active:disabled, .btn-default:focus, .btn-primary:focus:disabled, .btn-default:active:focus, .btn-primary:active:focus:disabled { background: #fff; border-color: #95a0b4; box-shadow: none; color: #999; outline: none; }
