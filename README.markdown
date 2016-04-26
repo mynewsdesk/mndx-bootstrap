@@ -60,6 +60,11 @@ I've created a gulp task for all those steps:
 
 `gulp release [--level patch|minor|major]`
 
+
+*Publish the package to NPM*
+
+`npm publish`
+
 The level change the version increment according to the semver documentation.
 
 ```
