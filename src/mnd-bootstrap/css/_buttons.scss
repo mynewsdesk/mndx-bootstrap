@@ -55,8 +55,14 @@ $btn-vertical-padding: 12px;
   padding-bottom: $btn-vertical-padding + 1;
   padding-top: $btn-vertical-padding - 1;
 
+
   &:first-child {
     margin-left: 0;
+  }
+
+  &[disabled],
+  &.disabled {
+    cursor: default;
   }
 
   &-default {
