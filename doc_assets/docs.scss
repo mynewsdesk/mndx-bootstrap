@@ -1,3 +1,5 @@
+@import "../src/mnd-bootstrap/variables";
+
 .container {
   max-width: 1128px;
   width: auto;
@@ -54,10 +56,10 @@ div.codeExample, div.jsExample {
   border: 1px solid #ccc;
   border-radius: 4px;
   margin: 10px 0 50px 0;
-}
 
-div.jsExample {
-  border-top: 0px;
+  pre {
+    font-size: 14px;
+  }
 }
 
 div.codeExample:before, div.jsExample:before {
@@ -92,7 +94,7 @@ div.codeBlock, div.exampleOutput {
 }
 
 div.codeBlock {
-  background-color: $ui-color-lighter;
+  background-color: $ui-color-lightest;
   border-top: 1px solid $gray-lighter;
   border-bottom-left-radius: $border-radius-base;
   border-bottom-right-radius: $border-radius-base;

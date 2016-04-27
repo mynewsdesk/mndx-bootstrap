@@ -1,6 +1,8 @@
 $fa-font-path: "/fonts";
 @import "../src/mnd-bootstrap/variables";
 @import "font-awesome/scss/font-awesome";
+@import "github";
+@import "docs";
 
 $sg-default-space: 15px;
 $sg-link-color: #999;
@@ -38,12 +40,11 @@ p.styleguide {
 }
 
 .package-info {
-  padding: 10px;
+  padding: $base-unit;
   display: inline-block;
   background: $ui-color-lightest;
   font-weight: bold;
 }
-
 
 .code {
 
@@ -59,7 +60,19 @@ p.styleguide {
 }
 
 .nav-sidebar {
-  padding: $base-unit $base-unit $base-unit 0;
+  background: $ui-color-lightest;
+  margin: 0;
+  padding: $base-unit $base-unit $base-unit $base-unit;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  .list-group-item {
+    background: $ui-color-lightest;
+    border: 0;
+    padding-left: 0;
+  }
 }
 
 .styleguide-example {
@@ -67,8 +80,9 @@ p.styleguide {
   padding: $sg-default-space;
 
   &.light {
-    background-color: #fff;
+    background-color: $white;
   }
+
   &.dark {
     background-color: $gray-dark;
   }
