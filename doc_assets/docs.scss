@@ -95,9 +95,9 @@ div.codeBlock, div.exampleOutput {
 
 div.codeBlock {
   background-color: $ui-color-lightest;
-  border-top: 1px solid $gray-lighter;
   border-bottom-left-radius: $border-radius-base;
   border-bottom-right-radius: $border-radius-base;
+  border-top: 1px solid $gray-lighter;
 }
 
 div.tableExample {
