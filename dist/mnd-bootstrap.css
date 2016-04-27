@@ -2907,7 +2907,6 @@ hr { margin: 60px 0; }
 //category: CSS
 //---
 */
-/*doc --- title: Tables name: tables category: CSS --- ```html_example <table class="table table-striped"> <thead> <tr> <th>Story</th> <th colspan="2">Date</th> </tr> </thead> <tbody> <tr> <td>The magic story that never ends</td> <td>31 jan, 2015</td> <td class="table-actions"><a href="#" title="Action Titile">Action 1</a> <a href="#" title="Action Title">Action 2</a></td> </tr> <tr> <td>Story title goes here</td> <td>12 jan, 2015</td> <td class="table-actions"><a href="#" title="Action Titile">Action 1</a> <a href="#" title="Action Title">Action 2</a></td> </tr> <tr> <td>Another story that have a long text of around SEO max length</td> <td>31 dec, 2014</td> <td class="table-actions"><a href="#" title="Action Titile">Action 1</a></td> </tr> <tr> <td>My story</td> <td>25 aug, 2012</td> <td class="table-actions"><a href="#" title="Action Titile">Action 1</a></td> </tr> <tr> <td>Old story title</td> <td>10 jun, 1977</td> <td class="table-actions"><a href="#" title="Action Titile">Action 1</a></td> </tr> </tbody> </table> ``` */
 .table > tbody > tr > td { border-top: 0; border-bottom: 1px solid #ddd; }
 
 .table-actions { text-align: right; }
@@ -2958,19 +2957,6 @@ hr { margin: 60px 0; }
 
 .input-group-btn:last-child > .btn-group .btn-default, .input-group-btn:last-child > .btn-group .btn-primary:disabled { border-color: #ddd; }
 
-/*doc
----
-title: Calendar
-name: calendar
-category: Components
----
-
-A calendar, designed for the datepicker
-
-```html_example
-<Caldendar />
-```
-*/
 .date-picker { display: inline-block; position: relative; margin: inherit 0; }
 
 .date-picker-calendar .rw-header { border-bottom: 1px solid #eee; margin: 10px 0; overflow: hidden; padding: 0 10px 10px; }
@@ -3046,7 +3032,6 @@ A calendar, designed for the datepicker
 
 .content-list-striped .content-list-row:nth-child(even) { background-color: #fafafa; }
 
-/*doc --- title: Date range picker name: date_range_picker category: Components --- ```html_example_table <div class="btn-group"> <button class="btn btn-default btn-sm" aria-role="group" aria-label="datepicker" tabindex="1"> 2015-07-06 <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> <!-- Insert calendar here --> </button> <button class="btn btn-default btn-sm" aria-role="group" aria-label="datepicker" tabindex="1"> 2015-09-23 <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> <!-- Insert calendar here --> </button> </div> ``` */
 .btn-group .btn .date-picker-field { border: none; background-color: transparent; }
 
 /*doc
