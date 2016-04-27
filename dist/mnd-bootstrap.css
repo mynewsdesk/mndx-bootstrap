@@ -2881,13 +2881,6 @@ textarea { resize: vertical; }
 
 .fake-field-text { background: #eee; border: 0; color: #333; }
 
-/*doc
----
-title: Grid
-name: grid
-category: CSS
----
-*/
 .container-fluid { padding-left: 20px; padding-right: 20px; }
 
 /*doc

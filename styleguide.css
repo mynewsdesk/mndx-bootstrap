@@ -25,6 +25,7 @@ parent: typo
 */
 /*doc --- title: Body copy name: body_copy parent: typo --- ```html_example <p class="lead"> <strong>.lead</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs. Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger. Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter. Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round. Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin. </p> <p> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs. Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger. Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter. Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round. Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin. </p> ``` */
 @import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic");
+@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic");
 h1 { font-weight: 700; }
 
 .lead { font-weight: normal; }
@@ -1282,19 +1283,302 @@ h1 { font-weight: 700; }
 
 .fa-fonticons:before { content: ""; }
 
+hll { background-color: #ffffcc; }
+
+.c { color: #999988; font-style: italic; }
+
+/* Comment */
+.err { color: #a61717; background-color: #e3d2d2; }
+
+/* Error */
+.k { color: #000000; font-weight: bold; }
+
+/* Keyword */
+.o { color: #000000; font-weight: bold; }
+
+/* Operator */
+.cm { color: #999988; font-style: italic; }
+
+/* Comment.Multiline */
+.cp { color: #999999; font-weight: bold; font-style: italic; }
+
+/* Comment.Preproc */
+.c1 { color: #999988; font-style: italic; }
+
+/* Comment.Single */
+.cs { color: #999999; font-weight: bold; font-style: italic; }
+
+/* Comment.Special */
+.gd { color: #000000; background-color: #ffdddd; }
+
+/* Generic.Deleted */
+.ge { color: #000000; font-style: italic; }
+
+/* Generic.Emph */
+.gr { color: #aa0000; }
+
+/* Generic.Error */
+.gh { color: #999999; }
+
+/* Generic.Heading */
+.gi { color: #000000; background-color: #ddffdd; }
+
+/* Generic.Inserted */
+.go { color: #888888; }
+
+/* Generic.Output */
+.gp { color: #555555; }
+
+/* Generic.Prompt */
+.gs { font-weight: bold; }
+
+/* Generic.Strong */
+.gu { color: #aaaaaa; }
+
+/* Generic.Subheading */
+.gt { color: #aa0000; }
+
+/* Generic.Traceback */
+.kc { color: #000000; font-weight: bold; }
+
+/* Keyword.Constant */
+.kd { color: #000000; font-weight: bold; }
+
+/* Keyword.Declaration */
+.kn { color: #000000; font-weight: bold; }
+
+/* Keyword.Namespace */
+.kp { color: #000000; font-weight: bold; }
+
+/* Keyword.Pseudo */
+.kr { color: #000000; font-weight: bold; }
+
+/* Keyword.Reserved */
+.kt { color: #445588; font-weight: bold; }
+
+/* Keyword.Type */
+.m { color: #009999; }
+
+/* Literal.Number */
+.s { color: #d01040; }
+
+/* Literal.String */
+.na { color: #008080; }
+
+/* Name.Attribute */
+.nb { color: #0086B3; }
+
+/* Name.Builtin */
+.nc { color: #445588; font-weight: bold; }
+
+/* Name.Class */
+.no { color: #008080; }
+
+/* Name.Constant */
+.nd { color: #3c5d5d; font-weight: bold; }
+
+/* Name.Decorator */
+.ni { color: #800080; }
+
+/* Name.Entity */
+.ne { color: #990000; font-weight: bold; }
+
+/* Name.Exception */
+.nf { color: #990000; font-weight: bold; }
+
+/* Name.Function */
+.nl { color: #990000; font-weight: bold; }
+
+/* Name.Label */
+.nn { color: #555555; }
+
+/* Name.Namespace */
+.nt { color: #000080; }
+
+/* Name.Tag */
+.nv { color: #008080; }
+
+/* Name.Variable */
+.ow { color: #000000; font-weight: bold; }
+
+/* Operator.Word */
+.w { color: #bbbbbb; }
+
+/* Text.Whitespace */
+.mf { color: #009999; }
+
+/* Literal.Number.Float */
+.mh { color: #009999; }
+
+/* Literal.Number.Hex */
+.mi { color: #009999; }
+
+/* Literal.Number.Integer */
+.mo { color: #009999; }
+
+/* Literal.Number.Oct */
+.sb { color: #d01040; }
+
+/* Literal.String.Backtick */
+.sc { color: #d01040; }
+
+/* Literal.String.Char */
+.sd { color: #d01040; }
+
+/* Literal.String.Doc */
+.s2 { color: #d01040; }
+
+/* Literal.String.Double */
+.se { color: #d01040; }
+
+/* Literal.String.Escape */
+.sh { color: #d01040; }
+
+/* Literal.String.Heredoc */
+.si { color: #d01040; }
+
+/* Literal.String.Interpol */
+.sx { color: #d01040; }
+
+/* Literal.String.Other */
+.sr { color: #009926; }
+
+/* Literal.String.Regex */
+.s1 { color: #d01040; }
+
+/* Literal.String.Single */
+.ss { color: #990073; }
+
+/* Literal.String.Symbol */
+.bp { color: #999999; }
+
+/* Name.Builtin.Pseudo */
+.vc { color: #008080; }
+
+/* Name.Variable.Class */
+.vg { color: #008080; }
+
+/* Name.Variable.Global */
+.vi { color: #008080; }
+
+/* Name.Variable.Instance */
+.il { color: #009999; }
+
+/* Literal.Number.Integer.Long */
+/*doc --- title: Primary name: primary category: Colors --- Used for elements (i.e buttons, labels and ***) <div class="clearfix"> <div class="color-box brand-primary"> <span>$brand-primary</span> </div> <div class="color-box brand-success"> <span>$brand-success</span> </div> <div class="color-box brand-warning"> <span>$brand-warning</span> </div> <div class="color-box brand-danger"> <span>$brand-danger</span> </div> </div> */
+/*doc --- title: Text name: text category: Colors --- Used for text, borders and list elements. <div class="clearfix"> <div class="color-box text-color"> <span>$text-color</span> </div> <div class="color-box text-color-dark"> <span>$text-color-dark</span> </div> <div class="color-box text-color-light"> <span>$text-color-light</span> </div> </div> */
+/*doc --- title: UI Colors name: ui-colors category: Colors --- Used for borders, background and dividers <div class="clearfix"> <div class="color-box ui-color-default"> <span>$ui-color-default</span> </div> <div class="color-box ui-color-light"> <span>$ui-color-light</span> </div> <div class="color-box ui-color-lighter"> <span>$ui-color-lighter</span> </div> <div class="color-box ui-color-lightest"> <span>$ui-color-lightest</span> </div> </div> */
+/*doc
+---
+title: Typography
+name: typo
+category: CSS
+---
+In general we should not use typography classes but instead use the correct semantic elements which in almost all
+cases should have the correct styling.
+*/
+/*doc
+---
+title: Headings
+name: headings
+parent: typo
+---
+```html_example
+<h1>H1 <small>$font-size-very-large</small></h1>
+<h2>H2 <small>$font-size-larger</small></h2>
+<h3>H3 <small>$font-size-base</small></h3>
+```
+*/
+/*doc --- title: Body copy name: body_copy parent: typo --- ```html_example <p class="lead"> <strong>.lead</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs. Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger. Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter. Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round. Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin. </p> <p> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs. Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger. Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter. Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round. Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin. </p> ``` */
+h1 { font-weight: 700; }
+
+.lead { font-weight: normal; }
+
+.container { max-width: 1128px; width: auto; margin: 0 auto; }
+
+.content { margin-top: 5px; }
+
+.main > h1 { margin-top: 30px; }
+
+.main > h1:first-child { margin-top: 0; }
+
+footer { margin-top: 20px; text-align: center; }
+
+.componentMenu { max-height: 535px; width: 175px; overflow-y: auto; }
+
+blockquote:before { content: "Design Note:"; font-weight: bold; }
+
+blockquote { border: 1px solid #eee; border-radius: 4px; font-family: "Comic Sans MS"; font-size: 16px; margin: 10px 0; padding: 5px; }
+
+code { padding: 2px 4px; color: #d14; white-space: nowrap; background-color: #f9f9f9; border: 1px solid #ccc; border-radius: 4px; }
+
+div.codeExample, div.jsExample { border: 1px solid #ccc; border-radius: 4px; margin: 10px 0 50px 0; }
+
+div.codeExample pre, div.jsExample pre { font-size: 14px; }
+
+div.codeExample:before, div.jsExample:before { font-size: 14px; font-weight: 500; color: #666; border: 1px solid #ccc; border-radius: 4px; border-bottom-left-radius: 0; border-top-right-radius: 0; position: relative; padding: 5px 10px; display: inline-block; }
+
+div.codeExample:before { content: "Example"; background-color: #f9f9f9; top: -1px; left: -1px; }
+
+div.jsExample:before { content: "JS Example"; background-color: #fff; top: -11px; left: -11px; }
+
+div.codeBlock, div.exampleOutput { padding: 30px; }
+
+div.codeBlock { background-color: #fafafa; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; border-top: 1px solid #eee; }
+
+div.tableExample { display: table; width: 100%; margin-top: -32px; }
+
+div.tableExample div.exampleOutput, div.tableExample div.codeBlock { display: table-cell; width: 50%; vertical-align: middle; }
+
+div.tableExample div.codeBlock { border-top: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-left: 1px solid #ccc; }
+
+div.tableExample:first-child div.exampleOutput, div.tableExample:first-child div.codeBlock { padding-top: 60px; }
+
+div.tableExample:first-child div.codeBlock { border-top: 1px solid #ccc; border-top-right-radius: 4px; }
+
+div.tableExample:last-child div.codeBlock { border-bottom-right-radius: 4px; }
+
+.docSwatch { min-height: 218.21px; border: 1px solid #ccc; padding: 10px 0 0 10px; font-size: 12px; margin-bottom: 5px; }
+
+.codeExample .line > div:after { content: attr(class); display: block; min-height: 40px; line-height: 40px; background-color: #EEE; text-align: center; border-radius: 3px; font-size: 12px; }
+
+table, table tr, table td, table th { padding: 7px; border: 1px solid #ccc; }
+
+table th { font-weight: bold; }
+
+.highlight pre { background: none; border: none; padding: 0; margin: 0; white-space: pre-wrap; }
+
 body { padding-bottom: 60px; }
 
-/* style nav specific - Temporary until we have the navigation implemented in our bootstrap theme */
-#top-nav .navbar-header { margin: 15px; }
+.nav-main .navbar-header { margin: 15px; }
 
-#top-nav li > a { color: #0096d1; line-height: 25px; }
+.nav-main .navbar-nav { margin: 0 15px; }
 
-/* end temporary styling of our navigation*/
+@media screen and (min-width: 768px) { .nav-main .navbar-nav { margin: 0; } }
+
+.nav-main li > a { color: #999; line-height: 25px; }
+
+.nav-sidebar { background: #fafafa; margin: 0; padding: 15px; }
+
+.nav-sidebar h3 { margin-top: 0; }
+
+.nav-sidebar .list-group-item { background: #fafafa; border: 0; padding-left: 0; }
+
+.content { margin-top: 300px; }
+
+@media screen and (min-width: 768px) { .content { margin-top: 100px; } }
+
+h1.styleguide { margin: 60px 0 30px; }
+
+h1.styleguide:first-child { margin-top: 0; }
+
+p.styleguide { font-size: 18px; margin: 0 0 30px; max-width: 700px; }
+
+.package-info { background: #fafafa; display: inline-block; font-weight: bold; padding: 15px; }
+
 .code-header { border-bottom: 1px solid #eee; line-height: 1.375; }
 
 .code-example { background: #fff; padding: 30px; }
-
-.nav-sidebar { padding: 15px 15px 15px 0; }
 
 .styleguide-example { background-color: #eee; padding: 15px; }
 
@@ -1304,7 +1588,7 @@ body { padding-bottom: 60px; }
 
 .variable-box { padding: 15px; }
 
-.color-box { border: 1px solid #000; display: block; float: left; height: 150px; margin: 0 15px 15px 0; padding: 15px; width: 150px; }
+.color-box { border: 1px solid #e0e3e9; display: block; float: left; height: 150px; margin: 0 15px 15px 0; padding: 15px; width: 150px; }
 
 .color-box span { background: #fff; display: inline-block; padding: 15px; }
 

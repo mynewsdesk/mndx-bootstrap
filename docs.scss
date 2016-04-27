@@ -94,10 +94,10 @@ div.codeBlock, div.exampleOutput {
 }
 
 div.codeBlock {
-  background-color: $ui-color-lighter;
-  border-top: 1px solid $gray-lighter;
+  background-color: $ui-color-lightest;
   border-bottom-left-radius: $border-radius-base;
   border-bottom-right-radius: $border-radius-base;
+  border-top: 1px solid $gray-lighter;
 }
 
 div.tableExample {
