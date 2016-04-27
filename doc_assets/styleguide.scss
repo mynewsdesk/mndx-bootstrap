@@ -1,26 +1,82 @@
 $fa-font-path: "/fonts";
 @import "../src/mnd-bootstrap/variables";
 @import "font-awesome/scss/font-awesome";
+@import "github";
+@import "docs";
 
 $sg-default-space: 15px;
+$sg-link-color: #999;
 
-body{
+body {
   padding-bottom: ceil($sg-default-space * 4);
 }
 
-/* style nav specific - Temporary until we have the navigation implemented in our bootstrap theme */
-#top-nav {
+.nav {
+  &-main {
+    .navbar-header {
+      margin: $sg-default-space;
+    }
 
-  .navbar-header {
-    margin: $sg-default-space;
+    .navbar-nav {
+      margin: 0 $base-unit;
+
+      @media screen and (min-width: $screen-sm-min) {
+        margin: 0;
+      }
+    }
+
+    li > a {
+      color: $sg-link-color;
+      line-height: 25px;
+    }
   }
 
-  li > a {
-    color: $link-color;
-    line-height: 25px;
+  &-sidebar {
+    background: $ui-color-lightest;
+    margin: 0;
+    padding: $base-unit;
+
+    h3 {
+      margin-top: 0;
+    }
+
+    .list-group-item {
+      background: $ui-color-lightest;
+      border: 0;
+      padding-left: 0;
+    }
+  }
+
+}
+
+.content {
+  margin-top: 300px;
+
+  @media screen and (min-width: $screen-sm-min) {
+    margin-top: 100px;
   }
 }
-/* end temporary styling of our navigation*/
+
+h1.styleguide {
+  margin: 60px 0 30px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+p.styleguide {
+  font-size: 18px;
+  margin: 0 0 30px;
+  max-width: 700px;
+}
+
+.package-info {
+  background: $ui-color-lightest;
+  display: inline-block;
+  font-weight: bold;
+  padding: $base-unit;
+}
 
 .code {
 
@@ -30,13 +86,9 @@ body{
   }
 
   &-example {
-    background: #fff;
+    background: $white;
     padding: $base-unit-x2;
   }
-}
-
-.nav-sidebar {
-  padding: $base-unit $base-unit $base-unit 0;
 }
 
 .styleguide-example {
@@ -44,8 +96,9 @@ body{
   padding: $sg-default-space;
 
   &.light {
-    background-color: #fff;
+    background-color: $white;
   }
+
   &.dark {
     background-color: $gray-dark;
   }
@@ -57,7 +110,7 @@ body{
 }
 
 .color-box {
-  border: 1px solid #000;
+  border: 1px solid $ui-color-light;
   display: block;
   float: left;
   height: 150px;
@@ -66,7 +119,7 @@ body{
   width: 150px;
 
   span {
-    background: #fff;
+    background: $white;
     display: inline-block;
     padding: $sg-default-space;
   }
@@ -141,7 +194,7 @@ body{
   background: $brand-warning;
 }
 
-.brand-danger  {
+.brand-danger {
   background: $brand-danger;
 }
 
