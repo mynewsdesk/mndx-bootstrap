@@ -22,6 +22,13 @@ body{
 }
 /* end temporary styling of our navigation*/
 
+.package-info {
+  padding: 10px;
+  display: inline-block;
+  background: $ui-color-lightest;
+  font-weight: bold;
+}
+
 .code {
 
   &-header {

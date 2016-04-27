@@ -1,4 +1,14 @@
         </div>
+        <div class="col-xs-12 col-md-2">
+          <div class="nav-sidebar">
+            <h3><%= title %></h3>
+            <ul class="list-group">
+            <% @blocks.each do |b| %>
+              <li class="list-group-item"><a href="#<%= b[:name] %>"><%= b[:title] %></a></li>
+            <% end %>
+            </ul>
+          </div>
+        </div>
       </section>
     </div>
   </body>

@@ -15,7 +15,6 @@
       <nav id="top-nav" class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="navbar-header">
           <img alt="Logotype" class="logo" src="logotype.png">
-          v<%= require "JSON"; JSON.parse(File.read("./package.json"))["version"] %>
         </div>
         <ul class="nav navbar-nav">
           <% @categories.each do |category, file_name| %>
@@ -27,14 +26,5 @@
     <div class="container-fluid">
       <section class="content">
         <div class="row">
-          <div class="col-xs-12 col-md-2">
-            <div class="nav-sidebar">
-              <h3><%= title %></h3>
-              <ul class="list-group">
-              <% @blocks.each do |b| %>
-                <li class="list-group-item"><a href="#<%= b[:name] %>"><%= b[:title] %></a></li>
-              <% end %>
-              </ul>
-            </div>
-          </div>
           <div class="col-xs-12 col-md-10">
+            <span class="package-info">Version <%= require "JSON"; JSON.parse(File.read("./package.json"))["version"] %></span>
