@@ -18,9 +18,13 @@ npm install --save mndx-bootstrap
 ## Usage
 
 ```
-@import "mnd-bootstrap/src/mnd-bootstrap";
-// Optionally import your own bootstrap variables.
 @import "mnd-bootstrap/src/bootstrap";
+
+// Load sass variables via the variables file
+@import "mnd-bootstrap/src/mnd-bootstrap/variables";
+
+// Or if you're building with webpack
+@import "mnd-bootstrap/src/mnd-bootstrap/variables.webpack";
 ```
 
 ## Development setup
