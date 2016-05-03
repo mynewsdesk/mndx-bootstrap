@@ -9,7 +9,7 @@ category: JavaScript
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header text-center">
+      <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h1 class="modal-title">Modal header that is getting crazy long and you’ll never expect what happenes next.</h1>
       </div>
@@ -19,7 +19,7 @@ category: JavaScript
           It explains the action you are about to take and it can be pretty serious. You know what I’m sayin’?
         </p>
         <p>
-          <button class="btn btn-default btn-facebook btn-wide"><i class="fa fa-facebook"></i> Add new Facebook account</button>
+          <button class="btn btn-default btn-facebook btn-wide"><i class="fa fa-facebook"></i> My Facebook button</button>
         </p>
         <p class="footnote">
           * This is a footnote in a modal. It explains in a small text, less focused about the next step you're going to take and it can be pretty serious.
@@ -95,6 +95,7 @@ $modal-icon-size: 40px;
   .modal-title {
     @extend .h1;
 
+    text-align: center;
     font-size: $modal-font-size-header;
     font-weight: 700;
     margin: 0;
@@ -112,10 +113,10 @@ $modal-icon-size: 40px;
 
 .modal-body {
   padding: 0 0 $space-larger;
-  text-align: center;
 
   p {
     margin-bottom: $space-large;
+    text-align: center;
 
     &:last-child {
       margin-bottom: 0;
