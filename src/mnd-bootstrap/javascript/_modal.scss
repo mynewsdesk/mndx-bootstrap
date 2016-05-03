@@ -9,29 +9,27 @@ category: JavaScript
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header text-center">
+      <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <i class="header-icon fa fa-check-circle fa-icon"></i>
-        <h4 class="modal-title">Success!</h4>
-        <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p>
+        <h1 class="modal-title">Modal header that is getting crazy long and you’ll never expect what happenes next.</h1>
       </div>
       <div class="modal-body">
         <p>
-          Ut massa lacus, posuere in facilisis a, blandit ac tortor. Praesent euismod posuere
-          sodales. Nunc maximus eros vitae massa vehicula pharetra. Praesent id nunc ac odio
-          tristique faucibus*.
+          This is a message in a modal. It explains the action you are about to take and it can be pretty serious. This is a message in a modal.
+          It explains the action you are about to take and it can be pretty serious. You know what I’m sayin’?
+        </p>
+        <p>
+          <button class="btn btn-default btn-facebook btn-wide"><i class="fa fa-facebook"></i> My Facebook button</button>
         </p>
         <p class="footnote">
-          * Mauris imperdiet gravida nisl a venenatis. Nulla vel orci congue, efficitur enim eu, cursus
-          justo. Maecenas hendrerit eu elit et hendrerit. Mauris eget eros mi.
+          * This is a footnote in a modal. It explains in a small text, less focused about the next step you're going to take and it can be pretty serious.
         </p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default"
-          data-dismiss="modal">Secondary Action</button>
-        <button type="button" class="btn btn-default"
-          data-dismiss="modal">Secondary Action</button>
-        <button type="button" class="btn btn-primary">Primary Action</button>
+          data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary"
+          data-dismiss="modal">Primary Action</button>
       </div>
     </div>
   </div>
@@ -42,20 +40,48 @@ category: JavaScript
 </button>
 ```
 */
+$modal-backdrop-color: rgba(0, 0, 0, 0.3);
+$modal-margin: 50px;
+$modal-widht: 520px;
+$modal-font-size-header: ceil(($font-size-base * 1.75)); // ~28px;
+$modal-icon-size: 40px;
 
 .modal-backdrop {
-  position: fixed;
+  background: $modal-backdrop-color;
+  border: 0;
   bottom: 0;
+  position: fixed;
+}
+
+.modal-dialog {
+  height: 100%;
+  margin: 0;
+  overflow: scroll;
+
+  @media screen and (min-width: $screen-sm) {
+    height: auto;
+    margin: $space auto;
+    max-width: $modal-widht;
+  }
+
+  .footnote {
+    color: $gray-light;
+    font-size: $font-size-small;
+  }
 }
 
 .modal-content {
-  @include box-shadow(0 2px 4px 0 rgba(0, 0, 0, 0.5));
-  border-radius: 8px;
-  overflow: hidden; // Prevents background color in modal header from bleeding through
+  @include box-shadow($modal-box-shadow-style);
+
+  border-radius: 0;
+  height: 100%;
+  overflow: scroll;
+  padding: $space-larger $modal-margin $modal-margin;
   position: relative;
 
   @media screen and (min-width: $screen-sm) {
-    margin: $gutter-vertical-x4 auto;
+    border-radius: 6px;
+    height: auto;
   }
 
   .close {
@@ -66,14 +92,13 @@ category: JavaScript
 }
 
 .modal-header {
-  padding: $gutter-vertical $gutter-horizontal;
-
-  @media screen and (min-width: $screen-sm-min) {
-    padding: $gutter-vertical-x2 $gutter-horizontal-x3 $gutter-vertical;
-  }
-
   .modal-title {
     @extend .h1;
+
+    font-size: $modal-font-size-header;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
   }
 
   a {
@@ -82,19 +107,25 @@ category: JavaScript
 
   .header-icon {
     color: $brand-primary;
-    font-size: $font-size-base * 10;
+    font-size: $modal-icon-size;
   }
 }
 
 .modal-body {
+  padding: 0 0 $space-larger;
 
-  p:last-child {
-    margin-bottom: 0;
+  p {
+    margin-bottom: $space-large;
+    text-align: center;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
 .modal-footer {
-  padding-bottom: $padding-inside * 6;
+  padding: 0;
   text-align: center;
 
   .btn:first-child {
@@ -104,13 +135,5 @@ category: JavaScript
   // Override bootstrap, we want some space between 2 buttons
   .btn + .btn {
     margin-left: $padding-inside * 2;
-  }
-
-}
-
-.modal-dialog {
-  .footnote {
-    color: $gray-light;
-    font-size: $font-size-small;
   }
 }

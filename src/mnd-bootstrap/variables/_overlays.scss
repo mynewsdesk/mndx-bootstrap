@@ -1,13 +1,16 @@
 // Modals
+$modal-box-shadow-color: rgba(0, 0, 0, 0.15);
 $modal-inner-padding: 0 40px 30px;
 $modal-title-line-height: $line-height-base;
 $modal-content-border-color: $white;
 $modal-content-fallback-border-color: $white;
 $modal-header-border-color: $white;
 $modal-footer-border-color: $modal-header-border-color;
+$modal-box-shadow-style: 0 2px 4px $modal-box-shadow-color;
 
 // Popovers
 $popover-arrow-outer-color: $gray-blue;
 
 // Shadow
-$box-shadow-style: 1px 1px 4px rgba(0, 0, 0, 0.05);
+$box-shadow-color: rgba(0, 0, 0, 0.05);
+$box-shadow-style: 1px 1px 4px $box-shadow-color;
