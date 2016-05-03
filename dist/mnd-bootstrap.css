@@ -3252,12 +3252,12 @@ category: Components
 
 .dropdown-menu:after { border-color: transparent; border-bottom-color: #fff; border-style: solid; border-width: 10px; border-top-width: 0; content: ''; display: block; height: 0; position: absolute; right: 19px; top: -10px; width: 0; }
 
-/*doc --- title: Modal name: modal category: JavaScript --- ```html_example <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> <div class="modal-dialog"> <div class="modal-content"> <div class="modal-header text-center"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> <i class="header-icon fa fa-check-circle fa-icon"></i> <h1 class="modal-title">Success!</h1> <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p> </div> <div class="modal-body"> <p> Ut massa lacus, posuere in facilisis a, blandit ac tortor. Praesent euismod posuere sodales. Nunc maximus eros vitae massa vehicula pharetra. Praesent id nunc ac odio tristique faucibus*. </p> <p class="footnote"> Mauris imperdiet gravida nisl a venenatis. Nulla vel orci congue, efficitur enim eu, cursus justo. Maecenas hendrerit eu elit et hendrerit. Mauris eget eros mi. </p> </div> <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Secondary Action</button> <button type="button" class="btn btn-default" data-dismiss="modal">Secondary Action</button> </div> </div> </div> </div> <script type="text/javascript"> $("#myModal").modal("show"); </script> <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> Launch demo modal </button> ``` */
-.modal-backdrop { bottom: 0; position: fixed; background: rgba(0, 0, 0, 0.3); border: 0; }
+/*doc --- title: Modal name: modal category: JavaScript --- ```html_example <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> <div class="modal-dialog"> <div class="modal-content"> <div class="modal-header text-center"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> <h1 class="modal-title">Modal header that is getting crazy long and you’ll never expect what happenes next.</h1> </div> <div class="modal-body"> <p> This is a message in a modal. It explains the action you are about to take and it can be pretty serious. This is a message in a modal. It explains the action you are about to take and it can be pretty serious. You know what I’m sayin’? </p> <p class="footnote"> This is a footnote in a modal. It explains in a small text, less focused about the next step you're going to take and it can be pretty serious. </p> </div> <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button> <button type="button" class="btn btn-primary" data-dismiss="modal">Primary Action</button> </div> </div> </div> </div> <script type="text/javascript"> $("#myModal").modal("show"); </script> <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> Launch demo modal </button> ``` */
+.modal-backdrop { background: rgba(0, 0, 0, 0.3); border: 0; bottom: 0; position: fixed; }
 
 .modal-dialog, .takeover-dialog { height: 100%; margin: 0; overflow: scroll; }
 
-@media screen and (min-width: 768px) { .modal-dialog, .takeover-dialog { height: auto; margin: 10px auto; } }
+@media screen and (min-width: 768px) { .modal-dialog, .takeover-dialog { height: auto; margin: 10px auto; width: 520px; } }
 
 .modal-dialog .footnote, .takeover-dialog .footnote { color: #999; font-size: 12px; }
 
@@ -3269,13 +3269,17 @@ category: Components
 
 .modal-header { padding: 40px 50px 20px; }
 
-.modal-header .modal-title { font-weight: 700; font-size: 14pt; }
+.modal-header .modal-title { font-size: 28px; font-weight: 700; margin: 0; }
 
 .modal-header a { text-decoration: underline; }
 
-.modal-header .header-icon { color: #3eb991; font-size: 160px; }
+.modal-header .header-icon { color: #3eb991; font-size: 40px; }
 
-.modal-body, .takeover-body { padding: 0 50px 40px; }
+.modal-body, .takeover-body { padding: 0 50px 40px; text-align: center; }
+
+.modal-body p, .takeover-body p { margin-bottom: 20px; }
+
+.modal-body p:last-child, .takeover-body p:last-child { margin-bottom: 0; }
 
 .modal-footer, .takeover-footer { padding: 0 50px 50px; text-align: center; }
 
