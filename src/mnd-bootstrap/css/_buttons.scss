@@ -44,6 +44,9 @@ category: CSS
 <button class="btn-linkedin-active btn btn-default"><i class="fa fa-linkedin"></i> Linkedin Connected <i class="fa fa-remove"></i></button>
 </p>
 
+<h3>Stretched buttons</h3>
+<p><button class="btn btn-default btn-wide">Wide button</button></p>
+
 ```
  */
 @import "buttons_social";
@@ -107,6 +110,12 @@ $btn-vertical-padding: 12px;
       box-shadow: none;
       color: $white;
     }
+  }
+
+  &-wide {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
   }
 
   &-sm {
