@@ -95,10 +95,10 @@ $modal-icon-size: 40px;
   .modal-title {
     @extend .h1;
 
-    text-align: center;
     font-size: $modal-font-size-header;
     font-weight: 700;
     margin: 0;
+    text-align: center;
   }
 
   a {

@@ -3269,7 +3269,7 @@ category: Components
 
 .modal-content .close { position: absolute; right: 15px; top: 15px; }
 
-.modal-header .modal-title { text-align: center; font-size: 28px; font-weight: 700; margin: 0; }
+.modal-header .modal-title { font-size: 28px; font-weight: 700; margin: 0; text-align: center; }
 
 .modal-header a { text-decoration: underline; }
 
