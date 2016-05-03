@@ -2415,17 +2415,17 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .modal-open { overflow: hidden; }
 
-.modal, .takeover { display: none; overflow: hidden; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1050; -webkit-overflow-scrolling: touch; outline: 0; }
+.modal { display: none; overflow: hidden; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1050; -webkit-overflow-scrolling: touch; outline: 0; }
 
-.modal.fade .modal-dialog, .fade.takeover .modal-dialog, .modal.fade .takeover-dialog, .fade.takeover .takeover-dialog { -webkit-transform: translate(0, -25%); -ms-transform: translate(0, -25%); -o-transform: translate(0, -25%); transform: translate(0, -25%); -webkit-transition: -webkit-transform 0.3s ease-out; -moz-transition: -moz-transform 0.3s ease-out; -o-transition: -o-transform 0.3s ease-out; transition: transform 0.3s ease-out; }
+.modal.fade .modal-dialog { -webkit-transform: translate(0, -25%); -ms-transform: translate(0, -25%); -o-transform: translate(0, -25%); transform: translate(0, -25%); -webkit-transition: -webkit-transform 0.3s ease-out; -moz-transition: -moz-transform 0.3s ease-out; -o-transition: -o-transform 0.3s ease-out; transition: transform 0.3s ease-out; }
 
-.modal.in .modal-dialog, .in.takeover .modal-dialog, .modal.in .takeover-dialog, .in.takeover .takeover-dialog { -webkit-transform: translate(0, 0); -ms-transform: translate(0, 0); -o-transform: translate(0, 0); transform: translate(0, 0); }
+.modal.in .modal-dialog { -webkit-transform: translate(0, 0); -ms-transform: translate(0, 0); -o-transform: translate(0, 0); transform: translate(0, 0); }
 
-.modal-open .modal, .modal-open .takeover { overflow-x: hidden; overflow-y: auto; }
+.modal-open .modal { overflow-x: hidden; overflow-y: auto; }
 
-.modal-dialog, .takeover-dialog { position: relative; width: auto; margin: 10px; }
+.modal-dialog { position: relative; width: auto; margin: 10px; }
 
-.modal-content, .takeover-content { position: relative; background-color: #fff; border: 1px solid #fff; border: 1px solid #fff; border-radius: 6px; -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); background-clip: padding-box; outline: 0; }
+.modal-content { position: relative; background-color: #fff; border: 1px solid #fff; border: 1px solid #fff; border-radius: 6px; -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); background-clip: padding-box; outline: 0; }
 
 .modal-backdrop { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1040; background-color: #000; }
 
@@ -2443,24 +2443,24 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .modal-title { margin: 0; line-height: 1.375; }
 
-.modal-body, .takeover-body { position: relative; padding: 0 40px 30px; }
+.modal-body { position: relative; padding: 0 40px 30px; }
 
-.modal-footer, .takeover-footer { padding: 0 40px 30px; text-align: right; border-top: 1px solid #fff; }
+.modal-footer { padding: 0 40px 30px; text-align: right; border-top: 1px solid #fff; }
 
-.modal-footer:before, .takeover-footer:before, .modal-footer:after, .takeover-footer:after { content: " "; display: table; }
+.modal-footer:before, .modal-footer:after { content: " "; display: table; }
 
-.modal-footer:after, .takeover-footer:after { clear: both; }
+.modal-footer:after { clear: both; }
 
-.modal-footer .btn + .btn, .takeover-footer .btn + .btn { margin-left: 5px; margin-bottom: 0; }
+.modal-footer .btn + .btn { margin-left: 5px; margin-bottom: 0; }
 
-.modal-footer .btn-group .btn + .btn, .takeover-footer .btn-group .btn + .btn { margin-left: -1px; }
+.modal-footer .btn-group .btn + .btn { margin-left: -1px; }
 
-.modal-footer .btn-block + .btn-block, .takeover-footer .btn-block + .btn-block { margin-left: 0; }
+.modal-footer .btn-block + .btn-block { margin-left: 0; }
 
 .modal-scrollbar-measure { position: absolute; top: -9999px; width: 50px; height: 50px; overflow: scroll; }
 
-@media (min-width: 768px) { .modal-dialog, .takeover-dialog { width: 600px; margin: 30px auto; }
-  .modal-content, .takeover-content { -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
+@media (min-width: 768px) { .modal-dialog { width: 600px; margin: 30px auto; }
+  .modal-content { -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
   .modal-sm { width: 300px; } }
 
 @media (min-width: 992px) { .modal-lg { width: 900px; } }
@@ -2748,7 +2748,7 @@ h1 { font-weight: 700; }
 
 @media screen and (min-width: 1200px) { .text-left-lg { text-align: left; } }
 
-/*doc --- title: Buttons name: Buttons category: CSS --- ```html_example_table <p><button class="btn btn-default">Normal</button> <button class="btn btn-default btn-sm">Small</button></p> <h3>Normal buttons</h3> <p><button class="btn btn-link">Link button</button> <button class="btn btn-link" disabled>Link button</button></p> <p><button class="btn btn-default">Default</button> <button class="btn btn-default" disabled>Default disabled</button></p> <p><button class="btn btn-primary">Primary</button> <button class="btn btn-primary" disabled>Primary disabled</button></p> <p><button class="btn btn-success">Success</button> <button class="btn btn-success" disabled>Success disabled</button></p> <p><button class="btn btn-danger">Danger</button> <button class="btn btn-danger" disabled>Danger disabled</button></p> <h3>Small buttons</h3> <p><button class="btn btn-sm btn-default">Small default</button> <button class="btn btn-sm btn-primary">Small primary</button> <button class="btn btn-sm btn-link">Small link button</button></p> <h3>Small buttons with icons</h3> <p><button class="btn btn-sm btn-default"><i class="fa fa-plus"></i></button> <button class="btn btn-sm btn-primary">Small primary <i class="fa fa-plus"></i></button></p> <h3>Social buttons</h3> <p> <button class="btn btn-default btn-facebook"><i class="fa fa-facebook"></i> Add new Facebook account</button> <button class="btn btn-default btn-facebook-active"><i class="fa fa-facebook"></i>Facebook Connected <i class="fa fa-remove"></i></button> </p> <p> <button class="btn btn-default btn-twitter"><i class="fa fa-twitter"></i> Connect to Twitter</button> <button class="btn btn-default btn-twitter-active btn-active"><i class="fa fa-twitter"></i> Twitter Connected <i class="fa fa-remove"></i></button> </p> <p> <button class="btn-linkedin btn btn-default"><i class="fa fa-linkedin"></i> Connect to Linkedin</button> <button class="btn-linkedin-active btn btn-default"><i class="fa fa-linkedin"></i> Linkedin Connected <i class="fa fa-remove"></i></button> </p> ``` */
+/*doc --- title: Buttons name: Buttons category: CSS --- ```html_example_table <p><button class="btn btn-default">Normal</button> <button class="btn btn-default btn-sm">Small</button></p> <h3>Normal buttons</h3> <p><button class="btn btn-link">Link button</button> <button class="btn btn-link" disabled>Link button</button></p> <p><button class="btn btn-default">Default</button> <button class="btn btn-default" disabled>Default disabled</button></p> <p><button class="btn btn-primary">Primary</button> <button class="btn btn-primary" disabled>Primary disabled</button></p> <p><button class="btn btn-success">Success</button> <button class="btn btn-success" disabled>Success disabled</button></p> <p><button class="btn btn-danger">Danger</button> <button class="btn btn-danger" disabled>Danger disabled</button></p> <h3>Small buttons</h3> <p><button class="btn btn-sm btn-default">Small default</button> <button class="btn btn-sm btn-primary">Small primary</button> <button class="btn btn-sm btn-link">Small link button</button></p> <h3>Small buttons with icons</h3> <p><button class="btn btn-sm btn-default"><i class="fa fa-plus"></i></button> <button class="btn btn-sm btn-primary">Small primary <i class="fa fa-plus"></i></button></p> <h3>Social buttons</h3> <p> <button class="btn btn-default btn-facebook"><i class="fa fa-facebook"></i> Add new Facebook account</button> <button class="btn btn-default btn-facebook-active"><i class="fa fa-facebook"></i>Facebook Connected <i class="fa fa-remove"></i></button> </p> <p> <button class="btn btn-default btn-twitter"><i class="fa fa-twitter"></i> Connect to Twitter</button> <button class="btn btn-default btn-twitter-active btn-active"><i class="fa fa-twitter"></i> Twitter Connected <i class="fa fa-remove"></i></button> </p> <p> <button class="btn-linkedin btn btn-default"><i class="fa fa-linkedin"></i> Connect to Linkedin</button> <button class="btn-linkedin-active btn btn-default"><i class="fa fa-linkedin"></i> Linkedin Connected <i class="fa fa-remove"></i></button> </p> <h3>Stretched buttons</h3> <p><button class="btn btn-default btn-wide">Wide button</button></p> ``` */
 .btn-default.btn-facebook-active, .btn-facebook-active.btn-primary:disabled, .btn-default.btn-facebook-active:active, .btn-default.btn-facebook-active:active:focus, .btn-default.btn-facebook-active:focus, .btn-default.btn-facebook-active:hover, .btn-default.btn-twitter-active, .btn-twitter-active.btn-primary:disabled, .btn-default.btn-twitter-active:active, .btn-default.btn-twitter-active:active:focus, .btn-default.btn-twitter-active:focus, .btn-default.btn-twitter-active:hover, .btn-default.btn-linkedin-active, .btn-linkedin-active.btn-primary:disabled, .btn-default.btn-linkedin-active:active, .btn-default.btn-linkedin-active:active:focus, .btn-default.btn-linkedin-active:focus, .btn-default.btn-linkedin-active:hover { color: #fff; }
 
 .btn-default.btn-facebook-active i:first-child, .btn-facebook-active.btn-primary:disabled i:first-child, .btn-default.btn-twitter-active i:first-child, .btn-twitter-active.btn-primary:disabled i:first-child, .btn-default.btn-linkedin-active i:first-child, .btn-linkedin-active.btn-primary:disabled i:first-child { margin-right: 10px; }
@@ -2806,6 +2806,8 @@ h1 { font-weight: 700; }
 .btn-primary:hover { background: #319373; border-color: #319373; color: #fff; }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:active:focus { background: #246d55; border-color: #246d55; box-shadow: none; color: #fff; }
+
+.btn-wide { display: inline-block; text-align: left; width: 100%; }
 
 .btn-sm, .btn-group-sm > .btn { font-size: 16px; font-weight: 400; margin-left: 10px; padding-bottom: 9px; padding-top: 7px; }
 
@@ -3252,62 +3254,35 @@ category: Components
 
 .dropdown-menu:after { border-color: transparent; border-bottom-color: #fff; border-style: solid; border-width: 10px; border-top-width: 0; content: ''; display: block; height: 0; position: absolute; right: 19px; top: -10px; width: 0; }
 
-/*doc --- title: Modal name: modal category: JavaScript --- ```html_example <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> <div class="modal-dialog"> <div class="modal-content"> <div class="modal-header text-center"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> <i class="header-icon fa fa-check-circle fa-icon"></i> <h4 class="modal-title">Success!</h4> <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p> </div> <div class="modal-body"> <p> Ut massa lacus, posuere in facilisis a, blandit ac tortor. Praesent euismod posuere sodales. Nunc maximus eros vitae massa vehicula pharetra. Praesent id nunc ac odio tristique faucibus*. </p> <p class="footnote"> Mauris imperdiet gravida nisl a venenatis. Nulla vel orci congue, efficitur enim eu, cursus justo. Maecenas hendrerit eu elit et hendrerit. Mauris eget eros mi. </p> </div> <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Secondary Action</button> <button type="button" class="btn btn-default" data-dismiss="modal">Secondary Action</button> <button type="button" class="btn btn-primary">Primary Action</button> </div> </div> </div> </div> <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> Launch demo modal </button> ``` */
-.modal-backdrop { position: fixed; bottom: 0; }
+/*doc --- title: Modal name: modal category: JavaScript --- ```html_example <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> <div class="modal-dialog"> <div class="modal-content"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> <h1 class="modal-title">Modal header that is getting crazy long and you’ll never expect what happenes next.</h1> </div> <div class="modal-body"> <p> This is a message in a modal. It explains the action you are about to take and it can be pretty serious. This is a message in a modal. It explains the action you are about to take and it can be pretty serious. You know what I’m sayin’? </p> <p> <button class="btn btn-default btn-facebook btn-wide"><i class="fa fa-facebook"></i> My Facebook button</button> </p> <p class="footnote"> This is a footnote in a modal. It explains in a small text, less focused about the next step you're going to take and it can be pretty serious. </p> </div> <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button> <button type="button" class="btn btn-primary" data-dismiss="modal">Primary Action</button> </div> </div> </div> </div> <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> Launch demo modal </button> ``` */
+.modal-backdrop { background: rgba(0, 0, 0, 0.3); border: 0; bottom: 0; position: fixed; }
 
-.modal-content, .takeover-content { -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); border-radius: 8px; overflow: hidden; position: relative; }
+.modal-dialog { height: 100%; margin: 0; overflow: scroll; }
 
-@media screen and (min-width: 768px) { .modal-content, .takeover-content { margin: 120px auto; } }
+@media screen and (min-width: 768px) { .modal-dialog { height: auto; margin: 10px auto; max-width: 520px; } }
 
-.modal-content .close, .takeover-content .close { position: absolute; right: 15px; top: 15px; }
+.modal-dialog .footnote { color: #999; font-size: 12px; }
 
-.modal-header { padding: 30px 10px; }
+.modal-content { -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); border-radius: 0; height: 100%; overflow: scroll; padding: 40px 50px 50px; position: relative; }
 
-@media screen and (min-width: 768px) { .modal-header { padding: 60px 30px 30px; } }
+@media screen and (min-width: 768px) { .modal-content { border-radius: 6px; height: auto; } }
+
+.modal-content .close { position: absolute; right: 15px; top: 15px; }
+
+.modal-header .modal-title { font-size: 28px; font-weight: 700; margin: 0; text-align: center; }
 
 .modal-header a { text-decoration: underline; }
 
-.modal-header .header-icon { color: #3eb991; font-size: 160px; }
+.modal-header .header-icon { color: #3eb991; font-size: 40px; }
 
-.modal-body p:last-child, .takeover-body p:last-child { margin-bottom: 0; }
+.modal-body { padding: 0 0 40px; }
 
-.modal-footer, .takeover-footer { padding-bottom: 60px; text-align: center; }
+.modal-body p { margin-bottom: 20px; text-align: center; }
 
-.modal-footer .btn:first-child, .takeover-footer .btn:first-child { margin-left: 0; }
+.modal-body p:last-child { margin-bottom: 0; }
 
-.modal-footer .btn + .btn, .takeover-footer .btn + .btn { margin-left: 20px; }
+.modal-footer { padding: 0; text-align: center; }
 
-.modal-dialog .footnote, .takeover-dialog .footnote { color: #999; font-size: 12px; }
+.modal-footer .btn:first-child { margin-left: 0; }
 
-/*doc --- title: Takeover name: takeover category: JavaScript --- Based on bootstrap modal. `.takeover-body` optionally takes a `.wide` class to support takeovers with more content. Note** that `data-backdrop` needs to be set to false and `data-toggle` and `data-dismiss` on trigger elements needs to take the value modal. ```html_example_table <div class="takeover fade" id="default-takeover" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="myTakeoverLabel" aria-hidden="true"> <div class="takeover-dialog"> <div class="takeover-content"> <div class="takeover-header text-center"> <h1>Success!</h1> <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p> </div> <div class="takeover-body text-center"> <p> Ut massa lacus, posuere in facilisis a, blandit ac tortor. Praesent euismod posuere sodales. Nunc maximus eros vitae massa vehicula pharetra. Praesent id nunc ac odio tristique faucibus*. </p> </div> <div class="takeover-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Secondary Action</button> <button type="button" class="btn btn-primary">Primary Action</button> </div> </div> </div> </div> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#default-takeover"> Launch default takeover </button> <div class="takeover fade" id="wide-takeover" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="myTakeoverLabel" aria-hidden="true"> <div class="takeover-dialog"> <div class="takeover-content"> <div class="takeover-header text-center"> <h1>Success!</h1> <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p> </div> <div class="takeover-body wide text-center"> <p> Ut massa lacus, posuere in facilisis a, blandit ac tortor. Praesent euismod posuere sodales. Nunc maximus eros vitae massa vehicula pharetra. Praesent id nunc ac odio tristique faucibus*. </p> </div> <div class="takeover-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Secondary Action</button> <button type="button" class="btn btn-primary">Primary Action</button> </div> </div> </div> </div> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#wide-takeover"> Launch wide takeover </button> ``` ```jsx_example <Takeover label="Label" show={@state.showTakeover}> <Takeover.Header title="Success!"> <p>You’ve successfully posted your story on <a href="#">Saga</a> and <a href="#">3 other channels</a>.</p> </Takeover.Header> <Takeover.Body wide={true} className="text-center"> <p> Ut massa lacus, posuere in facilisis a, blandit ac tortor. Praesent euismod posuere sodales. Nunc maximus eros vitae massa vehicula pharetra. Praesent id nunc ac odio tristique faucibus*. </p> </Takeover.Body> <Takeover.Footer> <Button onClick={@toggleTakeover}>Secondary Action</Button> <Button bsStyle="primary">Primary Action</Button> </Takeover.Footer> </Takeover> ``` */
-.takeover-header, .takeover-body, .takeover-footer { margin: 0 auto; max-width: 620px; }
-
-.takeover-dialog { background-color: rgba(255, 255, 255, 0.96); bottom: 0; left: 0; margin: 0; overflow: auto; position: fixed; right: 0; top: 0; width: auto; }
-
-.takeover-dialog .close { padding: 10px; }
-
-.takeover-content { background-color: transparent; border-radius: 0; border: none; box-shadow: none; clear: both; overflow: hidden; position: relative; }
-
-.takeover-header { padding: 0 10px 20px; }
-
-.takeover-header a { text-decoration: underline; }
-
-.takeover-body { padding: 0; }
-
-.takeover-body p:last-child { margin-bottom: 0; }
-
-.takeover-body.wide { max-width: 970px; }
-
-.takeover-footer { padding-bottom: 60px; text-align: center; }
-
-.takeover-footer .btn:first-child { margin-left: 0; }
-
-.takeover-footer .btn + .btn { margin-left: 20px; }
-
-.takeover-animation { -webkit-transition: opacity 0.15s ease-in-out, visibility 0s linear 0.15s; -moz-transition: opacity 0.15s ease-in-out, visibility 0s linear 0.15s; transition: opacity 0.15s ease-in-out, visibility 0s linear 0.15s; display: block; opacity: 0; visibility: hidden; z-index: 1050; }
-
-.takeover-animation .takeover-content { -webkit-transform: translate(0, -25%); -ms-transform: translate(0, -25%); -o-transform: translate(0, -25%); transform: translate(0, -25%); -webkit-transition: -webkit-transform 0.3s ease-out; -moz-transition: -moz-transform 0.3s ease-out; -o-transition: -o-transform 0.3s ease-out; transition: transform 0.3s ease-out; }
-
-.takeover-animation.takeover-show { opacity: 1; transition-delay: 0s; visibility: visible; }
-
-.takeover-animation.takeover-show .takeover-content { -webkit-transform: translate(0, 0); -ms-transform: translate(0, 0); -o-transform: translate(0, 0); transform: translate(0, 0); }
+.modal-footer .btn + .btn { margin-left: 20px; }
