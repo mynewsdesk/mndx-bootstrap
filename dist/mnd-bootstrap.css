@@ -3269,19 +3269,19 @@ category: Components
 
 .modal-content .close { position: absolute; right: 15px; top: 15px; }
 
-.modal-header { padding: 0 0 20px; text-align: center; }
+.modal-header { padding: 0; text-align: center; }
 
-.modal-header .modal-title { font-size: 28px; font-weight: 700; margin: 0; text-align: center; }
+.modal-header .modal-title { font-size: 28px; font-weight: 700; margin: 0 0 20px; text-align: center; }
 
 .modal-header a { text-decoration: underline; }
 
-.modal-header .header-icon { color: #3eb991; font-size: 60px; margin-top: 20px; }
+.modal-header .header-icon { color: #3eb991; font-size: 60px; margin: 0 0 20px; }
 
 .modal-body { padding: 0 0 40px; }
 
-.modal-body p { margin-bottom: 20px; text-align: center; }
+.modal-body h2, .modal-body p { margin-bottom: 20px; text-align: center; }
 
-.modal-body p:last-child { margin-bottom: 0; }
+.modal-body h2:last-child, .modal-body p:last-child { margin-bottom: 0; }
 
 .modal-footer { padding: 0; text-align: center; }
 
