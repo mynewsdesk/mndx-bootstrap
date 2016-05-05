@@ -93,7 +93,7 @@ $modal-icon-size: 60px;
 }
 
 .modal-header {
-  padding: 0 0 $space-large;
+  padding: 0;
   text-align: center;
 
   .modal-title {
@@ -101,7 +101,7 @@ $modal-icon-size: 60px;
 
     font-size: $modal-font-size-header;
     font-weight: 700;
-    margin: 0;
+    margin: 0 0 $space-large;
     text-align: center;
   }
 
@@ -112,13 +112,14 @@ $modal-icon-size: 60px;
   .header-icon {
     color: $brand-primary;
     font-size: $modal-icon-size;
-    margin-top: $space-large;
+    margin: 0 0 $space-large;
   }
 }
 
 .modal-body {
   padding: 0 0 $space-larger;
 
+  h2,
   p {
     margin-bottom: $space-large;
     text-align: center;
