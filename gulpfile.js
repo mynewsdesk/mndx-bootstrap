@@ -6,7 +6,6 @@ var git = require('gulp-git');
 var hologram = require('gulp-hologram');
 var notify = require('gulp-notify');
 var runSequence = require('run-sequence');
-var request = require('superagent');
 var sass = require('gulp-sass');
 var clean = require('gulp-rimraf');
 
@@ -128,19 +127,6 @@ gulp.task('tag', ['bump'], function(cb) {
       cb();
     });
   });
-});
-
-// Query rails-assets to create the gem for the last version
-gulp.task('rails-assets', function(done) {
-  request
-    .post('https://rails-assets.org/components.json')
-    .set('Content-Type', 'application/json')
-    .send({"component":{"name":"mnd-bootstrap","version":null}})
-    .end(function(err, res) {
-      if (err) throw new Error(err);
-
-      done();
-    });
 });
 
 // Push ./public to gh-pages after hologram build

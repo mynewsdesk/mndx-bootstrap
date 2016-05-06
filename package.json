@@ -29,7 +29,6 @@
     "gulp-sass": "^2.0.4",
     "moment": "^2.10.3",
     "run-sequence": "^1.0.2",
-    "superagent": "^1.8.3",
     "yargs": "^4.7.0"
   }
 }
