@@ -26,7 +26,6 @@
     "gulp-hologram": "^1.2.0",
     "gulp-notify": "^2.1.0",
     "gulp-rimraf": "^0.1.1",
-    "gulp-ruby-sass": "^0.7.1",
     "gulp-sass": "^2.0.4",
     "moment": "^2.10.3",
     "react-widgets": "^2.6.0",
