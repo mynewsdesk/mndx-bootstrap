@@ -21,7 +21,7 @@
     "classnames": "^2.1.1",
     "gulp": "^3.8.10",
     "gulp-bump": "^2.1.0",
-    "gulp-gh-pages": "^0.4.0",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-git": "^0.5.5",
     "gulp-hologram": "^1.2.0",
     "gulp-notify": "^2.1.0",
