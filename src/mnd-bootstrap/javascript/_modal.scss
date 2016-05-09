@@ -74,6 +74,7 @@ $modal-icon-size: 60px;
 .modal-content {
   @include box-shadow($modal-box-shadow-style);
 
+  border: 0;
   border-radius: 0;
   height: 100%;
   overflow: scroll;

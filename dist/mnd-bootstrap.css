@@ -3263,7 +3263,7 @@ category: Components
 
 .modal-dialog .footnote { color: #999; font-size: 12px; }
 
-.modal-content { -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); border-radius: 0; height: 100%; overflow: scroll; padding: 40px 50px 50px; position: relative; }
+.modal-content { -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); border: 0; border-radius: 0; height: 100%; overflow: scroll; padding: 40px 50px 50px; position: relative; }
 
 @media screen and (min-width: 768px) { .modal-content { border-radius: 6px; height: auto; } }
 
