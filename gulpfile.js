@@ -1,3 +1,4 @@
+var spawn = require('child_process').spawn;
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var bump = require('gulp-bump');
@@ -31,6 +32,10 @@ gulp.task('serve', function() {
   gulp.start('watch-bootstrap');
 });
 
+gulp.task('publish', function (done) {
+  spawn('npm', ['publish'], { stdio: 'inherit' }).on('close', done);
+});
+
 // Dev task: build, serve and watch
 gulp.task('default',['styleguide'], function() {
   gulp.start('serve', 'watch-styleguide', 'watch-bootstrap');
@@ -38,7 +43,7 @@ gulp.task('default',['styleguide'], function() {
 
 // Release a new version and update the doc (style-guide)
 gulp.task('release', function(done) {
-  runSequence('tag', 'gh-pages', done);
+  runSequence('tag', 'publish', 'gh-pages', done);
 });
 
 gulp.task('clean', function() {
