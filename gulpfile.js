@@ -38,7 +38,7 @@ gulp.task('default',['styleguide'], function() {
 
 // Release a new version and update the doc (style-guide)
 gulp.task('release', function(done) {
-  runSequence('tag', 'rails-assets', 'gh-pages', done);
+  runSequence('tag', 'gh-pages', done);
 });
 
 gulp.task('clean', function() {
