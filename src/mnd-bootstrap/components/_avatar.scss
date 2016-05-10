@@ -7,16 +7,24 @@ category: Components
 
 Icons for displaying an image of a user
 
-```html_example
+```html_example_table
 <div class="avatar">
   <div class="avatar-image">
-    <img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" />
+    <img src="https://res.cloudinary.com/mndx/image/upload/c_limit,h_45/tqrjlmxpvanmt4r0ympg" />
   </div>
 </div>
 
 <div class="avatar">
-  <div class="avatar-name">
-    A
+  <div class="avatar-name">A</div>
+</div>
+
+<div class="avatar avatar-large">
+  <div class="avatar-name">A</div>
+</div>
+
+<div class="avatar avatar-large">
+  <div class="avatar-image">
+    <img src="https://res.cloudinary.com/mndx/image/upload/c_limit,h_100/tqrjlmxpvanmt4r0ympg" />
   </div>
 </div>
 ```
@@ -36,20 +44,6 @@ $avatar-name-text-size-large: $font-size-very-large;
   border-radius: 50%;
   height: $avatar-size;
   width: $avatar-size;
-}
-
-.avatar-large {
-  height: $avatar-size-large;
-  width: $avatar-size-large;
-
-  &.avatar-name {
-    font-size: $avatar-name-text-size-large;
-  }
-
-  img {
-    height: $avatar-size-large;
-    width: $avatar-size-large;
-  }
 }
 
 .avatar {
@@ -75,5 +69,20 @@ $avatar-name-text-size-large: $font-size-very-large;
     color: $avatar-name-text-color;
     font-size: $avatar-name-text-size;
     text-transform: uppercase;
+  }
+
+  &-large {
+    .avatar-name {
+      font-size: $avatar-name-text-size-large;
+      height: $avatar-size-large;
+      margin: 0 auto;
+      text-align: center;
+      width: $avatar-size-large;
+    }
+
+    img {
+      height: $avatar-size-large;
+      width: $avatar-size-large;
+    }
   }
 }
