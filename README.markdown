@@ -57,7 +57,6 @@ To create a new version, there are multiple steps:
 * First, we want to increase the version number in the `package.json` and `bower.json` files and commit this.
 * Then we want to tag the commit, because `bower` use the git tag as version number instead of reading a manifest file.
 * To release the new version, we will just push those changes to master
-* We then want to make this new version available as a ruby gem, to do this, we will got to [https://rails-assets.org/components/new](rails-assets.org) and update our component.
 * And last but not least, now want to update the doc (style-guide) too, use the `gulp gh-pages` task for this.
 
 I've created a gulp task for all those steps:
