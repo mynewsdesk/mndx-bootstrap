@@ -103,10 +103,9 @@ $modal-icon-size: 60px;
 }
 
 .modal-content {
-  @include box-shadow($modal-box-shadow-style);
-
-  border: 0;
   border-radius: 0;
+  border: 0;
+  box-shadow: none;
   height: 100%;
   overflow: scroll;
   padding: $space-larger $modal-margin $modal-margin;
