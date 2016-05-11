@@ -3452,3 +3452,7 @@ category: JavaScript
 .modal-footer .btn + .btn { margin-bottom: 20px; margin-left: 20px; }
 
 @media screen and (min-width: 768px) { .modal-footer .btn + .btn { margin-bottom: 0; } }
+
+@media screen and (min-width: 768px) { .modal { text-align: center; }
+  .modal::before { content: ""; display: inline-block; height: 100%; vertical-align: middle; }
+  .modal-dialog { display: inline-block; text-align: left; vertical-align: middle; } }
