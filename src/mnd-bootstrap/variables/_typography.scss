@@ -15,7 +15,7 @@ name: headings
 parent: typo
 ---
 ```html_example
-<h1>H1 <small>$font-size-very-large</small></h1>
+<h1>H1 using the larger font size with golden  <small>This is a smaller text withing the header</small></h1>
 <h2>H2 <small>$font-size-larger</small></h2>
 <h3>H3 <small>$font-size-base</small></h3>
 ```
@@ -86,6 +86,12 @@ $icon-font-path: "bootstrap/";
 
 h1 {
   font-weight: $bold;
+
+  small {
+    display: block;
+    font-size: $font-size-large; // ~18px
+    margin-top: $space;
+  }
 }
 
 .lead {
