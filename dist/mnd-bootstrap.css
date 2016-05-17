@@ -3426,6 +3426,12 @@ category: JavaScript
 
 .modal-footer { padding: 0; text-align: center; }
 
+.modal-footer .btn { margin-bottom: 20px; }
+
+@media screen and (min-width: 768px) { .modal-footer .btn { margin-bottom: 0; } }
+
 .modal-footer .btn:first-child { margin-left: 0; }
 
-.modal-footer .btn + .btn { margin-left: 20px; }
+.modal-footer .btn + .btn { margin-bottom: 20px; margin-left: 20px; }
+
+@media screen and (min-width: 768px) { .modal-footer .btn + .btn { margin-bottom: 0; } }
