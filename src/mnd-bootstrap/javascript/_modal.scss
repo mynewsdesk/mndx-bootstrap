@@ -235,12 +235,25 @@ $modal-icon-size: 60px;
   padding: 0;
   text-align: center;
 
-  .btn:first-child {
-    margin-left: 0;
-  }
+  .btn {
+    margin-bottom: $space-large;
 
-  // Override bootstrap, we want some space between 2 buttons
-  .btn + .btn {
-    margin-left: $padding-inside * 2;
+    @media screen and (min-width: $screen-sm) {
+      margin-bottom: 0;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    // // Override bootstrap, we want some space between 2 buttons
+    + .btn {
+      margin-bottom: $space-large;
+      margin-left: $space-large;
+
+      @media screen and (min-width: $screen-sm) {
+        margin-bottom: 0;
+      }
+    }
   }
 }
