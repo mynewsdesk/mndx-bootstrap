@@ -34,6 +34,7 @@ Icons for displaying an image of a user
 @import "mnd-bootstrap/variables/measures";
 
 $avatar-size: 45px;
+$avatar-size-small: 35px;
 $avatar-size-large: 100px;
 $avatar-name-background-color: $color-3;
 $avatar-name-text-color: $white;
@@ -68,15 +69,27 @@ $avatar-name-text-size-large: $font-size-very-large;
     background-color: $avatar-name-background-color;
     color: $avatar-name-text-color;
     font-size: $avatar-name-text-size;
+    margin: 0 auto;
+    text-align: center;
     text-transform: uppercase;
+  }
+
+  &-small {
+    .avatar-name {
+      height: $avatar-size-small;
+      width: $avatar-size-small;
+    }
+
+    img {
+      height: $avatar-size-small;
+      width: $avatar-size-small;
+    }
   }
 
   &-large {
     .avatar-name {
       font-size: $avatar-name-text-size-large;
       height: $avatar-size-large;
-      margin: 0 auto;
-      text-align: center;
       width: $avatar-size-large;
     }
 
