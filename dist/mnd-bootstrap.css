@@ -2936,9 +2936,13 @@ hr { margin: 60px 0; }
 
 .avatar { display: inline-block; text-align: center; }
 
-.avatar-name { display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -moz-box-align: center; box-align: center; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -ms-flex-align: center; -webkit-box-pack: center; -moz-box-pack: center; box-pack: center; -webkit-justify-content: center; -moz-justify-content: center; -ms-justify-content: center; -o-justify-content: center; justify-content: center; -ms-flex-pack: center; background-color: #f55065; color: #fff; font-size: 22px; text-transform: uppercase; }
+.avatar-name { display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -moz-box-align: center; box-align: center; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -ms-flex-align: center; -webkit-box-pack: center; -moz-box-pack: center; box-pack: center; -webkit-justify-content: center; -moz-justify-content: center; -ms-justify-content: center; -o-justify-content: center; justify-content: center; -ms-flex-pack: center; background-color: #f55065; color: #fff; font-size: 22px; margin: 0 auto; text-align: center; text-transform: uppercase; }
 
-.avatar-large .avatar-name { font-size: 60px; height: 100px; margin: 0 auto; text-align: center; width: 100px; }
+.avatar-small .avatar-name { height: 35px; width: 35px; }
+
+.avatar-small img { height: 35px; width: 35px; }
+
+.avatar-large .avatar-name { font-size: 60px; height: 100px; width: 100px; }
 
 .avatar-large img { height: 100px; width: 100px; }
 
@@ -3182,6 +3186,19 @@ category: Components
 .popover .arrow { color: #e0e3e9; }
 
 .popover.bottom { margin-top: 15px; }
+
+/*doc --- title: Poptip name: poptip category: Components --- Alerts should always starts with a word that tell the user more about the feedback in short. ```html_example <div class="poptip"> <strong>POPTIP</strong>: This is a pretty dope tip! </div> ``` */
+.poptip::before, .poptip::after { border-left: 10px solid transparent; border-right: 10px solid transparent; content: " "; display: block; position: absolute; right: 17px; }
+
+.poptip { background: #fafafa; border: 1px solid #ddd; border-radius: 6px; color: #333; margin: 30px 10px; padding: 14px 20px 16px; position: relative; }
+
+.poptip strong { font-weight: 600; }
+
+@media screen and (min-width: 992px) { .poptip { margin: 30px 0; } }
+
+.poptip::before { border-top: 10px solid #ddd; bottom: -10px; }
+
+.poptip::after { border-top: 10px solid #fafafa; bottom: -9px; }
 
 /*doc --- title: Progress bars name: progress_bar category: Components --- The progress bar is used for specific progress indicators. ```html_example <div class="progress"> <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> <span class="sr-only">40% Complete (success)</span> </div> </div> <div class="progress"> <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"> <span class="sr-only">20% Complete</span> </div> </div> <div class="progress"> <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> <span class="sr-only">60% Complete (warning)</span> </div> </div> <div class="progress"> <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> <span class="sr-only">80% Complete (danger)</span> </div> </div> ``` */
 /*doc
