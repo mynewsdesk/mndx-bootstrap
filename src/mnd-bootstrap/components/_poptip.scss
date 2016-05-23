@@ -1,0 +1,61 @@
+/*doc
+---
+title: Poptip
+name: poptip
+category: Components
+---
+ Alerts should always starts with a word that tell the user more about the feedback in short.
+
+```html_example
+<div class="poptip">
+  <strong>POPTIP</strong>: This is a pretty dope tip!
+</div>
+```
+*/
+
+$poptip-background: $ui-color-lightest;
+$poptip-border-color: $ui-color-default;
+$poptip-triangle-size: 10px;
+$poptip-triangle-right: 17px;
+$transparent: transparent;
+
+%poptip-arrow {
+  border-left: $poptip-triangle-size solid $transparent;
+  border-right: $poptip-triangle-size solid $transparent;
+  content: " ";
+  display: block;
+  position: absolute;
+  right: $poptip-triangle-right;
+}
+
+.poptip {
+  background: $poptip-background;
+  border: 1px solid $poptip-border-color;
+  border-radius: $border-radius-base;
+  color: $text-color-dark;
+  margin: $gutter-vertical $gutter-horizontal;
+  padding: 14px $gutter-horizontal-x2 16px;
+  position: relative;
+
+  strong {
+    font-weight: $semi-bold;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    margin: $gutter-vertical 0;
+  }
+
+  &::before {
+    @extend %poptip-arrow;
+
+    border-top: ($poptip-triangle-size) solid $poptip-border-color;
+    bottom: -($poptip-triangle-size);
+  }
+
+  &::after {
+    @extend %poptip-arrow;
+
+    border-top: $poptip-triangle-size solid $poptip-background;
+    bottom: -($poptip-triangle-size - 1);
+  }
+}
