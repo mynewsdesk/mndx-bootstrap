@@ -257,3 +257,22 @@ $modal-icon-size: 60px;
     }
   }
 }
+
+@media screen and (min-width: $screen-sm) {
+  .modal {
+    text-align: center;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+
+    &-dialog {
+      display: inline-block;
+      text-align: left;
+      vertical-align: middle;
+    }
+  }
+}
