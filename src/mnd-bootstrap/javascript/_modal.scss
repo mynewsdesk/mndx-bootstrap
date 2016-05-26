@@ -20,6 +20,42 @@ category: JavaScript
           It explains the action you are about to take and it can be pretty serious. You know what I’m sayin’?
         </p>
         <p>
+          This is a message in a modal. It explains the action you are about to take and it can be pretty serious. This is a message in a modal.
+          It explains the action you are about to take and it can be pretty serious. You know what I’m sayin’?
+        </p>
+        <p>
+          This is a message in a modal. It explains the action you are about to take and it can be pretty serious. This is a message in a modal.
+          It explains the action you are about to take and it can be pretty serious. You know what I’m sayin’?
+        </p>
+        <p>
+          This is a message in a modal. It explains the action you are about to take and it can be pretty serious. This is a message in a modal.
+          It explains the action you are about to take and it can be pretty serious. You know what I’m sayin’?
+        </p>
+        <p>
+          This is a message in a modal. It explains the action you are about to take and it can be pretty serious. This is a message in a modal.
+          It explains the action you are about to take and it can be pretty serious. You know what I’m sayin’?
+        </p>
+        <p>
+          This is a message in a modal. It explains the action you are about to take and it can be pretty serious. This is a message in a modal.
+          It explains the action you are about to take and it can be pretty serious. You know what I’m sayin’?
+        </p>
+        <p>
+          This is a message in a modal. It explains the action you are about to take and it can be pretty serious. This is a message in a modal.
+          It explains the action you are about to take and it can be pretty serious. You know what I’m sayin’?
+        </p>
+        <p>
+          This is a message in a modal. It explains the action you are about to take and it can be pretty serious. This is a message in a modal.
+          It explains the action you are about to take and it can be pretty serious. You know what I’m sayin’?
+        </p>
+        <p>
+          This is a message in a modal. It explains the action you are about to take and it can be pretty serious. This is a message in a modal.
+          It explains the action you are about to take and it can be pretty serious. You know what I’m sayin’?
+        </p>
+        <p>
+          This is a message in a modal. It explains the action you are about to take and it can be pretty serious. This is a message in a modal.
+          It explains the action you are about to take and it can be pretty serious. You know what I’m sayin’?
+        </p>
+        <p>
           <button class="btn btn-default btn-facebook btn-wide"><i class="fa fa-facebook"></i> My Facebook button</button>
         </p>
         <p class="footnote">
@@ -150,7 +186,7 @@ $modal-icon-size: 60px;
 .modal-dialog {
   height: 100%;
   margin: 0;
-  overflow: scroll;
+  overflow: hidden;
 
   @media screen and (min-width: $screen-sm) {
     height: auto;
@@ -176,6 +212,7 @@ $modal-icon-size: 60px;
   @media screen and (min-width: $screen-sm) {
     border-radius: 6px;
     height: auto;
+    overflow: hidden;
   }
 
   .close {
