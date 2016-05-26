@@ -150,7 +150,7 @@ $modal-icon-size: 60px;
 .modal-dialog {
   height: 100%;
   margin: 0;
-  overflow: scroll;
+  overflow: hidden;
 
   @media screen and (min-width: $screen-sm) {
     height: auto;
@@ -169,7 +169,7 @@ $modal-icon-size: 60px;
   border: 0;
   box-shadow: none;
   height: 100%;
-  overflow: scroll;
+  overflow: hidden;
   padding: $space-larger $modal-margin $modal-margin;
   position: relative;
 
