@@ -3208,20 +3208,17 @@ category: Components
 //category: Components
 //---
 */
-/*doc --- title: Scoreboard name: scoreboard category: Components --- Component to display numbers ```html_example <div class="container"> <div class="row"> <div class="col-xs-12 col-sm-6 col-md-4"> <div class="scoreboard-box scoreboard-box-large"> <div class="scoreboard-box-number">124000</div> <div class="scoreboard-box-label">title</div> <div class="scoreboard-box-hint">subtitle</div> </div> </div> <div class="col-xs-12 col-sm-6 col-md-4"> <div class="scoreboard-box scoreboard-box-large"> <div class="scoreboard-box-number">1090</div> <div class="scoreboard-box-label">title</div> <div class="scoreboard-box-hint">subtitle</div> </div> </div> <div class="col-xs-12 col-sm-6 col-md-4"> <div class="scoreboard-box scoreboard-box-large"> <div class="scoreboard-box-number">1</div> <div class="scoreboard-box-label">title</div> <div class="scoreboard-box-hint">subtitle</div> </div> </div> </div> <div class="row"> <div class="col-xs-12 col-sm-6 col-md-3"> <div class="scoreboard-box"> <div class="scoreboard-box-number">12004</div> <div class="scoreboard-box-label">title</div> <div class="scoreboard-box-hint">subtitle</div> </div> </div> <div class="col-xs-12 col-sm-6 col-md-3"> <div class="scoreboard-box"> <div class="scoreboard-box-number">1009</div> <div class="scoreboard-box-label">title</div> <div class="scoreboard-box-hint">subtitle</div> </div> </div> <div class="col-xs-12 col-sm-6 col-md-3"> <div class="scoreboard-box"> <div class="scoreboard-box-number">230</div> <div class="scoreboard-box-label">title that breaks</div> <div class="scoreboard-box-hint">subtitle</div> </div> </div> <div class="col-xs-12 col-sm-6 col-md-3"> <div class="scoreboard-box"> <div class="scoreboard-box-number">3</div> <div class="scoreboard-box-label">title</div> <div class="scoreboard-box-hint">subtitle thats sometimes goes over two rows</div> </div> </div> </div> </div> ``` */
-.scoreboard-box { font-family: "Source Sans Pro", Arial, sans-serif; }
+/*doc --- title: Scoreboard name: scoreboard category: Components --- Component to display numbers ```html_example <div class="container"> <div class="row"> <div class="col-xs-12 col-sm-6 col-md-4"> <div class="scoreboard-box"> <div class="scoreboard-box-number">12004</div> <div class="scoreboard-box-label">title</div> </div> </div> <div class="col-xs-12 col-sm-6 col-md-4"> <div class="scoreboard-box"> <div class="scoreboard-box-number">1009</div> <div class="scoreboard-box-label">title</div> </div> </div> <div class="col-xs-12 col-sm-6 col-md-4"> <div class="scoreboard-box"> <div class="scoreboard-box-number">230</div> <div class="scoreboard-box-label">title that breaks</div> </div> </div> </div> <div class="row"> <div class="col-xs-12 col-sm-6 col-md-4"> <div class="scoreboard-box scoreboard-box-border"> <div class="scoreboard-box-number">12004</div> <div class="scoreboard-box-label">title</div> </div> </div> <div class="col-xs-12 col-sm-6 col-md-4"> <div class="scoreboard-box scoreboard-box-border"> <div class="scoreboard-box-number">1009</div> <div class="scoreboard-box-label">title</div> </div> </div> <div class="col-xs-12 col-sm-6 col-md-4"> <div class="scoreboard-box scoreboard-box-border"> <div class="scoreboard-box-number">230</div> <div class="scoreboard-box-label">title that breaks</div> </div> </div> </div> </div> ``` */
+.scoreboard { margin-bottom: 30px; margin-top: 30px; }
+
+.scoreboard-box { margin: 15px 0; padding-bottom: 30px; padding-top: 30px; text-align: center; }
+
+@media screen and (min-width: 768px) { .scoreboard-box:first-child { margin-top: 0; }
+  .scoreboard-box:last-child { margin-bottom: 0; } }
+
+.scoreboard-box-border { border: 1px solid #ddd; border-radius: 6px; }
 
 .scoreboard-box-number { color: #333; font-size: 60px; font-weight: bold; line-height: 66px; }
-
-.scoreboard-box-number .percentage { font-size: 40px; line-height: 0; }
-
-.scoreboard-box-large .scoreboard-box-number { font-size: 90px; line-height: 99px; }
-
-.scoreboard-box-large .scoreboard-box-number .percentage { font-size: 60px; line-height: 0; }
-
-.scoreboard-box-label { font-weight: bold; }
-
-.scoreboard-box-hint { font-style: italic; }
 
 /*doc
 //---
