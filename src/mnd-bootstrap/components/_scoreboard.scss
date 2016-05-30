@@ -10,54 +10,41 @@ Component to display numbers
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="scoreboard-box scoreboard-box-large">
-        <div class="scoreboard-box-number">124000</div>
+      <div class="scoreboard-box">
+        <div class="scoreboard-box-number">12004</div>
         <div class="scoreboard-box-label">title</div>
-        <div class="scoreboard-box-hint">subtitle</div>
       </div>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="scoreboard-box scoreboard-box-large">
-        <div class="scoreboard-box-number">1090</div>
+      <div class="scoreboard-box">
+        <div class="scoreboard-box-number">1009</div>
         <div class="scoreboard-box-label">title</div>
-        <div class="scoreboard-box-hint">subtitle</div>
       </div>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="scoreboard-box scoreboard-box-large">
-        <div class="scoreboard-box-number">1</div>
-        <div class="scoreboard-box-label">title</div>
-        <div class="scoreboard-box-hint">subtitle</div>
+      <div class="scoreboard-box">
+        <div class="scoreboard-box-number">230</div>
+        <div class="scoreboard-box-label">title that breaks</div>
       </div>
     </div>
   </div>
   <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <div class="scoreboard-box">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="scoreboard-box scoreboard-box-border">
         <div class="scoreboard-box-number">12004</div>
         <div class="scoreboard-box-label">title</div>
-        <div class="scoreboard-box-hint">subtitle</div>
       </div>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <div class="scoreboard-box">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="scoreboard-box scoreboard-box-border">
         <div class="scoreboard-box-number">1009</div>
         <div class="scoreboard-box-label">title</div>
-        <div class="scoreboard-box-hint">subtitle</div>
       </div>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <div class="scoreboard-box">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="scoreboard-box scoreboard-box-border">
         <div class="scoreboard-box-number">230</div>
         <div class="scoreboard-box-label">title that breaks</div>
-        <div class="scoreboard-box-hint">subtitle</div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <div class="scoreboard-box">
-        <div class="scoreboard-box-number">3</div>
-        <div class="scoreboard-box-label">title</div>
-        <div class="scoreboard-box-hint">subtitle thats sometimes goes over two rows</div>
       </div>
     </div>
   </div>
@@ -65,38 +52,36 @@ Component to display numbers
 ```
 */
 
+.scoreboard {
+  margin-bottom: $gutter-vertical;
+  margin-top: $gutter-vertical;
+}
+
 .scoreboard-box {
-  font-family: $font-family-sans-serif;
+  margin: $gutter-vertical-half 0;
+  padding-bottom: $gutter-vertical;
+  padding-top: $gutter-vertical;
+  text-align: center;
+
+  @media screen and (min-width: $screen-sm) {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-border {
+    border: 1px solid $border-default;
+    border-radius: $border-radius-base;
+  }
 
   &-number {
     color: $black;
     font-size: $font-size-very-large;
     font-weight: bold;
     line-height: $line-height-very-large;
-
-    .percentage {
-      font-size: $font-size-medium-large;
-      line-height: 0; // it will create extra space otherwise
-    }
-  }
-
-  &-large {
-    .scoreboard-box-number {
-      font-size: $font-size-extremly-large;
-      line-height: $line-height-extremly-large;
-
-      .percentage {
-        font-size: $font-size-very-large;
-        line-height: 0; // it will create extra space otherwise
-      }
-    }
-  }
-
-  &-label {
-    font-weight: bold;
-  }
-
-  &-hint {
-    font-style: italic;
   }
 }
