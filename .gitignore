@@ -6,3 +6,4 @@ public
 dist/styleguide.css
 dist/*.map
 .grunt/
+.publish
