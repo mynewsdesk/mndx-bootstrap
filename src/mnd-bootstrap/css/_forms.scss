@@ -100,15 +100,14 @@ category: CSS
     <button type="submit" class="btn btn-primary">Submit</button>
   </div>
 
-  <div>
-    <label>Locked field</label>
-    <div class="form-group has-feedback fake-field">
-      <input type="email" class="form-control fake-field-text" id="to" value="ellothisis+a+problem+with+long+text@poptype.co" disabled>
-      <span class="fa fa-icon fa-lock form-control-feedback"></span>
-    </div>
+  <div class="form-group">
+    <label for="formControlsEmail" class="control-label">Locked field</label>
+    <span class="input-group">
+      <input disabled type="text" id="formControlsEmail" class="fake-field-text form-control" value="locked-field@example.org">
+      <span class="input-group-addon fake-field-addon"><i name="lock" class="fa fa-lock"></i></span>
+    </span>
   </div>
 </form>
-
 
 <form>
   <div class="form-group">
@@ -186,6 +185,7 @@ category: CSS
 .has-feedback .form-control-feedback {
   line-height: $input-height-base;
 }
+
 .has-feedback label ~ .form-control-feedback {
   // offset top by the full height of the label if present
   top: $input-height-base - $padding-base-vertical;
@@ -235,5 +235,10 @@ textarea {
     background: $ui-color-lighter;
     border: 0;
     color: $text-color-dark;
+  }
+
+  &-addon {
+    background-color: $gray-lightest;
+    border-color: $gray-lightest;
   }
 }
