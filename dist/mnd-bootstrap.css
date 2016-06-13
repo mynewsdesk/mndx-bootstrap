@@ -2962,10 +2962,12 @@ hr { margin: 60px 0; }
 //category: Components
 //---
 */
-/*doc --- title: Button groups name: button_groups category: Components --- ```html_example_table <div class="btn-group" role="group" aria-label="..."> <button type="button" class="btn btn-default">Left</button> <button type="button" class="btn btn-default">Middle</button> <button type="button" class="btn btn-default">Right</button> </div> ``` */
+/*doc --- title: Button groups name: button_groups category: Components --- ```html_example_table <div class="btn-group" role="group"> <button type="button" class="btn btn-default">Left</button> <button type="button" class="btn btn-default">Middle</button> <button type="button" class="btn btn-default">Right</button> </div> <div class="btn-group-vertical btn-block" role="group"> <button type="button" class="btn btn-default">Left</button> <button type="button" class="btn btn-default">Middle</button> <button type="button" class="btn btn-default">Right</button> </div> ``` */
 .input-group-btn:last-child > .btn-group { margin-left: 0; }
 
 .input-group-btn:last-child > .btn-group .btn-default, .input-group-btn:last-child > .btn-group .btn-primary:disabled { border-color: #ddd; }
+
+.btn-group-vertical .btn { text-align: left; }
 
 .date-picker { display: inline-block; position: relative; margin: inherit 0; }
 
