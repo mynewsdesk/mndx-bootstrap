@@ -62,7 +62,8 @@ $font-size-larger: 22px;
 $font-size-medium-large: ceil(($font-size-base * 2.5)); // 40px
 $font-size-very-large: ceil(($font-size-base * 3.73)); // 56px
 $font-size-extremly-large: ceil(($font-size-base * 5.625)); // 90px
-$font-size-small: ceil(($font-size-base * 0.75)); // ~12px
+$font-size-small: ceil(($font-size-base * 0.85)); // ~14px
+$font-size-smaller: ceil(($font-size-base * 0.75)); // ~12px
 
 $font-size-h1: $font-size-base * 3.5; // 56px
 $font-size-h2: $font-size-large; // 18px
