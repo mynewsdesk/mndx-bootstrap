@@ -1,10 +1,10 @@
 // Buttons
 $btn-font-weight: 400;
-$btn-border-active-color: #95a0b4;
 
 $btn-default-color: $text-color;
 $btn-default-bg: $white;
 $btn-default-border: $border-alt;
+$btn-border-active-color: darken($btn-default-bg, 30%);
 
 $btn-primary-bg: $brand-primary;
 $btn-primary-border: $btn-primary-bg;
@@ -27,7 +27,7 @@ $btn-border-radius-small: $btn-border-radius-base;
 
 $btn-default-color-hover: $black;
 $btn-default-border-active: $btn-border-active-color;
-$btn-default-color-active: $gray-light;
+$btn-default-color-active: $btn-default-color;
 
 $btn-default-border-hover: $border-alt;
 $btn-primary-bg-hover: darken($btn-primary-bg, 10%);
