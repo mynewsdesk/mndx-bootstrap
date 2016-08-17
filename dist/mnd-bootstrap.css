@@ -2803,7 +2803,7 @@ h1 small { display: block; font-size: 18px; margin-top: 10px; }
 
 .btn-default:hover, .btn-primary:hover:disabled { background: #fff; border-color: #e0e3e9; color: #333; }
 
-.btn-default:active, .btn-primary:active:disabled, .btn-default:focus, .btn-primary:focus:disabled, .btn-default:active:focus, .btn-primary:active:focus:disabled { background: #fff; border-color: #95a0b4; box-shadow: none; color: #999; outline: none; }
+.btn-default:active, .btn-primary:active:disabled, .btn-default:focus, .btn-primary:focus:disabled, .btn-default:active:focus, .btn-primary:active:focus:disabled { background: #fff; border-color: #b3b3b3; box-shadow: none; color: #666; outline: none; }
 
 .btn-default:disabled:hover, .btn-primary:disabled:hover { color: #666; }
 
@@ -3260,7 +3260,7 @@ category: Components
 
 .btn-group.open .dropdown-toggle { box-shadow: none; }
 
-.btn-group.open > .btn-default.dropdown-toggle, .btn-group.open > .dropdown-toggle.btn-primary:disabled { background: #fff; border-color: #95a0b4; color: #999; }
+.btn-group.open > .btn-default.dropdown-toggle, .btn-group.open > .dropdown-toggle.btn-primary:disabled { background: #fff; border-color: #b3b3b3; color: #666; }
 
 .btn-group.open > .btn-primary.dropdown-toggle { background: #246d55; border-color: #246d55; }
 
