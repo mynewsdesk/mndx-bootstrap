@@ -82,6 +82,6 @@ Just follow those steps:
 ```
 cd project/mnd-bootstrap
 npm link
-cd project/mndx-web
+cd project/working-dir
 npm link mndx-bootstrap
 ```
