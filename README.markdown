@@ -71,3 +71,17 @@ patch # makes v0.1.0 → v0.1.1
 minor # makes v0.1.1 → v0.2.0
 major # makes v0.2.1 → v1.0.0
 ```
+
+## Tips:
+
+When you are working on a project and you need to work on the styleguide and the project at the same time, it's really painful to have to make changes in the NPM component (mndx-bootstrap) and publish it before you can test your changes in your project.
+
+There is a good solution for this, `npm link`.
+
+Just follow those steps:
+```
+cd project/mnd-bootstrap
+npm link
+cd project/mndx-web
+npm link mndx-bootstrap
+```
