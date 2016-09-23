@@ -23,6 +23,10 @@ Icons for displaying an image of a user
 </div>
 
 <div class="avatar avatar-large">
+  <div class="avatar-name avatar-name-hidden">A</div>
+</div>
+
+<div class="avatar avatar-large">
   <div class="avatar-image">
     <img src="https://res.cloudinary.com/mndx/image/upload/c_limit,h_100/tqrjlmxpvanmt4r0ympg" />
   </div>
@@ -74,8 +78,11 @@ $avatar-name-text-size-large: $font-size-very-large;
     text-transform: uppercase;
   }
 
-  &-hide-name {
-    color: $avatar-name-background-color;
+  &-name-hidden {
+    @extend %avatar;
+
+    background-color: $gray-lighter;
+    color: $gray-lighter;
   }
 
   &-small {
