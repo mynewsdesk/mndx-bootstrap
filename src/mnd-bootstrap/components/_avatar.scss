@@ -74,6 +74,10 @@ $avatar-name-text-size-large: $font-size-very-large;
     text-transform: uppercase;
   }
 
+  &-hide-name {
+    color: $avatar-name-background-color;
+  }
+
   &-small {
     .avatar-name {
       height: $avatar-size-small;
