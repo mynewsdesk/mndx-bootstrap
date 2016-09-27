@@ -1225,7 +1225,7 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
 
 output { display: block; padding-top: 13px; font-size: 16px; line-height: 1.375; color: #555555; }
 
-.form-control { display: block; width: 100%; height: 48px; padding: 12px 20px; font-size: 16px; line-height: 1.375; color: #555555; background-color: #fff; background-image: none; border: 1px solid #ccc; border-radius: 6px; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+.form-control { display: block; width: 100%; height: 48px; padding: 12px 15px; font-size: 16px; line-height: 1.375; color: #555555; background-color: #fff; background-image: none; border: 1px solid #ccc; border-radius: 6px; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
 
 .form-control:focus { border-color: #66afe9; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
 
@@ -1377,7 +1377,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
 
 @media (min-width: 768px) { .form-horizontal .form-group-sm .control-label { padding-top: 11px; font-size: 14px; } }
 
-.btn { display: inline-block; margin-bottom: 0; font-weight: 400; text-align: center; vertical-align: middle; touch-action: manipulation; cursor: pointer; background-image: none; border: 1px solid transparent; white-space: nowrap; padding: 12px 20px; font-size: 16px; line-height: 1.375; border-radius: 6px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.btn { display: inline-block; margin-bottom: 0; font-weight: 400; text-align: center; vertical-align: middle; touch-action: manipulation; cursor: pointer; background-image: none; border: 1px solid transparent; white-space: nowrap; padding: 12px 15px; font-size: 16px; line-height: 1.375; border-radius: 6px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 
 .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus { outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
 
@@ -1660,7 +1660,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .input-group-addon, .input-group-btn { width: 1%; white-space: nowrap; vertical-align: middle; }
 
-.input-group-addon { padding: 12px 20px; font-size: 16px; font-weight: normal; line-height: 1; color: #555555; text-align: center; background-color: #eeeeee; border: 1px solid #ccc; border-radius: 6px; }
+.input-group-addon { padding: 12px 15px; font-size: 16px; font-weight: normal; line-height: 1; color: #555555; text-align: center; background-color: #eeeeee; border: 1px solid #ccc; border-radius: 6px; }
 
 .input-group-addon.input-sm, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .input-group-addon.btn { padding: 10px 20px; font-size: 14px; border-radius: 3px; }
 
@@ -1969,7 +1969,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .pagination > li { display: inline; }
 
-.pagination > li > a, .pagination > li > span { position: relative; float: left; padding: 12px 20px; line-height: 1.375; text-decoration: none; color: #337ab7; background-color: #fff; border: 1px solid #ddd; margin-left: -1px; }
+.pagination > li > a, .pagination > li > span { position: relative; float: left; padding: 12px 15px; line-height: 1.375; text-decoration: none; color: #337ab7; background-color: #fff; border: 1px solid #ddd; margin-left: -1px; }
 
 .pagination > li:first-child > a, .pagination > li:first-child > span { margin-left: 0; border-bottom-left-radius: 6px; border-top-left-radius: 6px; }
 
@@ -2845,7 +2845,7 @@ h1 small { display: block; font-size: 18px; margin-top: 10px; }
 
 .input-group-addon { border: 2px solid #ddd; }
 
-.form-control { background: #fff; border: 2px solid #ddd; box-shadow: none; padding: 12px 20px 14px; }
+.form-control { background: #fff; border: 2px solid #ddd; box-shadow: none; padding: 12px 15px 14px; }
 
 .form-control::-webkit-input-placeholder { color: #999; font-style: italic; }
 
@@ -2877,7 +2877,7 @@ textarea { resize: vertical; }
 
 .form-links { text-align: left; }
 
-.form-links a { padding: 13px 21px; }
+.form-links a { padding: 13px 16px; }
 
 .form-links a.pull-left:first-child { padding-left: 0; }
 
@@ -2930,15 +2930,17 @@ hr { margin: 60px 0; }
 
 .alert-dismissable .close, .alert-dismissible .close { right: -12px; top: 0; }
 
-/*doc --- title: Avatar icon name: avatar category: Components --- Icons for displaying an image of a user ```html_example_table <div class="avatar"> <div class="avatar-image"> <img src="https://res.cloudinary.com/mndx/image/upload/c_limit,h_45/tqrjlmxpvanmt4r0ympg" /> </div> </div> <div class="avatar"> <div class="avatar-name">A</div> </div> <div class="avatar avatar-large"> <div class="avatar-name">A</div> </div> <div class="avatar avatar-large"> <div class="avatar-image"> <img src="https://res.cloudinary.com/mndx/image/upload/c_limit,h_100/tqrjlmxpvanmt4r0ympg" /> </div> </div> ``` */
+/*doc --- title: Avatar icon name: avatar category: Components --- Icons for displaying an image of a user ```html_example_table <div class="avatar"> <div class="avatar-image"> <img src="https://res.cloudinary.com/mndx/image/upload/c_limit,h_45/tqrjlmxpvanmt4r0ympg" /> </div> </div> <div class="avatar"> <div class="avatar-name">A</div> </div> <div class="avatar avatar-large"> <div class="avatar-name">A</div> </div> <div class="avatar avatar-large"> <div class="avatar-name avatar-name-hidden">A</div> </div> <div class="avatar avatar-large"> <div class="avatar-image"> <img src="https://res.cloudinary.com/mndx/image/upload/c_limit,h_100/tqrjlmxpvanmt4r0ympg" /> </div> </div> ``` */
 /*doc --- title: Primary name: primary category: Colors --- Used for elements (i.e buttons, labels and ***) <div class="clearfix"> <div class="color-box brand-primary"> <span>$brand-primary</span> </div> <div class="color-box brand-success"> <span>$brand-success</span> </div> <div class="color-box brand-warning"> <span>$brand-warning</span> </div> <div class="color-box brand-danger"> <span>$brand-danger</span> </div> </div> */
 /*doc --- title: Text name: text category: Colors --- Used for text, borders and list elements. <div class="clearfix"> <div class="color-box text-color"> <span>$text-color</span> </div> <div class="color-box text-color-dark"> <span>$text-color-dark</span> </div> <div class="color-box text-color-light"> <span>$text-color-light</span> </div> </div> */
 /*doc --- title: UI Colors name: ui-colors category: Colors --- Used for borders, background and dividers <div class="clearfix"> <div class="color-box ui-color-default"> <span>$ui-color-default</span> </div> <div class="color-box ui-color-light"> <span>$ui-color-light</span> </div> <div class="color-box ui-color-lighter"> <span>$ui-color-lighter</span> </div> <div class="color-box ui-color-lightest"> <span>$ui-color-lightest</span> </div> </div> */
-.avatar-empty, .avatar-image img, .avatar-name { border-radius: 50%; height: 45px; width: 45px; }
+.avatar-empty, .avatar-image img, .avatar-name, .avatar-name-hidden { border-radius: 50%; height: 45px; width: 45px; }
 
 .avatar { display: inline-block; text-align: center; }
 
 .avatar-name { display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -moz-box-align: center; box-align: center; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -ms-flex-align: center; -webkit-box-pack: center; -moz-box-pack: center; box-pack: center; -webkit-justify-content: center; -moz-justify-content: center; -ms-justify-content: center; -o-justify-content: center; justify-content: center; -ms-flex-pack: center; background-color: #f55065; color: #fff; font-size: 22px; margin: 0 auto; text-align: center; text-transform: uppercase; }
+
+.avatar-name-hidden { background-color: #eee; color: #eee; }
 
 .avatar-small .avatar-name { height: 35px; width: 35px; }
 
@@ -3005,44 +3007,40 @@ hr { margin: 60px 0; }
 
 .date-picker-calendar .popover .popover-content { padding: 0; }
 
-/*doc --- title: Content List name: content_list category: Components --- Custom list for editable content ```html_example <ul class="content-list"> <li class="content-list-row content-list-header"> <div class="content-list-column">Draft</div> <div class="content-list-column">Last edited</div> <div class="content-list-column align-right">Actions</div> </li> <li class="content-list-row"> <div class="content-list-column"><a href="#">Press Release Name #1</a></div> <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div> <div class="content-list-column align-right"><a class="content-list-action" href="#">Edit</a><button class="btn btn-link content-list-action">Publish</button></div> </li> <li class="content-list-row"> <div class="content-list-column"><a href="#">Press Release Name #2</a></div> <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div> <div class="content-list-column align-right"><a class="content-list-action" href="#">Edit</a><button class="btn btn-link content-list-action">Publish</button></div> </li> <li class="content-list-row"> <div class="content-list-column"><a href="#">Press Release Name #3</a></div> <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div> <div class="content-list-column align-right"><a class="content-list-action" href="#">Edit</a><button class="btn btn-link content-list-action">Publish</button></div> </li> </ul> <ul class="content-list"> <li class="content-list-row content-list-header"> <div class="content-list-column">Name</div> <div class="content-list-column">Last edited</div> <div class="content-list-column align-right">Actions</div> </li> <li class="content-list-row"> <div class="content-list-column"><span class="content-list-checkbox"><input type="checkbox" /></span><span class="content-list-avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Mike Rooseboom</div> <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div> <div class="content-list-column align-right"><a class="content-list-action" href="#">Edit</a><button class="btn btn-link content-list-action">Publish</button></div> </li> <li class="content-list-row"> <div class="content-list-column"><span class="content-list-checkbox"><input type="checkbox" /></span><span class="content-list-avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Rashmi Yadav</div> <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 27 2015</div> <div class="content-list-column align-right"><a class="content-list-action" href="#">Edit</a><button class="btn btn-link content-list-action">Publish</button></div> </li> <li class="content-list-row active"> <div class="content-list-column"><span class="content-list-checkbox"><input type="checkbox" /></span><span class="content-list-avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Zoee Silcock</div> <div class="content-list-column"><span class="hidden-sm">Published at </span>Feb, 26 2015</div> <div class="content-list-column align-right"><a class="content-list-action" href="#">Edit</a><button class="btn btn-link content-list-action">Publish</button></div> </li> </ul> ``` */
-.content-list { border-collapse: collapse; border-spacing: 0; display: table; list-style-type: none; margin-bottom: 20px; max-width: 100%; table-layout: fixed; width: 100%; }
+/*doc --- title: Content List name: content_list category: Components --- Custom list for editable content ```html_example <ul class="ContentList"> <li class="ContentList__header"> <div class="ContentList__column">Name</div> <div class="ContentList__column">Last edited</div> <div class="ContentList__column align-right">Actions</div> </li> <li class="ContentList__row"> <div class="ContentList__column"><span class="ContentList__checkbox"><input type="checkbox" /></span><span class="ContentList__avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Mike Rooseboom</div> <div class="ContentList__column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div> <div class="ContentList__column align-right"><a class="ContentList__action" href="#">Edit</a><button class="btn btn-link ContentList__action">Publish</button></div> </li> <li class="ContentList__row"> <div class="ContentList__column"><span class="ContentList__checkbox"><input type="checkbox" /></span><span class="ContentList__avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Rashmi Yadav</div> <div class="ContentList__column"><span class="hidden-sm">Published at </span>Feb, 27 2015</div> <div class="ContentList__column align-right"><a class="ContentList__action" href="#">Edit</a><button class="btn btn-link ContentList__action">Publish</button></div> </li> <li class="ContentList__row active"> <div class="ContentList__column"><span class="ContentList__checkbox"><input type="checkbox" /></span><span class="ContentList__avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Zoee Silcock</div> <div class="ContentList__column"><span class="hidden-sm">Published at </span>Feb, 26 2015</div> <div class="ContentList__column align-right"><a class="ContentList__action" href="#">Edit</a><button class="btn btn-link ContentList__action">Publish</button></div> </li> </ul> <ul class="ContentList ContentList--compact"> <li class="ContentList__row"> <div class="ContentList__column"><i name="twitter" class="fa fa-twitter fa-fw SocialMediaSettings-channelIcon gutter-right"></i> Mike Rooseboom</div> <div class="ContentList__column align-right"><button class="btn btn-link ContentList__action">Tweet</button></div> </li> <li class="ContentList__row"> <div class="ContentList__column"><i name="twitter" class="fa fa-twitter fa-fw SocialMediaSettings-channelIcon gutter-right"></i> Rashmi Yadav</div> <div class="ContentList__column align-right"><button class="btn btn-link ContentList__action">Tweet</button></div> </li> <li class="ContentList__row"> <div class="ContentList__column"><i name="twitter" class="fa fa-twitter fa-fw SocialMediaSettings-channelIcon gutter-right"></i> Zoee Silcock</div> <div class="ContentList__column align-right"><button class="btn btn-link ContentList__action">Tweet</button></div> </li> </ul> ``` */
+.ContentList { border-collapse: collapse; border-spacing: 0; display: table; list-style-type: none; margin-bottom: 40px; max-width: 100%; width: 100%; }
 
-.content-list:last-child { margin-bottom: 0; }
+.ContentList:last-child { margin-bottom: 0; }
 
-.content-list .content-list-row { border-bottom: 1px solid #eee; display: table-row; }
+.ContentList__row, .ContentList__header { display: table-row; }
 
-.content-list .content-list-row.active { background: #f2fafd; }
+.ContentList__row.active, .active.ContentList__header { background: #f2fafd; }
 
-.content-list .content-list-column { display: table-cell; padding: 20px 25px; }
+.ContentList__column { border-bottom: 1px solid #eee; display: table-cell; padding: 40px 10px; }
 
-.content-list .content-list-column:first-child { display: table-cell; text-align: left; }
+.ContentList__column:first-child { display: table-cell; text-align: left; }
 
-.content-list .content-list-column:nth-child(n+2) { display: none; }
+.ContentList__column:nth-child(n+2) { display: none; }
 
-@media screen and (min-width: 768px) { .content-list .content-list-column:nth-child(n+2) { display: table-cell; } }
+@media screen and (min-width: 768px) { .ContentList__column:nth-child(n+2) { display: table-cell; } }
 
-.content-list .content-list-column:last-child { display: table-cell; }
+.ContentList__column:last-child { display: table-cell; }
 
-.content-list .content-list-header { color: #333; font-size: 16px; font-weight: 600; }
+.ContentList__header { color: #333; font-size: 16px; font-weight: 600; }
 
-.content-list .content-list-action { display: inline-block; margin-left: 25px; }
+.ContentList__action { border: 0; display: inline-block; font-weight: 400; margin-left: 25px; padding: 0; vertical-align: initial; }
 
-.content-list .content-list-action.btn-link { border: 0; font-weight: 400; margin-left: 25px; padding: 0; vertical-align: initial; }
+.ContentList__action:first-child { margin-left: 0; }
 
-.content-list .content-list-action:first-child { margin-left: 0; }
+.ContentList__checkbox { display: inline-block; margin-right: 20px; }
 
-.content-list .content-list-checkbox { display: inline-block; }
+.ContentList__avatar { display: inline-block; margin-right: 25px; position: relative; width: 35px; }
 
-.content-list .content-list-checkbox input[type='checkbox'] { box-shadow: 0px 1px 1px 0px #efefef inset; font-size: 16px; margin-right: 20px; }
+.ContentList__avatar img { border-radius: 50%; height: 35px; margin-top: -23px; position: absolute; width: 35px; }
 
-.content-list .content-list-avatar { display: inline-block; margin-right: 25px; position: relative; width: 35px; }
+.ContentList--compact { border: 1px solid #eee; border-bottom: 0; border-collapse: separate; border-radius: 6px; padding: 0; }
 
-.content-list .content-list-avatar img { border-radius: 50%; height: 35px; margin-top: -23px; position: absolute; width: 35px; }
-
-.content-list-striped .content-list-row { border-bottom: 0; }
-
-.content-list-striped .content-list-row:nth-child(even) { background-color: #fafafa; }
+.ContentList--compact .ContentList__column { line-height: 50px; padding-top: 0; padding-bottom: 0; }
 
 .btn-group .btn .date-picker-field { border: none; background-color: transparent; }
 
