@@ -32,7 +32,7 @@ h1 small { display: block; font-size: 18px; margin-top: 10px; }
 
 .lead { font-weight: normal; }
 
-/*! Bootstrap v3.3.6 (http://getbootstrap.com) Copyright 2011-2015 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
+/*! Bootstrap v3.3.7 (http://getbootstrap.com) Copyright 2011-2016 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
@@ -675,7 +675,7 @@ a { color: #0096d1; text-decoration: none; }
 
 a:hover, a:focus { color: #23527c; text-decoration: underline; }
 
-a:focus { outline: thin dotted; outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
+a:focus { outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
 
 figure { margin: 0; }
 
@@ -1221,7 +1221,7 @@ input[type="range"] { display: block; width: 100%; }
 
 select[multiple], select[size] { height: auto; }
 
-input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus { outline: thin dotted; outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
+input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus { outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
 
 output { display: block; padding-top: 13px; font-size: 16px; line-height: 1.375; color: #555555; }
 
@@ -1379,7 +1379,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
 
 .btn { display: inline-block; margin-bottom: 0; font-weight: 400; text-align: center; vertical-align: middle; touch-action: manipulation; cursor: pointer; background-image: none; border: 1px solid transparent; white-space: nowrap; padding: 12px 15px; font-size: 16px; line-height: 1.375; border-radius: 6px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 
-.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus { outline: thin dotted; outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
+.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus { outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
 
 .btn:hover, .btn:focus, .btn.focus { color: #666; text-decoration: none; }
 
@@ -3007,7 +3007,7 @@ hr { margin: 60px 0; }
 
 .date-picker-calendar .popover .popover-content { padding: 0; }
 
-/*doc --- title: Content List name: content_list category: Components --- Custom list for editable content ```html_example <ul class="ContentList"> <li class="ContentList__header"> <div class="ContentList__column">Name</div> <div class="ContentList__column">Last edited</div> <div class="ContentList__column align-right">Actions</div> </li> <li class="ContentList__row"> <div class="ContentList__column"><span class="ContentList__checkbox"><input type="checkbox" /></span><span class="ContentList__avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Mike Rooseboom</div> <div class="ContentList__column"><span class="hidden-sm">Published at </span>Feb, 28 2015</div> <div class="ContentList__column align-right"><a class="ContentList__action" href="#">Edit</a><button class="btn btn-link ContentList__action">Publish</button></div> </li> <li class="ContentList__row"> <div class="ContentList__column"><span class="ContentList__checkbox"><input type="checkbox" /></span><span class="ContentList__avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Rashmi Yadav</div> <div class="ContentList__column"><span class="hidden-sm">Published at </span>Feb, 27 2015</div> <div class="ContentList__column align-right"><a class="ContentList__action" href="#">Edit</a><button class="btn btn-link ContentList__action">Publish</button></div> </li> <li class="ContentList__row active"> <div class="ContentList__column"><span class="ContentList__checkbox"><input type="checkbox" /></span><span class="ContentList__avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Zoee Silcock</div> <div class="ContentList__column"><span class="hidden-sm">Published at </span>Feb, 26 2015</div> <div class="ContentList__column align-right"><a class="ContentList__action" href="#">Edit</a><button class="btn btn-link ContentList__action">Publish</button></div> </li> </ul> <ul class="ContentList ContentList--compact"> <li class="ContentList__row"> <div class="ContentList__column"><i name="twitter" class="fa fa-twitter fa-fw SocialMediaSettings-channelIcon gutter-right"></i> Mike Rooseboom</div> <div class="ContentList__column align-right"><button class="btn btn-link ContentList__action">Tweet</button></div> </li> <li class="ContentList__row"> <div class="ContentList__column"><i name="twitter" class="fa fa-twitter fa-fw SocialMediaSettings-channelIcon gutter-right"></i> Rashmi Yadav</div> <div class="ContentList__column align-right"><button class="btn btn-link ContentList__action">Tweet</button></div> </li> <li class="ContentList__row"> <div class="ContentList__column"><i name="twitter" class="fa fa-twitter fa-fw SocialMediaSettings-channelIcon gutter-right"></i> Zoee Silcock</div> <div class="ContentList__column align-right"><button class="btn btn-link ContentList__action">Tweet</button></div> </li> </ul> ``` */
+/*doc --- title: Content List name: content_list category: Components --- Custom list for editable content ```html_example <ul class="ContentList"> <li class="ContentList__header"> <div class="ContentList__column">Name</div> <div class="ContentList__column hidden-xs">Last edited</div> <div class="ContentList__column align-right">Actions</div> </li> <li class="ContentList__row"> <div class="ContentList__column"><span class="ContentList__checkbox"><input type="checkbox" /></span><span class="ContentList__avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Mike Rooseboom</div> <div class="ContentList__column hidden-xs"><span class="hidden-sm">Published at </span>Feb, 28 2015</div> <div class="ContentList__column align-right"><a class="ContentList__action" href="#">Edit</a><button class="btn btn-link ContentList__action">Publish</button></div> </li> <li class="ContentList__row"> <div class="ContentList__column"><span class="ContentList__checkbox"><input type="checkbox" /></span><span class="ContentList__avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Rashmi Yadav</div> <div class="ContentList__column hidden-xs"><span class="hidden-sm">Published at </span>Feb, 27 2015</div> <div class="ContentList__column align-right"><a class="ContentList__action" href="#">Edit</a><button class="btn btn-link ContentList__action">Publish</button></div> </li> <li class="ContentList__row active"> <div class="ContentList__column"><span class="ContentList__checkbox"><input type="checkbox" /></span><span class="ContentList__avatar"><img src="http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="" /></span> Zoee Silcock</div> <div class="ContentList__column hidden-xs"><span class="hidden-sm">Published at </span>Feb, 26 2015</div> <div class="ContentList__column align-right"><a class="ContentList__action" href="#">Edit</a><button class="btn btn-link ContentList__action">Publish</button></div> </li> </ul> <ul class="ContentList ContentList--compact"> <li class="ContentList__row"> <div class="ContentList__column"><i name="twitter" class="fa fa-twitter fa-fw SocialMediaSettings-channelIcon gutter-right"></i> Mike Rooseboom</div> <div class="ContentList__column align-right"><button class="btn btn-link ContentList__action">Tweet</button></div> </li> <li class="ContentList__row"> <div class="ContentList__column"><i name="twitter" class="fa fa-twitter fa-fw SocialMediaSettings-channelIcon gutter-right"></i> Rashmi Yadav</div> <div class="ContentList__column align-right"><button class="btn btn-link ContentList__action">Tweet</button></div> </li> <li class="ContentList__row"> <div class="ContentList__column"><i name="twitter" class="fa fa-twitter fa-fw SocialMediaSettings-channelIcon gutter-right"></i> Zoee Silcock</div> <div class="ContentList__column align-right"><button class="btn btn-link ContentList__action">Tweet</button></div> </li> </ul> ``` */
 .ContentList { border-collapse: collapse; border-spacing: 0; display: table; list-style-type: none; margin-bottom: 40px; max-width: 100%; width: 100%; }
 
 .ContentList:last-child { margin-bottom: 0; }
@@ -3016,13 +3016,9 @@ hr { margin: 60px 0; }
 
 .ContentList__row.active, .active.ContentList__header { background: #f2fafd; }
 
-.ContentList__column { border-bottom: 1px solid #eee; display: table-cell; padding: 40px 10px; }
+.ContentList__column { border-bottom: 1px solid #eee; display: table-cell; padding: 40px 10px; vertical-align: middle; }
 
 .ContentList__column:first-child { display: table-cell; text-align: left; }
-
-.ContentList__column:nth-child(n+2) { display: none; }
-
-@media screen and (min-width: 768px) { .ContentList__column:nth-child(n+2) { display: table-cell; } }
 
 .ContentList__column:last-child { display: table-cell; }
 
