@@ -55,10 +55,11 @@ $list-item-height: 60px;
 
   border-collapse: collapse;
   border-spacing: 0;
-  display: table;
+  display: block;
   list-style-type: none;
   margin-bottom: $space-larger;
   max-width: 100%;
+  padding: 0;
   width: 100%;
 
   &:last-child {
@@ -66,7 +67,8 @@ $list-item-height: 60px;
   }
 
   &__row {
-    display: table-row;
+    display: flex;
+    justify-content: space-between;
 
     &.active {
       background: tint($color-4, 95%);
@@ -75,9 +77,12 @@ $list-item-height: 60px;
 
   &__column {
     border-bottom: 1px solid $gray-lighter;
-    display: table-cell;
+    display: flex;
     padding: $content-list-padding;
     vertical-align: middle;
+    flex-direction: column;
+    overflow: hidden;
+
 
     &:first-child {
       display: table-cell;
