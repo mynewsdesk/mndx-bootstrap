@@ -1,0 +1,65 @@
+$toggle-width: 48px;
+$toggle-padding: 3px;
+$toggle-background: #e0e3e9;
+$toggle-background-active: #02ad55;
+$toggle-height: 24px;
+$toggle-button-size: 18px;
+$toggle-button-time: 0.30s;
+
+.toggle-container {
+  min-height: $toggle-height;
+  position: relative;
+}
+
+.toggle-checkbox {
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"]:active + .toggle,
+  input[type="checkbox"]:checked + .toggle {
+    label {
+      background: $toggle-background-active;
+    }
+
+    i {
+      left: ($toggle-width - $toggle-button-size - $toggle-padding);
+    }
+  }
+}
+
+.toggle {
+  bottom: 0;
+  height: $toggle-height;
+  margin: auto;
+  position: absolute;
+  right: 9px;
+  top: 0;
+  width: $toggle-width;
+
+  label,
+  i {
+    box-sizing: border-box;
+    display: block;
+  }
+
+  label {
+    background: $toggle-background;
+    border-radius: $toggle-height;
+    cursor: pointer;
+    height: $toggle-height;
+    transition: all $toggle-button-time ease;
+    width: $toggle-width;
+  }
+
+  i {
+    background: $white;
+    border-radius: $toggle-button-size;
+    height: $toggle-button-size;
+    left: $toggle-padding;
+    position: absolute;
+    top: $toggle-padding;
+    transition: all $toggle-button-time ease;
+    width: $toggle-button-size;
+  }
+}

@@ -3,8 +3,8 @@
 title: Horizontal Rule
 name: hr
 category: CSS
-
 ---
+
 ```html_example
 <p>
   this is some text-color
@@ -14,7 +14,17 @@ category: CSS
   this is more text text
 </p>
 ```
+
+```html_example
+<p>Here's another example</p>
+<hr class="small">
+<p>With smaller margin</p>
+```
 */
 hr {
   margin: $gutter-vertical-x2 0;
+
+  &.small {
+    margin: ($gutter-vertical / 2) 0;
+  }
 }

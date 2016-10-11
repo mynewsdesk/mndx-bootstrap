@@ -66,6 +66,19 @@ category: CSS
       </label>
     </div>
   </div>
+
+  <div class="toggle-container">
+    <p>Toggle me!</p>
+    <div class="toggle-checkbox">
+      <input type="checkbox" id="toggle_me" name="samecheck"></input>
+      <div class="toggle">
+        <label for="toggle_me">
+          <i></i>
+        </label>
+      </div>
+    </div>
+  </div>
+
   <div class="form-group">
     <div class="radio">
       <label>
@@ -123,6 +136,8 @@ category: CSS
 </form>
 ```
 */
+
+@import 'toggle_radio_buttons';
 
 .form-group {
   margin-bottom: $gutter-vertical;
