@@ -19,12 +19,11 @@ header "Installing gem dependencies"
 gem install bundler --conservative
 bundle install
 
-header "Installing npm dependencies"
-npm install
+header "Installing Gulp"
+gulp -v || npm install -g gulp
 
-header "Installing bower dependencies"
-bower -v || npm install -g bower
-bower install
+header "Installing Yarn"
+yarn -v || npm install -g yarn
 
-header "Installing gulp"
-npm install -g gulp
+header "Installing npm/bower dependencies"
+yarn
