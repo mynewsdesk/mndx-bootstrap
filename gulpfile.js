@@ -17,8 +17,7 @@ var argv = require('yargs')
 var reload = browserSync.reload;
 
 var config = {
-    bowerDir: './bower_components',
-    bootstrapDir: './bower_components/bootstrap-sass',
+    nodeModulesDir: './node_modules',
     publicDir: './public'
 };
 
@@ -69,7 +68,10 @@ gulp.task('watch-styleguide', function() {
 
 gulp.task('mnd-bootstrap-sass', function() {
   return gulp.src('src/mnd-bootstrap.scss')
-    .pipe(sass({ outputStyle: 'compact', includePaths: [config.bowerDir]}))
+    .pipe(sass({
+      outputStyle: 'compact',
+      includePaths: [config.nodeModulesDir]
+    }))
     .on('error', function (err) { console.log(err.message); })
     .pipe(gulp.dest('dist/'))
     .pipe(gulp.dest('public/dist'))
@@ -79,7 +81,10 @@ gulp.task('mnd-bootstrap-sass', function() {
 
 gulp.task('styleguide-sass', function() {
   return gulp.src('doc_assets/styleguide.scss')
-    .pipe(sass({ outputStyle: 'compact', includePaths: [config.bowerDir]}))
+    .pipe(sass({
+      outputStyle: 'compact',
+      includePaths: [config.nodeModulesDir]
+    }))
     .on('error', function (err) { console.log(err.message); })
     .pipe(gulp.dest('public/'))
     .pipe(notify({message: 'Styleguide-sass task complete'}));
@@ -87,8 +92,8 @@ gulp.task('styleguide-sass', function() {
 
 gulp.task('styleguide-assets', function() {
   var files = {
-    'bower_components/bootstrap-sass-twbs/assets/javascripts/bootstrap.min.js': 'public/javascripts',
-    'bower_components/jquery/dist/jquery.min.js': 'public/javascripts'
+    './node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js': 'public/javascripts',
+    './node_modules/jquery/dist/jquery.min.js': 'public/javascripts'
   };
   for (var file in files) {
     gulp.src(file)
