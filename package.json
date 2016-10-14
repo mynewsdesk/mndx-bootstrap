@@ -3,6 +3,7 @@
   "version": "6.3.1",
   "description": "",
   "main": "",
+  "license": "MIT",
   "files": [
     "dist",
     "src"
@@ -13,8 +14,10 @@
     "url": "https://github.com/mynewsdesk/mnd-bootstrap.git"
   },
   "dependencies": {
-    "bootstrap-sass": "3.3.6",
-    "bourbon": "4.2.7"
+    "bootstrap-sass": "^3.3.6",
+    "bourbon": "^4.2.6",
+    "font-awesome": "^4.6.3",
+    "jquery": "^2"
   },
   "devDependencies": {
     "browser-sync": "2.12.8",
