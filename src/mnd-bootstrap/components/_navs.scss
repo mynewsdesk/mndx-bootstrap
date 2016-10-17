@@ -1,8 +1,55 @@
 /*doc
-//---
-//title: Navs
-//name: navs
-//category: Components
-//---
+---
+title: Navs
+name: navs
+category: Components
+---
+
+```html_example_table
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+```
 */
 
+.nav {
+  width: 100%;
+
+  > li {
+    > a {
+      &:hover,
+      &:focus {
+        background-color: $nav-link-hover-bg;
+      }
+    }
+  }
+}
+
+.nav-tabs {
+  border-bottom: 1px solid $nav-tabs-border-color;
+
+  > li {
+    > a {
+      border: 0;
+      color: $nav-tabs-link-color;
+
+      &:hover {
+        color: $black;
+      }
+    }
+
+    &.active > a {
+      font-weight: $bold;
+
+      &,
+      &:hover,
+      &:focus {
+        border: 0;
+        border-bottom: 1px solid $nav-tabs-active-color;
+        color: $nav-tabs-active-color;
+      }
+    }
+  }
+}
