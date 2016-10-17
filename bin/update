@@ -1,0 +1,11 @@
+#!/bin/bash
+
+function header {
+  printf "\n== $1 ==\n"
+}
+
+header "Installing gem dependencies"
+bundle install
+
+header "Installing npm/bower dependencies"
+yarn
