@@ -1,0 +1,54 @@
+/*doc
+---
+title: Switch
+name: switch
+category: Components
+---
+
+```html_example_table
+<div class="Switch">
+  <div class="Switch__circle" ></div>
+</div>
+
+<div class="Switch Switch--active">
+  <div class="Switch__circle" ></div>
+</div>
+```
+*/
+
+$switch-width: 48px;
+$switch-padding: 3px;
+$switch-background: #e0e3e9;
+$switch-background-active: #02ad55;
+$switch-height: 24px;
+$switch-button-size: 18px;
+$switch-button-time: 0.30s;
+
+.Switch {
+  @include transition(all $switch-button-time ease);
+
+  background: $switch-background;
+  border-radius: $switch-height;
+  cursor: pointer;
+  height: $switch-height;
+  padding: $switch-padding;
+  width: $switch-width;
+
+  &--active {
+    background: $switch-background-active;
+
+    .Switch__circle {
+      @include transform(translateX($switch-width - $switch-button-size - ($switch-padding * 2)));
+    }
+  }
+
+  &__circle {
+    @include transform(0);
+    @include transition(all $switch-button-time ease);
+
+    background: $white;
+    border-radius: $switch-button-size;
+    height: $switch-button-size;
+    width: $switch-button-size;
+  }
+}
