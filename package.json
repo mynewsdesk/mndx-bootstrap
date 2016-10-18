@@ -17,21 +17,21 @@
     "bootstrap-sass": "^3.3.6",
     "bourbon": "^4.2.6",
     "font-awesome": "^4.6.3",
-    "jquery": "^2"
+    "jquery": "^3"
   },
   "devDependencies": {
-    "browser-sync": "2.12.8",
-    "classnames": "2.2.5",
-    "gulp": "3.9.1",
-    "gulp-bump": "2.1.0",
-    "gulp-gh-pages": "0.5.4",
-    "gulp-git": "1.7.2",
-    "gulp-hologram": "1.2.0",
-    "gulp-notify": "2.2.0",
-    "gulp-rimraf": "0.2.0",
-    "gulp-sass": "2.3.1",
-    "moment": "2.13.0",
-    "run-sequence": "1.2.1",
-    "yargs": "4.7.1"
+    "browser-sync": "^2.12.8",
+    "classnames": "^2.2.5",
+    "gulp": "^3.9.1",
+    "gulp-bump": "^2.1.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-git": "^1.7.2",
+    "gulp-hologram": "^1.2.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-sass": "^2.3.1",
+    "moment": "^2.13.0",
+    "run-sequence": "^1.2.1",
+    "yargs": "^6"
   }
 }
