@@ -2819,6 +2819,8 @@ h1 small { display: block; font-size: 18px; margin-top: 10px; }
 
 .btn.no-margin { margin: 0; }
 
+.btn.no-ui { border: 0; padding: 0; margin: 0; }
+
 .btn-first { margin-left: 0; }
 
 .btn-last { margin-right: 0; }
@@ -2835,6 +2837,22 @@ h1 small { display: block; font-size: 18px; margin-top: 10px; }
 //---
 */
 /*doc --- title: Forms name: forms category: CSS --- ```html_example_table <form> <div class="form-group"> <label for="to">Default</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> </div> <div class="form-group has-success"> <label for="to">Success</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-success has-feedback"> <label for="to">Success</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <span class="fa fa-icon fa-check form-control-feedback"></span> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-warning"> <label for="to">Warning</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-error"> <label for="to">Error</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-error has-feedback"> <label for="to">Error</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <span class="fa fa-icon fa-close form-control-feedback"></span> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group"> <label for="to">addonBefore</label> <div class="input-group"> <div class="input-group-addon">poptype.co/</div> <input type="email" class="form-control" id="to" placeholder="your-name-here"> </div> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group"> <label for="to">Disabled input</label> <input type="email" class="form-control" id="to" placeholder=":disabled" disabled> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group"> <label for="message">Textarea</label> <textarea class="form-control" id="subject" placeholder="Enter message"></textarea> </div> <div class="form-group"> <div class="checkbox"> <label> <input type="checkbox" name="samecheck"> Check me out </label> <br> <label> <input type="checkbox" name="samecheck"> Check me out again </label> </div> </div> <div class="form-group"> <div class="radio"> <label> <input type="radio" name="sameradio"> Check me out </label> <br> <label> <input type="radio" name="sameradio"> Check me out again </label> </div> </div> <div class="form-group"> <select class="form-control"> <option>option 1</option> <option>option 2</option> <option>option 3</option> <option>option 4</option> </select> </div> <h3>Input button</h3> <div class="input-group"> <input class="form-control" type="text"> <span class="input-group-btn"> <div class="btn-group"> <button class="btn btn-default" type="button">Show</button> </div> </span> </div> <div class="form-group text-right form-actions"> <button type="reset" class="btn btn-default">Cancel</button> <button type="submit" class="btn btn-primary">Submit</button> </div> <div class="form-group"> <label for="formControlsEmail" class="control-label">Locked field</label> <span class="input-group"> <input disabled type="text" id="formControlsEmail" class="fake-field-text form-control" value="locked-field@example.org"> <span class="input-group-addon fake-field-addon"><i name="lock" class="fa fa-lock"></i></span> </span> </div> </form> <form> <div class="form-group"> <label for="form-links">Form links example</label> <input type="text" class="form-control" id="form-links" placeholder="Organization name"> </div> <button type="submit" class="btn btn-primary pull-right">Submit</button> <div class="form-group form-links"> <a href="#" class="pull-left">Link one</a> <a href="#" class="pull-left">Link two</a> <a href="#" class="pull-right">Link three</a> </div> </form> ``` */
+.toggle-container { min-height: 24px; position: relative; }
+
+.toggle-checkbox input[type="checkbox"] { display: none; }
+
+.toggle-checkbox input[type="checkbox"]:active + .toggle label, .toggle-checkbox input[type="checkbox"]:checked + .toggle label { background: #02ad55; }
+
+.toggle-checkbox input[type="checkbox"]:active + .toggle i, .toggle-checkbox input[type="checkbox"]:checked + .toggle i { left: 27px; }
+
+.toggle { bottom: 0; height: 24px; margin: auto; position: absolute; right: 9px; top: 0; width: 48px; }
+
+.toggle label, .toggle i { box-sizing: border-box; display: block; }
+
+.toggle label { background: #e0e3e9; border-radius: 24px; cursor: pointer; height: 24px; transition: all 0.3s ease; width: 48px; }
+
+.toggle i { background: #fff; border-radius: 18px; height: 18px; left: 3px; position: absolute; top: 3px; transition: all 0.3s ease; width: 18px; }
+
 .form-group { margin-bottom: 30px; }
 
 .form-group.has-error label { color: #f55065; }
@@ -2905,8 +2923,32 @@ textarea { resize: vertical; }
 //category: CSS
 //---
 */
-/*doc --- title: Horizontal Rule name: hr category: CSS --- ```html_example <p> this is some text-color </p> <hr> <p> this is more text text </p> ``` */
+/*doc
+---
+title: Horizontal Rule
+name: hr
+category: CSS
+---
+
+```html_example
+<p>
+  this is some text-color
+</p>
+<hr>
+<p>
+  this is more text text
+</p>
+```
+
+```html_example
+<p>Here's another example</p>
+<hr class="small">
+<p>With smaller margin</p>
+```
+*/
 hr { margin: 60px 0; }
+
+hr.small { margin: 15px 0; }
 
 /*doc
 //---
@@ -2964,6 +3006,37 @@ hr { margin: 60px 0; }
 //category: Components
 //---
 */
+/*doc --- title: Button dropdowns name: button_dropdowns category: Components --- ```html_example_table <div class="btn-group"> <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Default <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" disabled class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Disabled <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" class="btn btn-split btn-primary">Primary</button> <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" class="btn btn-split btn-primary">Action</button> <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" class="btn btn-split btn-default">Action</button> <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group no-ui"> <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Toggle Dropdown</span> <span class="fa fa-ellipsis-h" /> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> ``` */
+.btn-group > .btn + .dropdown-toggle { padding-left: 16px; padding-right: 20px; }
+
+.btn-group .btn-split { padding-right: 10px; }
+
+.btn-group > .btn-primary.btn-split { border-right-color: #fff; }
+
+.btn-group > .btn-primary + .dropdown-toggle { border-left-color: #fff; }
+
+.btn-group.no-ui button { background-color: transparent; border: 0; color: #666; padding: 0 4px; }
+
+.btn-group.no-ui .dropdown-menu { margin-right: -20px; padding: 0; right: 0; }
+
+.btn-group.no-ui .dropdown-menu li { margin: 10px 0; }
+
+.btn-group.open .dropdown-toggle { box-shadow: none; }
+
+.btn-group.open > .btn-default.dropdown-toggle, .btn-group.open > .dropdown-toggle.btn-primary:disabled { background: #fff; border-color: #b3b3b3; color: #666; }
+
+.btn-group.open > .btn-primary.dropdown-toggle { background: #246d55; border-color: #246d55; }
+
+.btn-group.open > .btn-primary.btn-split + .dropdown-toggle { border-left-color: #fff; }
+
+.dropdown-menu { -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05); box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05); border-radius: 6px; border: 1px solid #e0e3e9; color: #999; left: auto; margin-top: 15px; padding-bottom: 20px; padding-top: 20px; right: -5px; }
+
+.dropdown-menu > li > a { color: #999; padding: 5px 25px; }
+
+.dropdown-menu:before { border-color: transparent; border-bottom-color: #e0e3e9; border-style: solid; border-top-width: 0; border-width: 11px; content: ''; display: block; height: 0; margin-left: -11px; position: absolute; right: 18px; top: -22px; width: 0; }
+
+.dropdown-menu:after { border-color: transparent; border-bottom-color: #fff; border-style: solid; border-width: 10px; border-top-width: 0; content: ''; display: block; height: 0; position: absolute; right: 19px; top: -10px; width: 0; }
+
 /*doc --- title: Button groups name: button_groups category: Components --- ```html_example_table <div class="btn-group" role="group"> <button type="button" class="btn btn-default">Left</button> <button type="button" class="btn btn-default">Middle</button> <button type="button" class="btn btn-default">Right</button> </div> <div class="btn-group-vertical btn-block" role="group"> <button type="button" class="btn btn-default">Left</button> <button type="button" class="btn btn-default">Middle</button> <button type="button" class="btn btn-default">Right</button> </div> ``` */
 .input-group-btn:last-child > .btn-group { margin-left: 0; }
 
@@ -3225,6 +3298,15 @@ category: Components
 //category: Components
 //---
 */
+/*doc --- title: Switch name: switch category: Components --- ```html_example_table <div class="Switch"> <div class="Switch__circle" ></div> </div> <div class="Switch Switch--active"> <div class="Switch__circle" ></div> </div> ``` */
+.Switch { -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; transition: all 0.3s ease; background: #e0e3e9; border-radius: 24px; cursor: pointer; height: 24px; padding: 3px; width: 48px; }
+
+.Switch--active { background: #02ad55; }
+
+.Switch--active .Switch__circle { -webkit-transform: translateX(24px); -moz-transform: translateX(24px); -ms-transform: translateX(24px); -o-transform: translateX(24px); transform: translateX(24px); }
+
+.Switch__circle { -webkit-transform: 0; -moz-transform: 0; -ms-transform: 0; -o-transform: 0; transform: 0; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; transition: all 0.3s ease; background: #fff; border-radius: 18px; height: 18px; width: 18px; }
+
 /*doc
 //---
 //title: Thumbnails
@@ -3236,37 +3318,6 @@ category: Components
 .well { background: #fff; }
 
 .well *:last-child { margin: 0; }
-
-/*doc --- title: Button dropdowns name: button_dropdowns category: Components --- ```html_example_table <div class="btn-group"> <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Default <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" disabled class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Disabled <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" class="btn btn-split btn-primary">Primary</button> <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" class="btn btn-split btn-primary">Action</button> <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" class="btn btn-split btn-default">Action</button> <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group no-ui"> <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Toggle Dropdown</span> <span class="fa fa-ellipsis-h" /> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> ``` */
-.btn-group > .btn + .dropdown-toggle { padding-left: 16px; padding-right: 20px; }
-
-.btn-group .btn-split { padding-right: 10px; }
-
-.btn-group > .btn-primary.btn-split { border-right-color: #fff; }
-
-.btn-group > .btn-primary + .dropdown-toggle { border-left-color: #fff; }
-
-.btn-group.no-ui button { background-color: transparent; border: 0; color: #666; padding: 0 4px; }
-
-.btn-group.no-ui .dropdown-menu { margin-right: -20px; padding: 0; right: 0; }
-
-.btn-group.no-ui .dropdown-menu li { margin: 10px 0; }
-
-.btn-group.open .dropdown-toggle { box-shadow: none; }
-
-.btn-group.open > .btn-default.dropdown-toggle, .btn-group.open > .dropdown-toggle.btn-primary:disabled { background: #fff; border-color: #b3b3b3; color: #666; }
-
-.btn-group.open > .btn-primary.dropdown-toggle { background: #246d55; border-color: #246d55; }
-
-.btn-group.open > .btn-primary.btn-split + .dropdown-toggle { border-left-color: #fff; }
-
-.dropdown-menu { -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05); box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05); border-radius: 6px; border: 1px solid #e0e3e9; color: #999; left: auto; margin-top: 15px; padding-bottom: 20px; padding-top: 20px; right: -5px; }
-
-.dropdown-menu > li > a { color: #999; padding: 5px 25px; }
-
-.dropdown-menu:before { border-color: transparent; border-bottom-color: #e0e3e9; border-style: solid; border-top-width: 0; border-width: 11px; content: ''; display: block; height: 0; margin-left: -11px; position: absolute; right: 18px; top: -22px; width: 0; }
-
-.dropdown-menu:after { border-color: transparent; border-bottom-color: #fff; border-style: solid; border-width: 10px; border-top-width: 0; content: ''; display: block; height: 0; position: absolute; right: 19px; top: -10px; width: 0; }
 
 /*doc
 ---
