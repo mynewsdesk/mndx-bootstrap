@@ -1,8 +1,73 @@
 /*doc
-//---
-//title: Navs
-//name: navs
-//category: Components
-//---
+---
+title: Navs
+name: navs
+category: Components
+---
+
+```html_example_table
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active">
+    <a href="#navs">Drafts</a>
+    <span>2</span>
+  </li>
+  <li role="presentation">
+    <a href="#navs">Posted</a>
+    <span>10</span>
+  </li>
+  <li role="presentation">
+    <a href="#navs">Archived</a>
+    <span>0</span>
+  </li>
+</ul>
+```
 */
 
+.nav {
+  width: 100%;
+
+  > li {
+    > a {
+      &:hover,
+      &:focus {
+        background-color: $nav-link-hover-bg;
+      }
+    }
+  }
+}
+
+.nav-tabs {
+  border-bottom: 1px solid $nav-tabs-border-color;
+
+  > li {
+    margin-right: $gutter-horizontal-x2;
+
+    > span {
+      color: $nav-tabs-link-color;
+    }
+
+    > a {
+      border: 0;
+      color: $nav-tabs-link-color;
+      display: inline-block;
+      padding-left: 0;
+      padding-right: 0;
+
+      &:hover {
+        color: $black;
+      }
+    }
+
+    &.active > a {
+      font-weight: $bold;
+
+      &,
+      &:hover,
+      &:focus {
+        border: 0;
+        border-bottom: 1px solid $nav-tabs-active-color;
+        color: $nav-tabs-active-color;
+      }
+    }
+  }
+}

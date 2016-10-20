@@ -109,6 +109,14 @@ $border-alt: $gray-blue;
 //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color: $gray;
 
+// Navigation
+$nav-link-hover-bg: none;
+$nav-tabs-active-color: #ff3e79;
+$nav-tabs-active-link-hover-bg: none;
+$nav-tabs-border-color: #e0e3e9;
+$nav-tabs-link-color: $gray-light;
+$nav-tabs-link-hover-bg: none;
+
 // Labels
 $label-default-bg: $gray-light;
 $label-primary-bg: $brand-primary;
