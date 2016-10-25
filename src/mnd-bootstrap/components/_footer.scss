@@ -1,0 +1,112 @@
+/*doc
+---
+title: Footer
+name: footer
+category: Components
+---
+
+Poptype footer
+
+```html_example
+
+<footer class="PoptypeFooter">
+  <div class="PoptypeFooter__links">
+    <span class="PoptypeFooter__link PoptypeFooter__link--copyright">
+      © 2016 Poptype
+    </span>
+    <a href="#" class="PoptypeFooter__link" >Our Stories</a>
+    <a href="#" class="PoptypeFooter__link" >About</a>
+    <a href="#" class="PoptypeFooter__link" >Terms</a>
+    <a href="#" class="PoptypeFooter__link" >Privacy</a>
+  </div>
+
+  <div class="PoptypeFooter__social">
+    <a target="_blank" href="https://twitter.com/poptype" class="PoptypeFooter__link PoptypeFooter__link--facebook" >Facebook</a>
+    <a target="_blank" href="https://facebook.com/poptypeco" class="PoptypeFooter__link PoptypeFooter__link--twitter" >Twitter</a>
+    <a target="_blank" href="https://instagram.com/poptypeco" class="PoptypeFooter__link PoptypeFooter__link--instagram" >Instagram</a>
+  </div>
+</footer>
+
+```
+
+*/
+
+.PoptypeFooter {
+  $footer-max-width: 1000px;
+
+  @include display(flex);
+  @include flex-direction(column);
+
+  max-width: $footer-max-width;
+  margin: 20px auto 10px;
+  padding: 0 10px;
+
+  @media screen and (min-width: $screen-sm) {
+    @include flex-direction(row);
+    @include align-items(center);
+  }
+
+  @media screen and (min-width: (940px + 20px)) {
+    padding: 0 0 124px;
+  }
+
+  a,
+  span {
+    font-family: $font-family-sans-serif;
+    font-size: 16px;
+  }
+}
+
+.PoptypeFooter__copyright {
+  color: $gray-light;
+  margin: 10px auto auto;
+  text-align: center;
+
+  @media screen and (min-width: $screen-sm) {
+    margin: 0;
+    margin-right: $gutter-horizontal;
+    order: -1;
+  }
+}
+
+.PoptypeFooter__social {
+  text-align: center;
+
+  @media screen and (min-width: $screen-sm) {
+    @include display(flex);
+    @include flex(1);
+    @include justify-content(flex-end);
+  }
+}
+
+.PoptypeFooter__links {
+  text-align: center;
+}
+
+.PoptypeFooter__link {
+  display: block;
+  color: $text-color;
+  margin: $gutter-horizontal;
+
+
+  @media screen and (min-width: $screen-sm) {
+      display: inline;
+      margin: auto ($gutter-horizontal);
+  }
+
+  &--facebook {
+    color: $facebook-color;
+  }
+
+  &--twitter {
+    color: $twitter-color;
+  }
+
+  &--instagram {
+    color: $instagram-color;
+  }
+
+  &--copyright {
+    color: $gray-light;
+  }
+}

@@ -20,6 +20,24 @@ Used for elements (i.e buttons, labels and ***)
   <div class="color-box brand-danger">
     <span>$brand-danger</span>
   </div>
+  <div class="color-box color-1">
+    <span>$color-1</span>
+  </div>
+  <div class="color-box  color-2">
+    <span>$color-2</span>
+  </div>
+  <div class="color-box  color-3">
+    <span>$color-3</span>
+  </div>
+  <div class="color-box color-4">
+    <span>$color-4</span>
+  </div>
+  <div class="color-box color-5">
+    <span>$color-5</span>
+  </div>
+  <div class="color-box color-6">
+    <span>$color-6</span>
+  </div>
 </div>
  */
 
@@ -70,20 +88,26 @@ Used for borders, background and dividers
 
 
 // Palette
-$color-1: #3eb991;
-$color-2: #ffd34f;
-$color-3: #f55065;
-$color-4: #0096d1;
+$color-1: #02ad55;
+$color-2: #fed83e;
+$color-3: #ff443d;
+$color-4: #0077cd;
+$color-5: #ff3e79;
+$color-6: #f46620;
 
 $white: #fff;
 $black: #333;
 
 $gray: #666;
+$gray-bluer: #647D8E;
 $gray-light: #999;
-$gray-lighten: #ddd;
-$gray-lighter: #eee;
-$gray-lightest: #fafafa;
-$gray-blue: #e0e3e9;
+$gray-lighten: #98adbb;
+$gray-lighter: #cbd7e4;
+$gray-lightest: #e0e3e9;
+$gray-lightestest: #F5F9FA;
+$gray-blue: $gray-lightest; //TODO Remove
+
+$green-icy: #f2fbf6;
 
 // Renaming
 $brand-primary: $color-1;
@@ -127,3 +151,7 @@ $label-danger-bg: $brand-danger;
 
 $label-color: $white;
 $label-link-hover-color: $white;
+
+$facebook-color: #3b5998;
+$twitter-color: #55acee;
+$instagram-color: #c13584;
