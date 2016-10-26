@@ -225,8 +225,9 @@ textarea {
 
 .input-group-btn {
   .btn {
-    background: $gray-lighten;
+    background: $gray-lightest;
     border-radius: $border-radius-base;
+    padding: 13px 15px 12px;
   }
 }
 
