@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*doc --- title: Primary name: primary category: Colors --- Used for elements (i.e buttons, labels and ***) <div class="clearfix"> <div class="color-box brand-primary"> <span>$brand-primary</span> </div> <div class="color-box brand-success"> <span>$brand-success</span> </div> <div class="color-box brand-warning"> <span>$brand-warning</span> </div> <div class="color-box brand-danger"> <span>$brand-danger</span> </div> </div> */
+/*doc --- title: Primary name: primary category: Colors --- Used for elements (i.e buttons, labels and ***) <div class="clearfix"> <div class="color-box brand-primary"> <span>$brand-primary</span> </div> <div class="color-box brand-success"> <span>$brand-success</span> </div> <div class="color-box brand-warning"> <span>$brand-warning</span> </div> <div class="color-box brand-danger"> <span>$brand-danger</span> </div> <div class="color-box color-1"> <span>$color-poptype-green</span> </div> <div class="color-box  color-2"> <span>$color-poptype-yellow</span> </div> <div class="color-box  color-3"> <span>$color-poptype-red</span> </div> <div class="color-box color-4"> <span>$color-poptype-blue</span> </div> <div class="color-box color-5"> <span>$color-poptype-magenta</span> </div> <div class="color-box color-6"> <span>$color-poptype-orange</span> </div> </div> */
 /*doc --- title: Text name: text category: Colors --- Used for text, borders and list elements. <div class="clearfix"> <div class="color-box text-color"> <span>$text-color</span> </div> <div class="color-box text-color-dark"> <span>$text-color-dark</span> </div> <div class="color-box text-color-light"> <span>$text-color-light</span> </div> </div> */
 /*doc --- title: UI Colors name: ui-colors category: Colors --- Used for borders, background and dividers <div class="clearfix"> <div class="color-box ui-color-default"> <span>$ui-color-default</span> </div> <div class="color-box ui-color-light"> <span>$ui-color-light</span> </div> <div class="color-box ui-color-lighter"> <span>$ui-color-lighter</span> </div> <div class="color-box ui-color-lightest"> <span>$ui-color-lightest</span> </div> </div> */
 /*doc
@@ -25,16 +25,18 @@ parent: typo
 */
 /*doc --- title: Body copy name: body_copy parent: typo --- ```html_example <p class="lead"> <strong>.lead</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs. Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger. Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter. Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round. Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin. </p> <p> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs. Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger. Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter. Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round. Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin. </p> ``` */
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Source+Sans+Pro:400,400italic,600,600italic,700,700italic);
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,500,500i,700");
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Source+Sans+Pro:400,400italic,600,600italic,700,700italic);
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,500,500i,700");
 h1 { font-weight: 700; }
 
 h1 small { display: block; font-size: 18px; margin-top: 10px; }
 
 .lead { font-weight: normal; }
 
-/*! Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License) */
+/*! Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License) */
 /* FONT PATH -------------------------- */
-@font-face { font-family: 'FontAwesome'; src: url("/fonts/fontawesome-webfont.eot?v=4.6.3"); src: url("/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("/fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("/fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("/fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'FontAwesome'; src: url("/fonts/fontawesome-webfont.eot?v=4.7.0"); src: url("/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; }
 
 .fa { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
@@ -1163,7 +1165,7 @@ h1 small { display: block; font-size: 18px; margin-top: 10px; }
 
 .fa-expeditedssl:before { content: ""; }
 
-.fa-battery-4:before, .fa-battery-full:before { content: ""; }
+.fa-battery-4:before, .fa-battery:before, .fa-battery-full:before { content: ""; }
 
 .fa-battery-3:before, .fa-battery-three-quarters:before { content: ""; }
 
@@ -1383,6 +1385,88 @@ h1 small { display: block; font-size: 18px; margin-top: 10px; }
 
 .fa-fa:before, .fa-font-awesome:before { content: ""; }
 
+.fa-handshake-o:before { content: ""; }
+
+.fa-envelope-open:before { content: ""; }
+
+.fa-envelope-open-o:before { content: ""; }
+
+.fa-linode:before { content: ""; }
+
+.fa-address-book:before { content: ""; }
+
+.fa-address-book-o:before { content: ""; }
+
+.fa-vcard:before, .fa-address-card:before { content: ""; }
+
+.fa-vcard-o:before, .fa-address-card-o:before { content: ""; }
+
+.fa-user-circle:before { content: ""; }
+
+.fa-user-circle-o:before { content: ""; }
+
+.fa-user-o:before { content: ""; }
+
+.fa-id-badge:before { content: ""; }
+
+.fa-drivers-license:before, .fa-id-card:before { content: ""; }
+
+.fa-drivers-license-o:before, .fa-id-card-o:before { content: ""; }
+
+.fa-quora:before { content: ""; }
+
+.fa-free-code-camp:before { content: ""; }
+
+.fa-telegram:before { content: ""; }
+
+.fa-thermometer-4:before, .fa-thermometer:before, .fa-thermometer-full:before { content: ""; }
+
+.fa-thermometer-3:before, .fa-thermometer-three-quarters:before { content: ""; }
+
+.fa-thermometer-2:before, .fa-thermometer-half:before { content: ""; }
+
+.fa-thermometer-1:before, .fa-thermometer-quarter:before { content: ""; }
+
+.fa-thermometer-0:before, .fa-thermometer-empty:before { content: ""; }
+
+.fa-shower:before { content: ""; }
+
+.fa-bathtub:before, .fa-s15:before, .fa-bath:before { content: ""; }
+
+.fa-podcast:before { content: ""; }
+
+.fa-window-maximize:before { content: ""; }
+
+.fa-window-minimize:before { content: ""; }
+
+.fa-window-restore:before { content: ""; }
+
+.fa-times-rectangle:before, .fa-window-close:before { content: ""; }
+
+.fa-times-rectangle-o:before, .fa-window-close-o:before { content: ""; }
+
+.fa-bandcamp:before { content: ""; }
+
+.fa-grav:before { content: ""; }
+
+.fa-etsy:before { content: ""; }
+
+.fa-imdb:before { content: ""; }
+
+.fa-ravelry:before { content: ""; }
+
+.fa-eercast:before { content: ""; }
+
+.fa-microchip:before { content: ""; }
+
+.fa-snowflake-o:before { content: ""; }
+
+.fa-superpowers:before { content: ""; }
+
+.fa-wpexplorer:before { content: ""; }
+
+.fa-meetup:before { content: ""; }
+
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
 
 .sr-only-focusable:active, .sr-only-focusable:focus { position: static; width: auto; height: auto; margin: 0; overflow: visible; clip: auto; }
@@ -1569,7 +1653,7 @@ hll { background-color: #ffffcc; }
 .il { color: #009999; }
 
 /* Literal.Number.Integer.Long */
-/*doc --- title: Primary name: primary category: Colors --- Used for elements (i.e buttons, labels and ***) <div class="clearfix"> <div class="color-box brand-primary"> <span>$brand-primary</span> </div> <div class="color-box brand-success"> <span>$brand-success</span> </div> <div class="color-box brand-warning"> <span>$brand-warning</span> </div> <div class="color-box brand-danger"> <span>$brand-danger</span> </div> </div> */
+/*doc --- title: Primary name: primary category: Colors --- Used for elements (i.e buttons, labels and ***) <div class="clearfix"> <div class="color-box brand-primary"> <span>$brand-primary</span> </div> <div class="color-box brand-success"> <span>$brand-success</span> </div> <div class="color-box brand-warning"> <span>$brand-warning</span> </div> <div class="color-box brand-danger"> <span>$brand-danger</span> </div> <div class="color-box color-1"> <span>$color-poptype-green</span> </div> <div class="color-box  color-2"> <span>$color-poptype-yellow</span> </div> <div class="color-box  color-3"> <span>$color-poptype-red</span> </div> <div class="color-box color-4"> <span>$color-poptype-blue</span> </div> <div class="color-box color-5"> <span>$color-poptype-magenta</span> </div> <div class="color-box color-6"> <span>$color-poptype-orange</span> </div> </div> */
 /*doc --- title: Text name: text category: Colors --- Used for text, borders and list elements. <div class="clearfix"> <div class="color-box text-color"> <span>$text-color</span> </div> <div class="color-box text-color-dark"> <span>$text-color-dark</span> </div> <div class="color-box text-color-light"> <span>$text-color-light</span> </div> </div> */
 /*doc --- title: UI Colors name: ui-colors category: Colors --- Used for borders, background and dividers <div class="clearfix"> <div class="color-box ui-color-default"> <span>$ui-color-default</span> </div> <div class="color-box ui-color-light"> <span>$ui-color-light</span> </div> <div class="color-box ui-color-lighter"> <span>$ui-color-lighter</span> </div> <div class="color-box ui-color-lightest"> <span>$ui-color-lightest</span> </div> </div> */
 /*doc
@@ -1630,7 +1714,7 @@ div.jsExample:before { content: "JS Example"; background-color: #fff; top: -11px
 
 div.codeBlock, div.exampleOutput { padding: 30px; }
 
-div.codeBlock { background-color: #fafafa; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; border-top: 1px solid #eee; }
+div.codeBlock { background-color: #e0e3e9; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; border-top: 1px solid #cbd7e4; }
 
 div.tableExample { display: table; width: 100%; margin-top: -32px; }
 
@@ -1664,11 +1748,11 @@ body { padding-bottom: 60px; }
 
 .nav-main li > a { color: #999; line-height: 25px; }
 
-.nav-sidebar { background: #fafafa; margin: 0; padding: 15px; }
+.nav-sidebar { background: #e0e3e9; margin: 0; padding: 15px; }
 
 .nav-sidebar h3 { margin-top: 0; }
 
-.nav-sidebar .list-group-item { background: #fafafa; border: 0; padding-left: 0; }
+.nav-sidebar .list-group-item { background: #e0e3e9; border: 0; padding-left: 0; }
 
 .content { margin-top: 300px; }
 
@@ -1680,13 +1764,13 @@ h1.styleguide:first-child { margin-top: 0; }
 
 p.styleguide { font-size: 18px; margin: 0 0 30px; max-width: 700px; }
 
-.package-info { background: #fafafa; display: inline-block; font-weight: bold; padding: 15px; }
+.package-info { background: #e0e3e9; display: inline-block; font-weight: bold; padding: 15px; }
 
-.code-header { border-bottom: 1px solid #eee; line-height: 1.375; }
+.code-header { border-bottom: 1px solid #cbd7e4; line-height: 1.375; }
 
 .code-example { background: #fff; padding: 30px; }
 
-.styleguide-example { background-color: #eee; padding: 15px; }
+.styleguide-example { background-color: #cbd7e4; padding: 15px; }
 
 .styleguide-example.light { background-color: #fff; }
 
@@ -1702,11 +1786,11 @@ p.styleguide { font-size: 18px; margin: 0 0 30px; max-width: 700px; }
 
 .gray-light { background: #999; }
 
-.gray-lighter { background: #eee; }
+.gray-lighter { background: #cbd7e4; }
 
-.gray-lighten { background: #ddd; }
+.gray-lighten { background: #98adbb; }
 
-.gray-lightest, .variable-box { background: #fafafa; }
+.gray-lightest, .variable-box { background: #e0e3e9; }
 
 .text-color { background: #666; }
 
@@ -1714,25 +1798,25 @@ p.styleguide { font-size: 18px; margin: 0 0 30px; max-width: 700px; }
 
 .text-color-light { background: #999; }
 
-.ui-color-default { background: #ddd; }
+.ui-color-default { background: #98adbb; }
 
 .ui-color-light { background: #e0e3e9; }
 
-.ui-color-lighter { background: #eee; }
+.ui-color-lighter { background: #cbd7e4; }
 
-.ui-color-lightest { background: #fafafa; }
+.ui-color-lightest { background: #e0e3e9; }
 
 .white { background: #fff; }
 
-.brand-primary { background: #3eb991; }
+.brand-primary { background: #02ad55; }
 
-.brand-success { background: #3eb991; }
+.brand-success { background: #02ad55; }
 
-.brand-info { background: #0096d1; }
+.brand-info { background: #0077cd; }
 
-.brand-warning { background: #ffd34f; }
+.brand-warning { background: #fed83e; }
 
-.brand-danger { background: #f55065; }
+.brand-danger { background: #ff443d; }
 
 .button-demo-column { display: table-cell; padding-right: 15px; }
 
@@ -1741,3 +1825,15 @@ p.styleguide { font-size: 18px; margin: 0 0 30px; max-width: 700px; }
 .font-size-large { font-size: 18px; }
 
 .font-size-very-large { font-size: 60px; }
+
+.color-1 { background: #02ad55; }
+
+.color-2 { background: #fed83e; }
+
+.color-3 { background: #ff443d; }
+
+.color-4 { background: #0077cd; }
+
+.color-5 { background: #ff3e79; }
+
+.color-6 { background: #f46620; }

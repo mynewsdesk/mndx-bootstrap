@@ -31,7 +31,7 @@
       <section class="content">
         <div class="row">
           <div class="col-xs-12 col-md-9">
-            <span class="package-info">Version 6.3.1</span>
+            <span class="package-info">Version 6.6.0</span>
 <h1 id="alerts" class="styleguide">Alerts</h1>
 <p class="styleguide"> Alerts should always starts with a word that tell the user more about the feedback in short.</p><div class="codeExample">
   <div class="exampleOutput">
@@ -444,6 +444,40 @@
   
 </div>
 
+<h1 id="ButtonMessage" class="styleguide">Message with button</h1>
+<p class="styleguide">Icons for displaying an image of a user</p><div class="codeExample">
+  
+    <div class="tableExample">
+      <div class="exampleOutput">
+        
+<div class="ButtonMessage">
+  <div class="ButtonMessage__left">
+    <h3 class="ButtonMessage__heading">Getting started is easy</h3>
+    <p class="ButtonMessage__message">Create an account either with email or via Twitter.</p>
+  </div>
+  <div class="ButtonMessage__right">
+    <a class="btn ButtonMessage__button" href="/">Try us right now</a>
+  </div>
+</div>
+
+      </div>
+      <div class="codeBlock">
+        <div class="highlight">
+          <pre class="code-example"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ButtonMessage"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ButtonMessage__left"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"ButtonMessage__heading"</span><span class="nt">&gt;</span>Getting started is easy<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"ButtonMessage__message"</span><span class="nt">&gt;</span>Create an account either with email or via Twitter.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ButtonMessage__right"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn ButtonMessage__button"</span> <span class="na">href=</span><span class="s">"/"</span><span class="nt">&gt;</span>Try us right now<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></pre>
+        </div>
+      </div>
+    </div>
+  
+</div>
+
 <h1 id="content_list" class="styleguide">Content List</h1>
 <p class="styleguide">Custom list for editable content</p><div class="codeExample">
   <div class="exampleOutput">
@@ -525,6 +559,53 @@
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ContentList__column align-right"</span><span class="nt">&gt;&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-link ContentList__action"</span><span class="nt">&gt;</span>Tweet<span class="nt">&lt;/button&gt;&lt;/div&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="footer" class="styleguide">Footer</h1>
+<p class="styleguide">Poptype footer</p><div class="codeExample">
+  <div class="exampleOutput">
+    
+<footer class="PoptypeFooter">
+  <div class="PoptypeFooter__links">
+    <span class="PoptypeFooter__link PoptypeFooter__link--copyright">
+      © 2016 Poptype
+    </span>
+    <a href="#" class="PoptypeFooter__link" >Our Stories</a>
+    <a href="#" class="PoptypeFooter__link" >About</a>
+    <a href="#" class="PoptypeFooter__link" >Terms</a>
+    <a href="#" class="PoptypeFooter__link" >Privacy</a>
+  </div>
+
+  <div class="PoptypeFooter__social">
+    <a target="_blank" href="https://twitter.com/poptype" class="PoptypeFooter__link PoptypeFooter__link--facebook" >Facebook</a>
+    <a target="_blank" href="https://facebook.com/poptypeco" class="PoptypeFooter__link PoptypeFooter__link--twitter" >Twitter</a>
+    <a target="_blank" href="https://instagram.com/poptypeco" class="PoptypeFooter__link PoptypeFooter__link--instagram" >Instagram</a>
+  </div>
+</footer>
+
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre class="code-example"><span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"PoptypeFooter"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"PoptypeFooter__links"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"PoptypeFooter__link PoptypeFooter__link--copyright"</span><span class="nt">&gt;</span>
+      © 2016 Poptype
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"PoptypeFooter__link"</span> <span class="nt">&gt;</span>Our Stories<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"PoptypeFooter__link"</span> <span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"PoptypeFooter__link"</span> <span class="nt">&gt;</span>Terms<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"PoptypeFooter__link"</span> <span class="nt">&gt;</span>Privacy<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"PoptypeFooter__social"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">target=</span><span class="s">"_blank"</span> <span class="na">href=</span><span class="s">"https://twitter.com/poptype"</span> <span class="na">class=</span><span class="s">"PoptypeFooter__link PoptypeFooter__link--facebook"</span> <span class="nt">&gt;</span>Facebook<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">target=</span><span class="s">"_blank"</span> <span class="na">href=</span><span class="s">"https://facebook.com/poptypeco"</span> <span class="na">class=</span><span class="s">"PoptypeFooter__link PoptypeFooter__link--twitter"</span> <span class="nt">&gt;</span>Twitter<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">target=</span><span class="s">"_blank"</span> <span class="na">href=</span><span class="s">"https://instagram.com/poptypeco"</span> <span class="na">class=</span><span class="s">"PoptypeFooter__link PoptypeFooter__link--instagram"</span> <span class="nt">&gt;</span>Instagram<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/footer&gt;</span></pre>
     </div>
   </div>
 </div>
@@ -653,6 +734,49 @@
       <div class="codeBlock">
         <div class="highlight">
           <pre class="code-example"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-primary label-large"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/span&gt;</span></pre>
+        </div>
+      </div>
+    </div>
+  
+</div>
+
+<h1 id="navs" class="styleguide">Navs</h1>
+<div class="codeExample">
+  
+    <div class="tableExample">
+      <div class="exampleOutput">
+        <ul class="nav nav-tabs">
+  <li role="presentation" class="active">
+    <a href="#navs">Drafts</a>
+    <span>2</span>
+  </li>
+  <li role="presentation">
+    <a href="#navs">Posted</a>
+    <span>10</span>
+  </li>
+  <li role="presentation">
+    <a href="#navs">Archived</a>
+    <span>0</span>
+  </li>
+</ul>
+
+      </div>
+      <div class="codeBlock">
+        <div class="highlight">
+          <pre class="code-example"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#navs"</span><span class="nt">&gt;</span>Drafts<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;span&gt;</span>2<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#navs"</span><span class="nt">&gt;</span>Posted<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;span&gt;</span>10<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#navs"</span><span class="nt">&gt;</span>Archived<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;span&gt;</span>0<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></pre>
         </div>
       </div>
     </div>
@@ -822,6 +946,42 @@
   </div>
 </div>
 
+<h1 id="switch" class="styleguide">Switch</h1>
+<div class="codeExample">
+  
+    <div class="tableExample">
+      <div class="exampleOutput">
+        <div class="Switch">
+  <div class="Switch__circle" ></div>
+</div>
+      </div>
+      <div class="codeBlock">
+        <div class="highlight">
+          <pre class="code-example"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"Switch"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"Switch__circle"</span> <span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></pre>
+        </div>
+      </div>
+    </div>
+  
+    <div class="tableExample">
+      <div class="exampleOutput">
+        <div class="Switch Switch--active">
+  <div class="Switch__circle" ></div>
+</div>
+
+      </div>
+      <div class="codeBlock">
+        <div class="highlight">
+          <pre class="code-example"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"Switch Switch--active"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"Switch__circle"</span> <span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></pre>
+        </div>
+      </div>
+    </div>
+  
+</div>
+
 <h1 id="wells" class="styleguide">Wells</h1>
 <p class="styleguide">Use the well as a simple effect on an element to give it an inset effect.</p><div class="codeExample">
   <div class="exampleOutput">
@@ -873,7 +1033,11 @@
             
               <li class="list-group-item"><a href="#button_groups">Button groups</a></li>
             
+              <li class="list-group-item"><a href="#ButtonMessage">Message with button</a></li>
+            
               <li class="list-group-item"><a href="#content_list">Content List</a></li>
+            
+              <li class="list-group-item"><a href="#footer">Footer</a></li>
             
               <li class="list-group-item"><a href="#icons">Icons</a></li>
             
@@ -881,11 +1045,15 @@
             
               <li class="list-group-item"><a href="#labels">Labels</a></li>
             
+              <li class="list-group-item"><a href="#navs">Navs</a></li>
+            
               <li class="list-group-item"><a href="#poptip">Poptip</a></li>
             
               <li class="list-group-item"><a href="#progress_bar">Progress bars</a></li>
             
               <li class="list-group-item"><a href="#scoreboard">Scoreboard</a></li>
+            
+              <li class="list-group-item"><a href="#switch">Switch</a></li>
             
               <li class="list-group-item"><a href="#wells">Wells</a></li>
             

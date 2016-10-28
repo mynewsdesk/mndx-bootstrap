@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*doc --- title: Primary name: primary category: Colors --- Used for elements (i.e buttons, labels and ***) <div class="clearfix"> <div class="color-box brand-primary"> <span>$brand-primary</span> </div> <div class="color-box brand-success"> <span>$brand-success</span> </div> <div class="color-box brand-warning"> <span>$brand-warning</span> </div> <div class="color-box brand-danger"> <span>$brand-danger</span> </div> </div> */
+/*doc --- title: Primary name: primary category: Colors --- Used for elements (i.e buttons, labels and ***) <div class="clearfix"> <div class="color-box brand-primary"> <span>$brand-primary</span> </div> <div class="color-box brand-success"> <span>$brand-success</span> </div> <div class="color-box brand-warning"> <span>$brand-warning</span> </div> <div class="color-box brand-danger"> <span>$brand-danger</span> </div> <div class="color-box color-1"> <span>$color-poptype-green</span> </div> <div class="color-box  color-2"> <span>$color-poptype-yellow</span> </div> <div class="color-box  color-3"> <span>$color-poptype-red</span> </div> <div class="color-box color-4"> <span>$color-poptype-blue</span> </div> <div class="color-box color-5"> <span>$color-poptype-magenta</span> </div> <div class="color-box color-6"> <span>$color-poptype-orange</span> </div> </div> */
 /*doc --- title: Text name: text category: Colors --- Used for text, borders and list elements. <div class="clearfix"> <div class="color-box text-color"> <span>$text-color</span> </div> <div class="color-box text-color-dark"> <span>$text-color-dark</span> </div> <div class="color-box text-color-light"> <span>$text-color-light</span> </div> </div> */
 /*doc --- title: UI Colors name: ui-colors category: Colors --- Used for borders, background and dividers <div class="clearfix"> <div class="color-box ui-color-default"> <span>$ui-color-default</span> </div> <div class="color-box ui-color-light"> <span>$ui-color-light</span> </div> <div class="color-box ui-color-lighter"> <span>$ui-color-lighter</span> </div> <div class="color-box ui-color-lightest"> <span>$ui-color-lightest</span> </div> </div> */
 /*doc
@@ -25,14 +25,16 @@ parent: typo
 */
 /*doc --- title: Body copy name: body_copy parent: typo --- ```html_example <p class="lead"> <strong>.lead</strong> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs. Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger. Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter. Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round. Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin. </p> <p> Bacon ipsum dolor amet brisket chicken shank, turducken venison shoulder beef ribs. Shoulder kielbasa cupim filet mignon. Ham pork chop andouille bacon turducken jowl fatback filet mignon meatloaf landjaeger. Pork belly boudin brisket tri-tip sirloin hamburger shankle tenderloin meatball venison picanha frankfurter. Kevin picanha andouille meatball, sirloin kielbasa ribeye corned beef pork belly bacon ground round. Pancetta swine flank prosciutto meatball. Swine ball tip chicken hamburger pork sirloin. </p> ``` */
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Source+Sans+Pro:400,400italic,600,600italic,700,700italic);
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,500,500i,700");
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Source+Sans+Pro:400,400italic,600,600italic,700,700italic);
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,500,500i,700");
 h1 { font-weight: 700; }
 
 h1 small { display: block; font-size: 18px; margin-top: 10px; }
 
 .lead { font-weight: normal; }
 
-/*! Bootstrap v3.3.7 (http://getbootstrap.com) Copyright 2011-2016 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
+/*! Bootstrap v3.3.6 (http://getbootstrap.com) Copyright 2011-2015 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
@@ -667,15 +669,15 @@ td, th { padding: 0; }
 
 html { font-size: 10px; -webkit-tap-highlight-color: transparent; }
 
-body { font-family: "Source Sans Pro", Arial, sans-serif; font-size: 16px; line-height: 1.375; color: #666; background-color: #fff; }
+body { font-family: "Fira Sans", Arial, sans-serif; font-size: 16px; line-height: 1.375; color: #666; background-color: #fff; }
 
 input, button, select, textarea { font-family: inherit; font-size: inherit; line-height: inherit; }
 
-a { color: #0096d1; text-decoration: none; }
+a { color: #0077cd; text-decoration: none; }
 
 a:hover, a:focus { color: #23527c; text-decoration: underline; }
 
-a:focus { outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
+a:focus { outline: thin dotted; outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
 
 figure { margin: 0; }
 
@@ -697,7 +699,7 @@ hr { margin-top: 22px; margin-bottom: 22px; border: 0; border-top: 1px solid #ee
 
 [role="button"] { cursor: pointer; }
 
-h1, h2, h3, h4, h5, h6, .h1, .modal-header .modal-title, .h2, .h3, .h4, .h5, .h6 { font-family: inherit; font-weight: 600; line-height: 1.1; color: #333; }
+h1, h2, h3, h4, h5, h6, .h1, .modal-header .modal-title, .h2, .h3, .h4, .h5, .h6 { font-family: inherit; font-weight: 500; line-height: 1.1; color: #333; }
 
 h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .small, h5 small, h5 .small, h6 small, h6 .small, .h1 small, .modal-header .modal-title small, .h1 .small, .modal-header .modal-title .small, .h2 small, .h2 .small, .h3 small, .h3 .small, .h4 small, .h4 .small, .h5 small, .h5 .small, .h6 small, .h6 .small { font-weight: normal; line-height: 1; color: #777777; }
 
@@ -749,9 +751,9 @@ mark, .mark { background-color: #fcf8e3; padding: .2em; }
 
 .text-muted { color: #777777; }
 
-.text-primary { color: #3eb991; }
+.text-primary { color: #02ad55; }
 
-a.text-primary:hover, a.text-primary:focus { color: #319373; }
+a.text-primary:hover, a.text-primary:focus { color: #017b3c; }
 
 .text-success { color: #3c763d; }
 
@@ -771,9 +773,9 @@ a.text-danger:hover, a.text-danger:focus { color: #843534; }
 
 .bg-primary { color: #fff; }
 
-.bg-primary { background-color: #3eb991; }
+.bg-primary { background-color: #02ad55; }
 
-a.bg-primary:hover, a.bg-primary:focus { background-color: #319373; }
+a.bg-primary:hover, a.bg-primary:focus { background-color: #017b3c; }
 
 .bg-success { background-color: #dff0d8; }
 
@@ -1167,7 +1169,7 @@ th { text-align: left; }
 
 .table-bordered > thead > tr > th, .table-bordered > thead > tr > td { border-bottom-width: 2px; }
 
-.table-striped > tbody > tr:nth-of-type(odd) { background-color: #bdecff; }
+.table-striped > tbody > tr:nth-of-type(odd) { background-color: #b9e1ff; }
 
 .table-hover > tbody > tr:hover { background-color: #f5f5f5; }
 
@@ -1221,7 +1223,7 @@ input[type="range"] { display: block; width: 100%; }
 
 select[multiple], select[size] { height: auto; }
 
-input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus { outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
+input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus { outline: thin dotted; outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
 
 output { display: block; padding-top: 13px; font-size: 16px; line-height: 1.375; color: #555555; }
 
@@ -1379,7 +1381,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
 
 .btn { display: inline-block; margin-bottom: 0; font-weight: 400; text-align: center; vertical-align: middle; touch-action: manipulation; cursor: pointer; background-image: none; border: 1px solid transparent; white-space: nowrap; padding: 12px 15px; font-size: 16px; line-height: 1.375; border-radius: 6px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 
-.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus { outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
+.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus { outline: thin dotted; outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
 
 .btn:hover, .btn:focus, .btn.focus { color: #666; text-decoration: none; }
 
@@ -1405,87 +1407,87 @@ a.btn.disabled, fieldset[disabled] a.btn { pointer-events: none; }
 
 .btn-default .badge, .btn-primary:disabled .badge { color: #fff; background-color: #666; }
 
-.btn-primary { color: #fff; background-color: #3eb991; border-color: #3eb991; }
+.btn-primary { color: #fff; background-color: #02ad55; border-color: #02ad55; }
 
-.btn-primary:focus, .btn-primary.focus { color: #fff; background-color: #319373; border-color: #1e5a46; }
+.btn-primary:focus, .btn-primary.focus { color: #fff; background-color: #017b3c; border-color: #012f17; }
 
-.btn-primary:hover { color: #fff; background-color: #319373; border-color: #2f8b6d; }
+.btn-primary:hover { color: #fff; background-color: #017b3c; border-color: #017037; }
 
-.btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle { color: #fff; background-color: #319373; border-color: #2f8b6d; }
+.btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle { color: #fff; background-color: #017b3c; border-color: #017037; }
 
-.btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus { color: #fff; background-color: #28785e; border-color: #1e5a46; }
+.btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus { color: #fff; background-color: #01572b; border-color: #012f17; }
 
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle { background-image: none; }
 
-.btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus { background-color: #3eb991; border-color: #3eb991; }
+.btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus { background-color: #02ad55; border-color: #02ad55; }
 
-.btn-primary .badge { color: #3eb991; background-color: #fff; }
+.btn-primary .badge { color: #02ad55; background-color: #fff; }
 
-.btn-success { color: #fff; background-color: #3eb991; border-color: #3eb991; }
+.btn-success { color: #fff; background-color: #02ad55; border-color: #02ad55; }
 
-.btn-success:focus, .btn-success.focus { color: #fff; background-color: #319373; border-color: #1e5a46; }
+.btn-success:focus, .btn-success.focus { color: #fff; background-color: #017b3c; border-color: #012f17; }
 
-.btn-success:hover { color: #fff; background-color: #319373; border-color: #2f8b6d; }
+.btn-success:hover { color: #fff; background-color: #017b3c; border-color: #017037; }
 
-.btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle { color: #fff; background-color: #319373; border-color: #2f8b6d; }
+.btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle { color: #fff; background-color: #017b3c; border-color: #017037; }
 
-.btn-success:active:hover, .btn-success:active:focus, .btn-success:active.focus, .btn-success.active:hover, .btn-success.active:focus, .btn-success.active.focus, .open > .btn-success.dropdown-toggle:hover, .open > .btn-success.dropdown-toggle:focus, .open > .btn-success.dropdown-toggle.focus { color: #fff; background-color: #28785e; border-color: #1e5a46; }
+.btn-success:active:hover, .btn-success:active:focus, .btn-success:active.focus, .btn-success.active:hover, .btn-success.active:focus, .btn-success.active.focus, .open > .btn-success.dropdown-toggle:hover, .open > .btn-success.dropdown-toggle:focus, .open > .btn-success.dropdown-toggle.focus { color: #fff; background-color: #01572b; border-color: #012f17; }
 
 .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle { background-image: none; }
 
-.btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled.focus, .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled].focus, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success.focus { background-color: #3eb991; border-color: #3eb991; }
+.btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled.focus, .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled].focus, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success.focus { background-color: #02ad55; border-color: #02ad55; }
 
-.btn-success .badge { color: #3eb991; background-color: #fff; }
+.btn-success .badge { color: #02ad55; background-color: #fff; }
 
-.btn-info { color: #fff; background-color: #0096d1; border-color: #0096d1; }
+.btn-info { color: #fff; background-color: #0077cd; border-color: #0077cd; }
 
-.btn-info:focus, .btn-info.focus { color: #fff; background-color: #00719e; border-color: #003a52; }
+.btn-info:focus, .btn-info.focus { color: #fff; background-color: #00599a; border-color: #002d4e; }
 
-.btn-info:hover { color: #fff; background-color: #00719e; border-color: #006a94; }
+.btn-info:hover { color: #fff; background-color: #00599a; border-color: #005390; }
 
-.btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle { color: #fff; background-color: #00719e; border-color: #006a94; }
+.btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle { color: #fff; background-color: #00599a; border-color: #005390; }
 
-.btn-info:active:hover, .btn-info:active:focus, .btn-info:active.focus, .btn-info.active:hover, .btn-info.active:focus, .btn-info.active.focus, .open > .btn-info.dropdown-toggle:hover, .open > .btn-info.dropdown-toggle:focus, .open > .btn-info.dropdown-toggle.focus { color: #fff; background-color: #00587a; border-color: #003a52; }
+.btn-info:active:hover, .btn-info:active:focus, .btn-info:active.focus, .btn-info.active:hover, .btn-info.active:focus, .btn-info.active.focus, .open > .btn-info.dropdown-toggle:hover, .open > .btn-info.dropdown-toggle:focus, .open > .btn-info.dropdown-toggle.focus { color: #fff; background-color: #004576; border-color: #002d4e; }
 
 .btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle { background-image: none; }
 
-.btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled.focus, .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled].focus, fieldset[disabled] .btn-info:hover, fieldset[disabled] .btn-info:focus, fieldset[disabled] .btn-info.focus { background-color: #0096d1; border-color: #0096d1; }
+.btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled.focus, .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled].focus, fieldset[disabled] .btn-info:hover, fieldset[disabled] .btn-info:focus, fieldset[disabled] .btn-info.focus { background-color: #0077cd; border-color: #0077cd; }
 
-.btn-info .badge { color: #0096d1; background-color: #fff; }
+.btn-info .badge { color: #0077cd; background-color: #fff; }
 
-.btn-warning { color: #fff; background-color: #ffd34f; border-color: #ffd34f; }
+.btn-warning { color: #fff; background-color: #fed83e; border-color: #fed83e; }
 
-.btn-warning:focus, .btn-warning.focus { color: #fff; background-color: #ffc61c; border-color: #cf9b00; }
+.btn-warning:focus, .btn-warning.focus { color: #fff; background-color: #fece0b; border-color: #bc9701; }
 
-.btn-warning:hover { color: #fff; background-color: #ffc61c; border-color: #ffc412; }
+.btn-warning:hover { color: #fff; background-color: #fece0b; border-color: #fdcc01; }
 
-.btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle { color: #fff; background-color: #ffc61c; border-color: #ffc412; }
+.btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle { color: #fff; background-color: #fece0b; border-color: #fdcc01; }
 
-.btn-warning:active:hover, .btn-warning:active:focus, .btn-warning:active.focus, .btn-warning.active:hover, .btn-warning.active:focus, .btn-warning.active.focus, .open > .btn-warning.dropdown-toggle:hover, .open > .btn-warning.dropdown-toggle:focus, .open > .btn-warning.dropdown-toggle.focus { color: #fff; background-color: #f7b900; border-color: #cf9b00; }
+.btn-warning:active:hover, .btn-warning:active:focus, .btn-warning:active.focus, .btn-warning.active:hover, .btn-warning.active:focus, .btn-warning.active.focus, .open > .btn-warning.dropdown-toggle:hover, .open > .btn-warning.dropdown-toggle:focus, .open > .btn-warning.dropdown-toggle.focus { color: #fff; background-color: #e4b701; border-color: #bc9701; }
 
 .btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle { background-image: none; }
 
-.btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled.focus, .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled].focus, fieldset[disabled] .btn-warning:hover, fieldset[disabled] .btn-warning:focus, fieldset[disabled] .btn-warning.focus { background-color: #ffd34f; border-color: #ffd34f; }
+.btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled.focus, .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled].focus, fieldset[disabled] .btn-warning:hover, fieldset[disabled] .btn-warning:focus, fieldset[disabled] .btn-warning.focus { background-color: #fed83e; border-color: #fed83e; }
 
-.btn-warning .badge { color: #ffd34f; background-color: #fff; }
+.btn-warning .badge { color: #fed83e; background-color: #fff; }
 
-.btn-danger { color: #fff; background-color: #f55065; border-color: #f55065; }
+.btn-danger { color: #fff; background-color: #ff443d; border-color: #ff443d; }
 
-.btn-danger:focus, .btn-danger.focus { color: #fff; background-color: #f2203b; border-color: #bb0b21; }
+.btn-danger:focus, .btn-danger.focus { color: #fff; background-color: #ff130a; border-color: #bd0700; }
 
-.btn-danger:hover { color: #fff; background-color: #f2203b; border-color: #f21632; }
+.btn-danger:hover { color: #fff; background-color: #ff130a; border-color: #ff0900; }
 
-.btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle { color: #fff; background-color: #f2203b; border-color: #f21632; }
+.btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle { color: #fff; background-color: #ff130a; border-color: #ff0900; }
 
-.btn-danger:active:hover, .btn-danger:active:focus, .btn-danger:active.focus, .btn-danger.active:hover, .btn-danger.active:focus, .btn-danger.active.focus, .open > .btn-danger.dropdown-toggle:hover, .open > .btn-danger.dropdown-toggle:focus, .open > .btn-danger.dropdown-toggle.focus { color: #fff; background-color: #e10d28; border-color: #bb0b21; }
+.btn-danger:active:hover, .btn-danger:active:focus, .btn-danger:active.focus, .btn-danger.active:hover, .btn-danger.active:focus, .btn-danger.active.focus, .open > .btn-danger.dropdown-toggle:hover, .open > .btn-danger.dropdown-toggle:focus, .open > .btn-danger.dropdown-toggle.focus { color: #fff; background-color: #e50800; border-color: #bd0700; }
 
 .btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle { background-image: none; }
 
-.btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled.focus, .btn-danger[disabled]:hover, .btn-danger[disabled]:focus, .btn-danger[disabled].focus, fieldset[disabled] .btn-danger:hover, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger.focus { background-color: #f55065; border-color: #f55065; }
+.btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled.focus, .btn-danger[disabled]:hover, .btn-danger[disabled]:focus, .btn-danger[disabled].focus, fieldset[disabled] .btn-danger:hover, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger.focus { background-color: #ff443d; border-color: #ff443d; }
 
-.btn-danger .badge { color: #f55065; background-color: #fff; }
+.btn-danger .badge { color: #ff443d; background-color: #fff; }
 
-.btn-link { color: #0096d1; font-weight: normal; border-radius: 0; }
+.btn-link { color: #0077cd; font-weight: normal; border-radius: 0; }
 
 .btn-link, .btn-link:active, .btn-link.active, .btn-link[disabled], fieldset[disabled] .btn-link { background-color: transparent; -webkit-box-shadow: none; box-shadow: none; }
 
@@ -1698,27 +1700,27 @@ tbody.collapse.in { display: table-row-group; }
 
 .nav > li > a { position: relative; display: block; padding: 10px 15px; }
 
-.nav > li > a:hover, .nav > li > a:focus { text-decoration: none; background-color: #eeeeee; }
+.nav > li > a:hover, .nav > li > a:focus { text-decoration: none; background-color: none; }
 
 .nav > li.disabled > a { color: #777777; }
 
 .nav > li.disabled > a:hover, .nav > li.disabled > a:focus { color: #777777; text-decoration: none; background-color: transparent; cursor: not-allowed; }
 
-.nav .open > a, .nav .open > a:hover, .nav .open > a:focus { background-color: #eeeeee; border-color: #0096d1; }
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus { background-color: none; border-color: #0077cd; }
 
 .nav .nav-divider { height: 1px; margin: 10px 0; overflow: hidden; background-color: #e5e5e5; }
 
 .nav > li > a > img { max-width: none; }
 
-.nav-tabs { border-bottom: 1px solid #ddd; }
+.nav-tabs { border-bottom: 1px solid #e0e3e9; }
 
 .nav-tabs > li { float: left; margin-bottom: -1px; }
 
 .nav-tabs > li > a { margin-right: 2px; line-height: 1.375; border: 1px solid transparent; border-radius: 6px 6px 0 0; }
 
-.nav-tabs > li > a:hover { border-color: #eeeeee #eeeeee #ddd; }
+.nav-tabs > li > a:hover { border-color: #eeeeee #eeeeee #e0e3e9; }
 
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus { color: #555555; background-color: #fff; border: 1px solid #ddd; border-bottom-color: transparent; cursor: default; }
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus { color: #555555; background-color: none; border: 1px solid #ddd; border-bottom-color: transparent; cursor: default; }
 
 .nav-pills > li { float: left; }
 
@@ -1891,7 +1893,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .navbar-default .navbar-toggle { border-color: #ddd; }
 
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus { background-color: #eee; }
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus { background-color: #cbd7e4; }
 
 .navbar-default .navbar-toggle .icon-bar { background-color: #999; }
 
@@ -2023,25 +2025,25 @@ a.label:hover, a.label:focus { color: #fff; text-decoration: none; cursor: point
 
 .label-default[href]:hover, .label-default[href]:focus { background-color: gray; }
 
-.label-primary { background-color: #3eb991; }
+.label-primary { background-color: #02ad55; }
 
-.label-primary[href]:hover, .label-primary[href]:focus { background-color: #319373; }
+.label-primary[href]:hover, .label-primary[href]:focus { background-color: #017b3c; }
 
-.label-success { background-color: #3eb991; }
+.label-success { background-color: #02ad55; }
 
-.label-success[href]:hover, .label-success[href]:focus { background-color: #319373; }
+.label-success[href]:hover, .label-success[href]:focus { background-color: #017b3c; }
 
-.label-info { background-color: #0096d1; }
+.label-info { background-color: #0077cd; }
 
-.label-info[href]:hover, .label-info[href]:focus { background-color: #00719e; }
+.label-info[href]:hover, .label-info[href]:focus { background-color: #00599a; }
 
-.label-warning { background-color: #ffd34f; }
+.label-warning { background-color: #fed83e; }
 
-.label-warning[href]:hover, .label-warning[href]:focus { background-color: #ffc61c; }
+.label-warning[href]:hover, .label-warning[href]:focus { background-color: #fece0b; }
 
-.label-danger { background-color: #f55065; }
+.label-danger { background-color: #ff443d; }
 
-.label-danger[href]:hover, .label-danger[href]:focus { background-color: #f2203b; }
+.label-danger[href]:hover, .label-danger[href]:focus { background-color: #ff130a; }
 
 .badge { display: inline-block; min-width: 10px; padding: 3px 7px; font-size: 14px; font-weight: bold; color: #fff; line-height: 1; vertical-align: middle; white-space: nowrap; text-align: center; background-color: #777777; border-radius: 10px; }
 
@@ -2083,7 +2085,7 @@ a.badge:hover, a.badge:focus { color: #fff; text-decoration: none; cursor: point
 
 .thumbnail .caption { padding: 9px; color: #333333; }
 
-a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active { border-color: #0096d1; }
+a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active { border-color: #0077cd; }
 
 .alert { padding: 15px; margin-bottom: 22px; border: 1px solid transparent; border-radius: 6px; }
 
@@ -2099,29 +2101,29 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active { border-color: #0096d1
 
 .alert-dismissable .close, .alert-dismissible .close { position: relative; top: -2px; right: -21px; color: inherit; }
 
-.alert-success { background-color: #d8f1e9; border-color: #d8f1e9; color: #1f5d49; }
+.alert-success { background-color: #ccefdd; border-color: #ccefdd; color: #01572b; }
 
-.alert-success hr { border-top-color: #c5eade; }
+.alert-success hr { border-top-color: #b9e9d0; }
 
-.alert-success .alert-link { color: #12372b; }
+.alert-success .alert-link { color: #002512; }
 
-.alert-info { background-color: #cceaf6; border-color: #cceaf6; color: #004b69; }
+.alert-info { background-color: #cce4f5; border-color: #cce4f5; color: #003c67; }
 
-.alert-info hr { border-top-color: #b6e1f2; }
+.alert-info hr { border-top-color: #b7d9f1; }
 
-.alert-info .alert-link { color: #002736; }
+.alert-info .alert-link { color: #001e34; }
 
-.alert-warning { background-color: #fff6dc; border-color: #fff6dc; color: #806a28; }
+.alert-warning { background-color: #fff7d8; border-color: #fff7d8; color: #7f6c1f; }
 
-.alert-warning hr { border-top-color: #ffefc3; }
+.alert-warning hr { border-top-color: #fff2bf; }
 
-.alert-warning .alert-link { color: #594a1c; }
+.alert-warning .alert-link { color: #564915; }
 
-.alert-danger { background-color: #fddce0; border-color: #fddce0; color: #7b2833; }
+.alert-danger { background-color: #ffdad8; border-color: #ffdad8; color: #80221f; }
 
-.alert-danger hr { border-top-color: #fcc4cb; }
+.alert-danger hr { border-top-color: #ffc2bf; }
 
-.alert-danger .alert-link { color: #551b23; }
+.alert-danger .alert-link { color: #571715; }
 
 @-webkit-keyframes progress-bar-stripes { from { background-position: 40px 0; }
   to { background-position: 0 0; } }
@@ -2131,25 +2133,25 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active { border-color: #0096d1
 
 .progress { overflow: hidden; height: 22px; margin-bottom: 22px; background-color: #f5f5f5; border-radius: 6px; -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); }
 
-.progress-bar { float: left; width: 0%; height: 100%; font-size: 14px; line-height: 22px; color: #fff; text-align: center; background-color: #3eb991; -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15); box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15); -webkit-transition: width 0.6s ease; -o-transition: width 0.6s ease; transition: width 0.6s ease; }
+.progress-bar { float: left; width: 0%; height: 100%; font-size: 14px; line-height: 22px; color: #fff; text-align: center; background-color: #02ad55; -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15); box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15); -webkit-transition: width 0.6s ease; -o-transition: width 0.6s ease; transition: width 0.6s ease; }
 
 .progress-striped .progress-bar, .progress-bar-striped { background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); background-size: 40px 40px; }
 
 .progress.active .progress-bar, .progress-bar.active { -webkit-animation: progress-bar-stripes 2s linear infinite; -o-animation: progress-bar-stripes 2s linear infinite; animation: progress-bar-stripes 2s linear infinite; }
 
-.progress-bar-success { background-color: #3eb991; }
+.progress-bar-success { background-color: #02ad55; }
 
 .progress-striped .progress-bar-success { background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
 
-.progress-bar-info { background-color: #0096d1; }
+.progress-bar-info { background-color: #0077cd; }
 
 .progress-striped .progress-bar-info { background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
 
-.progress-bar-warning { background-color: #ffd34f; }
+.progress-bar-warning { background-color: #fed83e; }
 
 .progress-striped .progress-bar-warning { background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
 
-.progress-bar-danger { background-color: #f55065; }
+.progress-bar-danger { background-color: #ff443d; }
 
 .progress-striped .progress-bar-danger { background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
 
@@ -2467,7 +2469,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 @media (min-width: 992px) { .modal-lg { width: 900px; } }
 
-.tooltip { position: absolute; z-index: 1070; display: block; font-family: "Source Sans Pro", Arial, sans-serif; font-style: normal; font-weight: normal; letter-spacing: normal; line-break: auto; line-height: 1.375; text-align: left; text-align: start; text-decoration: none; text-shadow: none; text-transform: none; white-space: normal; word-break: normal; word-spacing: normal; word-wrap: normal; font-size: 14px; opacity: 0; filter: alpha(opacity=0); }
+.tooltip { position: absolute; z-index: 1070; display: block; font-family: "Fira Sans", Arial, sans-serif; font-style: normal; font-weight: normal; letter-spacing: normal; line-break: auto; line-height: 1.375; text-align: left; text-align: start; text-decoration: none; text-shadow: none; text-transform: none; white-space: normal; word-break: normal; word-spacing: normal; word-wrap: normal; font-size: 14px; opacity: 0; filter: alpha(opacity=0); }
 
 .tooltip.in { opacity: 0.9; filter: alpha(opacity=90); }
 
@@ -2499,7 +2501,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .tooltip.bottom-right .tooltip-arrow { top: 0; left: 5px; margin-top: -5px; border-width: 0 5px 5px; border-bottom-color: #000; }
 
-.popover { position: absolute; top: 0; left: 0; z-index: 1060; display: none; max-width: 276px; padding: 1px; font-family: "Source Sans Pro", Arial, sans-serif; font-style: normal; font-weight: normal; letter-spacing: normal; line-break: auto; line-height: 1.375; text-align: left; text-align: start; text-decoration: none; text-shadow: none; text-transform: none; white-space: normal; word-break: normal; word-spacing: normal; word-wrap: normal; font-size: 16px; background-color: #fff; background-clip: padding-box; border: 1px solid #ccc; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 6px; -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+.popover { position: absolute; top: 0; left: 0; z-index: 1060; display: none; max-width: 276px; padding: 1px; font-family: "Fira Sans", Arial, sans-serif; font-style: normal; font-weight: normal; letter-spacing: normal; line-break: auto; line-height: 1.375; text-align: left; text-align: start; text-decoration: none; text-shadow: none; text-transform: none; white-space: normal; word-break: normal; word-spacing: normal; word-wrap: normal; font-size: 16px; background-color: #fff; background-clip: padding-box; border: 1px solid #ccc; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 6px; -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
 
 .popover.top { margin-top: -10px; }
 
@@ -2711,7 +2713,7 @@ body { -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; 
 
 body #sb-site a[name] { content: ""; display: block; height: 76px; margin-top: -76px; }
 
-/*doc --- title: Primary name: primary category: Colors --- Used for elements (i.e buttons, labels and ***) <div class="clearfix"> <div class="color-box brand-primary"> <span>$brand-primary</span> </div> <div class="color-box brand-success"> <span>$brand-success</span> </div> <div class="color-box brand-warning"> <span>$brand-warning</span> </div> <div class="color-box brand-danger"> <span>$brand-danger</span> </div> </div> */
+/*doc --- title: Primary name: primary category: Colors --- Used for elements (i.e buttons, labels and ***) <div class="clearfix"> <div class="color-box brand-primary"> <span>$brand-primary</span> </div> <div class="color-box brand-success"> <span>$brand-success</span> </div> <div class="color-box brand-warning"> <span>$brand-warning</span> </div> <div class="color-box brand-danger"> <span>$brand-danger</span> </div> <div class="color-box color-1"> <span>$color-poptype-green</span> </div> <div class="color-box  color-2"> <span>$color-poptype-yellow</span> </div> <div class="color-box  color-3"> <span>$color-poptype-red</span> </div> <div class="color-box color-4"> <span>$color-poptype-blue</span> </div> <div class="color-box color-5"> <span>$color-poptype-magenta</span> </div> <div class="color-box color-6"> <span>$color-poptype-orange</span> </div> </div> */
 /*doc --- title: Text name: text category: Colors --- Used for text, borders and list elements. <div class="clearfix"> <div class="color-box text-color"> <span>$text-color</span> </div> <div class="color-box text-color-dark"> <span>$text-color-dark</span> </div> <div class="color-box text-color-light"> <span>$text-color-light</span> </div> </div> */
 /*doc --- title: UI Colors name: ui-colors category: Colors --- Used for borders, background and dividers <div class="clearfix"> <div class="color-box ui-color-default"> <span>$ui-color-default</span> </div> <div class="color-box ui-color-light"> <span>$ui-color-light</span> </div> <div class="color-box ui-color-lighter"> <span>$ui-color-lighter</span> </div> <div class="color-box ui-color-lightest"> <span>$ui-color-lightest</span> </div> </div> */
 /*doc
@@ -2795,7 +2797,7 @@ h1 small { display: block; font-size: 18px; margin-top: 10px; }
 
 .btn-default.btn-linkedin-active:hover, .btn-linkedin-active.btn-primary:hover:disabled { color: #fff; background-color: #005582; }
 
-.btn { font-weight: 600; margin-left: 20px; padding-bottom: 13px; padding-top: 11px; }
+.btn { font-weight: 500; margin-left: 20px; padding-bottom: 8px; padding-top: 7px; }
 
 .btn:first-child { margin-left: 0; }
 
@@ -2807,9 +2809,9 @@ h1 small { display: block; font-size: 18px; margin-top: 10px; }
 
 .btn-default:disabled:hover, .btn-primary:disabled:hover { color: #666; }
 
-.btn-primary:hover { background: #319373; border-color: #319373; color: #fff; }
+.btn-primary:hover { background: #017b3c; border-color: #017b3c; color: #fff; }
 
-.btn-primary:active, .btn-primary:focus, .btn-primary:active:focus { background: #246d55; border-color: #246d55; box-shadow: none; color: #fff; }
+.btn-primary:active, .btn-primary:focus, .btn-primary:active:focus { background: #014823; border-color: #014823; box-shadow: none; color: #fff; }
 
 .btn-wide { display: inline-block; text-align: left; width: 100%; }
 
@@ -2819,13 +2821,15 @@ h1 small { display: block; font-size: 18px; margin-top: 10px; }
 
 .btn.no-margin { margin: 0; }
 
+.btn.no-ui { border: 0; margin: 0; padding: 0; }
+
 .btn-first { margin-left: 0; }
 
 .btn-last { margin-right: 0; }
 
-[disabled].btn-primary:disabled { opacity: 0.4; filter: alpha(opacity=40); background: #3eb991; color: #fff; }
+[disabled].btn-primary:disabled { background: #02ad55; color: #fff; }
 
-[disabled].btn-primary:disabled:hover { background: #3eb991; }
+[disabled].btn-primary:disabled:hover { background: #02ad55; }
 
 /*doc
 //---
@@ -2837,15 +2841,15 @@ h1 small { display: block; font-size: 18px; margin-top: 10px; }
 /*doc --- title: Forms name: forms category: CSS --- ```html_example_table <form> <div class="form-group"> <label for="to">Default</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> </div> <div class="form-group has-success"> <label for="to">Success</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-success has-feedback"> <label for="to">Success</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <span class="fa fa-icon fa-check form-control-feedback"></span> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-warning"> <label for="to">Warning</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-error"> <label for="to">Error</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group has-error has-feedback"> <label for="to">Error</label> <input type="email" class="form-control" id="to" placeholder="Enter email"> <span class="fa fa-icon fa-close form-control-feedback"></span> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group"> <label for="to">addonBefore</label> <div class="input-group"> <div class="input-group-addon">poptype.co/</div> <input type="email" class="form-control" id="to" placeholder="your-name-here"> </div> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group"> <label for="to">Disabled input</label> <input type="email" class="form-control" id="to" placeholder=":disabled" disabled> <p class="help-block">Example block-level help text here.</p> </div> <div class="form-group"> <label for="message">Textarea</label> <textarea class="form-control" id="subject" placeholder="Enter message"></textarea> </div> <div class="form-group"> <div class="checkbox"> <label> <input type="checkbox" name="samecheck"> Check me out </label> <br> <label> <input type="checkbox" name="samecheck"> Check me out again </label> </div> </div> <div class="form-group"> <div class="radio"> <label> <input type="radio" name="sameradio"> Check me out </label> <br> <label> <input type="radio" name="sameradio"> Check me out again </label> </div> </div> <div class="form-group"> <select class="form-control"> <option>option 1</option> <option>option 2</option> <option>option 3</option> <option>option 4</option> </select> </div> <h3>Input button</h3> <div class="input-group"> <input class="form-control" type="text"> <span class="input-group-btn"> <div class="btn-group"> <button class="btn btn-default" type="button">Show</button> </div> </span> </div> <div class="form-group text-right form-actions"> <button type="reset" class="btn btn-default">Cancel</button> <button type="submit" class="btn btn-primary">Submit</button> </div> <div class="form-group"> <label for="formControlsEmail" class="control-label">Locked field</label> <span class="input-group"> <input disabled type="text" id="formControlsEmail" class="fake-field-text form-control" value="locked-field@example.org"> <span class="input-group-addon fake-field-addon"><i name="lock" class="fa fa-lock"></i></span> </span> </div> </form> <form> <div class="form-group"> <label for="form-links">Form links example</label> <input type="text" class="form-control" id="form-links" placeholder="Organization name"> </div> <button type="submit" class="btn btn-primary pull-right">Submit</button> <div class="form-group form-links"> <a href="#" class="pull-left">Link one</a> <a href="#" class="pull-left">Link two</a> <a href="#" class="pull-right">Link three</a> </div> </form> ``` */
 .form-group { margin-bottom: 30px; }
 
-.form-group.has-error label { color: #f55065; }
+.form-group.has-error label { color: #ff443d; }
 
 .form-group .help-block { font-size: 14px; margin-top: 15px; }
 
 .form-actions { padding-top: 20px; }
 
-.input-group-addon { border: 2px solid #ddd; }
+.input-group-addon { border: 1px solid #98adbb; }
 
-.form-control { background: #fff; border: 2px solid #ddd; box-shadow: none; padding: 12px 15px 14px; }
+.form-control { background: #fff; border: 1px solid #98adbb; box-shadow: none; padding: 7px  15px 8px; }
 
 .form-control::-webkit-input-placeholder { color: #999; font-style: italic; }
 
@@ -2857,13 +2861,13 @@ h1 small { display: block; font-size: 18px; margin-top: 10px; }
 
 .form-control:hover { border-color: #aaa; }
 
-.form-control:focus { border-color: #0096d1; box-shadow: 0px 0px 3px 0px rgba(33, 115, 210, 0.3); }
+.form-control:focus { border-color: #0077cd; box-shadow: 0px 0px 3px 0px rgba(33, 115, 210, 0.3); }
 
-.form-control[disabled] { background-color: #fafafa; border-color: #ddd; }
+.form-control[disabled] { background-color: #e0e3e9; border-color: #98adbb; }
 
 .has-error .form-control, .has-warning .form-control, .has-success .form-control { box-shadow: none; }
 
-.has-error .form-control:focus, .has-warning .form-control:focus, .has-success .form-control:focus { border-color: #0096d1; box-shadow: 0px 0px 3px 0px rgba(33, 115, 210, 0.3); }
+.has-error .form-control:focus, .has-warning .form-control:focus, .has-success .form-control:focus { border-color: #0077cd; box-shadow: 0px 0px 3px 0px rgba(33, 115, 210, 0.3); }
 
 .has-feedback .form-control-feedback { line-height: 48px; }
 
@@ -2881,13 +2885,13 @@ textarea { resize: vertical; }
 
 .form-links a.pull-left:first-child { padding-left: 0; }
 
-.input-group-btn .btn { background: #ddd; border-radius: 6px; }
+.input-group-btn .btn { background: #e0e3e9; border-radius: 6px; padding: 13px 15px 12px; }
 
 .fake-field { border: 0; }
 
-.fake-field-text { background: #eee; border: 0; color: #333; }
+.fake-field-text { background: #cbd7e4; border: 0; color: #333; }
 
-.fake-field-addon { background-color: #fafafa; border-color: #fafafa; }
+.fake-field-addon { background-color: #e0e3e9; border-color: #e0e3e9; }
 
 .container-fluid { padding-left: 20px; padding-right: 20px; }
 
@@ -2905,8 +2909,32 @@ textarea { resize: vertical; }
 //category: CSS
 //---
 */
-/*doc --- title: Horizontal Rule name: hr category: CSS --- ```html_example <p> this is some text-color </p> <hr> <p> this is more text text </p> ``` */
+/*doc
+---
+title: Horizontal Rule
+name: hr
+category: CSS
+---
+
+```html_example
+<p>
+  this is some text-color
+</p>
+<hr>
+<p>
+  this is more text text
+</p>
+```
+
+```html_example
+<p>Here's another example</p>
+<hr class="small">
+<p>With smaller margin</p>
+```
+*/
 hr { margin: 60px 0; }
+
+hr.small { margin: 15px 0; }
 
 /*doc
 //---
@@ -2931,16 +2959,16 @@ hr { margin: 60px 0; }
 .alert-dismissable .close, .alert-dismissible .close { right: -12px; top: 0; }
 
 /*doc --- title: Avatar icon name: avatar category: Components --- Icons for displaying an image of a user ```html_example_table <div class="avatar"> <div class="avatar-image"> <img src="https://res.cloudinary.com/mndx/image/upload/c_limit,h_45/tqrjlmxpvanmt4r0ympg" /> </div> </div> <div class="avatar"> <div class="avatar-name">A</div> </div> <div class="avatar avatar-large"> <div class="avatar-name">A</div> </div> <div class="avatar avatar-large"> <div class="avatar-name avatar-name-hidden">A</div> </div> <div class="avatar avatar-large"> <div class="avatar-image"> <img src="https://res.cloudinary.com/mndx/image/upload/c_limit,h_100/tqrjlmxpvanmt4r0ympg" /> </div> </div> ``` */
-/*doc --- title: Primary name: primary category: Colors --- Used for elements (i.e buttons, labels and ***) <div class="clearfix"> <div class="color-box brand-primary"> <span>$brand-primary</span> </div> <div class="color-box brand-success"> <span>$brand-success</span> </div> <div class="color-box brand-warning"> <span>$brand-warning</span> </div> <div class="color-box brand-danger"> <span>$brand-danger</span> </div> </div> */
+/*doc --- title: Primary name: primary category: Colors --- Used for elements (i.e buttons, labels and ***) <div class="clearfix"> <div class="color-box brand-primary"> <span>$brand-primary</span> </div> <div class="color-box brand-success"> <span>$brand-success</span> </div> <div class="color-box brand-warning"> <span>$brand-warning</span> </div> <div class="color-box brand-danger"> <span>$brand-danger</span> </div> <div class="color-box color-1"> <span>$color-poptype-green</span> </div> <div class="color-box  color-2"> <span>$color-poptype-yellow</span> </div> <div class="color-box  color-3"> <span>$color-poptype-red</span> </div> <div class="color-box color-4"> <span>$color-poptype-blue</span> </div> <div class="color-box color-5"> <span>$color-poptype-magenta</span> </div> <div class="color-box color-6"> <span>$color-poptype-orange</span> </div> </div> */
 /*doc --- title: Text name: text category: Colors --- Used for text, borders and list elements. <div class="clearfix"> <div class="color-box text-color"> <span>$text-color</span> </div> <div class="color-box text-color-dark"> <span>$text-color-dark</span> </div> <div class="color-box text-color-light"> <span>$text-color-light</span> </div> </div> */
 /*doc --- title: UI Colors name: ui-colors category: Colors --- Used for borders, background and dividers <div class="clearfix"> <div class="color-box ui-color-default"> <span>$ui-color-default</span> </div> <div class="color-box ui-color-light"> <span>$ui-color-light</span> </div> <div class="color-box ui-color-lighter"> <span>$ui-color-lighter</span> </div> <div class="color-box ui-color-lightest"> <span>$ui-color-lightest</span> </div> </div> */
 .avatar-empty, .avatar-image img, .avatar-name, .avatar-name-hidden { border-radius: 50%; height: 45px; width: 45px; }
 
 .avatar { display: inline-block; text-align: center; }
 
-.avatar-name { display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -moz-box-align: center; box-align: center; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -ms-flex-align: center; -webkit-box-pack: center; -moz-box-pack: center; box-pack: center; -webkit-justify-content: center; -moz-justify-content: center; -ms-justify-content: center; -o-justify-content: center; justify-content: center; -ms-flex-pack: center; background-color: #f55065; color: #fff; font-size: 22px; margin: 0 auto; text-align: center; text-transform: uppercase; }
+.avatar-name { display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -moz-box-align: center; box-align: center; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -ms-flex-align: center; -webkit-box-pack: center; -moz-box-pack: center; box-pack: center; -webkit-justify-content: center; -moz-justify-content: center; -ms-justify-content: center; -o-justify-content: center; justify-content: center; -ms-flex-pack: center; background-color: #ff443d; color: #fff; font-size: 22px; margin: 0 auto; text-align: center; text-transform: uppercase; }
 
-.avatar-name-hidden { background-color: #eee; color: #eee; }
+.avatar-name-hidden { background-color: #cbd7e4; color: #cbd7e4; }
 
 .avatar-small .avatar-name { height: 35px; width: 35px; }
 
@@ -2964,16 +2992,86 @@ hr { margin: 60px 0; }
 //category: Components
 //---
 */
+/*doc --- title: Button dropdowns name: button_dropdowns category: Components --- ```html_example_table <div class="btn-group"> <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Default <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" disabled class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Disabled <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" class="btn btn-split btn-primary">Primary</button> <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" class="btn btn-split btn-primary">Action</button> <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" class="btn btn-split btn-default">Action</button> <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group no-ui"> <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Toggle Dropdown</span> <span class="fa fa-ellipsis-h" /> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> ``` */
+.btn-group > .btn + .dropdown-toggle { padding-left: 16px; padding-right: 20px; }
+
+.btn-group .btn-split { padding-right: 10px; }
+
+.btn-group > .btn-primary.btn-split { border-right-color: #fff; }
+
+.btn-group > .btn-primary + .dropdown-toggle { border-left-color: #fff; }
+
+.btn-group.no-ui button { background-color: transparent; border: 0; color: #666; padding: 0 4px; }
+
+.btn-group.no-ui .dropdown-menu { margin-right: -20px; padding: 0; right: 0; }
+
+.btn-group.no-ui .dropdown-menu li { margin: 10px 0; }
+
+.btn-group.open .dropdown-toggle { box-shadow: none; }
+
+.btn-group.open > .btn-default.dropdown-toggle, .btn-group.open > .dropdown-toggle.btn-primary:disabled { background: #fff; border-color: #b3b3b3; color: #666; }
+
+.btn-group.open > .btn-primary.dropdown-toggle { background: #014823; border-color: #014823; }
+
+.btn-group.open > .btn-primary.btn-split + .dropdown-toggle { border-left-color: #fff; }
+
+.dropdown-menu { -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05); box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05); border-radius: 6px; border: 1px solid #e0e3e9; color: #999; left: auto; margin-top: 15px; padding-bottom: 20px; padding-top: 20px; right: -5px; }
+
+.dropdown-menu > li > a { color: #999; padding: 5px 25px; }
+
+.dropdown-menu:before { border-color: transparent; border-bottom-color: #e0e3e9; border-style: solid; border-top-width: 0; border-width: 11px; content: ''; display: block; height: 0; margin-left: -11px; position: absolute; right: 18px; top: -22px; width: 0; }
+
+.dropdown-menu:after { border-color: transparent; border-bottom-color: #fff; border-style: solid; border-width: 10px; border-top-width: 0; content: ''; display: block; height: 0; position: absolute; right: 19px; top: -10px; width: 0; }
+
+/*doc
+---
+title: Message with button
+name: ButtonMessage
+category: Components
+---
+
+Icons for displaying an image of a user
+
+```html_example_table
+
+<div class="ButtonMessage">
+  <div class="ButtonMessage__left">
+    <h3 class="ButtonMessage__heading">Getting started is easy</h3>
+    <p class="ButtonMessage__message">Create an account either with email or via Twitter.</p>
+  </div>
+  <div class="ButtonMessage__right">
+    <a class="btn ButtonMessage__button" href="/">Try us right now</a>
+  </div>
+</div>
+```
+
+*/
+.ButtonMessage { background: #f2fbf6; border-radius: 6px; display: table; font-family: "Fira Sans", Arial, sans-serif; margin: 40px 20px; overflow: auto; padding: 30px; text-align: left; }
+
+@media screen and (min-width: 992px) { .ButtonMessage { margin: 0 auto; width: 100%; } }
+
+.ButtonMessage__left, .ButtonMessage__right { display: block; margin-bottom: 10px; }
+
+@media (min-width: 768px) { .ButtonMessage__left, .ButtonMessage__right { display: table-cell; vertical-align: middle; margin-bottom: 0; } }
+
+.ButtonMessage__heading { font-size: 18px; margin: 0; margin-bottom: 5px; }
+
+.ButtonMessage__message { display: inline-block; font-family: "Fira Sans", Arial, sans-serif; font-size: 16px; line-height: 20px; margin-bottom: 10px; vertical-align: top; }
+
+.ButtonMessage__button { background: #02ad55; color: #fff; float: right; font-weight: 500; margin: 0; padding: 7px 15px 8px; width: 100%; }
+
+@media screen and (min-width: 992px) { .ButtonMessage__button { margin-left: 20px; width: auto; } }
+
 /*doc --- title: Button groups name: button_groups category: Components --- ```html_example_table <div class="btn-group" role="group"> <button type="button" class="btn btn-default">Left</button> <button type="button" class="btn btn-default">Middle</button> <button type="button" class="btn btn-default">Right</button> </div> <div class="btn-group-vertical btn-block" role="group"> <button type="button" class="btn btn-default">Left</button> <button type="button" class="btn btn-default">Middle</button> <button type="button" class="btn btn-default">Right</button> </div> ``` */
 .input-group-btn:last-child > .btn-group { margin-left: 0; }
 
-.input-group-btn:last-child > .btn-group .btn-default, .input-group-btn:last-child > .btn-group .btn-primary:disabled { border-color: #ddd; }
+.input-group-btn:last-child > .btn-group .btn-default, .input-group-btn:last-child > .btn-group .btn-primary:disabled { border-color: #98adbb; }
 
 .btn-group-vertical .btn { text-align: left; }
 
 .date-picker { display: inline-block; position: relative; margin: inherit 0; }
 
-.date-picker-calendar .rw-header { border-bottom: 1px solid #eee; margin: 10px 0; overflow: hidden; padding: 0 10px 10px; }
+.date-picker-calendar .rw-header { border-bottom: 1px solid #cbd7e4; margin: 10px 0; overflow: hidden; padding: 0 10px 10px; }
 
 .date-picker-calendar .popover { display: block; }
 
@@ -2999,7 +3097,7 @@ hr { margin: 60px 0; }
 
 .date-picker-calendar .rw-btn.rw-off-range { color: #999; }
 
-.date-picker-calendar .rw-state-selected { background: #3eb991; border-radius: 3px; color: #fff; }
+.date-picker-calendar .rw-state-selected { background: #02ad55; border-radius: 3px; color: #fff; }
 
 .date-picker-calendar .popover { box-shadow: none; display: block; left: 0; min-width: 200px; right: auto; top: 40px; z-index: 1; }
 
@@ -3014,15 +3112,15 @@ hr { margin: 60px 0; }
 
 .ContentList__row, .ContentList__header { display: table-row; }
 
-.ContentList__row.active, .active.ContentList__header { background: #f2fafd; }
+.ContentList__row.active, .active.ContentList__header { background: #f2f8fd; }
 
-.ContentList__column { border-bottom: 1px solid #eee; display: table-cell; padding: 40px 10px; vertical-align: middle; }
+.ContentList__column { border-bottom: 1px solid #cbd7e4; display: table-cell; padding: 40px 10px; vertical-align: middle; }
 
 .ContentList__column:first-child { display: table-cell; text-align: left; }
 
 .ContentList__column:last-child { display: table-cell; }
 
-.ContentList__header { color: #333; font-size: 16px; font-weight: 600; }
+.ContentList__header { color: #333; font-size: 16px; font-weight: 500; }
 
 .ContentList__action { border: 0; display: inline-block; font-weight: 400; margin-left: 25px; padding: 0; vertical-align: initial; }
 
@@ -3034,7 +3132,7 @@ hr { margin: 60px 0; }
 
 .ContentList__avatar img { border-radius: 50%; height: 35px; margin-top: -23px; position: absolute; width: 35px; }
 
-.ContentList--compact { border: 1px solid #eee; border-bottom: 0; border-collapse: separate; border-radius: 6px; padding: 0; }
+.ContentList--compact { border: 1px solid #cbd7e4; border-bottom: 0; border-collapse: separate; border-radius: 6px; padding: 0; }
 
 .ContentList--compact .ContentList__column { line-height: 50px; padding-top: 0; padding-bottom: 0; }
 
@@ -3047,6 +3145,68 @@ hr { margin: 60px 0; }
 //category: Components
 //---
 */
+/*doc
+---
+title: Footer
+name: footer
+category: Components
+---
+
+Poptype footer
+
+```html_example
+
+<footer class="PoptypeFooter">
+  <div class="PoptypeFooter__links">
+    <span class="PoptypeFooter__link PoptypeFooter__link--copyright">
+      © 2016 Poptype
+    </span>
+    <a href="#" class="PoptypeFooter__link" >Our Stories</a>
+    <a href="#" class="PoptypeFooter__link" >About</a>
+    <a href="#" class="PoptypeFooter__link" >Terms</a>
+    <a href="#" class="PoptypeFooter__link" >Privacy</a>
+  </div>
+
+  <div class="PoptypeFooter__social">
+    <a target="_blank" href="https://twitter.com/poptype" class="PoptypeFooter__link PoptypeFooter__link--facebook" >Facebook</a>
+    <a target="_blank" href="https://facebook.com/poptypeco" class="PoptypeFooter__link PoptypeFooter__link--twitter" >Twitter</a>
+    <a target="_blank" href="https://instagram.com/poptypeco" class="PoptypeFooter__link PoptypeFooter__link--instagram" >Instagram</a>
+  </div>
+</footer>
+
+```
+
+*/
+.PoptypeFooter { display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -moz-box-orient: vertical; box-orient: vertical; -webkit-box-direction: normal; -moz-box-direction: normal; box-direction: normal; -webkit-flex-direction: column; -moz-flex-direction: column; flex-direction: column; -ms-flex-direction: column; max-width: 1000px; margin: 20px auto 10px; padding: 0 10px; }
+
+@media screen and (min-width: 768px) { .PoptypeFooter { -webkit-box-orient: horizontal; -moz-box-orient: horizontal; box-orient: horizontal; -webkit-box-direction: normal; -moz-box-direction: normal; box-direction: normal; -webkit-flex-direction: row; -moz-flex-direction: row; flex-direction: row; -ms-flex-direction: row; -webkit-box-align: center; -moz-box-align: center; box-align: center; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -ms-flex-align: center; } }
+
+@media screen and (min-width: 960px) { .PoptypeFooter { padding: 0 0 124px; } }
+
+.PoptypeFooter a, .PoptypeFooter span { font-family: "Fira Sans", Arial, sans-serif; font-size: 16px; }
+
+.PoptypeFooter__copyright { color: #999; margin: 10px auto auto; text-align: center; }
+
+@media screen and (min-width: 768px) { .PoptypeFooter__copyright { margin: 0; margin-right: 10px; order: -1; } }
+
+.PoptypeFooter__social { text-align: center; }
+
+@media screen and (min-width: 768px) { .PoptypeFooter__social { display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -moz-box-flex: 1; box-flex: 1; -webkit-flex: 1; -moz-flex: 1; -ms-flex: 1; flex: 1; -webkit-box-pack: end; -moz-box-pack: end; box-pack: end; -webkit-justify-content: flex-end; -moz-justify-content: flex-end; -ms-justify-content: flex-end; -o-justify-content: flex-end; justify-content: flex-end; -ms-flex-pack: end; } }
+
+.PoptypeFooter__links { text-align: center; }
+
+.PoptypeFooter__link { display: block; color: #666; margin: 10px; }
+
+@media screen and (min-width: 768px) { .PoptypeFooter__link { display: inline; margin: auto 10px; } }
+
+.PoptypeFooter__link--facebook { color: #3b5998; }
+
+.PoptypeFooter__link--twitter { color: #55acee; }
+
+.PoptypeFooter__link--instagram { color: #c13584; }
+
+.PoptypeFooter__link--copyright { color: #999; }
+
 /*doc
 ---
 title: Icons
@@ -3068,7 +3228,7 @@ category: Components
 //---
 */
 /*doc --- title: Jumbotron name: jumbotron category: Components --- The jumbotron is used for specific forms. Add .jumbotron-fixed for fixed width (640px). ```html_example <div class="jumbotron"> <div class="jumbotron-description"> <h1>Register a new account</h1> <p>You have to register to publish your stories for the world to see. Please take a moment to enter these details.</p> </div> <form accept-charset="UTF-8" action="/" method="post" role="form"> <div class="row"> <div class="col-sm-12 "> <div class="form-group email optional mndx_user_email"> <label class="email optional control-label" for="mndx_user_email">Email</label> <input class="string email optional form-control" type="email" name="mndx_user[email]" id="mndx_user_email" /> </div> </div> </div> <div class="row"> <div class="col-sm-6"> <div class="form-group password optional"> <label class="password optional control-label" for="mndx_user_password">New password</label> <input class="password optional form-control" type="password" name="mndx_user[password]" id="mndx_user_password" /> </div> </div> <div class="col-sm-6"> <div class="form-group password optional"> <label class="password optional control-label" for="mndx_user_password_confirmation">Confirm new password</label> <input class="password optional form-control" type="password" name="mndx_user[password_confirmation]" id="mndx_user_password_confirmation" /> </div> </div> </div> <input type="submit" name="commit" value="Register" class="btn btn-primary pull-right" /> <div class="form-group form-links"> <a class="pull-right" href="#">Sign in</a> </div> </form> </div> ``` */
-.jumbotron { background-color: #fff; border: 1px solid #ddd; border-radius: 6px; margin: 0 auto; max-width: 640px; padding: 30px; text-align: center; }
+.jumbotron { background-color: #fff; border: 1px solid #98adbb; border-radius: 6px; margin: 0 auto; max-width: 640px; padding: 30px; text-align: center; }
 
 .jumbotron.jumbotron-fixed { width: 640px; }
 
@@ -3120,7 +3280,7 @@ category: Components
 <span class="label label-primary label-large">Primary</span>
 ```
 */
-.label { border-radius: 2px; font-size: 80%; font-weight: 600; padding: 2px 7px 3px; text-transform: uppercase; }
+.label { border-radius: 2px; font-size: 80%; font-weight: 500; padding: 2px 7px 3px; text-transform: uppercase; }
 
 .label-large { border-radius: 6px; display: inline-block; font-size: 16px; padding: 12px 15px 14px; text-transform: none; }
 
@@ -3145,13 +3305,25 @@ category: Components
 //category: Components
 //---
 */
-/*doc
-//---
-//title: Navs
-//name: navs
-//category: Components
-//---
-*/
+/*doc --- title: Navs name: navs category: Components --- ```html_example_table <ul class="nav nav-tabs"> <li role="presentation" class="active"> <a href="#navs">Drafts</a> <span>2</span> </li> <li role="presentation"> <a href="#navs">Posted</a> <span>10</span> </li> <li role="presentation"> <a href="#navs">Archived</a> <span>0</span> </li> </ul> ``` */
+.nav { width: 100%; }
+
+.nav > li > a:hover, .nav > li > a:focus { background-color: none; }
+
+.nav-tabs { border-bottom: 1px solid #e0e3e9; }
+
+.nav-tabs > li { margin-right: 20px; }
+
+.nav-tabs > li > span { color: #999; }
+
+.nav-tabs > li > a { border: 0; color: #999; display: inline-block; padding-left: 0; padding-right: 0; }
+
+.nav-tabs > li > a:hover { color: #333; }
+
+.nav-tabs > li.active > a { font-weight: 700; }
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus { border: 0; border-bottom: 1px solid #ff3e79; color: #ff3e79; }
+
 /*doc
 //---
 //title: Page header
@@ -3188,15 +3360,15 @@ category: Components
 /*doc --- title: Poptip name: poptip category: Components --- Alerts should always starts with a word that tell the user more about the feedback in short. ```html_example <div class="poptip"> <strong>POPTIP</strong>: This is a pretty dope tip! </div> ``` */
 .poptip::before, .poptip::after { border-left: 10px solid transparent; border-right: 10px solid transparent; content: " "; display: block; position: absolute; right: 17px; }
 
-.poptip { background: #fafafa; border: 1px solid #ddd; border-radius: 6px; color: #333; margin: 30px 10px; padding: 14px 20px 16px; position: relative; }
+.poptip { background: #e0e3e9; border: 1px solid #98adbb; border-radius: 6px; color: #333; margin: 30px 10px; padding: 14px 20px 16px; position: relative; }
 
-.poptip strong { font-weight: 600; }
+.poptip strong { font-weight: 500; }
 
 @media screen and (min-width: 992px) { .poptip { margin: 30px 0; } }
 
-.poptip::before { border-top: 10px solid #ddd; bottom: -10px; }
+.poptip::before { border-top: 10px solid #98adbb; bottom: -10px; }
 
-.poptip::after { border-top: 10px solid #fafafa; bottom: -9px; }
+.poptip::after { border-top: 10px solid #e0e3e9; bottom: -9px; }
 
 /*doc --- title: Progress bars name: progress_bar category: Components --- The progress bar is used for specific progress indicators. ```html_example <div class="progress"> <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> <span class="sr-only">40% Complete (success)</span> </div> </div> <div class="progress"> <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"> <span class="sr-only">20% Complete</span> </div> </div> <div class="progress"> <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> <span class="sr-only">60% Complete (warning)</span> </div> </div> <div class="progress"> <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> <span class="sr-only">80% Complete (danger)</span> </div> </div> ``` */
 /*doc
@@ -3214,7 +3386,7 @@ category: Components
 @media screen and (min-width: 768px) { .scoreboard-box:first-child { margin-top: 0; }
   .scoreboard-box:last-child { margin-bottom: 0; } }
 
-.scoreboard-box-border { border: 1px solid #ddd; border-radius: 6px; }
+.scoreboard-box-border { border: 1px solid #98adbb; border-radius: 6px; }
 
 .scoreboard-box-number { color: #333; font-size: 60px; font-weight: bold; line-height: 66px; }
 
@@ -3225,6 +3397,15 @@ category: Components
 //category: Components
 //---
 */
+/*doc --- title: Switch name: switch category: Components --- ```html_example_table <div class="Switch"> <div class="Switch__circle" ></div> </div> <div class="Switch Switch--active"> <div class="Switch__circle" ></div> </div> ``` */
+.Switch { -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; transition: all 0.3s ease; background: #e0e3e9; border-radius: 24px; cursor: pointer; height: 24px; padding: 3px; width: 48px; }
+
+.Switch--active { background: #02ad55; }
+
+.Switch--active .Switch__circle { -webkit-transform: translateX(24px); -moz-transform: translateX(24px); -ms-transform: translateX(24px); -o-transform: translateX(24px); transform: translateX(24px); }
+
+.Switch__circle { -webkit-transform: 0; -moz-transform: 0; -ms-transform: 0; -o-transform: 0; transform: 0; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; transition: all 0.3s ease; background: #fff; border-radius: 18px; height: 18px; width: 18px; }
+
 /*doc
 //---
 //title: Thumbnails
@@ -3236,37 +3417,6 @@ category: Components
 .well { background: #fff; }
 
 .well *:last-child { margin: 0; }
-
-/*doc --- title: Button dropdowns name: button_dropdowns category: Components --- ```html_example_table <div class="btn-group"> <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Default <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" disabled class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Disabled <span class="caret"></span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" class="btn btn-split btn-primary">Primary</button> <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" class="btn btn-split btn-primary">Action</button> <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group"> <button type="button" class="btn btn-split btn-default">Action</button> <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> <div class="btn-group no-ui"> <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Toggle Dropdown</span> <span class="fa fa-ellipsis-h" /> </button> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </div> ``` */
-.btn-group > .btn + .dropdown-toggle { padding-left: 16px; padding-right: 20px; }
-
-.btn-group .btn-split { padding-right: 10px; }
-
-.btn-group > .btn-primary.btn-split { border-right-color: #fff; }
-
-.btn-group > .btn-primary + .dropdown-toggle { border-left-color: #fff; }
-
-.btn-group.no-ui button { background-color: transparent; border: 0; color: #666; padding: 0 4px; }
-
-.btn-group.no-ui .dropdown-menu { margin-right: -20px; padding: 0; right: 0; }
-
-.btn-group.no-ui .dropdown-menu li { margin: 10px 0; }
-
-.btn-group.open .dropdown-toggle { box-shadow: none; }
-
-.btn-group.open > .btn-default.dropdown-toggle, .btn-group.open > .dropdown-toggle.btn-primary:disabled { background: #fff; border-color: #b3b3b3; color: #666; }
-
-.btn-group.open > .btn-primary.dropdown-toggle { background: #246d55; border-color: #246d55; }
-
-.btn-group.open > .btn-primary.btn-split + .dropdown-toggle { border-left-color: #fff; }
-
-.dropdown-menu { -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05); box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05); border-radius: 6px; border: 1px solid #e0e3e9; color: #999; left: auto; margin-top: 15px; padding-bottom: 20px; padding-top: 20px; right: -5px; }
-
-.dropdown-menu > li > a { color: #999; padding: 5px 25px; }
-
-.dropdown-menu:before { border-color: transparent; border-bottom-color: #e0e3e9; border-style: solid; border-top-width: 0; border-width: 11px; content: ''; display: block; height: 0; margin-left: -11px; position: absolute; right: 18px; top: -22px; width: 0; }
-
-.dropdown-menu:after { border-color: transparent; border-bottom-color: #fff; border-style: solid; border-width: 10px; border-top-width: 0; content: ''; display: block; height: 0; position: absolute; right: 19px; top: -10px; width: 0; }
 
 /*doc
 ---
@@ -3460,7 +3610,7 @@ category: JavaScript
 
 .modal-header a { text-decoration: underline; }
 
-.modal-header .header-icon { color: #3eb991; font-size: 60px; margin: 0 0 20px; }
+.modal-header .header-icon { color: #02ad55; font-size: 60px; margin: 0 0 20px; }
 
 .modal-header .header-icon img { max-width: 210px; }
 
