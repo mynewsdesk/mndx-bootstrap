@@ -20,6 +20,24 @@ Used for elements (i.e buttons, labels and ***)
   <div class="color-box brand-danger">
     <span>$brand-danger</span>
   </div>
+  <div class="color-box color-1">
+    <span>$color-poptype-green</span>
+  </div>
+  <div class="color-box  color-2">
+    <span>$color-poptype-yellow</span>
+  </div>
+  <div class="color-box  color-3">
+    <span>$color-poptype-red</span>
+  </div>
+  <div class="color-box color-4">
+    <span>$color-poptype-blue</span>
+  </div>
+  <div class="color-box color-5">
+    <span>$color-poptype-magenta</span>
+  </div>
+  <div class="color-box color-6">
+    <span>$color-poptype-orange</span>
+  </div>
 </div>
  */
 
@@ -70,27 +88,33 @@ Used for borders, background and dividers
 
 
 // Palette
-$color-1: #3eb991;
-$color-2: #ffd34f;
-$color-3: #f55065;
-$color-4: #0096d1;
+$color-poptype-green: #02ad55;
+$color-poptype-yellow: #fed83e;
+$color-poptype-red: #ff443d;
+$color-poptype-blue: #0077cd;
+$color-poptype-magenta: #ff3e79;
+$color-poptype-orange: #f46620;
 
 $white: #fff;
 $black: #333;
 
 $gray: #666;
+$gray-bluer: #647D8E;
 $gray-light: #999;
-$gray-lighten: #ddd;
-$gray-lighter: #eee;
-$gray-lightest: #fafafa;
-$gray-blue: #e0e3e9;
+$gray-lighten: #98adbb;
+$gray-lighter: #cbd7e4;
+$gray-lightest: #e0e3e9;
+$gray-lightestest: #F5F9FA;
+$gray-blue: $gray-lightest; //TODO Remove
+
+$green-icy: #f2fbf6;
 
 // Renaming
-$brand-primary: $color-1;
-$brand-success: $color-1;
-$brand-info: $color-4; // Should usages point to brand primary?
-$brand-warning: $color-2;
-$brand-danger: $color-3;
+$brand-primary: $color-poptype-green;
+$brand-success: $color-poptype-green;
+$brand-info: $color-poptype-blue; // Should usages point to brand primary?
+$brand-warning: $color-poptype-yellow;
+$brand-danger: $color-poptype-red;
 
 $text-color-dark: $black;
 $text-color: $gray;
@@ -127,3 +151,7 @@ $label-danger-bg: $brand-danger;
 
 $label-color: $white;
 $label-link-hover-color: $white;
+
+$facebook-color: #3b5998;
+$twitter-color: #55acee;
+$instagram-color: #c13584;

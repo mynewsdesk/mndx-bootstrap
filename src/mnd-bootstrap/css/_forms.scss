@@ -124,6 +124,7 @@ category: CSS
 </form>
 ```
 */
+$form-border-width: 1px;
 
 .form-group {
   margin-bottom: $gutter-vertical;
@@ -143,14 +144,14 @@ category: CSS
 }
 
 .input-group-addon {
-  border: $border-width solid $gray-lighten;
+  border: $form-border-width solid $gray-lighten;
 }
 
 .form-control {
   background: $white;
-  border: $border-width solid $gray-lighten;
+  border: $form-border-width solid $gray-lighten;
   box-shadow: none;
-  padding: $padding-base-vertical $padding-base-horizontal $input-bottom-padding;
+  padding: 7px  15px 8px;
 
   @include placeholder {
     color: $gray-light;
@@ -162,7 +163,7 @@ category: CSS
   }
 
   &:focus {
-    border-color: $color-4;
+    border-color: $color-poptype-blue;
     box-shadow: 0px 0px 3px 0px rgba(33,115,210,0.3);
   }
 
@@ -178,7 +179,7 @@ category: CSS
   box-shadow: none;
 
   &:focus {
-    border-color: $color-4;
+    border-color: $color-poptype-blue;
     box-shadow: 0px 0px 3px 0px rgba(33,115,210,0.3);
   }
 }
@@ -224,8 +225,9 @@ textarea {
 
 .input-group-btn {
   .btn {
-    background: $gray-lighten;
+    background: $gray-lightest;
     border-radius: $border-radius-base;
+    padding: 13px 15px 12px;
   }
 }
 

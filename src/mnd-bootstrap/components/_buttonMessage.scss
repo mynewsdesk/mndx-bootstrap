@@ -1,0 +1,80 @@
+/*doc
+---
+title: Message with button
+name: ButtonMessage
+category: Components
+---
+
+Icons for displaying an image of a user
+
+```html_example_table
+
+<div class="ButtonMessage">
+  <div class="ButtonMessage__left">
+    <h3 class="ButtonMessage__heading">Getting started is easy</h3>
+    <p class="ButtonMessage__message">Create an account either with email or via Twitter.</p>
+  </div>
+  <div class="ButtonMessage__right">
+    <a class="btn ButtonMessage__button" href="/">Try us right now</a>
+  </div>
+</div>
+```
+
+*/
+
+.ButtonMessage {
+  background: $green-icy;
+  border-radius: $border-radius-large;
+  display: table;
+  font-family: $font-family-sans-serif;
+  margin: $space-larger $space-large;
+  overflow: auto;
+  padding: 30px;
+  text-align: left;
+
+  @media screen and (min-width: $screen-md) {
+    margin: 0 auto;
+    width: 100%
+  }
+
+  &__left, &__right {
+    display: block;
+    margin-bottom: 10px;
+
+    @media (min-width: $screen-sm) {
+      display: table-cell;
+      vertical-align: middle;
+      margin-bottom: 0;
+    }
+  }
+
+  &__heading {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  &__message {
+    display: inline-block;
+    font-family: $font-family-sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    vertical-align: top;
+  }
+
+  &__button {
+    background: $color-poptype-green;
+    color: $white;
+    float: right;
+    font-weight: $semi-bold;
+    margin: 0;
+    padding: 7px 15px 8px;
+    width: 100%;
+
+    @media screen and (min-width: $screen-md) {
+      margin-left: $space-large;
+      width: auto;
+    }
+  }
+}

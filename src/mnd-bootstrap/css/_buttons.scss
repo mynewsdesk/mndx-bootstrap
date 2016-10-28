@@ -50,12 +50,12 @@ category: CSS
 ```
  */
 @import "buttons_social";
-$btn-vertical-padding: 12px;
+$btn-vertical-padding: 8px;
 
 .btn {
   font-weight: $semi-bold;
   margin-left: $gutter-horizontal-x2;
-  padding-bottom: $btn-vertical-padding + 1;
+  padding-bottom: $btn-vertical-padding;
   padding-top: $btn-vertical-padding - 1;
 
   &:first-child {
@@ -150,7 +150,6 @@ $btn-vertical-padding: 12px;
 }
 
 [disabled].btn-primary:disabled {
-  @include opacity(0.4);
   background: $btn-primary-bg;
   color: $white;
 
