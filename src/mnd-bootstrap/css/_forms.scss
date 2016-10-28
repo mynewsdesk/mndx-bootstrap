@@ -163,7 +163,7 @@ $form-border-width: 1px;
   }
 
   &:focus {
-    border-color: $color-4;
+    border-color: $color-poptype-blue;
     box-shadow: 0px 0px 3px 0px rgba(33,115,210,0.3);
   }
 
@@ -179,7 +179,7 @@ $form-border-width: 1px;
   box-shadow: none;
 
   &:focus {
-    border-color: $color-4;
+    border-color: $color-poptype-blue;
     box-shadow: 0px 0px 3px 0px rgba(33,115,210,0.3);
   }
 }

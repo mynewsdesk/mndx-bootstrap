@@ -21,22 +21,22 @@ Used for elements (i.e buttons, labels and ***)
     <span>$brand-danger</span>
   </div>
   <div class="color-box color-1">
-    <span>$color-1</span>
+    <span>$color-poptype-green</span>
   </div>
   <div class="color-box  color-2">
-    <span>$color-2</span>
+    <span>$color-poptype-yellow</span>
   </div>
   <div class="color-box  color-3">
-    <span>$color-3</span>
+    <span>$color-poptype-red</span>
   </div>
   <div class="color-box color-4">
-    <span>$color-4</span>
+    <span>$color-poptype-blue</span>
   </div>
   <div class="color-box color-5">
-    <span>$color-5</span>
+    <span>$color-poptype-magenta</span>
   </div>
   <div class="color-box color-6">
-    <span>$color-6</span>
+    <span>$color-poptype-orange</span>
   </div>
 </div>
  */
@@ -88,12 +88,12 @@ Used for borders, background and dividers
 
 
 // Palette
-$color-1: #02ad55;
-$color-2: #fed83e;
-$color-3: #ff443d;
-$color-4: #0077cd;
-$color-5: #ff3e79;
-$color-6: #f46620;
+$color-poptype-green: #02ad55;
+$color-poptype-yellow: #fed83e;
+$color-poptype-red: #ff443d;
+$color-poptype-blue: #0077cd;
+$color-poptype-magenta: #ff3e79;
+$color-poptype-orange: #f46620;
 
 $white: #fff;
 $black: #333;
@@ -110,11 +110,11 @@ $gray-blue: $gray-lightest; //TODO Remove
 $green-icy: #f2fbf6;
 
 // Renaming
-$brand-primary: $color-1;
-$brand-success: $color-1;
-$brand-info: $color-4; // Should usages point to brand primary?
-$brand-warning: $color-2;
-$brand-danger: $color-3;
+$brand-primary: $color-poptype-green;
+$brand-success: $color-poptype-green;
+$brand-info: $color-poptype-blue; // Should usages point to brand primary?
+$brand-warning: $color-poptype-yellow;
+$brand-danger: $color-poptype-red;
 
 $text-color-dark: $black;
 $text-color: $gray;

@@ -24,7 +24,7 @@ Icons for displaying an image of a user
 
 .ButtonMessage {
   background: $green-icy;
-  border-radius: 5px;
+  border-radius: $border-radius-large;
   display: table;
   font-family: $font-family-sans-serif;
   margin: $space-larger $space-large;
@@ -32,9 +32,9 @@ Icons for displaying an image of a user
   padding: 30px;
   text-align: left;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $screen-md) {
     margin: 0 auto;
-    width: 768px;
+    width: 100%
   }
 
   &__left, &__right {
@@ -64,16 +64,15 @@ Icons for displaying an image of a user
   }
 
   &__button {
-
-    background: $color-1;
+    background: $color-poptype-green;
     color: $white;
     float: right;
-    font-weight: 500;
+    font-weight: $semi-bold;
     margin: 0;
     padding: 7px 15px 8px;
     width: 100%;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $screen-md) {
       margin-left: $space-large;
       width: auto;
     }
