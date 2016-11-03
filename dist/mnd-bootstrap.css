@@ -3046,11 +3046,13 @@ Icons for displaying an image of a user
 ```
 
 */
-.ButtonMessage { background: #f2fbf6; border-radius: 5px; display: table; font-family: "Fira Sans", Arial, sans-serif; margin: 40px 20px; overflow: auto; padding: 30px; text-align: left; }
+.ButtonMessage { background: #f2fbf6; border-radius: 6px; display: block; font-family: "Fira Sans", Arial, sans-serif; margin: 40px 20px; overflow: auto; padding: 30px; text-align: left; width: 100%; }
 
-@media screen and (min-width: 768px) { .ButtonMessage { margin: 0 auto; width: 768px; } }
+@media screen and (min-width: 992px) { .ButtonMessage { margin: 0 auto; width: 100%; display: table; } }
 
-.ButtonMessage__left, .ButtonMessage__right { display: table-cell; vertical-align: middle; }
+.ButtonMessage__left, .ButtonMessage__right { display: block; margin-bottom: 10px; }
+
+@media (min-width: 768px) { .ButtonMessage__left, .ButtonMessage__right { display: table-cell; vertical-align: middle; margin-bottom: 0; } }
 
 .ButtonMessage__heading { font-size: 18px; margin: 0; margin-bottom: 5px; }
 
@@ -3058,7 +3060,7 @@ Icons for displaying an image of a user
 
 .ButtonMessage__button { background: #02ad55; color: #fff; float: right; font-weight: 500; margin: 0; padding: 7px 15px 8px; width: 100%; }
 
-@media screen and (min-width: 768px) { .ButtonMessage__button { margin-left: 20px; width: auto; } }
+@media screen and (min-width: 992px) { .ButtonMessage__button { margin-left: 20px; width: auto; } }
 
 /*doc --- title: Button groups name: button_groups category: Components --- ```html_example_table <div class="btn-group" role="group"> <button type="button" class="btn btn-default">Left</button> <button type="button" class="btn btn-default">Middle</button> <button type="button" class="btn btn-default">Right</button> </div> <div class="btn-group-vertical btn-block" role="group"> <button type="button" class="btn btn-default">Left</button> <button type="button" class="btn btn-default">Middle</button> <button type="button" class="btn btn-default">Right</button> </div> ``` */
 .input-group-btn:last-child > .btn-group { margin-left: 0; }

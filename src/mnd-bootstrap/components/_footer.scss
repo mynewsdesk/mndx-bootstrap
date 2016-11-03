@@ -37,7 +37,6 @@ Poptype footer
   @include display(flex);
   @include flex-direction(column);
 
-  max-width: $footer-max-width;
   margin: 20px auto 10px;
   padding: 0 10px;
 
