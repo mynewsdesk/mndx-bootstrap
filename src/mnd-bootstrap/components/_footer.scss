@@ -32,7 +32,6 @@ Poptype footer
 */
 
 .PoptypeFooter {
-  $footer-max-width: 1000px;
 
   @include display(flex);
   @include flex-direction(column);
@@ -40,7 +39,7 @@ Poptype footer
   margin: 20px auto 10px;
   padding: 0 10px;
 
-  @media screen and (min-width: $screen-sm) {
+  @media screen and (min-width: $screen-md) {
     @include flex-direction(row);
     @include align-items(center);
   }
@@ -71,7 +70,7 @@ Poptype footer
 .PoptypeFooter__social {
   text-align: center;
 
-  @media screen and (min-width: $screen-sm) {
+  @media screen and (min-width: $screen-md) {
     @include display(flex);
     @include flex(1);
     @include justify-content(flex-end);
@@ -88,7 +87,7 @@ Poptype footer
   margin: $gutter-horizontal;
 
 
-  @media screen and (min-width: $screen-sm) {
+  @media screen and (min-width: $screen-md) {
       display: inline;
       margin: auto ($gutter-horizontal);
   }

@@ -42,11 +42,13 @@ Icons for displaying an image of a user
   &__left, &__right {
     display: block;
     margin-bottom: 10px;
+    text-align: center;
 
     @media (min-width: $screen-sm) {
       display: table-cell;
       vertical-align: middle;
       margin-bottom: 0;
+      text-align: left;
     }
   }
 
