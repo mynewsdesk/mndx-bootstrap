@@ -34,13 +34,13 @@ Icons for displaying an image of a user
 ```
 */
 
-@import "mnd-bootstrap/variables/colors";
-@import "mnd-bootstrap/variables/measures";
+@import "../variables/colors";
+@import "../variables/measures";
 
 $avatar-size: 45px;
 $avatar-size-small: 35px;
 $avatar-size-large: 100px;
-$avatar-name-background-color: $color-poptype-red;
+$avatar-name-background-color: $color-poptype-magenta;
 $avatar-name-text-color: $white;
 $avatar-name-text-size: $font-size-larger;
 $avatar-name-text-size-large: $font-size-very-large;

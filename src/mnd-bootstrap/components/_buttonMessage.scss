@@ -55,7 +55,7 @@ Icons for displaying an image of a user
   &__heading {
     font-size: 18px;
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 
   &__message {
@@ -75,6 +75,7 @@ Icons for displaying an image of a user
     margin: 0;
     padding: 7px 15px 8px;
     width: 100%;
+    white-space: nowrap;
 
     @media screen and (min-width: $screen-md) {
       margin-left: $space-large;
