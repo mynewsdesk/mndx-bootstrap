@@ -864,7 +864,7 @@ pre code { padding: 0; font-size: inherit; color: inherit; white-space: pre-wrap
 
 @media (min-width: 992px) { .container { width: 970px; } }
 
-@media (min-width: 1200px) { .container { width: 1170px; } }
+@media (min-width: 1200px) { .container { width: 970px; } }
 
 .container-fluid { margin-right: auto; margin-left: auto; padding-left: 15px; padding-right: 15px; }
 
@@ -2863,7 +2863,7 @@ h1 small { display: block; font-size: 18px; margin-top: 10px; }
 
 .form-control:focus { border-color: #0077cd; box-shadow: 0px 0px 3px 0px rgba(33, 115, 210, 0.3); }
 
-.form-control[disabled] { background-color: #e0e3e9; border-color: #98adbb; }
+.form-control[disabled] { background-color: #F5F9FA; border-color: #98adbb; }
 
 .has-error .form-control, .has-warning .form-control, .has-success .form-control { box-shadow: none; }
 
@@ -2966,7 +2966,7 @@ hr.small { margin: 15px 0; }
 
 .avatar { display: inline-block; text-align: center; }
 
-.avatar-name { display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -moz-box-align: center; box-align: center; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -ms-flex-align: center; -webkit-box-pack: center; -moz-box-pack: center; box-pack: center; -webkit-justify-content: center; -moz-justify-content: center; -ms-justify-content: center; -o-justify-content: center; justify-content: center; -ms-flex-pack: center; background-color: #ff443d; color: #fff; font-size: 22px; margin: 0 auto; text-align: center; text-transform: uppercase; }
+.avatar-name { display: -webkit-box; display: -moz-box; display: box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -moz-box-align: center; box-align: center; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -ms-flex-align: center; -webkit-box-pack: center; -moz-box-pack: center; box-pack: center; -webkit-justify-content: center; -moz-justify-content: center; -ms-justify-content: center; -o-justify-content: center; justify-content: center; -ms-flex-pack: center; background-color: #ff3e79; color: #fff; font-size: 22px; margin: 0 auto; text-align: center; text-transform: uppercase; }
 
 .avatar-name-hidden { background-color: #cbd7e4; color: #cbd7e4; }
 
@@ -3054,11 +3054,11 @@ Icons for displaying an image of a user
 
 @media (min-width: 768px) { .ButtonMessage__left, .ButtonMessage__right { display: table-cell; vertical-align: middle; margin-bottom: 0; text-align: left; } }
 
-.ButtonMessage__heading { font-size: 18px; margin: 0; margin-bottom: 5px; }
+.ButtonMessage__heading { font-size: 18px; margin: 0; margin-bottom: 10px; }
 
 .ButtonMessage__message { display: inline-block; font-family: "Fira Sans", Arial, sans-serif; font-size: 16px; line-height: 20px; margin-bottom: 10px; vertical-align: top; }
 
-.ButtonMessage__button { background: #02ad55; color: #fff; float: right; font-weight: 500; margin: 0; padding: 7px 15px 8px; width: 100%; }
+.ButtonMessage__button { background: #02ad55; color: #fff; float: right; font-weight: 500; margin: 0; padding: 7px 15px 8px; width: 100%; white-space: nowrap; }
 
 @media screen and (min-width: 992px) { .ButtonMessage__button { margin-left: 20px; width: auto; } }
 
