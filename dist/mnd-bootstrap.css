@@ -864,7 +864,7 @@ pre code { padding: 0; font-size: inherit; color: inherit; white-space: pre-wrap
 
 @media (min-width: 992px) { .container { width: 970px; } }
 
-@media (min-width: 1200px) { .container { width: 1170px; } }
+@media (min-width: 1200px) { .container { width: 970px; } }
 
 .container-fluid { margin-right: auto; margin-left: auto; padding-left: 15px; padding-right: 15px; }
 
@@ -3054,11 +3054,13 @@ Icons for displaying an image of a user
 
 @media (min-width: 768px) { .ButtonMessage__left, .ButtonMessage__right { display: table-cell; vertical-align: middle; margin-bottom: 0; text-align: left; } }
 
-.ButtonMessage__heading { font-size: 18px; margin: 0; margin-bottom: 5px; }
+.ButtonMessage__heading { font-size: 18px; margin: 0; margin-bottom: 10px; }
 
 .ButtonMessage__message { display: inline-block; font-family: "Fira Sans", Arial, sans-serif; font-size: 16px; line-height: 20px; margin-bottom: 10px; vertical-align: top; }
 
 .ButtonMessage__button { background: #02ad55; color: #fff; float: right; font-weight: 500; margin: 0; padding: 7px 15px 8px; width: 100%; white-space: nowrap; }
+
+.ButtonMessage__button:hover { background-color: #017b3c; text-decoration: none; }
 
 @media screen and (min-width: 992px) { .ButtonMessage__button { margin-left: 20px; width: auto; } }
 

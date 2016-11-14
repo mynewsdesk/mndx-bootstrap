@@ -77,6 +77,11 @@ Icons for displaying an image of a user
     width: 100%;
     white-space: nowrap;
 
+    &:hover {
+      background-color: #017b3c;
+      text-decoration: none;
+    }
+
     @media screen and (min-width: $screen-md) {
       margin-left: $space-large;
       width: auto;
