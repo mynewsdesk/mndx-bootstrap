@@ -3060,6 +3060,8 @@ Icons for displaying an image of a user
 
 .ButtonMessage__button { background: #02ad55; color: #fff; float: right; font-weight: 500; margin: 0; padding: 7px 15px 8px; width: 100%; white-space: nowrap; }
 
+.ButtonMessage__button:hover { background-color: #017b3c; text-decoration: none; }
+
 @media screen and (min-width: 992px) { .ButtonMessage__button { margin-left: 20px; width: auto; } }
 
 /*doc --- title: Button groups name: button_groups category: Components --- ```html_example_table <div class="btn-group" role="group"> <button type="button" class="btn btn-default">Left</button> <button type="button" class="btn btn-default">Middle</button> <button type="button" class="btn btn-default">Right</button> </div> <div class="btn-group-vertical btn-block" role="group"> <button type="button" class="btn btn-default">Left</button> <button type="button" class="btn btn-default">Middle</button> <button type="button" class="btn btn-default">Right</button> </div> ``` */
